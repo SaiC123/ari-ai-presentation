@@ -404,3 +404,5 @@ test("Wide viewports fit the presentation to their height", () => { const d = pr
 test("Portrait viewports fit the full deck width without changing state", () => { const d = presentation('#2'); d.click('#next'); d.resize(390, 844); assert.equal(d.selectors['#presentation-slides-wrapper'].style.transform, 'translate(-50%, -50%) scale(0.3046875)'); assert.equal(d.slides[1].dataset.buildCurrent, '1'); });
 
 test("Short landscape viewports fit the entire deck height", () => { const d = presentation('#2'); d.resize(844, 390); const scale = Number(d.selectors['#presentation-slides-wrapper'].style.transform.match(/scale\(([^)]+)/)[1]); assert.equal(scale, 390 / 720); assert.equal(d.location.hash, '#2'); });
+
+test("Nonfinite slide requests cannot clear the active slide", () => { const d = presentation('#2'); for (const value of ['NaN', 'Infinity', '-Infinity', 'undefined']) { d.show(value); assert.equal(d.active(), 1); assert.equal(d.selectors['#counter'].textContent, '02 / 03'); } });
