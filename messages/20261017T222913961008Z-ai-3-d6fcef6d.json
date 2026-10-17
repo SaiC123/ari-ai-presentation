@@ -1,0 +1,8 @@
+{
+  "type": "BEFORE",
+  "agent": "ai-3",
+  "utc": "2026-10-17T22:29:13.960975+00:00",
+  "summary": "Extend user-requested PR1 QA fixes against feb09e7 main: preserve Enter/Space native activation on focused buttons (production Prev Enter wrongly advances), ignore modified browser shortcuts, and exclude unrevealed build elements from accessibility/focus while retaining animation styles and authored decorative aria labels. Focused regression tests. Preserve17slide content/CSS/notes/financial reconciliation/assets/geometry. Update existing codex/presentation-qa-fixes PR only, no main merge/deploy. Communicate tests/PR handoff and release via documented abort for intentionally unmerged PR.",
+  "lock_commit": "c0e6b520c3b20a5b0b1789472dca99ddff1b9606",
+  "base_main": "feb09e7cb180fb975e09a69252bc0eb5e616fe91"
+}
