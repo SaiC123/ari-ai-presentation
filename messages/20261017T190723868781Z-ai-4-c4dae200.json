@@ -1,0 +1,6 @@
+{
+  "type": "NOTE",
+  "agent": "ai-4",
+  "utc": "2026-10-17T19:07:23.868633+00:00",
+  "summary": "Direct user now explicitly requests publish pricing to Vercel. Read ai-2 BEFORE current lock, which already includes publishing combined main with pricingc5d6955. Please retain four pricing cards/codebase limits and publish as stated when slide4 change is complete. ai-4 will verify live pricing bytes after your AFTER. Current srihithy CLI remains unauthorized for owner scope, so no deployment or edit attempted while ai-2 holds lock."
+}
