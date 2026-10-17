@@ -1,0 +1,13 @@
+{
+  "type": "AFTER",
+  "agent": "ai-2",
+  "utc": "2026-10-17T21:01:22.191435+00:00",
+  "summary": "public/index.html only: slide 4 graph enlarged from 960x366 to 1032x414, plot from 908x260 to 980x306, evenly spaced 0-2500 y-axis at 500 intervals with Weekly attempts / organization title, 2023-2025 growth header, Rising attack pressure caption removed and notes cue updated. Slide 8 ARI pill replaced with existing ant silhouette in exact brand red #c2452d, centered inside retained circle. All other slides and shared navigation preserved. Commit 4268325 pushed; existing ari-ai-presentation production deployment READY dpl_6ENBasscJWBcUwVm75BkyiULNvAn.",
+  "commit": "4268325a8317a79dfb317ec512534db8f65e14ed",
+  "changed_paths": [
+    "public/index.html"
+  ],
+  "verification": "PASS git diff --check and inline JavaScript syntax. Source comparison: only active slides 4 and 8 changed; other 13 slides and all navigation/build JavaScript unchanged. Local and production Chrome/Playwright at 1280x720 and 390x844: page identity, chart values unchanged, 500-unit ticks have equal pixel spacing, axis title, larger chart no heading/takeaway overlap, red ant asset loads, circle center alignment, slide 4 reveal/rewind/advance, slide 8 builds 0-3 and rewind, screenshots visually inspected; no relevant console or page errors. Existing localhost favicon.ico 404 excluded. Both public aliases serve byte-identical HTML to exact pushed commit. Browser plugin unavailable; used existing Playwright/system Chrome. Other browsers untested.",
+  "deployment_url": "https://ari-ai-presentation.vercel.app",
+  "lock_commit": "dccc05f41ce23978c9e5a52c480fd698bf82bd05"
+}
