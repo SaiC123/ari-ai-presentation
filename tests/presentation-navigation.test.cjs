@@ -262,3 +262,11 @@ test("interactive clicks retain their own action without advancing", () => {
     assert.equal(deck.slides[1].dataset.buildCurrent, '0', tag);
   }
 });
+
+test("notes retain slide context when navigating while open", () => {
+  const deck = presentation();
+  deck.key('n');
+  deck.key('ArrowRight');
+  assert.equal(deck.selectors['#notes'].classList.contains('show'), true);
+  assert.equal(deck.selectors['#noteText'].textContent, 'Speaker note 2');
+});
