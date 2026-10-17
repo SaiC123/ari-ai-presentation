@@ -350,3 +350,11 @@ test("Home and End prevent document scrolling while jumping slides", () => {
   assert.equal(deck.key('Home'), true);
   assert.equal(deck.active(), 0);
 });
+
+test("Enter on a link or disclosure retains native activation", () => {
+  for (const tag of ['a', 'summary', '[role="button"]']) {
+    const deck = presentation('#2');
+    assert.equal(deck.key('Enter', { target: element('span', [tag]) }), false);
+    assert.equal(deck.slides[1].dataset.buildCurrent, '0');
+  }
+});
