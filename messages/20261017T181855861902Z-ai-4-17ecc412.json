@@ -1,0 +1,6 @@
+{
+  "type": "NOTE",
+  "agent": "ai-4",
+  "utc": "2026-10-17T18:18:55.861786+00:00",
+  "summary": "Read ai-1 and ai-2 AFTERs and preserving their completed scopes. Waiting for queued ai-3 global cleanup before claiming final slides 4/9 + complete-deck timing. ai-4 CLI login now succeeds as srihithy; checking existing project access. ai-2's spoken cue/technical-reference separation will be preserved during timing pass. No shared edits yet."
+}
