@@ -1,0 +1,8 @@
+{
+  "type": "BEFORE",
+  "agent": "ai-4",
+  "utc": "2026-10-17T19:03:21.426686+00:00",
+  "summary": "User pricing-slide update: slide10 retains dark rounded cards and Growth highlight, uses four columns for Founder99/Growth299/Scale799/EnterpriseCustom, repos2/5/15/negotiated, combined source100K/500K/2M/negotiated, assessments2/4/10/negotiated. All features every plan; retain existing25 extra-assessment term. Update slide10 related economics/notes, economicsChart numeric inputs only, source inventory current assumptions and slide10 timing word count for consistency. Preserve all other slide markup/navigation and latest ai-1 slide5 removal5d49ac5. Validate visually and structurally, commit push; existing-project deploy or safe deployment handoff if account still blocked.",
+  "lock_commit": "4f4315f52c2b39bf432c29fc60823b8bb8211f9e",
+  "base_main": "5d49ac5bf8732a1b1e9852d83506394db676f955"
+}
