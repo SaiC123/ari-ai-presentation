@@ -406,3 +406,5 @@ test("Portrait viewports fit the full deck width without changing state", () => 
 test("Short landscape viewports fit the entire deck height", () => { const d = presentation('#2'); d.resize(844, 390); const scale = Number(d.selectors['#presentation-slides-wrapper'].style.transform.match(/scale\(([^)]+)/)[1]); assert.equal(scale, 390 / 720); assert.equal(d.location.hash, '#2'); });
 
 test("Nonfinite slide requests cannot clear the active slide", () => { const d = presentation('#2'); for (const value of ['NaN', 'Infinity', '-Infinity', 'undefined']) { d.show(value); assert.equal(d.active(), 1); assert.equal(d.selectors['#counter'].textContent, '02 / 03'); } });
+
+test("Out-of-range integer requests clamp to real slide boundaries", () => { const d = presentation('#2'); d.show('-99'); assert.equal(d.active(), 0); d.show('99'); assert.equal(d.active(), 2); assert.equal(d.slides.filter(s => s.classList.contains('active')).length, 1); });
