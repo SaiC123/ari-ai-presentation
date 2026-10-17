@@ -1,0 +1,8 @@
+{
+  "type": "BEFORE",
+  "agent": "ai-1",
+  "utc": "2026-10-17T21:53:42.829676+00:00",
+  "summary": "BEFORE: problem slide5 centering only. Inspect heading computed bounds, override inherited max-width/width so full-slide horizontal/vertical centering precise. Scoped CSS only, preserve content/other slides. Push deploy sync copies.",
+  "lock_commit": "736967866e28f9198de6eff98ce7ae6c3de30f90",
+  "base_main": "13a697f214e1a93f9f365b19a1195e9c4b088285"
+}
