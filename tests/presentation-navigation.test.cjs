@@ -11,11 +11,12 @@ const html = readFileSync(htmlPath, 'utf8');
 const scripts = [...html.matchAll(/<script>([\s\S]*?)<\/script>/g)];
 assert.equal(scripts.length, 1, 'Expected one inline presentation script');
 
-function element(tag = 'div') {
+function element(tag = 'div', ancestors = []) {
   const classes = new Set();
   const attributes = new Map();
   return {
-    dataset: {}, style: {}, textContent: '', listeners: {}, inert: false,
+    dataset: {}, style: {}, textContent: '', listeners: {}, inert: false, disabled: false,
+    focusCalls: 0, focus() { this.focusCalls++; },
     classList: {
       contains: name => classes.has(name),
       toggle(name, force = !classes.has(name)) {
@@ -26,15 +27,15 @@ function element(tag = 'div') {
     setAttribute: (name, value) => attributes.set(name, String(value)),
     getAttribute: name => attributes.get(name) ?? null,
     addEventListener(name, callback) { this.listeners[name] = callback; },
-    closest(selector) { return selector === 'button' && tag === 'button' ? this : null; },
-    click() { this.listeners.click({ stopPropagation() {} }); },
+    closest(selector) { return selector.split(',').some(part => [tag, ...ancestors].includes(part.trim())) ? this : null; },
+    click() { if (!this.disabled) return this.listeners.click?.({ stopPropagation() {} }); },
     querySelector: () => null,
     querySelectorAll: () => [],
   };
 }
 
-function presentation(hash = '#1') {
-  const slides = [0, 2, 1].map((count, i) => {
+function presentation(hash = '#1', options = {}) {
+  const slides = (options.counts || [0, 2, 1]).map((count, i) => {
     const slide = element();
     slide.dataset.note = `Speaker note ${i + 1}`;
     const builds = Array.from({ length: count }, (_, j) => {
@@ -52,8 +53,8 @@ function presentation(hash = '#1') {
   });
   const selectors = Object.fromEntries([
     '#presentation-slides-wrapper', '#counter', '#progress', '#notes',
-    '#noteText', '#prev', '#next', '#fullscreen',
-  ].map(selector => [selector, element(['#prev', '#next', '#fullscreen'].includes(selector) ? 'button' : 'div')]));
+    '#noteText', '#prev', '#next', '#fullscreen', '#notesToggle', '#fullscreenStatus',
+  ].map(selector => [selector, element(['#prev', '#next', '#fullscreen', '#notesToggle'].includes(selector) ? 'button' : 'div')]));
   selectors['#presentation-slides-wrapper'].querySelectorAll = () => slides;
   const location = { hash };
   const documentListeners = {};
@@ -62,9 +63,13 @@ function presentation(hash = '#1') {
     querySelector: selector => selectors[selector],
     addEventListener: (name, callback) => { documentListeners[name] = callback; },
     fullscreenElement: null,
-    exitFullscreen() { this.fullscreenElement = null; },
+    exitFullscreen() { if (options.exitFullscreen) return options.exitFullscreen(this); this.fullscreenElement = null; return Promise.resolve(); },
   };
-  document.documentElement = { requestFullscreen: () => { document.fullscreenElement = document.documentElement; } };
+  document.documentElement = options.fullscreenUnsupported ? {} : { requestFullscreen: () => {
+    if (options.requestFullscreen) return options.requestFullscreen(document);
+    document.fullscreenElement = document.documentElement;
+    return Promise.resolve();
+  } };
   const window = {
     innerWidth: 1280, innerHeight: 720,
     addEventListener: (name, callback) => { windowListeners[name] = callback; },
@@ -75,7 +80,10 @@ function presentation(hash = '#1') {
   });
   vm.runInContext(scripts[0][1], context, { filename: 'presentation-inline.js' });
   return {
-    slides, selectors, location,
+    slides, selectors, location, document,
+    resize(width, height) { window.innerWidth = width; window.innerHeight = height; windowListeners.resize(); },
+    dispatch(name) { return documentListeners[name]?.(); },
+    tap(clientX, options = {}) { documentListeners.click({ clientX, target: element(), ...options }); },
     active: () => slides.findIndex(slide => slide.classList.contains('active')),
     hashChange(hash) { location.hash = hash; windowListeners.hashchange(); },
     key(key, options = {}) {
@@ -83,11 +91,13 @@ function presentation(hash = '#1') {
       const target = options.target || element();
       documentListeners.keydown({ key, target, ...options, preventDefault() { prevented = true; } });
       // Browser button activation follows keydown unless the page prevents it.
-      if (!prevented && !options.ctrlKey && !options.metaKey && !options.altKey
+      if (!prevented && !options.defaultPrevented && !options.ctrlKey && !options.metaKey && !options.altKey
           && ['Enter', ' '].includes(key) && target.closest('button')) target.closest('button').click();
+      return prevented;
     },
-    click(id) { selectors[id].listeners.click({ stopPropagation() {} }); },
+    click(id) { return selectors[id].click(); },
     show: index => vm.runInContext(`show(${index})`, context),
+    build: (slide, step) => vm.runInContext(`setBuild(slides[${slide}], ${step})`, context),
     fullscreen: () => document.fullscreenElement !== null,
   };
 }
