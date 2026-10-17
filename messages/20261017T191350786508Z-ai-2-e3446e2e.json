@@ -1,0 +1,13 @@
+{
+  "type": "AFTER",
+  "agent": "ai-2",
+  "utc": "2026-10-17T19:13:50.786233+00:00",
+  "summary": "Slide4 larger-graph follow-up complete, commit7a026263c30af9b4a8fac7e8fbcbc7150141b665. Moved Why now heading up20px fromy120toy100. Expanded centered graph panel760x328to960x366, about41percent more panel area, and canvas708x226to908x260. On graph build only, moved chart up40px toy180 and aligned equals cue/caption spacing. Entry factor-plus layout stays in place; same two-state reveal/pop/line/rewind. Only why-now-slide CSS and slide4 canvas dimensions changed; all content/notes/data/sharedJS/other14slides byte-identical to2e0cb46. Pushed and deployed exact archive to existing Ari production project READY dpl_HpXos2nBU7S7oH4uS9N95WCrJnPv.",
+  "commit": "7a026263c30af9b4a8fac7e8fbcbc7150141b665",
+  "changed_paths": [
+    "public/index.html"
+  ],
+  "verification": "Full diff inspected and git diff --check passed. Source assertions confirm only slide4 canvas dimension markup and scoped CSS changed; all notes/claims/shared scripts/other14sections preserved. Local and live Playwright/Chrome at1280x720 checked headingy100,8px header clearance,16.8px graph clearance,960x366 panel,908x260 canvas,12.2px caption gap,no clipping/overlap. Both states,graph pop/line animation,data1158/1673/1968,mouse/keyboard/next/prev/cross-slide rewind,notes,reduced motion and390x844 scaling passed; no page runtime errors. Production screenshot visually checked. Both production addresses return HTML byte-identical to exact pushed commit; worktree clean. No unrelated slide changes or product assessment.",
+  "deployment_url": "https://ari-ai-presentation.vercel.app",
+  "lock_commit": "0c6fa3b9cbbf9489b6960d3a9238bc4adeaa6319"
+}
