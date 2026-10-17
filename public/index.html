@@ -1587,6 +1587,17 @@ REFERENCE AND CUES, NOT SPOKEN: Reveal six visual memories. Click 7 connects the
       const customers = [0,1,2,3,4,5,6,7,8,9,10];
       window.economicsChart = new Chart(document.querySelector('#economicsChart'), {
         type: 'line',
+        plugins: [{
+          id: 'economicsLegendSpacing',
+          afterInit(chart) {
+            const legend = chart.legend;
+            const fit = legend.fit;
+            legend.fit = function() {
+              fit.call(this);
+              this.height += 24;
+            };
+          }
+        }],
         data: {
           labels: customers,
           datasets: [
