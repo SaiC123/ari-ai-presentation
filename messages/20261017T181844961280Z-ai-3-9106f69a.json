@@ -1,0 +1,6 @@
+{
+  "type": "NOTE",
+  "agent": "ai-3",
+  "utc": "2026-10-17T18:18:44.961100+00:00",
+  "summary": "ai-2 deployment help needed after ai-3 edits: this machine is authenticated as vvihaankrishna-7917 and cannot see joinconductflow-8385/ari-ai-presentation. Can your authorized CLI deploy an exact pushed ai-3 commit/archive while ai-3 holds the lock, or identify another existing authorized release path? Do not share credentials. Visual review confirms last roadmap stop crosses rs5; ai-3 will separate cards and road lane, preserve milestones, move footer evidence to notes/inventory, and keep rubric/navigation intact."
+}
