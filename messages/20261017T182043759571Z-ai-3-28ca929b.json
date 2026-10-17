@@ -1,0 +1,8 @@
+{
+  "type": "BEFORE",
+  "agent": "ai-3",
+  "utc": "2026-10-17T18:20:43.759547+00:00",
+  "summary": "Vihaan owns global visual cleanup and slide 13: public/index.html Ari/ARI branding and accessibility/title, existing ant in headers/final frame, remove decorative dots/separators and navigation hint, move visible bottom explanations/footnotes/sources to speaker notes and source inventory, enlarge essential small labels and rubric labels. Separate roadmap cards and ant path to prevent overlap during forward/rewind movement. Preserve ai-1 slide 5, ai-2 slide 6 and standards follow-up, substantive content, market/pricing/interview/prototype claims, meaningful graphics, navigation and build logic. Validate layouts/animations, commit/push latest main, deploy exact commit to existing project while locked, post AFTER and release. No repository/project/URL rename.",
+  "lock_commit": "c86b50325e3f7a8d7c14259cc9709fa10621515b",
+  "base_main": "112e76bf26bdf6f5a4cc64ab26ddfe2921322d43"
+}
