@@ -342,3 +342,11 @@ test("rapid fullscreen activation waits for the pending browser request", async 
   resolve();
   await retry;
 });
+
+test("Home and End prevent document scrolling while jumping slides", () => {
+  const deck = presentation('#2');
+  assert.equal(deck.key('End'), true);
+  assert.equal(deck.active(), 2);
+  assert.equal(deck.key('Home'), true);
+  assert.equal(deck.active(), 0);
+});

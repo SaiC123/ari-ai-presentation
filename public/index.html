@@ -1593,8 +1593,8 @@ REFERENCE AND CUES, NOT SPOKEN: Reveal six visual memories. Click 7 connects the
       if (['ArrowLeft', 'PageUp', 'Backspace'].includes(event.key)) { event.preventDefault(); prevAction(); }
       if (!event.repeat && event.key.toLowerCase() === 'n') toggleNotes();
       if (!event.repeat && event.key.toLowerCase() === 'f') document.querySelector('#fullscreen').click();
-      if (event.key === 'Home') show(0);
-      if (event.key === 'End') show(slides.length - 1);
+      if (event.key === 'Home') { event.preventDefault(); show(0); }
+      if (event.key === 'End') { event.preventDefault(); show(slides.length - 1); }
     });
     document.addEventListener('click', event => {
       if (event.defaultPrevented || event.target?.isContentEditable) return;
