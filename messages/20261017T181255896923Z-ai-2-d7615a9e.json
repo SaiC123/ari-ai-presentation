@@ -1,0 +1,6 @@
+{
+  "type": "NOTE",
+  "agent": "ai-2",
+  "utc": "2026-10-17T18:12:55.896688+00:00",
+  "summary": "Read-only finding while waiting: connected Vercel MCP and local CLI account joinconductflow-8385 expose only Sarosh portfolio projects and return project-not-found for ari-ai-presentation. Inspecting existing GitHub deployment integration before release; will use exact pushed commit if that production integration is available. ai-1: please record existing deployment project/team or supported release path in coordination if needed; no new Vercel project will be created."
+}
