@@ -8,17 +8,46 @@ These figures supersede the initial financial and market scenarios documented be
 
 Slide 4 now charts cyberattack attempts, with no business-application series: **1,158 (2023), 1,673 (2024), 1,968 (2025)** average weekly attempts per organization. The roughly **70%** increase is supported by [Check Point’s 2026 report announcement](https://checkpoint.com/tw/press-releases/check-point-softwares-2026-cyber-security-report-shows-global-attacks-reach-record-levels-as-ai-accelerates-the-threat-landscape/). The middle observation comes from the [2025 Cyber Security Report](https://engage.checkpoint.com/2025-cyber-security-report/items/report--cyber-security-report-2025); the starting observation comes from [Check Point’s 2023 analysis](https://blog.checkpoint.com/research/check-point-research-2023-the-year-of-mega-ransomware-attacks-with-unprecedented-impact-on-global-organizations/amp/). These are observed attempts in vendor telemetry, not successful breaches, a global census, or evidence of causation by AI coding.
 
-Current proposed workspace prices are **Founder $39, Growth $99, Scale $249 per month**, Enterprise custom. Shared monthly pools are **2/4/10 full assessments** and **100K/500K/2M assessed source lines** across connected repositories. Repeated assessments count lines again; generated/vendor/dependency code is excluded. No proposed repository-connection cap; usage remains capped. Core review, seven-agent investigation and fix verification are included. Monitoring/re-check work has separate explicit budgets; no unlimited protection promise. Extra scoped assessment $25 requires volume and budget approval. These are packaging hypotheses to test, not existing demand or guaranteed billing enforcement. [Kairo pricing](https://kairo.security/pricing), observed October17, informed the clear usage-pool/code-volume/enterprise structure, not copied capabilities or prices.
+## Expanded assessment plans
 
-| Tier | Revenue | AWS-adjusted cost | Contribution | Margin |
-|---|---:|---:|---:|---:|
-| Founder | $39 | $19.23 | $19.77 | 50.7% |
-| Growth | $99 | $33.77 | $65.23 | 65.9% |
-| Scale | $249 | $73.52 | $175.48 | 70.5% |
+Proposed monthly workspace subscriptions, not per-seat prices. Founder: $99 for10 full assessments and1M assessed source lines; Growth: $249 for25 assessments and5M lines; Scale: $599 for60 assessments and20M lines. Pools are shared across connected repositories. Each repeat assessment counts source volume again. Exclude generated/vendor/dependency code. Both assessment and line allowances apply. Enterprise scope, code volume and onboarding negotiated. Core code review, seven-agent investigation and fix verification included. Monitoring and re-check work remain separately budgeted, not unlimited continuous protection. Extra scoped assessment $25 needs volume and budget approval. No invented trial, integration, SSO or staffed support entitlement.
 
-Team-reported complete-assessment API $1.90 is not an audited production average. Add $1 sandbox reserve per included assessment, support/storage5/12/30, user-supplied AWS7/account and payment forecast2.9%+0.30. Verify AWS, sandbox and storage do not overlap. At40/45/15 mix revenue97.50, cost33.9175, contribution63.5825 (65.21%). Fixed pilot budget remains500/month: Claude150, Codex150, Vercel120, domain10provisional and contingency70. About eight blended customers cover modeled pilot cash costs, not full profitability. No initial salaries/hiring; founder-funded pilots and reinvestment. Extra usage, re-checks, taxes, legal/compliance and economic founder labor excluded. No old Railway charge or unsupported raise is added. Full sources and arithmetic: [cost reconciliation](cost-reconciliation.md).
+Structure inspired by [Kairo pricing](https://kairo.security/pricing), observed October17,2026, for explicit shared usage, code volume and enterprise scope, not copied quantities or prices. Ari's complete assessments are not equivalent to lightweight PR reviews. Routine review counts are not sold as a separate unlimited entitlement.
 
-At Growth annual value **$1,188**, unchanged Census proxies produce **$15,745,752** (13,254 firms), **$5,044,248** (4,246 firms) and **$59,400** (50 target customers). Targets are not traction; Census proxies do not identify SaaS, AI adoption or security staffing. Historical scenarios below are superseded and must not be reused for current pitch figures.
+## Forecast delivery cost per customer/month
+
+Assume all included full assessments are consumed. API $1.90/run is team-reported demo usage, not an audited production average and not validated across larger repositories. Sandbox $1/run and support/storage $5/$12/$30 remain forecasts and may be inadequate at expanded usage. AWS $7/account is the team's allocation, not an independently verified bill; check no overlap with reserves/storage. Payment assumption2.9%+0.30.
+
+| Item | Founder | Growth | Scale |
+|---|---:|---:|---:|
+| Price | $99 | $249 | $599 |
+| Full assessments | 10 | 25 | 60 |
+| API | $19 | $47.50 | $114 |
+| Sandbox reserve | $10 | $25 | $60 |
+| Payments | $3.171 | $7.521 | $17.671 |
+| Support/storage | $5 | $12 | $30 |
+| AWS allocation | $7 | $7 | $7 |
+| **Total modeled cost** | **$44.171** | **$99.021** | **$228.671** |
+| **Contribution before fixed costs** | **$54.829** | **$149.979** | **$370.329** |
+| **Contribution margin** | **55.4%** | **60.2%** | **61.8%** |
+
+Higher proposed prices support substantially more assessments. They are not validated willingness to pay or a claim that larger codebases cost the same as the demo. Benchmark across representative repositories and set per-run scope/budgets before launch. The $25 extra-assessment price is only a scoped proposal, not an uncapped custom pentest offer.
+
+## Pilot cash coverage and funding
+
+At assumed40%Founder/45%Growth/15%Scale mix: revenue241.50/customer/month; modeled deliverycost96.5285; contribution144.9715; margin60.03%. Cashcost500+96.5285×customers; revenue241.50×customers. Coverage500/144.9715=3.45 ->approximately4 blendedcustomers. At10customers: revenue2415, modeledcashcost1465.285.
+
+This is pilot cash coverage, not full economic profitability. Actual four-customer tier mix differs from a smooth blend. Excludes founder salaries/labor, taxes, legal/compliance, extra developer credits, unmeasured monitoring/re-check usage and unexpected overages. At20extra re-checks capped at3APIeach, up to60extraAPI leaves coverage at4, before other overhead.3is a cap not average. RLnoClaudeAPI doesnotmean zeroCPU. No additional Railway production baseline is added on top of AWS.
+
+Six founders, no hiring and no initial salaries. Founder-funded pilots; customer receipts first cover costs, surplus reinvested. No unsupported external fundraising ask;500/month is a planning budget, not all-in startup launch cost.
+
+## Replacement financial script
+
+Founder includes ten full assessments for ninety-nine dollars a month. Growth offers twenty-five for two forty-nine, and Scale sixty for five ninety-nine. Teams share code-volume allowances across repositories, with review, seven-agent investigation and fix verification included. Growth budgets about ninety-nine dollars in customer delivery costs, leaving about one hundred fifty before shared costs. Our six-founder pilot still budgets five hundred dollars monthly. Around four customers at our assumed mix cover modeled pilot cash costs, excluding founder pay and extra usage. We fund pilots ourselves and reinvest surplus. These prices and delivery assumptions still need validation.
+
+## Current market arithmetic
+
+Growth annual price $2,988 × unchanged Census proxy accounts13,254/4,246/50 gives **$39,602,952 / $12,687,048 / $149,400**. Fifty customers is a target, not traction. Census counts do not identify SaaS, AI adoption or security staffing. Historical financial scenarios below are superseded.
 
 ## Slide 1 - Fictional founder
 

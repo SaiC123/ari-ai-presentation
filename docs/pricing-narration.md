@@ -1,16 +1,17 @@
 # Revised pricing narration
 
-## Slide 12: Revenue, costs and sustainability
+## Slide12: Revenue, costs and sustainability
 
-Our proposed plans are thirty-nine, ninety-nine and two forty-nine dollars a month. Every plan includes code review, seven-agent assessments and fix verification. Teams share assessment and code-volume allowances across connected repositories; extra work needs budget approval. Growth costs about thirty-four dollars per customer, leaving about sixty-five before shared costs. With our five-hundred-dollar monthly pilot budget, around eight customers at our assumed mix cover modeled cash costs. Founders take no salaries initially and reinvest surplus. Pricing, usage and production costs still need pilot validation.
+Founder includes ten full assessments for ninety-nine dollars a month. Growth offers twenty-five for two forty-nine, and Scale sixty for five ninety-nine. Teams share code-volume allowances across repositories, with review, seven-agent investigation and fix verification included. Growth budgets about ninety-nine dollars in customer delivery costs, leaving about one hundred fifty before shared costs. Our six-founder pilot still budgets five hundred dollars monthly. Around four customers at our assumed mix cover modeled pilot cash costs, excluding founder pay and extra usage. We fund pilots ourselves and reinvest surplus. These prices and delivery assumptions still need validation.
 
-## Slide 13: Market sizing
+## Slide13: Market sizing
 
-U.S. software publishers are a transparent proxy, not a count of qualified SaaS customers. At the proposed annual Growth price of $1,188, the broader proxy represents $15.7 million and our starting cohort $5.0 million. Fifty paying customers would represent $59,400 ARR. This is a target, not traction.
+U.S. software publishers are a transparent proxy, not a count of qualified SaaS customers. At the proposed annual Growth price of $2,988, the broader proxy represents $39.6 million and our starting cohort $12.7 million. Fifty paying customers would represent $149,400 ARR. This is a target, not traction.
 
 ## Still to fill in, not spoken
 
-[Add willingness-to-pay evidence, actual provider invoices and assessment usage traces here.]
-[Validate shared usage enforcement, assessed-line accounting, monitoring budgets, support reserves and AWS allocation without overlap here.]
+[Add willingness-to-pay evidence and actual provider invoices here.]
+[Benchmark full assessments across different repository sizes and verify API, sandbox, support and storage costs at10/25/60 monthly runs here.]
+[Validate monthly source-pool enforcement, re-check budgets and AWS allocation without overlap here.]
 
-Pricing is per workspace, not per seat. Core workflow included; usage not unlimited. Lower prices are a pilot hypothesis, not evidence of demand. Pilot cash coverage excludes founder labor/pay, taxes, legal/compliance and extra usage. See cost-reconciliation.md for sources and arithmetic.
+Proposed workspace prices, not per-seat billing. Both assessment and assessed-line allowances apply. Repeated assessments count lines again. Monitoring is not unlimited. Pilot cash coverage excludes salaries/labor, taxes, legal/compliance and extra usage. See cost-reconciliation.md.
