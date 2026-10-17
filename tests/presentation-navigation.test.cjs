@@ -374,3 +374,5 @@ test("Clicking the left area rewinds one build at a time", () => { const d = pre
 test("The forward click region begins at 32 percent of the viewport", () => { const d = presentation('#2'); d.tap(1280 * .32); assert.equal(d.slides[1].dataset.buildCurrent, '1'); d.tap(1280 * .32 - 1); assert.equal(d.slides[1].dataset.buildCurrent, '0'); });
 
 test("Clicks inside notes cannot advance or rewind the deck", () => { const d = presentation('#2'); d.key('ArrowRight'); for (const x of [100, 1000]) d.tap(x, { target: element('span', ['.notes']) }); assert.equal(d.slides[1].dataset.buildCurrent, '1'); });
+
+test("Control container clicks do not perform a second navigation action", () => { const d = presentation('#2'); d.tap(1000, { target: element('span', ['.controls']) }); assert.equal(d.slides[1].dataset.buildCurrent, '0'); });
