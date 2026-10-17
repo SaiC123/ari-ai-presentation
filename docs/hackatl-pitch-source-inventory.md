@@ -8,17 +8,17 @@ These figures supersede the initial financial and market scenarios documented be
 
 Slide 4 now charts cyberattack attempts, with no business-application series: **1,158 (2023), 1,673 (2024), 1,968 (2025)** average weekly attempts per organization. The roughly **70%** increase is supported by [Check Point’s 2026 report announcement](https://checkpoint.com/tw/press-releases/check-point-softwares-2026-cyber-security-report-shows-global-attacks-reach-record-levels-as-ai-accelerates-the-threat-landscape/). The middle observation comes from the [2025 Cyber Security Report](https://engage.checkpoint.com/2025-cyber-security-report/items/report--cyber-security-report-2025); the starting observation comes from [Check Point’s 2023 analysis](https://blog.checkpoint.com/research/check-point-research-2023-the-year-of-mega-ransomware-attacks-with-unprecedented-impact-on-global-organizations/amp/). These are observed attempts in vendor telemetry, not successful breaches, a global census, or evidence of causation by AI coding.
 
-Current proposed subscriptions are **Founder $99/month (2 assessments), Growth $299/month (8), Scale $799/month (25)**. Additional assessments are proposed at **$25** with explicit usage budgets. Repository limits are 1/5/15. Prices and customer willingness to pay still need pilot validation.
+Current proposed subscriptions are **Founder $99/month (2 assessments), Growth $299/month (4), Scale $799/month (10), and Enterprise with a negotiated contract**. All plans include the same feature set as capabilities become available; tiers differ by coverage and usage. Repository limits are **2/5/15**, and combined maintained-source limits are **100K/500K/2M lines**. Enterprise repository, source-size and assessment limits are negotiated. Source counts exclude dependencies, vendored files and generated code. Both repository count and combined source limits apply. Thresholds and willingness to pay still need pilot validation. Additional assessments remain proposed at **$25**, with explicit usage budgets.
 
-The conservative $11/assessment assumption remains. Modeled monthly costs include Stripe at 2.9% + $0.30 and support/storage allocations of $5/$12/$30:
+The existing conservative $11/assessment assumption remains, with Stripe at 2.9% + $0.30 and support/storage allocations of $5/$12/$30. These are forecast assumptions, not measured delivery costs:
 
 | Tier | Revenue | Cost | Contribution | Margin |
 |---|---:|---:|---:|---:|
 | Founder | $99 | $30.17 | $68.83 | 69.5% |
-| Growth | $299 | $108.97 | $190.03 | 63.6% |
-| Scale | $799 | $328.47 | $470.53 | 58.9% |
+| Growth | $299 | $64.97 | $234.03 | 78.3% |
+| Scale | $799 | $163.47 | $635.53 | 79.5% |
 
-At a 40/45/15 mix, monthly revenue per customer is **$294**, modeled cost is **$110.375**, and contribution is **$183.625 (62.5%)**. With **$31,250 fixed monthly burn**, break-even is **170.18 customers**, rounded up to **171**. This deliberately replaces the earlier 46-customer scenario. The $750K/18-month funding proposal and founder-heavy compensation assumptions remain forecasts.
+At the retained 40/45/15 mix, monthly revenue per customer is **$294**, modeled cost is **$65.826**, and contribution is **$228.174 (77.6%)**. With **$31,250 fixed monthly burn**, break-even is **136.96 customers**, rounded up to **137**. Enterprise contracts and assessment overages are excluded from this model. This supersedes the previous 171-customer scenario, reflecting the lower included assessment allowances rather than an assumed improvement in model efficiency. The $750K/18-month funding proposal and founder-heavy compensation assumptions remain forecasts.
 
 Using the revised Growth annual value of **$3,588**, the unchanged Census account proxies produce **$47.55M** (13,254 firms), **$15.23M** (4,246 firms), and **$179,400** (50 target customers). The earlier $11,988 ACV scenario below is historical and no longer appears in the current deck.
 

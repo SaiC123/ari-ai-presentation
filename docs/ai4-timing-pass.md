@@ -15,7 +15,7 @@ Each active slide has a short SPOKEN passage followed by REFERENCE AND CUES, NOT
 | 7 | 34 | 4 | 20 | 1:49–2:09 |
 | 8 | 28 | 2 | 15 | 2:09–2:24 |
 | 9 | 45 | 4 | 26 | 2:24–2:50 |
-| 10 | 59 | 4 | 32 | 2:50–3:22 |
+| 10 | 60 | 4 | 32 | 2:50–3:22 |
 | 11 | 29 | 2 | 16 | 3:22–3:38 |
 | 12 | 32 | 3 | 18 | 3:38–3:56 |
 | 13 | 29 | 2 | 16 | 3:56–4:12 |
@@ -31,3 +31,5 @@ Repeated points reduced in narration:
 - Slide 15 retains the team's closing vision. Implementation details, measurement gaps, source caveats and optional demo cues are references, not additional pitch narration.
 
 The deck remains 15 slides. Slide 9 has exactly two segments, entry and one click. Other slides retain their existing build counts. Advance those builds during the spoken passage rather than adding a separate explanation for each. Customer interviews, time savings and live-provider validation are pending; this timing pass does not supply those results.
+
+Pricing follow-up: slide 10 now explains equal feature access, codebase/repository/assessment limits and custom Enterprise pricing. Its spoken passage is 60 words within the existing approximately 32-second budget. Updated economics use the retained cost assumptions and revised 2/4/10 assessment allowances.

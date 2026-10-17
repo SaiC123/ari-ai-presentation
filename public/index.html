@@ -690,6 +690,13 @@
     .ai4-quality-slide article:nth-of-type(2) { animation-delay:.08s!important; }
     .ai4-quality-slide article:nth-of-type(3) { animation-delay:.16s!important; }
 
+    /* Slide 10: same card format, four scale-based plans. */
+    .finance-slide .price-row { grid-template-columns:repeat(4,minmax(0,1fr));gap:16px; }
+    .finance-slide .price-card { padding:20px; }
+    .finance-slide .price-card strong { font-size:46px; }
+    .finance-slide .price-card small { font-size:17px;line-height:1.65; }
+    .finance-slide .pricing-shared { margin:18px 0 0;text-align:center;font-size:22px;font-weight:600;color:white; }
+    .finance-slide .pricing-terms { margin-top:15px; }
   </style>
 </head>
 <body>
@@ -923,16 +930,25 @@ REFERENCE AND CUES, NOT SPOKEN: CUE: Segment 1 is visible on entry. Click once f
         </div>
       </section>
 
-      <section class="slide dark finance-slide" data-note="SPOKEN (2:50 to 3:22; about 32 seconds including clicks/pauses): Our proposed subscriptions are ninety-nine, two ninety-nine and seven ninety-nine dollars a month, with capped assessments. The Growth example leaves roughly one hundred ninety dollars before fixed costs. Our modeled break-even is about one hundred seventy-one blended customers. These are forecasts, not sales. Our proposed seven hundred fifty thousand dollar raise funds eighteen months of product work and pilots.
+      <section class="slide dark finance-slide" data-note="SPOKEN (2:50 to 3:22; about 32 seconds including clicks/pauses): Every plan includes the complete Ari workflow. Pricing scales with repositories, codebase size and assessment usage, from ninety-nine dollars monthly to custom enterprise contracts. Growth contributes about two hundred thirty-four dollars before fixed costs; modeled break-even is roughly one hundred thirty-seven customers. These are forecasts. Our proposed seven hundred fifty thousand dollar raise funds eighteen months of development and pilots.
 
-REFERENCE AND CUES, NOT SPOKEN: Proposed pricing is $99/$299/$799, with 2/8/25 deep assessments. Extra assessments cost $25 and require budget approval. At a conservative $11 cost per run, Growth contributes about $190/month before fixed costs. A 40/45/15 mix gives $294 ARPA and $183.625 contribution; $31,250 fixed burn breaks even at 171 customers. All are forecasts to validate. Click through plans, costs, break-even, and the funding bridge. Presenter reference, not spoken: NEXT ROUND GATE / live-provider workflow / hosted beta / five paying customers / measured unit economics Proposed prices, not validated willingness to pay. $11/assessment cost assumption; 40/45/15 tier mix. Anchors: Semgrep + GitHub $30/contributor/month; Snyk Team starts $25/month. AWS, Anthropic, Stripe + Carta: source inventory." data-spoken="Our proposed subscriptions are ninety-nine, two ninety-nine and seven ninety-nine dollars a month, with capped assessments. The Growth example leaves roughly one hundred ninety dollars before fixed costs. Our modeled break-even is about one hundred seventy-one blended customers. These are forecasts, not sales. Our proposed seven hundred fifty thousand dollar raise funds eighteen months of product work and pilots." data-duration-s="32">
+REFERENCE AND CUES, NOT SPOKEN: Proposed pricing is $99/$299/$799, with 2/4/10 deep assessments. Extra assessments cost $25 and require budget approval. At a conservative $11 cost per run, Growth contributes about $234/month before fixed costs. A 40/45/15 mix gives $294 ARPA and $228.174 contribution; $31,250 fixed burn breaks even at 137 customers. All are forecasts to validate. All tiers include the same complete feature set; limits concern scale and usage, not gated capabilities. Repository caps are 2/5/15; combined maintained source limits are 100K/500K/2M lines. Enterprise scope, repository count, codebase size and assessment usage are negotiated. Source-line limits exclude dependencies, vendored files and generated code. Both repository and combined source limits apply. These packaging thresholds are hypotheses to validate. Existing $11/assessment, $5/$12/$30 monthly support/storage, 40/45/15 mix and $31,250 fixed-burn assumptions are retained; Enterprise revenue and overages are excluded from the break-even model. Click through plans, costs, break-even, and the funding bridge. Presenter reference, not spoken: NEXT ROUND GATE / live-provider workflow / hosted beta / five paying customers / measured unit economics Proposed prices, not validated willingness to pay. $11/assessment cost assumption; 40/45/15 tier mix. Anchors: Semgrep + GitHub $30/contributor/month; Snyk Team starts $25/month. AWS, Anthropic, Stripe + Carta: source inventory." data-spoken="Every plan includes the complete Ari workflow. Pricing scales with repositories, codebase size and assessment usage, from ninety-nine dollars monthly to custom enterprise contracts. Growth contributes about two hundred thirty-four dollars before fixed costs; modeled break-even is roughly one hundred thirty-seven customers. These are forecasts. Our proposed seven hundred fifty thousand dollar raise funds eighteen months of development and pilots." data-duration-s="32">
         <div class="slide-head"><span class="brand-mini"><img class="brand-ant" src="ari-ant-mark.png" alt="" aria-hidden="true">Revenue or Funding Model / Costs &amp; Sustainability</span><span class="slide-num">10</span></div>
         <h2 style="font-size:47px">Funding gets us to market. <span class="accent">Revenue keeps us there.</span></h2>
         <span class="build-trigger" data-build="1"></span><span class="build-trigger" data-build="2"></span><span class="build-trigger" data-build="3"></span><span class="build-trigger" data-build="4"></span>
         <div class="finance-stage">
-          <div class="finance-scene fscene1"><div class="price-row"><div class="price-card"><p class="kicker muted">Founder</p><strong>$99</strong><small>/ month / 1 repository<br>2 deep assessments included<br>Monitoring + human-approved fixes</small></div><div class="price-card featured"><p class="kicker">Growth</p><strong>$299</strong><small>/ month / up to 5 repositories<br>8 deep assessments included<br>Seven agents + evidence history</small></div><div class="price-card"><p class="kicker muted">Scale</p><strong>$799</strong><small>/ month / up to 15 repositories<br>25 deep assessments included<br>Team controls + priority queue</small></div></div><div class="pricing-terms"><b>Proposed plans</b><span>$25 / extra assessment</span><span>Usage caps + budget approval</span></div></div>
-          <div class="finance-scene fscene2"><p class="section-tag">Growth plan / forecast monthly economics / 8 assessments</p><div class="waterfall"><div class="waterbar"><i style="height:250px"></i><b>$299<br>REVENUE</b></div><div class="waterbar"><i style="height:74px"></i><b>MODELS + SANDBOX<br>−$88</b></div><div class="waterbar"><i style="height:25px"></i><b>PAYMENTS<br>−$9</b></div><div class="waterbar"><i style="height:25px"></i><b>STORAGE + SUPPORT<br>−$12</b></div><div class="waterbar"><i style="height:159px"></i><b>$190<br>CONTRIBUTION</b></div></div></div>
-          <div class="finance-scene fscene3"><div class="finance-chart-wrap"><canvas id="economicsChart" width="680" height="300" aria-label="Forecast revenue and monthly operating costs"></canvas><div class="break-even"><p class="kicker">Forecast break-even</p><strong>~171</strong><p style="margin-top:12px">Blended customers</p><p class="small" style="margin-top:14px;opacity:.72">62% contribution margin<br>$31.25K fixed monthly burn</p></div></div></div>
+          <div class="finance-scene fscene1">
+            <div class="price-row">
+              <div class="price-card"><p class="kicker muted">Founder</p><strong>$99</strong><small>/ month<br>Up to 2 repositories<br>100K source lines total<br>2 deep assessments / mo</small></div>
+              <div class="price-card featured"><p class="kicker">Growth</p><strong>$299</strong><small>/ month<br>Up to 5 repositories<br>500K source lines total<br>4 deep assessments / mo</small></div>
+              <div class="price-card"><p class="kicker muted">Scale</p><strong>$799</strong><small>/ month<br>Up to 15 repositories<br>2M source lines total<br>10 deep assessments / mo</small></div>
+              <div class="price-card"><p class="kicker muted">Enterprise</p><strong>Custom</strong><small>Negotiated contract<br>Negotiated repositories<br>Negotiated codebase size<br>Negotiated assessments</small></div>
+            </div>
+            <p class="pricing-shared">All features included in every plan.</p>
+            <div class="pricing-terms"><b>Proposed plans</b><span>$25 / extra assessment</span><span>Usage caps + budget approval</span></div>
+          </div>
+          <div class="finance-scene fscene2"><p class="section-tag">Growth plan / forecast monthly economics / 4 assessments</p><div class="waterfall"><div class="waterbar"><i style="height:250px"></i><b>$299<br>REVENUE</b></div><div class="waterbar"><i style="height:37px"></i><b>MODELS + SANDBOX<br>−$44</b></div><div class="waterbar"><i style="height:25px"></i><b>PAYMENTS<br>−$9</b></div><div class="waterbar"><i style="height:25px"></i><b>STORAGE + SUPPORT<br>−$12</b></div><div class="waterbar"><i style="height:196px"></i><b>$234<br>CONTRIBUTION</b></div></div></div>
+          <div class="finance-scene fscene3"><div class="finance-chart-wrap"><canvas id="economicsChart" width="680" height="300" aria-label="Forecast revenue and monthly operating costs"></canvas><div class="break-even"><p class="kicker">Forecast break-even</p><strong>~137</strong><p style="margin-top:12px">Blended customers</p><p class="small" style="margin-top:14px;opacity:.72">78% contribution margin<br>$31.25K fixed monthly burn</p></div></div></div>
           <div class="finance-scene fscene4"><div class="funding-grid"><div class="funding-total"><div><strong>$750K</strong><span>PRE-SEED / 18 MONTHS</span></div></div><div class="allocation"><div class="allocation-row"><b>45%</b><div class="allocation-track"><i style="--w:45%"></i></div><span>Product + security</span></div><div class="allocation-row"><b>25%</b><div class="allocation-track"><i style="--w:25%"></i></div><span>Models + sandbox</span></div><div class="allocation-row"><b>20%</b><div class="allocation-track"><i style="--w:20%"></i></div><span>Pilots + acquisition</span></div><div class="allocation-row"><b>10%</b><div class="allocation-track"><i style="--w:10%"></i></div><span>Compliance + ops</span></div></div></div></div>
         </div>
 
@@ -1314,14 +1330,14 @@ REFERENCE AND CUES, NOT SPOKEN: Reveal six visual memories. Click 7 connects the
         }
       });
 
-      const customers = [0,25,50,75,100,125,150,171,200,250];
+      const customers = [0,25,50,75,100,125,137,150,200,250];
       window.economicsChart = new Chart(document.querySelector('#economicsChart'), {
         type: 'line',
         data: {
           labels: customers,
           datasets: [
             { label: 'Recurring revenue', data: customers.map(n => n * 294), borderColor: '#ff8a75', backgroundColor: 'transparent', borderWidth: 4, tension: .15 },
-            { label: 'Monthly operating cost', data: customers.map(n => 31250 + n * 110.375), borderColor: '#ffffff', backgroundColor: 'transparent', borderWidth: 4, tension: .15 }
+            { label: 'Monthly operating cost', data: customers.map(n => 31250 + n * 65.826), borderColor: '#ffffff', backgroundColor: 'transparent', borderWidth: 4, tension: .15 }
           ]
         },
         options: {
