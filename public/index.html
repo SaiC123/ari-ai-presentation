@@ -509,31 +509,27 @@
     .customer-story-slide .sai-rubric img{width:27px;height:20px;object-fit:contain;filter:brightness(0) invert(1)}
     .customer-story-slide .sai-rubric span{display:none}
     .customer-story-slide[data-build-current='0'] .sai-rubric .sr0,.customer-story-slide[data-build-current='1'] .sai-rubric .sr1{display:inline}
-    .customer-story-slide .sai-icp{display:grid;grid-template-columns:155px 1fr;align-items:center;gap:22px;padding:17px 23px;margin-top:16px;background:var(--brand-soft);color:var(--ink);border-radius:18px}
-    .customer-story-slide .sai-icp-label{font:600 18px/1.2 'IBM Plex Mono',monospace;color:var(--brand-deep)}
-    .customer-story-slide .sai-icp strong{font:600 26px/1.28 'Space Grotesk',sans-serif;letter-spacing:-.025em}
-    .customer-story-slide .sai-flow{display:grid;grid-template-columns:225px 44px 320px 44px 1fr;gap:14px;align-items:center;height:164px;margin-top:18px}
-    .customer-story-slide .sai-founder{height:164px;display:flex;align-items:center;justify-content:center;gap:15px}
-    .customer-story-slide .sai-founder svg{width:80px;height:142px;flex-shrink:0}
-    .customer-story-slide .sai-founder span{font:500 22px/1.15 'Space Grotesk',sans-serif}
-    .customer-story-slide .sai-flow-arrow{color:#ff8a75;font-size:35px;text-align:center}
-    .customer-story-slide .sai-code{height:152px;position:relative;border:1px solid rgba(255,255,255,.15);border-radius:16px;background:rgba(255,255,255,.045);padding:18px 21px}
-    .customer-story-slide .sai-code-title{font:500 20px/1.2 'Space Grotesk',sans-serif}
-    .customer-story-slide .sai-code-lines{display:grid;gap:10px;margin-top:20px}
-    .customer-story-slide .sai-code-lines i{height:7px;border-radius:5px;background:#ff8a75;width:var(--line-width);transform-origin:left}
-    .customer-story-slide.active[data-build-current='0'] .sai-code-lines i{animation:barRevealX .65s both}
-    .customer-story-slide .sai-code-lines i:nth-child(2){animation-delay:.13s;background:rgba(255,255,255,.3)}
-    .customer-story-slide .sai-code-lines i:nth-child(3){animation-delay:.26s}
-    .customer-story-slide .sai-capacity{height:152px;padding:6px 0}
-    .customer-story-slide .sai-capacity p{font:500 18px/1.2 'Space Grotesk',sans-serif;margin-bottom:10px}
-    .customer-story-slide .sai-capacity p:nth-of-type(2){margin-top:21px}
-    .customer-story-slide .sai-capacity-track{height:16px;border-radius:5px;background:rgba(255,255,255,.08);overflow:hidden}
-    .customer-story-slide .sai-capacity-track i{display:block;width:93%;height:100%;background:#ff8a75;border-radius:5px;transform-origin:left}
-    .customer-story-slide .sai-capacity-track.limited i{width:23%;background:rgba(255,255,255,.4)}
-    .customer-story-slide.active[data-build-current='0'] .sai-capacity-track i{animation:barRevealX 1.2s .2s both}
-    .customer-story-slide .sai-theme{display:grid;grid-template-columns:155px 1fr;align-items:center;gap:22px;padding:17px 23px;margin-top:18px;border:1px solid rgba(255,138,117,.55);border-radius:18px;background:rgba(194,69,45,.14)}
-    .customer-story-slide .sai-theme-label{font:500 17px/1.35 'IBM Plex Mono',monospace;color:#ffb09f}
-    .customer-story-slide .sai-theme strong{font:500 25px/1.23 'Space Grotesk',sans-serif;letter-spacing:-.02em}
+    /* ai-2: slide 5 ICP and theme-fit opening. Bar lengths are illustrative. */
+    .customer-story-slide .cp0 h2 { font-size:60px;line-height:1.02;letter-spacing:-.045em; }
+    .customer-story-slide .icp-stage { display:grid;grid-template-columns:340px 1fr;gap:30px;margin-top:26px; }
+    .customer-story-slide .icp-profile { height:270px;padding:22px;border:1px solid rgba(255,255,255,.12);border-radius:18px;background:#251916; }
+    .customer-story-slide .icp-label { font:500 13px/1.2 'IBM Plex Mono',monospace;letter-spacing:.055em;color:#ffb09f; }
+    .customer-story-slide .icp-tags { display:grid;gap:9px;margin:18px 0 0;padding:0;list-style:none; }
+    .customer-story-slide .icp-tags li { padding:8px 12px;border:1px solid rgba(255,255,255,.10);border-radius:10px;background:rgba(255,255,255,.025);font:500 17px/1.2 'Space Grotesk',sans-serif;white-space:nowrap; }
+    .customer-story-slide .icp-tags li:first-child { font-size:23px;font-weight:600;letter-spacing:-.025em;color:white;background:rgba(194,69,45,.16);border-color:rgba(255,138,117,.4); }
+    .customer-story-slide .exposure-graphic { height:270px;margin:0;padding:26px 30px;border:1px solid rgba(255,138,117,.20);border-radius:18px;background:linear-gradient(120deg,rgba(194,69,45,.10),rgba(255,255,255,.025)); }
+    .customer-story-slide .exposure-graphic figcaption { font:500 14px/1.2 'IBM Plex Mono',monospace;letter-spacing:.045em;text-transform:uppercase;color:#ffb09f; }
+    .customer-story-slide .exposure-row { margin-top:20px; }
+    .customer-story-slide .exposure-row + .exposure-row { margin-top:22px; }
+    .customer-story-slide .exposure-row p { font:500 24px/1.2 'Space Grotesk',sans-serif;letter-spacing:-.02em; }
+    .customer-story-slide .exposure-track { height:38px;margin-top:12px;border-radius:8px;background:rgba(255,255,255,.07);overflow:hidden; }
+    .customer-story-slide .exposure-track i { display:block;width:93%;height:100%;border-radius:8px;background:linear-gradient(90deg,#c2452d,#ff8a75);transform-origin:left; }
+    .customer-story-slide .exposure-row.coverage .exposure-track i { width:24%;background:#b59c95; }
+    .customer-story-slide .exposure-row.coverage p { color:#d9c4be; }
+    .customer-story-slide.active[data-build-current='0'] .exposure-track i { animation:barRevealX .85s .15s both; }
+    .customer-story-slide .icp-theme { display:grid;grid-template-columns:110px 1fr;gap:24px;align-items:center;margin-top:24px;padding:20px 24px;border:1px solid rgba(255,138,117,.4);border-left:3px solid #ff8a75;border-radius:14px;background:rgba(194,69,45,.10); }
+    .customer-story-slide .icp-theme span { font:500 14px/1.2 'IBM Plex Mono',monospace;letter-spacing:.055em;color:#ffb09f; }
+    .customer-story-slide .icp-theme strong { font:500 26px/1.25 'Space Grotesk',sans-serif;letter-spacing:-.02em; }
     .customer-story-slide .sai-evidence-status{font:500 20px/1.2 'IBM Plex Mono',monospace;color:#ffb09f;margin-top:20px}
     .customer-story-slide .sai-evidence-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:29px}
     .customer-story-slide .sai-evidence-grid article{height:286px;padding:27px;border:1px dashed rgba(255,255,255,.3);border-radius:20px;background:rgba(255,255,255,.035);display:flex;flex-direction:column;justify-content:space-between}
@@ -790,22 +786,36 @@ REFERENCE AND CUES, NOT SPOKEN: Limited security capacity is the target-user hyp
         <p class="why-takeaway">Security checks need to keep pace</p>
       </section>
 
-      <section class="slide dark customer-story-slide" data-note="SPOKEN (0:57 to 1:18; about 21 seconds including clicks/pauses): We&#x27;re starting with small SaaS teams using AI without a dedicated security team. We still need real interviews and observed user sessions to validate their needs.
+      <section class="slide dark customer-story-slide" data-note="SPOKEN (0:57 to 1:18; about 21 seconds including clicks/pauses): ARI targets small, founder-led SaaS startups using AI-assisted development without dedicated security teams. AI intensified their exposure: code output outpaced security coverage. We address that gap. Real customer validation is still pending.
 
-REFERENCE AND CUES, NOT SPOKEN: Build 0 defines our ICP: small SaaS startups using AI to code, without a dedicated cybersecurity team. The founder graphic connects AI-assisted creation to a qualitative security-capacity gap. Bar lengths illustrate our hypothesis; they are not measured quantities. Say: AI expanded their ability to build, while their ability to secure it has not kept pace. This is an AI-intensified unmet need. Click 1 shows customer evidence; the next click advances to the solution. Interviews, workflow observation, and prototype feedback are pending. Collect recent release examples, actual workarounds, attributable quotes, observed task completion, and exact prototype feedback; never invent findings or participants. Keep those collection instructions in notes. Transition: Ari connects the workflow around the same code context. Presenter reference, not spoken: Awaiting real customer evidence." data-spoken="We&#x27;re starting with small SaaS teams using AI without a dedicated security team. We still need real interviews and observed user sessions to validate their needs." data-duration-s="21">
-        <div class="slide-head"><span class="sai-rubric"><img src="ari-ant-mark.png" alt="Ari ant"><span class="sr0">Problem Definition / User Understanding / Theme Relevance</span><span class="sr1">User Understanding / Evidence of Need</span></span><span class="slide-num">05</span></div>
+REFERENCE AND CUES, NOT SPOKEN: Build 0 defines the ICP with four short labels: Small SaaS startups, Founder-led teams, AI-assisted development, No dedicated security team. The two-bar comparison shows the qualitative hypothesis that AI increased code output faster than security coverage kept pace, increasing codebase exposure. Bar lengths are illustrative, not measured data or a quantified customer result. Theme fit: ARI addresses the problem AI intensified, exposed codebases, rather than only celebrating increased code output. This is the target-user and problem hypothesis to validate. Click 1 shows customer evidence; the next click advances to the solution. Interviews, workflow observation, and prototype feedback are pending. Collect recent release examples, actual workarounds, attributable quotes, observed task completion, and exact prototype feedback; never invent findings or participants. Keep those collection instructions in notes. Transition: ARI connects the workflow around the same code context. Presenter reference, not spoken: Awaiting real customer evidence." data-spoken="ARI targets small, founder-led SaaS startups using AI-assisted development without dedicated security teams. AI intensified their exposure: code output outpaced security coverage. We address that gap. Real customer validation is still pending." data-duration-s="21">
+        <div class="slide-head"><span class="sai-rubric"><img src="ari-ant-mark.png" alt="Ari ant"><span class="sr0">PROBLEM DEFINITION / ICP / THEME FIT</span><span class="sr1">User Understanding / Evidence of Need</span></span><span class="slide-num">05</span></div>
         <span class="build-trigger" data-build="1"></span>
         <div class="customer-phase cp0">
-          <h2>More code. <span class="accent">Same security capacity.</span></h2>
-          <div class="sai-icp"><span class="sai-icp-label">OUR<br>CUSTOMER</span><strong>Small SaaS startups using AI to code,<br>without a dedicated cybersecurity team.</strong></div>
-          <div class="sai-flow">
-            <div class="sai-founder"><svg viewBox="0 0 110 180" role="img" aria-label="Founder who also writes the software"><g fill="none" stroke="#ffffff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"><circle cx="55" cy="29" r="19"/><path d="M55 48v64M55 67L18 96M55 67l37 29M55 112l-30 55M55 112l30 55"/></g></svg><span>Founder +<br>small team</span></div>
-            <div class="sai-flow-arrow" aria-hidden="true">→</div>
-            <div class="sai-code"><p class="sai-code-title">AI-assisted code</p><div class="sai-code-lines" aria-hidden="true"><i style="--line-width:88%"></i><i style="--line-width:62%"></i><i style="--line-width:78%"></i></div></div>
-            <div class="sai-flow-arrow" aria-hidden="true">→</div>
-            <div class="sai-capacity" role="img" aria-label="Illustrative hypothesis: AI-assisted output grows while security capacity stays limited; bar lengths are not measured data"><p>Creation capacity</p><div class="sai-capacity-track"><i></i></div><p>Security capacity</p><div class="sai-capacity-track limited"><i></i></div></div>
+          <h2>More code.<br><span class="accent">More exposed codebases.</span></h2>
+          <div class="icp-stage">
+            <aside class="icp-profile" aria-label="Ideal customer profile">
+              <p class="icp-label">IDEAL CUSTOMER PROFILE</p>
+              <ul class="icp-tags">
+                <li>Small SaaS startups</li>
+                <li>Founder-led teams</li>
+                <li>AI-assisted development</li>
+                <li>No dedicated security team</li>
+              </ul>
+            </aside>
+            <figure class="exposure-graphic" role="img" aria-label="Illustrative comparison: code output has grown faster than security coverage. Bar lengths show a qualitative hypothesis, not measured data.">
+              <figcaption>AI intensified the gap</figcaption>
+              <div class="exposure-row">
+                <p>Code output</p>
+                <div class="exposure-track" aria-hidden="true"><i></i></div>
+              </div>
+              <div class="exposure-row coverage">
+                <p>Security coverage</p>
+                <div class="exposure-track" aria-hidden="true"><i></i></div>
+              </div>
+            </figure>
           </div>
-          <div class="sai-theme"><span class="sai-theme-label">THEME FIT<br>USER HYPOTHESIS</span><strong>AI expanded their ability to build.<br>Their ability to secure it has not kept pace.</strong></div>
+          <div class="icp-theme"><span>THEME FIT</span><strong>AI intensified the problem of exposed codebases.</strong></div>
         </div>
         <div class="customer-phase cp1">
           <h2>Listen. Observe. <span class="accent">Validate.</span></h2>
