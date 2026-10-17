@@ -1434,6 +1434,7 @@ REFERENCE AND CUES, NOT SPOKEN: Reveal six visual memories. Click 7 connects the
     <button id="prev" aria-label="Previous slide">←</button>
     <span class="counter" id="counter">01 / 17</span>
     <button id="next" aria-label="Next slide">→</button>
+    <button id="notesToggle" aria-label="Show speaker notes" aria-controls="notes" aria-expanded="false">N</button>
     <button id="fullscreen" aria-label="Toggle fullscreen">⛶</button>
   </div>
   <aside class="notes" id="notes" tabindex="-1" aria-label="Speaker notes"><b>Speaker note</b><span id="noteText"></span></aside>
@@ -1445,7 +1446,16 @@ REFERENCE AND CUES, NOT SPOKEN: Reveal six visual memories. Click 7 connects the
     const progress = document.querySelector('#progress');
     const notes = document.querySelector('#notes');
     const noteText = document.querySelector('#noteText');
+    const notesToggle = document.querySelector('#notesToggle');
     let index = 0;
+
+    function toggleNotes() {
+      const open = notes.classList.toggle('show');
+      notesToggle.setAttribute('aria-expanded', String(open));
+      notesToggle.setAttribute('aria-label', open ? 'Hide speaker notes' : 'Show speaker notes');
+      if (open) notes.focus();
+    }
+    notesToggle.addEventListener('click', event => { event.stopPropagation(); toggleNotes(); });
 
     function maxBuild(slide) {
       return Math.max(0, ...[...slide.querySelectorAll('[data-build]')].map(el => Number(el.dataset.build) || 0));
@@ -1551,7 +1561,7 @@ REFERENCE AND CUES, NOT SPOKEN: Reveal six visual memories. Click 7 connects the
       if ([' ', 'Enter'].includes(event.key) && event.target?.closest?.('button')) return;
       if (['ArrowRight', 'PageDown', ' ', 'Enter'].includes(event.key)) { event.preventDefault(); nextAction(); }
       if (['ArrowLeft', 'PageUp', 'Backspace'].includes(event.key)) { event.preventDefault(); prevAction(); }
-      if (!event.repeat && event.key.toLowerCase() === 'n') notes.classList.toggle('show');
+      if (!event.repeat && event.key.toLowerCase() === 'n') toggleNotes();
       if (!event.repeat && event.key.toLowerCase() === 'f') document.querySelector('#fullscreen').click();
       if (event.key === 'Home') show(0);
       if (event.key === 'End') show(slides.length - 1);

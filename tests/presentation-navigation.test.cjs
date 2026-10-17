@@ -270,3 +270,13 @@ test("notes retain slide context when navigating while open", () => {
   assert.equal(deck.selectors['#notes'].classList.contains('show'), true);
   assert.equal(deck.selectors['#noteText'].textContent, 'Speaker note 2');
 });
+
+test("notes button exposes and focuses notes with synchronized expanded state", () => {
+  const deck = presentation();
+  deck.click('#notesToggle');
+  assert.equal(deck.selectors['#notesToggle'].getAttribute('aria-expanded'), 'true');
+  assert.equal(deck.selectors['#notesToggle'].getAttribute('aria-label'), 'Hide speaker notes');
+  assert.equal(deck.selectors['#notes'].focusCalls, 1);
+  deck.click('#notesToggle');
+  assert.equal(deck.selectors['#notesToggle'].getAttribute('aria-expanded'), 'false');
+});
