@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Ari AI: HackATL Pitch</title>
+  <title>Ari: HackATL Pitch</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&amp;family=Inter:wght@400;500;600;700&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap" rel="stylesheet">
@@ -208,12 +208,10 @@
     .notes { display: none; position: fixed; z-index: 30; right: 18px; top: 18px; width: min(440px, calc(100vw - 36px)); padding: 18px; border-radius: 14px; background: rgba(8,10,12,.94); color: white; border: 1px solid rgba(255,255,255,.14); box-shadow: var(--shadow); font-size: 14px; line-height: 1.5; }
     .notes.show { display: block; }
     .notes b { display: block; margin-bottom: 8px; color: var(--acid); }
-    .hint { position: fixed; z-index: 15; right: 18px; bottom: 20px; color: rgba(255,255,255,.52); font: 11px/1 "IBM Plex Mono", monospace; }
 
     /* Finished-deck scenes */
     .slide-head { display:flex; align-items:center; justify-content:space-between; min-height:30px; margin-bottom:28px; }
     .slide-head .brand-mini { display:flex; align-items:center; gap:10px; font:600 13px/1 "IBM Plex Mono",monospace; letter-spacing:.08em; text-transform:uppercase; }
-    .brand-dot { width:9px; height:9px; border-radius:50%; background:var(--acid); box-shadow:0 0 0 5px rgba(194,69,45,.14); }
     .slide-num { font:500 12px/1 "IBM Plex Mono",monospace; color:var(--muted); }
     .dark .slide-num { color:rgba(255,255,255,.4); }
     .source-foot { position:absolute; left:64px; right:64px; bottom:18px; font:400 9px/1.35 "IBM Plex Mono",monospace; color:var(--muted); }
@@ -393,25 +391,6 @@
     .targeting-strip div { padding:9px 12px; border:1px solid var(--line); border-radius:11px; background:var(--panel); font:500 9px/1.35 "IBM Plex Mono",monospace; color:var(--muted); }
     .targeting-strip b { color:var(--brand-deep); }
 
-    /* Slide 13 */
-    .road-stage { position:absolute; left:0; right:0; top:120px; bottom:0; overflow:hidden; }
-    .road-svg { position:absolute; inset:0; width:100%; height:100%; }
-    .road-ant { position:absolute; width:62px; height:44px; object-fit:contain; filter:brightness(0) invert(1); left:8%; top:70%; transition:left .8s cubic-bezier(.2,.8,.2,1),top .8s cubic-bezier(.2,.8,.2,1),transform .8s; z-index:5; }
-    .road-slide[data-build-current="1"] .road-ant{left:12%;top:70%;transform:scale(1.15)}
-    .road-slide[data-build-current="2"] .road-ant{left:32%;top:57%;transform:scale(.95)}
-    .road-slide[data-build-current="3"] .road-ant{left:52%;top:45%;transform:scale(.8)}
-    .road-slide[data-build-current="4"] .road-ant{left:68%;top:32%;transform:scale(.65)}
-    .road-slide[data-build-current="5"] .road-ant{left:82%;top:18%;transform:scale(.5)}
-    .road-sign { position:absolute; width:260px; padding:18px; border-radius:16px; background:white; color:var(--ink); box-shadow:0 18px 50px rgba(0,0,0,.28); opacity:0; transform:translateY(16px) scale(.92); transition:.45s; z-index:4; }
-    .road-sign b { display:block; font:600 21px/1 "Space Grotesk",sans-serif; }
-    .road-sign span { display:block; margin-top:9px; font-size:11px; line-height:1.35; color:var(--muted); }
-    .rs1{left:5%;bottom:7%}.rs2{left:24%;bottom:31%}.rs3{left:45%;bottom:43%}.rs4{right:10%;top:25%}.rs5{right:4%;top:2%}
-    .road-slide[data-build-current="1"] .rs1,.road-slide[data-build-current="2"] .rs2,.road-slide[data-build-current="3"] .rs3,.road-slide[data-build-current="4"] .rs4,.road-slide[data-build-current="5"] .rs5{opacity:1;transform:scale(1.04)}
-    .road-slide[data-build-current="2"] .rs1,
-    .road-slide[data-build-current="3"] .rs1,.road-slide[data-build-current="3"] .rs2,
-    .road-slide[data-build-current="4"] .rs1,.road-slide[data-build-current="4"] .rs2,.road-slide[data-build-current="4"] .rs3,
-    .road-slide[data-build-current="5"] .rs1,.road-slide[data-build-current="5"] .rs2,.road-slide[data-build-current="5"] .rs3,.road-slide[data-build-current="5"] .rs4 { opacity:.48; transform:scale(.76); }
-
     /* Slide 14 */
     .team-final-slide { overflow:hidden; }
     .people-grid { position:relative; z-index:2; display:grid; grid-template-columns:repeat(3,1fr); gap:64px 14px; margin-top:14px; }
@@ -471,8 +450,6 @@
     .quality-stage{position:absolute;left:72px;right:72px;top:195px;height:450px;margin-top:0!important;grid-template-columns:1.05fr 1fr;gap:24px}.quality-side{grid-template-rows:repeat(3,1fr);gap:10px}.quality-card{padding:13px 19px}.quality-card h3{font-size:21px}.quality-card ul{margin-top:8px}.quality-card li{font-size:12px;padding:5px 0}.quality-body{padding:22px}.quality-finding{padding:17px;margin-bottom:17px}
     .finance-slide h2{max-width:1100px;font-size:43px!important}.finance-stage{position:absolute;left:72px;right:72px;top:232px;height:410px;overflow:hidden}.finance-chart-wrap{padding-top:25px;grid-template-columns:680px 1fr;gap:30px}.finance-chart-wrap canvas{height:300px!important}.waterfall{height:300px;margin-top:12px}.waterbar i{max-height:250px}.price-row{margin-top:8px}.price-card{padding:24px}.price-card strong{margin-top:20px;font-size:48px}.price-card small{line-height:1.7;color:rgba(255,255,255,.8)}.funding-total{width:265px;height:265px}.funding-grid{grid-template-columns:300px 1fr;gap:28px}.allocation-row{grid-template-columns:65px 1fr 225px}.funding-gate{font-size:10px}
     .market-viewport{top:115px;height:540px}.market-detail{top:195px}.market-world{transform:translate(-50%,-50%) scale(.82)}
-    .road-ant{z-index:2}.road-sign{z-index:4;width:245px}.rs1{left:4%;top:12%;bottom:auto}.rs2{left:23%;top:12%;bottom:auto}.rs3{left:43%;top:12%;bottom:auto}.rs4{left:63%;top:12%;right:auto}.rs5{right:2%;top:12%}
-    .road-slide[data-build-current='1'] .road-ant{left:14%;top:80%;transform:scale(1.15)}.road-slide[data-build-current='2'] .road-ant{left:31%;top:66%;transform:scale(1.05)}.road-slide[data-build-current='3'] .road-ant{left:49%;top:52%;transform:scale(.95)}.road-slide[data-build-current='4'] .road-ant{left:67%;top:35%;transform:scale(.8)}.road-slide[data-build-current='5'] .road-ant{left:87%;top:7%;transform:scale(.65)}
     .finale-slide[data-build-current='8'] .recap-stage{transform:scale(.7);opacity:0;filter:blur(12px);transition:1s cubic-bezier(.2,.8,.2,1)}
     .recap-stage{transition:1s cubic-bezier(.2,.8,.2,1)}.brand-finale{position:absolute;inset:0;z-index:12;display:flex;flex-direction:column;align-items:center;justify-content:center;opacity:0;pointer-events:none;background:radial-gradient(ellipse at center,rgba(194,69,45,.22),transparent 60%)}.brand-finale img{width:200px;height:130px;object-fit:contain;filter:brightness(0) invert(1);transform:translateY(70px) scale(.4)}.brand-finale h1{font-size:142px;margin-top:24px;letter-spacing:-.07em;transform:translateY(60px);opacity:0}.finale-slide[data-build-current='8'] .brand-finale{opacity:1;transition:opacity .6s .25s}.finale-slide[data-build-current='8'] .brand-finale img{transform:none;transition:transform 1.2s .2s cubic-bezier(.16,1,.3,1)}.finale-slide[data-build-current='8'] .brand-finale h1{transform:none;opacity:1;transition:transform .9s .55s cubic-bezier(.16,1,.3,1),opacity .9s .55s}
     /* Clear box expansion; connections stay below opaque nodes. */
@@ -598,6 +575,63 @@
     .differentiator-layer{position:absolute;left:72px;right:72px;top:222px;bottom:90px;opacity:0;visibility:hidden;transform:translateY(16px);transition:opacity .45s,transform .45s}.market-position-slide[data-build-current='3'] .market-map{visibility:hidden;opacity:0}.market-position-slide[data-build-current='3'] .differentiator-layer{visibility:visible;opacity:1;transform:none}.connected-claim{max-width:1000px;font:600 42px/1.2 'Space Grotesk',sans-serif;letter-spacing:-.04em}.connected-steps{display:flex;gap:9px;align-items:center;flex-wrap:wrap;margin-top:35px}.connected-steps span{padding:15px 18px;border:1px solid var(--line);border-radius:13px;background:var(--brand-soft);font:500 13px/1 'IBM Plex Mono',monospace}.connected-steps i{font-style:normal;color:var(--acid)}.connected-note{margin-top:27px;max-width:950px;font-size:19px;line-height:1.5;color:var(--muted)}
     .legacy-deck { display:none!important; }
 
+
+    /* Vihaan / ai-3: presentation-wide branding and readable essential labels. */
+    .slide-head .brand-mini,.customer-story-slide .sai-rubric{font-size:15px;line-height:1.35;letter-spacing:.025em;max-width:1090px;gap:12px}
+    .brand-ant{width:29px;height:23px;object-fit:contain;flex:none}
+    .dark .brand-ant,.red .brand-ant{filter:brightness(0) invert(1)}
+    .slide-num{font-size:15px}.dark .slide-num{color:rgba(255,255,255,.65)}
+    .section-tag{font-size:15px;line-height:1.3}
+    #presentation-slides-wrapper ul{list-style:none;padding-left:0}
+    .quality-card li{border:0;font-size:16px;line-height:1.3;padding:4px 0}
+    .quality-finding span{font-size:16px;line-height:1.4}
+    .pop-card span{font-size:17px}
+    .arena-side{padding:24px}.arena-side h2{margin-top:14px!important}
+    .arena-agents{gap:8px;margin-top:18px}.arena-chip{font-size:17px;padding:10px 12px}
+    .arena-chip small{font-size:16px;line-height:1.3;opacity:.85}
+    .arena-result{font-size:15px;line-height:1.3;margin-top:14px;opacity:.85}
+    .verify-orb span{font-size:16px;line-height:1.3}
+    .connected-steps span{font-size:17px}
+    .finance-stage .price-card small{font-size:17px;line-height:1.6}
+    .pricing-terms{display:flex;align-items:center;justify-content:space-between;gap:20px;margin-top:24px;font-size:18px;color:white}
+    .pricing-terms b{color:#ffb09f}.funding-total span{font-size:17px}
+    .waterbar b{font-size:16px;line-height:1.4}
+    .market-detail-copy p{font-size:22px;line-height:1.4}.market-detail-copy p.section-tag{font-size:16px}
+    .market-ring-label span{font-size:14px;line-height:1.4}
+    .market-circle .ring-description{font-size:16px}.circle-start .ring-description{font-size:15px}.circle-win .ring-description{font-size:15px}
+    .targeting-strip{gap:20px;margin-top:14px}.targeting-strip div{padding:10px 14px;font-size:14px;line-height:1.5}
+    .targeting-strip b{display:inline-block;margin-bottom:4px}
+    .funnel-step span{font-size:15px;line-height:1.3}.funnel-step{padding:16px 10px}
+    .pilot-timeline{margin-top:20px}.pilot-week{padding:16px;min-height:130px}.pilot-week b{font-size:16px}.pilot-week p{font-size:17px;line-height:1.35;margin-top:12px}
+    .metric-chip{font-size:14px;line-height:1.3;padding:12px 6px}.pilot-metrics{margin-top:14px}
+    .expansion-strip{padding:14px 18px;margin-top:14px}.expansion-strip .kicker{font-size:15px}
+    .person-card span{font-size:15px;line-height:1.35}
+    .notes{max-height:calc(100vh - 36px);overflow-y:auto}
+    .solution-slide .agent-node small,.solution-slide .agent-node.is-muted small,.solution-slide .agent-node.is-highlighted small{font-size:14px;line-height:1.2}
+    .solution-slide .capability p{font-size:17px;white-space:normal}
+    .solution-slide .agent-node.is-muted small,.solution-slide .ari-core small{display:none}
+    .stat-block span{font-size:18px;line-height:1.35}
+    .impact-measures span{font-size:16px;line-height:1.4}
+    .team-center-ant{background:var(--brand-soft)}
+    .map-bubble{font-size:17px;padding:14px 18px}.axis-x,.axis-y{font-size:16px;line-height:1.2}
+    .market-map{height:420px;margin-top:30px}.axis-y{left:-85px}.axis-x{bottom:-36px}
+
+    /* Roadmap cards occupy a separate band above the ant's entire path. */
+    .road-stage{position:absolute;left:0;right:0;top:205px;bottom:32px;overflow:visible;isolation:isolate}
+    .road-svg{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+    .road-ant{position:absolute;left:0;top:0;width:76px;height:54px;object-fit:contain;filter:brightness(0) invert(1);z-index:5;offset-path:path('M80 445 C290 440 330 410 480 400 C650 388 735 345 900 335 C1030 326 1110 302 1200 300');offset-distance:2%;offset-rotate:0deg;transition:offset-distance .85s cubic-bezier(.2,.8,.2,1)}
+    .road-slide[data-build-current="1"] .road-ant{offset-distance:6%}
+    .road-slide[data-build-current="2"] .road-ant{offset-distance:27%}
+    .road-slide[data-build-current="3"] .road-ant{offset-distance:48%}
+    .road-slide[data-build-current="4"] .road-ant{offset-distance:70%}
+    .road-slide[data-build-current="5"] .road-ant{offset-distance:94%}
+    .road-sign{position:absolute;top:0;width:216px;min-height:254px;padding:18px 16px;border-radius:16px;background:white;color:var(--ink);box-shadow:0 14px 40px rgba(0,0,0,.2);opacity:0;visibility:hidden;transform:translateY(10px);transition:opacity .4s,transform .4s,visibility .4s;z-index:4}
+    .road-sign b{display:block;font:600 23px/1.15 'Space Grotesk',sans-serif}
+    .road-sign span{display:block;margin-top:15px;font-size:16px;line-height:1.4;color:#59423b}
+    .rs1{left:72px}.rs2{left:302px}.rs3{left:532px}.rs4{left:762px}.rs5{left:992px}
+    .road-slide[data-build-current="1"] .rs1,.road-slide[data-build-current="2"] .rs2,.road-slide[data-build-current="3"] .rs3,.road-slide[data-build-current="4"] .rs4,.road-slide[data-build-current="5"] .rs5{opacity:1;visibility:visible;transform:none}
+    .road-slide[data-build-current="2"] .rs1,.road-slide[data-build-current="3"] .rs1,.road-slide[data-build-current="3"] .rs2,.road-slide[data-build-current="4"] .rs1,.road-slide[data-build-current="4"] .rs2,.road-slide[data-build-current="4"] .rs3,.road-slide[data-build-current="5"] .rs1,.road-slide[data-build-current="5"] .rs2,.road-slide[data-build-current="5"] .rs3,.road-slide[data-build-current="5"] .rs4{opacity:.7;visibility:visible;transform:none}
+
     @media (prefers-reduced-motion: reduce) {
       *, *:before, *:after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
     }
@@ -621,7 +655,7 @@
       </section>
 
       <section class="slide red" data-note="Automatic animation. This is an illustrative IDOR/BOLA-style scenario, not a claimed customer incident: one AI-assisted endpoint omitted a resource-ownership check. Let the crack and falling markers create tension, then transition: one missing check can turn speed into blast radius. Target: 8 seconds.">
-        <div class="slide-head reveal"><span class="brand-mini"><i class="brand-dot" style="background:#fff"></i>Problem Definition</span><span class="slide-num">02</span></div>
+        <div class="slide-head reveal"><span class="brand-mini"><img class="brand-ant" src="ari-ant-mark.png" alt="" aria-hidden="true">Problem Definition</span><span class="slide-num">02</span></div>
         <h1 class="reveal" style="--delay:.16s;font-size:76px;margin-top:-14px">One check was missing.</h1>
         <div class="break-stage auto-break">
           <div class="founder-core">
@@ -635,7 +669,7 @@
       </section>
 
       <section class="slide dark slide-grid" data-note="Make the blast radius personal. Click through each consequence, then the $2.4M fictional liability scenario. Say: the company disappeared; the debt did not. Target: 18 seconds.">
-        <div class="slide-head"><span class="brand-mini"><i class="brand-dot"></i>Meaningful User Impact</span><span class="slide-num">03</span></div>
+        <div class="slide-head"><span class="brand-mini"><img class="brand-ant" src="ari-ant-mark.png" alt="" aria-hidden="true">Meaningful User Impact</span><span class="slide-num">03</span></div>
         <div class="break-everything">
           <h1>EVERYTHING<br>BROKE.</h1>
           <div class="impact-pop impact-a" data-build="1">Customers left</div>
@@ -647,26 +681,26 @@
         </div>
       </section>
 
-      <section class="slide" data-note="The graph draws on entry. Check Point recorded 1,158 weekly attack attempts per organization in 2023, 1,673 in 2024, and 1,968 in 2025: roughly 70% growth. These are telemetry-based attempts, not successful breaches or proof that AI coding caused the increase. IBM cost and Stack Overflow adoption are separate context. Target: 22 seconds.">
-        <div class="slide-head"><span class="brand-mini"><i class="brand-dot"></i>Evidence of need</span><span class="slide-num">04</span></div>
+      <section class="slide" data-note="The graph draws on entry. Check Point recorded 1,158 weekly attack attempts per organization in 2023, 1,673 in 2024, and 1,968 in 2025: roughly 70% growth. These are telemetry-based attempts, not successful breaches or proof that AI coding caused the increase. IBM cost and Stack Overflow adoption are separate context. Target: 22 seconds. Presenter reference, not spoken: Check Point Research / 2024, 2025 and 2026 Cyber Security Reports. Observed attack attempts; not successful breaches or a census of all hacks. Sources: IBM Cost of a Data Breach 2025 / Stack Overflow Developer Survey 2025 / Check Point Research Cyber Security Report 2026. Developer interviews in progress. IBM / Cost of a Data Breach 2025 Stack Overflow Developer Survey / 2025 Check Point / 2025 global telemetry">
+        <div class="slide-head"><span class="brand-mini"><img class="brand-ant" src="ari-ant-mark.png" alt="" aria-hidden="true">Evidence of need</span><span class="slide-num">04</span></div>
         <h2 style="font-size:52px">They’re moving faster, <span class="accent">too.</span></h2>
         <div class="problem-grid">
           <div class="stat-stack">
-            <div class="stat-block"><strong>$4.44M</strong><span>average global breach cost</span><small>IBM · Cost of a Data Breach 2025</small></div>
-            <div class="stat-block"><strong id="aiAdoptionStat">84%</strong><span>of developers use or plan to use AI tools</span><small>Stack Overflow Developer Survey · 2025</small></div>
-            <div class="stat-block"><strong>1,968</strong><span>weekly cyberattack attempts per organization</span><small>Check Point · 2025 global telemetry</small></div>
+            <div class="stat-block"><strong>$4.44M</strong><span>average global breach cost</span></div>
+            <div class="stat-block"><strong id="aiAdoptionStat">84%</strong><span>of developers use or plan to use AI tools</span></div>
+            <div class="stat-block"><strong>1,968</strong><span>weekly cyberattack attempts per organization</span></div>
           </div>
           <div class="chart-card">
-            <p class="section-tag">Cyberattack attempts · per organization / week</p>
+            <p class="section-tag">Cyberattack attempts / per organization / week</p>
             <div class="attack-growth"><b>+70%</b><span>since 2023</span></div>
             <canvas id="formationChart" width="660" height="305" aria-label="Weekly cyberattack attempts per organization: 1158 in 2023, 1673 in 2024, 1968 in 2025"></canvas>
-            <small class="chart-source">Check Point Research · 2024, 2025 and 2026 Cyber Security Reports.<br>Observed attack attempts; not successful breaches or a census of all hacks.</small>
+
           </div>
         </div>
-        <div class="source-foot">Sources: IBM Cost of a Data Breach 2025 · Stack Overflow Developer Survey 2025 · Check Point Research Cyber Security Report 2026. Developer interviews in progress.</div>
+
       </section>
 
-      <section class="slide dark customer-story-slide" data-note="Build 0 defines our ICP: small SaaS startups using AI to code, without a dedicated cybersecurity team. The founder graphic connects AI-assisted creation to a qualitative security-capacity gap. Bar lengths illustrate our hypothesis; they are not measured quantities. Say: AI expanded their ability to build, while their ability to secure it has not kept pace. This is an AI-intensified unmet need. Click 1 shows customer evidence before alternatives. Interviews, workflow observation, and prototype feedback are pending. Collect recent release examples, actual workarounds, attributable quotes, observed task completion, and exact prototype feedback; never invent findings or participants. Keep those collection instructions in notes. Click 2 shows fragmented tool categories; the intended point is the founder's integration burden, not a claim that every vendor lacks other features. Transition: Ari connects the workflow around the same code context. Target: 20 seconds.">
+      <section class="slide dark customer-story-slide" data-note="Build 0 defines our ICP: small SaaS startups using AI to code, without a dedicated cybersecurity team. The founder graphic connects AI-assisted creation to a qualitative security-capacity gap. Bar lengths illustrate our hypothesis; they are not measured quantities. Say: AI expanded their ability to build, while their ability to secure it has not kept pace. This is an AI-intensified unmet need. Click 1 shows customer evidence before alternatives. Interviews, workflow observation, and prototype feedback are pending. Collect recent release examples, actual workarounds, attributable quotes, observed task completion, and exact prototype feedback; never invent findings or participants. Keep those collection instructions in notes. Click 2 shows fragmented tool categories; the intended point is the founder's integration burden, not a claim that every vendor lacks other features. Transition: Ari connects the workflow around the same code context. Target: 20 seconds. Presenter reference, not spoken: Awaiting real customer evidence.">
         <div class="slide-head"><span class="sai-rubric"><img src="ari-ant-mark.png" alt="Ari ant"><span class="sr0">Problem Definition / User Understanding / Theme Relevance</span><span class="sr1">User Understanding / Evidence of Need</span><span class="sr2">Advantage over Alternatives</span></span><span class="slide-num">05</span></div>
         <span class="build-trigger" data-build="1"></span><span class="build-trigger" data-build="2"></span>
         <div class="customer-phase cp0">
@@ -689,7 +723,7 @@
             <article><div class="sai-evidence-visual" aria-hidden="true"><svg viewBox="0 0 140 100"><path d="M12 50C43 8 97 8 128 50C97 92 43 92 12 50Z" fill="none" stroke="#ff8a75" stroke-width="4"/><circle cx="70" cy="50" r="17" fill="none" stroke="#ff8a75" stroke-width="4"/></svg></div><div><h3>Workflow observation</h3><p>Pending</p></div></article>
             <article><div class="sai-evidence-visual" aria-hidden="true"><svg viewBox="0 0 140 100"><rect x="14" y="12" width="112" height="70" rx="10" fill="none" stroke="#ff8a75" stroke-width="4"/><path d="M14 31h112M48 94h44M70 82v12M44 51l17 12 31-16" fill="none" stroke="#ff8a75" stroke-width="4" stroke-linecap="round"/></svg></div><div><h3>Prototype feedback</h3><p>Pending</p></div></article>
           </div>
-          <p class="sai-evidence-bottom">Awaiting real customer evidence.</p>
+
         </div>
         <div class="customer-phase cp2">
           <h2>The tools see pieces.<br><span class="accent">The founder connects them.</span></h2>
@@ -703,7 +737,7 @@
       </section>
 
       <section class="slide dark solution-slide" data-note="Say: Ari connects three capabilities through shared code context. The reviewer checks intended behavior and proposes tested repairs. Seven security agents investigate weaknesses and independently verify repairs. Monitoring requests fresh checks when code changes. Walk through the seven roles, then restore the complete network. Close: Built around recognized security standards, our agents use clear labels, calculated risk scores, and findings people can check. Target: 30 seconds. Presenter reference, not spoken: Standards context: validated CWE weakness labels; explicit-metric CVSS severity calculations; checked CAPEC and ATT&amp;CK attack labels; D3FEND defense recommendations; OWASP risk categories; NIST incident-handling references. Runtime CVSS 4.0 is canonical; CVSS 3.1 is separately available, not the reverse. Alignment is not certification or compliance. Recommendations are not proof that controls are implemented. Audit logs can be tamper-evident, not tamper-proof. Implementation reference: hackatl-agentic-security/standards/README.md. Context is tied to a code version, retrieved code relationships, cited expectations, findings, and regression evidence. The reviewer proposes human-approved repairs and replays generated tests plus the existing suite; it does not know every business intention. Scout maps code and potential weaknesses. Probe executes bounded sandbox tests. Trace uses observed evidence to map attack paths. Diagnose identifies root cause. Patch proposes a scoped repair for human approval. Fortify recommends regression tests and guardrails. Verify independently reruns evidence on a fresh checkout. Clicks 1-7 spotlight these roles; click 8 restores all seven. Current end-to-end M7 model turns use scripted/fake transport; a complete live-provider seven-role trace has not been demonstrated. Monitoring follows code-change events and requests targeted checks while workers run; runtime telemetry ingestion is not implemented. RL trains and evaluates recommendations only in simulation, with no autonomous production action path. Sources: docs/hackatl-pitch-source-inventory.md, Slides 6-9; docs/demo-presenter-cues.md.">
-        <div class="slide-head"><span class="brand-mini"><i class="brand-dot"></i>Original Contribution · Thoughtful Approach</span><span class="slide-num">06</span></div>
+        <div class="slide-head"><span class="brand-mini"><img class="brand-ant" src="ari-ant-mark.png" alt="" aria-hidden="true">Original Contribution / Thoughtful Approach</span><span class="slide-num">06</span></div>
         <h2 style="font-size:50px">Seven specialists. <span class="accent">One intelligence.</span></h2>
         <div class="platform-overview">
           <h2>Review. Secure. <span class="accent">Recheck.</span></h2>
@@ -764,8 +798,8 @@
         </div>
       </section>
 
-      <section class="slide team-slide" data-note="Clicks 1–4: Red finds and proves, Blue fixes and fortifies, and independent Verify reruns the evidence. Click 5: protection follows software changes. GitHub push/PR events can trigger targeted reassessment or regression checks. Continuous coverage requires running workers; runtime telemetry ingestion is not implemented. The Defense Lab studies recommendations in simulation using reinforcement learning, or trial-and-error training. No RL recommendation acts on production systems. Target: 20 seconds.">
-        <div class="slide-head"><span class="brand-mini"><i class="brand-dot"></i>Original Contribution · Build Quality &amp; Appropriate Technology</span><span class="slide-num">07</span></div>
+      <section class="slide team-slide" data-note="Clicks 1–4: Red finds and proves, Blue fixes and fortifies, and independent Verify reruns the evidence. Click 5: protection follows software changes. GitHub push/PR events can trigger targeted reassessment or regression checks. Continuous coverage requires running workers; runtime telemetry ingestion is not implemented. The Defense Lab studies recommendations in simulation using reinforcement learning, or trial-and-error training. No RL recommendation acts on production systems. Target: 20 seconds. Presenter reference, not spoken: 24/7 coverage requires deployed, running workers. Current monitoring follows code events; runtime telemetry ingestion remains future work.">
+        <div class="slide-head"><span class="brand-mini"><img class="brand-ant" src="ari-ant-mark.png" alt="" aria-hidden="true">Original Contribution / Build Quality &amp; Appropriate Technology</span><span class="slide-num">07</span></div>
         <h2 style="font-size:48px">Attack. Defend. <span class="accent">Verify.</span></h2>
         <span class="build-trigger" data-build="1"></span><span class="build-trigger" data-build="2"></span><span class="build-trigger" data-build="3"></span><span class="build-trigger" data-build="4"></span>
         <div class="team-arena">
@@ -774,93 +808,93 @@
           <div class="arena-lock"></div><div class="verify-orb"><div><b>VERIFY</b><span>Trust neither side.<br>Retest everything.</span></div></div>
         </div>
         <span class="build-trigger" data-build="5"></span>
-        <div class="monitoring-stage"><h2>Software changes.<br><span class="accent">The checks should follow.</span></h2><div class="monitoring-columns"><article class="monitoring-panel"><span class="section-tag">Continuous code monitoring</span><h3>Recheck what changed.</h3><div class="change-loop"><span>New code change</span><i>→</i><span>Affected behavior</span><span>Regression evidence</span><i>←</i><span>Targeted reassessment</span></div><p>Verified fixes become evidence for later checks.</p></article><article class="monitoring-panel sim-panel"><span class="section-tag">Defense Lab · simulation only</span><h3>Study better<br>defensive decisions.</h3><p>Reinforcement learning trains through trial and error in a simulated network.</p><p>It produces explainable recommendations.<br>It does not take production actions.</p></article></div><p class="monitoring-limit">24/7 coverage requires deployed, running workers. Current monitoring follows code events; runtime telemetry ingestion remains future work.</p></div>
+        <div class="monitoring-stage"><h2>Software changes.<br><span class="accent">The checks should follow.</span></h2><div class="monitoring-columns"><article class="monitoring-panel"><span class="section-tag">Continuous code monitoring</span><h3>Recheck what changed.</h3><div class="change-loop"><span>New code change</span><i>→</i><span>Affected behavior</span><span>Regression evidence</span><i>←</i><span>Targeted reassessment</span></div><p>Verified fixes become evidence for later checks.</p></article><article class="monitoring-panel sim-panel"><span class="section-tag">Defense Lab / simulation only</span><h3>Study better<br>defensive decisions.</h3><p>Reinforcement learning trains through trial and error in a simulated network.</p><p>It produces explainable recommendations.<br>It does not take production actions.</p></article></div></div>
       </section>
 
-      <section class="slide market-position-slide" data-note="Clicks 1–2 position Ari by its coordinated workflow; category placement is qualitative, not a vendor benchmark. Click 3 states the differentiator: review, security, and monitoring share version-aware context and verification evidence. Other products can overlap these capabilities. Our proposition is the connected workflow for small teams, with a clear path from intended behavior to tested repair and later reassessment. Target: 16 seconds.">
-        <div class="slide-head"><span class="brand-mini"><i class="brand-dot"></i>Advantage over Alternatives</span><span class="slide-num">08</span></div>
+      <section class="slide market-position-slide" data-note="Clicks 1–2 position Ari by its coordinated workflow; category placement is qualitative, not a vendor benchmark. Click 3 states the differentiator: review, security, and monitoring share version-aware context and verification evidence. Other products can overlap these capabilities. Our proposition is the connected workflow for small teams, with a clear path from intended behavior to tested repair and later reassessment. Target: 16 seconds. Presenter reference, not spoken: Category placement reflects capability scope, not a claim that every vendor in a category is identical. Validate named comparisons before external distribution. The code reviewer, security team, and monitoring share context. Findings and verified fixes inform the next assessment.">
+        <div class="slide-head"><span class="brand-mini"><img class="brand-ant" src="ari-ant-mark.png" alt="" aria-hidden="true">Advantage over Alternatives</span><span class="slide-num">08</span></div>
         <h2 style="font-size:48px">From alerts to <span class="accent">verified outcomes.</span></h2>
         <div class="market-map">
           <span class="axis-x">Fragmented tool → End-to-end system</span><span class="axis-y">Reports → Proves + verifies</span>
           <div class="map-bubble map-static">STATIC SCANNERS</div><div class="map-bubble map-review">AI CODE REVIEW</div><div class="map-bubble map-assist">AI CODING ASSISTANTS</div><div class="map-bubble map-pentest">PENTESTS</div><div class="map-bubble map-platform">SECURITY PLATFORMS</div>
-          <div class="map-bubble map-ari" data-build="1">ARI AI</div><div class="map-ring" data-build="2"></div>
+          <div class="map-bubble map-ari" data-build="1">ARI</div><div class="map-ring" data-build="2"></div>
         </div>
-        <div class="source-foot">Category placement reflects capability scope, not a claim that every vendor in a category is identical. Validate named comparisons before external distribution.</div>
+
         <span class="build-trigger" data-build="3"></span>
-        <div class="differentiator-layer"><p class="connected-claim">One understanding of the code.<br><span class="accent">From intended behavior to tested repair.</span></p><div class="connected-steps"><span>UNDERSTAND</span><i>→</i><span>REVIEW</span><i>→</i><span>PROVE</span><i>→</i><span>REPAIR</span><i>→</i><span>VERIFY</span><i>→</i><span>RECHECK</span></div><p class="connected-note">The code reviewer, security team, and monitoring share context.<br>Findings and verified fixes inform the next assessment.</p></div>
+        <div class="differentiator-layer"><p class="connected-claim">One understanding of the code.<br><span class="accent">From intended behavior to tested repair.</span></p><div class="connected-steps"><span>UNDERSTAND</span><i>→</i><span>REVIEW</span><i>→</i><span>PROVE</span><i>→</i><span>REPAIR</span><i>→</i><span>VERIFY</span><i>→</i><span>RECHECK</span></div></div>
       </section>
 
       <!-- FUTURE LIVE-DEMO INSERTION POINT: place the real product demo here when the hosted flow is ready. -->
 
-      <section class="slide quality-slide" data-note="Clicks 1–3 cover usability, accessibility, and limitations. Click 4 shows connect, review evidence, and approve, followed by independent verification. If presenting the actual product, show a reviewer bug, security investigation, approved patch, independent test results, change-triggered reassessment, then Defense Lab with a visible simulation label. Use a real run or labeled recording; this slide is an explanatory illustration. See docs/demo-presenter-cues.md. Click 5 returns to intended user benefit; time saved and trust still need user measurement. The full-chain local proof uses scripted model transport. Target: 24 seconds.">
-        <div class="slide-head"><span class="brand-mini"><i class="brand-dot"></i>Core Functionality · Build Quality &amp; Appropriate Technology</span><span class="slide-num">09</span></div>
+      <section class="slide quality-slide" data-note="Clicks 1–3 cover usability, accessibility, and limitations. Click 4 shows connect, review evidence, and approve, followed by independent verification. If presenting the actual product, show a reviewer bug, security investigation, approved patch, independent test results, change-triggered reassessment, then Defense Lab with a visible simulation label. Use a real run or labeled recording; this slide is an explanatory illustration. See docs/demo-presenter-cues.md. Click 5 returns to intended user benefit; time saved and trust still need user measurement. The full-chain local proof uses scripted model transport. Target: 24 seconds. Measurement reference, not spoken: baseline versus Ari is not yet measured; timed run and conditions are needed; observed user feedback is needed. Presenter reference, not spoken: Local workflow proof exists. Full-chain model transport is scripted; live-provider pilot validation is pending. The goal: less manual investigation and a clearer release decision. Customer impact still needs validation.">
+        <div class="slide-head"><span class="brand-mini"><img class="brand-ant" src="ari-ant-mark.png" alt="" aria-hidden="true">Core Functionality / Build Quality &amp; Appropriate Technology</span><span class="slide-num">09</span></div>
         <h2 style="font-size:48px">Built for trust, not theater.</h2>
         <span class="build-trigger" data-build="1"></span><span class="build-trigger" data-build="2"></span><span class="build-trigger" data-build="3"></span>
         <div class="quality-stage" style="margin-top:26px">
-          <div class="quality-window"><div class="quality-bar"><i></i><i></i><i></i></div><div class="quality-body"><div class="quality-finding"><b>Human-controlled workflow</b><span>Approval inbox before consequential actions.</span></div><div class="quality-finding"><b>Evidence in context</b><span>Attack path, patch, exact SHA, and Verify result together.</span></div><div class="quality-finding"><b>Honest system state</b><span>Live timeline, budget meter, persistence, and audit chain.</span></div></div></div>
+          <div class="quality-window"><div class="quality-body"><div class="quality-finding"><b>Human-controlled workflow</b><span>Approval inbox before consequential actions.</span></div><div class="quality-finding"><b>Evidence in context</b><span>Attack path, patch, exact SHA, and Verify result together.</span></div><div class="quality-finding"><b>Honest system state</b><span>Live timeline, budget meter, persistence, and audit chain.</span></div></div></div>
           <div class="quality-side"><div class="quality-card"><h3>Usability</h3><ul><li>One guided next action</li><li>Plain-language evidence</li><li>Hash-checked diff + reload persistence</li></ul></div><div class="quality-card"><h3>Accessibility</h3><ul><li>Skip link + visible keyboard focus</li><li>Text and glyphs, not color alone</li><li>Reduced-motion support</li></ul></div><div class="quality-card"><h3>Limitations</h3><ul><li>Full chain uses scripted model transport</li><li>No hosted production deployment yet</li><li>Live-provider + user pilots still required</li></ul></div></div>
         </div>
         <span class="build-trigger" data-build="4"></span><span class="build-trigger" data-build="5"></span>
         <div class="user-value-scene uv4">
           <h2>One founder. <span class="accent">One clear next action.</span></h2>
-          <div class="user-action-row"><article class="user-action-card"><em>01 · CONNECT</em><h3>Authorize one repo.</h3><p>Choose the code and the allowed scope.</p></article><article class="user-action-card"><em>02 · UNDERSTAND</em><h3>Review the evidence.</h3><p>See the attack path, affected change, and proposed repair.</p></article><article class="user-action-card"><em>03 · APPROVE</em><h3>Approve the fix.</h3><p>Ari independently retests the repair and records the result.</p></article></div>
+          <div class="user-action-row"><article class="user-action-card"><em>01 / CONNECT</em><h3>Authorize one repo.</h3><p>Choose the code and the allowed scope.</p></article><article class="user-action-card"><em>02 / UNDERSTAND</em><h3>Review the evidence.</h3><p>See the attack path, affected change, and proposed repair.</p></article><article class="user-action-card"><em>03 / APPROVE</em><h3>Approve the fix.</h3><p>Ari independently retests the repair and records the result.</p></article></div>
           <div class="value-delivery">VALUE DELIVERED → A scoped repair + evidence that the fix passed verification.</div>
-          <p class="small muted" style="margin-top:15px">Local workflow proof exists. Full-chain model transport is scripted; live-provider pilot validation is pending.</p>
+
         </div>
         <div class="user-value-scene uv5">
           <h2>Give the founder <span class="accent">their focus back.</span></h2>
-          <div class="impact-comparison"><article class="impact-half"><span class="section-tag">Before · user hypothesis</span><b>Work out what to investigate.</b><p>Chase alerts. Reconstruct the risk.<br>Work out whether the patch helped.</p></article><article class="impact-half after"><span class="section-tag">With Ari · intended benefit</span><b>Review the evidence. Decide.</b><p>See a confirmed path, a scoped repair,<br>and an independent verification result.</p></article></div>
-          <div class="impact-measures"><div><b>Developer time saved</b><span>[BASELINE VS ARI · NOT YET MEASURED]</span></div><div><b>Time to verified fix</b><span>[TIMED RUN + CONDITIONS NEEDED]</span></div><div><b>Task success + trust</b><span>[OBSERVED USER FEEDBACK NEEDED]</span></div></div>
-          <p class="small muted" style="margin-top:18px">The goal: less manual investigation and a clearer release decision. Customer impact still needs validation.</p>
+          <div class="impact-comparison"><article class="impact-half"><span class="section-tag">Before / user hypothesis</span><b>Work out what to investigate.</b><p>Chase alerts. Reconstruct the risk.<br>Work out whether the patch helped.</p></article><article class="impact-half after"><span class="section-tag">With Ari / intended benefit</span><b>Review the evidence. Decide.</b><p>See a confirmed path, a scoped repair,<br>and an independent verification result.</p></article></div>
+          <div class="impact-measures"><div><b>Developer time saved</b><span>Not yet measured</span></div><div><b>Time to verified fix</b><span>Timed run pending</span></div><div><b>Task success + trust</b><span>User feedback pending</span></div></div>
+
         </div>
       </section>
 
-      <section class="slide dark finance-slide" data-note="Proposed pricing is $99/$299/$799, with 2/8/25 deep assessments. Extra assessments cost $25 and require budget approval. At a conservative $11 cost per run, Growth contributes about $190/month before fixed costs. A 40/45/15 mix gives $294 ARPA and $183.625 contribution; $31,250 fixed burn breaks even at 171 customers. All are forecasts to validate. Click through plans, costs, break-even, and the funding bridge. Target: 32 seconds.">
-        <div class="slide-head"><span class="brand-mini"><i class="brand-dot"></i>Revenue or Funding Model · Costs &amp; Sustainability</span><span class="slide-num">10</span></div>
+      <section class="slide dark finance-slide" data-note="Proposed pricing is $99/$299/$799, with 2/8/25 deep assessments. Extra assessments cost $25 and require budget approval. At a conservative $11 cost per run, Growth contributes about $190/month before fixed costs. A 40/45/15 mix gives $294 ARPA and $183.625 contribution; $31,250 fixed burn breaks even at 171 customers. All are forecasts to validate. Click through plans, costs, break-even, and the funding bridge. Target: 32 seconds. Presenter reference, not spoken: NEXT ROUND GATE / live-provider workflow / hosted beta / five paying customers / measured unit economics Proposed prices, not validated willingness to pay. $11/assessment cost assumption; 40/45/15 tier mix. Anchors: Semgrep + GitHub $30/contributor/month; Snyk Team starts $25/month. AWS, Anthropic, Stripe + Carta: source inventory.">
+        <div class="slide-head"><span class="brand-mini"><img class="brand-ant" src="ari-ant-mark.png" alt="" aria-hidden="true">Revenue or Funding Model / Costs &amp; Sustainability</span><span class="slide-num">10</span></div>
         <h2 style="font-size:47px">Funding gets us to market. <span class="accent">Revenue keeps us there.</span></h2>
         <span class="build-trigger" data-build="1"></span><span class="build-trigger" data-build="2"></span><span class="build-trigger" data-build="3"></span><span class="build-trigger" data-build="4"></span>
         <div class="finance-stage">
-          <div class="finance-scene fscene1"><div class="price-row"><div class="price-card"><p class="kicker muted">Founder</p><strong>$99</strong><small>/ month · 1 repository<br>2 deep assessments included<br>Monitoring + human-approved fixes</small></div><div class="price-card featured"><p class="kicker">Growth</p><strong>$299</strong><small>/ month · up to 5 repositories<br>8 deep assessments included<br>Seven agents + evidence history</small></div><div class="price-card"><p class="kicker muted">Scale</p><strong>$799</strong><small>/ month · up to 15 repositories<br>25 deep assessments included<br>Team controls + priority queue</small></div></div><p class="small muted" style="margin-top:20px">Proposed pricing · $25 per extra assessment · usage caps + budget approval</p></div>
-          <div class="finance-scene fscene2"><p class="section-tag">Growth plan · forecast monthly economics · 8 assessments</p><div class="waterfall"><div class="waterbar"><i style="height:250px"></i><b>$299<br>REVENUE</b></div><div class="waterbar"><i style="height:74px"></i><b>MODELS + SANDBOX<br>−$88</b></div><div class="waterbar"><i style="height:25px"></i><b>PAYMENTS<br>−$9</b></div><div class="waterbar"><i style="height:25px"></i><b>STORAGE + SUPPORT<br>−$12</b></div><div class="waterbar"><i style="height:159px"></i><b>$190<br>CONTRIBUTION</b></div></div></div>
+          <div class="finance-scene fscene1"><div class="price-row"><div class="price-card"><p class="kicker muted">Founder</p><strong>$99</strong><small>/ month / 1 repository<br>2 deep assessments included<br>Monitoring + human-approved fixes</small></div><div class="price-card featured"><p class="kicker">Growth</p><strong>$299</strong><small>/ month / up to 5 repositories<br>8 deep assessments included<br>Seven agents + evidence history</small></div><div class="price-card"><p class="kicker muted">Scale</p><strong>$799</strong><small>/ month / up to 15 repositories<br>25 deep assessments included<br>Team controls + priority queue</small></div></div><div class="pricing-terms"><b>Proposed plans</b><span>$25 / extra assessment</span><span>Usage caps + budget approval</span></div></div>
+          <div class="finance-scene fscene2"><p class="section-tag">Growth plan / forecast monthly economics / 8 assessments</p><div class="waterfall"><div class="waterbar"><i style="height:250px"></i><b>$299<br>REVENUE</b></div><div class="waterbar"><i style="height:74px"></i><b>MODELS + SANDBOX<br>−$88</b></div><div class="waterbar"><i style="height:25px"></i><b>PAYMENTS<br>−$9</b></div><div class="waterbar"><i style="height:25px"></i><b>STORAGE + SUPPORT<br>−$12</b></div><div class="waterbar"><i style="height:159px"></i><b>$190<br>CONTRIBUTION</b></div></div></div>
           <div class="finance-scene fscene3"><div class="finance-chart-wrap"><canvas id="economicsChart" width="680" height="300" aria-label="Forecast revenue and monthly operating costs"></canvas><div class="break-even"><p class="kicker">Forecast break-even</p><strong>~171</strong><p style="margin-top:12px">Blended customers</p><p class="small" style="margin-top:14px;opacity:.72">62% contribution margin<br>$31.25K fixed monthly burn</p></div></div></div>
-          <div class="finance-scene fscene4"><div class="funding-grid"><div class="funding-total"><div><strong>$750K</strong><span>PRE-SEED · 18 MONTHS</span></div></div><div class="allocation"><div class="allocation-row"><b>45%</b><div class="allocation-track"><i style="--w:45%"></i></div><span>Product + security</span></div><div class="allocation-row"><b>25%</b><div class="allocation-track"><i style="--w:25%"></i></div><span>Models + sandbox</span></div><div class="allocation-row"><b>20%</b><div class="allocation-track"><i style="--w:20%"></i></div><span>Pilots + acquisition</span></div><div class="allocation-row"><b>10%</b><div class="allocation-track"><i style="--w:10%"></i></div><span>Compliance + ops</span></div><p class="funding-gate">NEXT ROUND GATE · live-provider workflow · hosted beta · five paying customers · measured unit economics</p></div></div></div>
+          <div class="finance-scene fscene4"><div class="funding-grid"><div class="funding-total"><div><strong>$750K</strong><span>PRE-SEED / 18 MONTHS</span></div></div><div class="allocation"><div class="allocation-row"><b>45%</b><div class="allocation-track"><i style="--w:45%"></i></div><span>Product + security</span></div><div class="allocation-row"><b>25%</b><div class="allocation-track"><i style="--w:25%"></i></div><span>Models + sandbox</span></div><div class="allocation-row"><b>20%</b><div class="allocation-track"><i style="--w:20%"></i></div><span>Pilots + acquisition</span></div><div class="allocation-row"><b>10%</b><div class="allocation-track"><i style="--w:10%"></i></div><span>Compliance + ops</span></div></div></div></div>
         </div>
-        <div class="source-foot">Proposed prices, not validated willingness to pay. $11/assessment cost assumption; 40/45/15 tier mix. Anchors: Semgrep + GitHub $30/contributor/month; Snyk Team starts $25/month. AWS, Anthropic, Stripe + Carta: source inventory.</div>
+
       </section>
 
-      <section class="slide market-slide" data-note="Do not say TAM/SAM/SOM. Click through the full opportunity, starting market, and obtainable first segment. Target: 20 seconds.">
-        <div class="slide-head"><span class="brand-mini"><i class="brand-dot"></i>Market / Beneficiary Sizing</span><span class="slide-num">11</span></div>
+      <section class="slide market-slide" data-note="Do not say TAM/SAM/SOM. Click through the full opportunity, starting market, and obtainable first segment. Target: 20 seconds. Presenter reference, not spoken: Source: U.S. Census 2022 SUSB, NAICS 511210. Caveat: software publishers are an ICP proxy; the data does not identify SaaS, AI adoption, or security staffing. 2022 Census SUSB / NAICS 511210 / forecast ACV 2022 Census SUSB / transparent ICP proxy First beachhead / management target, not traction">
+        <div class="slide-head"><span class="brand-mini"><img class="brand-ant" src="ari-ant-mark.png" alt="" aria-hidden="true">Market / Beneficiary Sizing / Forecast</span><span class="slide-num">11</span></div>
         <span class="build-trigger" data-build="1"></span><span class="build-trigger" data-build="2"></span><span class="build-trigger" data-build="3"></span>
-        <div class="market-viewport"><div class="market-world" aria-label="Outer circle: U.S. software publishers under 500 employees. Middle circle: firms with 5–49 employees. Inner circle: first 50 target customers."><div class="market-circle circle-full"><span class="ring-description"><strong>Under 500 employees</strong>U.S. software publishers</span></div><div class="market-circle circle-start"><span class="ring-description"><strong>5–49 employees</strong>U.S. software publishers</span></div><div class="market-circle circle-win"><span class="ring-description"><strong>Initial beachhead</strong>Target paying<br>customers</span></div></div><div class="market-ring-labels"><div class="market-ring-label"><b>13,254</b><span>OUTER · FULL OPPORTUNITY</span></div><div class="market-ring-label"><b>4,246</b><span>MIDDLE · STARTING COHORT</span></div><div class="market-ring-label"><b>50</b><span>INNER · FIRST CUSTOMERS</span></div></div></div>
-        <div class="market-detail"><div class="market-detail-copy md1"><p class="section-tag">The full opportunity</p><strong>$47.6M</strong><p>13,254 U.S. software-publisher firms under 500 employees × $3,588 annual Growth plan.</p><small>2022 Census SUSB · NAICS 511210 · forecast ACV</small></div><div class="market-detail-copy md2"><p class="section-tag">Our starting market</p><strong>$15.2M</strong><p>4,246 firms with 5–49 employees × $3,588 annual Growth plan.</p><small>2022 Census SUSB · transparent ICP proxy</small></div><div class="market-detail-copy md3"><p class="section-tag">What we can win first</p><strong>$179K</strong><p>50 customers × $3,588 annual Growth plan.</p><small>First beachhead · management target, not traction</small></div></div>
-        <div class="source-foot">Source: U.S. Census 2022 SUSB, NAICS 511210. Caveat: software publishers are an ICP proxy; the data does not identify SaaS, AI adoption, or security staffing.</div>
+        <div class="market-viewport"><div class="market-world" aria-label="Outer circle: U.S. software publishers under 500 employees. Middle circle: firms with 5–49 employees. Inner circle: first 50 target customers."><div class="market-circle circle-full"><span class="ring-description"><strong>Under 500 employees</strong>U.S. software publishers</span></div><div class="market-circle circle-start"><span class="ring-description"><strong>5–49 employees</strong>U.S. software publishers</span></div><div class="market-circle circle-win"><span class="ring-description"><strong>Initial beachhead</strong>Target paying<br>customers</span></div></div><div class="market-ring-labels"><div class="market-ring-label"><b>13,254</b><span>FULL OPPORTUNITY</span></div><div class="market-ring-label"><b>4,246</b><span>STARTING COHORT</span></div><div class="market-ring-label"><b>50</b><span>FIRST CUSTOMERS</span></div></div></div>
+        <div class="market-detail"><div class="market-detail-copy md1"><p class="section-tag">The full opportunity</p><strong>$47.6M</strong><p>13,254 U.S. software-publisher firms under 500 employees × $3,588 annual Growth plan.</p></div><div class="market-detail-copy md2"><p class="section-tag">Our starting market</p><strong>$15.2M</strong><p>4,246 firms with 5–49 employees × $3,588 annual Growth plan.</p></div><div class="market-detail-copy md3"><p class="section-tag">What we can win first</p><strong>$179K</strong><p>50 customers × $3,588 annual Growth plan.</p></div></div>
+
       </section>
 
-      <section class="slide adoption-slide" data-note="This is a forecast pipeline, not achieved traction. Explain the qualification, controlled pilot, measured proof, and expansion motion. Target: 26 seconds.">
-        <div class="slide-head"><span class="brand-mini"><i class="brand-dot"></i>Adoption &amp; First Pilot</span><span class="slide-num">12</span></div>
+      <section class="slide adoption-slide" data-note="This is a forecast pipeline, not achieved traction. Explain the qualification, controlled pilot, measured proof, and expansion motion. Target: 26 seconds. Presenter reference, not spoken: 100 → 30 → 10 → 5 → 3 is an initial acquisition forecast. Pilot success metrics are targets to validate.">
+        <div class="slide-head"><span class="brand-mini"><img class="brand-ant" src="ari-ant-mark.png" alt="" aria-hidden="true">Adoption &amp; First Pilot / Forecast</span><span class="slide-num">12</span></div>
         <h2 style="font-size:45px">From conversation to <span class="accent">trusted defense.</span></h2>
-        <div class="targeting-strip"><div><b>FILTER</b> · 5–50 employees · B2B SaaS · GitHub · frequent deploys · sensitive data · no AppSec</div><div><b>CHANNELS</b> · Atlanta network · accelerators · founder outreach · GitHub · agencies</div></div>
+        <div class="targeting-strip"><div><b>FILTER</b><br>5–50 employees / B2B SaaS / GitHub / frequent deploys / sensitive data / no AppSec</div><div><b>CHANNELS</b><br>Atlanta network / accelerators / founder outreach / GitHub / agencies</div></div>
         <span class="build-trigger" data-build="1"></span><span class="build-trigger" data-build="2"></span><span class="build-trigger" data-build="3"></span><span class="build-trigger" data-build="4"></span>
         <div class="adoption-funnel"><div class="funnel-step"><strong>100</strong><span>qualified targets</span></div><div class="funnel-arrow">→</div><div class="funnel-step"><strong>30</strong><span>conversations</span></div><div class="funnel-arrow">→</div><div class="funnel-step"><strong>10</strong><span>design partners</span></div><div class="funnel-arrow">→</div><div class="funnel-step"><strong>5</strong><span>active pilots</span></div><div class="funnel-arrow">→</div><div class="funnel-step"><strong>3</strong><span>paid customers</span></div></div>
         <div class="pilot-timeline"><div class="pilot-week"><b>WEEK 01</b><p>Authorize one repo. Establish the baseline.</p></div><div class="pilot-week"><b>WEEK 02</b><p>Run in observation-only mode.</p></div><div class="pilot-week"><b>WEEK 03</b><p>Validate safely in an isolated sandbox.</p></div><div class="pilot-week"><b>WEEK 04</b><p>Approve, patch, and independently verify.</p></div></div>
         <div class="pilot-metrics"><div class="metric-chip">ATTACK PATHS</div><div class="metric-chip">FALSE POSITIVES</div><div class="metric-chip">TIME TO FIX</div><div class="metric-chip">TIME SAVED</div><div class="metric-chip">COST / RUN</div><div class="metric-chip">SCOPE SAFETY</div></div>
-        <div class="expansion-strip"><b>1 repository → 5 repositories → continuous monitoring</b><span class="kicker">LAND · PROVE · EXPAND</span></div>
-        <div class="source-foot">100 → 30 → 10 → 5 → 3 is an initial acquisition forecast. Pilot success metrics are targets to validate.</div>
+        <div class="expansion-strip"><b>1 repository → 5 repositories → continuous monitoring</b><span class="kicker">LAND / PROVE / EXPAND</span></div>
+
       </section>
 
       <section class="slide dark road-slide" data-note="Move the Ari ant down the actual road. Every date, customer count, and revenue figure is a target. Target: 24 seconds.">
-        <div class="slide-head"><span class="brand-mini"><i class="brand-dot"></i>Roadmap &amp; Scale</span><span class="slide-num">13</span></div>
+        <div class="slide-head"><span class="brand-mini"><img class="brand-ant" src="ari-ant-mark.png" alt="" aria-hidden="true">Roadmap &amp; Scale</span><span class="slide-num">13</span></div>
         <h2 style="font-size:46px">Proof first. <span class="accent">Scale second.</span></h2>
         <span class="build-trigger" data-build="1"></span><span class="build-trigger" data-build="2"></span><span class="build-trigger" data-build="3"></span><span class="build-trigger" data-build="4"></span><span class="build-trigger" data-build="5"></span>
         <div class="road-stage">
-          <svg class="road-svg" viewBox="0 0 1280 600" preserveAspectRatio="none" aria-hidden="true"><defs><linearGradient id="roadGlow" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#8f2f1e"/><stop offset="1" stop-color="#c2452d"/></linearGradient></defs><path d="M70 590 C280 470 340 500 480 390 C620 280 760 315 900 205 C1020 110 1110 125 1260 30" fill="none" stroke="rgba(255,255,255,.12)" stroke-width="140" stroke-linecap="round"/><path d="M70 590 C280 470 340 500 480 390 C620 280 760 315 900 205 C1020 110 1110 125 1260 30" fill="none" stroke="url(#roadGlow)" stroke-width="86" stroke-linecap="round"/><path d="M70 590 C280 470 340 500 480 390 C620 280 760 315 900 205 C1020 110 1110 125 1260 30" fill="none" stroke="rgba(255,255,255,.75)" stroke-width="4" stroke-dasharray="18 22"/></svg>
+          <svg class="road-svg" viewBox="0 0 1280 483" preserveAspectRatio="none" aria-hidden="true"><defs><linearGradient id="roadGlow" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#8f2f1e"/><stop offset="1" stop-color="#c2452d"/></linearGradient></defs><path d="M80 445 C290 440 330 410 480 400 C650 388 735 345 900 335 C1030 326 1110 302 1200 300" fill="none" stroke="rgba(255,255,255,.12)" stroke-width="140" stroke-linecap="round"/><path d="M80 445 C290 440 330 410 480 400 C650 388 735 345 900 335 C1030 326 1110 302 1200 300" fill="none" stroke="url(#roadGlow)" stroke-width="86" stroke-linecap="round"/><path d="M80 445 C290 440 330 410 480 400 C650 388 735 345 900 335 C1030 326 1110 302 1200 300" fill="none" stroke="rgba(255,255,255,.75)" stroke-width="4" stroke-dasharray="18 22"/></svg>
           <img class="road-ant" src="ari-ant-mark.png" alt="Ari ant moving along the roadmap">
-          <div class="road-sign rs1"><b>Today · proven locally</b><span>Seven roles · isolated validation · approvals · independent Verify · scripted full-chain model transport</span></div><div class="road-sign rs2"><b>0–3 months · target</b><span>Live-provider trace · hosted beta · GitHub App · hardened runner · 3 design partners</span></div><div class="road-sign rs3"><b>3–6 months · target</b><span>10 pilots · 5 paying customers · measured precision, time, acceptance, and cost</span></div><div class="road-sign rs4"><b>6–12 months · target</b><span>50 customers · multi-repo · monitoring · partnerships · SOC 2 readiness</span></div><div class="road-sign rs5"><b>12–24 months · target</b><span>GitLab + Bitbucket · enterprise controls · compliance evidence · $1M ARR gate</span></div>
+          <div class="road-sign rs1"><b>Today<br>proven locally</b><span>Seven roles<br>isolated validation<br>approvals<br>independent Verify<br>scripted full-chain model transport</span></div><div class="road-sign rs2"><b>0–3 months<br>target</b><span>Live-provider trace<br>hosted beta<br>GitHub App<br>hardened runner<br>3 design partners</span></div><div class="road-sign rs3"><b>3–6 months<br>target</b><span>10 pilots<br>5 paying customers<br>measured precision, time, acceptance, and cost</span></div><div class="road-sign rs4"><b>6–12 months<br>target</b><span>50 customers<br>multi-repo<br>monitoring<br>partnerships<br>SOC 2 readiness</span></div><div class="road-sign rs5"><b>12–24 months<br>target</b><span>GitLab + Bitbucket<br>enterprise controls<br>compliance evidence<br>$1M ARR gate</span></div>
         </div>
       </section>
 
       <section class="slide team-final-slide" data-note="Click through six contributors. Click 7 connects everyone through Ari; click 8 pulls the cards into one coordinated team. Photos remain placeholders; ownership lanes come from the repository. Target: 14 seconds.">
-        <div class="slide-head"><span class="brand-mini"><i class="brand-dot"></i>Build Quality &amp; Appropriate Technology · Team Contributions</span><span class="slide-num">14</span></div>
+        <div class="slide-head"><span class="brand-mini"><img class="brand-ant" src="ari-ant-mark.png" alt="" aria-hidden="true">Build Quality &amp; Appropriate Technology / Team Contributions</span><span class="slide-num">14</span></div>
         <h2 style="font-size:46px">Built by people who <span class="accent">ship.</span></h2>
         <span class="build-trigger" data-build="8"></span>
         <svg class="team-connectors" data-build="7" viewBox="0 0 1136 430" aria-hidden="true"><path d="M180 85L568 215M568 85L568 215M956 85L568 215M180 345L568 215M568 345L568 215M956 345L568 215"/></svg>
@@ -868,7 +902,7 @@
         <img class="team-center-ant" data-build="7" src="ari-ant-mark.png" alt="Ari ant connecting the team">
       </section>
 
-      <section class="slide dark finale-slide" data-note="Reveal six visual memories. Click 7 connects them; click 8 collapses the story into the ant and ARI AI. Hold the final brand frame and say: AI has made it possible for anyone to build software. Our goal is to make sure anyone can build software they can trust. This is our vision, not a guarantee of vulnerability-free software. Target: 12 seconds.">
+      <section class="slide dark finale-slide" data-note="Reveal six visual memories. Click 7 connects them; click 8 collapses the story into the ant and ARI. Hold the final brand frame and say: AI has made it possible for anyone to build software. Our goal is to make sure anyone can build software they can trust. This is our vision, not a guarantee of vulnerability-free software. Target: 12 seconds.">
         <div class="recap-stage">
           <div class="recap-cell" data-build="1" aria-label="Founder growth graphic"><svg viewBox="0 0 300 180"><circle cx="150" cy="48" r="22" fill="none" stroke="#fff" stroke-width="6"/><path d="M150 70v58m0-36l-50 34m50-34l50 34m-50 2l-34 48m34-48l34 48" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round"/><circle cx="50" cy="45" r="27" fill="#c2452d"/><circle cx="250" cy="45" r="27" fill="#c2452d"/><rect x="32" y="132" width="55" height="28" rx="8" fill="#f8e7e3"/><rect x="214" y="132" width="55" height="28" rx="8" fill="#f8e7e3"/></svg></div>
           <div class="recap-cell" data-build="2" aria-label="Breach graphic"><svg viewBox="0 0 300 180"><path d="M20 90h260" stroke="#c2452d" stroke-width="26"/><path d="M154 15l-18 50 25 21-34 35 24 44" fill="none" stroke="#fff" stroke-width="7"/><rect x="38" y="38" width="62" height="38" rx="10" fill="#f8e7e3" transform="rotate(-10 38 38)"/><rect x="200" y="112" width="62" height="38" rx="10" fill="#f8e7e3" transform="rotate(12 200 112)"/></svg></div>
@@ -878,7 +912,7 @@
           <div class="recap-cell" data-build="6" aria-label="Roadmap graphic"><svg viewBox="0 0 300 180"><path d="M10 170C65 120 94 145 142 95s78-27 148-85" fill="none" stroke="#c2452d" stroke-width="42" stroke-linecap="round"/><path d="M10 170C65 120 94 145 142 95s78-27 148-85" fill="none" stroke="#fff" stroke-width="3" stroke-dasharray="10 12"/><circle cx="55" cy="140" r="10" fill="#fff"/><circle cx="145" cy="92" r="10" fill="#fff"/><circle cx="245" cy="34" r="10" fill="#fff"/></svg></div>
           <svg class="recap-lines" data-build="7" viewBox="0 0 1164 628" aria-hidden="true"><g stroke="#c2452d" stroke-width="5" fill="none"><path d="M194 157L582 314M582 157L582 314M970 157L582 314M194 471L582 314M582 471L582 314M970 471L582 314"/></g></svg><img class="recap-ant" data-build="7" src="ari-ant-mark.png" alt="Ari ant at the center of the complete story">
         </div>
-        <div class="brand-finale" data-build="8"><img src="ari-ant-mark.png" alt="Ari ant"><h1>ARI AI</h1></div>
+        <div class="brand-finale" data-build="8"><img src="ari-ant-mark.png" alt="Ari ant"><h1>ARI</h1></div>
       </section>
     </main>
 
@@ -1048,7 +1082,6 @@
     <button id="fullscreen" aria-label="Toggle fullscreen">⛶</button>
   </div>
   <aside class="notes" id="notes"><b>Speaker note</b><span id="noteText"></span></aside>
-  <div class="hint">click / → build story · ← rewind · N notes · F fullscreen</div>
 
   <script>
     const wrapper = document.querySelector('#presentation-slides-wrapper');
@@ -1078,19 +1111,19 @@
         node.classList.toggle('is-muted', bounded >= 1 && bounded <= 7 && bounded !== nodeIndex + 1);
       });
       const rubricByBuild = slide.classList.contains('customer-story-slide')
-        ? ['Problem Definition · User Understanding · Theme Relevance', 'Advantage over Alternatives', 'User Understanding · Evidence of Need']
+        ? ['Problem Definition / User Understanding / Theme Relevance', 'Advantage over Alternatives', 'User Understanding / Evidence of Need']
         : slide.classList.contains('team-slide')
-          ? ['Original Contribution · Build Quality & Appropriate Technology', 'Original Contribution · Thoughtful Approach', 'Original Contribution · Thoughtful Approach', 'Testing & Limitations · Thoughtful Approach', 'Build Quality & Appropriate Technology', 'Thoughtful Approach · Core Functionality']
+          ? ['Original Contribution / Build Quality & Appropriate Technology', 'Original Contribution / Thoughtful Approach', 'Original Contribution / Thoughtful Approach', 'Testing & Limitations / Thoughtful Approach', 'Build Quality & Appropriate Technology', 'Thoughtful Approach / Core Functionality']
         : slide.classList.contains('quality-slide')
-          ? ['Core Functionality · Build Quality & Appropriate Technology', 'Usability & Accessibility', 'Usability & Accessibility', 'Testing & Limitations', 'Core Functionality · Problem-Solution Fit', 'Meaningful User Impact']
+          ? ['Core Functionality / Build Quality & Appropriate Technology', 'Usability & Accessibility', 'Usability & Accessibility', 'Testing & Limitations', 'Core Functionality / Problem-Solution Fit', 'Meaningful User Impact']
           : slide.classList.contains('finance-slide')
-            ? ['Revenue or Funding Model · Costs & Sustainability', 'Revenue or Funding Model', 'Costs & Sustainability', 'Costs & Sustainability', 'Revenue or Funding Model']
+            ? ['Revenue or Funding Model / Costs & Sustainability', 'Revenue or Funding Model', 'Costs & Sustainability', 'Costs & Sustainability', 'Revenue or Funding Model']
             : null;
       if (rubricByBuild) {
         const label = slide.querySelector('.brand-mini');
         if (label) {
-          const dot = label.querySelector('.brand-dot');
-          label.replaceChildren(...(dot ? [dot] : []), document.createTextNode(rubricByBuild[bounded] || rubricByBuild[0]));
+          const icon = label.querySelector('.brand-ant');
+          label.replaceChildren(...(icon ? [icon] : []), document.createTextNode(rubricByBuild[bounded] || rubricByBuild[0]));
         }
       }
       if (slide.classList.contains('finance-slide') && bounded === 3 && window.economicsChart) {
@@ -1170,6 +1203,7 @@
     if (window.Chart) {
       Chart.defaults.font.family = 'IBM Plex Mono, monospace';
       Chart.defaults.color = '#6b5752';
+      Chart.defaults.font.size = 15;
       window.attackChart = new Chart(document.querySelector('#formationChart'), {
         type: 'line',
         data: {

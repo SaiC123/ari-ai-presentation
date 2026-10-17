@@ -1,8 +1,8 @@
-# Ari AI HackATL Pitch — Source Inventory
+# Ari HackATL Pitch - Source Inventory
 
 Accessed October 17, 2026. Forecasts and fictional story figures are explicitly separated from external facts below.
 
-## Revised deck assumptions — current version
+## Revised deck assumptions - current version
 
 These figures supersede the initial financial and market scenarios documented below.
 
@@ -22,17 +22,17 @@ At a 40/45/15 mix, monthly revenue per customer is **$294**, modeled cost is **$
 
 Using the revised Growth annual value of **$3,588**, the unchanged Census account proxies produce **$47.55M** (13,254 firms), **$15.23M** (4,246 firms), and **$179,400** (50 target customers). The earlier $11,988 ACV scenario below is historical and no longer appears in the current deck.
 
-## Slide 1 — Fictional founder
+## Slide 1 - Fictional founder
 
 - `$4.2M raised`, `12K customers`, `30 deploys/week`, and `0 security hires` are fictional storytelling assumptions for a composite founder. They are not interview results or claims about a real company.
 - Developer interviews are still in progress; the deck labels them as a placeholder rather than inventing quotes.
 
-## Slides 2–3 — Fictional breach scenario
+## Slides 2–3 - Fictional breach scenario
 
 - The missing resource-ownership check is an IDOR/BOLA-style scenario chosen because Ari is designed to reason about authorization paths.
 - `$2.4M owed` and every consequence attached to the founder are fictional scenario assumptions, not a real case study.
 
-## Slide 4 — Evidence of need
+## Slide 4 - Evidence of need
 
 | Claim | Value used | Source | Notes |
 |---|---:|---|---|
@@ -42,7 +42,7 @@ Using the revised Growth annual value of **$3,588**, the unchanged Census accoun
 
 Annual values plotted: 2019 `3.518M`; 2020 `4.380M`; 2021 `5.409M`; 2022 `5.084M`; 2023 `5.489M`; 2024 `5.247M`; 2025 `5.637M`. That is a `60.2%` increase from 2019 to 2025, with real dips preserved rather than drawing a false monotonic line.
 
-## Slides 6–9 — Product and prototype truth
+## Slides 6–9 - Product and prototype truth
 
 The revised solution introduction explicitly presents three pillars: intelligent code review, seven-agent cybersecurity, and continuous code-change monitoring. All use version-aware shared context. The simulation-based RL component studies defensive recommendations.
 
@@ -53,14 +53,14 @@ The revised solution introduction explicitly presents three pillars: intelligent
 
 Repository inspected: `work/hackatl-agentic-security`.
 
-- Seven roles — Scout, Probe, Trace, Diagnose, Patch, Fortify, Verify: `docs/07_SEVEN_AGENT_CYBERTEAM.md`, `security-agents/security_agents/agents/__init__.py`, and `security-agents/README.md`.
-- Red Team — Scout, Probe, Trace. Blue Team — Diagnose, Patch, Fortify. Verify is intentionally independent and reruns evidence in a fresh environment.
-- Current proof — local M7 flow with a signed push, reassessment, pinned commit, seven-role review, human approvals, patches, independent Verify, regression records, and an event-log/audit chain: `docs/devin_qa/m7/DEMO_EXECUTION_REPORT.md` and `coordination/MILESTONES.md`.
-- Usability — guided next action, live timeline, budget meter, approval inbox, evidence chain, exact SHA links, hash-checked diff, and reload persistence: `frontend/README.md`.
-- Accessibility implemented — skip link, visible keyboard focus, reduced-motion support, semantic labels, and glyph-plus-text status badges: `frontend/app/layout.tsx`, `frontend/app/globals.css`, `frontend/components/ui/index.tsx`, `frontend/tests/unit/brand-ui.test.tsx`, and `frontend/tests/e2e/brand.spec.ts`.
-- Limitations — the complete M7 model turns use scripted/fake transport; there is no complete live-provider seven-role trace, production deployment, or public URL yet. Real GitHub App installation-token flow and real-user pilot validation remain future work. The deck does not claim formal WCAG certification.
+- Seven roles - Scout, Probe, Trace, Diagnose, Patch, Fortify, Verify: `docs/07_SEVEN_AGENT_CYBERTEAM.md`, `security-agents/security_agents/agents/__init__.py`, and `security-agents/README.md`.
+- Red Team - Scout, Probe, Trace. Blue Team - Diagnose, Patch, Fortify. Verify is intentionally independent and reruns evidence in a fresh environment.
+- Current proof - local M7 flow with a signed push, reassessment, pinned commit, seven-role review, human approvals, patches, independent Verify, regression records, and an event-log/audit chain: `docs/devin_qa/m7/DEMO_EXECUTION_REPORT.md` and `coordination/MILESTONES.md`.
+- Usability - guided next action, live timeline, budget meter, approval inbox, evidence chain, exact SHA links, hash-checked diff, and reload persistence: `frontend/README.md`.
+- Accessibility implemented - skip link, visible keyboard focus, reduced-motion support, semantic labels, and glyph-plus-text status badges: `frontend/app/layout.tsx`, `frontend/app/globals.css`, `frontend/components/ui/index.tsx`, `frontend/tests/unit/brand-ui.test.tsx`, and `frontend/tests/e2e/brand.spec.ts`.
+- Limitations - the complete M7 model turns use scripted/fake transport; there is no complete live-provider seven-role trace, production deployment, or public URL yet. Real GitHub App installation-token flow and real-user pilot validation remain future work. The deck does not claim formal WCAG certification.
 
-## Slide 10 — Pricing, costs, sustainability, and funding
+## Slide 10 - Pricing, costs, sustainability, and funding
 
 ### External pricing anchors
 
@@ -68,7 +68,7 @@ Repository inspected: `work/hackatl-agentic-security`.
 - [GitHub Advanced Security / Code Security](https://github.com/security/advanced-security): Code Security listed at `$30/active committer/month` when researched.
 - [Snyk plans](https://snyk.io/plans/): Team listed at `$25/month`; AI Pentesting uses assessment credits, with 4,000 credits per assessment and a stated `$1` per credit when researched.
 
-Ari’s Founder `$299`, Growth `$999`, and Scale `$2,499` monthly plans are management forecasts to test in pilots—not published prices or booked revenue.
+Ari’s Founder `$299`, Growth `$999`, and Scale `$2,499` monthly plans are management forecasts to test in pilots; not published prices or booked revenue.
 
 ### Model, sandbox, storage, and payments
 
@@ -94,9 +94,9 @@ Break-even forecast: `$31,250` fixed monthly burn divided by `$682` blended cont
 - [Carta pre-seed guidance](https://carta.com/learn/startups/fundraising/pre-seed-funding/): commonly cited pre-seed range of `$150K–$1M` and `12–24 months` of runway.
 - [Carta State of Seed 2025](https://carta.com/data/resources/state-of-seed-2025/): SAFEs remain the dominant pre-seed instrument in Carta’s data.
 
-The `$750K` pre-seed, 18-month runway, and 45/25/20/10 allocation are Ari management forecasts. An 18-month bridge implies roughly `$41.7K/month` total burn. It assumes founder-heavy compensation and roughly two to three market-rate full-time equivalents—not six market salaries.
+The `$750K` pre-seed, 18-month runway, and 45/25/20/10 allocation are Ari management forecasts. An 18-month bridge implies roughly `$41.7K/month` total burn. It assumes founder-heavy compensation and roughly two to three market-rate full-time equivalents; not six market salaries.
 
-## Slide 11 — Bottom-up market opportunity
+## Slide 11 - Bottom-up market opportunity
 
 Source: [U.S. Census 2022 Statistics of U.S. Businesses](https://www.census.gov/data/tables/2022/econ/susb/2022-susb-annual.html) and the [detailed firm-size file](https://www2.census.gov/programs-surveys/susb/tables/2022/us_state_naics_detailedsizes_2022.txt), NAICS `511210` Software Publishers.
 
@@ -108,22 +108,70 @@ Source: [U.S. Census 2022 Statistics of U.S. Businesses](https://www.census.gov/
 
 The Census category includes non-SaaS software publishers and misses some SaaS companies classified elsewhere. It does not identify AI-tool adoption or dedicated security staffing. The first 50 customers are a target, not achieved traction.
 
-## Slides 12–13 — Adoption and roadmap forecasts
+## Slides 12–13 - Adoption and roadmap forecasts
 
 - `100 → 30 → 10 → 5 → 3` is an initial 90-day acquisition forecast, not an achieved funnel.
 - Pilot success metrics are targets: confirmed attack paths, false-positive rate, time to verified fix, developer time saved, cost per assessment, fix acceptance, and zero out-of-scope actions.
 - All future dates, customer counts, and revenue milestones on the roadmap are management targets.
 - Repository-grounded next technical gates: complete a live-provider seven-role trace, publish/rehearse the sandbox image, run the browser flow, implement the real GitHub App/webhook path, host staging, strengthen isolation, measure precision/time/cost on authorized pilot repositories, then expand languages and SCM integrations.
 
-## Slide 14 — Team
+## Slide 14 - Team
 
 Names were supplied by the user. Ownership lanes come from `coordination/OWNERSHIP.md`:
 
-- Saicharan Chowdarapu — AI Review & Repair
-- Vihaan Krishna — Product Frontend & E2E
-- Alan Mozhoor — Security Agents & Sandboxing
-- Adam Isaac — RL Defense & Evaluation
-- Srihith Yandra — Backend, Monitoring & Contracts
-- Sarosh Doddaka — Code Intelligence & Retrieval
+- Saicharan Chowdarapu - AI Review & Repair
+- Vihaan Krishna - Product Frontend & E2E
+- Alan Mozhoor - Security Agents & Sandboxing
+- Adam Isaac - RL Defense & Evaluation
+- Srihith Yandra - Backend, Monitoring & Contracts
+- Sarosh Doddaka - Code Intelligence & Retrieval
 
 Photo circles remain intentional placeholders pending team headshots.
+
+
+## Presenter reference moved from visible slides
+
+The following reference text remains in the corresponding speaker notes. External source links and research limitations above remain authoritative. Visible forecast, research-pending, and simulation labels remain part of the presentation.
+
+### Slide 4
+
+- Check Point Research / 2024, 2025 and 2026 Cyber Security Reports. Observed attack attempts; not successful breaches or a census of all hacks.
+- Sources: IBM Cost of a Data Breach 2025 / Stack Overflow Developer Survey 2025 / Check Point Research Cyber Security Report 2026. Developer interviews in progress.
+- IBM / Cost of a Data Breach 2025
+- Stack Overflow Developer Survey / 2025
+- Check Point / 2025 global telemetry
+
+### Slide 5
+
+- Awaiting real customer evidence.
+
+### Slide 7
+
+- 24/7 coverage requires deployed, running workers. Current monitoring follows code events; runtime telemetry ingestion remains future work.
+
+### Slide 8
+
+- Category placement reflects capability scope, not a claim that every vendor in a category is identical. Validate named comparisons before external distribution.
+- The code reviewer, security team, and monitoring share context. Findings and verified fixes inform the next assessment.
+
+### Slide 9
+
+- Measurement requirements: baseline versus Ari is not yet measured; a timed run and conditions are needed; observed user feedback is needed.
+- Local workflow proof exists. Full-chain model transport is scripted; live-provider pilot validation is pending.
+- The goal: less manual investigation and a clearer release decision. Customer impact still needs validation.
+
+### Slide 10
+
+- NEXT ROUND GATE / live-provider workflow / hosted beta / five paying customers / measured unit economics
+- Proposed prices, not validated willingness to pay. $11/assessment cost assumption; 40/45/15 tier mix. Anchors: Semgrep + GitHub $30/contributor/month; Snyk Team starts $25/month. AWS, Anthropic, Stripe + Carta: source inventory.
+
+### Slide 11
+
+- Source: U.S. Census 2022 SUSB, NAICS 511210. Caveat: software publishers are an ICP proxy; the data does not identify SaaS, AI adoption, or security staffing.
+- 2022 Census SUSB / NAICS 511210 / forecast ACV
+- 2022 Census SUSB / transparent ICP proxy
+- First beachhead / management target, not traction
+
+### Slide 12
+
+- 100 → 30 → 10 → 5 → 3 is an initial acquisition forecast. Pilot success metrics are targets to validate.
