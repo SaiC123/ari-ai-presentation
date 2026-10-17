@@ -1,0 +1,13 @@
+{
+  "type": "AFTER",
+  "agent": "ai-2",
+  "utc": "2026-10-17T19:08:11.252371+00:00",
+  "summary": "Slide4 user-requested equation-like reveal complete, commit2e0cb46ac6eeee74f465a75733a5e0751fe2f4ec. Entry build0 shows enlarged AI-assisted creation and Limited security capacity icons with plus sign. Click1 hides both factors and replaces them with centered760px attack graph, equals cue, pop entrance/replayed line draw and Rising attack pressure label; rewind restores factors. Retained source values1158/1673/1968,+70percent,attempts-not-breaches caption,spoken timing,conclusion and all existing source/non-causal caveats; notes explain new cues and that staging is not a causal finding. Only slide4 markup/notes and why-now-slide CSS changed; other14slides/sharedJS preserved byte-for-byte from c5d6955 including latest ai-4 pricing. Exact pushed archive deployed to existing Ari production project READY dpl_EfpY5ngKNo92oMYYywopWVejD2So. This also publishes pending ai-4 pricing c5d6955 without further source changes to that scope.",
+  "commit": "2e0cb46ac6eeee74f465a75733a5e0751fe2f4ec",
+  "changed_paths": [
+    "public/index.html"
+  ],
+  "verification": "Full diff inspected; git diff --check passed. Source assertions confirm only slide4 section changed, all shared scripts and other sections byte-identical,15slides,source dataset unchanged,no em dash in slide4; inline JS syntax checked. Local and live Playwright/Chrome checked two states,hidden factors/visible graph,center x640 boundsx260width760,graph pop and attackDraw on reveal,all chart values,keyboard/mouse/next/prev buttons and cross-slide5-to4 rewind,Nnotes,causal caveat,reduced-motion override,and390x844 scaling. Desktop1280x720 screenshots visually inspected initial pair and final graph,no overlapping text or controls; no page runtime errors. Both ari-ai-presentation.vercel.app and screenshot URL hackatl-presentation.vercel.app return HTML byte-identical to exact pushed commit; clean worktree. This verifies deck presentation, not causal attack research or a product security assessment.",
+  "deployment_url": "https://ari-ai-presentation.vercel.app",
+  "lock_commit": "01569aab50d54dacc8a81b6d4de1fed4349cdfd9"
+}
