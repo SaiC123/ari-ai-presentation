@@ -33,8 +33,8 @@ The domain allowance is not an actual IONOS quote. The user wrote “ios”; reg
 | Support/storage forecast allowance | $5 | $12 | $30 |
 | Base modeled cost | $12.231 | $26.771 | $66.521 |
 | User-supplied AWS platform allocation | $7 | $7 | $7 |
-| **AWS-adjusted modeled cost** | **$19.521** | **$35.221** | **$77.871** |
-| **Contribution before fixed budget** | **$29.479** | **$113.779** | **$321.129** |
+| **AWS-adjusted modeled cost** | **$19.231** | **$33.771** | **$73.521** |
+| **Contribution before fixed budget** | **$19.769** | **$65.229** | **$175.479** |
 | **Modeled contribution margin** | **50.7%** | **65.9%** | **70.5%** |
 
 The $7 AWS share is a user-provided allocation, not an independently verified AWS quote or a measured marginal cost. It is counted once in customer delivery cost, not again in the $500 fixed budget. No simultaneous Railway production charge is added. Confirm that AWS platform costs are distinct from the sandbox reserve and storage allowance; if they overlap, reconcile against the bill. A shared AWS bill may not scale linearly with customer count, particularly at very low volume.
