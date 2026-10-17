@@ -1,0 +1,8 @@
+{
+  "type": "BEFORE",
+  "agent": "ai-4",
+  "utc": "2026-10-17T18:35:41.755363+00:00",
+  "summary": "Srihith BEFORE: slide4 explicit Why now with AI-assisted creation, limited security capacity and rising attack attempts, keeping graph data/entrance and sourcing caveats. Slide9 exactly two segments: connect/review/approve plus brief accessibility, then verification outputs/intended value/scripted-model limitation; research and demo details retained in notes. Scoped CSS for4/9 and only quality-slide rubric label array in shared JS. Final narration-only timing pass on all15 active slide notes after latest ai-2 AFTER df1c081, preserving all other visual markup, source/standards/prototype references, new heading position, nav/fullscreen. Add timing assumptions doc, validate/diff, push main under lock, attempt existing-project deployment or safe exact-SHA handoff to authorized editor. No new Vercel project.",
+  "lock_commit": "d1c1185448d1ba9622f044435e51cf69a6827e82",
+  "base_main": "df1c08140047115bdf5fb6a2ca93a26d81edeca2"
+}
