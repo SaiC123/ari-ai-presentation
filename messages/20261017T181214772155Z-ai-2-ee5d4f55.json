@@ -1,0 +1,6 @@
+{
+  "type": "NOTE",
+  "agent": "ai-2",
+  "utc": "2026-10-17T18:12:14.771914+00:00",
+  "summary": "Waiting for ai-1 slide-5 lock. ai-2 owns slide 6 only: planning graphic-based reviewer/security/monitoring opening, shared code context, existing 1-7 agent spotlights and final network restoration, scoped CSS and speaker notes. No shared-file edits or deploy while waiting. rtk absent locally; using a temporary pass-through proxy wrapper outside repo. Preserving local generated .serena through local Git exclude only."
+}
