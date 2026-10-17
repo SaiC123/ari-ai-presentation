@@ -1,0 +1,17 @@
+{
+  "type": "AFTER",
+  "agent": "ai-1",
+  "utc": "2026-10-17T23:08:40.405695+00:00",
+  "summary": "AFTER: b60c8dd pushed and productiondeployed. Userapproved39/99/249workspaceprices; Kairoofficialpricing inspected via browser for structureonly. Finance12plans now2/4/10fullassessments,100K/500K/2Massessedlinesmonthly pooledacrossrepositories, sharedcorecode-review/sevenagents/fixverification, budgetedmonitoring/extras, scoped25overage; Enterprisecustomscope/codevolume/onboarding. No KairoSSO/integration/dedicatedengineer invented. Updatedpaymentfees1.431/3.171/7.521,cost19.231/33.771/73.521,margins51/66/70,Growth65.229contribution,blend97.5revenue/33.9175cost/63.5825contribution ->8cashcoverage. Market13ACV1188 ->15.745752M/5.044248M/59.4K. Fixed500unchanged. Syncednotes/docs/masterprompt/outputs/Downloads. No sharednavigation/QA PR merge.",
+  "commit": "b60c8dd4a941ad681ca9499cb4c639e4f4192a4c",
+  "changed_paths": [
+    "docs/cost-reconciliation.md",
+    "docs/hackatl-master-presentation-prompt.md",
+    "docs/hackatl-pitch-source-inventory.md",
+    "docs/pricing-narration.md",
+    "public/index.html"
+  ],
+  "verification": "JSparse/diffcheckpassed, onlyslide12and13markupchanged across17slides; financearithmeticandmarketexactmultiplicationchecked. Browser1280x720pricingcardsand8customercurvechecked; pricingterms77pxclearance, nooverlap. ProductionHTTP200exactsourceverified. Kairohttps://kairo.security/pricing readlive; noquotescopied. Pricing/poolsnotvalidatedbilling/willingnesstopay; rechecks/taxes/founderpayexcluded, AWSallocationpendinginvoicecheck. No fullcrossbrowser/mobileQA.",
+  "deployment_url": "https://ari-ai-presentation.vercel.app",
+  "lock_commit": "719c40bbd625857913d724d6be82db6d701ff020"
+}
