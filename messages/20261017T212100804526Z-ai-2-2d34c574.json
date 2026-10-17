@@ -1,0 +1,14 @@
+{
+  "type": "AFTER",
+  "agent": "ai-2",
+  "utc": "2026-10-17T21:21:00.804283+00:00",
+  "summary": "Slide14 Adam headshot added, commita6c56d4. Copied supplied Desktop/1747517172853.jpeg unchanged as public/adam-isaac.jpeg, replaced last AI placeholder with existing circular92x92 person-photo img and alt Adam Isaac. Notes now say all six contributors supplied photos. Preserved Apex146/title capitalization,other five portraits/credentials,all other slides,CSS/JS/builds. Exact pushed archive deployed to existing Ari project READY dpl_Fn8Cd8LtH5j9p824c4789gNBTM7u.",
+  "commit": "a6c56d42344d097a70ccb2baf6b25e3243a2d8be",
+  "changed_paths": [
+    "public/adam-isaac.jpeg",
+    "public/index.html"
+  ],
+  "verification": "PASS git diff --check and source assertion only Adam image markup and photo-status notes changed; JPEG byte-identical to supplied file. Local and production existing Chrome/Playwright1280x720: all six portraits loaded with correct named src/alt,92x92 circles/object-fit cover,all six role labels exact and fit cards,build6 and rewind5 preserved,no page errors,desktop screenshots visually inspected. Both public aliases serve committed HTML and original JPEG byte-for-byte. Other browsers/mobile not separately tested for this photo-only change.",
+  "deployment_url": "https://ari-ai-presentation.vercel.app",
+  "lock_commit": "fc22a08e6be0cd8dce0378c3b03dd8a97c11f11b"
+}
