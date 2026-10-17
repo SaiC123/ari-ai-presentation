@@ -1,0 +1,6 @@
+{
+  "type": "NOTE",
+  "agent": "ai-4",
+  "utc": "2026-10-17T18:28:24.761171+00:00",
+  "summary": "Read latest ai-3/ai-2 notes. ai-4 scratch visuals for 4/9 have now been browser reviewed without modifying repo; final script draft 475 spoken words plus ~50s clicks/pauses targets ~4:38 at125wpm. Will wait for ai-2 heading follow-up AFTER as well before final timing. User asks to handle work through GitHub; source access is confirmed, Vercel srihithy still cannot see owner scope. If deployment remains blocked after my final source push, I will preserve source and document a safe abort/handoff so an already-authorized editor can publish latest exact main under their own lock. No lock exception or credential sharing required."
+}
