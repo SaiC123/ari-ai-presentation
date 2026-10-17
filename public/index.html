@@ -669,18 +669,26 @@
     .ai4-quality-slide .ai4-proof-segment { opacity:0;visibility:hidden;transform:translateY(12px);pointer-events:none; }
     .ai4-quality-slide[data-build-current='1'] .ai4-action-segment { opacity:0;visibility:hidden;transform:translateY(-12px);pointer-events:none; }
     .ai4-quality-slide[data-build-current='1'] .ai4-proof-segment { opacity:1;visibility:visible;transform:none;pointer-events:auto; }
-    .ai4-quality-slide .ai4-action-flow,.ai4-quality-slide .ai4-evidence-flow { display:grid;grid-template-columns:1fr 58px 1fr 58px 1fr;align-items:center;text-align:center;gap:12px;margin-top:62px; }
-    .ai4-quality-slide article svg { display:block;width:200px;height:160px;margin:0 auto 18px; }
-    .ai4-quality-slide h3 { font-size:37px;line-height:1.1;letter-spacing:-.03em; }
-    .ai4-quality-slide article p { margin:12px 0 0;font-size:24px;color:var(--muted); }
-    .ai4-quality-slide .ai4-flow-arrow { font-size:46px;color:var(--acid); }
-    .ai4-quality-slide .ai4-access { position:absolute;bottom:45px;left:0;right:0;text-align:center;font-size:23px;color:var(--muted); }
-    .ai4-quality-slide .ai4-evidence-flow { margin-top:49px; }
-    .ai4-quality-slide .ai4-evidence-flow article svg { width:180px;height:140px; }
-    .ai4-quality-slide .ai4-evidence-flow h3 { font-size:29px; }
-    .ai4-quality-slide .ai4-value { margin:37px 0 0;text-align:center;font-size:28px;font-weight:600; }
-    .ai4-quality-slide .ai4-limitation { position:absolute;bottom:45px;left:0;right:0;text-align:center;font-size:23px;color:var(--muted); }
-    .ai4-quality-slide .ai4-limitation b { color:var(--acid);margin-right:12px; }
+    .ai4-quality-slide .ai4-action-flow,.ai4-quality-slide .ai4-evidence-flow { display:grid;grid-template-columns:1fr 40px 1fr 40px 1fr;align-items:center;text-align:center;gap:12px;margin-top:34px;counter-reset:quality-step; }
+    .ai4-quality-slide article { position:relative;height:300px;padding:25px 18px 24px;border:1px solid var(--line);border-radius:20px;background:linear-gradient(155deg,#fff,var(--brand-soft));box-sizing:border-box;box-shadow:0 10px 28px rgba(28,18,16,.04);counter-increment:quality-step; }
+    .ai4-quality-slide article:before { content:"0" counter(quality-step);position:absolute;left:20px;top:18px;font:500 14px/1 "IBM Plex Mono",monospace;color:var(--acid); }
+    .ai4-quality-slide article svg { display:block;width:152px;height:132px;margin:17px auto 17px; }
+    .ai4-quality-slide h3 { font-size:31px;line-height:1.12;letter-spacing:-.035em; }
+    .ai4-quality-slide article p { margin:11px 0 0;font-size:19px;line-height:1.3;color:var(--muted); }
+    .ai4-quality-slide .ai4-flow-arrow { display:grid;place-items:center;width:40px;height:40px;border:1px solid var(--line);border-radius:50%;font-size:25px;color:var(--acid);background:white; }
+    .ai4-quality-slide .ai4-access,.ai4-quality-slide .ai4-proof-footer { position:absolute;bottom:38px;left:0;right:0;min-height:88px;padding:20px 24px;box-sizing:border-box;border:1px solid var(--line);border-radius:16px;background:white;display:flex;align-items:center;justify-content:space-between;gap:24px; }
+    .ai4-quality-slide .ai4-access b { font-size:22px;letter-spacing:-.025em; }
+    .ai4-quality-slide .ai4-access span { font-size:17px;color:var(--muted);padding-left:22px;border-left:1px solid var(--line); }
+    .ai4-quality-slide .ai4-evidence-flow article { background:var(--ink);color:white;border-color:var(--ink); }
+    .ai4-quality-slide .ai4-evidence-flow article:before { content:"OUTPUT 0" counter(quality-step);color:#ffb09f; }
+    .ai4-quality-slide .ai4-evidence-flow h3 { font-size:27px; }
+    .ai4-quality-slide .ai4-value { margin:0;font-size:23px;font-weight:600;line-height:1.25;max-width:430px; }
+    .ai4-quality-slide .ai4-value span { display:block;font:500 12px/1.2 "IBM Plex Mono",monospace;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin-bottom:8px; }
+    .ai4-quality-slide .ai4-limitation { margin:0;padding-left:26px;border-left:1px solid var(--line);font-size:18px;line-height:1.4;color:var(--muted);max-width:440px; }
+    .ai4-quality-slide .ai4-limitation b { display:block;color:var(--acid);font-size:15px;margin-bottom:4px; }
+    .ai4-quality-slide.active[data-build-current='0'] .ai4-action-flow article,.ai4-quality-slide.active[data-build-current='1'] .ai4-evidence-flow article { animation:rise .5s both; }
+    .ai4-quality-slide article:nth-of-type(2) { animation-delay:.08s!important; }
+    .ai4-quality-slide article:nth-of-type(3) { animation-delay:.16s!important; }
 
   </style>
 </head>
@@ -909,7 +917,7 @@ REFERENCE AND CUES, NOT SPOKEN: CUE: Segment 1 is visible on entry. Click once f
             <span class="ai4-flow-arrow" aria-hidden="true">→</span>
             <article><svg viewBox="0 0 200 160" aria-hidden="true"><path d="M100 12l65 25v53c0 31-27 51-65 65-38-14-65-34-65-65V37z" fill="#f8e7e3" stroke="#c2452d" stroke-width="4"/><path d="M66 82l23 23 45-48" fill="none" stroke="#1f7a4d" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/></svg><h3>Approve</h3><p>The proposed repair</p></article>
           </div>
-          <p class="ai4-access">Keyboard access · clear labels · reduced motion</p>
+          <div class="ai4-access"><b>Designed for clarity</b><span>Keyboard access</span><span>Clear labels</span><span>Reduced motion</span></div>
         </div>
         <div class="ai4-quality-segment ai4-proof-segment">
           <h2>What verification <span class="accent">produces</span></h2>
@@ -920,8 +928,7 @@ REFERENCE AND CUES, NOT SPOKEN: CUE: Segment 1 is visible on entry. Click once f
             <span class="ai4-flow-arrow" aria-hidden="true">+</span>
             <article><svg viewBox="0 0 180 140" aria-hidden="true"><path d="M38 15h74l31 31v80H38z" fill="#f8e7e3" stroke="#c2452d" stroke-width="3"/><path d="M112 15v31h31M57 70h67M57 91h50" fill="none" stroke="#c2452d" stroke-width="6" stroke-linecap="round"/></svg><h3>Saved test evidence</h3></article>
           </div>
-          <p class="ai4-value">Intended value: a clearer release decision</p>
-          <p class="ai4-limitation"><b>Prototype</b> Full-chain AI responses are scripted</p>
+          <div class="ai4-proof-footer"><p class="ai4-value"><span>Intended value</span>A clearer release decision</p><p class="ai4-limitation"><b>PROTOTYPE LIMITATION</b>Full-chain AI responses are scripted</p></div>
         </div>
       </section>
 
