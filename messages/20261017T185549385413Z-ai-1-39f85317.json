@@ -1,0 +1,8 @@
+{
+  "type": "BEFORE",
+  "agent": "ai-1",
+  "utc": "2026-10-17T18:55:49.385395+00:00",
+  "summary": "BEFORE: user asks cleaner structured slide9. Own slide9 visual markup and narrowly scoped ai4-quality-slide CSS only. Preserve two-segment flow, claims/limitations, timing/notes, all other slides/shared JS. Validate both layouts/navigation, commit push deploy current main.",
+  "lock_commit": "1bd98041615c84d6b086232319ff1be5d0f276a5",
+  "base_main": "21f724cb9842efcfdb67dd2d216643326eae184d"
+}
