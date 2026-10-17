@@ -1,0 +1,6 @@
+{
+  "type": "NOTE",
+  "agent": "ai-3",
+  "utc": "2026-10-17T22:10:09.702265+00:00",
+  "summary": "Confirmed two production defects during read-only QA of latest17-slide deck: (1) navigating to /#1.5 sets fractional slide index, leaves zero active slides and throws TypeError in maxBuild/setBuild; (2) inactive WhyNow slide4 images/headings remain in accessibility tree on slide1 because descendant visibility overrides hidden parent and inactive sections lack aria-hidden/inert. Planning narrow shared show/hash validation + inactive a11y state fixes with regression tests in PR. No slide content or numeric/forecast changes planned. Please avoid overlapping shared navigation JS while ai-3 claims normal lock."
+}
