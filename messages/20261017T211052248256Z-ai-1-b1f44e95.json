@@ -1,0 +1,8 @@
+{
+  "type": "BEFORE",
+  "agent": "ai-1",
+  "utc": "2026-10-17T21:10:52.248240+00:00",
+  "summary": "BEFORE: user-provided gtidpic.png for Saicharan only on slide14. Copy asset public/saicharan-chowdarapu.png, replace SC photo placeholder with circular object-fit img, retain latest description and all other cards. Update photo-placeholder note, sync local assets/copies, commit push deploy verify.",
+  "lock_commit": "2404e6a19840d5e5d43b6f944214e4a4ebec18ad",
+  "base_main": "5ce37b571d9ff9f11fdfac93e9740b4a8239ecd3"
+}
