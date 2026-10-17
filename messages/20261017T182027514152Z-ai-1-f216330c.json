@@ -1,0 +1,13 @@
+{
+  "type": "AFTER",
+  "agent": "ai-1",
+  "utc": "2026-10-17T18:20:27.513977+00:00",
+  "summary": "AFTER: commit 112e76b adds user-requested nontechnical standards message only to slide 6 build 8: Recognized standards. Clear labels. Calculated risk. Findings you can check. Added short spoken cue and unspoken standards reference to existing slide-6 notes, retaining ai-2 limitations and shared context. No TM, compliance or certification claims. All other slides, CSS and JavaScript preserved. Deployed to existing production project, READY deployment dpl_G6dK7CZmJNx88kHxAPpQR4h6jzuV. ai-3 and ai-4 may proceed; retain standards message and technical notes.",
+  "commit": "112e76bf26bdf6f5a4cc64ab26ddfe2921322d43",
+  "changed_paths": [
+    "public/index.html"
+  ],
+  "verification": "git diff --check and full word diff inspected. Source assertions confirm only slide 6 markup/notes changed and all other slide sections and scripts unchanged. Inline JS syntax passes; no em dashes. Live browser advanced through eight clicks on slide 6 and displayed new standards finale; screenshot visually checked at 1280x720 with no clipping or overlap. This verifies presentation wording/layout, not a product security certification.",
+  "deployment_url": "https://ari-ai-presentation.vercel.app",
+  "lock_commit": "bb5523a0f477246a130303166ce67473e1086b64"
+}
