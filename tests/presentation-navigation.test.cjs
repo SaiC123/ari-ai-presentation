@@ -400,3 +400,5 @@ test("The progress bar starts at the first slide fraction", () => { const d = pr
 test("Progress reaches 100 percent and rewinds with the slide index", () => { const d = presentation(); d.key('End'); assert.equal(d.selectors['#progress'].style.width, '100%'); d.hashChange('#2'); assert.ok(Math.abs(parseFloat(d.selectors['#progress'].style.width) - 200 / 3) < 1e-10); });
 
 test("Wide viewports fit the presentation to their height", () => { const d = presentation(); d.resize(2560, 720); assert.equal(d.selectors['#presentation-slides-wrapper'].style.transform, 'translate(-50%, -50%) scale(1)'); assert.equal(d.active(), 0); });
+
+test("Portrait viewports fit the full deck width without changing state", () => { const d = presentation('#2'); d.click('#next'); d.resize(390, 844); assert.equal(d.selectors['#presentation-slides-wrapper'].style.transform, 'translate(-50%, -50%) scale(0.3046875)'); assert.equal(d.slides[1].dataset.buildCurrent, '1'); });
