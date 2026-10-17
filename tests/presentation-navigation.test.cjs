@@ -414,3 +414,5 @@ test("Build requests clamp to the first and last reveal states", () => { const d
 test("Every forward shortcut advances exactly one build", () => { for (const key of ['ArrowRight', 'PageDown', ' ', 'Enter']) { const d = presentation('#2'); assert.equal(d.key(key), true); assert.equal(d.slides[1].dataset.buildCurrent, '1', key); assert.equal(d.active(), 1); } });
 
 test("Every rewind shortcut removes exactly one build", () => { for (const key of ['ArrowLeft', 'PageUp', 'Backspace']) { const d = presentation('#2'); d.build(1, 2); assert.equal(d.key(key), true); assert.equal(d.slides[1].dataset.buildCurrent, '1', key); assert.equal(d.active(), 1); } });
+
+test("Unassigned keys leave navigation and browser defaults alone", () => { const d = presentation('#2'); for (const key of ['Tab', 'ArrowUp', 'ArrowDown', 'x', 'Escape']) assert.equal(d.key(key), false); assert.equal(d.slides[1].dataset.buildCurrent, '0'); assert.equal(d.selectors['#notes'].classList.contains('show'), false); });
