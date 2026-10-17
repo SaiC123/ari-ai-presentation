@@ -44,6 +44,13 @@ Annual values plotted: 2019 `3.518M`; 2020 `4.380M`; 2021 `5.409M`; 2022 `5.084M
 
 ## Slides 6–9 — Product and prototype truth
 
+The revised solution introduction explicitly presents three pillars: intelligent code review, seven-agent cybersecurity, and continuous code-change monitoring. All use version-aware shared context. The simulation-based RL component studies defensive recommendations.
+
+- `code-review/README.md`: the reviewer cites expectations, reviews changes, generates behavioral tests, and proposes approval-gated repairs. Generated tests and the existing suite are replayed. A proposed patch is distinct from independent Verify. The reviewer uses retrieved context, not an infallible understanding of an entire company's intent.
+- `monitoring/README.md`: normalizes GitHub push/pull-request events, correlates impact, and selects targeted/full/regression reassessment. Continuous coverage requires deployed and running workers. Runtime telemetry ingestion is not implemented.
+- `rl-defense/README.md`: implemented reinforcement-learning environment, evaluation, and typed recommendations are simulation only. There is no production action path from a recommendation. Simulation results do not establish real-world defensive effectiveness.
+- `docs/demo-presenter-cues.md` in this presentation repository supplies the real-workflow demo sequence and labeling requirements. No fake application recording or actual assessment is embedded in the deck.
+
 Repository inspected: `work/hackatl-agentic-security`.
 
 - Seven roles — Scout, Probe, Trace, Diagnose, Patch, Fortify, Verify: `docs/07_SEVEN_AGENT_CYBERTEAM.md`, `security-agents/security_agents/agents/__init__.py`, and `security-agents/README.md`.
