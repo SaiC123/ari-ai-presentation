@@ -327,3 +327,18 @@ test("fullscreen state follows native entry and browser Escape exit", async () =
   assert.equal(deck.selectors['#fullscreen'].getAttribute('aria-pressed'), 'false');
   assert.equal(deck.selectors['#fullscreen'].getAttribute('aria-label'), 'Enter fullscreen');
 });
+
+test("rapid fullscreen activation waits for the pending browser request", async () => {
+  let requests = 0;
+  let resolve;
+  const deck = presentation('#1', { requestFullscreen: () => { requests++; return new Promise(done => { resolve = done; }); } });
+  const pending = deck.click('#fullscreen');
+  await deck.click('#fullscreen');
+  assert.equal(requests, 1);
+  resolve();
+  await pending;
+  const retry = deck.click('#fullscreen');
+  assert.equal(requests, 2);
+  resolve();
+  await retry;
+});

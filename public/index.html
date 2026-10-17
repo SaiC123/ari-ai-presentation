@@ -1560,8 +1560,11 @@ REFERENCE AND CUES, NOT SPOKEN: Reveal six visual memories. Click 7 connects the
     }
     document.addEventListener('fullscreenchange', syncFullscreen);
     syncFullscreen();
+    let fullscreenPending = false;
     fullscreenButton.addEventListener('click', async event => {
       event.stopPropagation();
+      if (fullscreenPending) return;
+      fullscreenPending = true;
       const status = document.querySelector('#fullscreenStatus');
       status.textContent = '';
       try {
@@ -1569,6 +1572,9 @@ REFERENCE AND CUES, NOT SPOKEN: Reveal six visual memories. Click 7 connects the
         else await document.exitFullscreen();
       } catch {
         status.textContent = 'Fullscreen is unavailable. Continue in the current window.';
+      } finally {
+        fullscreenPending = false;
+        syncFullscreen();
       }
     });
     document.addEventListener('keydown', event => {
