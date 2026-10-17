@@ -713,6 +713,10 @@
     /* ai-4: slide 4 and exactly two slide-9 segments */
     .problem-statement-slide h1 { position:absolute;left:50%;right:auto;top:50%;width:calc(100% - 144px);max-width:none;transform:translate(-50%,-50%);font-size:82px;line-height:1.08;letter-spacing:-.05em;text-align:center;margin:0; }
     .logo-only-slide .hero-ant { position:absolute;left:50%;top:50%;width:600px;height:440px;object-fit:contain;transform:translate(-50%,-50%);filter:brightness(0) invert(1); }
+    #presentation-slides-wrapper:has(>.customer-story-slide.active),#presentation-slides-wrapper:has(>.logo-only-slide.active),#presentation-slides-wrapper:has(>.solution-slide.active) { background:var(--ink); }
+    .logo-only-slide,.logo-only-slide.exit-left { transform:none;transition:opacity .65s ease,visibility .65s; }
+    .logo-only-slide.active .hero-ant { animation:logoIntroduction .9s cubic-bezier(.2,.8,.2,1) both; }
+    @keyframes logoIntroduction { from { opacity:0;transform:translate(-50%,-50%) scale(.96); } to { opacity:1;transform:translate(-50%,-50%) scale(1); } }
     .why-now-slide>h2 { margin-top:20px;font-size:62px;position:relative;top:-20px; }
     .why-now-slide .why-pressure-row { position:absolute;left:72px;right:72px;top:220px;height:375px; }
     .why-now-slide .why-factors { position:absolute;width:840px;left:50%;transform:translateX(-50%);display:grid;grid-template-columns:1fr 80px 1fr;gap:48px;align-items:start;opacity:1;visibility:visible;transition:opacity .25s,visibility .25s; }
@@ -900,7 +904,7 @@ REFERENCE AND CUES, NOT SPOKEN: Build 0 defines the ICP with four short labels: 
         </div>
       </section>
 
-      <section class="slide dark logo-only-slide" aria-label="Ari" data-note="Hold briefly on the Ari ant logo. Transition from the problem to Ari." data-spoken="That is why we are building Ari." data-duration-s="3">
+      <section class="slide dark logo-only-slide" aria-label="Ari" data-note="Let the logo fade in over the dark background. Say: And this is Ari. Hold briefly before advancing." data-spoken="And this is Ari." data-duration-s="3">
         <img class="hero-ant" src="ari-ant-mark.png" alt="Ari ant logo" width="600" height="440">
       </section>
 
