@@ -315,3 +315,15 @@ test("denied fullscreen resolves safely and reports an accessible status", async
   assert.equal(deck.active(), 1);
   assert.equal(deck.slides[1].dataset.buildCurrent, '0');
 });
+
+test("fullscreen state follows native entry and browser Escape exit", async () => {
+  const deck = presentation();
+  assert.equal(deck.selectors['#fullscreen'].getAttribute('aria-pressed'), 'false');
+  await deck.click('#fullscreen');
+  deck.dispatch('fullscreenchange');
+  assert.equal(deck.selectors['#fullscreen'].getAttribute('aria-label'), 'Exit fullscreen');
+  deck.document.fullscreenElement = null;
+  deck.dispatch('fullscreenchange');
+  assert.equal(deck.selectors['#fullscreen'].getAttribute('aria-pressed'), 'false');
+  assert.equal(deck.selectors['#fullscreen'].getAttribute('aria-label'), 'Enter fullscreen');
+});
