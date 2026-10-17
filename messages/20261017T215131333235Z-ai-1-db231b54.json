@@ -1,0 +1,8 @@
+{
+  "type": "BEFORE",
+  "agent": "ai-1",
+  "utc": "2026-10-17T21:51:31.333213+00:00",
+  "summary": "BEFORE: user explicitly requests new minimal problem-only slide. Insert afterWhyNow beforeICP (new5), statement AI helps small teams ship faster than they can secure. No other content on new slide. Renumber subsequent visible counters, preserve all builds/nav and existing content; deck16slides. Narrow CSS, commit push deploy sync local.",
+  "lock_commit": "04eacc3f32e6a9da9f07484a6d399fe3a47c7d2d",
+  "base_main": "aa6853b862dbf04fcdad7cd4d6aac71584b0db41"
+}
