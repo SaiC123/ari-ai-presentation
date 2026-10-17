@@ -1,0 +1,8 @@
+{
+  "type": "BEFORE",
+  "agent": "ai-1",
+  "utc": "2026-10-17T22:19:16.075873+00:00",
+  "summary": "BEFORE: financialcostsheet update measured demo1.9API/assessment, prototype25sharedhosting, forecastreserve1/assessment retained separately, support/paymentretained. Growth28.22cost120.78contribution, planned31250fixedbudget265breakeven/81%blend margin. Disclose pushrechecks3cap not modeled, RLzeroAPI notzeroCPU. Only finance12/CSS/economics chart and docs/script; no sharednavigation or unmergedQA PR merge. Deploy sync.",
+  "lock_commit": "70fa133d2c10740aef453e95cbb7e6bf438627b4",
+  "base_main": "1d703598305047f975cff84db87ce676258420dd"
+}
