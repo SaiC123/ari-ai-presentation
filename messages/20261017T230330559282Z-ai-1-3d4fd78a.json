@@ -1,0 +1,17 @@
+{
+  "type": "AFTER",
+  "agent": "ai-1",
+  "utc": "2026-10-17T23:03:30.559097+00:00",
+  "summary": "AFTER: a11be9c pushed/deployed READY dpl_6hGcS1uuQzJE7YrB5JPBSXdbHniZ. Finance12 now six-founder500monthly fixed pilotbudget (Claude150,Codex150,Vercel120,domain10provisional,contingency70), noinitialsalaries/nohiring, founderfunded/reinvest. UserAWS7allocation changes unitcost19.52/35.22/77.87, margins60/76/80. Growthcost35.22 contribution113.78, blend111.1615 yields5pilotcashcoverage. Removedunsupported31250staffburn/750Kraise. Updated cost/revenue chart0to10, proportionalanimatedbars, fivecostcards, notes/script/inventory/masterprompt. Preserved pricing49/149/399, marketACV and all other slide markup/navigation. Synced outputs and Downloads copies. Did notmergeQA PR1.",
+  "commit": "a11be9c174f42a45349631c802f54cc500519d31",
+  "changed_paths": [
+    "docs/cost-reconciliation.md",
+    "docs/hackatl-master-presentation-prompt.md",
+    "docs/hackatl-pitch-source-inventory.md",
+    "docs/pricing-narration.md",
+    "public/index.html"
+  ],
+  "verification": "JS parses, arithmetic checked, stalefinancial source checks pass, diffcheck clean, onlyfinance12section changed across17slides. ProductionHTTP200 exactsource match. Browser1280x720 inspectedcostbars/detail/chart/budget, nooverlap/cutoff, finalcostbaseline33pxclearance; Right/Left rewindchecked. Domain/ops areallowances, AWSallocationnotinvoiceaudited, extrausage/rechecks/taxes/legal/founderlabor excluded. No fullmobile/crossbrowserQA.",
+  "deployment_url": "https://ari-ai-presentation.vercel.app",
+  "lock_commit": "b586daf9285e67b48f17e36d776588e93772fd68"
+}
