@@ -1,0 +1,8 @@
+{
+  "type": "BEFORE",
+  "agent": "ai-1",
+  "utc": "2026-10-17T21:49:20.050475+00:00",
+  "summary": "BEFORE: user screenshot slide8 final One understanding of the code workflow summary. Remove only pictured final build3/difference-stage, preserve competitor map builds0-2 and numbering. Update notes/cues, scoped CSS if needed. Commit push deploy sync copies; preserve all other editor changes.",
+  "lock_commit": "2fda1d3d53415eb6e0bb5b0e288103702ee34533",
+  "base_main": "34219a6d59500a6e74f9a12a45efd01d30b55c9b"
+}
