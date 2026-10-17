@@ -1,6 +1,6 @@
 # Ari: six-founder pilot operating plan
 
-Researched October 17, 2026. Proposed planning model, not verified invoices. Deck publication is pending the shared QA lock release. Replaces the unsupported $31,250 staffing assumption once applied.
+Researched October 17, 2026. Proposed planning model, not verified invoices. Current model replaces the former staffed-budget assumption. Pricing and packaging are proposed, not validated demand.
 
 ## Fixed monthly planning budget
 
@@ -25,17 +25,17 @@ The domain allowance is not an actual IONOS quote. The user wrote “ios”; reg
 
 | Monthly, per customer | Founder | Growth | Scale |
 |---|---:|---:|---:|
-| Price | $49 | $149 | $399 |
+| Price | $39 | $99 | $249 |
 | Included assessments | 2 | 4 | 10 |
 | Claude API, $1.90 per reported demo assessment | $3.80 | $7.60 | $19.00 |
 | Sandbox/infrastructure forecast reserve | $2 | $4 | $10 |
-| Estimated payment processing | $1.721 | $4.621 | $11.871 |
+| Estimated payment processing | $1.431 | $3.171 | $7.521 |
 | Support/storage forecast allowance | $5 | $12 | $30 |
-| Base modeled cost | $12.521 | $28.221 | $70.871 |
+| Base modeled cost | $12.231 | $26.771 | $66.521 |
 | User-supplied AWS platform allocation | $7 | $7 | $7 |
 | **AWS-adjusted modeled cost** | **$19.521** | **$35.221** | **$77.871** |
 | **Contribution before fixed budget** | **$29.479** | **$113.779** | **$321.129** |
-| **Modeled contribution margin** | **60.2%** | **76.4%** | **80.5%** |
+| **Modeled contribution margin** | **50.7%** | **65.9%** | **70.5%** |
 
 The $7 AWS share is a user-provided allocation, not an independently verified AWS quote or a measured marginal cost. It is counted once in customer delivery cost, not again in the $500 fixed budget. No simultaneous Railway production charge is added. Confirm that AWS platform costs are distinct from the sandbox reserve and storage allowance; if they overlap, reconcile against the bill. A shared AWS bill may not scale linearly with customer count, particularly at very low volume.
 
@@ -43,29 +43,29 @@ The $7 AWS share is a user-provided allocation, not an independently verified AW
 
 Retain the 40% Founder / 45% Growth / 15% Scale mix:
 
-- Average monthly revenue: $146.50/customer.
-- AWS-adjusted modeled delivery cost: $35.3385/customer.
-- Contribution before fixed costs: $111.1615/customer, or 75.88%.
-- Planned cash cost: $500 + $35.3385 × customers.
-- Planned revenue: $146.50 × customers.
-- Arithmetic coverage point: $500 / $111.1615 = 4.50, rounded up to approximately five blended customers.
-- At ten blended customers: modeled monthly cash cost $853.39 and revenue $1,465.
+- Average monthly revenue: $97.50/customer.
+- AWS-adjusted modeled delivery cost: $33.9175/customer.
+- Contribution before fixed costs: $63.5825/customer, or 65.21%.
+- Planned cash cost: $500 + $33.9175 × customers.
+- Planned revenue: $97.50 × customers.
+- Arithmetic coverage point: $500 / $63.5825 = 7.86, rounded up to approximately eight blended customers.
+- At ten blended customers: modeled monthly cash cost $839.18 and revenue $975.
 
-This is pilot cash coverage, not full economic profitability. It excludes founder pay, taxes, one-time legal/compliance setup, unbudgeted development-tool credits and extra product re-check volume. An actual five-customer tier mix can differ from the assumed blend. The supplied $3 push re-check cap is a maximum API budget, not an average or included subscription entitlement. Twenty additional capped re-checks could add up to $60 API cost alone and move cash coverage to approximately six blended customers. Define usage budgets/paid overages before offering ongoing reassessment.
+This is pilot cash coverage, not full economic profitability. It excludes founder pay, taxes, one-time legal/compliance setup, unbudgeted development-tool credits and extra product re-check volume. An actual eight-customer tier mix can differ from the assumed blend. The supplied $3 push re-check cap is a maximum API budget, not an average or included subscription entitlement. Twenty additional capped re-checks could add up to $60 API cost alone and move cash coverage to approximately nine blended customers. Define usage budgets/paid overages before offering ongoing reassessment.
 
 ## Funding policy
 
 Remove the $750K raise from the current pitch unless the team supplies a separate, justified use-of-funds plan. Current plan: founder-funded pilots, customer receipts reinvested, no external hiring. The $500 budget is $6,000/year before customer delivery costs and exclusions; it is not a claim that $6,000 funds every aspect of launching a security company.
 
+## Proposed packaging
+
+Workspace subscriptions, not per-seat charges. Monthly pools: 2/4/10 full assessments and 100K/500K/2M assessed source lines. Allowance is shared across connected repositories; proposed plans do not cap connection count, but do cap assessment and source usage. Each repeated assessment counts source lines again; exclude generated/vendor/dependency code. All tiers include the core review, seven-agent investigation and fix-verification workflow. Monitoring and extra work require explicit budgets; continuous unlimited re-checks are not an entitlement. $25/scoped extra assessment is a proposed price requiring volume and budget approval. Validate support and execution costs before promising arbitrary repository sizes. Enterprise assessment scope, code volume and onboarding are negotiated.
+
+Structure inspired by the official [Kairo pricing page](https://kairo.security/pricing), accessed October 17, 2026: its packaging makes shared usage and code volume explicit and separates custom enterprise scope. Ari does not copy Kairo's review quantities, pricing, integrations, SSO, compliance or staffed support promises. Ari's full assessments are not equivalent to lightweight pull-request reviews. Packaging and enforcement need pilot validation.
+
 ## Replacement financial script
 
-Our plans are forty-nine, one forty-nine and three ninety-nine dollars monthly. We are six founders, with no hiring or founder salaries during pilots.
-
-We plan around five hundred dollars a month for team AI subscriptions, Vercel, a domain allowance and contingency. Product API usage is separate from those subscriptions.
-
-Using our reported assessment cost and the seven-dollar AWS allocation, Growth costs approximately thirty-five dollars per customer monthly, leaving about one hundred fourteen before shared expenses.
-
-Under our assumed customer mix, roughly five customers cover modeled pilot cash costs, excluding salaries, taxes and extra re-checks. We will fund pilots ourselves and reinvest revenue before introducing founder pay.
+Our proposed plans are thirty-nine, ninety-nine and two forty-nine dollars a month. Every plan includes code review, seven-agent assessments and fix verification. Teams share assessment and code-volume allowances across connected repositories; extra work needs budget approval. Growth costs about thirty-four dollars per customer, leaving about sixty-five before shared costs. With our five-hundred-dollar monthly pilot budget, around eight customers at our assumed mix cover modeled cash costs. Founders take no salaries initially and reinvest surplus. Pricing, usage and production costs still need pilot validation.
 
 ## Official pricing sources
 

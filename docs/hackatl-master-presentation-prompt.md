@@ -262,10 +262,10 @@ Current financial brief (supersedes earlier financial instructions): use docs/co
 
 Forecast pricing assumptions:
 
-- Founder: `$49/month`, 2 repositories, 100K source lines, 2 assessments
-- Growth: `$149/month`, 5 repositories, 500K source lines, 4 assessments
-- Scale: `$399/month`, 15 repositories, 2M source lines, 10 assessments
-- All features in every tier. Enterprise negotiated. Extra assessments $25 with budget approval.
+- Founder: `$39/month`, 100K assessed lines/month, 2 assessments, shared across repositories
+- Growth: `$99/month`, 500K assessed lines/month, 4 assessments, shared across repositories
+- Scale: `$249/month`, 2M assessed lines/month, 10 assessments, shared across repositories
+- Core review, seven agents and fix verification in every tier; monitoring requires explicit budgets. Monthly assessed lines count repeated assessments again. Proposed workspace packaging, not per-seat billing. Enterprise scope and onboarding negotiated. See https://kairo.security/pricing for structural inspiration, not copied entitlements. Extra assessments $25 with budget approval.
 
 Research competitor pricing to defend these assumptions, and cite sources in small text.
 
@@ -277,9 +277,9 @@ Click sequence:
 4. Costs are deducted: AI models, secure sandbox compute, storage, integrations, support, security/compliance.
 5. Remaining gross profit stays visible.
 6. A graph compares recurring revenue with monthly operating costs as customers grow.
-7. Revenue crosses pilot cash costs at about five blended customers, assuming 40/45/15 mix and $7 AWS allocation per account. This is not full business profitability.
+7. Revenue crosses pilot cash costs at about eight blended customers, assuming 40/45/15 mix and $7 AWS allocation per account. This is not full business profitability.
 8. A $500/month shared pilot budget appears: Claude Team $150, ChatGPT Business including Codex $150, Vercel Pro six deploying seats $120, domain allowance $10, operating contingency $70.
-9. Show founder-funded pilots, no initial salaries, and reinvested surplus. Customer delivery costs are separate; taxes, extra usage, legal/compliance and founder labor are excluded. Domain and reserves are provisional. AWS-adjusted costs are $19.52/$35.22/$77.87, margins about 60%/76%/80%.
+9. Show founder-funded pilots, no initial salaries, and reinvested surplus. Customer delivery costs are separate; taxes, extra usage, legal/compliance and founder labor are excluded. Domain and reserves are provisional. AWS-adjusted costs are $19.23/$33.77/$73.52, margins about 51%/66%/70%.
 
 Research all costs before calculating margins or break-even. Clearly label forecasts and assumptions. Core message:
 
