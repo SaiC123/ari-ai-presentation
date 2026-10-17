@@ -1,0 +1,150 @@
+const { test } = require('node:test');
+const assert = require('node:assert/strict');
+const { readFileSync } = require('node:fs');
+const { join } = require('node:path');
+const vm = require('node:vm');
+
+// Exercise the actual inline presentation script with a small DOM fixture.
+// Browser QA separately covers the real slide layouts, charts, and animations.
+const htmlPath = process.env.PRESENTATION_HTML || join(__dirname, '../public/index.html');
+const html = readFileSync(htmlPath, 'utf8');
+const scripts = [...html.matchAll(/<script>([\s\S]*?)<\/script>/g)];
+assert.equal(scripts.length, 1, 'Expected one inline presentation script');
+
+function element() {
+  const classes = new Set();
+  const attributes = new Map();
+  return {
+    dataset: {}, style: {}, textContent: '', listeners: {}, inert: false,
+    classList: {
+      contains: name => classes.has(name),
+      toggle(name, force = !classes.has(name)) {
+        if (force) classes.add(name); else classes.delete(name);
+        return force;
+      },
+    },
+    setAttribute: (name, value) => attributes.set(name, String(value)),
+    getAttribute: name => attributes.get(name) ?? null,
+    addEventListener(name, callback) { this.listeners[name] = callback; },
+    querySelector: () => null,
+    querySelectorAll: () => [],
+  };
+}
+
+function presentation(hash = '#1') {
+  const slides = [0, 2, 1].map((count, i) => {
+    const slide = element();
+    slide.dataset.note = `Speaker note ${i + 1}`;
+    const builds = Array.from({ length: count }, (_, j) => {
+      const build = element();
+      build.dataset.build = String(j + 1);
+      return build;
+    });
+    slide.querySelectorAll = selector => selector === '[data-build]' ? builds : [];
+    return slide;
+  });
+  const selectors = Object.fromEntries([
+    '#presentation-slides-wrapper', '#counter', '#progress', '#notes',
+    '#noteText', '#prev', '#next', '#fullscreen',
+  ].map(selector => [selector, element()]));
+  selectors['#presentation-slides-wrapper'].querySelectorAll = () => slides;
+  const location = { hash };
+  const documentListeners = {};
+  const windowListeners = {};
+  const document = {
+    querySelector: selector => selectors[selector],
+    addEventListener: (name, callback) => { documentListeners[name] = callback; },
+  };
+  const window = {
+    innerWidth: 1280, innerHeight: 720,
+    addEventListener: (name, callback) => { windowListeners[name] = callback; },
+  };
+  const context = vm.createContext({
+    document, window, location,
+    history: { replaceState: (_state, _title, url) => { location.hash = url; } },
+  });
+  vm.runInContext(scripts[0][1], context, { filename: 'presentation-inline.js' });
+  return {
+    slides, selectors, location,
+    active: () => slides.findIndex(slide => slide.classList.contains('active')),
+    hashChange(hash) { location.hash = hash; windowListeners.hashchange(); },
+    key(key) { documentListeners.keydown({ key, preventDefault() {} }); },
+    click(id) { selectors[id].listeners.click({ stopPropagation() {} }); },
+    show: index => vm.runInContext(`show(${index})`, context),
+  };
+}
+
+test('valid deep links select the requested slide', () => {
+  for (const [hash, index] of [['#1', 0], ['#2', 1], ['#3', 2]]) {
+    const deck = presentation(hash);
+    assert.equal(deck.active(), index);
+    assert.equal(deck.selectors['#counter'].textContent, `0${index + 1} / 03`);
+  }
+});
+
+test('malformed initial hashes recover to the first slide without throwing', () => {
+  for (const hash of ['', '#1.5', '#2.0001', '#0', '#4', '#-1', '#Infinity', '#NaN']) {
+    const deck = presentation(hash);
+    assert.equal(deck.active(), 0, hash);
+    assert.equal(deck.location.hash, '#1', hash);
+  }
+});
+
+test('invalid hash changes preserve the current slide and repair the URL', () => {
+  const deck = presentation('#2');
+  deck.key('ArrowRight');
+  for (const hash of ['#1.5', '#0', '#99', '#bad']) {
+    deck.hashChange(hash);
+    assert.equal(deck.active(), 1, hash);
+    assert.equal(deck.slides[1].dataset.buildCurrent, '1', hash);
+    assert.equal(deck.location.hash, '#2', hash);
+  }
+  deck.hashChange('#3');
+  assert.equal(deck.active(), 2);
+});
+
+test('fractional show arguments cannot clear the active slide', () => {
+  const deck = presentation('#2');
+  deck.show('0.5');
+  assert.equal(deck.active(), 1);
+  assert.equal(deck.location.hash, '#2');
+});
+
+test('only the active slide is exposed to assistive technology and focus', () => {
+  const deck = presentation();
+  for (const hash of ['#1', '#2', '#3', '#1']) {
+    deck.hashChange(hash);
+    deck.slides.forEach((slide, i) => {
+      const inactive = i !== deck.active();
+      assert.equal(slide.getAttribute('aria-hidden'), String(inactive));
+      assert.equal(slide.inert, inactive);
+    });
+  }
+});
+
+test('buttons and keyboard retain build, boundary, notes, and rewind behavior', () => {
+  const deck = presentation('#2');
+  deck.click('#next');
+  assert.equal(deck.slides[1].dataset.buildCurrent, '1');
+  deck.key(' ');
+  assert.equal(deck.slides[1].dataset.buildCurrent, '2');
+  deck.key('Enter');
+  assert.equal(deck.active(), 2);
+  deck.key('ArrowLeft');
+  assert.equal(deck.active(), 1);
+  assert.equal(deck.slides[1].dataset.buildCurrent, '2');
+  deck.click('#prev');
+  assert.equal(deck.slides[1].dataset.buildCurrent, '1');
+  deck.key('n');
+  assert.equal(deck.selectors['#notes'].classList.contains('show'), true);
+  assert.equal(deck.selectors['#noteText'].textContent, 'Speaker note 2');
+  deck.key('Home');
+  deck.click('#prev');
+  assert.equal(deck.active(), 0);
+  deck.key('End');
+  deck.key('PageDown');
+  deck.click('#next');
+  assert.equal(deck.active(), 2);
+  deck.key('PageUp');
+  assert.equal(deck.slides[2].dataset.buildCurrent, '0');
+});

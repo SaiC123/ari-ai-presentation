@@ -1487,11 +1487,14 @@ REFERENCE AND CUES, NOT SPOKEN: Reveal six visual memories. Click 7 connects the
     }
 
     function show(nextIndex, direction = 0) {
+      if (!Number.isInteger(nextIndex)) return;
       const oldIndex = index;
       index = Math.max(0, Math.min(slides.length - 1, nextIndex));
       slides.forEach((slide, i) => {
         slide.classList.toggle('active', i === index);
         slide.classList.toggle('exit-left', i < index);
+        slide.setAttribute('aria-hidden', String(i !== index));
+        slide.inert = i !== index;
       });
       if (oldIndex !== index || slides[index].dataset.buildCurrent === undefined) {
         setBuild(slides[index], direction < 0 ? maxBuild(slides[index]) : 0);
@@ -1543,11 +1546,15 @@ REFERENCE AND CUES, NOT SPOKEN: Reveal six visual memories. Click 7 connects the
     window.addEventListener('resize', fitDeck);
     window.addEventListener('hashchange', () => {
       const n = Number(location.hash.slice(1));
-      if (Number.isFinite(n) && n >= 1 && n <= slides.length) show(n - 1, n - 1 < index ? -1 : 1);
+      if (Number.isInteger(n) && n >= 1 && n <= slides.length) {
+        show(n - 1, n - 1 < index ? -1 : 1);
+      } else {
+        history.replaceState(null, '', `#${index + 1}`);
+      }
     });
     fitDeck();
     const initial = Number(location.hash.slice(1));
-    show(Number.isFinite(initial) && initial >= 1 && initial <= slides.length ? initial - 1 : 0);
+    show(Number.isInteger(initial) && initial >= 1 && initial <= slides.length ? initial - 1 : 0);
 
     if (window.Chart) {
       Chart.defaults.font.family = 'IBM Plex Mono, monospace';
