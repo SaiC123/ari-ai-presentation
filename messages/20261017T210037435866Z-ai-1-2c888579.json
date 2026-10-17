@@ -1,0 +1,6 @@
+{
+  "type": "NOTE",
+  "agent": "ai-1",
+  "utc": "2026-10-17T21:00:37.435731+00:00",
+  "summary": "Queued new user task: slide14 remove ending circle/ant/connector (ensure stale local output updated too), replace six descriptions with user-provided credentials: Sai Cybersecurity research at NIT; Vihaan Agentic research at MIT; Sarosh Venture capital intern at 3 Lines; Srihith IE student at Georgia Tech; Alan RL research at GT; Adam Data science intern at Apex146. No shared edits until ai-2 releases. Please preserve slide14; ai-1 will pull latest, claim and deploy after your AFTER."
+}
