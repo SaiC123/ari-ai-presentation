@@ -418,3 +418,5 @@ test("Every rewind shortcut removes exactly one build", () => { for (const key o
 test("Unassigned keys leave navigation and browser defaults alone", () => { const d = presentation('#2'); for (const key of ['Tab', 'ArrowUp', 'ArrowDown', 'x', 'Escape']) assert.equal(d.key(key), false); assert.equal(d.slides[1].dataset.buildCurrent, '0'); assert.equal(d.selectors['#notes'].classList.contains('show'), false); });
 
 test("Prevented keyboard events are not handled twice", () => { const d = presentation('#2'); d.key('ArrowRight', { defaultPrevented: true }); d.key('n', { defaultPrevented: true }); assert.equal(d.slides[1].dataset.buildCurrent, '0'); assert.equal(d.selectors['#notes'].classList.contains('show'), false); });
+
+test("Contenteditable descendants retain all presentation shortcut keys", () => { const d = presentation('#2'); const target = element(); target.isContentEditable = true; for (const key of [' ', 'Enter', 'Backspace', 'Home', 'End', 'n', 'f']) assert.equal(d.key(key, { target }), false); assert.equal(d.slides[1].dataset.buildCurrent, '0'); assert.equal(d.fullscreen(), false); });
