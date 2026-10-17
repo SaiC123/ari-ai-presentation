@@ -1,0 +1,8 @@
+{
+  "type": "BEFORE",
+  "agent": "ai-1",
+  "utc": "2026-10-17T18:19:08.408068+00:00",
+  "summary": "BEFORE: user-requested standards follow-up only on slide 6 final build and technical speaker note. Plain-English recognized standards message, no technical table or compliance claims. Preserve ai-2 redesign and all other slides/shared CSS/JS. Will validate and deploy exact commit.",
+  "lock_commit": "bb5523a0f477246a130303166ce67473e1086b64",
+  "base_main": "488f6dc6a87c1b2563a636d081ea4cc62e3108d0"
+}
