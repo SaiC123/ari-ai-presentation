@@ -23,7 +23,7 @@ The domain allowance is not an actual IONOS quote. The user wrote “ios”; reg
 
 ## Expanded assessment plans
 
-Proposed monthly workspace subscriptions, not per-seat prices. Founder: $99 for10 full assessments and1M assessed source lines; Growth: $249 for25 assessments and5M lines; Scale: $599 for60 assessments and20M lines. Pools are shared across connected repositories. Each repeat assessment counts source volume again. Exclude generated/vendor/dependency code. Both assessment and line allowances apply. Enterprise scope, code volume and onboarding negotiated. Core code review, seven-agent investigation and fix verification included. Monitoring and re-check work remain separately budgeted, not unlimited continuous protection. Extra scoped assessment $25 needs volume and budget approval. No invented trial, integration, SSO or staffed support entitlement.
+Proposed monthly workspace subscriptions, not per-seat prices. Founder: $49.99 for10 full assessments and1M assessed source lines; Growth: $249 for25 assessments and5M lines; Scale: $599 for60 assessments and20M lines. Pools are shared across connected repositories. Each repeat assessment counts source volume again. Exclude generated/vendor/dependency code. Both assessment and line allowances apply. Enterprise scope, code volume and onboarding negotiated. Core code review, seven-agent investigation and fix verification included. Monitoring and re-check work remain separately budgeted, not unlimited continuous protection. Extra scoped assessment $25 needs volume and budget approval. No invented trial, integration, SSO or staffed support entitlement.
 
 Structure inspired by [Kairo pricing](https://kairo.security/pricing), observed October17,2026, for explicit shared usage, code volume and enterprise scope, not copied quantities or prices. Ari's complete assessments are not equivalent to lightweight PR reviews. Routine review counts are not sold as a separate unlimited entitlement.
 
@@ -33,30 +33,30 @@ Assume all included full assessments are consumed. API $1.90/run is team-reporte
 
 | Item | Founder | Growth | Scale |
 |---|---:|---:|---:|
-| Price | $99 | $249 | $599 |
+| Price | $49.99 | $249 | $599 |
 | Full assessments | 10 | 25 | 60 |
 | API | $19 | $47.50 | $114 |
 | Sandbox reserve | $10 | $25 | $60 |
-| Payments | $3.171 | $7.521 | $17.671 |
+| Payments | $1.74971 | $7.521 | $17.671 |
 | Support/storage | $5 | $12 | $30 |
 | AWS allocation | $7 | $7 | $7 |
-| **Total modeled cost** | **$44.171** | **$99.021** | **$228.671** |
-| **Contribution before fixed costs** | **$54.829** | **$149.979** | **$370.329** |
-| **Contribution margin** | **55.4%** | **60.2%** | **61.8%** |
+| **Total modeled cost** | **$42.74971** | **$99.021** | **$228.671** |
+| **Contribution before fixed costs** | **$7.24029** | **$149.979** | **$370.329** |
+| **Contribution margin** | **14.5%** | **60.2%** | **61.8%** |
 
-Higher proposed prices support substantially more assessments. They are not validated willingness to pay or a claim that larger codebases cost the same as the demo. Benchmark across representative repositories and set per-run scope/budgets before launch. The $25 extra-assessment price is only a scoped proposal, not an uncapped custom pentest offer.
+Founder is an entry pilot price with only about14.5% modeled contribution margin before shared costs. It is vulnerable to unmeasured support or usage costs and is not a proven sustainable acquisition strategy. Higher tiers support greater usage. They are not validated willingness to pay or a claim that larger codebases cost the same as the demo. Benchmark across representative repositories and set per-run scope/budgets before launch. The $25 extra-assessment price is only a scoped proposal, not an uncapped custom pentest offer.
 
 ## Pilot cash coverage and funding
 
-At assumed40%Founder/45%Growth/15%Scale mix: revenue241.50/customer/month; modeled deliverycost96.5285; contribution144.9715; margin60.03%. Cashcost500+96.5285×customers; revenue241.50×customers. Coverage500/144.9715=3.45 ->approximately4 blendedcustomers. At10customers: revenue2415, modeledcashcost1465.285.
+At assumed40%Founder/45%Growth/15%Scale mix: revenue221.896/customer/month; modeled deliverycost95.959984; contribution125.936016; margin56.75%. Cashcost500+95.959984×customers; revenue221.896×customers. Coverage500/125.936016=3.97 ->approximately4 blendedcustomers. At10customers: revenue2218.96, modeledcashcost1459.59984. Founder-only contribution7.24029 means500/7.24029=69.06 ->70 Founder customers. The assumed mix is not actual traction and cannot be represented exactly by four customers.
 
-This is pilot cash coverage, not full economic profitability. Actual four-customer tier mix differs from a smooth blend. Excludes founder salaries/labor, taxes, legal/compliance, extra developer credits, unmeasured monitoring/re-check usage and unexpected overages. At20extra re-checks capped at3APIeach, up to60extraAPI leaves coverage at4, before other overhead.3is a cap not average. RLnoClaudeAPI doesnotmean zeroCPU. No additional Railway production baseline is added on top of AWS.
+This is pilot cash coverage, not full economic profitability. Actual four-customer tier mix differs from a smooth blend. Excludes founder salaries/labor, taxes, legal/compliance, extra developer credits, unmeasured monitoring/re-check usage and unexpected overages. At20extra re-checks capped at3APIeach, up to60extraAPI moves blended coverage to5, before other overhead.3is a cap not average. RLnoClaudeAPI doesnotmean zeroCPU. No additional Railway production baseline is added on top of AWS.
 
 Six founders, no hiring and no initial salaries. Founder-funded pilots; customer receipts first cover costs, surplus reinvested. No unsupported external fundraising ask;500/month is a planning budget, not all-in startup launch cost.
 
 ## Replacement financial script
 
-Founder includes ten full assessments for ninety-nine dollars a month. Growth offers twenty-five for two forty-nine, and Scale sixty for five ninety-nine. Teams share code-volume allowances across repositories, with review, seven-agent investigation and fix verification included. Growth budgets about ninety-nine dollars in customer delivery costs, leaving about one hundred fifty before shared costs. Our six-founder pilot still budgets five hundred dollars monthly. Around four customers at our assumed mix cover modeled pilot cash costs, excluding founder pay and extra usage. We fund pilots ourselves and reinvest surplus. These prices and delivery assumptions still need validation.
+Founder is forty-nine ninety-nine monthly for ten full assessments. Growth offers twenty-five for two forty-nine, and Scale sixty for five ninety-nine. Usage is shared across repositories. Founder is an entry pilot price: our modeled cost is about forty-three dollars, leaving about seven before shared costs. Growth leaves about one hundred fifty. With our five-hundred-dollar pilot budget, cash coverage is about seventy Founder customers, or four at our assumed tier mix. Our separate growth target is one hundred to two hundred paying customers, not break-even. Founders initially take no salaries and reinvest surplus. These are assumptions to validate.
 
 ## Official pricing sources
 

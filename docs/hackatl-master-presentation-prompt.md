@@ -262,7 +262,7 @@ Current financial brief (supersedes earlier financial instructions): use docs/co
 
 Forecast pricing assumptions:
 
-- Founder: `$99/month`, 1M assessed lines/month, 10 assessments, shared across repositories
+- Founder: `$49.99/month`, 1M assessed lines/month, 10 assessments, shared across repositories
 - Growth: `$249/month`, 5M assessed lines/month, 25 assessments, shared across repositories
 - Scale: `$599/month`, 20M assessed lines/month, 60 assessments, shared across repositories
 - Core review, seven agents and fix verification in every tier; monitoring requires explicit budgets. Monthly assessed lines count repeated assessments again. Proposed workspace packaging, not per-seat billing. Enterprise scope and onboarding negotiated. See https://kairo.security/pricing for structural inspiration, not copied entitlements. Extra assessments $25 with budget approval.
@@ -279,7 +279,7 @@ Click sequence:
 6. A graph compares recurring revenue with monthly operating costs as customers grow.
 7. Revenue crosses pilot cash costs at about four blended customers, assuming 40/45/15 mix and $7 AWS allocation per account. This is not full business profitability.
 8. A $500/month shared pilot budget appears: Claude Team $150, ChatGPT Business including Codex $150, Vercel Pro six deploying seats $120, domain allowance $10, operating contingency $70.
-9. Show founder-funded pilots, no initial salaries, and reinvested surplus. Customer delivery costs are separate; taxes, extra usage, legal/compliance and founder labor are excluded. Domain and reserves are provisional. AWS-adjusted costs are $44.17/$99.02/$228.67, margins about 55%/60%/62%.
+9. Show founder-funded pilots, no initial salaries, and reinvested surplus. Customer delivery costs are separate; taxes, extra usage, legal/compliance and founder labor are excluded. Domain and reserves are provisional. AWS-adjusted costs are $42.75/$99.02/$228.67, margins about 14.5%/60%/62%. Founder is an entry pilot price with thin margin; approximately70Founder-onlycustomers cover modeled fixed cash costs. Growth target100–200payingcustomers is separate, not break-even.
 
 Expanded10/25/60assessment allowances require new representative-repository benchmarks: $1.90 API/run, $1 sandbox/run and retained support reserves are forecasts, not proven production costs at this volume. Research all costs before claiming validated margins or break-even. Clearly label forecasts and assumptions. Core message:
 

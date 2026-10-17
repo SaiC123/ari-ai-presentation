@@ -2,11 +2,11 @@
 
 ## Slide12: Revenue, costs and sustainability
 
-Founder includes ten full assessments for ninety-nine dollars a month. Growth offers twenty-five for two forty-nine, and Scale sixty for five ninety-nine. Teams share code-volume allowances across repositories, with review, seven-agent investigation and fix verification included. Growth budgets about ninety-nine dollars in customer delivery costs, leaving about one hundred fifty before shared costs. Our six-founder pilot still budgets five hundred dollars monthly. Around four customers at our assumed mix cover modeled pilot cash costs, excluding founder pay and extra usage. We fund pilots ourselves and reinvest surplus. These prices and delivery assumptions still need validation.
+Founder is forty-nine ninety-nine monthly for ten full assessments. Growth offers twenty-five for two forty-nine, and Scale sixty for five ninety-nine. Usage is shared across repositories. Founder is an entry pilot price: our modeled cost is about forty-three dollars, leaving about seven before shared costs. Growth leaves about one hundred fifty. With our five-hundred-dollar pilot budget, cash coverage is about seventy Founder customers, or four at our assumed tier mix. Our separate growth target is one hundred to two hundred paying customers, not break-even. Founders initially take no salaries and reinvest surplus. These are assumptions to validate.
 
 ## Slide13: Market sizing
 
-U.S. software publishers are a transparent proxy, not a count of qualified SaaS customers. At the proposed annual Growth price of $2,988, the broader proxy represents $39.6 million and our starting cohort $12.7 million. Fifty paying customers would represent $149,400 ARR. This is a target, not traction.
+U.S. software publishers are a transparent proxy, not a count of qualified SaaS customers. At Growth annual pricing of $2,988, the broad proxy is $39.6 million and our starting cohort $12.7 million. Our growth target is100–200 paying customers, representing roughly $299K–$598K ARR if priced at Growth. That is an adoption target and pricing proxy, not traction, blended revenue or break-even.
 
 ## Still to fill in, not spoken
 
