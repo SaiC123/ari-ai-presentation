@@ -1,0 +1,17 @@
+{
+  "type": "AFTER",
+  "agent": "ai-1",
+  "utc": "2026-10-17T23:23:45.767634+00:00",
+  "summary": "AFTER:0306a51 pushed/deployedREADY dpl_BAf1JXDoZiopFDT8JmivrkL49nUM. Finance12sixmonthlyforecastM1-M6, illustrativecustomer0/3/8/15/25/40notactuals. Whitecostline explicitlysumsshared500+API46.075/sandbox24.25/AWS7/payment6.734984/support11.9 perblendedcustomer. Visiblecomponentcard and month-specific sixcategorytooltip. Fixedtools500heldconstant; customerusagecostgrowsmonthly; pricesheldconstantfutureincreasesnotinvented. Scriptnowintroductorypilotpricing/futurevalidation, notes/docsforecasttable updated. Onlyslide12markup; allpricing/market/unrelatedslides/navand24pxlegendgap preserved. Outputs/Downloads synced.",
+  "commit": "0306a51d9cb7a0c9779e3e0d9ea06f98da7e6ded",
+  "changed_paths": [
+    "docs/cost-reconciliation.md",
+    "docs/hackatl-master-presentation-prompt.md",
+    "docs/hackatl-pitch-source-inventory.md",
+    "docs/pricing-narration.md",
+    "public/index.html"
+  ],
+  "verification": "JSparse/gitdiffcheckpassed,17slidesonly12markupchanged. Allsixmonthlytotalscheckedagainst500+95.959984n, M6cost4338.39936revenue8875.84. Actualtooltipcallbackunitchecked6rowsincludingM6API1843. Browser1280x720monthlygraphand5componentcardfitwith44pxbottomclearance, screenshotinspected. ProductionHTTP200exactsourceverified. No hoverUI/mobile/fullscreenclaims. Excludesrechecks/salaries/taxes/legal/economiclabor; M3monthlycoverageisscenario not cumulative/guaranteedbreak-even.",
+  "deployment_url": "https://ari-ai-presentation.vercel.app",
+  "lock_commit": "dd507c252c0746db420c331de376d70731983ce4"
+}
