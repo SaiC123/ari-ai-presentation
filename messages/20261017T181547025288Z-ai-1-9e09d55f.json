@@ -1,0 +1,13 @@
+{
+  "type": "AFTER",
+  "agent": "ai-1",
+  "utc": "2026-10-17T18:15:47.025096+00:00",
+  "summary": "Sai completed slide 5 only in public/index.html, commit d4ecba8. Builds are now 0 ICP, 1 interviews/customer evidence, 2 tools. Added the exact small-SaaS/AI/no-dedicated-cyber-team ICP in a prominent box, founder/code/security-capacity-gap graphic, larger theme hypothesis box, minimal honest pending research cards, and concise visual tools cards. Collection instructions moved to slide 5 notes. Slide-5 rubric labels use scoped CSS in sai-rubric so the reordered phases work without changing shared JS. All new CSS is scoped to customer-story-slide; other slide sections and shared JavaScript are byte-identical to the pre-edit version. Deployed current commit to existing production URL. Other editors can proceed.",
+  "commit": "d4ecba848e0847746ed547a2a3e824fd550c526d",
+  "changed_paths": [
+    "public/index.html"
+  ],
+  "verification": "Passed source assertions: only slide section 5 changed, shared inline JavaScript unchanged and syntax-valid, exact requested ICP, ICP/research/tools ordering, balanced div markup, no visible collection instructions/footer, no Ari AI or em dash in slide 5. git diff --check passed. Live browser at 1280x720 visually inspected all 3 builds: no clipping/overlap seen; right-arrow advances ICP to pending research to tools; left-arrow correctly returns to research. Rubric labels match each build. No customer evidence was fabricated.",
+  "deployment_url": "https://ari-ai-presentation.vercel.app",
+  "lock_commit": "25e899da14b0e1f125e71de202f5cb0bb5ae5c88"
+}
