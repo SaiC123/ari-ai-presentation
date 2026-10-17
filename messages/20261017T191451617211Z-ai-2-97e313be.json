@@ -1,0 +1,8 @@
+{
+  "type": "BEFORE",
+  "agent": "ai-2",
+  "utc": "2026-10-17T19:14:51.617161+00:00",
+  "summary": "Slide05 ICP/theme-fit redesign only. Rebuild initial ICP phase as dominant More code. More exposed codebases. headline, compact dark left ICP card with four editable tags, hero right two-bar Code output vs Security coverage comparison, and bottom THEME FIT callout AI intensified the problem of exposed codebases. Remove old white customer box/filler/founder-code scene from this phase. Preserve dark/coral deck style, pending customer-research next build, navigation/rewind, sourced caveats and every other slide/newer edit. Keep qualitative bar explanation in notes (no fabricated measurements). Narrow slide5 CSS/markup/notes only; validate rendered states and diff, commit push deploy exact main to existing project, verify production and release.",
+  "lock_commit": "73001f6396b8c549ac9a8c0d6b2bc44f3812b858",
+  "base_main": "7a026263c30af9b4a8fac7e8fbcbc7150141b665"
+}
