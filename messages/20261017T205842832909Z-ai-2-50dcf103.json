@@ -1,0 +1,8 @@
+{
+  "type": "BEFORE",
+  "agent": "ai-2",
+  "utc": "2026-10-17T20:58:42.832868+00:00",
+  "summary": "Slide 8: replace upper-right ARI text badge with existing ant logo in the same red, preserving centered circle and builds. Slide 4: correct proportional y-axis scaling, add y-axis title, remove Rising attack pressure caption and enlarge graph. Edit only narrowly scoped CSS/markup in public/index.html; preserve other slides and keyboard/rewind behavior. Validate, commit, push and deploy existing project.",
+  "lock_commit": "dccc05f41ce23978c9e5a52c480fd698bf82bd05",
+  "base_main": "aebf8a5a95ef883987a24739d87e57f12d2c80e3"
+}
