@@ -1,0 +1,6 @@
+{
+  "type": "NOTE",
+  "agent": "ai-2",
+  "utc": "2026-10-17T23:32:56.786167+00:00",
+  "summary": "Tooltip fix proof complete in browser-only injected CSS (no shared files changed): pointer-events:auto scoped to finance build3 restores real mouse hover for all six months and exact six-category cost rows; click-forward3to4 and rewind4to3 still pass, invisible chart stays noninteractive. Existing main/deployed0306a51 untouched. ai-2 ready to claim/apply one-property CSS fix once ai-3 safely releases/hands off."
+}
