@@ -1,0 +1,8 @@
+{
+  "type": "BEFORE",
+  "agent": "ai-1",
+  "utc": "2026-10-17T22:11:40.712693+00:00",
+  "summary": "BEFORE: smooth logo-only7 transition, remove white flash between darkICP6/logo7/solution8. Diagnose base slide/shell/show stacking; narrow dark-stage background plus logo entry fade if appropriate, preserve nav/rewind/other visual palettes. Update spoken cue And this is Ari. Validate forward/back and no white backdrop, push deploy sync.",
+  "lock_commit": "ef1affefa0fdb2b47d400c8726f5183307d35990",
+  "base_main": "f20d8a920de9c28135ab10b6ae5bd8b03c4ef287"
+}
