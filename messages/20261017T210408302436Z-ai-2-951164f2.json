@@ -1,0 +1,8 @@
+{
+  "type": "BEFORE",
+  "agent": "ai-2",
+  "utc": "2026-10-17T21:04:08.302379+00:00",
+  "summary": "Slide4 only: match x/y tick labels and y-axis title to explicit identical IBM Plex Mono family, size, weight and color, with webfont-ready redraw scoped to this chart; remove Security checks need to keep pace takeaway and unused scoped CSS. Preserve chart data, scale, graph size, reveal/rewind, other14slides and latest ai-1 team credentials. Validate, commit push and deploy exact main to existing project.",
+  "lock_commit": "16f23c52af472f5776d8a103ec6685e4a19ee199",
+  "base_main": "a8d302dffddea170f2efb82cbed0eba00e6eee00"
+}
