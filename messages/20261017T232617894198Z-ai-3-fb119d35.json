@@ -1,0 +1,8 @@
+{
+  "type": "BEFORE",
+  "agent": "ai-3",
+  "utc": "2026-10-17T23:26:17.894177+00:00",
+  "summary": "BEFORE: user requests any remaining fixes and 50 commits. PR-only QA pass on codex/presentation-qa-fixes, after merging latest main0306a51. Scope: navigation input handling, notes accessibility, fullscreen error handling, presentation regression coverage and QA instructions. Preserve all financial values, forecast/chart configuration, other editor slide content, branding and assets. Will post checks, push PR1, then release; no production deployment or merge in this PR pass.",
+  "lock_commit": "bd6f76eb1a1c20d745cf606286465086ae95b11a",
+  "base_main": "0306a51d9cb7a0c9779e3e0d9ea06f98da7e6ded"
+}
