@@ -304,8 +304,10 @@
     .map-static{left:14%;bottom:16%}.map-review{left:42%;bottom:35%}.map-assist{left:25%;top:22%}.map-pentest{right:22%;top:29%}.map-platform{right:12%;bottom:24%}
     .map-ari { right:5%; top:7%; padding:18px 22px; background:var(--acid); color:white; border-color:var(--brand-deep); opacity:0; transform:scale(.5); }
     .map-ari.build-visible { animation:popIn .6s cubic-bezier(.2,.8,.2,1) forwards; }
-    .map-ring { position:absolute; right:1%; top:0; width:210px; height:105px; border:3px solid var(--acid); border-radius:50%; opacity:0; transform:rotate(-8deg); }
-    .map-ring.build-visible { animation:rise .5s forwards; }
+    .market-map .map-ari { overflow:visible; }
+    .map-ring { position:absolute; left:50%; top:50%; width:calc(100% + 54px); height:calc(100% + 42px); border:3px solid var(--acid); border-radius:50%; opacity:0; transform:translate(-50%,-50%) rotate(-8deg); pointer-events:none; }
+    .map-ring.build-visible { animation:ariRingIn .5s forwards; }
+    @keyframes ariRingIn { from { opacity:0; transform:translate(-50%,-50%) rotate(-8deg) scale(.8); } to { opacity:1; transform:translate(-50%,-50%) rotate(-8deg) scale(1); } }
 
     /* Slide 9 */
     .quality-stage { display:grid; grid-template-columns:1.2fr .8fr; gap:28px; height:492px; }
@@ -620,7 +622,18 @@
     /* Roadmap cards occupy a separate band above the ant's entire path. */
     .road-stage{position:absolute;left:0;right:0;top:205px;bottom:32px;overflow:visible;isolation:isolate}
     .road-svg{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
-    .road-ant{position:absolute;left:0;top:0;width:76px;height:54px;object-fit:contain;filter:brightness(0) invert(1);z-index:5;offset-path:path('M80 445 C290 440 330 410 480 400 C650 388 735 345 900 335 C1030 326 1110 302 1200 300');offset-distance:2%;offset-rotate:0deg;transition:offset-distance .85s cubic-bezier(.2,.8,.2,1)}
+    .road-ant{position:absolute;left:0;top:0;width:76px;height:54px;z-index:5;offset-path:path('M80 445 C290 440 330 410 480 400 C650 388 735 345 900 335 C1030 326 1110 302 1200 300');offset-distance:2%;offset-rotate:auto;transition:offset-distance .9s linear}
+    .road-ant svg{display:block;width:100%;height:100%;overflow:visible}
+    .road-ant .crawl-leg{transform-box:fill-box;transform-origin:50% 0%;stroke:white;stroke-width:2.8;stroke-linecap:round;stroke-linejoin:round;fill:none}
+    .road-slide.active:not([data-build-current="0"]) .crawl-body{animation:antBobOdd .3s linear 3}
+    .road-slide.active:not([data-build-current="0"]) .crawl-tripod-a{animation:antStepOdd .3s ease-in-out 3}
+    .road-slide.active:not([data-build-current="0"]) .crawl-tripod-b{animation:antStepOdd .3s ease-in-out 3 reverse}
+    .road-slide.active:is([data-build-current="2"],[data-build-current="4"]) .crawl-body{animation-name:antBobEven}
+    .road-slide.active:is([data-build-current="2"],[data-build-current="4"]) .crawl-tripod-a,.road-slide.active:is([data-build-current="2"],[data-build-current="4"]) .crawl-tripod-b{animation-name:antStepEven}
+    @keyframes antStepOdd{0%,100%{transform:rotate(0deg)}25%{transform:rotate(16deg) translateY(-1px)}75%{transform:rotate(-16deg)}}
+    @keyframes antStepEven{0%,100%{transform:rotate(0deg)}25%{transform:rotate(16deg) translateY(-1px)}75%{transform:rotate(-16deg)}}
+    @keyframes antBobOdd{0%,50%,100%{transform:translateY(0) rotate(0deg)}25%{transform:translateY(-1.5px) rotate(-1deg)}75%{transform:translateY(-1.5px) rotate(1deg)}}
+    @keyframes antBobEven{0%,50%,100%{transform:translateY(0) rotate(0deg)}25%{transform:translateY(-1.5px) rotate(-1deg)}75%{transform:translateY(-1.5px) rotate(1deg)}}
     .road-slide[data-build-current="1"] .road-ant{offset-distance:6%}
     .road-slide[data-build-current="2"] .road-ant{offset-distance:27%}
     .road-slide[data-build-current="3"] .road-ant{offset-distance:48%}
@@ -873,7 +886,7 @@ REFERENCE AND CUES, NOT SPOKEN: Clicks 1–2 position Ari by its coordinated wor
         <div class="market-map">
           <span class="axis-x">Fragmented tool → End-to-end system</span><span class="axis-y">Reports → Proves + verifies</span>
           <div class="map-bubble map-static">STATIC SCANNERS</div><div class="map-bubble map-review">AI CODE REVIEW</div><div class="map-bubble map-assist">AI CODING ASSISTANTS</div><div class="map-bubble map-pentest">PENTESTS</div><div class="map-bubble map-platform">SECURITY PLATFORMS</div>
-          <div class="map-bubble map-ari" data-build="1">ARI</div><div class="map-ring" data-build="2"></div>
+          <div class="map-bubble map-ari" data-build="1">ARI<span class="map-ring" data-build="2" aria-hidden="true"></span></div>
         </div>
 
         <span class="build-trigger" data-build="3"></span>
@@ -959,20 +972,17 @@ REFERENCE AND CUES, NOT SPOKEN: Move the Ari ant down the actual road. Every dat
         <span class="build-trigger" data-build="1"></span><span class="build-trigger" data-build="2"></span><span class="build-trigger" data-build="3"></span><span class="build-trigger" data-build="4"></span><span class="build-trigger" data-build="5"></span>
         <div class="road-stage">
           <svg class="road-svg" viewBox="0 0 1280 483" preserveAspectRatio="none" aria-hidden="true"><defs><linearGradient id="roadGlow" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#8f2f1e"/><stop offset="1" stop-color="#c2452d"/></linearGradient></defs><path d="M80 445 C290 440 330 410 480 400 C650 388 735 345 900 335 C1030 326 1110 302 1200 300" fill="none" stroke="rgba(255,255,255,.12)" stroke-width="140" stroke-linecap="round"/><path d="M80 445 C290 440 330 410 480 400 C650 388 735 345 900 335 C1030 326 1110 302 1200 300" fill="none" stroke="url(#roadGlow)" stroke-width="86" stroke-linecap="round"/><path d="M80 445 C290 440 330 410 480 400 C650 388 735 345 900 335 C1030 326 1110 302 1200 300" fill="none" stroke="rgba(255,255,255,.75)" stroke-width="4" stroke-dasharray="18 22"/></svg>
-          <img class="road-ant" src="ari-ant-mark.png" alt="Ari ant moving along the roadmap">
+          <div class="road-ant" role="img" aria-label="Ant crawling along the roadmap"><svg viewBox="0 0 90 64" aria-hidden="true"><g class="crawl-body"><path class="crawl-leg crawl-tripod-a" d="M46 27L58 13 69 10"/><path class="crawl-leg crawl-tripod-b" d="M43 29L43 12 50 5"/><path class="crawl-leg crawl-tripod-a" d="M38 30L25 17 14 16"/><path class="crawl-leg crawl-tripod-b" d="M48 35L59 47 73 48"/><path class="crawl-leg crawl-tripod-a" d="M43 36L43 52 51 59"/><path class="crawl-leg crawl-tripod-b" d="M38 35L26 47 13 49"/><g fill="white"><ellipse cx="24" cy="33" rx="17" ry="10" transform="rotate(-10 24 33)"/><ellipse cx="44" cy="32" rx="10" ry="6"/><ellipse cx="61" cy="29" rx="9" ry="8" transform="rotate(-15 61 29)"/></g><path d="M65 23L72 14 81 11M69 27L79 21 86 22" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/></g></svg></div>
           <div class="road-sign rs1"><b>Today<br>proven locally</b><span>Seven roles<br>isolated validation<br>approvals<br>independent Verify<br>scripted full-chain model transport</span></div><div class="road-sign rs2"><b>0–3 months<br>target</b><span>Live-provider trace<br>hosted beta<br>GitHub App<br>hardened runner<br>3 design partners</span></div><div class="road-sign rs3"><b>3–6 months<br>target</b><span>10 pilots<br>5 paying customers<br>measured precision, time, acceptance, and cost</span></div><div class="road-sign rs4"><b>6–12 months<br>target</b><span>50 customers<br>multi-repo<br>monitoring<br>partnerships<br>SOC 2 readiness</span></div><div class="road-sign rs5"><b>12–24 months<br>target</b><span>GitLab + Bitbucket<br>enterprise controls<br>compliance evidence<br>$1M ARR gate</span></div>
         </div>
       </section>
 
       <section class="slide team-final-slide" data-note="SPOKEN (4:12 to 4:22; about 10 seconds including clicks/pauses): Our six contributors cover code intelligence, AI repair, security, monitoring, reinforcement learning and the product experience.
 
-REFERENCE AND CUES, NOT SPOKEN: Click through six contributors. Click 7 connects everyone through Ari; click 8 pulls the cards into one coordinated team. Photos remain placeholders; ownership lanes come from the repository." data-spoken="Our six contributors cover code intelligence, AI repair, security, monitoring, reinforcement learning and the product experience." data-duration-s="10">
+REFERENCE AND CUES, NOT SPOKEN: Click through six contributors, then advance to the closing slide. Photos remain placeholders; ownership lanes come from the repository." data-spoken="Our six contributors cover code intelligence, AI repair, security, monitoring, reinforcement learning and the product experience." data-duration-s="10">
         <div class="slide-head"><span class="brand-mini"><img class="brand-ant" src="ari-ant-mark.png" alt="" aria-hidden="true">Build Quality &amp; Appropriate Technology / Team Contributions</span><span class="slide-num">14</span></div>
         <h2 style="font-size:46px">Built by people who <span class="accent">ship.</span></h2>
-        <span class="build-trigger" data-build="8"></span>
-        <svg class="team-connectors" data-build="7" viewBox="0 0 1136 430" aria-hidden="true"><path d="M180 85L568 215M568 85L568 215M956 85L568 215M180 345L568 215M568 345L568 215M956 345L568 215"/></svg>
         <div class="people-grid"><div class="person-card" data-build="1"><div class="photo-hole">SC</div><div><b>Saicharan Chowdarapu</b><span>AI REVIEW + REPAIR</span></div></div><div class="person-card" data-build="2"><div class="photo-hole">VK</div><div><b>Vihaan Krishna</b><span>PRODUCT FRONTEND + E2E</span></div></div><div class="person-card" data-build="3"><div class="photo-hole">AM</div><div><b>Alan Mozhoor</b><span>SECURITY AGENTS + SANDBOXING</span></div></div><div class="person-card" data-build="4"><div class="photo-hole">AI</div><div><b>Adam Isaac</b><span>RL DEFENSE + EVALUATION</span></div></div><div class="person-card" data-build="5"><div class="photo-hole">SY</div><div><b>Srihith Yandra</b><span>BACKEND + MONITORING + CONTRACTS</span></div></div><div class="person-card" data-build="6"><div class="photo-hole">SD</div><div><b>Sarosh Doddaka</b><span>CODE INTELLIGENCE + RETRIEVAL</span></div></div></div>
-        <img class="team-center-ant" data-build="7" src="ari-ant-mark.png" alt="Ari ant connecting the team">
       </section>
 
       <section class="slide dark finale-slide" data-note="SPOKEN (4:22 to 4:36; about 14 seconds including clicks/pauses): AI has made it possible for anyone to build software. Our goal is to make sure anyone can build software they can trust.
