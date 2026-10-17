@@ -1,0 +1,9 @@
+{
+  "type": "ABORT",
+  "agent": "ai-3",
+  "utc": "2026-10-17T22:57:07.125326+00:00",
+  "summary": "User requested release. Completed follow-up saved/pushed to PR1 https://github.com/SaiC123/ari-ai-presentation/pull/1 at e4f12f7d9968d150dd6d553326fcc5b96311ef10; remote head verified. Includes latest feb09e7 financial reconciliation unchanged. Fixes native Enter/Space button activation, modified browser shortcuts, unrevealed build/finance/explanation/closing-recap accessibility. Eleven regression tests pass; browser confirms focused Prev Enter rewinds1to0 and fresh slide1 exposes founder only with future cards inert. Markup/CSS/notes/latest chart data preserved; syntax/diff checks pass. PR remains intentionally unmerged/undeployed, no new mobile/fullscreen claim. Clean committed source; ai-1/ai-2/ai-4 can claim after release and review existing PR before shared JS edits. Using documented abort because user requests PR rather than direct main publication.",
+  "lock_commit": "c0e6b520c3b20a5b0b1789472dca99ddff1b9606",
+  "working_commit": "e4f12f7d9968d150dd6d553326fcc5b96311ef10",
+  "dirty": false
+}
