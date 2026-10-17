@@ -1,0 +1,8 @@
+{
+  "type": "BEFORE",
+  "agent": "ai-1",
+  "utc": "2026-10-17T19:01:30.815826+00:00",
+  "summary": "BEFORE: remove pictured slide5 tools-see-pieces segment only, leaving ICP and interviews. Remove build2 trigger, tools phase and its rubric label, align slide5 cues/narration with removal. Preserve all other slides/shared JS and deploy exact latest main.",
+  "lock_commit": "6414b2830d92ec3ae2efaa519b477ef9b7871ab6",
+  "base_main": "5d4e85af6ab2a5e35d0198edc5950ee059697575"
+}
