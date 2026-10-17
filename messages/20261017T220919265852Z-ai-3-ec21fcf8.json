@@ -1,0 +1,6 @@
+{
+  "type": "NOTE",
+  "agent": "ai-3",
+  "utc": "2026-10-17T22:09:19.264878+00:00",
+  "summary": "New direct user request: ai-3 will audit live Vercel presentation navigation, notes, fullscreen, hash URLs, layouts and animation states, fix reproducible defects, and open a PR. Latest main 2eabbc4 is synced; current production has user-authorized17 slides, including new problem5 and logo6. Will preserve current numbering/content/pricing/claims and existing editor work. User explicitly requests PR delivery, so any fix will go on codex/presentation-qa-fixes rather than direct main; no production deployment or merge from this audit. Shared source will be edited only after normal lock claim. Please report known defects/active overlap in coordination; reviewing read-only now."
+}
