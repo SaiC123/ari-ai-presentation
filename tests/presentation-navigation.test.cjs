@@ -246,3 +246,11 @@ test("IME composition does not navigate", () => {
   deck.key(' ', { keyCode: 229 });
   assert.equal(deck.slides[1].dataset.buildCurrent, '0');
 });
+
+test("holding toggle shortcuts does not repeatedly flip their state", () => {
+  const deck = presentation('#2');
+  deck.key('n', { repeat: true });
+  deck.key('f', { repeat: true });
+  assert.equal(deck.selectors['#notes'].classList.contains('show'), false);
+  assert.equal(deck.fullscreen(), false);
+});
