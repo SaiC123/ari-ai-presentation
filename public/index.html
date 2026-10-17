@@ -1456,6 +1456,7 @@ REFERENCE AND CUES, NOT SPOKEN: Reveal six visual memories. Click 7 connects the
       notesToggle.setAttribute('aria-expanded', String(open));
       notesToggle.setAttribute('aria-label', open ? 'Hide speaker notes' : 'Show speaker notes');
       if (open) notes.focus();
+      else notesToggle.focus();
     }
     notesToggle.addEventListener('click', event => { event.stopPropagation(); toggleNotes(); });
 
@@ -1583,7 +1584,6 @@ REFERENCE AND CUES, NOT SPOKEN: Reveal six visual memories. Click 7 connects the
       if (event.key === 'Escape' && notes.classList.contains('show')) {
         event.preventDefault();
         toggleNotes();
-        notesToggle.focus();
         return;
       }
       if (event.target?.isContentEditable || event.target?.closest?.('input, textarea, select, [role="textbox"]')) return;

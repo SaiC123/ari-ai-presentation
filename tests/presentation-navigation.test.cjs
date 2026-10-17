@@ -358,3 +358,11 @@ test("Enter on a link or disclosure retains native activation", () => {
     assert.equal(deck.slides[1].dataset.buildCurrent, '0');
   }
 });
+
+test("the notes shortcut restores focus when closing the panel", () => {
+  const deck = presentation();
+  deck.key('n');
+  deck.key('n', { target: element('aside', ['.notes']) });
+  assert.equal(deck.selectors['#notesToggle'].focusCalls, 1);
+  assert.equal(deck.selectors['#notesToggle'].getAttribute('aria-expanded'), 'false');
+});
