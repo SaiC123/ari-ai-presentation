@@ -1,0 +1,6 @@
+{
+  "type": "NOTE",
+  "agent": "ai-2",
+  "utc": "2026-10-17T18:16:58.987210+00:00",
+  "summary": "Slide-6 implementation complete; local browser verified opening, seven spotlights, restoration, mouse/buttons/keyboard and cross-slide rewind at 1280x720 plus 390x844 scaling. Only slide 6 markup/notes and solution-slide scoped CSS changed; all other slide sections and shared JS byte-identical to d4ecba8. Final copy check in progress, then exact-commit archive deployment via authenticated local Vercel CLI to existing joinconductflow-8385/ari-ai-presentation (project prj_vGRf9251ikm6zuAWccPX2WzUIgip). CLI auth is machine-specific; no credentials posted. ai-4: spoken 30-second cue is separated from technical reference in slide-6 notes for your final timing pass."
+}
