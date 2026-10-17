@@ -392,38 +392,22 @@
     .targeting-strip { display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-top:10px; }
     .targeting-strip div { padding:9px 12px; border:1px solid var(--line); border-radius:11px; background:var(--panel); font:500 9px/1.35 "IBM Plex Mono",monospace; color:var(--muted); }
     .targeting-strip b { color:var(--brand-deep); }
-    /* ai-2: slide 12, one acquisition-to-outcomes pipeline. */
+    /* ai-2: slide 12 graphic milestones, with no information cards. */
     .adoption-slide > h2 { font-size:50px;line-height:1.04;letter-spacing:-.045em; }
-    .adoption-slide .pipeline-grid { position:absolute;left:72px;right:72px;top:211px;height:423px;display:grid;grid-template-columns:350px repeat(3,minmax(0,1fr));gap:18px;margin:0;padding:0;list-style:none; }
-    .adoption-slide .pipeline-stage { position:relative;min-width:0;min-height:0;padding:19px 18px;border:1px solid var(--line);border-radius:18px;background:white;transition:border-color .3s,box-shadow .3s; }
-    .adoption-slide .pipeline-stage:first-child { background:var(--panel); }
-    .adoption-slide .pipeline-stage:not(:last-child)::after { content:'→';position:absolute;right:-17px;top:28px;width:16px;text-align:center;color:var(--acid);font:500 18px/1 'Space Grotesk',sans-serif; }
-    .adoption-slide .pipeline-index { display:inline-grid;place-items:center;width:35px;height:28px;border:1px solid var(--line);border-radius:7px;color:var(--acid);background:var(--brand-soft);font:500 15px/1 'IBM Plex Mono',monospace;transition:color .3s,background .3s; }
-    .adoption-slide .pipeline-stage h3 { margin:12px 0 20px;font-size:25px;line-height:1.08;letter-spacing:-.035em; }
-    .adoption-slide .pipeline-group + .pipeline-group { margin-top:15px; }
-    .adoption-slide .pipeline-group-label { font:500 12px/1.25 'IBM Plex Mono',monospace;text-transform:uppercase;letter-spacing:.035em;color:var(--muted); }
-    .adoption-slide .pipeline-tags { display:flex;flex-wrap:wrap;gap:5px;margin:8px 0 0;padding:0;list-style:none; }
-    .adoption-slide .pipeline-tags li { padding:4px 7px;border:1px solid var(--line);border-radius:6px;background:white;font:500 12px/1.2 Inter,sans-serif;white-space:nowrap; }
-    .adoption-slide .pipeline-funnel { margin-top:8px;padding-top:9px;border-top:1px solid var(--line); }
-    .adoption-slide .pipeline-funnel p { display:flex;align-items:baseline;gap:5px;white-space:nowrap;font-size:13px;line-height:1.5;color:var(--muted); }
-    .adoption-slide .pipeline-funnel p + p { margin-top:4px; }
-    .adoption-slide .pipeline-funnel b { color:var(--acid);font:600 17px/1.25 'Space Grotesk',sans-serif; }
-    .adoption-slide .pipeline-funnel i { color:var(--acid);font-size:13px;font-style:normal; }
-    .adoption-slide .pipeline-actions { margin:0;padding:0;list-style:none; }
-    .adoption-slide .pipeline-actions li { position:relative;padding:10px 0 10px 19px;border-top:1px solid var(--line);font-size:16px;line-height:1.4;color:var(--muted); }
-    .adoption-slide .pipeline-actions li::before { content:'';position:absolute;left:0;top:19px;width:6px;height:6px;border-radius:50%;background:var(--acid); }
-    .adoption-slide .defense-stage { background:var(--ink);color:white;border-color:var(--ink); }
-    .adoption-slide .defense-stage .pipeline-index { border-color:rgba(255,138,117,.4);color:#ff8a75;background:rgba(194,69,45,.14); }
-    .adoption-slide .defense-flow li { padding:8px 0 12px 24px;border:0; }
-    .adoption-slide .defense-flow li::before { top:16px;width:9px;height:9px;border:2px solid #ff8a75;background:var(--ink); }
-    .adoption-slide .defense-flow li:not(:last-child)::after { content:'';position:absolute;left:4px;top:25px;bottom:-16px;width:1px;background:rgba(255,138,117,.35); }
-    .adoption-slide .defense-flow b { display:block;color:white;font:500 20px/1.2 'Space Grotesk',sans-serif; }
-    .adoption-slide .defense-flow span { display:block;margin-top:4px;color:rgba(255,255,255,.7);font-size:15px;line-height:1.25; }
-    .adoption-slide .pipeline-actions .pipeline-expand { color:var(--acid);font-weight:600; }
-    .adoption-slide .pipeline-actions .pipeline-expand::before { width:7px;height:7px;border-radius:0;transform:rotate(-45deg);background:none;border-right:2px solid var(--acid);border-bottom:2px solid var(--acid); }
-    .adoption-slide[data-build-current='0'] .pipeline-stage:nth-child(1),.adoption-slide[data-build-current='1'] .pipeline-stage:nth-child(2),.adoption-slide[data-build-current='2'] .pipeline-stage:nth-child(3),.adoption-slide[data-build-current='3'] .pipeline-stage:nth-child(4) { border-color:var(--acid);box-shadow:0 10px 26px rgba(194,69,45,.10); }
-    .adoption-slide[data-build-current='0'] .pipeline-stage:nth-child(1) .pipeline-index,.adoption-slide[data-build-current='1'] .pipeline-stage:nth-child(2) .pipeline-index,.adoption-slide[data-build-current='2'] .pipeline-stage:nth-child(3) .pipeline-index,.adoption-slide[data-build-current='3'] .pipeline-stage:nth-child(4) .pipeline-index { color:white;background:var(--acid);border-color:var(--acid); }
-
+    .adoption-slide .milestone-pipeline { position:absolute;left:72px;right:72px;top:230px;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));margin:0;padding:0;list-style:none;text-align:center; }
+    .adoption-slide .milestone { position:relative;min-width:0; }
+    .adoption-slide .milestone:not(:last-child)::after { content:'';position:absolute;left:calc(50% + 76px);top:104px;width:calc(100% - 152px);height:1px;background:rgba(194,69,45,.3); }
+    .adoption-slide .milestone-number { display:block;font:500 24px/1 'IBM Plex Mono',monospace;color:var(--acid); }
+    .adoption-slide .milestone-icon { display:block;width:112px;height:112px;margin:24px auto 26px;color:var(--ink);transition:color .3s; }
+    .adoption-slide .milestone h3 { font-size:26px;line-height:1.1;letter-spacing:-.025em; }
+    .adoption-slide .milestone-copy { display:block;margin-top:12px;font-size:16px;line-height:1.35;color:var(--muted);white-space:nowrap; }
+    .adoption-slide .milestone-funnel { position:absolute;left:120px;right:120px;top:552px;text-align:center; }
+    .adoption-slide .projection-label { font:500 12px/1.3 'IBM Plex Mono',monospace;letter-spacing:.08em;color:var(--acid); }
+    .adoption-slide .projection-flow { display:flex;align-items:baseline;justify-content:center;gap:18px;margin-top:15px;white-space:nowrap; }
+    .adoption-slide .projection-hop { display:inline-flex;align-items:baseline;gap:6px;color:var(--muted);font-size:16px; }
+    .adoption-slide .projection-hop b { font:600 23px/1.2 'Space Grotesk',sans-serif;color:var(--ink); }
+    .adoption-slide .projection-arrow { font-size:18px;color:var(--acid); }
+    .adoption-slide[data-build-current='0'] .milestone:nth-child(1) .milestone-icon,.adoption-slide[data-build-current='1'] .milestone:nth-child(2) .milestone-icon,.adoption-slide[data-build-current='2'] .milestone:nth-child(3) .milestone-icon,.adoption-slide[data-build-current='3'] .milestone:nth-child(4) .milestone-icon { color:var(--acid); }
 
     /* Slide 14 */
     .team-final-slide { overflow:hidden; }
@@ -1020,48 +1004,125 @@ REFERENCE AND CUES, NOT SPOKEN: Do not say TAM/SAM/SOM. Click through the full o
 
       </section>
 
-      <section class="slide adoption-slide" data-note="SPOKEN (3:38 to 3:56; about 18 seconds including clicks/pauses): First, acquire a client. Set up ARI with a baseline and approval boundaries. Run sandboxed defense and independently verify repairs. Review findings, false positives and time saved before expanding.
+      <section class="slide adoption-slide" data-note="SPOKEN (3:38 to 3:56; about 18 seconds including clicks/pauses): Acquire through founder outreach and accelerators. Connect the repository and establish a baseline. Detect, patch and independently verify. Review results, then expand. The funnel is a projection, not achieved traction.
 
-REFERENCE AND CUES, NOT SPOKEN: The four cards are one proposed customer workflow. Build 0 emphasizes acquisition, click 1 setup, click 2 defense, click 3 outcomes; all four remain visible. The next click advances to the roadmap, and rewind returns through the same stages. Funnel 100 targets to 30 conversations to 10 design partners to 5 pilots to 3 paid is an initial acquisition forecast, not achieved traction. Target profile and channels are planning assumptions. Begin with one authorized repository, a baseline, observation-only mode and explicit human approval boundaries. Detect, sandbox validation, proposed patches or recommendations, and independent verification refer to the approval-gated prototype workflow, not autonomous production network defense. Monitoring requires running workers. The complete model chain currently uses scripted transport; a full live-provider trace remains a future gate. Outcomes are measurements to collect: surfaced findings, false positives, time to fix and time saved, then a decision about expanding deployment. They are not validated customer results. Retain execution cost, fix acceptance and scope safety in the pilot review even though the separate metric boxes have been removed from the slide." data-spoken="First, acquire a client. Set up ARI with a baseline and approval boundaries. Run sandboxed defense and independently verify repairs. Review findings, false positives and time saved before expanding." data-duration-s="18">
+REFERENCE AND CUES, NOT SPOKEN: Entry emphasizes Acquire; clicks 1, 2 and 3 emphasize Set up, Defend and Review. All four milestones remain visible. Next advances to the roadmap; rewind restores the same states. The acquisition funnel is a projection: 100 targets to 30 calls to 10 design partners to 5 pilots to 3 paid. These are planning assumptions, not achieved traction or measured conversion rates. Start with an authorized repository, baseline, observation-only configuration and human approval boundaries. Repairs remain approval-gated; independent verification and sandbox validation belong to the prototype workflow. The full prototype model chain uses scripted transport; a complete live-provider trace remains a future gate. This is not autonomous production network defense. Review results before deciding whether to expand; customer outcomes and time savings remain unvalidated." data-spoken="Acquire through founder outreach and accelerators. Connect the repository and establish a baseline. Detect, patch and independently verify. Review results, then expand. The funnel is a projection, not achieved traction." data-duration-s="18">
         <div class="slide-head"><span class="brand-mini"><img class="brand-ant" src="ari-ant-mark.png" alt="" aria-hidden="true">GO-TO-MARKET / DEPLOYMENT / CUSTOMER WORKFLOW</span><span class="slide-num">12</span></div>
-        <h2>From first customer to <span class="accent">active defense.</span></h2>
+        <h2>From first client to <span class="accent">active defense.</span></h2>
         <span class="build-trigger" data-build="1"></span><span class="build-trigger" data-build="2"></span><span class="build-trigger" data-build="3"></span>
-        <ol class="pipeline-grid" aria-label="Customer acquisition and deployment workflow">
-          <li class="pipeline-stage">
-            <span class="pipeline-index">01</span>
-            <h3>ACQUIRE<br>FIRST CLIENT</h3>
-            <div class="pipeline-group">
-              <p class="pipeline-group-label">Target profile</p>
-              <ul class="pipeline-tags"><li>5–50 employees</li><li>B2B SaaS</li><li>GitHub</li><li>Frequent deploys</li><li>Sensitive data</li><li>No AppSec</li></ul>
-            </div>
-            <div class="pipeline-group">
-              <p class="pipeline-group-label">Channels</p>
-              <ul class="pipeline-tags"><li>Founder outreach</li><li>Accelerators</li><li>Atlanta network</li><li>GitHub leads</li><li>Agencies</li></ul>
-            </div>
-            <div class="pipeline-group">
-              <p class="pipeline-group-label">Funnel / Forecast</p>
-              <div class="pipeline-funnel" aria-label="Forecast: 100 targets to 30 conversations to 10 design partners to 5 pilots to 3 paid">
-                <p><b>100</b> targets <i aria-hidden="true">→</i> <b>30</b> conversations <i aria-hidden="true">→</i></p>
-                <p><b>10</b> design partners <i aria-hidden="true">→</i> <b>5</b> pilots <i aria-hidden="true">→</i> <b>3</b> paid</p>
-              </div>
-            </div>
+        <!-- Lucide SVG icons: https://github.com/lucide-icons/lucide
+ISC License
+
+Copyright (c) 2026 Lucide Icons and Contributors
+
+Permission to use, copy, modify, and/or distribute this software for any
+purpose with or without fee is hereby granted, provided that the above
+copyright notice and this permission notice appear in all copies.
+
+THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+        -->
+        <ol class="milestone-pipeline" aria-label="Client to active defense pipeline">
+          <li class="milestone">
+            <span class="milestone-number">01</span>
+              <svg class="milestone-icon" data-lucide="handshake" aria-hidden="true" focusable="false"
+                xmlns="http://www.w3.org/2000/svg"
+                width="112"
+                height="112"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="m11 17 2 2a1 1 0 1 0 3-3" />
+                <path d="m14 14 2.5 2.5a1 1 0 1 0 3-3l-3.88-3.88a3 3 0 0 0-4.24 0l-.88.88a1 1 0 1 1-3-3l2.81-2.81a5.79 5.79 0 0 1 7.06-.87l.47.28a2 2 0 0 0 1.42.25L21 4" />
+                <path d="m21 3 1 11h-2" />
+                <path d="M3 3 2 14l6.5 6.5a1 1 0 1 0 3-3" />
+                <path d="M3 4h8" />
+              </svg>
+            <h3>ACQUIRE</h3>
+            <span class="milestone-copy">Founder outreach + accelerators</span>
           </li>
-          <li class="pipeline-stage">
-            <span class="pipeline-index">02</span>
-            <h3>SET UP<br>ARI</h3>
-            <ul class="pipeline-actions"><li>Connect repository</li><li>Establish baseline</li><li>Configure observation-only mode</li><li>Set approval boundaries</li></ul>
+          <li class="milestone">
+            <span class="milestone-number">02</span>
+              <svg class="milestone-icon" data-lucide="git-branch" aria-hidden="true" focusable="false"
+                xmlns="http://www.w3.org/2000/svg"
+                width="112"
+                height="112"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M15 6a9 9 0 0 0-9 9V3" />
+                <circle cx="18" cy="6" r="3" />
+                <circle cx="6" cy="18" r="3" />
+              </svg>
+            <h3>SET UP</h3>
+            <span class="milestone-copy">Connect repo → Baseline</span>
           </li>
-          <li class="pipeline-stage defense-stage">
-            <span class="pipeline-index">03</span>
-            <h3>RUN<br>DEFENSE</h3>
-            <ol class="pipeline-actions defense-flow"><li><b>Detect</b><span>Attack paths</span></li><li><b>Validate</b><span>In sandbox</span></li><li><b>Patch</b><span>Or recommend fixes</span></li><li><b>Verify</b><span>Independently</span></li></ol>
+          <li class="milestone">
+            <span class="milestone-number">03</span>
+              <svg class="milestone-icon" data-lucide="shield-check" aria-hidden="true" focusable="false"
+                xmlns="http://www.w3.org/2000/svg"
+                width="112"
+                height="112"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" />
+                <path d="m9 12 2 2 4-4" />
+              </svg>
+            <h3>DEFEND</h3>
+            <span class="milestone-copy">Detect → Patch → Verify</span>
           </li>
-          <li class="pipeline-stage">
-            <span class="pipeline-index">04</span>
-            <h3>REVIEW<br>OUTCOMES</h3>
-            <ul class="pipeline-actions"><li>Review surfaced findings</li><li>Measure false positives</li><li>Track time to fix</li><li>Quantify time saved</li><li class="pipeline-expand">Expand deployment</li></ul>
+          <li class="milestone">
+            <span class="milestone-number">04</span>
+              <svg class="milestone-icon" data-lucide="chart-no-axes-combined" aria-hidden="true" focusable="false"
+                xmlns="http://www.w3.org/2000/svg"
+                width="112"
+                height="112"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M12 16v5" />
+                <path d="M16 14.639V21" />
+                <path d="M20 10.656V21" />
+                <path d="m22 3-8.646 8.646a.5.5 0 0 1-.708 0L9.354 8.354a.5.5 0 0 0-.707 0L2 15" />
+                <path d="M4 18.463V21" />
+                <path d="M8 14.656V21" />
+              </svg>
+            <h3>REVIEW</h3>
+            <span class="milestone-copy">Results → Expand</span>
           </li>
         </ol>
+        <div class="milestone-funnel" aria-label="Projected acquisition funnel">
+          <span class="projection-label">PROJECTIONS</span>
+          <div class="projection-flow">
+            <span class="projection-hop"><b>100</b> Targets</span><span class="projection-arrow" aria-hidden="true">→</span>
+            <span class="projection-hop"><b>30</b> Calls</span><span class="projection-arrow" aria-hidden="true">→</span>
+            <span class="projection-hop"><b>10</b> Design Partners</span><span class="projection-arrow" aria-hidden="true">→</span>
+            <span class="projection-hop"><b>5</b> Pilots</span><span class="projection-arrow" aria-hidden="true">→</span>
+            <span class="projection-hop"><b>3</b> Paid</span>
+          </div>
+        </div>
       </section>
 
       <section class="slide dark road-slide" data-note="SPOKEN (3:56 to 4:12; about 16 seconds including clicks/pauses): The next gates are a complete live-provider trace, hosted beta and paying pilots. Expansion follows measured trust and cost, with every customer and revenue milestone shown as a target.
