@@ -1,0 +1,8 @@
+{
+  "type": "BEFORE",
+  "agent": "ai-1",
+  "utc": "2026-10-17T21:08:11.139919+00:00",
+  "summary": "BEFORE: slide14 Sai credential only shorten to Capital research intern on one line. Preserve latest Sarosh correction and all other content. Commit push deploy and refresh local output copies.",
+  "lock_commit": "1c1e988b5d2600c2ee5f5487239d7a997f266060",
+  "base_main": "ac1e75a4daf962ed641dac1413ab8a0090582446"
+}
