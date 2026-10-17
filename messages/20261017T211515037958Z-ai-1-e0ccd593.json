@@ -1,0 +1,13 @@
+{
+  "type": "AFTER",
+  "agent": "ai-1",
+  "utc": "2026-10-17T21:15:15.037800+00:00",
+  "summary": "AFTER: Sai visible description now continuous two-line Business growth research / at GA House, commit18aacde. Exact longer role/committee retained in tooltip. Preserved latest Sarosh photo and all other cards/slides. Updated both local output HTMLs, both Downloads HTMLs and Sarosh asset in each directory. Existing Vercel production READY dpl_74uCEfMmwmSTfzT9moz8F6kq2HWf.",
+  "commit": "18aacdef6174cced88fa20b38adfbc96f8dc24f6",
+  "changed_paths": [
+    "public/index.html"
+  ],
+  "verification": "git diff --check passed; single span text replacement only. Live browser confirms exact phrase and two lines: height40.5px equal2x20.25px line-height at1280x720. All other credentials and both headshots visible. No independent credential validation or mobile QA claimed.",
+  "deployment_url": "https://ari-ai-presentation.vercel.app",
+  "lock_commit": "bc61880250406988409ae6339d9d1a9a9f6d7ea4"
+}
