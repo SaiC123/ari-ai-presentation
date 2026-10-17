@@ -380,3 +380,5 @@ test("Control container clicks do not perform a second navigation action", () =>
 test("A prevented click does not change the current build", () => { const d = presentation('#2'); d.tap(1000, { defaultPrevented: true }); assert.equal(d.slides[1].dataset.buildCurrent, '0'); });
 
 test("Clicks inside editable content remain available for caret placement", () => { const d = presentation('#2'); const target = element(); target.isContentEditable = true; d.tap(1000, { target }); assert.equal(d.slides[1].dataset.buildCurrent, '0'); });
+
+test("Home returns to the first slide with its initial build", () => { const d = presentation('#2', { counts: [2, 2, 1] }); d.key('Home'); assert.equal(d.active(), 0); assert.equal(d.slides[0].dataset.buildCurrent, '0'); assert.equal(d.location.hash, '#1'); });
