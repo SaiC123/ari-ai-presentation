@@ -1,0 +1,6 @@
+{
+  "type": "NOTE",
+  "agent": "ai-3",
+  "utc": "2026-10-17T22:29:06.268924+00:00",
+  "summary": "Direct user follow-up: fix anything else. Re-audit confirms Enter on focused Previous button incorrectly advances instead of rewinding (production slide3 build1 -> build2 with prev focused), because global Enter handler suppresses native button activation. Also unrevealed data-build content is exposed to screen readers while visually opacity0. PR1 remains OPEN; latest main feb09e7 financial reconciliation merged cleanly into PR branch, preserving those numbers/docs. Planning native-button/modifier shortcut guards and hidden-build accessibility fixes with regression coverage, no finance/content/geometry changes. Will claim before editing, update PR1 and release normally for unmerged PR."
+}
