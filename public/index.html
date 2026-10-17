@@ -342,6 +342,12 @@
     .waterbar i { display:block; border-radius:12px 12px 3px 3px; background:var(--brand-soft); min-height:25px; }
     .waterbar:first-child i,.waterbar:last-child i{background:var(--acid)}
     .waterbar b { margin-top:10px; font:600 12px/1.2 "IBM Plex Mono",monospace; }
+    .finance-slide .fscene2 .waterfall { height:260px;margin-top:10px; }
+    .finance-slide .fscene2 .waterbar i { min-height:0; }
+    .finance-slide .cost-detail { display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:14px; }
+    .finance-slide .cost-detail>div { padding:13px 15px;border:1px solid rgba(255,255,255,.18);border-radius:12px;background:rgba(255,255,255,.055); }
+    .finance-slide .cost-detail b { display:block;font:600 17px/1.2 "Space Grotesk",sans-serif;color:#ffb09f; }
+    .finance-slide .cost-detail small { display:block;font-size:14px;line-height:1.35;color:rgba(255,255,255,.75);margin-top:7px; }
     .finance-chart-wrap { display:grid; grid-template-columns:680px 1fr; gap:34px; align-items:center; }
     .finance-chart-wrap canvas { width:680px!important; height:340px!important; }
     .break-even { padding:28px; border-radius:20px; background:var(--acid); }
@@ -1072,7 +1078,7 @@ REFERENCE AND CUES, NOT SPOKEN: Proposed pricing is $99/$299/$799, with 2/4/10 d
             <p class="pricing-shared">All features included in every plan.</p>
             <div class="pricing-terms"><b>Proposed plans</b><span>$25 / extra assessment</span><span>Usage caps + budget approval</span></div>
           </div>
-          <div class="finance-scene fscene2"><p class="section-tag">Growth plan / forecast monthly economics / 4 assessments</p><div class="waterfall"><div class="waterbar"><i style="height:250px"></i><b>$299<br>REVENUE</b></div><div class="waterbar"><i style="height:37px"></i><b>MODELS + SANDBOX<br>−$44</b></div><div class="waterbar"><i style="height:25px"></i><b>PAYMENTS<br>−$9</b></div><div class="waterbar"><i style="height:25px"></i><b>STORAGE + SUPPORT<br>−$12</b></div><div class="waterbar"><i style="height:196px"></i><b>$234<br>CONTRIBUTION</b></div></div></div>
+          <div class="finance-scene fscene2"><p class="section-tag">Growth plan / forecast monthly economics / 4 assessments</p><div class="waterfall"><div class="waterbar"><i style="height:210px"></i><b>$299<br>REVENUE</b></div><div class="waterbar"><i style="height:31px"></i><b>MODELS + SANDBOX<br>−$44</b></div><div class="waterbar"><i style="height:21px"></i><b>PAYMENTS<br>−$9</b></div><div class="waterbar"><i style="height:21px"></i><b>STORAGE + SUPPORT<br>−$12</b></div><div class="waterbar"><i style="height:165px"></i><b>$234<br>CONTRIBUTION</b></div></div><div class="cost-detail" aria-label="Forecast monthly Growth-plan cost breakdown, approximately 65 dollars total"><div><b>$40 · AI usage</b><small>4 assessments × $10 model cap</small></div><div><b>$4 · Sandbox + infrastructure</b><small>4 assessments × $1 buffer</small></div><div><b>~$9 · Payment processing</b><small>Forecast card-processing fees</small></div><div><b>$12 · Storage + support</b><small>Evidence, logs, and support allowance</small></div></div></div>
           <div class="finance-scene fscene3"><div class="finance-chart-wrap"><canvas id="economicsChart" width="680" height="300" aria-label="Forecast revenue and monthly operating costs"></canvas><div class="break-even"><p class="kicker">Forecast break-even</p><strong>~137</strong><p style="margin-top:12px">Blended customers</p><p class="small" style="margin-top:14px;opacity:.72">78% contribution margin<br>$31.25K fixed monthly burn</p></div></div></div>
           <div class="finance-scene fscene4"><div class="funding-grid"><div class="funding-total"><div><strong>$750K</strong><span>PRE-SEED / 18 MONTHS</span></div></div><div class="allocation"><div class="allocation-row"><b>45%</b><div class="allocation-track"><i style="--w:45%"></i></div><span>Product + security</span></div><div class="allocation-row"><b>25%</b><div class="allocation-track"><i style="--w:25%"></i></div><span>Models + sandbox</span></div><div class="allocation-row"><b>20%</b><div class="allocation-track"><i style="--w:20%"></i></div><span>Pilots + acquisition</span></div><div class="allocation-row"><b>10%</b><div class="allocation-track"><i style="--w:10%"></i></div><span>Compliance + ops</span></div></div></div></div>
         </div>
