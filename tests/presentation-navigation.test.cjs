@@ -280,3 +280,12 @@ test("notes button exposes and focuses notes with synchronized expanded state", 
   deck.click('#notesToggle');
   assert.equal(deck.selectors['#notesToggle'].getAttribute('aria-expanded'), 'false');
 });
+
+test("Escape closes notes and returns focus to their toggle", () => {
+  const deck = presentation('#2');
+  deck.click('#notesToggle');
+  assert.equal(deck.key('Escape'), true);
+  assert.equal(deck.selectors['#notes'].classList.contains('show'), false);
+  assert.equal(deck.selectors['#notesToggle'].focusCalls, 1);
+  assert.equal(deck.slides[1].dataset.buildCurrent, '0');
+});
