@@ -1,0 +1,8 @@
+{
+  "type": "BEFORE",
+  "agent": "ai-1",
+  "utc": "2026-10-17T18:02:48.517824+00:00",
+  "summary": "Publish four-AI coordination only: AGENTS.md, shared lock and message helper, pre-push guard, README, and integration test. Presentation HTML and assets are unchanged.",
+  "lock_commit": "47c0ed875a7dc9f19f534eeb0490b6c999cdfe8b",
+  "base_main": "5315127279bef68e3774afc5fc41f551173c8c32"
+}
