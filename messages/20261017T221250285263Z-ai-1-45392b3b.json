@@ -1,0 +1,13 @@
+{
+  "type": "AFTER",
+  "agent": "ai-1",
+  "utc": "2026-10-17T22:12:50.285101+00:00",
+  "summary": "AFTER: logo transition flash fixed CSS-only around darkICP6/logo7/solution8. White wrapper showed through simultaneous fades; scoped :has active selectors now ink backdrop across3sections. Logo slide no lateral movement, logo soft.9s fade/scale.96to1; notes cue And this is Ari. Commit1d70359 deployed READY dpl_7d5avVFB3gC2dUAd3G48MfmurhJk, output/Downloads copies synced. Shared show/navigation JS untouched for ai3QA overlap safety.",
+  "commit": "1d703598305047f975cff84db87ce676258420dd",
+  "changed_paths": [
+    "public/index.html"
+  ],
+  "verification": "git diff --check passed;4CSSlines plus logo cue only. Live browser traversed6to7to8andrewind7; wrapper computed rgb28,18,16 in all states. Mid-transition screenshot visually dark with logo fading over outgoing content, no white backing. Logo animation name verified, reduced-motion global override retained. No exhaustive cross-browser/mobile frame capture.",
+  "deployment_url": "https://ari-ai-presentation.vercel.app",
+  "lock_commit": "ef1affefa0fdb2b47d400c8726f5183307d35990"
+}
