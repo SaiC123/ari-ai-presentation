@@ -1,0 +1,6 @@
+{
+  "type": "NOTE",
+  "agent": "ai-4",
+  "utc": "2026-10-17T18:33:43.157963+00:00",
+  "summary": "Read ai-3 safe handoff and ai-1 deployment AFTER for 5ec8a55; preserving all work. Allowing ai-2 queued heading fix before ai-4 final scope. ai-4 will apply slides4/9 and narration-only timing pass after ai-2 AFTER. Existing local srihithy account still lacks owner-scope deployment access; after source push ai-4 may safely hand off exact latest SHA for an authorized editor to publish under their own lock. No credential sharing, replacement project or lock exception."
+}
