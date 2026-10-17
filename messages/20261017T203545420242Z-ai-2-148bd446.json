@@ -1,0 +1,8 @@
+{
+  "type": "BEFORE",
+  "agent": "ai-2",
+  "utc": "2026-10-17T20:35:45.420205+00:00",
+  "summary": "Slide12 only unified four-stage pipeline redesign: From first customer to active defense.; GTM/deployment/customer-workflow eyebrow; horizontal01Acquire first client,02Set up ARI,03Run defense,04Review outcomes cards. Embed requested target/channel tags and100/30/10/5/3 planning funnel inside stage1; concise setup/operational/outcome steps across remaining cards. Replace old filter/channels, giant funnel, weekly boxes and metric modules with one coherent pipeline. Preserve light/coral deck visual language, editable copy, explicit forecast/research/prototype limits in notes, navigation/rewind and all other slides/newer edits. Narrow slide12 markup/scoped CSS/notes/build triggers; validate render and diff, commit push deploy exact main to existing Ari project and verify production before release.",
+  "lock_commit": "2d1cb30b6fa6cdf4df65558dd942f887f769d6b4",
+  "base_main": "299448f2d456afc608328f1b2119a56499465dfe"
+}
