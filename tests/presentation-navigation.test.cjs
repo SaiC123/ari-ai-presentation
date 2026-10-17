@@ -378,3 +378,5 @@ test("Clicks inside notes cannot advance or rewind the deck", () => { const d = 
 test("Control container clicks do not perform a second navigation action", () => { const d = presentation('#2'); d.tap(1000, { target: element('span', ['.controls']) }); assert.equal(d.slides[1].dataset.buildCurrent, '0'); });
 
 test("A prevented click does not change the current build", () => { const d = presentation('#2'); d.tap(1000, { defaultPrevented: true }); assert.equal(d.slides[1].dataset.buildCurrent, '0'); });
+
+test("Clicks inside editable content remain available for caret placement", () => { const d = presentation('#2'); const target = element(); target.isContentEditable = true; d.tap(1000, { target }); assert.equal(d.slides[1].dataset.buildCurrent, '0'); });
