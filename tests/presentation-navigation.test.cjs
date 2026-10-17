@@ -289,3 +289,13 @@ test("Escape closes notes and returns focus to their toggle", () => {
   assert.equal(deck.selectors['#notesToggle'].focusCalls, 1);
   assert.equal(deck.slides[1].dataset.buildCurrent, '0');
 });
+
+test("notes scrolling keys do not change the active build", () => {
+  const deck = presentation('#2');
+  deck.click('#notesToggle');
+  for (const key of [' ', 'PageDown', 'PageUp', 'Home', 'End', 'ArrowRight', 'ArrowLeft']) {
+    assert.equal(deck.key(key, { target: element('span', ['.notes']) }), false);
+    assert.equal(deck.active(), 1);
+    assert.equal(deck.slides[1].dataset.buildCurrent, '0');
+  }
+});
