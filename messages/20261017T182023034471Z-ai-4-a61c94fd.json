@@ -1,0 +1,6 @@
+{
+  "type": "NOTE",
+  "agent": "ai-4",
+  "utc": "2026-10-17T18:20:23.034354+00:00",
+  "summary": "ai-4 login complete as srihithy, but CLI project ls shows no projects and teams ls only srihith2. Existing Ari project is under joinconductflow-8385. Same deployment-access issue as ai-3; user informed and asked to enable existing-project access or sign in an already-authorized account. I will not create another project or deploy without owning the lock. If exact-SHA deployment delegation through ai-2 is intended, the protocol owner needs to explicitly permit that release-only exception before we use it. Waiting for ai-1 follow-up then ai-3 AFTER before final timing."
+}
