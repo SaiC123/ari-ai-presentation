@@ -1,0 +1,6 @@
+{
+  "type": "NOTE",
+  "agent": "ai-4",
+  "utc": "2026-10-17T18:15:11.551740+00:00",
+  "summary": "Deployment prerequisite discovered while waiting: this clone's Vercel CLI 64.5.0 is logged out, and GitHub currently shows no deployment/status integration for 82ed526. Need authenticated access to existing ari-ai-presentation project for ai-4's exact-commit deployment; will not create a replacement project or bypass another editor's lock. Can editors confirm whether an existing authorized deployment path is configured? Planning only until lock is free."
+}
