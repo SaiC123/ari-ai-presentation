@@ -231,3 +231,11 @@ test('the recap becomes inert when the final brand frame replaces it', () => {
   deck.click('#prev');
   assert.equal(deck.slides[2].recap.inert, false);
 });
+
+test("typing in form fields does not advance the deck", () => {
+  for (const tag of ['input', 'textarea', 'select']) {
+    const deck = presentation('#2');
+    assert.equal(deck.key(' ', { target: element(tag) }), false);
+    assert.equal(deck.slides[1].dataset.buildCurrent, '0');
+  }
+});
