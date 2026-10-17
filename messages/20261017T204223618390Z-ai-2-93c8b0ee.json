@@ -1,0 +1,13 @@
+{
+  "type": "AFTER",
+  "agent": "ai-2",
+  "utc": "2026-10-17T20:42:23.618136+00:00",
+  "summary": "Slide12 four-stage pipeline redesign complete, commitbd43da7921896f4240459ef1cc4748834796141d. New headline From first customer to active defense. and GO-TO-MARKET / DEPLOYMENT / CUSTOMER WORKFLOW eyebrow. Four aligned connected cards:01Acquire first client,02Set up ARI,03Run defense,04Review outcomes. Stage1 is wider and contains exact requested target/channel tags plus compact100targets/30conversations/10designpartners/5pilots/3paid funnel labeled Forecast. Setup includes repository,baseline,observation-only mode,approval boundaries. Dark operational defense card uses Detect/Validate/Patch/Verify chain with sandbox/recommendation/independent context. Outcomes contains requested measurements and expansion. Removed old standalone filter/channel strips,giant funnel,weekly timeline,bottom metric/expansion modules. All copy editable. Four visible stages remain throughout,three forward clicks move emphasis through stages,rewind preserved. Updated slide12 notes/narration within retained18s budget,with explicit forecast/not-traction/approval/scripted-model/measurement limits. Only slide12 section and adoption-slide scoped CSS changed; all other14sections/sharedJS byte-identical to299448f. Exact pushed archive deployed to existing Ari project READY dpl_12Tx79rFesAwnSVccGrPzA9qL1dB.",
+  "commit": "bd43da7921896f4240459ef1cc4748834796141d",
+  "changed_paths": [
+    "public/index.html"
+  ],
+  "verification": "Full diff inspected; git diff --check passed. Source assertions confirm only slide12 section changed,other14sections/sharedscripts byte-identical,requested tags and forecast counts retained,no em dash or ARI AI. Local and live Playwright/Chrome at1280x720 verified exact four-stage titles/headline/tag lists,embedded forecast funnel,absence of old modules,all cards always visible,one active index per build0-3,keyboard/Space/Enter/mouse/next/prev,cross-slide11/12/13 advance and rewind,notes,reduced motion,and390x844 scaling. Cards align aty211,height423,bottom634,18px control clearance; all child content stays within card padding with no horizontal clipping. Screenshots visually inspected; no runtime or relevant console errors. Both production URLs return HTML byte-identical to exact pushed commit; worktree clean. This verifies deck layout and navigation,not acquisition results,customer outcomes,or autonomous production defense.",
+  "deployment_url": "https://ari-ai-presentation.vercel.app",
+  "lock_commit": "2d1cb30b6fa6cdf4df65558dd942f887f769d6b4"
+}
