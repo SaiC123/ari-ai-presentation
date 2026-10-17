@@ -711,7 +711,7 @@
     }
     .notes #noteText { white-space:pre-line; }
     /* ai-4: slide 4 and exactly two slide-9 segments */
-    .problem-statement-slide h1 { position:absolute;left:72px;right:72px;top:50%;transform:translateY(-50%);font-size:82px;line-height:1.08;letter-spacing:-.05em;text-align:center;margin:0; }
+    .problem-statement-slide h1 { position:absolute;left:50%;right:auto;top:50%;width:calc(100% - 144px);max-width:none;transform:translate(-50%,-50%);font-size:82px;line-height:1.08;letter-spacing:-.05em;text-align:center;margin:0; }
     .why-now-slide>h2 { margin-top:20px;font-size:62px;position:relative;top:-20px; }
     .why-now-slide .why-pressure-row { position:absolute;left:72px;right:72px;top:220px;height:375px; }
     .why-now-slide .why-factors { position:absolute;width:840px;left:50%;transform:translateX(-50%);display:grid;grid-template-columns:1fr 80px 1fr;gap:48px;align-items:start;opacity:1;visibility:visible;transition:opacity .25s,visibility .25s; }
