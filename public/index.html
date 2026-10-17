@@ -1557,7 +1557,8 @@ REFERENCE AND CUES, NOT SPOKEN: Reveal six visual memories. Click 7 connects the
       if (event.key === 'End') show(slides.length - 1);
     });
     document.addEventListener('click', event => {
-      if (event.target.closest('.controls') || event.target.closest('.notes')) return;
+      if (event.defaultPrevented || event.target?.isContentEditable) return;
+      if (event.target?.closest?.('.controls, .notes, a, button, input, textarea, select, [role="button"], [role="textbox"]')) return;
       if (event.clientX < window.innerWidth * .32) prevAction();
       else nextAction();
     });

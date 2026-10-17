@@ -254,3 +254,11 @@ test("holding toggle shortcuts does not repeatedly flip their state", () => {
   assert.equal(deck.selectors['#notes'].classList.contains('show'), false);
   assert.equal(deck.fullscreen(), false);
 });
+
+test("interactive clicks retain their own action without advancing", () => {
+  for (const tag of ['a', 'button', 'input', 'textarea', 'select']) {
+    const deck = presentation('#2');
+    deck.tap(1000, { target: element('span', [tag]) });
+    assert.equal(deck.slides[1].dataset.buildCurrent, '0', tag);
+  }
+});
