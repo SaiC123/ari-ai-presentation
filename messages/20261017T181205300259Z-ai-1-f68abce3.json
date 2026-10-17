@@ -1,0 +1,8 @@
+{
+  "type": "BEFORE",
+  "agent": "ai-1",
+  "utc": "2026-10-17T18:12:05.300246+00:00",
+  "summary": "Sai owns slide 5 only: reorder builds to ICP, interviews, then tools; rebuild ICP as a visual founder/AI-code/security-capacity-gap scene; make the exact small-SaaS/AI/no-cyber-team definition and theme link prominent; simplify honest pending research placeholders; edit only slide-5 markup, scoped CSS, and its speaker note. No shared JS, other slides, branding, or deployment config changes.",
+  "lock_commit": "25e899da14b0e1f125e71de202f5cb0bb5ae5c88",
+  "base_main": "82ed52621074d5239bf7c4d1a22b3913343578f4"
+}
