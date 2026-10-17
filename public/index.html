@@ -651,22 +651,23 @@
     }
     .notes #noteText { white-space:pre-line; }
     /* ai-4: slide 4 and exactly two slide-9 segments */
-    .why-now-slide>h2 { margin-top:20px;font-size:62px; }
+    .why-now-slide>h2 { margin-top:20px;font-size:62px;position:relative;top:-20px; }
     .why-now-slide .why-pressure-row { position:absolute;left:72px;right:72px;top:220px;height:375px; }
     .why-now-slide .why-factors { position:absolute;width:840px;left:50%;transform:translateX(-50%);display:grid;grid-template-columns:1fr 80px 1fr;gap:48px;align-items:start;opacity:1;visibility:visible;transition:opacity .25s,visibility .25s; }
     .why-now-slide .why-factor { text-align:center; }
     .why-now-slide .why-symbol { width:260px;height:260px;display:block;margin:0 auto 22px; }
     .why-now-slide h3 { font-size:32px;line-height:1.15;letter-spacing:-.035em; }
     .why-now-slide .why-plus { margin-top:80px;font:500 84px/1 "Space Grotesk",sans-serif;color:var(--acid);text-align:center; }
-    .why-now-slide .why-attacks { position:absolute;left:50%;width:760px;transform:translate(-50%,24px) scale(.88);opacity:0;visibility:hidden;pointer-events:none; }
-    .why-now-slide .why-equals { position:absolute;left:-82px;top:110px;font:500 84px/1 "Space Grotesk",sans-serif;color:var(--acid); }
-    .why-now-slide .why-chart-panel { height:328px;background:var(--ink);color:white;border-radius:20px;padding:18px 26px 12px;box-sizing:border-box;margin-bottom:18px; }
+    .why-now-slide .why-attacks { position:absolute;left:50%;width:960px;transform:translate(-50%,24px) scale(.88);opacity:0;visibility:hidden;pointer-events:none; }
+    .why-now-slide .why-equals { position:absolute;left:-74px;top:140px;font:500 84px/1 "Space Grotesk",sans-serif;color:var(--acid); }
+    .why-now-slide .why-chart-panel { height:366px;background:var(--ink);color:white;border-radius:20px;padding:18px 26px 12px;box-sizing:border-box;margin-bottom:14px; }
     .why-now-slide .why-rise { display:flex;align-items:baseline;gap:16px;text-align:left;margin-bottom:5px; }
     .why-now-slide .why-rise b { font:700 44px/1 "Space Grotesk",sans-serif;color:#ff8a75;letter-spacing:-.04em; }
     .why-now-slide .why-rise span { font-size:20px;color:rgba(255,255,255,.8); }
-    .why-now-slide canvas { display:block;width:708px!important;height:226px!important;max-width:100%; }
+    .why-now-slide canvas { display:block;width:908px!important;height:260px!important;max-width:100%; }
     .why-now-slide .why-chart-panel p { margin:4px 0 0;font-size:18px;color:rgba(255,255,255,.88); }
     .why-now-slide .why-takeaway { position:absolute;left:72px;right:72px;bottom:78px;text-align:center;font-size:27px;font-weight:600;color:var(--acid); }
+    .why-now-slide[data-build-current='1'] .why-pressure-row { top:180px;height:430px; }
     .why-now-slide[data-build-current='1'] .why-factors { opacity:0;visibility:hidden;pointer-events:none; }
     .why-now-slide[data-build-current='1'] .why-attacks { opacity:1;visibility:visible;pointer-events:auto;transform:translateX(-50%); }
     .why-now-slide.active[data-build-current='1'] .why-chart-panel { animation:whyGraphPop .6s cubic-bezier(.2,.8,.2,1) both; }
@@ -780,7 +781,7 @@ REFERENCE AND CUES, NOT SPOKEN: Limited security capacity is the target-user hyp
             <span class="why-equals" aria-hidden="true">=</span>
             <div class="why-chart-panel">
               <div class="why-rise"><b>+70%</b><span>Weekly attempts / organization</span></div>
-              <canvas id="formationChart" width="708" height="226" role="img" aria-label="Average weekly attack attempts per organization: 1158 in 2023, 1673 in 2024, 1968 in 2025"></canvas>
+              <canvas id="formationChart" width="908" height="260" role="img" aria-label="Average weekly attack attempts per organization: 1158 in 2023, 1673 in 2024, 1968 in 2025"></canvas>
               <p>Attack attempts, not breaches</p>
             </div>
             <h3>Rising attack pressure</h3>
