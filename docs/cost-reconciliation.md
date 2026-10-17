@@ -1,25 +1,77 @@
-# Cost reconciliation, October 17, 2026
+# Ari: six-founder pilot operating plan
 
-## Evidence supplied by the team
+Researched October 17, 2026. Proposed planning model, not verified invoices. Deck publication is pending the shared QA lock release. Replaces the unsupported $31,250 staffing assumption once applied.
 
-The pasted cost sheet reports: reviewer investigation $0.27-$0.37 API; reviewer repair $0.08-$0.12; complete seven-agent run $1.41; complete assessment approximately $1.80-$1.90. Early-stopped runs are not substituted for complete runs. No invoice or raw usage trace was independently audited in this edit. Model names and rate tables in the supplied sheet are not republished as independently verified provider facts.
+## Fixed monthly planning budget
 
-$10 per assessment and $3 per push-triggered re-check are reported API budget caps, not typical run prices. Observed usage on another repository or repeated investigations may differ. RL has zero Claude API usage, not zero CPU or total cost. The team's Claude subscription is separate from API billing and is not included in the business model.
+| Item | Basis | Monthly |
+|---|---|---:|
+| Claude Team Standard | Six separate seats at $25, monthly billing | $150 |
+| ChatGPT Business including Codex | Six separate seats at $25, monthly billing | $150 |
+| Vercel Pro | Six deploying seats at $20; base fee includes first seat | $120 |
+| Custom domain allowance | Provisional; registrar, TLD and renewal invoice not confirmed | $10 |
+| Operating contingency | Planning reserve for small overages/incidentals, not a provider quote | $70 |
+| **Total fixed planning budget** | **Before product API/customer delivery costs, taxes and unexpected overages** | **$500** |
 
-The team reports Railway service usage approximately $1.60/month at low volume. Railway Hobby is a $5 minimum commitment with included usage; do not add $1.60 to $5. Vercel Pro starts at $20/month, making the stated low-volume shared hosting baseline about $25 before additional seats/usage/taxes. This is not a production-scale hosting guarantee. Sources: https://docs.railway.com/pricing/understanding-your-bill and https://vercel.com/pricing . No claim that upgrading Vercel eliminates every deployment limit is made.
+Founder salaries are $0 during pilots under the agreed policy. Revenue covers operating costs first; surplus is reinvested. Founder compensation begins only when funding or recurring revenue supports it. This does not value founder labor at zero or promise permanent unpaid work.
 
-## Forecast base-assessment unit economics
+Claude and Codex subscriptions are development tools with usage limits. They do not include the separately billed Claude API used by Ari's product agents. Additional capacity, premium seats and taxes are not assumed free. No subscriptions, hosting changes or domain purchases have been made.
 
-Prices and included assessments remain Founder $49/2, Growth $149/4, Scale $399/10. Enterprise is negotiated. Model $1.90 reported demo API plus $1 forecast infrastructure reserve per included assessment, payment assumption 2.9% + $0.30, and forecast storage/support allowances $5/$12/$30 per customer/month.
+Vercel counts deploying seats, not just team size. This model intentionally budgets all six founders as deployers; if fewer need paid deployment permissions, revise that line accordingly without sharing logins. GitHub Free/public-repository collaboration and existing personal email are assumed; paid GitHub, business email, legal/accounting, insurance or compliance services must be added if required.
 
-| Tier | API | Infrastructure reserve | Payments | Storage/support | Total cost | Contribution |
-|---|---:|---:|---:|---:|---:|---:|
-| Founder | $3.80 | $2 | $1.721 | $5 | $12.521 | $36.479 |
-| Growth | $7.60 | $4 | $4.621 | $12 | $28.221 | $120.779 |
-| Scale | $19 | $10 | $11.871 | $30 | $70.871 | $328.129 |
+The domain allowance is not an actual IONOS quote. The user wrote “ios”; registrar and domain extension remain unconfirmed. Domain registration is commonly paid annually; divide the actual renewal invoice by 12 for monthly planning rather than relying on an introductory promotion.
 
-At 40%/45%/15% mix, revenue $146.50, variable cost $28.3385, contribution $118.1615, margin 80.66%. The retained future staffed fixed budget $31,250 divided by contribution gives 264.47, rounded up to 265 customers. Hosting baseline is part of the fixed-service budget, not added twice. This is not the prototype's cash break-even and does not validate staffing budgets or production margin.
+## Customer delivery model supplied by the team
 
-Additional re-checks are excluded because expected frequency and average cost are unavailable. Add `re-checks × actual average re-check API cost` plus execution overhead to the customer model before promising continuous coverage. At the $3 cap, 10 additional re-checks could add up to $30 in API cost alone. Enforce explicit budgets, approvals or paid usage rules rather than implying unlimited protection. Enterprise and paid overages are excluded from the forecast.
+| Monthly, per customer | Founder | Growth | Scale |
+|---|---:|---:|---:|
+| Price | $49 | $149 | $399 |
+| Included assessments | 2 | 4 | 10 |
+| Claude API, $1.90 per reported demo assessment | $3.80 | $7.60 | $19.00 |
+| Sandbox/infrastructure forecast reserve | $2 | $4 | $10 |
+| Estimated payment processing | $1.721 | $4.621 | $11.871 |
+| Support/storage forecast allowance | $5 | $12 | $30 |
+| Base modeled cost | $12.521 | $28.221 | $70.871 |
+| User-supplied AWS platform allocation | $7 | $7 | $7 |
+| **AWS-adjusted modeled cost** | **$19.521** | **$35.221** | **$77.871** |
+| **Contribution before fixed budget** | **$29.479** | **$113.779** | **$321.129** |
+| **Modeled contribution margin** | **60.2%** | **76.4%** | **80.5%** |
 
-Prototype illustration: $25 shared hosting + 100 × $1.90 API = $215/month, excluding re-checks, reserves, support, staff, taxes and other subscriptions. A $750K raise is a proposed development and pilot budget, not necessary merely to run this hosting setup.
+The $7 AWS share is a user-provided allocation, not an independently verified AWS quote or a measured marginal cost. It is counted once in customer delivery cost, not again in the $500 fixed budget. No simultaneous Railway production charge is added. Confirm that AWS platform costs are distinct from the sandbox reserve and storage allowance; if they overlap, reconcile against the bill. A shared AWS bill may not scale linearly with customer count, particularly at very low volume.
+
+## Cash-coverage scenario
+
+Retain the 40% Founder / 45% Growth / 15% Scale mix:
+
+- Average monthly revenue: $146.50/customer.
+- AWS-adjusted modeled delivery cost: $35.3385/customer.
+- Contribution before fixed costs: $111.1615/customer, or 75.88%.
+- Planned cash cost: $500 + $35.3385 × customers.
+- Planned revenue: $146.50 × customers.
+- Arithmetic coverage point: $500 / $111.1615 = 4.50, rounded up to approximately five blended customers.
+- At ten blended customers: modeled monthly cash cost $853.39 and revenue $1,465.
+
+This is pilot cash coverage, not full economic profitability. It excludes founder pay, taxes, one-time legal/compliance setup, unbudgeted development-tool credits and extra product re-check volume. An actual five-customer tier mix can differ from the assumed blend. The supplied $3 push re-check cap is a maximum API budget, not an average or included subscription entitlement. Twenty additional capped re-checks could add up to $60 API cost alone and move cash coverage to approximately six blended customers. Define usage budgets/paid overages before offering ongoing reassessment.
+
+## Funding policy
+
+Remove the $750K raise from the current pitch unless the team supplies a separate, justified use-of-funds plan. Current plan: founder-funded pilots, customer receipts reinvested, no external hiring. The $500 budget is $6,000/year before customer delivery costs and exclusions; it is not a claim that $6,000 funds every aspect of launching a security company.
+
+## Replacement financial script
+
+Our plans are forty-nine, one forty-nine and three ninety-nine dollars monthly. We are six founders, with no hiring or founder salaries during pilots.
+
+We plan around five hundred dollars a month for team AI subscriptions, Vercel, a domain allowance and contingency. Product API usage is separate from those subscriptions.
+
+Using our reported assessment cost and the seven-dollar AWS allocation, Growth costs approximately thirty-five dollars per customer monthly, leaving about one hundred fourteen before shared expenses.
+
+Under our assumed customer mix, roughly five customers cover modeled pilot cash costs, excluding salaries, taxes and extra re-checks. We will fund pilots ourselves and reinvest revenue before introducing founder pay.
+
+## Official pricing sources
+
+- Claude Team Standard: https://claude.com/resources/articles/claude-team-updates . $25/seat/month on monthly billing; $20 equivalent with annual discount. Usage limits and additional capacity apply.
+- ChatGPT Business including Codex: https://learn.chatgpt.com/docs/pricing . $25/user/month billed monthly; $20 equivalent billed annually, with at least two users. Product API billing remains separate.
+- Vercel Pro: https://vercel.com/docs/plans/pro-plan . $20 platform fee includes one deploying seat; additional deploying seats $20 each. Extra usage and taxes can apply; hosting is not unlimited or guaranteed merely by buying Pro.
+- Domain-price context only: https://www.ionos.com/domains/domain-names . Exact registrar/TLD/renewal not confirmed; the $10 planning allowance is not sourced as the user's actual bill.
+
+OpenAI Docs was used to verify the six-seat Codex/Business subscription cost and the distinction between subscription usage and product API charges.

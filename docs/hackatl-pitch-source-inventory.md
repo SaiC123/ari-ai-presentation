@@ -12,15 +12,13 @@ Current proposed subscriptions are **Founder $49/month (2 assessments), Growth $
 
 The user-supplied October 17 cost sheet reports approximately $1.80-$1.90 in Claude API usage per complete demo assessment; $1.90 is used in this revised base-assessment scenario. This is a team-reported measurement, not independently audited billing or a production average. Add a separate **$1 forecast infrastructure reserve per assessment**. Retain the assumed payment rate of 2.9% + $0.30 and forecast support/storage allocations of $5/$12/$30. Additional push re-check usage is not modeled. See `docs/cost-reconciliation.md` for provenance and exclusions.
 
-| Tier | Revenue | Cost | Contribution | Margin |
+| Tier | Revenue | AWS-adjusted cost | Contribution | Margin |
 |---|---:|---:|---:|---:|
-| Founder | $49 | $12.52 | $36.48 | 74.4% |
-| Growth | $149 | $28.22 | $120.78 | 81.1% |
-| Scale | $399 | $70.87 | $328.13 | 82.2% |
+| Founder | $49 | $19.52 | $29.48 | 60.2% |
+| Growth | $149 | $35.22 | $113.78 | 76.4% |
+| Scale | $399 | $77.87 | $321.13 | 80.5% |
 
-At the retained 40/45/15 mix, revenue is **$146.50/customer/month**, modeled base-assessment cost is **$28.3385**, and contribution is **$118.1615 (80.66%)**. Under the retained **$31,250 planned staffed fixed budget**, the base-assessment scenario breaks even at **265 customers**. That budget is a future business assumption, not current hosting spend, and already includes the base-service allocation. Enterprise revenue, paid overages and push re-check volume are excluded. This supersedes the 368-customer scenario by using reported demo API cost instead of a $10 cap. Margins are not validated production margins. Growth's visible figures are $7.60 API + $4 forecast reserve + $4.62 estimated payments + $12 forecast support/storage = $28.22 cost and $120.78 contribution. Actual invoices and re-check frequency remain to be measured.
-
-The supplied low-volume prototype baseline is approximately **$5 Railway minimum + $20 Vercel Pro = $25/month shared**, before usage overages, seats, taxes and other subscriptions. At 100 complete assessments, **$25 + 100 × $1.90 = $215/month** for base hosting plus reported API usage alone; this excludes re-checks, staffing, support and other costs. Provider plan context: [Railway billing](https://docs.railway.com/pricing/understanding-your-bill), [Vercel pricing](https://vercel.com/pricing). RL has no Claude API charge, but still consumes CPU. The $750K/18-month raise remains a proposed development/pilot budget, not a hosting requirement. Historical model-price and financial scenarios below are superseded by this section; no model switch or rate-card claim is made in the updated slide.
+The user-supplied $7 AWS allocation is included once per customer/month, in addition to sandbox and support/storage reserves. Validate that these allocations do not overlap in actual bills. The 40/45/15 assumed mix gives $146.50 revenue, $35.3385 cost and $111.1615 contribution per customer (75.88%). Planned fixed costs are $500/month: six monthly Claude Team seats $150, six ChatGPT Business seats including Codex $150, Vercel Pro with six deploying seats $120, provisional domain allowance $10 and operating contingency $70. About five blended customers cover modeled pilot cash costs, not full business profitability. Founders take no salaries during pilots; no hiring is planned. Founder-funded pilots and reinvested surplus replace the unsupported staffed burn and pre-seed ask. Product API billing remains separate from developer subscriptions. Extra usage, re-checks, taxes, legal/compliance and founder labor are excluded. See [cost reconciliation](cost-reconciliation.md) for official plan sources and unrounded arithmetic. No old Railway baseline is added on top.
 
 Using the revised Growth annual value of **$1,788**, the unchanged Census account proxies produce **$23,698,152** (13,254 firms), **$7,591,848** (4,246 firms), and **$89,400** (50 target customers). Earlier pricing and ACV scenarios below are historical and no longer appear in the current deck.
 

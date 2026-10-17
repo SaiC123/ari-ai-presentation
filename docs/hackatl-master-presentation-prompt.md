@@ -258,11 +258,14 @@ Animation sequence: product window appears, usability features illuminate, acces
 
 Create one animated financial story rather than a static spreadsheet.
 
+Current financial brief (supersedes earlier financial instructions): use docs/cost-reconciliation.md and docs/pricing-narration.md. Six unpaid founders during pilots, no hiring. Planned fixed cash costs $500/month, founder-funded pilots and reinvested surplus. Do not restore the old staffed forecast or a pre-seed ask.
+
 Forecast pricing assumptions:
 
-- Founder: `$299/month` — 1 repository, monitoring, verified fixes
-- Growth: `$999/month` — up to 5 repositories, seven-agent workflow, approvals, evidence history
-- Scale: `$2,499/month` — up to 15 repositories, team controls, integrations, priority runs
+- Founder: `$49/month`, 2 repositories, 100K source lines, 2 assessments
+- Growth: `$149/month`, 5 repositories, 500K source lines, 4 assessments
+- Scale: `$399/month`, 15 repositories, 2M source lines, 10 assessments
+- All features in every tier. Enterprise negotiated. Extra assessments $25 with budget approval.
 
 Research competitor pricing to defend these assumptions, and cite sources in small text.
 
@@ -274,17 +277,13 @@ Click sequence:
 4. Costs are deducted: AI models, secure sandbox compute, storage, integrations, support, security/compliance.
 5. Remaining gross profit stays visible.
 6. A graph compares recurring revenue with monthly operating costs as customers grow.
-7. The lines cross at the estimated break-even customer count.
-8. A `$750K PRE-SEED` funding bridge appears and divides into:
-   - 45% product and security engineering
-   - 25% model and sandbox compute
-   - 20% pilots and customer acquisition
-   - 10% compliance, legal, and operations
-9. Show approximately 18 months of forecast runway and the milestones that unlock the next round.
+7. Revenue crosses pilot cash costs at about five blended customers, assuming 40/45/15 mix and $7 AWS allocation per account. This is not full business profitability.
+8. A $500/month shared pilot budget appears: Claude Team $150, ChatGPT Business including Codex $150, Vercel Pro six deploying seats $120, domain allowance $10, operating contingency $70.
+9. Show founder-funded pilots, no initial salaries, and reinvested surplus. Customer delivery costs are separate; taxes, extra usage, legal/compliance and founder labor are excluded. Domain and reserves are provisional. AWS-adjusted costs are $19.52/$35.22/$77.87, margins about 60%/76%/80%.
 
 Research all costs before calculating margins or break-even. Clearly label forecasts and assumptions. Core message:
 
-**Funding gets Ari to market. Recurring revenue makes Ari sustainable.**
+**Lean to launch. Built to sustain.**
 
 ### Slide 11 — Market opportunity
 
@@ -445,4 +444,3 @@ Before delivery, verify:
 - All projections are labeled
 - Current capabilities are separated from roadmap claims
 - The presentation is deliverable in five minutes
-
