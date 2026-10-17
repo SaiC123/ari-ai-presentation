@@ -1549,7 +1549,9 @@ REFERENCE AND CUES, NOT SPOKEN: Reveal six visual memories. Click 7 connects the
 
     document.querySelector('#prev').addEventListener('click', event => { event.stopPropagation(); prevAction(); });
     document.querySelector('#next').addEventListener('click', event => { event.stopPropagation(); nextAction(); });
-    document.querySelector('#fullscreen').addEventListener('click', event => {
+    const fullscreenButton = document.querySelector('#fullscreen');
+    fullscreenButton.disabled = typeof document.documentElement.requestFullscreen !== 'function';
+    fullscreenButton.addEventListener('click', event => {
       event.stopPropagation();
       if (!document.fullscreenElement) document.documentElement.requestFullscreen();
       else document.exitFullscreen();

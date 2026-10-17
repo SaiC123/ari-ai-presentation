@@ -299,3 +299,11 @@ test("notes scrolling keys do not change the active build", () => {
     assert.equal(deck.slides[1].dataset.buildCurrent, '0');
   }
 });
+
+test("unsupported fullscreen disables its control without breaking navigation", () => {
+  const deck = presentation('#2', { fullscreenUnsupported: true });
+  assert.equal(deck.selectors['#fullscreen'].disabled, true);
+  deck.key('f');
+  deck.key('ArrowRight');
+  assert.equal(deck.slides[1].dataset.buildCurrent, '1');
+});
