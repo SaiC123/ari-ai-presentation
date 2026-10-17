@@ -1,0 +1,13 @@
+{
+  "type": "AFTER",
+  "agent": "ai-1",
+  "utc": "2026-10-17T21:50:14.535676+00:00",
+  "summary": "AFTER: removed pictured slide8 final workflow-summary layer and build3 trigger, commit aa6853b. Competitor map and builds0-2 remain; next advances slide9. Updated notes cue. All other slides/sharedJS/CSS preserved. Deployed existing Ari project READY dpl_7NnAa2cBqg6abrzYHQef1D7vz5U9; both output and both Downloads HTML refreshed.",
+  "commit": "aa6853b862dbf04fcdad7cd4d6aac71584b0db41",
+  "changed_paths": [
+    "public/index.html"
+  ],
+  "verification": "git diff --check/source assertions passed: only slide8 changed, no differentiator-layer or build3 in section, map retained. Live browser advanced0to1to2then9, confirming no removed summary or empty click. Fifteen slide numbering unchanged because screenshot was a build within8, not separate slide. No unrelated changes.",
+  "deployment_url": "https://ari-ai-presentation.vercel.app",
+  "lock_commit": "2fda1d3d53415eb6e0bb5b0e288103702ee34533"
+}
