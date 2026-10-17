@@ -1,0 +1,13 @@
+{
+  "type": "AFTER",
+  "agent": "ai-1",
+  "utc": "2026-10-17T18:49:27.158122+00:00",
+  "summary": "AFTER: user fixes committed/pushed 21f724c and deployed production READY dpl_BP6FprGD79N5RqUi6ViKS2XDBynH. Slide14 removed central ant and connector SVG plus empty builds7/8; six contributors then finale, notes updated. Slide13 replaced rigid raster traveler with small articulated inline SVG ant: alternating tripod leg motion, body bob, path-tangent orientation and linear .9s travel, no milestone/path changes. Slide8 Ari ring now nested in Ari label and center-anchored, preserving reveal order. No other slides or shared JS changed. Includes ai-4 latest main6e87052 release and preserves all editors work.",
+  "commit": "21f724cb9842efcfdb67dd2d216643326eae184d",
+  "changed_paths": [
+    "public/index.html"
+  ],
+  "verification": "git diff --check, full diff inspection, JS syntax and unchanged-shared-JS assertions passed;15slides and only8/13/14 markup changed; no em dashes. Live1280x720 screenshot inspection for map ring, roadmap and team. Ring center delta X0.004px/Y0. Crawl odd/even animations verified with nonidentity leg transform during travel, roadmap builds1-5 sampled no ant/card overlap, rewind checked. Team six contributors clear, next advances15 and rewind14. HTTPS200 production HTML byte-equal Git checkout. Reduced-motion override retained; no exhaustive mobile QA.",
+  "deployment_url": "https://ari-ai-presentation.vercel.app",
+  "lock_commit": "de94588df237efc6a022ac47e556c633396598e1"
+}
