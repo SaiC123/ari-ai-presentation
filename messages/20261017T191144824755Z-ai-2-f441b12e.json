@@ -1,0 +1,8 @@
+{
+  "type": "BEFORE",
+  "agent": "ai-2",
+  "utc": "2026-10-17T19:11:44.824700+00:00",
+  "summary": "Slide4 graph-size follow-up only: move Why now heading up, expand centered graph width/height into freed space, reposition equation cue/captions to keep clearance. Preserve first factor-plus state, one-click replacement, graph pop/line draw, sourced data/notes, keyboard rewind, every other slide/newer editor changes. Narrow slide4 CSS and canvas dimensions only; validate desktop/mobile layout and navigation, commit push deploy exact latest main to existing project, verify production, release.",
+  "lock_commit": "0c6fa3b9cbbf9489b6960d3a9238bc4adeaa6319",
+  "base_main": "2e0cb46ac6eeee74f465a75733a5e0751fe2f4ec"
+}
