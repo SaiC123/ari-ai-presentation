@@ -342,17 +342,21 @@
     .waterbar i { display:block; border-radius:12px 12px 3px 3px; background:var(--brand-soft); min-height:25px; }
     .waterbar:first-child i,.waterbar:last-child i{background:var(--acid)}
     .waterbar b { margin-top:10px; font:600 12px/1.2 "IBM Plex Mono",monospace; }
-    .finance-slide .fscene2 .waterfall { height:238px;margin-top:10px; }
+    .finance-slide .fscene2 .waterfall { height:228px;margin-top:10px; }
     .finance-slide .fscene2 .waterbar i { min-height:0; }
-    .finance-slide .cost-detail { display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:14px; }
-    .finance-slide .cost-detail>div { padding:13px 15px;border:1px solid rgba(255,255,255,.18);border-radius:12px;background:rgba(255,255,255,.055); }
-    .finance-slide .cost-detail b { display:block;font:600 17px/1.2 "Space Grotesk",sans-serif;color:#ffb09f; }
-    .finance-slide .cost-detail small { display:block;font-size:14px;line-height:1.35;color:rgba(255,255,255,.75);margin-top:7px; }
+    .finance-slide .cost-detail { display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px;margin-top:14px; }
+    .finance-slide .cost-detail>div { padding:10px 12px;border:1px solid rgba(255,255,255,.18);border-radius:12px;background:rgba(255,255,255,.055); }
+    .finance-slide .cost-detail b { display:block;font:600 15px/1.2 "Space Grotesk",sans-serif;color:#ffb09f; }
+    .finance-slide .cost-detail small { display:block;font-size:12px;line-height:1.3;color:rgba(255,255,255,.75);margin-top:6px; }
     .finance-slide .prototype-cost-baseline { margin-top:10px;font-size:14px;line-height:1.3;color:rgba(255,255,255,.75);text-align:center; }
     .finance-chart-wrap { display:grid; grid-template-columns:680px 1fr; gap:34px; align-items:center; }
     .finance-chart-wrap canvas { width:680px!important; height:340px!important; }
     .break-even { padding:28px; border-radius:20px; background:var(--acid); }
     .break-even strong { display:block; font:700 68px/.9 "Space Grotesk",sans-serif; }
+    .monthly-cost-card { padding:22px; }
+    .monthly-cost-card strong { font-size:44px;margin-top:10px; }
+    .monthly-cost-components { margin-top:10px;display:grid;gap:5px;font-size:16px;line-height:1.25; }
+    .monthly-cost-components>div { display:flex;justify-content:space-between;gap:12px; }
     .funding-grid { display:grid; grid-template-columns:360px 1fr; gap:32px; align-items:center; height:100%; }
     .funding-total { width:300px;height:300px;border-radius:50%;display:grid;place-items:center;text-align:center;background:var(--acid);box-shadow:0 0 0 28px rgba(194,69,45,.13); }
     .funding-total strong{font:700 74px/.85 "Space Grotesk",sans-serif}.funding-total span{font:500 12px/1 "IBM Plex Mono",monospace}
@@ -377,6 +381,7 @@
     .market-detail { position:absolute; right:62px; top:182px; width:345px; min-height:350px; padding:28px; border:1px solid var(--line); border-radius:22px; background:white; }
     .market-detail-copy { position:absolute; inset:28px; opacity:0; transform:translateY(15px); transition:.4s; }
     .market-detail-copy strong { display:block; font:700 48px/.92 "Space Grotesk",sans-serif; color:var(--acid); }
+    .market-detail-copy.md3 strong { font-size:48px;white-space:nowrap; }
     .market-detail-copy p { margin-top:18px; font-size:16px; line-height:1.4; color:var(--muted); }
     .market-slide[data-build-current="1"] .md1,.market-slide[data-build-current="2"] .md2,.market-slide[data-build-current="3"] .md3 {opacity:1;transform:none}
 
@@ -1074,37 +1079,37 @@ REFERENCE AND CUES, NOT SPOKEN: CUE: Segment 1 is visible on entry. Click once f
         </div>
       </section>
 
-      <section class="slide dark finance-slide" data-note="SPOKEN (about 40 seconds including pauses): Our plans remain forty-nine, one forty-nine, and three ninety-nine dollars monthly. Our reported demo used about one dollar ninety in API calls per complete assessment. Prototype hosting starts around twenty-five dollars monthly, shared across the service. For Growth, four assessments plus forecast infrastructure, payment and support allowances total about twenty-eight dollars, leaving about one hundred twenty-one before fixed costs. Our staffed-business forecast breaks even around two hundred sixty-five customers. Re-check usage and production costs still need measurement. The proposed raise funds development and pilots, not just hosting.
+      <section class="slide dark finance-slide" data-note="SPOKEN: Founder starts at an introductory pilot price of forty-nine ninety-nine for ten full assessments. Larger plans serve teams that need more coverage. Our graph shows monthly revenue against total modeled monthly costs. The white line includes team tools plus customer API usage, sandbox compute, AWS, payments and support. As customers grow, delivery costs rise each month. This is an illustrative six-month forecast, not traction or a profitability promise. Founders initially take no salaries. We will use pilots to measure real costs and value, then plan sustainable pricing for future customers. Our separate growth target is one hundred to two hundred paying customers.
 
-REFERENCE AND CUES, NOT SPOKEN: Lower-entry-price rationale: founder-led teams may lack a dedicated security budget; lower entry pricing is a pilot hypothesis, not demonstrated willingness to pay. Capped usage and paid overages constrain delivery cost; no unlimited autonomous protection is promised. Assessment API assumptions now use the supplied demo measurement, not the previous hard budget cap. Forecast reserves and measured usage remain explicitly distinct. Proposed pricing is $49/$149/$399, with 2/4/10 deep assessments. Extra assessments cost $25 and require budget approval. User-provided October 17 cost sheet reports approximately $1.80-$1.90 API usage for a complete demo assessment, not an invoice-audited production average. Use $1.90 plus a separate $1 forecast infrastructure reserve per assessment. Growth costs $7.60 API + $4 reserve + $4.621 estimated payments + $12 support/storage = $28.221; contribution is $120.779. A 40/45/15 mix gives $146.50 ARPA and $118.1615 contribution (80.66%); the earlier $31,250 planned staffed fixed budget yields 265 customers to break even. This budget is not current hosting spend; it includes the planned base-service budget, so do not add the shared hosting baseline twice. All are forecasts to validate. All tiers include the same complete feature set; limits concern scale and usage, not gated capabilities. Repository caps are 2/5/15; combined maintained source limits are 100K/500K/2M lines. Enterprise scope, repository count, codebase size and assessment usage are negotiated. Source-line limits exclude dependencies, vendored files and generated code. Both repository and combined source limits apply. These packaging thresholds are hypotheses to validate. Prototype baseline: about $5 Railway minimum plus $20 Vercel Pro, before usage growth, seats, taxes or other subscriptions. The supplied Railway resource usage estimate is about $1.60, not an extra charge on top of its $5 included allowance. 100 assessments at $1.90 API plus $25 hosting is about $215, before re-checks, support, staffing, taxes and other overhead. RL makes no Claude API calls but CPU is not free. $10 assessment and $3 push re-check are hard API budget caps, not typical charges. Push re-check counts and related costs are not yet modeled, so these are base-assessment scenarios, not all-in production margins. Enforce customer budgets before launching continuous coverage. Retain forecast $5/$12/$30 support/storage and the 40/45/15 mix. Enterprise revenue, paid overages and re-check volume are excluded. User cost sheet is provenance for reported measurements; public provider pricing only supports plan baselines. Click through plans, costs, break-even, and the funding bridge. Presenter reference, not spoken: NEXT ROUND GATE / live-provider workflow / hosted beta / five paying customers / measured unit economics Proposed prices, not validated willingness to pay. $1.90 team-reported demo API + $1 forecast reserve per assessment; additional re-checks excluded; 40/45/15 tier mix. Anchors: Semgrep + GitHub $30/contributor/month; Snyk Team starts $25/month. AWS, Anthropic, Stripe + Carta: source inventory." data-spoken="Our plans remain forty-nine, one forty-nine, and three ninety-nine dollars monthly. Our reported demo used about one dollar ninety in API calls per complete assessment. Prototype hosting starts around twenty-five dollars monthly, shared across the service. For Growth, four assessments plus forecast infrastructure, payment and support allowances total about twenty-eight dollars, leaving about one hundred twenty-one before fixed costs. Our staffed-business forecast breaks even around two hundred sixty-five customers. Re-check usage and production costs still need measurement. The proposed raise funds development and pilots, not just hosting." data-duration-s="40">
+REFERENCE, NOT SPOKEN: Monthly chart scenario M1-M6 customer counts0/3/8/15/25/40 at fixed40/45/15 assumedmix, not actuals or validatedacquisitionforecast. Shared500monthly staysfixed. White line explicitly sums500plus API46.075,sandbox24.25,AWS7,payments6.734984,support11.9 per blendedcustomer =95.959984. Revenue221.896/customer. Hoverwhitepoint for category costs. Monthly revenuefirstexceedscostinM3inthisscenario, notcumulativebreakeven or guaranteedtiming. Pricesheldconstant; futurepostpilotpriceincreasesnotmodeled. Excludeextrausage/rechecks/salaries/taxes/legal/economiclabor. Introductorypilotprices; higherfuturepricingisaplan, notvalidatedwillingnesstopay. UserrequestedFounder10fullassessments. Proposedworkspaceprices49.99/249/599 with10/25/60fullassessmentsmonthly, not per-seat pricing. Monthly assessed-source pools1M/5M/20M across connected repositories; repeat assessments count lines again; exclude generated/vendor/dependency code. No repository-count cap proposed, but workload is not unlimited. Review, seven-agent investigation and independent fix verification are coreworkflow, not every future enterprisefeature. Monitoring/re-checks separately budgeted, not unlimited or provenproductiondefense.25scopedextraassessment subjecttosourcevolume/budgetapproval. Enterprisecustomscope/codevolume/onboarding. Kairopricing informedstructureonly, not copiedfeatures, quantitiesorprices. PerassessmentAPI1.90 is team-reported demo, not audited average or demonstrated cost for larger codebases. Forecastsandbox1/assessment; API19/47.5/114, reserve10/25/60, support/storage5/12/30, AWS7/account, payment2.9%+0.30 gives1.74971/7.521/17.671. Total42.74971/99.021/228.671; contribution7.24029/149.979/370.329; margins14.48/60.23/61.82%. Support andinfra forecasts may need increasing at higherusage. Mix40/45/15 ->revenue221.896,cost95.959984,contribution125.936016,margin56.75%,500/contribution3.97 roundsup4blendedcustomers. Founder-only500/7.24029=69.06 roundsup70; entrytiermargin14.48% isthin andmaynotcoverunmeasuredsupport/overages.100-200payingcustomersisagrowthtargetnotcalculatedbreakeven. This is pilotcashcoverage, notfullprofitability. Fixed500monthly includesClaude150/Codex150/Vercel120/domain10provisional/contingency70. Noinitialfounderpay/hiring, founder-fundedpilot/reinvestsurplus. ProductAPIseparatefromdeveloperplans. AWSallocationteamprovided; verify nooverlap withsandbox/storage. Extrausage/rechecks,taxes,legal/compliance,economicfounderlabor excluded.3API/recheck is maximumcapnotaverage; RLnoClaudeAPInotzeroCPU. Source https://kairo.security/pricing and docs/cost-reconciliation.md. Validate actual usage traces, highvolume costs, customerwillingnesstopay and usageenforcement before rollout." data-spoken="Founder starts at an introductory pilot price of forty-nine ninety-nine for ten full assessments. Larger plans serve teams that need more coverage. Our graph shows monthly revenue against total modeled monthly costs. The white line includes team tools plus customer API usage, sandbox compute, AWS, payments and support. As customers grow, delivery costs rise each month. This is an illustrative six-month forecast, not traction or a profitability promise. Founders initially take no salaries. We will use pilots to measure real costs and value, then plan sustainable pricing for future customers. Our separate growth target is one hundred to two hundred paying customers." data-duration-s="46">
         <div class="slide-head"><span class="brand-mini"><img class="brand-ant" src="ari-ant-mark.png" alt="" aria-hidden="true">Revenue or Funding Model / Costs &amp; Sustainability</span><span class="slide-num">12</span></div>
-        <h2 style="font-size:47px">Funding gets us to market. <span class="accent">Revenue keeps us there.</span></h2>
+        <h2 style="font-size:47px">Lean to launch. <span class="accent">Built to sustain.</span></h2>
         <span class="build-trigger" data-build="1"></span><span class="build-trigger" data-build="2"></span><span class="build-trigger" data-build="3"></span><span class="build-trigger" data-build="4"></span>
         <div class="finance-stage">
           <div class="finance-scene fscene1">
             <div class="price-row">
-              <div class="price-card"><p class="kicker muted">Founder</p><strong>$49</strong><small>/ month<br>Up to 2 repositories<br>100K source lines total<br>2 deep assessments / mo</small></div>
-              <div class="price-card featured"><p class="kicker">Growth</p><strong>$149</strong><small>/ month<br>Up to 5 repositories<br>500K source lines total<br>4 deep assessments / mo</small></div>
-              <div class="price-card"><p class="kicker muted">Scale</p><strong>$399</strong><small>/ month<br>Up to 15 repositories<br>2M source lines total<br>10 deep assessments / mo</small></div>
-              <div class="price-card"><p class="kicker muted">Enterprise</p><strong>Custom</strong><small>Negotiated contract<br>Negotiated repositories<br>Negotiated codebase size<br>Negotiated assessments</small></div>
+              <div class="price-card"><p class="kicker muted">Founder</p><strong>$49.99</strong><small>/ workspace / month<br>10 full assessments / mo<br>1M assessed lines / mo<br>Shared across repositories</small></div>
+              <div class="price-card featured"><p class="kicker">Growth</p><strong>$249</strong><small>/ workspace / month<br>25 full assessments / mo<br>5M assessed lines / mo<br>Shared across repositories</small></div>
+              <div class="price-card"><p class="kicker muted">Scale</p><strong>$599</strong><small>/ workspace / month<br>60 full assessments / mo<br>20M assessed lines / mo<br>Shared across repositories</small></div>
+              <div class="price-card"><p class="kicker muted">Enterprise</p><strong>Custom</strong><small>Per-workspace agreement<br>Custom assessment scope<br>Custom code volume<br>Onboarding agreed in scope</small></div>
             </div>
-            <p class="pricing-shared">All features included in every plan.</p>
-            <div class="pricing-terms"><b>Proposed plans</b><span>$25 / extra assessment</span><span>Usage caps + budget approval</span></div>
+            <p class="pricing-shared">Code review · Seven agents · Fix verification</p>
+            <div class="pricing-terms"><b>Proposed plans</b><span>$25 / scoped extra assessment</span><span>Monitoring + extras: budget approval</span></div>
           </div>
-          <div class="finance-scene fscene2"><p class="section-tag">Growth plan / forecast monthly economics / 4 assessments</p><div class="waterfall"><div class="waterbar"><i style="height:180px"></i><b>$149<br>REVENUE</b></div><div class="waterbar"><i style="height:14px"></i><b>MODELS + SANDBOX<br>−$11.60</b></div><div class="waterbar"><i style="height:16px"></i><b>PAYMENTS<br>−$4.62</b></div><div class="waterbar"><i style="height:16px"></i><b>STORAGE + SUPPORT<br>−$12</b></div><div class="waterbar"><i style="height:146px"></i><b>$120.78<br>CONTRIBUTION</b></div></div><div class="cost-detail" aria-label="Forecast monthly Growth-plan cost breakdown, approximately 28.22 dollars total before shared fixed costs and additional re-checks"><div><b>$7.60 · AI usage</b><small>4 × $1.90 reported demo API</small></div><div><b>$4 · Infrastructure reserve</b><small>Forecast buffer, not measured</small></div><div><b>$4.62 · Payment estimate</b><small>Forecast card-processing fees</small></div><div><b>$12 · Storage + support</b><small>Forecast evidence + support allowance</small></div></div><p class="prototype-cost-baseline">Prototype baseline ≈ $25/mo shared hosting · Push re-checks: up to $3 API each</p></div>
-          <div class="finance-scene fscene3"><div class="finance-chart-wrap"><canvas id="economicsChart" width="680" height="300" aria-label="Forecast revenue and monthly operating costs"></canvas><div class="break-even"><p class="kicker">Staffed-business forecast</p><strong>~265</strong><p style="margin-top:12px">Blended customers</p><p class="small" style="margin-top:14px;opacity:.72">81% modeled contribution<br>$31.25K planned fixed budget<br>Additional re-check usage excluded</p></div></div></div>
-          <div class="finance-scene fscene4"><div class="funding-grid"><div class="funding-total"><div><strong>$750K</strong><span>PRE-SEED / 18 MONTHS</span></div></div><div class="allocation"><div class="allocation-row"><b>45%</b><div class="allocation-track"><i style="--w:45%"></i></div><span>Product + security</span></div><div class="allocation-row"><b>25%</b><div class="allocation-track"><i style="--w:25%"></i></div><span>Models + sandbox</span></div><div class="allocation-row"><b>20%</b><div class="allocation-track"><i style="--w:20%"></i></div><span>Pilots + acquisition</span></div><div class="allocation-row"><b>10%</b><div class="allocation-track"><i style="--w:10%"></i></div><span>Compliance + ops</span></div></div></div></div>
+          <div class="finance-scene fscene2"><p class="section-tag">Growth plan / forecast monthly economics / 25 assessments</p><div class="waterfall"><div class="waterbar"><i style="height:180px"></i><b>$249<br>REVENUE</b></div><div class="waterbar"><i style="height:57.47px"></i><b>API + INFRA + AWS<br>−$79.50</b></div><div class="waterbar"><i style="height:5.44px"></i><b>PAYMENTS<br>−$7.52</b></div><div class="waterbar"><i style="height:8.67px"></i><b>STORAGE + SUPPORT<br>−$12</b></div><div class="waterbar"><i style="height:108.42px"></i><b>$149.98<br>CONTRIBUTION</b></div></div><div class="cost-detail" aria-label="Forecast monthly Growth-plan cost breakdown, approximately 99.02 dollars total before shared fixed costs and additional re-checks"><div><b>$47.50 · AI usage</b><small>25 × $1.90 demo assumption</small></div><div><b>$25 · Infrastructure reserve</b><small>Forecast buffer, not measured</small></div><div><b>$7 · AWS allocation</b><small>Team estimate per customer</small></div><div><b>$7.52 · Payment estimate</b><small>Forecast card-processing fees</small></div><div><b>$12 · Storage + support</b><small>Forecast evidence + support allowance</small></div></div><p class="prototype-cost-baseline">Growth cost $99.02 · 60% contribution margin · Additional push re-checks excluded</p></div>
+          <div class="finance-scene fscene3"><div class="finance-chart-wrap"><canvas id="economicsChart" width="680" height="300" aria-label="Illustrative six-month revenue and total modeled monthly costs, including shared tools, API, sandbox, AWS, payments and support/storage"></canvas><div class="break-even monthly-cost-card"><p class="kicker">White line includes</p><strong>$500</strong><p style="margin-top:8px;font-size:16px">Shared tools / month</p><p style="margin-top:12px;font-size:14px;opacity:.85">Plus, per blended customer:</p><div class="monthly-cost-components"><div><span>Product API</span><b>$46.08</b></div><div><span>Sandbox reserve</span><b>$24.25</b></div><div><span>AWS allocation</span><b>$7.00</b></div><div><span>Payments</span><b>$6.73</b></div><div><span>Support + storage</span><b>$11.90</b></div></div><p style="margin-top:12px;font-size:13px;line-height:1.3;opacity:.8">Forecast mix: 40% / 45% / 15%<br>Extra usage + founder pay excluded</p></div></div></div>
+          <div class="finance-scene fscene4"><div class="funding-grid"><div class="funding-total"><div><strong>$500</strong><span>MONTHLY PILOT BUDGET<br>6 FOUNDERS · NO HIRING</span></div></div><div class="allocation"><div class="allocation-row"><b>$150</b><div class="allocation-track"><i style="--w:30%"></i></div><span>Claude Team · 6 seats</span></div><div class="allocation-row"><b>$150</b><div class="allocation-track"><i style="--w:30%"></i></div><span>Codex / Business · 6 seats</span></div><div class="allocation-row"><b>$120</b><div class="allocation-track"><i style="--w:24%"></i></div><span>Vercel Pro · 6 deployers</span></div><div class="allocation-row"><b>$10</b><div class="allocation-track"><i style="--w:2%"></i></div><span>Domain · provisional</span></div><div class="allocation-row"><b>$70</b><div class="allocation-track"><i style="--w:14%"></i></div><span>Operating contingency</span></div><div class="funding-gate">Founder-funded pilots. No salaries initially. Reinvest surplus.<br>Customer delivery costs separate; taxes and extra usage excluded.</div></div></div></div>
         </div>
 
       </section>
 
-      <section class="slide market-slide" data-note="SPOKEN (3:22 to 3:38; about 16 seconds including clicks/pauses): We size our initial opportunity using U.S. software publishers as a transparent proxy. Fifty paying customers is our first target, not traction or a promise that every firm fits.
+      <section class="slide market-slide" data-note="SPOKEN (3:22 to 3:38; about 16 seconds including clicks/pauses): We size our initial opportunity using U.S. software publishers as a transparent proxy. One hundred to two hundred paying customers is our growth target, not traction or break-even.
 
-REFERENCE AND CUES, NOT SPOKEN: Do not say TAM/SAM/SOM. Click through the full opportunity, starting market, and obtainable first segment. Presenter reference, not spoken: Source: U.S. Census 2022 SUSB, NAICS 511210. Caveat: software publishers are an ICP proxy; the data does not identify SaaS, AI adoption, or security staffing. 2022 Census SUSB / NAICS 511210 / forecast ACV 2022 Census SUSB / transparent ICP proxy First beachhead / management target, not traction" data-spoken="We size our initial opportunity using U.S. software publishers as a transparent proxy. Fifty paying customers is our first target, not traction or a promise that every firm fits." data-duration-s="16">
+REFERENCE AND CUES, NOT SPOKEN: Do not say TAM/SAM/SOM. Click through the full opportunity, starting market, and obtainable first segment. Presenter reference, not spoken: Source: U.S. Census 2022 SUSB, NAICS 511210. Caveat: software publishers are an ICP proxy; the data does not identify SaaS, AI adoption, or security staffing. 2022 Census SUSB / NAICS 511210 / forecast ACV 2022 Census SUSB / transparent ICP proxy Growth target / not traction or break-even. ARR range298800to597600 is pricedatGrowth, not actualblendedARR" data-spoken="We size our initial opportunity using U.S. software publishers as a transparent proxy. One hundred to two hundred paying customers is our growth target, not traction or break-even." data-duration-s="16">
         <div class="slide-head"><span class="brand-mini"><img class="brand-ant" src="ari-ant-mark.png" alt="" aria-hidden="true">Market / Beneficiary Sizing / Forecast</span><span class="slide-num">13</span></div>
         <span class="build-trigger" data-build="1"></span><span class="build-trigger" data-build="2"></span><span class="build-trigger" data-build="3"></span>
-        <div class="market-viewport"><div class="market-world" aria-label="Outer circle: U.S. software publishers under 500 employees. Middle circle: firms with 5–49 employees. Inner circle: first 50 target customers."><div class="market-circle circle-full"><span class="ring-description"><strong>Under 500 employees</strong>U.S. software publishers</span></div><div class="market-circle circle-start"><span class="ring-description"><strong>5–49 employees</strong>U.S. software publishers</span></div><div class="market-circle circle-win"><span class="ring-description"><strong>Initial beachhead</strong>Target paying<br>customers</span></div></div><div class="market-ring-labels"><div class="market-ring-label"><b>13,254</b><span>FULL OPPORTUNITY</span></div><div class="market-ring-label"><b>4,246</b><span>STARTING COHORT</span></div><div class="market-ring-label"><b>50</b><span>FIRST CUSTOMERS</span></div></div></div>
-        <div class="market-detail"><div class="market-detail-copy md1"><p class="section-tag">The full opportunity</p><strong>$23.7M</strong><p>13,254 U.S. software-publisher firms under 500 employees × $1,788 annual Growth plan.</p></div><div class="market-detail-copy md2"><p class="section-tag">Our starting market</p><strong>$7.6M</strong><p>4,246 firms with 5–49 employees × $1,788 annual Growth plan.</p></div><div class="market-detail-copy md3"><p class="section-tag">What we can win first</p><strong>$89.4K</strong><p>50 customers × $1,788 annual Growth plan.</p></div></div>
+        <div class="market-viewport"><div class="market-world" aria-label="Outer circle: U.S. software publishers under 500 employees. Middle circle: firms with 5–49 employees. Inner circle: 100 to 200 target paying customers."><div class="market-circle circle-full"><span class="ring-description"><strong>Under 500 employees</strong>U.S. software publishers</span></div><div class="market-circle circle-start"><span class="ring-description"><strong>5–49 employees</strong>U.S. software publishers</span></div><div class="market-circle circle-win"><span class="ring-description"><strong>Growth target</strong>Target paying<br>customers</span></div></div><div class="market-ring-labels"><div class="market-ring-label"><b>13,254</b><span>FULL OPPORTUNITY</span></div><div class="market-ring-label"><b>4,246</b><span>STARTING COHORT</span></div><div class="market-ring-label"><b>100–200</b><span>GROWTH TARGET</span></div></div></div>
+        <div class="market-detail"><div class="market-detail-copy md1"><p class="section-tag">The full opportunity</p><strong>$39.6M</strong><p>13,254 U.S. software-publisher firms under 500 employees × $2,988 annual Growth plan.</p></div><div class="market-detail-copy md2"><p class="section-tag">Our starting market</p><strong>$12.7M</strong><p>4,246 firms with 5–49 employees × $2,988 annual Growth plan.</p></div><div class="market-detail-copy md3"><p class="section-tag">Our growth target, not break-even</p><strong>$299K–$598K</strong><p>100–200 paying customers × $2,988 annual Growth-plan proxy.</p></div></div>
 
       </section>
 
@@ -1601,23 +1606,62 @@ REFERENCE AND CUES, NOT SPOKEN: Reveal six visual memories. Click 7 connects the
 
       document.fonts.ready.then(() => window.attackChart.update('none'));
 
-      const customers = [0,50,100,150,200,250,300,350,400,450,500];
+      // Illustrative six-month customer-growth scenario, not actual traction.
+      const customerForecast = [0,3,8,15,25,40];
+      const forecastMonths = customerForecast.map((_, i) => 'M' + (i + 1));
+      const monthlyCostBreakdown = customerForecast.map(customers => ({
+        sharedTools: 500,
+        api: customers * 46.075,
+        sandbox: customers * 24.25,
+        aws: customers * 7,
+        payments: customers * 6.734984,
+        supportStorage: customers * 11.9
+      }));
+      const totalMonthlyCost = monthlyCostBreakdown.map(cost => Object.values(cost).reduce((sum, amount) => sum + amount, 0));
       window.economicsChart = new Chart(document.querySelector('#economicsChart'), {
         type: 'line',
+        plugins: [{
+          id: 'economicsLegendSpacing',
+          afterInit(chart) {
+            const legend = chart.legend;
+            const fit = legend.fit;
+            legend.fit = function() {
+              fit.call(this);
+              this.height += 24;
+            };
+          }
+        }],
         data: {
-          labels: customers,
+          labels: forecastMonths,
           datasets: [
-            { label: 'Recurring revenue', data: customers.map(n => n * 146.5), borderColor: '#ff8a75', backgroundColor: 'transparent', borderWidth: 4, tension: .15 },
-            { label: 'Planned staffed cost, excluding re-checks', data: customers.map(n => 31250 + n * 28.3385), borderColor: '#ffffff', backgroundColor: 'transparent', borderWidth: 4, tension: .15 }
+            { label: 'Monthly revenue', data: customerForecast.map(n => n * 221.896), borderColor: '#ff8a75', backgroundColor: 'transparent', borderWidth: 4, tension: .15 },
+            { label: 'Total modeled monthly cost', data: totalMonthlyCost, borderColor: '#ffffff', backgroundColor: 'transparent', borderWidth: 4, tension: .15 }
           ]
         },
         options: {
           responsive: false,
           animation: { duration: 1800, easing: 'easeOutQuart' },
-          plugins: { legend: { labels: { color: '#ffffff' } }, tooltip: { callbacks: { label: item => `${item.dataset.label}: $${Math.round(item.raw).toLocaleString()}` } } },
+          interaction: { mode: 'index', intersect: false },
+          plugins: { legend: { labels: { color: '#ffffff' } }, tooltip: { callbacks: {
+            title: items => `${items[0].label} · ${customerForecast[items[0].dataIndex]} forecast customers`,
+            label: item => `${item.dataset.label}: $${Number(item.raw).toLocaleString('en-US', { maximumFractionDigits: 2 })}`,
+            afterLabel: item => {
+              if (item.datasetIndex !== 1) return [];
+              const cost = monthlyCostBreakdown[item.dataIndex];
+              const money = value => '$' + value.toFixed(2);
+              return [
+                'Shared team tools: ' + money(cost.sharedTools),
+                'Product API: ' + money(cost.api),
+                'Sandbox reserve: ' + money(cost.sandbox),
+                'AWS allocation: ' + money(cost.aws),
+                'Payments: ' + money(cost.payments),
+                'Support/storage: ' + money(cost.supportStorage)
+              ];
+            }
+          } } },
           scales: {
             y: { ticks: { color: 'rgba(255,255,255,.65)', callback: value => '$' + (value / 1000) + 'K' }, grid: { color: 'rgba(255,255,255,.12)' } },
-            x: { title: { display: true, text: 'Blended customers', color: 'rgba(255,255,255,.65)' }, ticks: { color: 'rgba(255,255,255,.65)' }, grid: { display: false } }
+            x: { title: { display: true, text: 'Pilot month · illustrative forecast, not actuals', color: 'rgba(255,255,255,.65)' }, ticks: { color: 'rgba(255,255,255,.65)' }, grid: { display: false } }
           }
         }
       });

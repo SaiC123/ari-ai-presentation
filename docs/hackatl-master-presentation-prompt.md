@@ -258,11 +258,14 @@ Animation sequence: product window appears, usability features illuminate, acces
 
 Create one animated financial story rather than a static spreadsheet.
 
+Current financial brief (supersedes earlier financial instructions): use docs/cost-reconciliation.md and docs/pricing-narration.md. Six unpaid founders during pilots, no hiring. Planned fixed cash costs $500/month, founder-funded pilots and reinvested surplus. Do not restore the old staffed forecast or a pre-seed ask.
+
 Forecast pricing assumptions:
 
-- Founder: `$299/month` — 1 repository, monitoring, verified fixes
-- Growth: `$999/month` — up to 5 repositories, seven-agent workflow, approvals, evidence history
-- Scale: `$2,499/month` — up to 15 repositories, team controls, integrations, priority runs
+- Founder: `$49.99/month`, 1M assessed lines/month, 10 assessments, shared across repositories
+- Growth: `$249/month`, 5M assessed lines/month, 25 assessments, shared across repositories
+- Scale: `$599/month`, 20M assessed lines/month, 60 assessments, shared across repositories
+- Core review, seven agents and fix verification in every tier; monitoring requires explicit budgets. Monthly assessed lines count repeated assessments again. Proposed workspace packaging, not per-seat billing. Enterprise scope and onboarding negotiated. See https://kairo.security/pricing for structural inspiration, not copied entitlements. Extra assessments $25 with budget approval.
 
 Research competitor pricing to defend these assumptions, and cite sources in small text.
 
@@ -273,18 +276,14 @@ Click sequence:
 3. Customer payment enters an animated unit-economics waterfall.
 4. Costs are deducted: AI models, secure sandbox compute, storage, integrations, support, security/compliance.
 5. Remaining gross profit stays visible.
-6. A graph compares recurring revenue with monthly operating costs as customers grow.
-7. The lines cross at the estimated break-even customer count.
-8. A `$750K PRE-SEED` funding bridge appears and divides into:
-   - 45% product and security engineering
-   - 25% model and sandbox compute
-   - 20% pilots and customer acquisition
-   - 10% compliance, legal, and operations
-9. Show approximately 18 months of forecast runway and the milestones that unlock the next round.
+6. A six-month illustrative graph compares monthly revenue and explicitly summed monthly costs. Use M1-M6, scenario customer counts0/3/8/15/25/40 at assumed40/45/15 mix, not actuals. White line sums shared tools500 plus per-customer API46.075+sandbox24.25+AWS7+payments6.734984+support11.90. Show categories beside graph and monthly component tooltips. Keep prices fixed, do not invent future increases or subscription-seat cost changes.
+7. Keep underlying coverage arithmetic in notes: about4 at assumed blend or70Founder-only. Monthly scenario first crosses in M3, not promised timing or cumulative break-even. Exclude extra re-checks, founder pay, taxes, legal/compliance and unmeasured overhead. Introductory pilot pricing; future increases are a plan to validate, not modeled revenue.
+8. A $500/month shared pilot budget appears: Claude Team $150, ChatGPT Business including Codex $150, Vercel Pro six deploying seats $120, domain allowance $10, operating contingency $70.
+9. Show founder-funded pilots, no initial salaries, and reinvested surplus. Customer delivery costs are separate; taxes, extra usage, legal/compliance and founder labor are excluded. Domain and reserves are provisional. AWS-adjusted costs are $42.75/$99.02/$228.67, margins about 14.5%/60%/62%. Founder is an entry pilot price with thin margin; approximately70Founder-onlycustomers cover modeled fixed cash costs. Growth target100–200payingcustomers is separate, not break-even.
 
-Research all costs before calculating margins or break-even. Clearly label forecasts and assumptions. Core message:
+Expanded10/25/60assessment allowances require new representative-repository benchmarks: $1.90 API/run, $1 sandbox/run and retained support reserves are forecasts, not proven production costs at this volume. Research all costs before claiming validated margins or break-even. Clearly label forecasts and assumptions. Core message:
 
-**Funding gets Ari to market. Recurring revenue makes Ari sustainable.**
+**Lean to launch. Built to sustain.**
 
 ### Slide 11 — Market opportunity
 
@@ -445,4 +444,3 @@ Before delivery, verify:
 - All projections are labeled
 - Current capabilities are separated from roadmap claims
 - The presentation is deliverable in five minutes
-
