@@ -353,6 +353,18 @@
     .finance-chart-wrap canvas { width:680px!important; height:340px!important; }
     .break-even { padding:28px; border-radius:20px; background:var(--acid); }
     .break-even strong { display:block; font:700 68px/.9 "Space Grotesk",sans-serif; }
+
+    .forecast-controls { display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-bottom:12px; }
+    .forecast-controls label { display:grid;gap:6px;font-size:18px;line-height:1.2;color:white; }
+    .forecast-controls select { min-width:0;width:100%;height:34px;padding:3px 7px;border:1px solid rgba(255,255,255,.45);border-radius:6px;background:#2d1b17;color:white;font:20px/1.2 "Space Grotesk",sans-serif; }
+    .finance-slide[data-build-current="3"] .forecast-controls { pointer-events:auto; }
+    .pilot-coverage { padding:20px; }
+    .pilot-coverage strong { margin-top:8px;font-size:54px; }
+    .pilot-coverage .coverage-label { margin-top:7px;font-size:20px;line-height:1.2; }
+    .pilot-coverage dl { display:grid;grid-template-columns:1fr auto;gap:8px 10px;margin:20px 0 16px;font-size:18px;line-height:1.2; }
+    .pilot-coverage dd { margin:0;font-weight:700;text-align:right; }
+    .pilot-coverage .forecast-result { margin-top:9px;font-size:18px;line-height:1.3; }
+    #forecastChartFallback { font-size:20px;line-height:1.4; }
     .monthly-cost-card { padding:22px; }
     .monthly-cost-card strong { font-size:44px;margin-top:10px; }
     .monthly-cost-components { margin-top:10px;display:grid;gap:5px;font-size:16px;line-height:1.25; }
@@ -1080,9 +1092,9 @@ REFERENCE AND CUES, NOT SPOKEN: CUE: Segment 1 is visible on entry. Click once f
         </div>
       </section>
 
-      <section class="slide dark finance-slide" data-note="SPOKEN: Founder starts at an introductory pilot price of forty-nine ninety-nine for ten full assessments. Larger plans serve teams that need more coverage. Our graph shows monthly revenue against total modeled monthly costs. The white line includes team tools plus customer API usage, sandbox compute, AWS, payments and support. As customers grow, delivery costs rise each month. This is an illustrative six-month forecast, not traction or a profitability promise. Founders initially take no salaries. We will use pilots to measure real costs and value, then plan sustainable pricing for future customers. Our separate growth target is one hundred to two hundred paying customers.
+      <section class="slide dark finance-slide" data-note="SPOKEN (2:36 to 3:22; about 46 seconds including clicks/pauses): We start with five free pilots in month one, then charge new pilots forty-nine ninety-nine. A trial conversion benchmark suggests about one of those first five might pay. That is a proxy, not Ari evidence. Our twelve-month model includes the cost of free pilots, new paid customers and churn. At two new paid pilots per month, we do not cover costs in year one. Monthly coverage needs about seventy active Founder customers. Recovering earlier losses takes longer. Change the assumptions to test the path.
 
-REFERENCE, NOT SPOKEN: Monthly chart scenario M1-M6 customer counts0/3/8/15/25/40 at fixed40/45/15 assumedmix, not actuals or validatedacquisitionforecast. Shared500monthly staysfixed. White line explicitly sums500plus API46.075,sandbox24.25,AWS7,payments6.734984,support11.9 per blendedcustomer =95.959984. Revenue221.896/customer. Hoverwhitepoint for category costs. Monthly revenuefirstexceedscostinM3inthisscenario, notcumulativebreakeven or guaranteedtiming. Pricesheldconstant; futurepostpilotpriceincreasesnotmodeled. Excludeextrausage/rechecks/salaries/taxes/legal/economiclabor. Introductorypilotprices; higherfuturepricingisaplan, notvalidatedwillingnesstopay. UserrequestedFounder10fullassessments. Proposedworkspaceprices49.99/249/599 with10/25/60fullassessmentsmonthly, not per-seat pricing. Monthly assessed-source pools1M/5M/20M across connected repositories; repeat assessments count lines again; exclude generated/vendor/dependency code. No repository-count cap proposed, but workload is not unlimited. Review, seven-agent investigation and independent fix verification are coreworkflow, not every future enterprisefeature. Monitoring/re-checks separately budgeted, not unlimited or provenproductiondefense.25scopedextraassessment subjecttosourcevolume/budgetapproval. Enterprisecustomscope/codevolume/onboarding. Kairopricing informedstructureonly, not copiedfeatures, quantitiesorprices. PerassessmentAPI1.90 is team-reported demo, not audited average or demonstrated cost for larger codebases. Forecastsandbox1/assessment; API19/47.5/114, reserve10/25/60, support/storage5/12/30, AWS7/account, payment2.9%+0.30 gives1.74971/7.521/17.671. Total42.74971/99.021/228.671; contribution7.24029/149.979/370.329; margins14.48/60.23/61.82%. Support andinfra forecasts may need increasing at higherusage. Mix40/45/15 ->revenue221.896,cost95.959984,contribution125.936016,margin56.75%,500/contribution3.97 roundsup4blendedcustomers. Founder-only500/7.24029=69.06 roundsup70; entrytiermargin14.48% isthin andmaynotcoverunmeasuredsupport/overages.100-200payingcustomersisagrowthtargetnotcalculatedbreakeven. This is pilotcashcoverage, notfullprofitability. Fixed500monthly includesClaude150/Codex150/Vercel120/domain10provisional/contingency70. Noinitialfounderpay/hiring, founder-fundedpilot/reinvestsurplus. ProductAPIseparatefromdeveloperplans. AWSallocationteamprovided; verify nooverlap withsandbox/storage. Extrausage/rechecks,taxes,legal/compliance,economicfounderlabor excluded.3API/recheck is maximumcapnotaverage; RLnoClaudeAPInotzeroCPU. Source https://kairo.security/pricing and docs/cost-reconciliation.md. Validate actual usage traces, highvolume costs, customerwillingnesstopay and usageenforcement before rollout." data-spoken="Founder starts at an introductory pilot price of forty-nine ninety-nine for ten full assessments. Larger plans serve teams that need more coverage. Our graph shows monthly revenue against total modeled monthly costs. The white line includes team tools plus customer API usage, sandbox compute, AWS, payments and support. As customers grow, delivery costs rise each month. This is an illustrative six-month forecast, not traction or a profitability promise. Founders initially take no salaries. We will use pilots to measure real costs and value, then plan sustainable pricing for future customers. Our separate growth target is one hundred to two hundred paying customers." data-duration-s="46">
+REFERENCE AND CUES, NOT SPOKEN: Slide 12 has four builds: proposed prices; Growth unit economics; pilot forecast; shared tools budget. Founder49.99/10assessments, Growth249/25 and Scale599/60 are unchanged proposed workspace prices. The forecast uses Founder only, no assumed upgrades or40/45/15blend. User plan: five FREE pilots in Month1 only, all new pilots paid49.99 from Month2. Assume each free pilot receives the same10fullassessments as Founder for cost planning, not a public unlimited trial entitlement. Each free account costs41 =19API+10sandbox+7AWS+5support/storage; five cost205, plus500shared gives705Month1cost and zero revenue/payment fees. The18.2%free-to-paid proxy is the organic opt-in average in FirstPageSage2025,86SaaScompanies,71%B2B; not selected security-pilot data or ongoing paid retention. Expected first-cohort conversions5*0.182=0.91, about one, not guaranteed. All conversion in Month2 is a timing assumption, not a sourced conversion schedule. Sensitivity5% is the midpoint of ChartMogul2026 no-card good4-6%range (50thpercentile guide within6months,200products);21.9%is FirstPageSage cybersecurity trial average with mixed trial mechanics. These are different populations, not confidence bounds. a16z recommends5-10initialdesignpartners, not monthlypilotstarts. Newpaid2/month afterMonth1 is an acquisition assumption; alternatives0/1/3/5/10 are sensitivity, not benchmarks. Paid churn2%monthly is an unsourced planning assumption, separately adjustable0/2/5%, not pilot conversion. PaidAccounts_t=PaidAccounts_(t-1)*(1-churn)+NewPaid_t+Conversions_t; no ongoing free cohorts. Revenue49.99*paid; paidcost42.74971=19API+10sandbox+7AWS+5support+1.74971payments. White cost line sums500shared plus API/sandbox/AWS/support for paid AND free accounts plus payments on paid accounts only. Controls change monthly versus cumulative totals; tooltips explain counts, net cash and components. Monthly coverage is the first month revenue covers that month costs; cumulative recovery covers all earlier modeled losses. Coverageceil(500/7.24029)=70wholeactivepayingFounderaccounts after the free cohort ends. Base scenario reaches neither milestone within12months. Funding is the largest cumulative deficit, not a fundraising ask. Model uses expected fractional account counts, not booked customers; actual first cohort yields0-5payers. Excludes founder salaries/labor, taxes, legal/compliance, paid acquisition, setup/onboarding labor, extra rechecks and unmeasured overages; costs/usage and retention need validation. Fixed500 is retained planning budget; all included assessments assumed consumed, AWS allocation and support forecasts unaudited. No increases or subscriptions bought. Sources accessed October17,2026: https://firstpagesage.com/seo-blog/saas-free-trial-conversion-rate-benchmarks/ ; https://chartmogul.com/reports/saas-conversion-report/ ; https://a16z.com/a-framework-for-finding-a-design-partner/ . Source inventory and docs/pilot-forecast.md preserve methodology and monthly table. Market growth target100-200 remains separate." data-spoken="We start with five free pilots in month one, then charge new pilots forty-nine ninety-nine. A trial conversion benchmark suggests about one of those first five might pay. That is a proxy, not Ari evidence. Our twelve-month model includes the cost of free pilots, new paid customers and churn. At two new paid pilots per month, we do not cover costs in year one. Monthly coverage needs about seventy active Founder customers. Recovering earlier losses takes longer. Change the assumptions to test the path." data-duration-s="46">
         <div class="slide-head"><span class="brand-mini"><img class="brand-ant" src="ari-ant-mark.png" alt="" aria-hidden="true">Revenue or Funding Model / Costs &amp; Sustainability</span><span class="slide-num">12</span></div>
         <h2 style="font-size:47px">Lean to launch. <span class="accent">Built to sustain.</span></h2>
         <span class="build-trigger" data-build="1"></span><span class="build-trigger" data-build="2"></span><span class="build-trigger" data-build="3"></span><span class="build-trigger" data-build="4"></span>
@@ -1098,7 +1110,24 @@ REFERENCE, NOT SPOKEN: Monthly chart scenario M1-M6 customer counts0/3/8/15/25/4
             <div class="pricing-terms"><b>Proposed plans</b><span>$25 / scoped extra assessment</span><span>Monitoring + extras: budget approval</span></div>
           </div>
           <div class="finance-scene fscene2"><p class="section-tag">Growth plan / forecast monthly economics / 25 assessments</p><div class="waterfall"><div class="waterbar"><i style="height:180px"></i><b>$249<br>REVENUE</b></div><div class="waterbar"><i style="height:57.47px"></i><b>API + INFRA + AWS<br>−$79.50</b></div><div class="waterbar"><i style="height:5.44px"></i><b>PAYMENTS<br>−$7.52</b></div><div class="waterbar"><i style="height:8.67px"></i><b>STORAGE + SUPPORT<br>−$12</b></div><div class="waterbar"><i style="height:108.42px"></i><b>$149.98<br>CONTRIBUTION</b></div></div><div class="cost-detail" aria-label="Forecast monthly Growth-plan cost breakdown, approximately 99.02 dollars total before shared fixed costs and additional re-checks"><div><b>$47.50 · AI usage</b><small>25 × $1.90 demo assumption</small></div><div><b>$25 · Infrastructure reserve</b><small>Forecast buffer, not measured</small></div><div><b>$7 · AWS allocation</b><small>Team estimate per customer</small></div><div><b>$7.52 · Payment estimate</b><small>Forecast card-processing fees</small></div><div><b>$12 · Storage + support</b><small>Forecast evidence + support allowance</small></div></div><p class="prototype-cost-baseline">Growth cost $99.02 · 60% contribution margin · Additional push re-checks excluded</p></div>
-          <div class="finance-scene fscene3"><div class="finance-chart-wrap"><canvas id="economicsChart" width="680" height="300" aria-label="Illustrative six-month revenue and total modeled monthly costs, including shared tools, API, sandbox, AWS, payments and support/storage"></canvas><div class="break-even monthly-cost-card"><p class="kicker">White line includes</p><strong>$500</strong><p style="margin-top:8px;font-size:16px">Shared tools / month</p><p style="margin-top:12px;font-size:14px;opacity:.85">Plus, per blended customer:</p><div class="monthly-cost-components"><div><span>Product API</span><b>$46.08</b></div><div><span>Sandbox reserve</span><b>$24.25</b></div><div><span>AWS allocation</span><b>$7.00</b></div><div><span>Payments</span><b>$6.73</b></div><div><span>Support + storage</span><b>$11.90</b></div></div><p style="margin-top:12px;font-size:13px;line-height:1.3;opacity:.8">Forecast mix: 40% / 45% / 15%<br>Extra usage + founder pay excluded</p></div></div></div>
+          <div class="finance-scene fscene3"><div class="finance-chart-wrap">
+            <div class="forecast-plot">
+              <div class="forecast-controls" role="group" aria-label="Pilot forecast assumptions">
+                <label>New paid / mo<select id="forecastIntake" aria-label="New paying pilots per month from Month 2"><option value="0">0</option><option value="1">1</option><option value="2" selected>2</option><option value="3">3</option><option value="5">5</option><option value="10">10</option></select></label>
+                <label>Conversion<select id="forecastConversion" aria-label="Free pilot to paid conversion proxy"><option value="0.05">5%</option><option value="0.182" selected>18.2%</option><option value="0.219">21.9%</option></select></label>
+                <label>Paid churn / mo<select id="forecastChurn" aria-label="Assumed monthly paying customer churn"><option value="0">0%</option><option value="0.02" selected>2%</option><option value="0.05">5%</option></select></label>
+                <label>View<select id="forecastView" aria-label="Forecast chart view"><option value="monthly">Monthly</option><option value="cumulative">Cumulative</option></select></label>
+              </div>
+              <canvas id="economicsChart" width="680" height="300" role="img" aria-label="Twelve-month pilot revenue and total cash cost forecast" aria-describedby="forecastAccessible">Monthly cash-cost and revenue forecast. See the forecast summary.</canvas>
+              <p id="forecastChartFallback" hidden>Chart unavailable. The forecast summary remains available.</p>
+              <p id="forecastAccessible" class="sr-only"></p>
+            </div>
+            <div class="break-even pilot-coverage" id="forecastSummary" aria-live="polite">
+              <p class="kicker">Forecast / expected values</p><strong id="forecastThreshold">70</strong><p class="coverage-label">active payers for monthly coverage</p>
+              <dl><dt>Fixed / month</dt><dd>$500</dd><dt>Cost / payer</dt><dd>$42.75</dd><dt>M1: five free pilots</dt><dd>$705 cost</dd><dt>Year 1 funding</dt><dd id="forecastFunding"></dd></dl>
+              <p class="forecast-result" id="forecastMonthly"></p><p class="forecast-result" id="forecastRecovery"></p><p class="forecast-result" id="forecastConverted"></p>
+            </div>
+          </div></div>
           <div class="finance-scene fscene4"><div class="funding-grid"><div class="funding-total"><div><strong>$500</strong><span>MONTHLY PILOT BUDGET<br>6 FOUNDERS · NO HIRING</span></div></div><div class="allocation"><div class="allocation-row"><b>$150</b><div class="allocation-track"><i style="--w:30%"></i></div><span>Claude Team · 6 seats</span></div><div class="allocation-row"><b>$150</b><div class="allocation-track"><i style="--w:30%"></i></div><span>Codex / Business · 6 seats</span></div><div class="allocation-row"><b>$120</b><div class="allocation-track"><i style="--w:24%"></i></div><span>Vercel Pro · 6 deployers</span></div><div class="allocation-row"><b>$10</b><div class="allocation-track"><i style="--w:2%"></i></div><span>Domain · provisional</span></div><div class="allocation-row"><b>$70</b><div class="allocation-track"><i style="--w:14%"></i></div><span>Operating contingency</span></div><div class="funding-gate">Founder-funded pilots. No salaries initially. Reinvest surplus.<br>Customer delivery costs separate; taxes and extra usage excluded.</div></div></div></div>
         </div>
 
@@ -1441,6 +1470,7 @@ REFERENCE AND CUES, NOT SPOKEN: Reveal six visual memories. Click 7 connects the
   <span id="fullscreenStatus" class="sr-only" role="status"></span>
   <aside class="notes" id="notes" tabindex="-1" aria-label="Speaker notes"><b>Speaker note</b><span id="noteText"></span></aside>
 
+  <script src="pilot-forecast.js"></script>
   <script>
     const wrapper = document.querySelector('#presentation-slides-wrapper');
     const slides = [...wrapper.querySelectorAll('.slide')];
@@ -1598,7 +1628,7 @@ REFERENCE AND CUES, NOT SPOKEN: Reveal six visual memories. Click 7 connects the
     });
     document.addEventListener('click', event => {
       if (event.defaultPrevented || event.target?.isContentEditable) return;
-      if (event.target?.closest?.('.controls, .notes, a, button, input, textarea, select, [role="button"], [role="textbox"]')) return;
+      if (event.target?.closest?.('.controls, .notes, .forecast-controls, a, button, input, textarea, select, [role="button"], [role="textbox"]')) return;
       if (event.clientX < window.innerWidth * .32) prevAction();
       else nextAction();
     });
@@ -1649,65 +1679,87 @@ REFERENCE AND CUES, NOT SPOKEN: Reveal six visual memories. Click 7 connects the
 
       document.fonts.ready.then(() => window.attackChart.update('none'));
 
-      // Illustrative six-month customer-growth scenario, not actual traction.
-      const customerForecast = [0,3,8,15,25,40];
-      const forecastMonths = customerForecast.map((_, i) => 'M' + (i + 1));
-      const monthlyCostBreakdown = customerForecast.map(customers => ({
-        sharedTools: 500,
-        api: customers * 46.075,
-        sandbox: customers * 24.25,
-        aws: customers * 7,
-        payments: customers * 6.734984,
-        supportStorage: customers * 11.9
-      }));
-      const totalMonthlyCost = monthlyCostBreakdown.map(cost => Object.values(cost).reduce((sum, amount) => sum + amount, 0));
-      window.economicsChart = new Chart(document.querySelector('#economicsChart'), {
-        type: 'line',
-        plugins: [{
-          id: 'economicsLegendSpacing',
-          afterInit(chart) {
-            const legend = chart.legend;
-            const fit = legend.fit;
-            legend.fit = function() {
-              fit.call(this);
-              this.height += 24;
-            };
-          }
-        }],
-        data: {
-          labels: forecastMonths,
-          datasets: [
-            { label: 'Monthly revenue', data: customerForecast.map(n => n * 221.896), borderColor: '#ff8a75', backgroundColor: 'transparent', borderWidth: 4, tension: .15 },
-            { label: 'Total modeled monthly cost', data: totalMonthlyCost, borderColor: '#ffffff', backgroundColor: 'transparent', borderWidth: 4, tension: .15 }
-          ]
-        },
-        options: {
-          responsive: false,
-          animation: { duration: 1800, easing: 'easeOutQuart' },
-          interaction: { mode: 'index', intersect: false },
-          plugins: { legend: { labels: { color: '#ffffff' } }, tooltip: { callbacks: {
-            title: items => `${items[0].label} · ${customerForecast[items[0].dataIndex]} forecast customers`,
-            label: item => `${item.dataset.label}: $${Number(item.raw).toLocaleString('en-US', { maximumFractionDigits: 2 })}`,
-            afterLabel: item => {
-              if (item.datasetIndex !== 1) return [];
-              const cost = monthlyCostBreakdown[item.dataIndex];
-              const money = value => '$' + value.toFixed(2);
-              return [
-                'Shared team tools: ' + money(cost.sharedTools),
-                'Product API: ' + money(cost.api),
-                'Sandbox reserve: ' + money(cost.sandbox),
-                'AWS allocation: ' + money(cost.aws),
-                'Payments: ' + money(cost.payments),
-                'Support/storage: ' + money(cost.supportStorage)
-              ];
-            }
-          } } },
-          scales: {
-            y: { ticks: { color: 'rgba(255,255,255,.65)', callback: value => '$' + (value / 1000) + 'K' }, grid: { color: 'rgba(255,255,255,.12)' } },
-            x: { title: { display: true, text: 'Pilot month · illustrative forecast, not actuals', color: 'rgba(255,255,255,.65)' }, ticks: { color: 'rgba(255,255,255,.65)' }, grid: { display: false } }
-          }
+    }
+
+    if (window.AriPilotForecast) {
+      const intake = document.querySelector('#forecastIntake');
+      const conversion = document.querySelector('#forecastConversion');
+      const churn = document.querySelector('#forecastChurn');
+      const view = document.querySelector('#forecastView');
+      const money = value => Number(value).toLocaleString('en-US', { style:'currency', currency:'USD' });
+      let pilotForecast;
+      function updatePilotForecast() {
+        pilotForecast = window.AriPilotForecast.forecast({
+          newPaidPerMonth: Number(intake.value), conversionRate: Number(conversion.value), monthlyChurn: Number(churn.value)
+        });
+        const model = pilotForecast;
+        const last = model.rows.at(-1);
+        const cumulative = view.value === 'cumulative';
+        document.querySelector('#forecastThreshold').textContent = model.coverageAccounts ?? 'None';
+        document.querySelector('#forecastFunding').textContent = money(model.fundingNeeded);
+        document.querySelector('#forecastMonthly').textContent = model.monthlyBreakEven
+          ? `Monthly coverage: M${model.monthlyBreakEven}` : 'Monthly coverage: not in Year 1';
+        document.querySelector('#forecastRecovery').textContent = model.cumulativeBreakEven
+          ? `Losses recovered: M${model.cumulativeBreakEven}` : 'Losses recovered: not in Year 1';
+        document.querySelector('#forecastConverted').textContent = `5 free in M1 → ${model.expectedConversions.toFixed(2)} expected payers`;
+        const summary = `Forecast assumptions: five free pilots in Month 1, ${intake.value} new paying pilots per month from Month 2, ${Number(conversion.value)*100}% first-cohort conversion proxy, ${Number(churn.value)*100}% assumed monthly paid churn. Founder price $49.99. Monthly coverage ${model.monthlyBreakEven ? 'Month '+model.monthlyBreakEven : 'not reached in 12 months'}; cumulative recovery ${model.cumulativeBreakEven ? 'Month '+model.cumulativeBreakEven : 'not reached in 12 months'}. Year 1 funding needed ${money(model.fundingNeeded)}. `;
+        document.querySelector('#forecastAccessible').textContent = summary + model.rows.map(row =>
+          `Month ${row.month}: ${row.freeAccounts} free, ${row.paidAccounts.toFixed(2)} expected paid, revenue ${money(row.revenue)}, cost ${money(row.cost)}, net ${money(row.net)}, cumulative net ${money(row.cumulativeNet)}.`).join(' ');
+        document.querySelector('#economicsChart').setAttribute('aria-label', `${cumulative ? 'Cumulative' : 'Monthly'} twelve-month pilot revenue and cash-cost forecast. Month 12 expected payers ${last.paidAccounts.toFixed(2)}.`);
+        if (window.economicsChart) {
+          window.economicsChart.data.labels = model.rows.map(row => 'M'+row.month);
+          window.economicsChart.data.datasets[0].label = cumulative ? 'Cumulative revenue' : 'Monthly revenue';
+          window.economicsChart.data.datasets[1].label = cumulative ? 'Cumulative cash cost' : 'Total monthly cash cost';
+          window.economicsChart.data.datasets[0].data = model.rows.map(row => cumulative ? row.cumulativeRevenue : row.revenue);
+          window.economicsChart.data.datasets[1].data = model.rows.map(row => cumulative ? row.cumulativeCost : row.cost);
+          window.economicsChart.update();
         }
-      });
+      }
+      if (window.Chart) {
+        window.economicsChart = new Chart(document.querySelector('#economicsChart'), {
+          type:'line',
+          plugins:[{
+            id:'economicsLegendSpacing',
+            afterInit(chart) {
+              const legend = chart.legend;
+              const fit = legend.fit;
+              legend.fit = function() { fit.call(this); this.height += 24; };
+            }
+          }],
+          data:{ labels:[], datasets:[
+            { label:'Monthly revenue', data:[], borderColor:'#ff8a75', backgroundColor:'transparent', borderWidth:4, tension:0 },
+            { label:'Total monthly cash cost', data:[], borderColor:'#ffffff', backgroundColor:'transparent', borderWidth:4, tension:0 }
+          ] },
+          options:{
+            responsive:false, animation:{ duration:1200, easing:'easeOutQuart' },
+            interaction:{ mode:'index', intersect:false },
+            plugins:{ legend:{ labels:{ color:'#ffffff', font:{size:16} } }, tooltip:{ callbacks:{
+              title:items => {
+                const row = pilotForecast.rows[items[0].dataIndex];
+                return `M${row.month} · ${row.freeAccounts} free / ${row.paidAccounts.toFixed(2)} expected paid`;
+              },
+              label:item => `${item.dataset.label}: ${money(item.raw)}`,
+              afterBody:items => {
+                const row = pilotForecast.rows[items[0].dataIndex];
+                if (view.value === 'cumulative') return ['Cumulative net: '+money(row.cumulativeNet), 'Includes all earlier free-pilot and delivery costs'];
+                return ['Monthly net: '+money(row.net), 'Shared team tools: '+money(row.costs.sharedTools),
+                  'Product API: '+money(row.costs.api), 'Sandbox reserve: '+money(row.costs.sandbox),
+                  'AWS allocation: '+money(row.costs.aws), 'Payments (paid only): '+money(row.costs.payments),
+                  'Support/storage: '+money(row.costs.supportStorage)];
+              }
+            } } },
+            scales:{
+              y:{ beginAtZero:true, ticks:{ color:'rgba(255,255,255,.8)', font:{size:16}, callback:value => '$'+Number(value).toLocaleString('en-US') }, grid:{color:'rgba(255,255,255,.12)'} },
+              x:{ ticks:{ color:'rgba(255,255,255,.8)', font:{size:16}, maxTicksLimit:6 }, grid:{display:false} }
+            }
+          }
+        });
+      } else {
+        document.querySelector('#economicsChart').hidden = true;
+        document.querySelector('#forecastChartFallback').hidden = false;
+      }
+      [intake, conversion, churn, view].forEach(control => control.addEventListener('change', updatePilotForecast));
+      updatePilotForecast();
     }
   </script>
 </body>

@@ -2,7 +2,7 @@
 
 ## Slide12: Revenue, costs and sustainability
 
-Founder starts at an introductory pilot price of forty-nine ninety-nine for ten full assessments. Larger plans serve teams that need more coverage. Our graph shows monthly revenue against total modeled monthly costs. The white line includes team tools plus customer API usage, sandbox compute, AWS, payments and support. As customers grow, delivery costs rise each month. This is an illustrative six-month forecast, not traction or a profitability promise. Founders initially take no salaries. We will use pilots to measure real costs and value, then plan sustainable pricing for future customers. Our separate growth target is one hundred to two hundred paying customers.
+We start with five free pilots in month one, then charge new pilots forty-nine ninety-nine. A trial conversion benchmark suggests about one of those first five might pay. That is a proxy, not Ari evidence. Our twelve-month model includes the cost of free pilots, new paid customers and churn. At two new paid pilots per month, we do not cover costs in year one. Monthly coverage needs about seventy active Founder customers. Recovering earlier losses takes longer. Change the assumptions to test the path.
 
 ## Slide13: Market sizing
 

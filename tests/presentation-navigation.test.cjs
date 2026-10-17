@@ -54,8 +54,13 @@ function presentation(hash = '#1', options = {}) {
   const selectors = Object.fromEntries([
     '#presentation-slides-wrapper', '#counter', '#progress', '#notes',
     '#noteText', '#prev', '#next', '#fullscreen', '#notesToggle', '#fullscreenStatus',
+    '#forecastIntake', '#forecastConversion', '#forecastChurn', '#forecastView',
+    '#forecastThreshold', '#forecastFunding', '#forecastMonthly', '#forecastRecovery',
+    '#forecastConverted', '#forecastAccessible', '#economicsChart', '#forecastChartFallback', '#formationChart',
   ].map(selector => [selector, element(['#prev', '#next', '#fullscreen', '#notesToggle'].includes(selector) ? 'button' : 'div')]));
   selectors['#presentation-slides-wrapper'].querySelectorAll = () => slides;
+  for (const [id, value] of Object.entries({ '#forecastIntake':'2', '#forecastConversion':'0.182',
+    '#forecastChurn':'0.02', '#forecastView':'monthly' })) selectors[id].value = value;
   const location = { hash };
   const documentListeners = {};
   const windowListeners = {};
@@ -63,6 +68,7 @@ function presentation(hash = '#1', options = {}) {
     querySelector: selector => selectors[selector],
     addEventListener: (name, callback) => { documentListeners[name] = callback; },
     fullscreenElement: null,
+    fonts: { ready: Promise.resolve() },
     exitFullscreen() { if (options.exitFullscreen) return options.exitFullscreen(this); this.fullscreenElement = null; return Promise.resolve(); },
   };
   document.documentElement = options.fullscreenUnsupported ? {} : { requestFullscreen: () => {
@@ -74,13 +80,24 @@ function presentation(hash = '#1', options = {}) {
     innerWidth: 1280, innerHeight: 720,
     addEventListener: (name, callback) => { windowListeners[name] = callback; },
   };
+  function FixtureChart(_canvas, configuration) {
+    this.data = configuration.data;
+    this.options = configuration.options;
+    this.reset = () => {};
+    this.update = () => {};
+  }
+  FixtureChart.defaults = { font:{} };
+  if (options.forecast) window.AriPilotForecast = require('../public/pilot-forecast.js');
+  if (options.chart) window.Chart = FixtureChart;
   const context = vm.createContext({
-    document, window, location,
+    document, window, location, Chart:FixtureChart,
     history: { replaceState: (_state, _title, url) => { location.hash = url; } },
   });
   vm.runInContext(scripts[0][1], context, { filename: 'presentation-inline.js' });
   return {
     slides, selectors, location, document,
+    chart: () => window.economicsChart,
+    change(id, value) { selectors[id].value = value; selectors[id].listeners.change(); },
     resize(width, height) { window.innerWidth = width; window.innerHeight = height; windowListeners.resize(); },
     dispatch(name) { return documentListeners[name]?.(); },
     tap(clientX, options = {}) { documentListeners.click({ clientX, target: element(), ...options }); },
@@ -451,4 +468,56 @@ test("every slide and build remains navigable forward and backward", () => {
     }
   }
   assert.equal(d.location.hash, '#1');
+});
+
+test('the live chart configuration includes free-pilot cash costs and zero first-month revenue', () => {
+  const deck = presentation('#2', { forecast:true, chart:true });
+  const chart = deck.chart();
+  assert.equal(chart.data.labels.length, 12);
+  assert.equal(chart.data.datasets[0].data[0], 0);
+  assert.equal(chart.data.datasets[1].data[0], 705);
+  assert.equal(deck.selectors['#forecastFunding'].textContent, '$5,244.57');
+  assert.match(deck.selectors['#forecastConverted'].textContent, /0.91 expected payers/);
+  assert.match(deck.selectors['#forecastAccessible'].textContent, /Month 1: 5 free, 0.00 expected paid/);
+});
+
+test('scenario controls update monthly coverage and cumulative chart data without navigation', () => {
+  const deck = presentation('#2', { forecast:true, chart:true });
+  deck.change('#forecastIntake', '10');
+  deck.change('#forecastChurn', '0');
+  assert.equal(deck.selectors['#forecastMonthly'].textContent, 'Monthly coverage: M8');
+  assert.match(deck.selectors['#forecastRecovery'].textContent, /not in Year 1/);
+  const monthly = deck.chart().data.datasets[0].data;
+  const total = monthly.reduce((sum, value) => sum + value, 0);
+  deck.change('#forecastView', 'cumulative');
+  assert.equal(deck.chart().data.datasets[0].label, 'Cumulative revenue');
+  assert.ok(Math.abs(deck.chart().data.datasets[0].data.at(-1) - total) < 1e-8);
+  assert.equal(deck.active(), 1);
+  assert.equal(deck.slides[1].dataset.buildCurrent, '0');
+});
+
+test('cost tooltip callbacks account for free service without charging a payment fee', () => {
+  const deck = presentation('#2', { forecast:true, chart:true });
+  const tooltip = deck.chart().options.plugins.tooltip.callbacks;
+  const lines = tooltip.afterBody([{ dataIndex:0 }]);
+  assert.ok(lines.includes('Shared team tools: $500.00'));
+  assert.ok(lines.includes('Product API: $95.00'));
+  assert.ok(lines.includes('Payments (paid only): $0.00'));
+  assert.ok(lines.includes('Monthly net: -$705.00'));
+  assert.match(tooltip.title([{ dataIndex:0 }]), /5 free \/ 0.00 expected paid/);
+  deck.change('#forecastView', 'cumulative');
+  assert.equal(tooltip.afterBody([{ dataIndex:0 }])[0], 'Cumulative net: -$705.00');
+});
+
+test('the accessible forecast summary remains available if the chart library fails', () => {
+  const deck = presentation('#2', { forecast:true });
+  assert.equal(deck.selectors['#economicsChart'].hidden, true);
+  assert.equal(deck.selectors['#forecastChartFallback'].hidden, false);
+  assert.match(deck.selectors['#forecastAccessible'].textContent, /Year 1 funding needed \$5,244.57/);
+});
+
+test('clicking a forecast control label does not advance the slide', () => {
+  const deck = presentation('#2');
+  deck.tap(1000, { target:element('label', ['.forecast-controls']) });
+  assert.equal(deck.slides[1].dataset.buildCurrent, '0');
 });
