@@ -1,0 +1,8 @@
+{
+  "type": "BEFORE",
+  "agent": "ai-1",
+  "utc": "2026-10-17T21:24:21.931877+00:00",
+  "summary": "BEFORE: user asks add why just vibe-coding cybersecurity is insufficient where best fits. Slide4 only add concise visible callout: A working app is not proof of security. AI can propose a fix. Independent tests must check it. Preserve sourced graph/reveal, update notes if needed. Then final pitch script inline. Commit push deploy sync local copies.",
+  "lock_commit": "575ac235d1596f0a38b690b9b424de1b90e4370c",
+  "base_main": "a6c56d42344d097a70ccb2baf6b25e3243a2d8be"
+}
