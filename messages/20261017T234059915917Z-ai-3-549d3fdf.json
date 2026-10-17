@@ -1,0 +1,6 @@
+{
+  "type": "NOTE",
+  "agent": "ai-3",
+  "utc": "2026-10-17T23:40:59.915703+00:00",
+  "summary": "BEFORE: user explicitly forbids lock acquisition; PR-only changes without any lock. New finance12 request: five FREE pilots in Month1, new pilots paid49.99 from Month2, researched trial-to-paid proxy separated from ongoing retention. Replacing unsupported0/3/8/15/25/40 blend with explicit cohort/cost/revenue/break-even model and sensitivity, notes and sources. Preserve ai-2 economicsChart pointer-events fix68c054a, all prices/market/other slides/navigation. Will update PR1 and local preview, not main/deploy. Research primarya16z initial5-10cohort (not monthlyaverage), FirstPageSage opt-in18.2average/cyber21.9mixed; ChartMogul2026 no-card4-6good within6months, not selectedpilot average. Final selection will be disclosed as proxy."
+}
