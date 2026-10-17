@@ -679,7 +679,6 @@
     .why-now-slide .why-rise span { font-size:20px;color:rgba(255,255,255,.8); }
     .why-now-slide canvas { display:block;width:980px!important;height:306px!important;max-width:100%; }
     .why-now-slide .why-chart-panel p { margin:4px 0 0;font-size:18px;color:rgba(255,255,255,.88); }
-    .why-now-slide .why-takeaway { position:absolute;left:72px;right:72px;bottom:78px;text-align:center;font-size:27px;font-weight:600;color:var(--acid); }
     .why-now-slide[data-build-current='1'] .why-pressure-row { top:180px;height:430px; }
     .why-now-slide[data-build-current='1'] .why-factors { opacity:0;visibility:hidden;pointer-events:none; }
     .why-now-slide[data-build-current='1'] .why-attacks { opacity:1;visibility:visible;pointer-events:auto;transform:translateX(-50%); }
@@ -799,7 +798,6 @@ REFERENCE AND CUES, NOT SPOKEN: Limited security capacity is the target-user hyp
             </div>
           </div>
         </div>
-        <p class="why-takeaway">Security checks need to keep pace</p>
       </section>
 
       <section class="slide dark customer-story-slide" data-note="SPOKEN (0:57 to 1:18; about 21 seconds including clicks/pauses): ARI targets small, founder-led SaaS startups using AI-assisted development without dedicated security teams. AI intensified their exposure: code output outpaced security coverage. We address that gap. Real customer validation is still pending.
@@ -1450,6 +1448,7 @@ REFERENCE AND CUES, NOT SPOKEN: Reveal six visual memories. Click 7 connects the
       Chart.defaults.font.family = 'IBM Plex Mono, monospace';
       Chart.defaults.color = '#6b5752';
       Chart.defaults.font.size = 15;
+      const attackAxisFont = { family:'"IBM Plex Mono", monospace', size:15, style:'normal', weight:'400' };
       window.attackChart = new Chart(document.querySelector('#formationChart'), {
         type: 'line',
         data: {
@@ -1471,11 +1470,13 @@ REFERENCE AND CUES, NOT SPOKEN: Reveal six visual memories. Click 7 connects the
           animations: { x: { type:'number', easing:'linear', duration:700, delay: context => context.type === 'data' ? context.dataIndex * 650 : 0 }, y: { duration:1500, easing:'easeOutQuart' } },
           plugins: { legend: { display: false }, tooltip: { enabled: true } },
           scales: {
-            y: { min: 0, max: 2500, title: { display:true, text:'Weekly attempts / organization', color:'rgba(255,255,255,.8)', font:{size:14}, padding:10 }, ticks: { stepSize:500, autoSkip:false, color:'rgba(255,255,255,.6)', callback: value => Number(value).toLocaleString() }, grid: { color: 'rgba(255,255,255,.1)' } },
-            x: { ticks:{color:'#ffffff'}, grid: { display: false } }
+            y: { min: 0, max: 2500, title: { display:true, text:'Weekly attempts / organization', color:'rgba(255,255,255,.8)', font:attackAxisFont, padding:10 }, ticks: { stepSize:500, autoSkip:false, font:attackAxisFont, color:'rgba(255,255,255,.8)', callback: value => Number(value).toLocaleString() }, grid: { color: 'rgba(255,255,255,.1)' } },
+            x: { ticks:{font:attackAxisFont, color:'rgba(255,255,255,.8)'}, grid: { display: false } }
           }
         }
       });
+
+      document.fonts.ready.then(() => window.attackChart.update('none'));
 
       const customers = [0,25,50,75,100,125,137,150,200,250];
       window.economicsChart = new Chart(document.querySelector('#economicsChart'), {
