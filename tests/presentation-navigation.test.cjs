@@ -386,3 +386,5 @@ test("Home returns to the first slide with its initial build", () => { const d =
 test("End enters the final slide before its staged content", () => { const d = presentation(); d.key('End'); assert.equal(d.active(), 2); assert.equal(d.slides[2].dataset.buildCurrent, '0'); assert.equal(d.slides[2].recap.inert, false); });
 
 test("Rewinding from a slide start restores the preceding final build", () => { const d = presentation('#3'); d.click('#prev'); assert.equal(d.active(), 1); assert.equal(d.slides[1].dataset.buildCurrent, '2'); assert.deepEqual(d.slides[1].buildElements.map(e => e.inert), [false, false]); });
+
+test("Forward re-entry resets a previously visited slide to its first build", () => { const d = presentation('#2'); d.key('ArrowRight'); d.key('ArrowRight'); d.key('Home'); d.key('ArrowRight'); assert.equal(d.active(), 1); assert.equal(d.slides[1].dataset.buildCurrent, '0'); assert.deepEqual(d.slides[1].buildElements.map(e => e.inert), [true, true]); });
