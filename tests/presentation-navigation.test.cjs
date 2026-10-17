@@ -396,3 +396,5 @@ test("A backwards deep link restores the destination final build", () => { const
 test("Build changes keep slide numbering stable", () => { const d = presentation('#2'); const counter = d.selectors['#counter'].textContent; d.click('#next'); d.click('#next'); assert.equal(d.selectors['#counter'].textContent, counter); assert.equal(d.location.hash, '#2'); });
 
 test("The progress bar starts at the first slide fraction", () => { const d = presentation(); assert.ok(Math.abs(parseFloat(d.selectors['#progress'].style.width) - 100 / 3) < 1e-10); });
+
+test("Progress reaches 100 percent and rewinds with the slide index", () => { const d = presentation(); d.key('End'); assert.equal(d.selectors['#progress'].style.width, '100%'); d.hashChange('#2'); assert.ok(Math.abs(parseFloat(d.selectors['#progress'].style.width) - 200 / 3) < 1e-10); });
