@@ -412,6 +412,8 @@
 
     /* Slide 14 */
     .team-final-slide { overflow:hidden; }
+    .team-final-slide .people-grid { margin-top:31px; }
+    .team-final-slide .person-card { min-height:180px; }
     .people-grid { position:relative; z-index:2; display:grid; grid-template-columns:repeat(3,1fr); gap:64px 14px; margin-top:14px; }
     .person-card { position:relative; min-height:161px; padding:18px; border:1px solid var(--line); border-radius:18px; background:white; opacity:0; transform:translateY(20px); transition:.55s cubic-bezier(.2,.8,.2,1); display:grid; grid-template-columns:92px 1fr; align-items:center; gap:14px; }
     .person-card.build-visible { opacity:1; transform:none; }
@@ -588,7 +590,45 @@
     .solution-slide .agent-node.is-muted>div { opacity:.32; }
     .solution-slide[data-build-current] .agent-node.is-highlighted { width:204px; height:110px; margin-left:-102px; margin-top:-55px; }
     .solution-slide .agent-node.is-highlighted b { font-size:28px; }
-    .monitoring-stage{position:absolute;left:72px;right:72px;top:124px;bottom:65px;opacity:0;visibility:hidden;transform:translateY(15px);transition:opacity .4s,transform .4s}.team-slide[data-build-current='5']>.team-arena,.team-slide[data-build-current='5']>h2{visibility:hidden;opacity:0}.team-slide[data-build-current='5'] .monitoring-stage{visibility:visible;opacity:1;transform:none}.monitoring-stage h2{font-size:51px}.monitoring-columns{display:grid;grid-template-columns:1.2fr 1fr;gap:23px;margin-top:29px}.monitoring-panel{padding:27px;border:1px solid var(--line);border-radius:20px;background:var(--panel)}.monitoring-panel h3{font-size:29px;margin-top:18px}.change-loop{display:grid;grid-template-columns:1fr 20px 1fr;gap:12px;align-items:center;margin-top:23px}.change-loop span{font-size:16px;line-height:1.4;padding:15px;border-radius:12px;background:white;border:1px solid var(--line)}.change-loop i{font-style:normal;color:var(--acid);text-align:center}.monitoring-panel p{font-size:16px;line-height:1.5;color:var(--muted);margin-top:20px}.sim-panel{background:var(--ink);color:white;border-color:var(--ink)}.sim-panel p{color:rgba(255,255,255,.7)}.sim-panel .section-tag{color:#ffb09f}.monitoring-limit{margin-top:20px;font:400 11px/1.5 'IBM Plex Mono',monospace;color:var(--muted)}
+    /* Slide 7: separate code-memory and simulation demonstrations. */
+    .team-slide .monitoring-stage { position:absolute;left:72px;right:72px;top:124px;bottom:65px;opacity:0;visibility:hidden;transform:translateY(15px);transition:opacity .4s,transform .4s; }
+    .team-slide[data-build-current='5']>.team-arena,.team-slide[data-build-current='5']>h2 { visibility:hidden;opacity:0; }
+    .team-slide[data-build-current='5'] .monitoring-stage { visibility:visible;opacity:1;transform:none; }
+    .team-slide .monitoring-stage>h2 { max-width:none;font-size:46px;line-height:1.05;letter-spacing:-.048em; }
+    .team-slide .monitoring-columns { display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:25px; }
+    .team-slide .monitoring-panel { height:440px;padding:24px;border:1px solid var(--line);border-radius:20px;background:var(--brand-soft); }
+    .team-slide .monitoring-panel .section-tag { font:500 12px/1.2 'IBM Plex Mono',monospace;letter-spacing:.04em;color:var(--acid); }
+    .team-slide .monitoring-panel h3 { font-size:27px;line-height:1.12;letter-spacing:-.035em;margin-top:12px; }
+    .team-slide .demo-icon { width:22px;height:22px;flex:none;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round; }
+    .team-slide .memory-demo,.team-slide .lab-demo { margin-top:21px; }
+    .team-slide .saved-fix,.team-slide .commit-event { background:white;border:1px solid var(--line);border-radius:11px;padding:14px 16px; }
+    .team-slide .saved-fix { height:123px; }
+    .team-slide .demo-toolbar { display:flex;align-items:center;justify-content:space-between;gap:14px; }
+    .team-slide .memory-file { display:flex;gap:9px;align-items:center;font:500 16px/1.2 'IBM Plex Mono',monospace; }
+    .team-slide .memory-context { font-size:14px;line-height:1.2;color:var(--muted); }
+    .team-slide .verified-status { display:flex;align-items:center;gap:9px;margin-top:12px;color:var(--ok);font-size:18px;font-weight:600; }
+    .team-slide .evidence-saved { display:flex;align-items:center;gap:9px;margin-top:10px;font-size:15px;color:var(--muted); }
+    .team-slide .evidence-saved .demo-icon,.team-slide .evidence-reference .demo-icon { color:var(--acid);width:18px;height:18px; }
+    .team-slide .memory-arrow { display:block;width:30px;height:36px;margin:auto;fill:none;stroke:var(--acid);stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round; }
+    .team-slide .commit-event { height:152px; }
+    .team-slide .commit-label { display:flex;gap:9px;align-items:center;font-size:17px;font-weight:600; }
+    .team-slide .commit-label .demo-icon { color:var(--acid); }
+    .team-slide .commit-code { display:block;margin-top:10px;padding:7px 10px;background:#edf6ef;color:#20623b;border-radius:5px;font:400 15px/1.2 'IBM Plex Mono',monospace; }
+    .team-slide .evidence-reference { display:flex;gap:8px;align-items:center;margin-top:10px;font-size:15px;line-height:1.1;color:var(--muted); }
+    .team-slide .targeted-check { display:flex;gap:8px;align-items:center;margin-top:9px;color:var(--acid);font-size:17px;font-weight:600; }
+    .team-slide .targeted-check .demo-icon { width:18px;height:18px; }
+    .team-slide .sim-panel { background:var(--ink);color:white;border-color:var(--ink); }
+    .team-slide .sim-panel .section-tag { color:#ffb09f; }
+    .team-slide .lab-demo { height:311px;padding:13px 16px;border:1px solid rgba(255,255,255,.16);border-radius:11px;background:var(--ink-2); }
+    .team-slide .lab-row { display:grid;grid-template-columns:56px 1fr;gap:15px;align-items:center;min-height:77px; }
+    .team-slide .lab-row:last-child { min-height:96px; }
+    .team-slide .lab-stage-label { display:block;font:500 12px/1.2 'IBM Plex Mono',monospace;letter-spacing:.035em;color:#ffb09f; }
+    .team-slide .lab-row h4 { margin:8px 0 0;font:500 18px/1.25 'Space Grotesk',sans-serif;letter-spacing:-.015em; }
+    .team-slide .lab-graphic { width:56px;height:56px;fill:none;stroke:#ff8a75;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round; }
+    .team-slide .lab-graphic .quiet { stroke:rgba(255,255,255,.35); }
+    .team-slide .lab-down { display:block;width:20px;height:16px;margin:0 0 0 18px;fill:none;stroke:rgba(255,255,255,.4);stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round; }
+    .team-slide .policy-update { display:flex;align-items:center;gap:7px;margin-top:8px;color:#ffb09f;font-size:15px;line-height:1.2; }
+    .team-slide .policy-update .demo-icon { width:16px;height:16px; }
     .differentiator-layer{position:absolute;left:72px;right:72px;top:222px;bottom:90px;opacity:0;visibility:hidden;transform:translateY(16px);transition:opacity .45s,transform .45s}.market-position-slide[data-build-current='3'] .market-map{visibility:hidden;opacity:0}.market-position-slide[data-build-current='3'] .differentiator-layer{visibility:visible;opacity:1;transform:none}.connected-claim{max-width:1000px;font:600 42px/1.2 'Space Grotesk',sans-serif;letter-spacing:-.04em}.connected-steps{display:flex;gap:9px;align-items:center;flex-wrap:wrap;margin-top:35px}.connected-steps span{padding:15px 18px;border:1px solid var(--line);border-radius:13px;background:var(--brand-soft);font:500 13px/1 'IBM Plex Mono',monospace}.connected-steps i{font-style:normal;color:var(--acid)}.connected-note{margin-top:27px;max-width:950px;font-size:19px;line-height:1.5;color:var(--muted)}
     .legacy-deck { display:none!important; }
 
@@ -912,9 +952,9 @@ REFERENCE AND CUES, NOT SPOKEN: Say: Ari connects three capabilities through sha
         </div>
       </section>
 
-      <section class="slide team-slide" data-note="SPOKEN (1:49 to 2:09; about 20 seconds including clicks/pauses): After verification, monitoring can request fresh checks when code changes. In the Defense Lab, reinforcement learning learns through trial and error in simulated attacks to recommend defenses. It never automatically acts on live infrastructure.
+      <section class="slide team-slide" data-note="SPOKEN (1:49 to 2:09; about 20 seconds including clicks/pauses): ARI remembers verified fixes and uses that evidence when related code changes. In Defense Lab, a simulated defender observes suspicious traffic, tries a response, then learns from security and service outcomes. Code memory requests new checks. Reinforcement learning stays in simulation.
 
-REFERENCE AND CUES, NOT SPOKEN: Clicks 1–4: Red finds and proves, Blue fixes and fortifies, and independent Verify reruns the evidence. Click 5: protection follows software changes. GitHub push/PR events can trigger targeted reassessment or regression checks. Continuous coverage requires running workers; runtime telemetry ingestion is not implemented. The Defense Lab studies recommendations in simulation using reinforcement learning, or trial-and-error training. No RL recommendation acts on production systems. Presenter reference, not spoken: 24/7 coverage requires deployed, running workers. Current monitoring follows code events; runtime telemetry ingestion remains future work." data-spoken="After verification, monitoring can request fresh checks when code changes. In the Defense Lab, reinforcement learning learns through trial and error in simulated attacks to recommend defenses. It never automatically acts on live infrastructure." data-duration-s="20">
+REFERENCE AND CUES, NOT SPOKEN: Clicks 1–4: Red finds and proves, Blue fixes and fortifies, and independent Verify reruns the evidence. Click 5 shows two distinct capabilities. Left: auth.ts and refreshSession(session) are an illustrative UI example, not a product screenshot or a real assessment. The bookmark is a visual metaphor for saved version-keyed VerifiedRegression evidence, not a claim of a shipped bookmark control. Independent Verify records candidate evidence on an exact base SHA; a future change must be reassessed and is not automatically verified, merged, or safe. Right: the API node is part of the simulated gateway/api/auth/payments/db topology. An observation can include noisy alert/anomaly signals; rate_limit is an implemented simulated action. During offline training, reward balances containment and security impact against service disruption and action cost, then updates the policy. This does not show measured performance, a live customer dashboard, a production rate limit, or training on customer deployments. Code memory and RL training are distinct; no connector or automatic training feedback is implied. References: product monitoring/README.md, docs/11_SHARED_CONTEXT_AND_MEMORY.md, rl-defense/README.md, docs/09_RL_DEFENSE_SYSTEM.md. GitHub push/PR events can trigger targeted reassessment or regression checks. Continuous coverage requires running workers; runtime telemetry ingestion is not implemented. The Defense Lab studies recommendations in simulation using reinforcement learning, or trial-and-error training. No RL recommendation acts on production systems. Presenter reference, not spoken: 24/7 coverage requires deployed, running workers. Current monitoring follows code events; runtime telemetry ingestion remains future work." data-spoken="ARI remembers verified fixes and uses that evidence when related code changes. In Defense Lab, a simulated defender observes suspicious traffic, tries a response, then learns from security and service outcomes. Code memory requests new checks. Reinforcement learning stays in simulation." data-duration-s="20">
         <div class="slide-head"><span class="brand-mini"><img class="brand-ant" src="ari-ant-mark.png" alt="" aria-hidden="true">Original Contribution / Build Quality &amp; Appropriate Technology</span><span class="slide-num">07</span></div>
         <h2 style="font-size:48px">Attack. Defend. <span class="accent">Verify.</span></h2>
         <span class="build-trigger" data-build="1"></span><span class="build-trigger" data-build="2"></span><span class="build-trigger" data-build="3"></span><span class="build-trigger" data-build="4"></span>
@@ -924,7 +964,49 @@ REFERENCE AND CUES, NOT SPOKEN: Clicks 1–4: Red finds and proves, Blue fixes a
           <div class="arena-lock"></div><div class="verify-orb"><div><b>VERIFY</b><span>Trust neither side.<br>Retest everything.</span></div></div>
         </div>
         <span class="build-trigger" data-build="5"></span>
-        <div class="monitoring-stage"><h2>Software changes.<br><span class="accent">The checks should follow.</span></h2><div class="monitoring-columns"><article class="monitoring-panel"><span class="section-tag">Continuous code monitoring</span><h3>Recheck what changed.</h3><div class="change-loop"><span>New code change</span><i>→</i><span>Affected behavior</span><span>Regression evidence</span><i>←</i><span>Targeted reassessment</span></div><p>Verified fixes become evidence for later checks.</p></article><article class="monitoring-panel sim-panel"><span class="section-tag">Defense Lab / simulation only</span><h3>Study better<br>defensive decisions.</h3><p>Reinforcement learning trains through trial and error in a simulated network.</p><p>It produces explainable recommendations.<br>It does not take production actions.</p></article></div></div>
+        <div class="monitoring-stage">
+          <h2>Security that remembers. <span class="accent">Defense that learns.</span></h2>
+          <div class="monitoring-columns">
+            <article class="monitoring-panel memory-panel" aria-label="Continuous code memory example">
+              <span class="section-tag">CONTINUOUS CODE MEMORY</span>
+              <h3>Verified fixes aren't forgotten.</h3>
+              <div class="memory-demo">
+                <div class="saved-fix">
+                  <div class="demo-toolbar"><span class="memory-file"><svg class="demo-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8zM14 2v6h6M8 13h8M8 17h5"/></svg>auth.ts</span><span class="memory-context">Previously verified fix</span></div>
+                  <div class="verified-status"><svg class="demo-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m8 12 3 3 5-6"/></svg><span>Vulnerability fixed</span></div>
+                  <div class="evidence-saved"><svg class="demo-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 21l-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg><span>Bookmarked as verified evidence</span></div>
+                </div>
+                <svg class="memory-arrow" viewBox="0 0 30 36" aria-hidden="true"><path d="M15 3v28m-8-8 8 8 8-8"/></svg>
+                <div class="commit-event">
+                  <div class="commit-label"><svg class="demo-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v5m0 8v5"/><circle cx="12" cy="12" r="4"/></svg><span>New commit detected</span></div>
+                  <code class="commit-code">+ refreshSession(session)</code>
+                  <div class="evidence-reference"><svg class="demo-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 21l-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg><span>ARI references saved evidence</span></div>
+                  <div class="targeted-check"><svg class="demo-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-5-5 5 5-5 5"/></svg><span>Targeted reassessment</span></div>
+                </div>
+              </div>
+            </article>
+            <article class="monitoring-panel sim-panel" aria-label="Reinforcement learning in simulation only">
+              <span class="section-tag">DEFENSE LAB / SIMULATION ONLY</span>
+              <h3>Learn from defensive outcomes.</h3>
+              <div class="lab-demo">
+                <div class="lab-row">
+                  <svg class="lab-graphic" viewBox="0 0 56 56" aria-hidden="true"><path d="M8 13l19 15L8 43m20-15 20-15m-20 15 20 15" class="quiet"/><circle cx="8" cy="13" r="4"/><circle cx="8" cy="43" r="4"/><circle cx="48" cy="13" r="4" class="quiet"/><circle cx="48" cy="43" r="4" class="quiet"/><rect x="18" y="18" width="20" height="20" rx="5" fill="#2b1d19"/><path d="M23 28h10m-5-5v10"/></svg>
+                  <div><span class="lab-stage-label">01 / OBSERVE</span><h4>Suspicious API traffic detected</h4></div>
+                </div>
+                <svg class="lab-down" viewBox="0 0 20 16" aria-hidden="true"><path d="M10 1v12m-5-5 5 5 5-5"/></svg>
+                <div class="lab-row">
+                  <svg class="lab-graphic" viewBox="0 0 56 56" aria-hidden="true"><path d="M28 6 44 13v13c0 12-16 22-16 22S12 38 12 26V13z"/><path d="M22 22h12M22 28h12M25 34h6"/><path d="M2 21h6m-6 8h6m40-4h6" class="quiet"/></svg>
+                  <div><span class="lab-stage-label">02 / ACT</span><h4>Defender limits API traffic</h4></div>
+                </div>
+                <svg class="lab-down" viewBox="0 0 20 16" aria-hidden="true"><path d="M10 1v12m-5-5 5 5 5-5"/></svg>
+                <div class="lab-row">
+                  <svg class="lab-graphic" viewBox="0 0 56 56" aria-hidden="true"><path d="M28 7v38M12 15h32M16 15 7 31h18L16 15Zm24 0-9 16h18l-9-16ZM18 46h20"/><path d="m23 8 5-3 5 3"/></svg>
+                  <div><span class="lab-stage-label">03 / REWARD + LEARN</span><h4>Evaluate security + service impact</h4><div class="policy-update"><span>Reward feedback</span><svg class="demo-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-5-5 5 5-5 5"/></svg><span>Update policy</span></div></div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
       </section>
 
       <section class="slide market-position-slide" data-note="SPOKEN (2:09 to 2:24; about 15 seconds including clicks/pauses): Our contribution is connecting those steps around one code version and evidence history. Each finding and verified regression can inform later work instead of becoming another isolated alert.
