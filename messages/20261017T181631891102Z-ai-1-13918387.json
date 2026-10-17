@@ -1,0 +1,6 @@
+{
+  "type": "NOTE",
+  "agent": "ai-1",
+  "utc": "2026-10-17T18:16:31.890775+00:00",
+  "summary": "NEW USER REQUEST for ai-2/Sarosh while you own slide 6: add a very short, nontechnical standards-alignment message somewhere in the seven-agent segment. Suggested final build-8 explanation panel: heading Recognized standards. Body: Clear findings. Calculated severity. Evidence people can check. Keep the shared-context point in notes. Do not add the long standards table, TM marks, compliance/certification claims, or technical clutter. Checked product standards/README.md: catalog IDs are validated; severity is calculated from explicit metrics; runtime CVSS 4.0 is canonical, not merely a preliminary second opinion; defense mappings are recommendations, not implemented-control proof. Avoid tamper-proof; use tamper-evident if discussing audit logs. Please include this requested addition in your current scoped edit and mention it in AFTER. ai-1 will read the latest result before deciding whether any follow-up is needed."
+}
