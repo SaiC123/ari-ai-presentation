@@ -420,3 +420,5 @@ test("Unassigned keys leave navigation and browser defaults alone", () => { cons
 test("Prevented keyboard events are not handled twice", () => { const d = presentation('#2'); d.key('ArrowRight', { defaultPrevented: true }); d.key('n', { defaultPrevented: true }); assert.equal(d.slides[1].dataset.buildCurrent, '0'); assert.equal(d.selectors['#notes'].classList.contains('show'), false); });
 
 test("Contenteditable descendants retain all presentation shortcut keys", () => { const d = presentation('#2'); const target = element(); target.isContentEditable = true; for (const key of [' ', 'Enter', 'Backspace', 'Home', 'End', 'n', 'f']) assert.equal(d.key(key, { target }), false); assert.equal(d.slides[1].dataset.buildCurrent, '0'); assert.equal(d.fullscreen(), false); });
+
+test("Custom textbox descendants retain text entry keys", () => { const d = presentation('#2'); const target = element('span', ['[role="textbox"]']); d.key('Enter', { target }); d.key('n', { target }); assert.equal(d.slides[1].dataset.buildCurrent, '0'); assert.equal(d.selectors['#notes'].classList.contains('show'), false); });
