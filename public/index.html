@@ -353,6 +353,10 @@
     .finance-chart-wrap canvas { width:680px!important; height:340px!important; }
     .break-even { padding:28px; border-radius:20px; background:var(--acid); }
     .break-even strong { display:block; font:700 68px/.9 "Space Grotesk",sans-serif; }
+    .monthly-cost-card { padding:22px; }
+    .monthly-cost-card strong { font-size:44px;margin-top:10px; }
+    .monthly-cost-components { margin-top:10px;display:grid;gap:5px;font-size:16px;line-height:1.25; }
+    .monthly-cost-components>div { display:flex;justify-content:space-between;gap:12px; }
     .funding-grid { display:grid; grid-template-columns:360px 1fr; gap:32px; align-items:center; height:100%; }
     .funding-total { width:300px;height:300px;border-radius:50%;display:grid;place-items:center;text-align:center;background:var(--acid);box-shadow:0 0 0 28px rgba(194,69,45,.13); }
     .funding-total strong{font:700 74px/.85 "Space Grotesk",sans-serif}.funding-total span{font:500 12px/1 "IBM Plex Mono",monospace}
@@ -1075,9 +1079,9 @@ REFERENCE AND CUES, NOT SPOKEN: CUE: Segment 1 is visible on entry. Click once f
         </div>
       </section>
 
-      <section class="slide dark finance-slide" data-note="SPOKEN: Founder is forty-nine ninety-nine monthly for ten full assessments. Growth offers twenty-five for two forty-nine, and Scale sixty for five ninety-nine. Usage is shared across repositories. Founder is an entry pilot price: our modeled cost is about forty-three dollars, leaving about seven before shared costs. Growth leaves about one hundred fifty. With our five-hundred-dollar pilot budget, cash coverage is about seventy Founder customers, or four at our assumed tier mix. Our separate growth target is one hundred to two hundred paying customers, not break-even. Founders initially take no salaries and reinvest surplus. These are assumptions to validate.
+      <section class="slide dark finance-slide" data-note="SPOKEN: Founder starts at an introductory pilot price of forty-nine ninety-nine for ten full assessments. Larger plans serve teams that need more coverage. Our graph shows monthly revenue against total modeled monthly costs. The white line includes team tools plus customer API usage, sandbox compute, AWS, payments and support. As customers grow, delivery costs rise each month. This is an illustrative six-month forecast, not traction or a profitability promise. Founders initially take no salaries. We will use pilots to measure real costs and value, then plan sustainable pricing for future customers. Our separate growth target is one hundred to two hundred paying customers.
 
-REFERENCE, NOT SPOKEN: UserrequestedFounder10fullassessments. Proposedworkspaceprices49.99/249/599 with10/25/60fullassessmentsmonthly, not per-seat pricing. Monthly assessed-source pools1M/5M/20M across connected repositories; repeat assessments count lines again; exclude generated/vendor/dependency code. No repository-count cap proposed, but workload is not unlimited. Review, seven-agent investigation and independent fix verification are coreworkflow, not every future enterprisefeature. Monitoring/re-checks separately budgeted, not unlimited or provenproductiondefense.25scopedextraassessment subjecttosourcevolume/budgetapproval. Enterprisecustomscope/codevolume/onboarding. Kairopricing informedstructureonly, not copiedfeatures, quantitiesorprices. PerassessmentAPI1.90 is team-reported demo, not audited average or demonstrated cost for larger codebases. Forecastsandbox1/assessment; API19/47.5/114, reserve10/25/60, support/storage5/12/30, AWS7/account, payment2.9%+0.30 gives1.74971/7.521/17.671. Total42.74971/99.021/228.671; contribution7.24029/149.979/370.329; margins14.48/60.23/61.82%. Support andinfra forecasts may need increasing at higherusage. Mix40/45/15 ->revenue221.896,cost95.959984,contribution125.936016,margin56.75%,500/contribution3.97 roundsup4blendedcustomers. Founder-only500/7.24029=69.06 roundsup70; entrytiermargin14.48% isthin andmaynotcoverunmeasuredsupport/overages.100-200payingcustomersisagrowthtargetnotcalculatedbreakeven. This is pilotcashcoverage, notfullprofitability. Fixed500monthly includesClaude150/Codex150/Vercel120/domain10provisional/contingency70. Noinitialfounderpay/hiring, founder-fundedpilot/reinvestsurplus. ProductAPIseparatefromdeveloperplans. AWSallocationteamprovided; verify nooverlap withsandbox/storage. Extrausage/rechecks,taxes,legal/compliance,economicfounderlabor excluded.3API/recheck is maximumcapnotaverage; RLnoClaudeAPInotzeroCPU. Source https://kairo.security/pricing and docs/cost-reconciliation.md. Validate actual usage traces, highvolume costs, customerwillingnesstopay and usageenforcement before rollout." data-spoken="Founder is forty-nine ninety-nine monthly for ten full assessments. Growth offers twenty-five for two forty-nine, and Scale sixty for five ninety-nine. Usage is shared across repositories. Founder is an entry pilot price: our modeled cost is about forty-three dollars, leaving about seven before shared costs. Growth leaves about one hundred fifty. With our five-hundred-dollar pilot budget, cash coverage is about seventy Founder customers, or four at our assumed tier mix. Our separate growth target is one hundred to two hundred paying customers, not break-even. Founders initially take no salaries and reinvest surplus. These are assumptions to validate." data-duration-s="46">
+REFERENCE, NOT SPOKEN: Monthly chart scenario M1-M6 customer counts0/3/8/15/25/40 at fixed40/45/15 assumedmix, not actuals or validatedacquisitionforecast. Shared500monthly staysfixed. White line explicitly sums500plus API46.075,sandbox24.25,AWS7,payments6.734984,support11.9 per blendedcustomer =95.959984. Revenue221.896/customer. Hoverwhitepoint for category costs. Monthly revenuefirstexceedscostinM3inthisscenario, notcumulativebreakeven or guaranteedtiming. Pricesheldconstant; futurepostpilotpriceincreasesnotmodeled. Excludeextrausage/rechecks/salaries/taxes/legal/economiclabor. Introductorypilotprices; higherfuturepricingisaplan, notvalidatedwillingnesstopay. UserrequestedFounder10fullassessments. Proposedworkspaceprices49.99/249/599 with10/25/60fullassessmentsmonthly, not per-seat pricing. Monthly assessed-source pools1M/5M/20M across connected repositories; repeat assessments count lines again; exclude generated/vendor/dependency code. No repository-count cap proposed, but workload is not unlimited. Review, seven-agent investigation and independent fix verification are coreworkflow, not every future enterprisefeature. Monitoring/re-checks separately budgeted, not unlimited or provenproductiondefense.25scopedextraassessment subjecttosourcevolume/budgetapproval. Enterprisecustomscope/codevolume/onboarding. Kairopricing informedstructureonly, not copiedfeatures, quantitiesorprices. PerassessmentAPI1.90 is team-reported demo, not audited average or demonstrated cost for larger codebases. Forecastsandbox1/assessment; API19/47.5/114, reserve10/25/60, support/storage5/12/30, AWS7/account, payment2.9%+0.30 gives1.74971/7.521/17.671. Total42.74971/99.021/228.671; contribution7.24029/149.979/370.329; margins14.48/60.23/61.82%. Support andinfra forecasts may need increasing at higherusage. Mix40/45/15 ->revenue221.896,cost95.959984,contribution125.936016,margin56.75%,500/contribution3.97 roundsup4blendedcustomers. Founder-only500/7.24029=69.06 roundsup70; entrytiermargin14.48% isthin andmaynotcoverunmeasuredsupport/overages.100-200payingcustomersisagrowthtargetnotcalculatedbreakeven. This is pilotcashcoverage, notfullprofitability. Fixed500monthly includesClaude150/Codex150/Vercel120/domain10provisional/contingency70. Noinitialfounderpay/hiring, founder-fundedpilot/reinvestsurplus. ProductAPIseparatefromdeveloperplans. AWSallocationteamprovided; verify nooverlap withsandbox/storage. Extrausage/rechecks,taxes,legal/compliance,economicfounderlabor excluded.3API/recheck is maximumcapnotaverage; RLnoClaudeAPInotzeroCPU. Source https://kairo.security/pricing and docs/cost-reconciliation.md. Validate actual usage traces, highvolume costs, customerwillingnesstopay and usageenforcement before rollout." data-spoken="Founder starts at an introductory pilot price of forty-nine ninety-nine for ten full assessments. Larger plans serve teams that need more coverage. Our graph shows monthly revenue against total modeled monthly costs. The white line includes team tools plus customer API usage, sandbox compute, AWS, payments and support. As customers grow, delivery costs rise each month. This is an illustrative six-month forecast, not traction or a profitability promise. Founders initially take no salaries. We will use pilots to measure real costs and value, then plan sustainable pricing for future customers. Our separate growth target is one hundred to two hundred paying customers." data-duration-s="46">
         <div class="slide-head"><span class="brand-mini"><img class="brand-ant" src="ari-ant-mark.png" alt="" aria-hidden="true">Revenue or Funding Model / Costs &amp; Sustainability</span><span class="slide-num">12</span></div>
         <h2 style="font-size:47px">Lean to launch. <span class="accent">Built to sustain.</span></h2>
         <span class="build-trigger" data-build="1"></span><span class="build-trigger" data-build="2"></span><span class="build-trigger" data-build="3"></span><span class="build-trigger" data-build="4"></span>
@@ -1093,7 +1097,7 @@ REFERENCE, NOT SPOKEN: UserrequestedFounder10fullassessments. Proposedworkspacep
             <div class="pricing-terms"><b>Proposed plans</b><span>$25 / scoped extra assessment</span><span>Monitoring + extras: budget approval</span></div>
           </div>
           <div class="finance-scene fscene2"><p class="section-tag">Growth plan / forecast monthly economics / 25 assessments</p><div class="waterfall"><div class="waterbar"><i style="height:180px"></i><b>$249<br>REVENUE</b></div><div class="waterbar"><i style="height:57.47px"></i><b>API + INFRA + AWS<br>−$79.50</b></div><div class="waterbar"><i style="height:5.44px"></i><b>PAYMENTS<br>−$7.52</b></div><div class="waterbar"><i style="height:8.67px"></i><b>STORAGE + SUPPORT<br>−$12</b></div><div class="waterbar"><i style="height:108.42px"></i><b>$149.98<br>CONTRIBUTION</b></div></div><div class="cost-detail" aria-label="Forecast monthly Growth-plan cost breakdown, approximately 99.02 dollars total before shared fixed costs and additional re-checks"><div><b>$47.50 · AI usage</b><small>25 × $1.90 demo assumption</small></div><div><b>$25 · Infrastructure reserve</b><small>Forecast buffer, not measured</small></div><div><b>$7 · AWS allocation</b><small>Team estimate per customer</small></div><div><b>$7.52 · Payment estimate</b><small>Forecast card-processing fees</small></div><div><b>$12 · Storage + support</b><small>Forecast evidence + support allowance</small></div></div><p class="prototype-cost-baseline">Growth cost $99.02 · 60% contribution margin · Additional push re-checks excluded</p></div>
-          <div class="finance-scene fscene3"><div class="finance-chart-wrap"><canvas id="economicsChart" width="680" height="300" aria-label="Forecast revenue and monthly operating costs"></canvas><div class="break-even"><p class="kicker">Pilot cash coverage</p><strong>~4</strong><p style="margin-top:12px">At assumed tier mix</p><p class="small" style="margin-top:14px;opacity:.72">57% blended contribution<br>$500/mo planned shared costs<br>~70 if all customers use Founder<br>No founder pay; extra usage excluded</p></div></div></div>
+          <div class="finance-scene fscene3"><div class="finance-chart-wrap"><canvas id="economicsChart" width="680" height="300" aria-label="Illustrative six-month revenue and total modeled monthly costs, including shared tools, API, sandbox, AWS, payments and support/storage"></canvas><div class="break-even monthly-cost-card"><p class="kicker">White line includes</p><strong>$500</strong><p style="margin-top:8px;font-size:16px">Shared tools / month</p><p style="margin-top:12px;font-size:14px;opacity:.85">Plus, per blended customer:</p><div class="monthly-cost-components"><div><span>Product API</span><b>$46.08</b></div><div><span>Sandbox reserve</span><b>$24.25</b></div><div><span>AWS allocation</span><b>$7.00</b></div><div><span>Payments</span><b>$6.73</b></div><div><span>Support + storage</span><b>$11.90</b></div></div><p style="margin-top:12px;font-size:13px;line-height:1.3;opacity:.8">Forecast mix: 40% / 45% / 15%<br>Extra usage + founder pay excluded</p></div></div></div>
           <div class="finance-scene fscene4"><div class="funding-grid"><div class="funding-total"><div><strong>$500</strong><span>MONTHLY PILOT BUDGET<br>6 FOUNDERS · NO HIRING</span></div></div><div class="allocation"><div class="allocation-row"><b>$150</b><div class="allocation-track"><i style="--w:30%"></i></div><span>Claude Team · 6 seats</span></div><div class="allocation-row"><b>$150</b><div class="allocation-track"><i style="--w:30%"></i></div><span>Codex / Business · 6 seats</span></div><div class="allocation-row"><b>$120</b><div class="allocation-track"><i style="--w:24%"></i></div><span>Vercel Pro · 6 deployers</span></div><div class="allocation-row"><b>$10</b><div class="allocation-track"><i style="--w:2%"></i></div><span>Domain · provisional</span></div><div class="allocation-row"><b>$70</b><div class="allocation-track"><i style="--w:14%"></i></div><span>Operating contingency</span></div><div class="funding-gate">Founder-funded pilots. No salaries initially. Reinvest surplus.<br>Customer delivery costs separate; taxes and extra usage excluded.</div></div></div></div>
         </div>
 
@@ -1585,7 +1589,18 @@ REFERENCE AND CUES, NOT SPOKEN: Reveal six visual memories. Click 7 connects the
 
       document.fonts.ready.then(() => window.attackChart.update('none'));
 
-      const customers = [0,1,2,3,4,5,6,7,8,9,10];
+      // Illustrative six-month customer-growth scenario, not actual traction.
+      const customerForecast = [0,3,8,15,25,40];
+      const forecastMonths = customerForecast.map((_, i) => 'M' + (i + 1));
+      const monthlyCostBreakdown = customerForecast.map(customers => ({
+        sharedTools: 500,
+        api: customers * 46.075,
+        sandbox: customers * 24.25,
+        aws: customers * 7,
+        payments: customers * 6.734984,
+        supportStorage: customers * 11.9
+      }));
+      const totalMonthlyCost = monthlyCostBreakdown.map(cost => Object.values(cost).reduce((sum, amount) => sum + amount, 0));
       window.economicsChart = new Chart(document.querySelector('#economicsChart'), {
         type: 'line',
         plugins: [{
@@ -1600,19 +1615,36 @@ REFERENCE AND CUES, NOT SPOKEN: Reveal six visual memories. Click 7 connects the
           }
         }],
         data: {
-          labels: customers,
+          labels: forecastMonths,
           datasets: [
-            { label: 'Recurring revenue', data: customers.map(n => n * 221.896), borderColor: '#ff8a75', backgroundColor: 'transparent', borderWidth: 4, tension: .15 },
-            { label: 'Pilot cash costs, excluding re-checks', data: customers.map(n => 500 + n * 95.959984), borderColor: '#ffffff', backgroundColor: 'transparent', borderWidth: 4, tension: .15 }
+            { label: 'Monthly revenue', data: customerForecast.map(n => n * 221.896), borderColor: '#ff8a75', backgroundColor: 'transparent', borderWidth: 4, tension: .15 },
+            { label: 'Total modeled monthly cost', data: totalMonthlyCost, borderColor: '#ffffff', backgroundColor: 'transparent', borderWidth: 4, tension: .15 }
           ]
         },
         options: {
           responsive: false,
           animation: { duration: 1800, easing: 'easeOutQuart' },
-          plugins: { legend: { labels: { color: '#ffffff' } }, tooltip: { callbacks: { label: item => `${item.dataset.label}: $${Math.round(item.raw).toLocaleString()}` } } },
+          interaction: { mode: 'index', intersect: false },
+          plugins: { legend: { labels: { color: '#ffffff' } }, tooltip: { callbacks: {
+            title: items => `${items[0].label} · ${customerForecast[items[0].dataIndex]} forecast customers`,
+            label: item => `${item.dataset.label}: $${Number(item.raw).toLocaleString('en-US', { maximumFractionDigits: 2 })}`,
+            afterLabel: item => {
+              if (item.datasetIndex !== 1) return [];
+              const cost = monthlyCostBreakdown[item.dataIndex];
+              const money = value => '$' + value.toFixed(2);
+              return [
+                'Shared team tools: ' + money(cost.sharedTools),
+                'Product API: ' + money(cost.api),
+                'Sandbox reserve: ' + money(cost.sandbox),
+                'AWS allocation: ' + money(cost.aws),
+                'Payments: ' + money(cost.payments),
+                'Support/storage: ' + money(cost.supportStorage)
+              ];
+            }
+          } } },
           scales: {
             y: { ticks: { color: 'rgba(255,255,255,.65)', callback: value => '$' + (value / 1000) + 'K' }, grid: { color: 'rgba(255,255,255,.12)' } },
-            x: { title: { display: true, text: 'Blended customers', color: 'rgba(255,255,255,.65)' }, ticks: { color: 'rgba(255,255,255,.65)' }, grid: { display: false } }
+            x: { title: { display: true, text: 'Pilot month · illustrative forecast, not actuals', color: 'rgba(255,255,255,.65)' }, ticks: { color: 'rgba(255,255,255,.65)' }, grid: { display: false } }
           }
         }
       });

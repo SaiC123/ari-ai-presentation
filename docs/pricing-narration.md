@@ -2,7 +2,7 @@
 
 ## Slide12: Revenue, costs and sustainability
 
-Founder is forty-nine ninety-nine monthly for ten full assessments. Growth offers twenty-five for two forty-nine, and Scale sixty for five ninety-nine. Usage is shared across repositories. Founder is an entry pilot price: our modeled cost is about forty-three dollars, leaving about seven before shared costs. Growth leaves about one hundred fifty. With our five-hundred-dollar pilot budget, cash coverage is about seventy Founder customers, or four at our assumed tier mix. Our separate growth target is one hundred to two hundred paying customers, not break-even. Founders initially take no salaries and reinvest surplus. These are assumptions to validate.
+Founder starts at an introductory pilot price of forty-nine ninety-nine for ten full assessments. Larger plans serve teams that need more coverage. Our graph shows monthly revenue against total modeled monthly costs. The white line includes team tools plus customer API usage, sandbox compute, AWS, payments and support. As customers grow, delivery costs rise each month. This is an illustrative six-month forecast, not traction or a profitability promise. Founders initially take no salaries. We will use pilots to measure real costs and value, then plan sustainable pricing for future customers. Our separate growth target is one hundred to two hundred paying customers.
 
 ## Slide13: Market sizing
 

@@ -54,9 +54,26 @@ This is pilot cash coverage, not full economic profitability. Actual four-custom
 
 Six founders, no hiring and no initial salaries. Founder-funded pilots; customer receipts first cover costs, surplus reinvested. No unsupported external fundraising ask;500/month is a planning budget, not all-in startup launch cost.
 
+## Illustrative six-month forecast
+
+This is a scenario, not actual traction, a validated acquisition forecast or promised break-even timing. Customer counts0/3/8/15/25/40 are management planning assumptions at fixed40/45/15 tier mix. Prices stay at introductory49.99/249/599 throughout; no future price increases are invented. Expected blended customers may imply fractional tier counts at low volume; actual cash results depend on actual plans sold.
+
+White line explicitly sums monthly shared tools500 + customer count×(API46.075+sandbox24.25+AWS7+payments6.734984+support/storage11.90). Those unit inputs total95.959984, not95.96rounded until display. Revenue is customers×221.896. Monthly shared tools are fixed only because no seat/provider changes are assumed. Delivery costs rise with customer count. Extra re-checks, founder salaries/labor, taxes, legal/compliance and unexpected overages remain excluded. Reforecast as actual costs arrive.
+
+| Pilot month | Forecast customers | Revenue | Total modeled cost |
+|---|---:|---:|---:|
+| M1 | 0 | $0 | $500 |
+| M2 | 3 | $665.69 | $787.88 |
+| M3 | 8 | $1,775.17 | $1,267.68 |
+| M4 | 15 | $3,328.44 | $1,939.40 |
+| M5 | 25 | $5,547.40 | $2,899.00 |
+| M6 | 40 | $8,875.84 | $4,338.40 |
+
+Monthly revenue first exceeds monthly cost at M3 in this scenario. That is not cumulative break-even, salary-inclusive profitability or observed results. Customer-growth target100–200 remains separate.
+
 ## Replacement financial script
 
-Founder is forty-nine ninety-nine monthly for ten full assessments. Growth offers twenty-five for two forty-nine, and Scale sixty for five ninety-nine. Usage is shared across repositories. Founder is an entry pilot price: our modeled cost is about forty-three dollars, leaving about seven before shared costs. Growth leaves about one hundred fifty. With our five-hundred-dollar pilot budget, cash coverage is about seventy Founder customers, or four at our assumed tier mix. Our separate growth target is one hundred to two hundred paying customers, not break-even. Founders initially take no salaries and reinvest surplus. These are assumptions to validate.
+Founder starts at an introductory pilot price of forty-nine ninety-nine for ten full assessments. Larger plans serve teams that need more coverage. Our graph shows monthly revenue against total modeled monthly costs. The white line includes team tools plus customer API usage, sandbox compute, AWS, payments and support. As customers grow, delivery costs rise each month. This is an illustrative six-month forecast, not traction or a profitability promise. Founders initially take no salaries. We will use pilots to measure real costs and value, then plan sustainable pricing for future customers. Our separate growth target is one hundred to two hundred paying customers.
 
 ## Official pricing sources
 

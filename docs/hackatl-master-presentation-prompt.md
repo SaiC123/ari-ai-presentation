@@ -276,8 +276,8 @@ Click sequence:
 3. Customer payment enters an animated unit-economics waterfall.
 4. Costs are deducted: AI models, secure sandbox compute, storage, integrations, support, security/compliance.
 5. Remaining gross profit stays visible.
-6. A graph compares recurring revenue with monthly operating costs as customers grow.
-7. Revenue crosses pilot cash costs at about four blended customers, assuming 40/45/15 mix and $7 AWS allocation per account. This is not full business profitability.
+6. A six-month illustrative graph compares monthly revenue and explicitly summed monthly costs. Use M1-M6, scenario customer counts0/3/8/15/25/40 at assumed40/45/15 mix, not actuals. White line sums shared tools500 plus per-customer API46.075+sandbox24.25+AWS7+payments6.734984+support11.90. Show categories beside graph and monthly component tooltips. Keep prices fixed, do not invent future increases or subscription-seat cost changes.
+7. Keep underlying coverage arithmetic in notes: about4 at assumed blend or70Founder-only. Monthly scenario first crosses in M3, not promised timing or cumulative break-even. Exclude extra re-checks, founder pay, taxes, legal/compliance and unmeasured overhead. Introductory pilot pricing; future increases are a plan to validate, not modeled revenue.
 8. A $500/month shared pilot budget appears: Claude Team $150, ChatGPT Business including Codex $150, Vercel Pro six deploying seats $120, domain allowance $10, operating contingency $70.
 9. Show founder-funded pilots, no initial salaries, and reinvested surplus. Customer delivery costs are separate; taxes, extra usage, legal/compliance and founder labor are excluded. Domain and reserves are provisional. AWS-adjusted costs are $42.75/$99.02/$228.67, margins about 14.5%/60%/62%. Founder is an entry pilot price with thin margin; approximately70Founder-onlycustomers cover modeled fixed cash costs. Growth target100–200payingcustomers is separate, not break-even.
 
