@@ -1,0 +1,16 @@
+{
+  "type": "AFTER",
+  "agent": "ai-1",
+  "utc": "2026-10-17T22:21:40.306016+00:00",
+  "summary": "AFTER: reconciled supplied usercostsheet in finance12 only plus economics curve and docs/script. Commitfeb09e7 deployed READY dpl_3dprqfuxiGnGYFi67cMUsLEQWHKH. DemoAPI1.9/assessment teamreported not independently audited;10assessment/3recheck arecaps;25sharedprototypehosting shown, RLnoClaudeAPInotzeroCPU. Growth4runsAPI7.6+forecastinfra4+payments4.621+forecastsupport12=28.221cost120.779contribution. Blendcost28.3385/contribution118.1615/80.66% ->265staffedforecastbreakeven at retained31250plannedfixedbudget, not prototypecashburn. Pushrecheckvolume excluded visibly/innotes and budget caveats. Prices49/149/399 and marketACV unchanged. Added docs/cost-reconciliation.md, updated inventory/narration, synced outputs/Downloads. Did not merge ai3QA PR or alter show/hash/nav.",
+  "commit": "feb09e7cb180fb975e09a69252bc0eb5e616fe91",
+  "changed_paths": [
+    "docs/cost-reconciliation.md",
+    "docs/hackatl-pitch-source-inventory.md",
+    "docs/pricing-narration.md",
+    "public/index.html"
+  ],
+  "verification": "git diff --check/source assertions17slides, onlyfinance12markup changed; JS parses and arithmetic265/120.779 checked. Provider officialRailway/Vercel pages support planbaselines, not actualaccountbill. Live1280x720 graph and cost breakdown screenshots checked, baseline7.1pxclear tostagebottom; full curve crossesnear265 and exclusions legible; rewind retained. HTTPS200 HTML exactmatch commit. No invoice audit, recheckfrequency/productionmargin validation or mobileQA claimed.",
+  "deployment_url": "https://ari-ai-presentation.vercel.app",
+  "lock_commit": "70fa133d2c10740aef453e95cbb7e6bf438627b4"
+}
