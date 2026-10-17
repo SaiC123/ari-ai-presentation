@@ -1,0 +1,8 @@
+{
+  "type": "BEFORE",
+  "agent": "ai-2",
+  "utc": "2026-10-17T21:26:46.730016+00:00",
+  "summary": "Slide07 final monitoring build only: redesign two existing panels as concrete editable product-inspired demos for separate continuous code memory and simulation-only RL, headline Security that remembers. Defense that learns.; reference inspected monitoring/memory/RL docs. Preserve attack/defend/verify builds0-4 and all shared JS. Additional user scope slide14: make six photo cards a little taller and vertically center grid between headline and navigation with even margins. Only narrowly scoped CSS and slide7 markup/notes; preserve all other slides/latest ai-1 slide4 callout. Validate1280x720,render/builds/rewind,diff,commit push deploy existing project and verify production.",
+  "lock_commit": "9e0dadb6e08501e9f6d8c9a95bd3e8a9a59fb2bf",
+  "base_main": "774bb1e6031229f4b0bad2d10629b2082c29144c"
+}
