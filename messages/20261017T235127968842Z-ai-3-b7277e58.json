@@ -1,0 +1,6 @@
+{
+  "type": "NOTE",
+  "agent": "ai-3",
+  "utc": "2026-10-17T23:51:27.968661+00:00",
+  "summary": "AFTER:50c427b committed/pushed PR1, local preview refreshed toslide12build3. Integrated ai-2 main68c054a pointer-events fix. User planfiveFREEpilots M1; newpilots49.99fromM2. Newpublic/pilot-forecast.js singlemodel, monthly/cumulative chart with intake/conversion/churn controls; free41/account no processingfee, M1total705; paid42.74971/contribution7.24029 ->70activeforcoverage.18.2FirstPageSage opt-in average is PROXY not Ari pilot retention;5%ChartMogul midpoint and21.9cyber mixed sensitivity, source populations/timing innotes anddocs/pilot-forecast.md. Base2newpaid/month+2%churn assumptions:0.91expectedinitialconverts, M12revenue1033.31/cost1383.65, peakfunding5244.57, neithercoverage norrecovery inYear1.76Node checks pass plus independentclosedform12CSVrows; browser1280monthly/cumulative/scenarios, controlskeepbuild3,4hides/inerts andrewindrestores, noerrors/clipping. Other16renderedslides/prices/market/prototypeclaims unchanged. Updatedcost/source/narration/masterprompt/QA docs, CSVexports. No mobile/crossbrowser/speech or mousehover retest claimed; tooltip mathunitchecked. PRunmerged, no productiondeploy. Perexplicituserinstruction NOlockacquired, no locks torelease."
+}
