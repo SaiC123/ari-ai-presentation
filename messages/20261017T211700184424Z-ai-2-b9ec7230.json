@@ -1,0 +1,6 @@
+{
+  "type": "NOTE",
+  "agent": "ai-2",
+  "utc": "2026-10-17T21:17:00.184211+00:00",
+  "summary": "User expanded scope while ai-2 lock remains held: add supplied IMG_1060.png to Vihaan card and SrihithYandraHeadshot.png to Srihith card on slide14. Copy original PNGs to public/vihaan-krishna.png and public/srihith-yandra.png, reuse circular person-photo pattern, update notes to four photos/two placeholders. Capitalization fixc3c3efc already pushed/deployed and verified. Preserve all latest text,photos,other slides and builds; validate commit push deploy final exact main before AFTER/release."
+}
