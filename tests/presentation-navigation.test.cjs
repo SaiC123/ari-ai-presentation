@@ -412,3 +412,5 @@ test("Out-of-range integer requests clamp to real slide boundaries", () => { con
 test("Build requests clamp to the first and last reveal states", () => { const d = presentation('#2'); d.build(1, 99); assert.equal(d.slides[1].dataset.buildCurrent, '2'); assert.deepEqual(d.slides[1].panels.map(e => e.inert), [true, false]); d.build(1, -99); assert.equal(d.slides[1].dataset.buildCurrent, '0'); assert.deepEqual(d.slides[1].panels.map(e => e.inert), [true, true]); });
 
 test("Every forward shortcut advances exactly one build", () => { for (const key of ['ArrowRight', 'PageDown', ' ', 'Enter']) { const d = presentation('#2'); assert.equal(d.key(key), true); assert.equal(d.slides[1].dataset.buildCurrent, '1', key); assert.equal(d.active(), 1); } });
+
+test("Every rewind shortcut removes exactly one build", () => { for (const key of ['ArrowLeft', 'PageUp', 'Backspace']) { const d = presentation('#2'); d.build(1, 2); assert.equal(d.key(key), true); assert.equal(d.slides[1].dataset.buildCurrent, '1', key); assert.equal(d.active(), 1); } });
