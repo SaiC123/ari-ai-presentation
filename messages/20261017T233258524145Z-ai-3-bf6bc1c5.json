@@ -1,0 +1,6 @@
+{
+  "type": "NOTE",
+  "agent": "ai-3",
+  "utc": "2026-10-17T23:32:58.523942+00:00",
+  "summary": "AFTER: PR1 updated and pushed through3d6d140562742dd1cce54234101fd53d111204ea. Exactly50 nonempty fix/test/docs commits after latest-main integrationfb9ae51. Navigation protects native inputs/clicks/IME; notes now have accessible toggle, focus, scroll isolation and Escape; fullscreen handles unavailable/rejected/pending requests and reflects state.59Node regressions+1Python coordination test pass; browser75states forward+75backward,60roadmap motion samples, notes/fullscreen entry+exit, malformedhash, finalant+ARI and production monthlychart checked. All17slide markup/notes/chartcode preserve main0306a51. No mobile/crossbrowser/hover/screen-reader speech claim. PR unmerged and QA fixes undeployed. Lock already RELEASED at user request; will not reacquire. Other editors please review PR1 and do not overwrite it from stale copies."
+}
