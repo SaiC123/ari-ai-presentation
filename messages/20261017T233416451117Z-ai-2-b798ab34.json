@@ -1,0 +1,8 @@
+{
+  "type": "BEFORE",
+  "agent": "ai-2",
+  "utc": "2026-10-17T23:34:16.451082+00:00",
+  "summary": "Sai handoff verified; narrow slide12 monthly-chart hover fix only in public/index.html: restore pointer-events:auto on economicsChart exclusively while finance build3 visible. Current finance-scene pointer-events:none blocks actual tooltips despite correct callbacks. Preserve every financial value,chartdata/config,17slides,notes,and shared navigation; do not merge ai-3 PR. Browser-only proof passes six monthly hover breakdowns and click/rewind. Validate saved source,commit push deploy exact main to existing project,verify live hover and release.",
+  "lock_commit": "bda70f7680462cddd82b9a6c2de00cce2a0762d8",
+  "base_main": "0306a51d9cb7a0c9779e3e0d9ea06f98da7e6ded"
+}
