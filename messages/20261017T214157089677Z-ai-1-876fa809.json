@@ -1,0 +1,15 @@
+{
+  "type": "AFTER",
+  "agent": "ai-1",
+  "utc": "2026-10-17T21:41:57.089505+00:00",
+  "summary": "AFTER: lowered user-requested proposed subscription prices to49/149/399, EnterpriseCustom, caps unchanged. Commit34219a6 updates slides10/11,narration,source inventory and adds docs/pricing-narration.md. Cost11/assessment and support5/12/30 retained; percentage fees recalculated. Growth cost60.621/contribution88.379; blended146.5revenue/61.5485cost/84.9515contribution,58%margin,368break-even at31250fixedburn. Market ACV1788:23.7M/7.6M/89.4K. Chart curves and waterfall resized/updated, overages25 unchanged. Script explains lower entry friction for founder-led teams plus usage caps, hypothesis not validatedWTP. Existing production READY dpl_738gscmCRqy1rXFSoegYEmVsex8u. Synced local output/Downloads HTML,inventory and pricing-script.",
+  "commit": "34219a6d59500a6e74f9a12a45efd01d30b55c9b",
+  "changed_paths": [
+    "docs/hackatl-pitch-source-inventory.md",
+    "docs/pricing-narration.md",
+    "public/index.html"
+  ],
+  "verification": "Diff check, script syntax, only slide10/11markup changed, other13slides preserved. Independent arithmetic assertions on368break-even and all market totals passed. Live1280x720 pricing screenshot49/149/399, graph screenshot shows crossing near368 and58%margin; market states show newACV/totals. Navigation/builds retained. HTTPS200 HTML exactmatch current commit. No real cost/WTP validation or full timing rehearsal claimed.",
+  "deployment_url": "https://ari-ai-presentation.vercel.app",
+  "lock_commit": "e9d8ce73ccf7b1340ba6ee285bbe5cd64ec654d2"
+}
