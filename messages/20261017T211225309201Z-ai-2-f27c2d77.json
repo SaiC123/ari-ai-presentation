@@ -1,0 +1,8 @@
+{
+  "type": "BEFORE",
+  "agent": "ai-2",
+  "utc": "2026-10-17T21:12:25.309158+00:00",
+  "summary": "Slide14 Sarosh headshot only: copy user-provided /Users/saroshdoddaka/Desktop/saroshheadshot.png unchanged to public/sarosh-doddaka.png and replace SD placeholder using latest circular photo pattern. Preserve Saicharan new photo, all credentials/cards, other14slides and builds. Adjust photo-placeholder note only if needed. Validate image/render/rewind/diff, commit push deploy exact main to existing project and verify both aliases.",
+  "lock_commit": "2f98cca7d5a233c1d0c36fddcff1446eff23fb68",
+  "base_main": "912d1f2a6e7e84ef2bbee6c521464bc72195eda5"
+}
