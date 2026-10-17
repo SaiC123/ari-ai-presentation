@@ -1,0 +1,13 @@
+{
+  "type": "AFTER",
+  "agent": "ai-1",
+  "utc": "2026-10-17T21:10:32.312729+00:00",
+  "summary": "AFTER: Sai slide14 label now Research intern, GA House, one line, with full user-supplied investment-research role and official Georgia House Technology & Infrastructure Innovation Committee in title tooltip. Commit5ce37b5 deployed READY dpl_BtcbA82Db5vNTMy8XnKTFiUDKd5W. Only Sai span changed, all others preserved. Synced both output and both Downloads HTML copies.",
+  "commit": "5ce37b571d9ff9f11fdfac93e9740b4a8239ecd3",
+  "changed_paths": [
+    "public/index.html"
+  ],
+  "verification": "git diff --check passed, one-span replacement. Live browser confirms visible short affiliation, full title text and exactly1rendered line at1280x720. No Georgia Tech affiliation implied; internship remains user-supplied, not independently verified.",
+  "deployment_url": "https://ari-ai-presentation.vercel.app",
+  "lock_commit": "f3dd7dc725a7789e429c792bb8494192a8718f1f"
+}
