@@ -11,7 +11,7 @@ const html = readFileSync(htmlPath, 'utf8');
 const scripts = [...html.matchAll(/<script>([\s\S]*?)<\/script>/g)];
 assert.equal(scripts.length, 1, 'Expected one inline presentation script');
 
-function element() {
+function element(tag = 'div') {
   const classes = new Set();
   const attributes = new Map();
   return {
@@ -26,6 +26,8 @@ function element() {
     setAttribute: (name, value) => attributes.set(name, String(value)),
     getAttribute: name => attributes.get(name) ?? null,
     addEventListener(name, callback) { this.listeners[name] = callback; },
+    closest(selector) { return selector === 'button' && tag === 'button' ? this : null; },
+    click() { this.listeners.click({ stopPropagation() {} }); },
     querySelector: () => null,
     querySelectorAll: () => [],
   };
@@ -40,13 +42,18 @@ function presentation(hash = '#1') {
       build.dataset.build = String(j + 1);
       return build;
     });
-    slide.querySelectorAll = selector => selector === '[data-build]' ? builds : [];
+    slide.buildElements = builds;
+    slide.panels = Array.from({ length: count }, () => element());
+    slide.recap = i === 2 ? element() : null;
+    slide.querySelector = selector => selector === '.recap-stage' ? slide.recap : null;
+    slide.querySelectorAll = selector => selector === '[data-build]' ? builds
+      : selector === '.node-copy, .finance-scene' ? slide.panels : [];
     return slide;
   });
   const selectors = Object.fromEntries([
     '#presentation-slides-wrapper', '#counter', '#progress', '#notes',
     '#noteText', '#prev', '#next', '#fullscreen',
-  ].map(selector => [selector, element()]));
+  ].map(selector => [selector, element(['#prev', '#next', '#fullscreen'].includes(selector) ? 'button' : 'div')]));
   selectors['#presentation-slides-wrapper'].querySelectorAll = () => slides;
   const location = { hash };
   const documentListeners = {};
@@ -54,7 +61,10 @@ function presentation(hash = '#1') {
   const document = {
     querySelector: selector => selectors[selector],
     addEventListener: (name, callback) => { documentListeners[name] = callback; },
+    fullscreenElement: null,
+    exitFullscreen() { this.fullscreenElement = null; },
   };
+  document.documentElement = { requestFullscreen: () => { document.fullscreenElement = document.documentElement; } };
   const window = {
     innerWidth: 1280, innerHeight: 720,
     addEventListener: (name, callback) => { windowListeners[name] = callback; },
@@ -68,9 +78,17 @@ function presentation(hash = '#1') {
     slides, selectors, location,
     active: () => slides.findIndex(slide => slide.classList.contains('active')),
     hashChange(hash) { location.hash = hash; windowListeners.hashchange(); },
-    key(key) { documentListeners.keydown({ key, preventDefault() {} }); },
+    key(key, options = {}) {
+      let prevented = false;
+      const target = options.target || element();
+      documentListeners.keydown({ key, target, ...options, preventDefault() { prevented = true; } });
+      // Browser button activation follows keydown unless the page prevents it.
+      if (!prevented && !options.ctrlKey && !options.metaKey && !options.altKey
+          && ['Enter', ' '].includes(key) && target.closest('button')) target.closest('button').click();
+    },
     click(id) { selectors[id].listeners.click({ stopPropagation() {} }); },
     show: index => vm.runInContext(`show(${index})`, context),
+    fullscreen: () => document.fullscreenElement !== null,
   };
 }
 
@@ -147,4 +165,59 @@ test('buttons and keyboard retain build, boundary, notes, and rewind behavior', 
   assert.equal(deck.active(), 2);
   deck.key('PageUp');
   assert.equal(deck.slides[2].dataset.buildCurrent, '0');
+});
+
+test('Enter and Space activate the focused button instead of advancing globally', () => {
+  const deck = presentation('#2');
+  deck.click('#next');
+  deck.key('Enter', { target: deck.selectors['#prev'] });
+  assert.equal(deck.slides[1].dataset.buildCurrent, '0');
+  deck.key(' ', { target: deck.selectors['#next'] });
+  assert.equal(deck.slides[1].dataset.buildCurrent, '1');
+  deck.key(' ', { target: deck.selectors['#prev'] });
+  assert.equal(deck.slides[1].dataset.buildCurrent, '0');
+  deck.key('Enter', { target: deck.selectors['#fullscreen'] });
+  assert.equal(deck.fullscreen(), true);
+  assert.equal(deck.slides[1].dataset.buildCurrent, '0');
+});
+
+test('browser modifier shortcuts do not trigger presentation shortcuts', () => {
+  const deck = presentation('#2');
+  deck.key('ArrowRight', { altKey: true });
+  deck.key('f', { ctrlKey: true });
+  deck.key('n', { metaKey: true });
+  assert.equal(deck.slides[1].dataset.buildCurrent, '0');
+  assert.equal(deck.fullscreen(), false);
+  assert.equal(deck.selectors['#notes'].classList.contains('show'), false);
+});
+
+test('unrevealed builds remain inert until shown and become inert on rewind', () => {
+  const deck = presentation('#2');
+  const builds = deck.slides[1].buildElements;
+  assert.deepEqual(builds.map(build => build.inert), [true, true]);
+  deck.click('#next');
+  assert.deepEqual(builds.map(build => build.inert), [false, true]);
+  deck.click('#prev');
+  assert.deepEqual(builds.map(build => build.inert), [true, true]);
+});
+
+test('only the current explanation or finance scene is accessible', () => {
+  const deck = presentation('#2');
+  const panels = deck.slides[1].panels;
+  assert.deepEqual(panels.map(panel => panel.inert), [true, true]);
+  deck.click('#next');
+  assert.deepEqual(panels.map(panel => panel.inert), [false, true]);
+  deck.click('#next');
+  assert.deepEqual(panels.map(panel => panel.inert), [true, false]);
+  deck.click('#prev');
+  assert.deepEqual(panels.map(panel => panel.inert), [false, true]);
+});
+
+test('the recap becomes inert when the final brand frame replaces it', () => {
+  const deck = presentation('#3');
+  assert.equal(deck.slides[2].recap.inert, false);
+  deck.click('#next');
+  assert.equal(deck.slides[2].recap.inert, true);
+  deck.click('#prev');
+  assert.equal(deck.slides[2].recap.inert, false);
 });

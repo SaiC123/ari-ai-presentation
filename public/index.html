@@ -1454,8 +1454,16 @@ REFERENCE AND CUES, NOT SPOKEN: Reveal six visual memories. Click 7 connects the
       const bounded = Math.max(0, Math.min(maxBuild(slide), step));
       slide.dataset.buildCurrent = String(bounded);
       slide.querySelectorAll('[data-build]').forEach(el => {
-        el.classList.toggle('build-visible', Number(el.dataset.build) <= bounded);
+        const visible = Number(el.dataset.build) <= bounded;
+        el.classList.toggle('build-visible', visible);
+        el.inert = !visible;
       });
+      // Opacity animations alone do not hide content from assistive technology.
+      slide.querySelectorAll('.node-copy, .finance-scene').forEach((panel, i) => {
+        panel.inert = bounded !== i + 1;
+      });
+      const recap = slide.querySelector('.recap-stage');
+      if (recap) recap.inert = bounded === maxBuild(slide);
       slide.querySelectorAll('.agent-node').forEach((node, nodeIndex) => {
         node.classList.toggle('is-highlighted', bounded === nodeIndex + 1);
         node.classList.toggle('is-muted', bounded >= 1 && bounded <= 7 && bounded !== nodeIndex + 1);
@@ -1532,6 +1540,8 @@ REFERENCE AND CUES, NOT SPOKEN: Reveal six visual memories. Click 7 connects the
       else document.exitFullscreen();
     });
     document.addEventListener('keydown', event => {
+      if (event.defaultPrevented || event.altKey || event.ctrlKey || event.metaKey) return;
+      if ([' ', 'Enter'].includes(event.key) && event.target?.closest?.('button')) return;
       if (['ArrowRight', 'PageDown', ' ', 'Enter'].includes(event.key)) { event.preventDefault(); nextAction(); }
       if (['ArrowLeft', 'PageUp', 'Backspace'].includes(event.key)) { event.preventDefault(); prevAction(); }
       if (event.key.toLowerCase() === 'n') notes.classList.toggle('show');
