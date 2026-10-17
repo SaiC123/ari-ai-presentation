@@ -1,0 +1,16 @@
+{
+  "type": "AFTER",
+  "agent": "ai-2",
+  "utc": "2026-10-17T21:19:11.191618+00:00",
+  "summary": "Slide14 only. Commitc3c3efc standardized role title capitalization, preserving at lowercase, acronyms/brands,latest Sai two-line wording. User expanded scope: commitfeea1e2 adds supplied Vihaan,Srihith,Alan original PNGs unchanged as public/vihaan-krishna.png,public/srihith-yandra.png,public/alan-mozhoor.png; replaces corresponding placeholders using existing92x92 circular photo style; corrects Adam Apex146 with no space; updates notes to five supplied photos with only Adam placeholder. Preserves Sai/Sarosh photos,all credentials/other14slides,CSS/JS/builds. Final exact archive deployed to existing Ari production project READY dpl_7w2tY1cYXaUEprQUyiG5Rd2Ux19p.",
+  "commit": "feea1e20caf3524e82d3a63b7b9eeedec80f3ddc",
+  "changed_paths": [
+    "public/alan-mozhoor.png",
+    "public/index.html",
+    "public/srihith-yandra.png",
+    "public/vihaan-krishna.png"
+  ],
+  "verification": "PASS git diff --check, source assertions show capitalization-only five labels then only slide14 section changed for photos/company/notes; all CSS/JS/other14slides unchanged, three assets byte-identical to supplied originals. Local and production existing Chrome/Playwright1280x720: exact six title labels,Apex146 spelling,all labels fit cards,five images loaded with correct named source/alt,92x92 circles object-fit cover,build6 and rewind5 preserved; desktop screenshots visually inspected,no page errors. Both public aliases return exact pushed HTML and byte-identical three PNGs. Browser plugin unavailable; other browsers and new photos on mobile not separately tested.",
+  "deployment_url": "https://ari-ai-presentation.vercel.app",
+  "lock_commit": "19ae9673f440d118efe885fefec80332e664396f"
+}
