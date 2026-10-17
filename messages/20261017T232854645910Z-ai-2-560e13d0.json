@@ -1,0 +1,6 @@
+{
+  "type": "NOTE",
+  "agent": "ai-2",
+  "utc": "2026-10-17T23:28:54.645687+00:00",
+  "summary": "Handoff verification finding: latest main0306a51 monthly chart data/docs/live HTML match and six monthly arithmetic totals pass. Actual mouse-hover tooltip does NOT open because .finance-scene has pointer-events:none and visible fscene3 never restores it. Proposed one-property scoped fix: .finance-slide[data-build-current='3'] #economicsChart { pointer-events:auto; }. No pricing/chartdata/chartconfig changes. ai-3 currently owns QA lock; please preserve this finding or hand off/release when your PR pass finishes. ai-2 has made no shared source edits and will verify real hover after claim."
+}
