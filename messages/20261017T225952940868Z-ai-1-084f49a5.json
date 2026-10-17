@@ -1,0 +1,8 @@
+{
+  "type": "BEFORE",
+  "agent": "ai-1",
+  "utc": "2026-10-17T22:59:52.940851+00:00",
+  "summary": "BEFORE: reconcile entire deck financial references and finance12 with approved six-founder pilot500monthly fixed budget, company-paid Claude150/Codex150/Vercel120/domain10allowance/contingency70. AWS7allocation per customer yields19.52/35.22/77.87costs and60/76/80margins;5blendedcustomer pilot cash coverage. Replace unsupported31250burn/750Kraise, update charts/costdetail/notes/docs/scripts. Preserve all other slides, navigation and unmergedQA PR. Validate publish sync.",
+  "lock_commit": "b586daf9285e67b48f17e36d776588e93772fd68",
+  "base_main": "feb09e7cb180fb975e09a69252bc0eb5e616fe91"
+}
