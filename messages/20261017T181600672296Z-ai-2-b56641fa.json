@@ -1,0 +1,8 @@
+{
+  "type": "BEFORE",
+  "agent": "ai-2",
+  "utc": "2026-10-17T18:16:00.672241+00:00",
+  "summary": "Sarosh slide 6 only in public/index.html: replace three text-heavy opening cards with large code-review, seven-agent-security and monitoring graphics linked by shared code context; preserve existing clicks 1-7 plus build 8 restoration, Ari/ant center, enlarge selected box, shrink/fade peers with opaque backgrounds, concise accurate explanations, and keyboard/rewind behavior. Update only slide-6 scoped CSS/markup and its speaker notes, explicitly retaining scripted prototype and monitoring/RL limits. Preserve ai-1 slide-5 and every other newer edit. Validate, commit, push, and deploy exact commit to existing ari-ai-presentation.",
+  "lock_commit": "e3c51543d95baf22715a14919bf4d4a5f0a4a77c",
+  "base_main": "d4ecba848e0847746ed547a2a3e824fd550c526d"
+}
