@@ -366,3 +366,5 @@ test("the notes shortcut restores focus when closing the panel", () => {
   assert.equal(deck.selectors['#notesToggle'].focusCalls, 1);
   assert.equal(deck.selectors['#notesToggle'].getAttribute('aria-expanded'), 'false');
 });
+
+test("Clicking the forward area reveals a build before changing slides", () => { const d = presentation('#2'); d.tap(1000); assert.equal(d.active(), 1); assert.equal(d.slides[1].dataset.buildCurrent, '1'); });
