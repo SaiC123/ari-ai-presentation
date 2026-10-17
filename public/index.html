@@ -501,14 +501,14 @@
     .circle-win .ring-description{top:50%;transform:translate(-50%,-50%);width:122px;color:white;font-size:12px;line-height:1.5}.circle-win .ring-description strong{font-size:14px}
     .slide-head .brand-mini{font-size:11px;line-height:1.4;letter-spacing:.055em;max-width:1030px}
     .market-slide[data-build-current='0'] .market-ring-label:nth-child(1),.market-slide[data-build-current='1'] .market-ring-label:nth-child(1),.market-slide[data-build-current='2'] .market-ring-label:nth-child(2),.market-slide[data-build-current='3'] .market-ring-label:nth-child(3){opacity:1;border-color:var(--acid);transform:translateX(4px)}
-    /* Sai / ai-1: slide 5 only. Builds: ICP, customer evidence, tools. */
+    /* Sai / ai-1: slide 5 only. Builds: ICP, customer evidence. */
     .customer-story-slide .customer-phase{position:absolute;left:72px;right:72px;top:111px;bottom:44px;opacity:0;visibility:hidden;transform:translateY(14px);transition:opacity .4s,transform .4s;pointer-events:none}
-    .customer-story-slide[data-build-current='0'] .cp0,.customer-story-slide[data-build-current='1'] .cp1,.customer-story-slide[data-build-current='2'] .cp2{opacity:1;visibility:visible;transform:none}
+    .customer-story-slide[data-build-current='0'] .cp0,.customer-story-slide[data-build-current='1'] .cp1{opacity:1;visibility:visible;transform:none}
     .customer-story-slide .customer-phase h2{font-size:46px;line-height:1.06;letter-spacing:-.045em}
     .customer-story-slide .sai-rubric{display:flex;align-items:center;gap:12px;font:500 11px/1.4 'IBM Plex Mono',monospace;letter-spacing:.035em;text-transform:uppercase}
     .customer-story-slide .sai-rubric img{width:27px;height:20px;object-fit:contain;filter:brightness(0) invert(1)}
     .customer-story-slide .sai-rubric span{display:none}
-    .customer-story-slide[data-build-current='0'] .sai-rubric .sr0,.customer-story-slide[data-build-current='1'] .sai-rubric .sr1,.customer-story-slide[data-build-current='2'] .sai-rubric .sr2{display:inline}
+    .customer-story-slide[data-build-current='0'] .sai-rubric .sr0,.customer-story-slide[data-build-current='1'] .sai-rubric .sr1{display:inline}
     .customer-story-slide .sai-icp{display:grid;grid-template-columns:155px 1fr;align-items:center;gap:22px;padding:17px 23px;margin-top:16px;background:var(--brand-soft);color:var(--ink);border-radius:18px}
     .customer-story-slide .sai-icp-label{font:600 18px/1.2 'IBM Plex Mono',monospace;color:var(--brand-deep)}
     .customer-story-slide .sai-icp strong{font:600 26px/1.28 'Space Grotesk',sans-serif;letter-spacing:-.025em}
@@ -769,11 +769,11 @@ REFERENCE AND CUES, NOT SPOKEN: Limited security capacity is the target-user hyp
         <p class="why-takeaway">Security checks need to keep pace</p>
       </section>
 
-      <section class="slide dark customer-story-slide" data-note="SPOKEN (0:57 to 1:18; about 21 seconds including clicks/pauses): We&#x27;re starting with small SaaS teams using AI without a dedicated security team. We still need real interviews and observed user sessions to validate their needs. Today, checking code can mean piecing together several tools.
+      <section class="slide dark customer-story-slide" data-note="SPOKEN (0:57 to 1:18; about 21 seconds including clicks/pauses): We&#x27;re starting with small SaaS teams using AI without a dedicated security team. We still need real interviews and observed user sessions to validate their needs.
 
-REFERENCE AND CUES, NOT SPOKEN: Build 0 defines our ICP: small SaaS startups using AI to code, without a dedicated cybersecurity team. The founder graphic connects AI-assisted creation to a qualitative security-capacity gap. Bar lengths illustrate our hypothesis; they are not measured quantities. Say: AI expanded their ability to build, while their ability to secure it has not kept pace. This is an AI-intensified unmet need. Click 1 shows customer evidence before alternatives. Interviews, workflow observation, and prototype feedback are pending. Collect recent release examples, actual workarounds, attributable quotes, observed task completion, and exact prototype feedback; never invent findings or participants. Keep those collection instructions in notes. Click 2 shows fragmented tool categories; the intended point is the founder&#x27;s integration burden, not a claim that every vendor lacks other features. Transition: Ari connects the workflow around the same code context. Presenter reference, not spoken: Awaiting real customer evidence." data-spoken="We&#x27;re starting with small SaaS teams using AI without a dedicated security team. We still need real interviews and observed user sessions to validate their needs. Today, checking code can mean piecing together several tools." data-duration-s="21">
-        <div class="slide-head"><span class="sai-rubric"><img src="ari-ant-mark.png" alt="Ari ant"><span class="sr0">Problem Definition / User Understanding / Theme Relevance</span><span class="sr1">User Understanding / Evidence of Need</span><span class="sr2">Advantage over Alternatives</span></span><span class="slide-num">05</span></div>
-        <span class="build-trigger" data-build="1"></span><span class="build-trigger" data-build="2"></span>
+REFERENCE AND CUES, NOT SPOKEN: Build 0 defines our ICP: small SaaS startups using AI to code, without a dedicated cybersecurity team. The founder graphic connects AI-assisted creation to a qualitative security-capacity gap. Bar lengths illustrate our hypothesis; they are not measured quantities. Say: AI expanded their ability to build, while their ability to secure it has not kept pace. This is an AI-intensified unmet need. Click 1 shows customer evidence; the next click advances to the solution. Interviews, workflow observation, and prototype feedback are pending. Collect recent release examples, actual workarounds, attributable quotes, observed task completion, and exact prototype feedback; never invent findings or participants. Keep those collection instructions in notes. Transition: Ari connects the workflow around the same code context. Presenter reference, not spoken: Awaiting real customer evidence." data-spoken="We&#x27;re starting with small SaaS teams using AI without a dedicated security team. We still need real interviews and observed user sessions to validate their needs." data-duration-s="21">
+        <div class="slide-head"><span class="sai-rubric"><img src="ari-ant-mark.png" alt="Ari ant"><span class="sr0">Problem Definition / User Understanding / Theme Relevance</span><span class="sr1">User Understanding / Evidence of Need</span></span><span class="slide-num">05</span></div>
+        <span class="build-trigger" data-build="1"></span>
         <div class="customer-phase cp0">
           <h2>More code. <span class="accent">Same security capacity.</span></h2>
           <div class="sai-icp"><span class="sai-icp-label">OUR<br>CUSTOMER</span><strong>Small SaaS startups using AI to code,<br>without a dedicated cybersecurity team.</strong></div>
@@ -795,15 +795,6 @@ REFERENCE AND CUES, NOT SPOKEN: Build 0 defines our ICP: small SaaS startups usi
             <article><div class="sai-evidence-visual" aria-hidden="true"><svg viewBox="0 0 140 100"><rect x="14" y="12" width="112" height="70" rx="10" fill="none" stroke="#ff8a75" stroke-width="4"/><path d="M14 31h112M48 94h44M70 82v12M44 51l17 12 31-16" fill="none" stroke="#ff8a75" stroke-width="4" stroke-linecap="round"/></svg></div><div><h3>Prototype feedback</h3><p>Pending</p></div></article>
           </div>
 
-        </div>
-        <div class="customer-phase cp2">
-          <h2>The tools see pieces.<br><span class="accent">The founder connects them.</span></h2>
-          <div class="sai-tools-grid">
-            <article class="sai-tool"><span class="sai-tool-name">Code review</span><div class="sai-tool-fragment" aria-hidden="true"><i></i><i></i></div><h3>The diff.</h3></article>
-            <article class="sai-tool"><span class="sai-tool-name">Scanner</span><div class="sai-tool-fragment" aria-hidden="true"><i></i><i></i></div><h3>The warnings.</h3></article>
-            <article class="sai-tool"><span class="sai-tool-name">AI fixer</span><div class="sai-tool-fragment" aria-hidden="true"><i></i><i></i></div><h3>The patch.</h3></article>
-            <article class="sai-tool"><span class="sai-tool-name">Pentest</span><div class="sai-tool-fragment" aria-hidden="true"><i></i><i></i></div><h3>A snapshot.</h3></article>
-          </div>
         </div>
       </section>
 
