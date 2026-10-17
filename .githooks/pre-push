@@ -1,0 +1,4 @@
+#!/bin/sh
+set -eu
+repo_root=$(rtk proxy git rev-parse --show-toplevel)
+exec rtk proxy python3 "$repo_root/scripts/ai_coordination.py" check-push

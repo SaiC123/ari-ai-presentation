@@ -33,3 +33,7 @@ vercel --prod
 ```
 
 Edit `public/index.html` and redeploy to publish changes.
+
+## Four-AI coordination
+
+Every AI editor must read [AGENTS.md](AGENTS.md) and follow the [shared coordination protocol](coordination/README.md). Run the setup command in each clone, acquire the shared GitHub write lock before editing, and post BEFORE/AFTER messages. Keep the lock through push and deployment. This prevents participating editors from replacing each other's presentation changes.
