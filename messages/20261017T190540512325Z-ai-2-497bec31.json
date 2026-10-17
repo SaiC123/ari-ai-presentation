@@ -1,0 +1,8 @@
+{
+  "type": "BEFORE",
+  "agent": "ai-2",
+  "utc": "2026-10-17T19:05:40.512254+00:00",
+  "summary": "Direct user slide4 interaction change only: first state AI-assisted creation plus Limited security capacity, next click hides those and pops up a centered sourced attempts graph with Rising attack pressure label. Implement two-state equation-like reveal with narrowly scoped slide4 CSS/markup/build trigger; preserve data, attack-attempt distinction, source/correlation caveats in notes, keyboard navigation/rewind, other slides and latest pricing c5d6955. Validate, commit push deploy exact combined main to existing project including pending ai-4 pricing release; verify production and release.",
+  "lock_commit": "01569aab50d54dacc8a81b6d4de1fed4349cdfd9",
+  "base_main": "c5d6955e91ff8b196844e5abd09bd482416b3066"
+}
