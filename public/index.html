@@ -715,6 +715,7 @@
     @media (prefers-reduced-motion: reduce) {
       *, *:before, *:after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
     }
+    .sr-only { position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap;border:0; }
     .notes #noteText { white-space:pre-line; }
     /* ai-4: slide 4 and exactly two slide-9 segments */
     .problem-statement-slide h1 { position:absolute;left:50%;right:auto;top:50%;width:calc(100% - 144px);max-width:none;transform:translate(-50%,-50%);font-size:82px;line-height:1.08;letter-spacing:-.05em;text-align:center;margin:0; }
@@ -1437,6 +1438,7 @@ REFERENCE AND CUES, NOT SPOKEN: Reveal six visual memories. Click 7 connects the
     <button id="notesToggle" aria-label="Show speaker notes" aria-controls="notes" aria-expanded="false">N</button>
     <button id="fullscreen" aria-label="Toggle fullscreen">⛶</button>
   </div>
+  <span id="fullscreenStatus" class="sr-only" role="status"></span>
   <aside class="notes" id="notes" tabindex="-1" aria-label="Speaker notes"><b>Speaker note</b><span id="noteText"></span></aside>
 
   <script>
@@ -1551,10 +1553,16 @@ REFERENCE AND CUES, NOT SPOKEN: Reveal six visual memories. Click 7 connects the
     document.querySelector('#next').addEventListener('click', event => { event.stopPropagation(); nextAction(); });
     const fullscreenButton = document.querySelector('#fullscreen');
     fullscreenButton.disabled = typeof document.documentElement.requestFullscreen !== 'function';
-    fullscreenButton.addEventListener('click', event => {
+    fullscreenButton.addEventListener('click', async event => {
       event.stopPropagation();
-      if (!document.fullscreenElement) document.documentElement.requestFullscreen();
-      else document.exitFullscreen();
+      const status = document.querySelector('#fullscreenStatus');
+      status.textContent = '';
+      try {
+        if (!document.fullscreenElement) await document.documentElement.requestFullscreen();
+        else await document.exitFullscreen();
+      } catch {
+        status.textContent = 'Fullscreen is unavailable. Continue in the current window.';
+      }
     });
     document.addEventListener('keydown', event => {
       if (event.isComposing || event.keyCode === 229) return;

@@ -307,3 +307,11 @@ test("unsupported fullscreen disables its control without breaking navigation", 
   deck.key('ArrowRight');
   assert.equal(deck.slides[1].dataset.buildCurrent, '1');
 });
+
+test("denied fullscreen resolves safely and reports an accessible status", async () => {
+  const deck = presentation('#2', { requestFullscreen: () => Promise.reject(new Error('Denied')) });
+  await deck.click('#fullscreen');
+  assert.match(deck.selectors['#fullscreenStatus'].textContent, /Fullscreen is unavailable/);
+  assert.equal(deck.active(), 1);
+  assert.equal(deck.slides[1].dataset.buildCurrent, '0');
+});
