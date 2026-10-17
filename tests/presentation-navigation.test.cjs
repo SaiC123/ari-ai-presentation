@@ -430,3 +430,25 @@ test("A successful retry clears an earlier fullscreen failure message", async ()
 test("Uppercase N shares the notes button expanded state", () => { const d = presentation(); d.key('N'); assert.equal(d.selectors['#notesToggle'].getAttribute('aria-expanded'), 'true'); d.key('N'); assert.equal(d.selectors['#notesToggle'].getAttribute('aria-expanded'), 'false'); assert.equal(d.selectors['#notesToggle'].getAttribute('aria-label'), 'Show speaker notes'); });
 
 test("Advancing beyond the final frame preserves its hidden recap and final build", () => { const d = presentation('#3'); d.click('#next'); d.click('#next'); d.key('PageDown'); assert.equal(d.active(), 2); assert.equal(d.slides[2].dataset.buildCurrent, '1'); assert.equal(d.slides[2].recap.inert, true); assert.equal(d.selectors['#counter'].textContent, '03 / 03'); assert.equal(d.location.hash, '#3'); });
+
+test("every slide and build remains navigable forward and backward", () => {
+  const counts = [5, 0, 6, 1, 0, 1, 0, 8, 5, 2, 1, 4, 3, 3, 5, 6, 8];
+  const d = presentation('#1', { counts });
+  for (let slide = 0; slide < counts.length; slide++) {
+    for (let build = 0; build <= counts[slide]; build++) {
+      assert.equal(d.active(), slide);
+      assert.equal(d.slides[slide].dataset.buildCurrent, String(build));
+      assert.equal(d.slides.filter(s => !s.inert).length, 1);
+      d.click('#next');
+    }
+  }
+  for (let slide = counts.length - 1; slide >= 0; slide--) {
+    for (let build = counts[slide]; build >= 0; build--) {
+      assert.equal(d.active(), slide);
+      assert.equal(d.slides[slide].dataset.buildCurrent, String(build));
+      assert.equal(d.slides[slide].getAttribute('aria-hidden'), 'false');
+      d.click('#prev');
+    }
+  }
+  assert.equal(d.location.hash, '#1');
+});
