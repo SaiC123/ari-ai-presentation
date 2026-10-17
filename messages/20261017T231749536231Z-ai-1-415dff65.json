@@ -1,0 +1,17 @@
+{
+  "type": "AFTER",
+  "agent": "ai-1",
+  "utc": "2026-10-17T23:17:49.536077+00:00",
+  "summary": "AFTER: aadca6e pushed/deployedREADY dpl_BXTmHsw3aScjiVFp6s76gCphY4br. UserapprovedFounder49.99/10assessments (Growth249/25 Scale599/60 unchanged). Founderpayment1.74971,total42.74971,contribution7.24029,margin14.48%,70Founder-onlycashcoverage. Blended40/45/15 ->revenue221.896,cost95.959984,contribution125.936016,56.75%,4cashcoverage. Finance12card shows assumedmixand70Founderonlyexplicitly; graphupdatedlegendgapretained. Market13inner100-200payingcustomergrowthtargetnotbreakeven/traction,298800-597600ARRatGrowthproxy. Notes/script/cost/inventory/masterprompt reconciled, outputs/Downloads synced. No unrelatedslide/nav/QA PR edits.",
+  "commit": "aadca6ec2f153b6a9778e9a7115547d8b40d1800",
+  "changed_paths": [
+    "docs/cost-reconciliation.md",
+    "docs/hackatl-master-presentation-prompt.md",
+    "docs/hackatl-pitch-source-inventory.md",
+    "docs/pricing-narration.md",
+    "public/index.html"
+  ],
+  "verification": "JSparse/diffcheckpass; only12and13markupchanged across17slides; mathchecked70Founder/4blend andARRrange. Browser1280x720screenshots Founderpricefits, financechart/cardfits, growthtargetrange48pxfits407px withnooverflow. ProductionHTTP200exactsourceverified. Forecastcosts/usage/willingnesstopayunvalidated, thinFoundermarginexplicit; no salaries/extrausage/taxes/legal/laborincluded. No mobile/crossbrowserQA.",
+  "deployment_url": "https://ari-ai-presentation.vercel.app",
+  "lock_commit": "27ab8e3f013ca7a25b8e6c14dd5c4715371b8ff4"
+}
