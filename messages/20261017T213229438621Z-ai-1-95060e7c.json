@@ -1,0 +1,13 @@
+{
+  "type": "AFTER",
+  "agent": "ai-1",
+  "utc": "2026-10-17T21:32:29.438456+00:00",
+  "summary": "AFTER: slide10 Growth cost scene only compact four-item cost detail row beneath bars. Forecast40AI (4assessments x10cap),4sandbox/infra (4x1buffer),approximately9card processing,12evidence/logs/support allowance =65, preserving299revenue/234contribution. Graph bars/height reduced proportionally to fit row, no new slide. Commit65bc872 deployed READY dpl_9XsPyjw1KvUnVYnHoNEJApoD32eB. Preserved latest ai2 monitoring/team changes and synced both output HTML and both Downloads copies.",
+  "commit": "65bc872229145fa674735ae4aac4fe6d53593615",
+  "changed_paths": [
+    "public/index.html"
+  ],
+  "verification": "git diff --check, source assertions other14slides/sharedJS byte-identical and JS parses;65cost arithmetic reconciles. Live1280x720 screenshots during/completed animated graph inspected, cost row fully visible with13.3px clearance to stage bottom, no heading/control overlap. Forecast label and allowances clear. No provider repricing or measured cost claim, no mobile-specific QA.",
+  "deployment_url": "https://ari-ai-presentation.vercel.app",
+  "lock_commit": "a929741f8e371b65892526df61b0cf7247bed3a8"
+}
