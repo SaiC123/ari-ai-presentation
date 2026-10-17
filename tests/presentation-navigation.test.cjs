@@ -392,3 +392,5 @@ test("Forward re-entry resets a previously visited slide to its first build", ()
 test("A hash event for the active slide preserves its build", () => { const d = presentation('#2'); d.click('#next'); d.hashChange('#2'); assert.equal(d.slides[1].dataset.buildCurrent, '1'); assert.equal(d.slides[1].panels[0].inert, false); });
 
 test("A backwards deep link restores the destination final build", () => { const d = presentation('#3'); d.hashChange('#2'); assert.equal(d.active(), 1); assert.equal(d.slides[1].dataset.buildCurrent, '2'); assert.equal(d.selectors['#noteText'].textContent, 'Speaker note 2'); });
+
+test("Build changes keep slide numbering stable", () => { const d = presentation('#2'); const counter = d.selectors['#counter'].textContent; d.click('#next'); d.click('#next'); assert.equal(d.selectors['#counter'].textContent, counter); assert.equal(d.location.hash, '#2'); });
