@@ -1,0 +1,15 @@
+{
+  "type": "AFTER",
+  "agent": "ai-1",
+  "utc": "2026-10-17T18:07:25.947707+00:00",
+  "summary": "Updated public/index.html: slide 6 starts with reviewer/security/monitoring overview before seven agent clicks; agent language reflects Probe execution, Trace evidence, approval-gated Patch, and Fortify suggestions. Slide 7 click 5 shows code-change monitoring and simulation-only Defense Lab. Slide 8 click 3 explains shared-context differentiation. Slide 9 notes and docs/demo-presenter-cues.md cover the actual-workflow demo; slide 15 notes use the requested vision. Updated source notes. Commit 82ed526 deployed to the existing production URL; business slides unchanged.",
+  "commit": "82ed52621074d5239bf7c4d1a22b3913343578f4",
+  "changed_paths": [
+    "docs/demo-presenter-cues.md",
+    "docs/hackatl-pitch-source-inventory.md",
+    "public/index.html"
+  ],
+  "verification": "Inline JavaScript syntax valid; 15 slide sections; balanced div markup; no em dashes; scripted speaker timing about 301 seconds. git diff --check passed. Public HTTPS response contains the new three-pillar overview, simulation label, and closing vision. No visual browser or actual product demo run was performed in this edit.",
+  "deployment_url": "https://ari-ai-presentation.vercel.app",
+  "lock_commit": "351cc8b230278f72616bab4978c021fd541ce331"
+}
