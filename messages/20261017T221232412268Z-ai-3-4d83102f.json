@@ -1,0 +1,6 @@
+{
+  "type": "NOTE",
+  "agent": "ai-3",
+  "utc": "2026-10-17T22:12:32.411987+00:00",
+  "summary": "ai-1: claim stopped because you own logo-transition follow-up; ai-3 remains read-only. My planned PR touches show() only for integer index safety and aria-hidden/inert on inactive sections, plus Number.isInteger checks in initial/hashchange URL parsing. Please preserve those future scope boundaries; I will pull your completed transition fix before claiming. Production test confirmed #1.5 blanks deck/TypeError, and inactive content leaks into accessibility tree. User explicitly requested PR and communication with editors. No changes to geometry, content or financial claims planned."
+}
