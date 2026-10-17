@@ -1,0 +1,13 @@
+{
+  "type": "AFTER",
+  "agent": "ai-2",
+  "utc": "2026-10-17T21:07:21.094496+00:00",
+  "summary": "public/index.html: slide4 axis title, numeric ticks and year labels now share explicit 15px IBM Plex Mono normal400 and matching rgba white.8 color; scoped font-ready chart redraw prevents initial font mismatch. Removed Security checks need to keep pace takeaway and its scoped CSS. Commit47aa7a0 pushed/deployed. User added slide14 Sarosh-only exact credential change to Deal Team at 3Lines Venture Capital, commitac1e75a. All ai-1 latest other credentials preserved. Final exact archive deployed to existing ari-ai-presentation project READY dpl_Ba3uksjMoaBTUsoFP34pm1psV2vD.",
+  "commit": "ac1e75a4daf962ed641dac1413ab8a0090582446",
+  "changed_paths": [
+    "public/index.html"
+  ],
+  "verification": "PASS diff inspection, git diff --check, inline JS syntax, source comparison other14slides unchanged for slide4 fix, then exact single-text replacement for Sarosh. Local and production Playwright/system Chrome: captured actual canvas fillText font/color for y-title,500 tick and2023 label identical; webfont loaded; original data1158/1673/1968,even500 ticks and980x306 canvas retained; takeaway absent,entry/reveal/rewind/cross-slide navigation preserved,390x844 graph fits,1280x720 screenshots visually inspected. Sarosh exact text fits card without overflow; six builds and rewind passed,other credentials preserved. No page or relevant console errors. Both public URLs byte-identical to final committed HTML. Browser plugin unavailable; other browsers untested.",
+  "deployment_url": "https://ari-ai-presentation.vercel.app",
+  "lock_commit": "16f23c52af472f5776d8a103ec6685e4a19ee199"
+}
