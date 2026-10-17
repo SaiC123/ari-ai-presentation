@@ -239,3 +239,10 @@ test("typing in form fields does not advance the deck", () => {
     assert.equal(deck.slides[1].dataset.buildCurrent, '0');
   }
 });
+
+test("IME composition does not navigate", () => {
+  const deck = presentation('#2');
+  deck.key('Enter', { isComposing: true });
+  deck.key(' ', { keyCode: 229 });
+  assert.equal(deck.slides[1].dataset.buildCurrent, '0');
+});
