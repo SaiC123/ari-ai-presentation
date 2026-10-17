@@ -1,0 +1,8 @@
+{
+  "type": "BEFORE",
+  "agent": "ai-3",
+  "utc": "2026-10-17T22:14:11.614550+00:00",
+  "summary": "User-requested live-site QA PR against latest1d70359, preserving ai-1 logo-transition fix: shared show/hash JS integer validation prevents #1.5 blank deck; set inactive sections aria-hidden/inert to fix off-slide accessibility exposure; focused dependency-free regression tests. Preserve17slide content/order/builds/assets/pricing/notes/geometry/CSS. User explicitly requested PR delivery on codex/presentation-qa-fixes, not direct main; no merge/deploy. Post results/PR handoff for other editors and release safely with abort since PR remains unmerged.",
+  "lock_commit": "008f692c44a52d789571975cc0ff714ac7ece91e",
+  "base_main": "1d703598305047f975cff84db87ce676258420dd"
+}
