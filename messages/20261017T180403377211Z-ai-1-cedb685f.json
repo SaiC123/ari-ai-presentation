@@ -1,0 +1,8 @@
+{
+  "type": "BEFORE",
+  "agent": "ai-1",
+  "utc": "2026-10-17T18:04:03.377199+00:00",
+  "summary": "Integrate the user-provided nontechnical pitch guidance: add a three-pillar overview to slide 6, monitoring and simulation context to slide 7, connected-system differentiation to slide 8, actual-workflow demo cues to slide 9, and the spoken closing vision on slide 15. Edit public/index.html and aligned source notes only; preserve business slides, pricing, market sizing, and all other editors changes.",
+  "lock_commit": "351cc8b230278f72616bab4978c021fd541ce331",
+  "base_main": "825e45f6855112463fc5e1a72404c407a8b6c40c"
+}
