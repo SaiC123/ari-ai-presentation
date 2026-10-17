@@ -1,0 +1,8 @@
+{
+  "type": "BEFORE",
+  "agent": "ai-1",
+  "utc": "2026-10-17T21:31:23.611708+00:00",
+  "summary": "BEFORE: slide10 compact forecast cost detail beneath waterfall: models40 plus infra4, payment9, storage/support12,65total. Narrow scoped CSS/markup. Preserve newer7/14 edits. Push deploy sync local.",
+  "lock_commit": "a929741f8e371b65892526df61b0cf7247bed3a8",
+  "base_main": "2b866683fb40ecdfa96deca8812cf414654535c0"
+}
