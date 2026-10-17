@@ -1,0 +1,8 @@
+{
+  "type": "BEFORE",
+  "agent": "ai-1",
+  "utc": "2026-10-17T21:01:39.864732+00:00",
+  "summary": "BEFORE: team slide14 credentials update from user and remove stale end-circle effect. Replace six contribution labels with supplied affiliations, update team notes. Preserve photo placeholders, all other slides/shared JS. Refresh local output copies from canonical current source because user is viewing stale file; commit push deploy and verify.",
+  "lock_commit": "7141c6c0936db7aa8dc57d24badd75f68d311f91",
+  "base_main": "4268325a8317a79dfb317ec512534db8f65e14ed"
+}
