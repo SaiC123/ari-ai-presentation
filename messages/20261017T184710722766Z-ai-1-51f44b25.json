@@ -1,0 +1,8 @@
+{
+  "type": "BEFORE",
+  "agent": "ai-1",
+  "utc": "2026-10-17T18:47:10.722755+00:00",
+  "summary": "BEFORE: user visual follow-up: team page remove ant/connecting ornament, roadmap ant natural crawling gait instead of rigid translation, slide8 ring centered on Ari. Narrow scoped markup/CSS only, preserve all ai-2/ai-3/ai-4 changes and notes; deploy latest combined main including pending ai-4 release.",
+  "lock_commit": "de94588df237efc6a022ac47e556c633396598e1",
+  "base_main": "6e87052e62b7c778093e6318ce43edd26e559eb1"
+}
