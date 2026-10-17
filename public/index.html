@@ -237,7 +237,9 @@
     .debt-hit { position:absolute; inset:60px; z-index:5; display:grid; place-items:center; border-radius:28px; background:var(--acid); color:white; opacity:0; transform:scale(.86); }
     .debt-hit.build-visible { animation:debtScreen .62s cubic-bezier(.2,.8,.2,1) forwards; }
     @keyframes debtScreen { to{opacity:1;transform:scale(1)} }
-    .debt-hit strong { display:block; font:700 108px/.85 "Space Grotesk",sans-serif; letter-spacing:-.07em; text-align:center; }
+    .debt-hit strong { display:block; font:700 196px/.88 "Space Grotesk",sans-serif; letter-spacing:-.07em; text-align:center; }
+    .slide[data-build-current="6"] .break-everything > .impact-pop,
+    .slide[data-build-current="6"] .break-everything > h1 { display:none; }
     .debt-hit span { display:block; margin-top:28px; font:600 25px/1.1 "Space Grotesk",sans-serif; text-align:center; }
 
     /* Slide 4 */
