@@ -1,0 +1,8 @@
+{
+  "type": "BEFORE",
+  "agent": "ai-2",
+  "utc": "2026-10-17T21:15:50.795040+00:00",
+  "summary": "Slide14 role capitalization only: title-case visible role words for all six members using latest ai-1 Sai wording and explicit line break. Preserve at/in lowercase, acronym/organization names,credentials,photo assets,tooltip,builds,all other slides. Narrow HTML text replacements only. Validate render/diff,commit push deploy exact main to existing project and verify production.",
+  "lock_commit": "19ae9673f440d118efe885fefec80332e664396f",
+  "base_main": "18aacdef6174cced88fa20b38adfbc96f8dc24f6"
+}
