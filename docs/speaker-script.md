@@ -1,8 +1,8 @@
 # Ari non-demo speaker script
 
-661 prepared spoken words: 651 in the 18 slide passages plus 10 in Vihaan’s brief demo introduction. Splitting hyphenated compounds gives 697 words, still below the 700-word cap. The actual prototype demonstration and Q&A are excluded and unchanged. This is a script budget, not a timed rehearsal.
+661 prepared spoken words: 651 in the 18 slide passages plus 10 in Vihaan’s brief demo introduction. Splitting hyphenated compounds gives 698 words, still below the 700-word cap. The actual prototype demonstration and Q&A are excluded and unchanged. This is a script budget, not a timed rehearsal.
 
-Sarosh’s finalized script from commit `5383790` follows the18-slide presentation and supplied speaker assignments. The18slide `data-spoken` attributes and SPOKEN note passages now match this script verbatim; REFERENCE notes retain their source/evidence guidance. Vihaan’s brief introduction remains here at the demo boundary. [Timing and scope](ai4-timing-pass.md) records the preliminary/final limits and remaining rehearsal requirement.
+The script follows the 18-slide presentation and supplied speaker assignments. Slide 11 now describes genuine prototype screenshots; the other passages preserve Sarosh’s finalized script from commit `5383790`. The18slide `data-spoken` attributes and SPOKEN note passages now match this script verbatim; REFERENCE notes retain their source/evidence guidance. Vihaan’s brief introduction remains here at the demo boundary. [Timing and scope](ai4-timing-pass.md) records the preliminary/final limits and remaining rehearsal requirement.
 
 ## Slide 1 · Sarosh
 
@@ -46,7 +46,7 @@ Nine competitors already offer overlapping capabilities. Our proposed value link
 
 ## Slide 11 · Srihith
 
-Connect an authorized repository, review evidence, and approve a proposed repair. Verification returns test results and saved evidence. Our complete prototype chain uses scripted AI responses. Product usability still needs observed testing.
+Ari’s demo replay shows repository selection, an ownership finding, and repair with displayed tests. These screenshots show the interface, not a new assessment. Full-chain AI responses are scripted; product usability needs testing.
 
 ## Prototype after slide 11 · Vihaan
 

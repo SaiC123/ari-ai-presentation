@@ -46,7 +46,7 @@ class PrototypeFeedbackTests(unittest.TestCase):
         self.assertIn('logo-only-slide', slides[6])
         self.assertIn('solution-slide', slides[7])
         self.assertIn('quality-slide', slides[10])
-        self.assertIn('What verification', slides[10])
+        self.assertIn('prototype-capture-slide', slides[10])
         self.assertIn('feedback-slide', slides[11])
         self.assertIn('feedback-gallery', slides[11])
         self.assertIn('finance-slide', slides[12])
