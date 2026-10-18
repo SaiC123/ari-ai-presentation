@@ -1,0 +1,13 @@
+{
+  "type": "AFTER",
+  "agent": "ai-1",
+  "utc": "2026-10-18T05:13:25.517568+00:00",
+  "summary": "Removed invented quote text from slide 10 and replaced it with two reported-feedback paraphrases; retained clear not-exact-words disclosure and that neither participant has used Ari",
+  "commit": "b6c37606458af30acd634c1bb8ed2e748c3b08b6",
+  "changed_paths": [
+    "public/index.html"
+  ],
+  "verification": "81 Node tests and 13 Python tests passed; diff check passed; production HTML SHA256 matches public/index.html; clean worktree and local main equals origin/main",
+  "deployment_url": "https://ari-ai-presentation.vercel.app",
+  "lock_commit": "289e168610b31384b3c30c154928d87edba920d5"
+}
