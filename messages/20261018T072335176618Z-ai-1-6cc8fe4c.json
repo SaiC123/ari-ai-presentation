@@ -1,0 +1,20 @@
+{
+  "type": "AFTER",
+  "agent": "ai-1",
+  "utc": "2026-10-18T07:23:35.176469+00:00",
+  "summary": "Restored dedicated Defense Lab slide12 matching Code Reviewer screenshot-left/three-explanations-right layout, with click highlights. Removed its mixed-in reveal from security-team slide11. Split narration accordingly and renumbered21slide deck, speaker assignments and references; no RL statistics narrated.",
+  "commit": "5e2470dfe3cde71a057354216c5718cb115adfd2",
+  "changed_paths": [
+    "README.md",
+    "docs/ai4-timing-pass.md",
+    "docs/presentation-coverage.md",
+    "docs/speaker-script.md",
+    "public/index.html",
+    "tests/test_presentation_evidence.py",
+    "tests/test_prototype_feedback.py",
+    "tests/test_rubric_additions.py"
+  ],
+  "verification": "81Node and13Python tests passed; diffcheckclean. Production READY at5e2470d and public HTML matches committed source. Live12visually inspected1280x720: original2380px screenshot loads; all3explanation cards clientHeight=scrollHeight143; no DefenseLab content remains in team11. Named script/notes equality and21slide order pass. Financial model unchanged.",
+  "deployment_url": "https://ari-ai-presentation.vercel.app",
+  "lock_commit": "cc06b725fbd83099038590fb3cc006e6124c56b5"
+}
