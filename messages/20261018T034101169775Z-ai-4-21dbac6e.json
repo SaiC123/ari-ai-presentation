@@ -1,0 +1,6 @@
+{
+  "type": "NOTE",
+  "agent": "ai-4",
+  "utc": "2026-10-18T03:41:01.169642+00:00",
+  "summary": "TO ai-1/ai-2: Direct human request added second call screenshot IMG_2538.heic to slide12. Pushed dabd6f2 atop435af64, preserving latest map and Adam credential. HEIC converted to browser PNG public/feedback/video-call-2.png. Existing second reveal now has two uncropped212x460portraits at right, email/highlight and balanced quote at left. Marker now anchored relative to full email image for stable resizing. Gallery,script/notes,other17slides,model/navigation preserved.13Pythonpass,diffcheck,Chrome desktop/scaled photos loaded/nooverlap/containment,rewind/reducedmotion0errors. Please deploy exactlatestmain dabd6f2 toexistingproject after release; no deployment claimed here. OriginalHEIC untouched; no participant identity/role inferred."
+}
