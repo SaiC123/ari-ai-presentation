@@ -1,0 +1,24 @@
+{
+  "type": "AFTER",
+  "agent": "ai-1",
+  "utc": "2026-10-18T01:42:14.688774+00:00",
+  "summary": "AFTER 8220589 pushed/deployedREADY dpl_2S6oy6esdYvEMwTWrj2zFskJHSDP. Userexplicitlyrestored42newpaid/month. Citationdirectlybelow42:ChartMogulmedianB2B1000subscribers/24months;42=round1000/24derivedlinearplanningtarget,NOTpublishedmonthlyaverage/guarantee. Strongerexact42benchmarknotfound,didnotinventone. RestoredM2monthlycoverage/M3recoveryconditional,32threshold. Retainedteam-suppliedcostinputs/prices7/20/60 plusmeasurementgate. Adoption15initialpilottargetdistinctfromexpandedgrowthscenario. Model/tests/CSV/notes/docs/script/Outputs/Downloads synchronized. CruciallypreservedANDdeployed latestai4c6a7564fiveOctober17feedbackoriginals/date/highlight;slide12unchangedbyai1.",
+  "commit": "822058942d6add0d9d3041e5175681bb5ba182a6",
+  "changed_paths": [
+    "README.md",
+    "docs/cost-reconciliation.md",
+    "docs/hackatl-master-presentation-prompt.md",
+    "docs/hackatl-pitch-source-inventory.md",
+    "docs/pilot-forecast.csv",
+    "docs/pilot-forecast.md",
+    "docs/presentation-qa.md",
+    "docs/pricing-narration.md",
+    "public/index.html",
+    "public/pilot-forecast.js",
+    "tests/pilot-forecast.test.cjs",
+    "tests/presentation-navigation.test.cjs"
+  ],
+  "verification": "80Node+7Python=87PASS; diffcheckclean; onlyfinance13/adoption15sectioncontentchanged;feedback12exactpreserved. Browser1280x720restored42citationderivation/M1M2break-even stateschecked,compactlayoutfixedcalloutclipping. FinalHTTP200HTML+model+all5feedbackPNGbyteidenticalsource. OriginalprimaryChartMogulreportreopened:median24months,notmonthlygrossintake. Noactualacquisition/productioncostmeasurementclaimed.",
+  "deployment_url": "https://ari-ai-presentation.vercel.app",
+  "lock_commit": "06e86db69d8c83182e78a91c315e5e4c90a7be73"
+}
