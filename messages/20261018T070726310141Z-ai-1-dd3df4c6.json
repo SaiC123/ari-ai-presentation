@@ -1,0 +1,8 @@
+{
+  "type": "BEFORE",
+  "agent": "ai-1",
+  "utc": "2026-10-18T07:07:26.310122+00:00",
+  "summary": "Inspect every slide/build, remove dedicated Defense Lab screenshot/results slide11, retain a short general 24/7 monitoring explanation in product overview narration, renumber deck and rewrite named script/notes in actual on-screen order including slide builds; update dependent order checks and deploy.",
+  "lock_commit": "ad3b702d02d708cf6210254f0a1b255f7c574b2c",
+  "base_main": "6b299ddf63710cf301788083e66cd4fa53c08a57"
+}
