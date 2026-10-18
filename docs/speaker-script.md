@@ -2,7 +2,7 @@
 
 661 prepared spoken words: 651 in the 18 slide passages plus 10 in Vihaan’s brief demo introduction. Splitting hyphenated compounds gives 697 words, still below the 700-word cap. The actual prototype demonstration and Q&A are excluded and unchanged. This is a script budget, not a timed rehearsal.
 
-Aligned to ai-4’s final presentation commit `2ca1bac` and the supplied speaker assignments. `public/index.html` and its shorter `data-spoken`/notes draft are intentionally unchanged by this script-only handoff. [Timing and scope](ai4-timing-pass.md) records the preliminary/final limits and remaining rehearsal requirement.
+Sarosh’s finalized script from commit `5383790` follows the18-slide presentation and supplied speaker assignments. The18slide `data-spoken` attributes and SPOKEN note passages now match this script verbatim; REFERENCE notes retain their source/evidence guidance. Vihaan’s brief introduction remains here at the demo boundary. [Timing and scope](ai4-timing-pass.md) records the preliminary/final limits and remaining rehearsal requirement.
 
 ## Slide 1 · Sarosh
 

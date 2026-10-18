@@ -18,7 +18,7 @@ class PresentationEvidenceTests(unittest.TestCase):
         passages = [html.unescape(re.search(r'data-spoken="([^"]+)"', s).group(1)) for s in self.slides]
         self.assertEqual(len(passages), 18)
         self.assertLess(sum(len(p.split()) for p in passages), 700)
-        # The authorized polishing handoff changes the script, not public slide notes.
+        # The coordinated note-alignment pass must preserve the finalized script verbatim.
         sections = re.findall(r'^## (.+)\n\n([\s\S]*?)(?=^## |\Z)', script, re.M)
         slide_sections = [(title, body) for title, body in sections if title.startswith('Slide ')]
         self.assertEqual(len(slide_sections), 18)
@@ -26,6 +26,9 @@ class PresentationEvidenceTests(unittest.TestCase):
             speaker = 'Sarosh' if n <= 6 or n >= 17 else 'Srihith' if n <= 11 else 'Sai'
             self.assertEqual(title, f'Slide {n} · {speaker}')
             self.assertTrue(body.strip())
+            self.assertEqual(passages[n-1], body.strip())
+            note = html.unescape(re.search(r'data-note="([^"]+)"', self.slides[n-1]).group(1))
+            self.assertEqual(note.split('\n\nREFERENCE, NOT SPOKEN:', 1)[0], 'SPOKEN: '+body.strip())
         self.assertEqual([title for title, _ in sections if not title.startswith('Slide ')],
                          ['Prototype after slide 11 · Vihaan'])
         prepared = ' '.join(body for _, body in sections)
