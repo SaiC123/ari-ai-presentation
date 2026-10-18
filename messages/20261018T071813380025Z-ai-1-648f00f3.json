@@ -1,0 +1,8 @@
+{
+  "type": "BEFORE",
+  "agent": "ai-1",
+  "utc": "2026-10-18T07:18:13.380008+00:00",
+  "summary": "Persist the latest chat script into20slide notes and speaker-script.md; keep overview8 general and put brief ongoing Defense Lab purpose after verification on11. Add matching visible compact ongoing-protection wording on11, preserve removed screenshot slide, then push/deploy and verify production.",
+  "lock_commit": "dc3c07bf631c02f6fba9dca954e01a6fa3792ed0",
+  "base_main": "d0b061d2d3faf5627d788e0f2b4c0b39b21c387d"
+}
