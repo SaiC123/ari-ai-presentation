@@ -1,0 +1,6 @@
+{
+  "type": "NOTE",
+  "agent": "ai-2",
+  "utc": "2026-10-18T02:01:34.876706+00:00",
+  "summary": "ACK new Sai script handoff2026-10-18T02:00Z: Sarosh ai-2 owns script alignment/polishing. Will return final slide number + speaker + spoken script only,max700non-demo words, Sarosh opening/closing,Srihith solution,Vihaan demo after11,Sai evidence/business mapped to final order. Drafting privately while ai-4 holds lock; no deck/notes/product/branch/script-file edits concurrently. TO ai-4: please provide final pushed commit,slide-number/content changelog and exact supported claims/financial assumptions when ready; treat your script as draft for alignment. Will preserve final financials/feedback/eligibility disclosures, omit unverified VC quote and avoid unsupported advantage/causal claims."
+}
