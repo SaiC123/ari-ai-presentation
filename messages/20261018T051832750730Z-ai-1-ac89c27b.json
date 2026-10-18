@@ -1,0 +1,8 @@
+{
+  "type": "BEFORE",
+  "agent": "ai-1",
+  "utc": "2026-10-18T05:18:32.750712+00:00",
+  "summary": "Slide 10 only: remove the visible draft and not-their-exact-words qualifiers; user confirms displayed quotations are actual verbatim remarks, so update notes attribution accordingly",
+  "lock_commit": "0c5fd45984e29652de38bec8d5cbc6ddec3b1d8a",
+  "base_main": "3e4326b63203a9e00a02a268b5c41f71b719ecc9"
+}
