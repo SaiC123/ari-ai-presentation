@@ -5,9 +5,9 @@ The two supplied FaceTime images now form the final reveal of slide10 (build3), 
 ## Backgrounds supplied by the user
 
 - First screenshot: Georgia Tech student and founder of Kairo Securities; the user reports the startup was backed by a16z speedrun.
-- Second screenshot: Stanford CS student and former Kairo Securities intern.
+- Second screenshot: Aarav, a Stanford student and former Kairo Securities intern (the user clarified the visible label should say Stanford student).
 
-Names, specific intern responsibilities and full career histories were not supplied. These backgrounds are not independently verified here. The primary speedrun homepage was checked but did not establish the particular company affiliation in its retrieved content; third-party search results were not treated as proof. No university, investor or company endorsement is asserted.
+Only Aarav’s first name was supplied; full names, specific intern responsibilities and full career histories were not supplied. These backgrounds are not independently verified here. The primary speedrun homepage was checked but did not establish the particular company affiliation in its retrieved content; third-party search results were not treated as proof. No university, investor or company endorsement is asserted.
 
 ## What the user reports they said
 
@@ -21,6 +21,8 @@ The presentation labels Defense Lab as a research prototype; the implementation 
 
 ## Presentation
 
-Slide10builds0–2retain the sourced competitor convergence view. Build3shows matching CSS face crops from both original call images, compact backgrounds and one shared reaction summary. Forward enters slide11; rewind returns to the completed competitor view. Inactive call/map panels use inert and aria-hidden. Prepared narration is unchanged; additional reveal/reading time requires rehearsal rather than an asserted timing fit.
+Slide10builds0–2retain the sourced competitor convergence view. Build3shows matching CSS face crops from both original call images, compact backgrounds and two concise shared feedback points. Forward enters slide11; rewind returns to the completed competitor view. Inactive call/map panels use inert and aria-hidden. Prepared narration is unchanged; additional reveal/reading time requires rehearsal rather than an asserted timing fit.
 
 Visual redesign: phone UI, empty black bars and inset caller views are excluded by CSS framing; original image files remain intact. Repeated reaction bullets are replaced by one shared takeaway. The small caption identifies this as feedback on the idea, with no product use.
+
+Latest copy: Aarav is labeled Stanford student, with former Kairo Securities internship beneath. Shared points emphasize continuous monitoring as a point of difference in the pitch and AI-assisted coding as the reason ongoing checks felt timely. These paraphrase the user-reported reaction and do not add product use or specific career anecdotes.
