@@ -174,3 +174,9 @@ The user clarified Aarav is the non-GT participant/former Kairo intern. Changed 
 ## Shared takeaway reformatted without bullets
 
 User rejected the lower What they liked section and asked for a different visual structure. Replaced the heading/list/divider/standalone caption with one charcoal strip matching Ari's established comparison palette: More AI-written code → Continuous monitoring, short supporting lines and one reported-pitch takeaway. Portraits/bios/top section retained, no fabricated details added. Eight targeted rubric/evidence tests anddiffcheckpass. Chrome1280/960stripbounds/overflow,absenceofoldlist/footer,rewind2→3and0pageerrors checked;desktop/scaledcaptures inspected. Onlyslide10sectionchanged;allspoken/referenceattrs,assets,script/model/other17slides unchanged. No deployment claim.
+
+## Defense Lab live-defense positioning
+
+User explicitly confirmed a newer live deployment with live signals/active defense, while saying a URL/run reference was unavailable during their debugging. Based on that owner confirmation, slide9nowlabelsDEFENSELAB/LIVEDEFENSEanddescribesobservingliveactivity,recommendingadefensiveresponseandlearningfromoutcomes. Canonicalspokenpassage/notesaligned;no simulationwording inpublicHTML. Team-confirmedstatusandlackofindependentdeploymentverification are recorded in source notes. Earlier research-only product README was inspected; no production code was changed or live run executed. No inventeduptime/effectiveness/autonomous-control claims.
+
+Eight targeted evidence/rubric tests anddiffcheckpass. Chrome1280/960LiveDefenseheading/processfits checked,desktop/scaled screenshots inspected. Prepared script657words,699compound-split. Onlyslide9visuals/spokenpassageand10referencenotechanged;assets/model/other16slides preserved. Publication pending existing-project editor;notclaimeddeployed.

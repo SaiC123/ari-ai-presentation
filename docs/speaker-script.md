@@ -1,6 +1,6 @@
 # Ari non-demo speaker script
 
-658 prepared spoken words: 648 in the 18 slide passages plus 10 in Vihaan’s brief demo introduction. Splitting hyphenated compounds gives 700 words, within the 700-word cap. The actual prototype demonstration and Q&A are excluded and unchanged. This is a script budget, not a timed rehearsal.
+657 prepared spoken words: 647 in the 18 slide passages plus 10 in Vihaan’s brief demo introduction. Splitting hyphenated compounds gives 699 words, within the 700-word cap. The actual prototype demonstration and Q&A are excluded and unchanged. This is a script budget, not a timed rehearsal.
 
 Aligned to the current18-slide deck, including the genuine slide11demo screenshots, redesigned slide10conversation reveal and clean slide12email evidence. The slide `data-spoken` attributes and SPOKEN notes match these passages verbatim; REFERENCE notes preserve evidence and feature limits. Advance each build with its corresponding sentence; slide 13 proceeds through pricing, delivery costs, forecast milestones, and founder funding. [Timing and handoffs](ai4-timing-pass.md) records the round limits.
 
@@ -38,7 +38,7 @@ Ari connects code review, seven security specialists, and monitoring around shar
 
 ## Slide 9 · Srihith
 
-Red investigates. Blue proposes repairs within human-approved scope. Verify independently retests on a fresh checkout. Code memory saves verified evidence for reassessment. Monitoring requests fresh checks as code changes. Separately, Defense Lab is our research prototype for learning strategies from reward feedback, without autonomous production actions.
+Red investigates. Blue proposes repairs within human-approved scope. Verify independently retests on a fresh checkout. Code memory saves verified evidence for reassessment. Monitoring requests fresh checks as code changes. Separately, Defense Lab uses live signals and reward feedback to guide defensive recommendations as conditions change.
 
 ## Slide 10 · Srihith
 

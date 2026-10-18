@@ -17,7 +17,7 @@ Slide bullets are casual paraphrases of this report, without quotation marks. Th
 
 ## Product boundary
 
-The presentation labels Defense Lab as a research prototype; the implementation remains offline simulation as recorded in the product documentation. The call reveal now contains only participant backgrounds and reported conceptual feedback. It does not claim24/7 live protection, production response, or that either participant tested this capability. The existing email results remain separate onslide12.
+The presentation now labels Defense Lab Live Defense after the owner confirmed a newer live deployment. Earlier product documentation describes an older offline research implementation; no deployment URL or run reference was available to reconcile the newer build independently during this edit. The call reveal now contains only participant backgrounds and reported conceptual feedback. It does not claim measured24/7uptime, autonomous production response, or that either pitch participant tested the newer capability. The existing email results remain separate onslide12.
 
 ## Presentation
 
@@ -30,3 +30,5 @@ Latest copy: Aarav is labeled Stanford student, with former Kairo Securities int
 ## Current lower-section design
 
 The user rejected the bullet-list formatting. The lower section now uses one charcoal workflow strip: More AI-written code → Continuous monitoring, with short supporting lines and one shared feedback summary. The What they liked heading, bullets, divider and standalone caption are removed. This remains a paraphrase of the team's reported pitch conversations; no product use or new experiences are added. Participant bios and portrait crops remain unchanged.
+
+Latest owner confirmation: the user explicitly says a newer live Defense Lab deployment exists, but their access/tooling is currently failing and they cannot provide its URL/run reference. The presentation uses that team-confirmed status, not an independent observation. No effectiveness or uptime figures are added.
