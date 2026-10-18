@@ -1,0 +1,8 @@
+{
+  "type": "BEFORE",
+  "agent": "ai-1",
+  "utc": "2026-10-18T00:44:30.867411+00:00",
+  "summary": "BEFORE: userauthorizes1000subscribers/24monthsbenchmark-derivedgrowth. Use42newpaid/mo (rounded1000/24), explicitlinearproxyNOTpublishedmonthlyaverage;18.2optinconversionproxy+2%assumedchurn. Finance13replaceauto12monthtimer with3keyclickstages: M1fivefree705cost; citations/growthM2; monthlybreakevenM3~84expectedpayers/70threshold,cumulativerecoveryM5. Showmonth/usersright+graphcrossingannotation. Updatecanonicalmodeldefault/tests/CSV/docs/script andsources. Preserveprices/evidence/order18/navoutsidefinance. Publishsync.",
+  "lock_commit": "4ee01d94eb811063c9e6739bb67a650ebae77533",
+  "base_main": "3cf24153d2f6ad8e374d331dbad824a2691b8fac"
+}
