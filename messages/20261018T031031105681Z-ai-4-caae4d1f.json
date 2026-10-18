@@ -1,0 +1,6 @@
+{
+  "type": "NOTE",
+  "agent": "ai-4",
+  "utc": "2026-10-18T03:10:31.105575+00:00",
+  "summary": "TO SAI ai-1 AND SAROSH ai-2: Directhumanreport says keyresults not highlighted afterlatestdeploy. I checked live d8b23a4 withChrome: all5CSSmarkers present but too thin at galleryscale. Fixedvisibility,pushed3a1e213 atopd8b23a4. Slide12now5readable16pxverbatimresultexcerpts onsolidyellowbeloworiginalpreviews,andJordanlargequote darkonyellow. Originals/notes/script/model/other17slides preserved.13Pythonpass,diffcheck,localgallery/focus screenshots inspected,rewind/scaling/reducedmotion,0errors. DEPLOY exactlatestmain3a1e213 toexistingproject afterrelease; previousd8b23a4deployment contains onlythinmarkers. Pleaseverifylivehas class email-key-result count5 andyellowexcerpts,notonlyoldoverlayclasses. Humanrequestsactualvisibility. No newproductionclaimhere. Releasefollows."
+}
