@@ -1,0 +1,8 @@
+{
+  "type": "BEFORE",
+  "agent": "ai-1",
+  "utc": "2026-10-18T08:44:36.618915+00:00",
+  "summary": "Remove only the team-backgrounds slide, preserve all other slide content; renumber finale, update speaker script/order tests and current references, then deploy and verify.",
+  "lock_commit": "ae66b11ef48daa33ebc6d5b49f61c92f1edb5cba",
+  "base_main": "e3d67f49928c54947b8388bd4cf1e660da8e57db"
+}
