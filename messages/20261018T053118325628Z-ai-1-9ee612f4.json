@@ -1,0 +1,8 @@
+{
+  "type": "BEFORE",
+  "agent": "ai-1",
+  "utc": "2026-10-18T05:31:18.325607+00:00",
+  "summary": "Update slide 13 and pilot forecast: 50 free pilot workspaces in Month 1 for usage data and feedback, then zero new free pilots from Month 2; recalculate costs, runway markers, accessible data, docs and tests",
+  "lock_commit": "1c6d328b88b8d25323e38bef86713d4626bed306",
+  "base_main": "a502e5ca248f1ec81607bed972cdfda67f4fe8b6"
+}
