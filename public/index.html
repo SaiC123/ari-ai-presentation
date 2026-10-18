@@ -913,7 +913,10 @@
     .feedback-slide .validation-columns{grid-template-columns:1fr}
     .feedback-slide .validation-box{height:375px;padding:20px 24px}
     .feedback-slide .feedback-gallery{grid-template-columns:repeat(5,minmax(0,1fr));gap:16px}
-    .feedback-slide .feedback-email img{height:116px;object-fit:contain}
+    .feedback-slide .feedback-preview{position:relative;aspect-ratio:1649/954;isolation:isolate}
+    .feedback-slide .feedback-preview img{width:100%;height:100%;object-fit:fill}
+    .feedback-slide .email-preview-highlight{position:absolute;background:rgba(255,208,70,.62);mix-blend-mode:multiply;border-radius:2px;pointer-events:none}
+    .feedback-slide .email-result-highlight{left:8.1%;width:49.5%}
     .feedback-slide .feedback-email figcaption{font-size:15px}
     .feedback-slide .feedback-next{font-size:20px;line-height:1.4;margin-top:22px;color:white}
     .feedback-slide .feedback-next b{color:#ffb09f}
@@ -1265,11 +1268,11 @@ REFERENCE, NOT SPOKEN: All five October17 original screenshots preserved; permis
               <h3>Five reported prototype outcomes</h3>
               <p>Reported: weakness reproduced → repair reviewed → checks passed</p>
               <div class="feedback-gallery" aria-label="Five supplied prototype feedback emails">
-                <figure class="feedback-email"><img src="feedback/priya.png" alt="Email from Priya Shah reporting a billing retry fix and passing payment tests"><figcaption>Priya · Billing retries</figcaption></figure>
-                <figure class="feedback-email is-featured"><img src="feedback/jordan.png" alt="Email from Jordan Ellis reporting the injection case stopped working and search tests passed"><figcaption>Jordan · SQL injection</figcaption></figure>
-                <figure class="feedback-email"><img src="feedback/maya.png" alt="Email from Maya Chen reporting cross-workspace requests blocked while regular invites worked"><figcaption>Maya · Workspace access</figcaption></figure>
-                <figure class="feedback-email"><img src="feedback/alex.png" alt="Email from Alex Rivera reporting a generic error response and passing error tests"><figcaption>Alex · Error disclosure</figcaption></figure>
-                <figure class="feedback-email"><img src="feedback/samira.png" alt="Email from Samira Okafor reporting traversal rejected and normal uploads passed, and requesting clearer permission information"><figcaption>Samira · Upload paths</figcaption></figure>
+                <figure class="feedback-email"><div class="feedback-preview"><img src="feedback/priya.png" alt="Email from Priya Shah reporting a billing retry fix and passing payment tests"><span class="email-preview-highlight" style="left:26.5%;top:31.4%;width:58%;height:3.0%" aria-hidden="true"></span></div><figcaption>Priya · Billing retries</figcaption></figure>
+                <figure class="feedback-email is-featured"><div class="feedback-preview"><img src="feedback/jordan.png" alt="Email from Jordan Ellis reporting the injection case stopped working and search tests passed"><span class="email-preview-highlight" style="left:8.1%;top:46.6%;width:49.5%;height:3.0%" aria-hidden="true"></span></div><figcaption>Jordan · SQL injection</figcaption></figure>
+                <figure class="feedback-email"><div class="feedback-preview"><img src="feedback/maya.png" alt="Email from Maya Chen reporting cross-workspace requests blocked while regular invites worked"><span class="email-preview-highlight" style="left:45.0%;top:38.0%;width:45.5%;height:3.0%" aria-hidden="true"></span></div><figcaption>Maya · Workspace access</figcaption></figure>
+                <figure class="feedback-email"><div class="feedback-preview"><img src="feedback/alex.png" alt="Email from Alex Rivera reporting a generic error response and passing error tests"><span class="email-preview-highlight" style="left:30.4%;top:37.3%;width:49.7%;height:3.0%" aria-hidden="true"></span></div><figcaption>Alex · Error disclosure</figcaption></figure>
+                <figure class="feedback-email"><div class="feedback-preview"><img src="feedback/samira.png" alt="Email from Samira Okafor reporting traversal rejected and normal uploads passed, and requesting clearer permission information"><span class="email-preview-highlight" style="left:10.0%;top:42.0%;width:45.5%;height:3.0%" aria-hidden="true"></span></div><figcaption>Samira · Upload paths</figcaption></figure>
               </div>
               <p class="feedback-next"><b>Next improvement:</b> clarify repository permissions and code processing.<br><span>Samira’s request · planned, not yet validated</span></p><p class="feedback-cue">Next: a closer look at Jordan's result →</p>
             </article>
@@ -1281,7 +1284,7 @@ REFERENCE, NOT SPOKEN: All five October17 original screenshots preserved; permis
             <img src="feedback/jordan.png" alt="Jordan Ellis, CTO of Harborseed Studio: switched to Ari's suggested parameterized query after review. Check: injection case stopped working; existing search tests passed.">
             <span class="email-result-highlight" aria-hidden="true"></span>
           </div>
-          <blockquote class="feedback-quote">“<mark>injection case stopped working;</mark> existing search tests passed.”</blockquote>
+          <blockquote class="feedback-quote">“<mark>injection case stopped working; existing search tests passed.</mark>”</blockquote>
           <p class="feedback-attribution">Jordan Ellis · CTO, Harborseed Studio · October 17, 2026 · Reported prototype result</p>
         </div>
       </section>
