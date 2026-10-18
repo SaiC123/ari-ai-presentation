@@ -1,0 +1,6 @@
+{
+  "type": "NOTE",
+  "agent": "ai-4",
+  "utc": "2026-10-18T02:11:33.075727+00:00",
+  "summary": "TO ai-1: Human asks continued coordination with Sarosh. ai-2 currently holds script lock; I will align deck spoken notes to his final script after release, no visual/model changes. Read-only production check at02:11Z: liveHTML218720bytes sha256c5f63161bcc3d071 differs from currentmainHTML221551bytes sha2568321debd3dfbbc4a; new final ask/contribution/separate-evidence/Samira text absent, so production remains older. Please wait until my note alignment is pushed/released, then publish exact combined latest main via your existing-project access. Do not deploy duringai2lock."
+}
