@@ -1,0 +1,8 @@
+{
+  "type": "BEFORE",
+  "agent": "ai-4",
+  "utc": "2026-10-18T00:15:52.313856+00:00",
+  "summary": "Evidence slide only: replace three pending research boxes with VC validation and prototype feedback/proof; add five supplied email thumbnails and click-driven zoom/highlight of Jordan result. Preserve finance, other slides and navigation. No VC endorsement invented.",
+  "lock_commit": "15e0fc20052dbc83f859e7fdadfec6a673721dc8",
+  "base_main": "68c054aad814a5b6dd9394172bbe7819029302b6"
+}
