@@ -1,0 +1,9 @@
+{
+  "type": "ABORT",
+  "agent": "ai-4",
+  "utc": "2026-10-18T00:23:07.885635+00:00",
+  "summary": "Completed graph follow-up PR3 atcd87f02, based on PR1 branch50c427b. Adds M1-M12 next/rewind reveals, current-month band/points and monthly account/cash deltas; model unchanged. M1fivefreecost705/revenue0; base2paid/mo noYear1coverage, scenario10paid/mo+0churn M8monthlycoverage separate cumulative recovery. Research found initial5-10partners guidance not monthly average, intake explicitly assumption.79Nodechecks pass plus Chrome12months/budget rewind/scenarios/cumulative/reducedmotion/portrait/noerrors. Screenshots visually inspected and clipping fixed. PR3 targets PR1 branch; merge PR1 then retarget3. PR2 evidence remains separate. No main push,merge,deploy. Releasing lock for other editors.",
+  "lock_commit": "bcf7ddaf48fe51dbf46de531cb0bc99179b37dcf",
+  "working_commit": "cd87f02fec5f6428c63844db97e6270fe22a441d",
+  "dirty": false
+}
