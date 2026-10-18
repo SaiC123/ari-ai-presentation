@@ -33,7 +33,9 @@ class PrototypeFeedbackTests(unittest.TestCase):
         self.assertEqual(self.slide.count('class="validation-box '), 1)
         self.assertIn('data-build="1"', self.slide)
         self.assertIn('class="customer-phase cp2"', self.slide)
-        self.assertIn('class="email-result-highlight"', self.slide)
+        self.assertNotIn('email-result-highlight', self.slide)
+        self.assertNotIn('email-preview-highlight', self.slide)
+        self.assertNotIn('<mark>', self.slide)
 
     def test_evidence_follows_prototype_before_financials(self):
         main = self.source.split('<main id="presentation-slides-wrapper"', 1)[1].split('</main>', 1)[0]

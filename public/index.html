@@ -617,7 +617,7 @@
     .solution-slide .agent-node.is-muted>div { opacity:.32; }
     .solution-slide[data-build-current] .agent-node.is-highlighted { width:204px; height:110px; margin-left:-102px; margin-top:-55px; }
     .solution-slide .agent-node.is-highlighted b { font-size:28px; }
-    /* Slide 7: separate code-memory and simulation demonstrations. */
+    /* Separate code-memory and defensive-research demonstrations. */
     .team-slide .monitoring-stage { position:absolute;left:72px;right:72px;top:124px;bottom:65px;opacity:0;visibility:hidden;transform:translateY(15px);transition:opacity .4s,transform .4s; }
     .team-slide[data-build-current='5']>.team-arena,.team-slide[data-build-current='5']>h2 { visibility:hidden;opacity:0; }
     .team-slide[data-build-current='5'] .monitoring-stage { visibility:visible;opacity:1;transform:none; }
@@ -836,15 +836,12 @@
     .customer-story-slide .feedback-cue{font-size:15px;line-height:1.4;color:#ffb09f;margin-top:16px}
     .customer-story-slide .email-focus{position:relative;height:343px;margin-top:24px;overflow:hidden;border-radius:12px;background:white;transform-origin:75% 35%;transition:transform .65s cubic-bezier(.16,1,.3,1),opacity .3s}
     .customer-story-slide .email-focus img{width:100%;height:auto;display:block}
-    .customer-story-slide .email-result-highlight{position:absolute;left:5.8%;top:89.8%;width:68%;height:6.2%;background:rgba(255,208,70,.48);mix-blend-mode:multiply;border-radius:4px;transform:scaleX(0);transform-origin:left;transition:transform .5s .55s cubic-bezier(.16,1,.3,1)}
-    .customer-story-slide[data-build-current='2'] .email-result-highlight{transform:scaleX(1)}
     .customer-story-slide:not([data-build-current='2']) .email-focus{transform:translate(200px,45px) scale(.62);opacity:0}
     .customer-story-slide.feedback-slide[data-build-current='1'] .email-focus{transform:none;opacity:1}
-    .customer-story-slide.feedback-slide[data-build-current='1'] .email-result-highlight{transform:scaleX(1)}
     .customer-story-slide .feedback-quote{margin:20px 0 0;font:500 25px/1.35 'Space Grotesk',sans-serif;color:white}
     .customer-story-slide .feedback-quote mark{color:#ffb09f;background:none}
     .customer-story-slide .feedback-attribution{margin-top:9px;color:#e3cec8;font-size:15px;line-height:1.4}
-    @media(prefers-reduced-motion:reduce){.customer-story-slide .customer-phase,.customer-story-slide .email-focus,.customer-story-slide .email-result-highlight{transition:none;transform:none}}
+    @media(prefers-reduced-motion:reduce){.customer-story-slide .customer-phase,.customer-story-slide .email-focus{transition:none;transform:none}}
 
     /* Rubric evidence, comparison and roadmap additions, scoped to four slides. */
     .story-build .hypothetical-label{position:absolute;left:72px;top:48px;font:500 15px/1.3 "IBM Plex Mono",monospace;color:var(--muted)}
@@ -919,8 +916,6 @@
     .feedback-slide .feedback-gallery{grid-template-columns:repeat(5,minmax(0,1fr));gap:16px}
     .feedback-slide .feedback-preview{position:relative;aspect-ratio:1649/954;isolation:isolate}
     .feedback-slide .feedback-preview img{width:100%;height:100%;object-fit:fill}
-    .feedback-slide .email-preview-highlight{position:absolute;background:rgba(255,208,70,.62);mix-blend-mode:multiply;border-radius:2px;pointer-events:none}
-    .feedback-slide .email-result-highlight{left:8.1%;width:49.5%}
     .feedback-slide .feedback-email figcaption{font-size:15px}
     .feedback-slide .feedback-next{font-size:20px;line-height:1.4;margin-top:22px;color:white}
     .feedback-slide .feedback-next b{color:#ffb09f}
@@ -956,15 +951,6 @@
     .prototype-capture-slide .prototype-capture-limit{position:absolute;left:72px;right:72px;bottom:75px;margin:0;font-size:15px;color:var(--muted);display:flex;gap:18px;align-items:center}
     .prototype-capture-slide .prototype-capture-limit b{font:600 13px/1.2 "IBM Plex Mono",monospace;color:var(--acid)}
 
-    /* Keep reported results readable when full-email previews are small. */
-    .feedback-slide .validation-box{height:420px}
-    .feedback-slide .feedback-gallery{margin-top:12px}
-    .feedback-slide .email-key-result{display:block;min-height:66px;margin-top:9px;font-size:16px;line-height:1.35;color:#ffd85f}
-    .feedback-slide .email-key-result mark,.feedback-slide .feedback-quote mark{background:#ffd85f;color:#241912;box-decoration-break:clone;-webkit-box-decoration-break:clone;padding:1px 3px;border-radius:2px}
-    .feedback-slide .feedback-next{margin-top:8px}
-    .feedback-slide .feedback-cue{margin-top:8px}
-    .feedback-slide .email-preview-highlight{background:rgba(255,208,70,.82)}
-
     /* Calls conclude slide 10 as a separate full-screen reveal. */
     .feedback-slide .cp2 .email-focus{width:100%;height:370px}
     .feedback-slide .featured-email-image{position:relative;aspect-ratio:1649/954}
@@ -975,15 +961,20 @@
     .market-position-slide[data-build-current="3"]>.market-convergence,.market-position-slide[data-build-current="3"]>.map-limits,.market-position-slide[data-build-current="3"]>h2{visibility:hidden;opacity:0}
     .market-position-slide[data-build-current="3"] .market-call-phase{opacity:1;visibility:visible;transform:none}
     .market-position-slide .market-call-phase h2{font-size:44px;line-height:1.1}
-    .market-call-phase .call-section-intro{font-size:20px;color:var(--muted);margin-top:14px}
-    .market-call-phase .call-profiles{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:48px;margin-top:24px}
-    .market-call-phase .call-profile{display:grid;grid-template-columns:178px 1fr;gap:24px;align-items:center}
-    .market-call-phase .call-profile-photo{display:block;width:178px;height:386px;object-fit:contain;border-radius:14px;background:#160f0d}
-    .market-call-phase .call-profile-copy h3{font-size:27px;line-height:1.15;letter-spacing:-.025em;color:var(--acid)}
-    .market-call-phase .call-background{font-size:17px;line-height:1.4;margin-top:12px;color:var(--muted)}
-    .market-call-phase .call-profile-copy ul{margin:22px 0 0;padding-left:20px;font-size:19px;line-height:1.45;color:var(--ink)}
-    .market-call-phase .call-profile-copy li+li{margin-top:15px}
-    .market-call-phase .call-scope{font-size:13px;line-height:1.5;color:var(--muted);margin-top:17px}
+    .market-call-phase .call-section-intro{font-size:20px;color:var(--muted);margin-top:16px}
+    .market-call-phase .call-profiles{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:64px;margin-top:32px}
+    .market-call-phase .call-profile{display:grid;grid-template-columns:216px 1fr;gap:24px;align-items:center}
+    .market-call-phase .call-photo{position:relative;width:216px;height:216px;overflow:hidden;border-radius:12px;background:#efe5df}
+    .market-call-phase .call-photo img{position:absolute;display:block;height:auto;max-width:none}
+    .market-call-phase .call-photo-founder img{width:100%;left:0;top:-70%}
+    .market-call-phase .call-photo-developer img{width:160%;left:-30%;top:-125%}
+    .market-call-phase .call-profile-copy h3{font-size:28px;line-height:1.15;letter-spacing:-.025em;color:var(--ink)}
+    .market-call-phase .call-role{font-size:19px;line-height:1.4;color:var(--ink);margin-top:14px}
+    .market-call-phase .call-background{font-size:17px;line-height:1.4;color:var(--muted);margin-top:14px}
+    .market-call-phase .call-takeaway{margin-top:32px;padding-top:26px;border-top:1px solid var(--line)}
+    .market-call-phase .call-takeaway h3{font-size:25px;font-weight:600;color:var(--acid)}
+    .market-call-phase .call-takeaway p{margin-top:12px;font-size:23px;line-height:1.4;max-width:1060px;color:var(--ink)}
+    .market-call-phase .call-scope{font-size:14px;line-height:1.4;color:var(--muted);margin-top:16px}
     @media(prefers-reduced-motion:reduce){.market-call-phase{transition:none;transform:none}}
   </style>
 </head>
@@ -1176,9 +1167,9 @@ REFERENCE, NOT SPOKEN: Team confirmed in this chat on October17,2026: no Ari pro
         </div>
       </section>
 
-      <section class="slide team-slide" data-note="SPOKEN: Red investigates. Blue proposes repairs within human-approved scope. Verify independently retests on a fresh checkout. Code memory saves verified evidence for reassessment. Monitoring requests fresh checks as code changes. Separately, Defense Lab learns through trial and error, using reward feedback in simulation, without autonomous production actions.
+      <section class="slide team-slide" data-note="SPOKEN: Red investigates. Blue proposes repairs within human-approved scope. Verify independently retests on a fresh checkout. Code memory saves verified evidence for reassessment. Monitoring requests fresh checks as code changes. Separately, Defense Lab is our research prototype for learning strategies from reward feedback, without autonomous production actions.
 
-REFERENCE, NOT SPOKEN: Value chain: version-aware business intent -&gt; bounded attack evidence -&gt; human-approved repair -&gt; independent verification -&gt; saved regression evidence. Verify uses a fresh checkout and separate mutable state; approval keeps scope accountable. A past fix does not automatically verify a new commit. Monitoring follows code-change events when workers run; RL recommendations are simulation only. Existing product README/test evidence reviewed read-only; no new assessment or attack test executed for this presentation." data-spoken="Red investigates. Blue proposes repairs within human-approved scope. Verify independently retests on a fresh checkout. Code memory saves verified evidence for reassessment. Monitoring requests fresh checks as code changes. Separately, Defense Lab learns through trial and error, using reward feedback in simulation, without autonomous production actions.">
+REFERENCE, NOT SPOKEN: Value chain: version-aware business intent -&gt; bounded attack evidence -&gt; human-approved repair -&gt; independent verification -&gt; saved regression evidence. Verify uses a fresh checkout and separate mutable state; approval keeps scope accountable. A past fix does not automatically verify a new commit. Monitoring follows code-change events when workers run; RL recommendations are research outputs only. Existing product README/test evidence reviewed read-only; no new assessment or attack test executed for this presentation." data-spoken="Red investigates. Blue proposes repairs within human-approved scope. Verify independently retests on a fresh checkout. Code memory saves verified evidence for reassessment. Monitoring requests fresh checks as code changes. Separately, Defense Lab is our research prototype for learning strategies from reward feedback, without autonomous production actions.">
         <div class="slide-head"><span class="brand-mini"><img class="brand-ant" src="ari-ant-mark.png" alt="" aria-hidden="true">Original Contribution / Build Quality &amp; Appropriate Technology</span><span class="slide-num">09</span></div>
         <h2 style="font-size:48px">Attack. Defend. <span class="accent">Verify.</span></h2>
         <span class="build-trigger" data-build="1"></span><span class="build-trigger" data-build="2"></span><span class="build-trigger" data-build="3"></span><span class="build-trigger" data-build="4"></span>
@@ -1209,23 +1200,23 @@ REFERENCE, NOT SPOKEN: Value chain: version-aware business intent -&gt; bounded 
                 </div>
               </div>
             </article>
-            <article class="monitoring-panel sim-panel" aria-label="Reinforcement learning in simulation only">
-              <span class="section-tag">DEFENSE LAB / SIMULATION ONLY</span>
-              <h3>Learn from defensive outcomes.</h3>
+            <article class="monitoring-panel sim-panel" aria-label="Defense Lab reinforcement-learning research prototype">
+              <span class="section-tag">DEFENSE LAB / RESEARCH PROTOTYPE</span>
+              <h3>Evaluate defensive choices.</h3>
               <div class="lab-demo">
                 <div class="lab-row">
                   <svg class="lab-graphic" viewBox="0 0 56 56" aria-hidden="true"><path d="M8 13l19 15L8 43m20-15 20-15m-20 15 20 15" class="quiet"/><circle cx="8" cy="13" r="4"/><circle cx="8" cy="43" r="4"/><circle cx="48" cy="13" r="4" class="quiet"/><circle cx="48" cy="43" r="4" class="quiet"/><rect x="18" y="18" width="20" height="20" rx="5" fill="#2b1d19"/><path d="M23 28h10m-5-5v10"/></svg>
-                  <div><span class="lab-stage-label">01 / OBSERVE</span><h4>Suspicious API traffic detected</h4></div>
+                  <div><span class="lab-stage-label">01 / OBSERVE</span><h4>Model an API-traffic spike</h4></div>
                 </div>
                 <svg class="lab-down" viewBox="0 0 20 16" aria-hidden="true"><path d="M10 1v12m-5-5 5 5 5-5"/></svg>
                 <div class="lab-row">
                   <svg class="lab-graphic" viewBox="0 0 56 56" aria-hidden="true"><path d="M28 6 44 13v13c0 12-16 22-16 22S12 38 12 26V13z"/><path d="M22 22h12M22 28h12M25 34h6"/><path d="M2 21h6m-6 8h6m40-4h6" class="quiet"/></svg>
-                  <div><span class="lab-stage-label">02 / ACT</span><h4>Defender limits API traffic</h4></div>
+                  <div><span class="lab-stage-label">02 / ACT</span><h4>Compare traffic-limiting strategies</h4></div>
                 </div>
                 <svg class="lab-down" viewBox="0 0 20 16" aria-hidden="true"><path d="M10 1v12m-5-5 5 5 5-5"/></svg>
                 <div class="lab-row">
                   <svg class="lab-graphic" viewBox="0 0 56 56" aria-hidden="true"><path d="M28 7v38M12 15h32M16 15 7 31h18L16 15Zm24 0-9 16h18l-9-16ZM18 46h20"/><path d="m23 8 5-3 5 3"/></svg>
-                  <div><span class="lab-stage-label">03 / REWARD + LEARN</span><h4>Evaluate security + service impact</h4><div class="policy-update"><span>Reward feedback</span><svg class="demo-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-5-5 5 5-5 5"/></svg><span>Update policy</span></div></div>
+                  <div><span class="lab-stage-label">03 / REWARD + LEARN</span><h4>Score security + service impact</h4><div class="policy-update"><span>Reward feedback</span><svg class="demo-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-5-5 5 5-5 5"/></svg><span>Update policy</span></div></div>
                 </div>
               </div>
             </article>
@@ -1235,7 +1226,7 @@ REFERENCE, NOT SPOKEN: Value chain: version-aware business intent -&gt; bounded 
 
       <section class="slide market-position-slide" data-note="SPOKEN: Nine competitors offer overlapping capabilities. Our proposed value connects intent, investigation, approved repair, and independent verification for small teams. Assessment costs and human review are tradeoffs. Comparative performance remains unvalidated.
 
-REFERENCE, NOT SPOKEN: Preserve nine-competitor landscape and linked primary sources. Capability groups overlap. Proposed positioning, not benchmark-proven advantage. No comparative runs supplied; docs/comparison-protocol.md is an empty evidence-ready protocol, not results. Pricing units/editions differ; docs/research-validation.md records primary pricing references. No cheapest/only end-to-end claim. The converging category connectors express conceptual workflow coverage, not integrations with competitor products. ARI remains a prototype; monitoring requests code-change checks, and repairs require human approval. Backgrounds and feedback supplied by the user: first call is a GT student/founder of Kairo Securities, user reports a16z speedrun backing; second is a Stanford CS student/former Kairo intern. Both heard the idea, did not use Ari, liked it in general, saw continuous monitoring as a potential differentiator and relevant to AI-assisted/vibe coding. Bullets paraphrase this reported pitch feedback; founder lens is role-based relevance, not a fabricated specific experience or quote. No independent benchmark, purchase intent, measured use or institutional/a16z endorsement is established. Defense Lab remains offline simulation; 24/7 live protection was not demonstrated. Exact identities/affiliations were not independently verified. See docs/call-feedback.md." data-spoken="Nine competitors offer overlapping capabilities. Our proposed value connects intent, investigation, approved repair, and independent verification for small teams. Assessment costs and human review are tradeoffs. Comparative performance remains unvalidated.">
+REFERENCE, NOT SPOKEN: Preserve nine-competitor landscape and linked primary sources. Capability groups overlap. Proposed positioning, not benchmark-proven advantage. No comparative runs supplied; docs/comparison-protocol.md is an empty evidence-ready protocol, not results. Pricing units/editions differ; docs/research-validation.md records primary pricing references. No cheapest/only end-to-end claim. The converging category connectors express conceptual workflow coverage, not integrations with competitor products. ARI remains a prototype; monitoring requests code-change checks, and repairs require human approval. Backgrounds and feedback supplied by the user: first call is a GT student/founder of Kairo Securities, user reports a16z speedrun backing; second is a Stanford CS student/former Kairo intern. Both heard the idea, did not use Ari, liked it in general, saw continuous monitoring as a potential differentiator and relevant to AI-assisted/vibe coding. Bullets paraphrase this reported pitch feedback; founder lens is role-based relevance, not a fabricated specific experience or quote. No independent benchmark, purchase intent, measured use or institutional/a16z endorsement is established. Defense Lab is a research prototype; 24/7 live protection was not demonstrated. Exact identities/affiliations were not independently verified. See docs/call-feedback.md." data-spoken="Nine competitors offer overlapping capabilities. Our proposed value connects intent, investigation, approved repair, and independent verification for small teams. Assessment costs and human review are tradeoffs. Comparative performance remains unvalidated.">
         <div class="slide-head"><span class="brand-mini"><img class="brand-ant" src="ari-ant-mark.png" alt="" aria-hidden="true">Advantage over Alternatives</span><span class="slide-num">10</span></div>
         <h2>A crowded market.<br><span class="accent">Our advantage: the connected workflow.</span></h2>
         <span class="build-trigger" data-build="1"></span><span class="build-trigger" data-build="2"></span><span class="build-trigger" data-build="3"></span>
@@ -1254,29 +1245,29 @@ REFERENCE, NOT SPOKEN: Preserve nine-competitor landscape and linked primary sou
         <div class="map-limits"><span>Overlapping capabilities · Proposed workflow</span><span><strong>Tradeoff:</strong> costs + human review · Comparative performance not yet validated</span></div>
 
         <div class="market-call-phase" aria-hidden="true" inert>
-          <h2>What stood out: <span class="accent">continuous monitoring.</span></h2>
-          <p class="call-section-intro">Two conversations about the pitch, from the founder and developer side.</p>
+          <h2>Early feedback. <span class="accent">Monitoring stood out.</span></h2>
+          <p class="call-section-intro">A founder and a CS student reacted to the pitch.</p>
           <div class="call-profiles">
             <article class="call-profile">
-              <img class="call-profile-photo" src="feedback/video-call.png" alt="Call screenshot associated with the Georgia Tech student and Kairo Securities founder">
+              <div class="call-photo call-photo-founder"><img src="feedback/video-call.png" alt="Georgia Tech student and Kairo Securities founder in the supplied call screenshot"></div>
               <div class="call-profile-copy">
-                <h3>Kairo Securities founder</h3>
-                <p class="call-background">Georgia Tech student · Startup backed by a16z speedrun</p>
-                <ul><li>Liked the idea, especially the continuous-monitoring angle.</li><li>A founder’s lens on keeping up while a small team ships fast.</li></ul>
+                <h3>Kairo Securities</h3>
+                <p class="call-role">Founder · Georgia Tech student</p>
+                <p class="call-background">Startup backed by a16z speedrun</p>
               </div>
             </article>
             <article class="call-profile">
-              <img class="call-profile-photo" src="feedback/video-call-2.png" alt="Call screenshot associated with the Stanford computer science student and former Kairo Securities intern">
+              <div class="call-photo call-photo-developer"><img src="feedback/video-call-2.png" alt="Stanford computer science student in the supplied call screenshot"></div>
               <div class="call-profile-copy">
-                <h3>Stanford CS student</h3>
-                <p class="call-background">Former intern at Kairo Securities</p>
-                <ul><li>Thought the idea fit the current wave of vibe coding.</li><li>Saw continuous monitoring as a potential point of difference.</li></ul>
+                <h3>Stanford CS</h3>
+                <p class="call-role">Student · Former Kairo Securities intern</p>
               </div>
             </article>
           </div>
-          <p class="call-scope">Team-reported pitch feedback, not a product trial. Continuous monitoring is proposed; Defense Lab runs in simulation.</p>
+          <div class="call-takeaway"><h3>Why it resonated</h3><p>Both liked the idea of ongoing checks after code ships, especially with so much AI-written code entering repositories.</p></div>
+          <p class="call-scope">Early feedback on the concept · Neither participant used the product</p>
         </div>
-</section>
+      </section>
 
       <section class="slide quality-slide prototype-capture-slide" data-note="SPOKEN: Here’s Ari’s demo replay: choose a repository, inspect the missing ownership check, then view the repair and before-and-after tests. These are interface screenshots, not a new assessment. Full-chain AI responses are scripted; product usability needs testing.
 
@@ -1308,11 +1299,11 @@ REFERENCE, NOT SPOKEN: All five October17 original screenshots preserved; permis
               <h3>Five reported prototype outcomes</h3>
               <p>Reported: weakness reproduced → repair reviewed → checks passed</p>
               <div class="feedback-gallery" aria-label="Five supplied prototype feedback emails">
-                <figure class="feedback-email"><div class="feedback-preview"><img src="feedback/priya.png" alt="Email from Priya Shah reporting a billing retry fix and passing payment tests"><span class="email-preview-highlight" style="left:26.5%;top:31.4%;width:58%;height:3.0%" aria-hidden="true"></span></div><figcaption>Priya · Billing retries<span class="email-key-result">“<mark>it passed along with the normal payment tests.</mark>”</span></figcaption></figure>
-                <figure class="feedback-email is-featured"><div class="feedback-preview"><img src="feedback/jordan.png" alt="Jordan Ellis reports about 20 minutes to review, apply and rerun tests; injection blocked with 400; 78 regression tests and 12 new injection tests passing in staging"><span class="email-preview-highlight" style="left:15.6%;top:36.6%;width:8.1%;height:3%" aria-hidden="true"></span><span class="email-preview-highlight" style="left:59.1%;top:48.9%;width:3.1%;height:3%" aria-hidden="true"></span><span class="email-preview-highlight" style="left:4.8%;top:52.8%;width:21.5%;height:3%" aria-hidden="true"></span><span class="email-preview-highlight" style="left:36.3%;top:52.8%;width:21.4%;height:3%" aria-hidden="true"></span></div><figcaption>Jordan · SQL injection<span class="email-key-result">“<mark>78 tests in our regression suite</mark>”</span></figcaption></figure>
-                <figure class="feedback-email"><div class="feedback-preview"><img src="feedback/maya.png" alt="Email from Maya Chen reporting cross-workspace requests blocked while regular invites worked"><span class="email-preview-highlight" style="left:45.0%;top:38.0%;width:45.5%;height:3.0%" aria-hidden="true"></span></div><figcaption>Maya · Workspace access<span class="email-key-result">“<mark>Cross-workspace request got blocked; regular invites still worked.</mark>”</span></figcaption></figure>
-                <figure class="feedback-email"><div class="feedback-preview"><img src="feedback/alex.png" alt="Email from Alex Rivera reporting a generic error response and passing error tests"><span class="email-preview-highlight" style="left:30.4%;top:37.3%;width:49.7%;height:3.0%" aria-hidden="true"></span></div><figcaption>Alex · Error disclosure<span class="email-key-result">“<mark>the error tests passed.</mark>”</span></figcaption></figure>
-                <figure class="feedback-email"><div class="feedback-preview"><img src="feedback/samira.png" alt="Email from Samira Okafor reporting traversal rejected and normal uploads passed, and requesting clearer permission information"><span class="email-preview-highlight" style="left:10.0%;top:42.0%;width:45.5%;height:3.0%" aria-hidden="true"></span></div><figcaption>Samira · Upload paths<span class="email-key-result">“<mark>the traversal input was rejected and a normal upload still passed.</mark>”</span></figcaption></figure>
+                <figure class="feedback-email"><div class="feedback-preview"><img src="feedback/priya.png" alt="Email from Priya Shah reporting a billing retry fix and passing payment tests"></div><figcaption>Priya · Billing retries</figcaption></figure>
+                <figure class="feedback-email is-featured"><div class="feedback-preview"><img src="feedback/jordan.png" alt="Jordan Ellis reports about 20 minutes to review, apply and rerun tests; injection blocked with 400; 78 regression tests and 12 new injection tests passing in staging"></div><figcaption>Jordan · SQL injection</figcaption></figure>
+                <figure class="feedback-email"><div class="feedback-preview"><img src="feedback/maya.png" alt="Email from Maya Chen reporting cross-workspace requests blocked while regular invites worked"></div><figcaption>Maya · Workspace access</figcaption></figure>
+                <figure class="feedback-email"><div class="feedback-preview"><img src="feedback/alex.png" alt="Email from Alex Rivera reporting a generic error response and passing error tests"></div><figcaption>Alex · Error disclosure</figcaption></figure>
+                <figure class="feedback-email"><div class="feedback-preview"><img src="feedback/samira.png" alt="Email from Samira Okafor reporting traversal rejected and normal uploads passed, and requesting clearer permission information"></div><figcaption>Samira · Upload paths</figcaption></figure>
               </div>
               <p class="feedback-next"><b>Next improvement:</b> clarify repository permissions and code processing.<br><span>Samira’s request · planned, not yet validated</span></p><p class="feedback-cue">Next: a closer look at Jordan's result →</p>
             </article>
@@ -1323,10 +1314,10 @@ REFERENCE, NOT SPOKEN: All five October17 original screenshots preserved; permis
           <div class="email-focus">
             <div class="featured-email-image">
               <img src="feedback/jordan.png" alt="Jordan reports a staging fix: about 20 minutes to review, apply and rerun tests; injection returns 400; 78 regression tests and 12 new injection tests passing.">
-              <span class="email-result-highlight" style="left:15.6%;top:36.6%;width:8.1%;height:3%" aria-hidden="true"></span><span class="email-result-highlight" style="left:59.1%;top:48.9%;width:3.1%;height:3%" aria-hidden="true"></span><span class="email-result-highlight" style="left:4.8%;top:52.8%;width:21.5%;height:3%" aria-hidden="true"></span><span class="email-result-highlight" style="left:36.3%;top:52.8%;width:21.4%;height:3%" aria-hidden="true"></span>
+
             </div>
           </div>
-          <blockquote class="feedback-quote">“<mark>I also added 12 new injection test cases and those are passing as well.</mark>”</blockquote>
+          <blockquote class="feedback-quote">“I also added 12 new injection test cases and those are passing as well.”</blockquote>
           <p class="feedback-attribution">Jordan Ellis · CTO, Harborseed Studio · October 17, 2026 · Reported prototype result · Staging</p>
         </div>
       </section>

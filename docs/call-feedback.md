@@ -17,8 +17,10 @@ Slide bullets are casual paraphrases of this report, without quotation marks. Th
 
 ## Product boundary
 
-The slide explicitly labels proposed continuous monitoring separately from Defense Lab, which runs in simulation. It does not claim24/7 live protection, production response, or that either participant tested this capability. The existing email results remain separate onslide12.
+The presentation labels Defense Lab as a research prototype; the implementation remains offline simulation as recorded in the product documentation. The call reveal now contains only participant backgrounds and reported conceptual feedback. It does not claim24/7 live protection, production response, or that either participant tested this capability. The existing email results remain separate onslide12.
 
 ## Presentation
 
-Slide10builds0–2retain the sourced competitor convergence view. Build3shows both uncropped call images with short background and reaction bullets. Forward enters slide11; rewind returns to the completed competitor view. Inactive call/map panels use inert and aria-hidden. Prepared narration is unchanged; additional reveal/reading time requires rehearsal rather than an asserted timing fit.
+Slide10builds0–2retain the sourced competitor convergence view. Build3shows matching CSS face crops from both original call images, compact backgrounds and one shared reaction summary. Forward enters slide11; rewind returns to the completed competitor view. Inactive call/map panels use inert and aria-hidden. Prepared narration is unchanged; additional reveal/reading time requires rehearsal rather than an asserted timing fit.
+
+Visual redesign: phone UI, empty black bars and inset caller views are excluded by CSS framing; original image files remain intact. Repeated reaction bullets are replaced by one shared takeaway. The small caption identifies this as feedback on the idea, with no product use.
