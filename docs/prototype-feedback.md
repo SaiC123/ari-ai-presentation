@@ -2,13 +2,13 @@
 
 Added October 17, 2026. Five screenshots supplied by the user for the evidence build, now slide 12. These are reported prototype outcomes, not independently reproduced run artifacts, paid adoption, or proof of general production effectiveness.
 
-- `public/feedback/priya.png` (IMG_7168): Priya Shah, Mosaic Relay. Reports billing-event idempotency repair, repeated-event case and normal payment tests passing, and retained regression test.
-- `public/feedback/jordan.png` (IMG_9790): Jordan Ellis, CTO, Harborseed Studio. Reports a reviewed parameterized query. Featured exact excerpt: “injection case stopped working; existing search tests passed.”
-- `public/feedback/maya.png` (IMG_2848): Maya Chen, Cedarline Labs. Reports cross-workspace request blocked and regular invites still working on a test branch; asks to continue testing.
-- `public/feedback/alex.png` (IMG_0281): Alex Rivera, Fieldnote Systems. Reports generic error response, details retained in logs, error tests passed on test branch; says the finding was understandable.
-- `public/feedback/samira.png` (IMG_5341): Samira Okafor, Engineering Lead, Juniper Trace. Reports traversal input rejected and normal upload passed. Requests clearer repository permissions and code-processing information before widening the trial.
+- `public/feedback/priya.png`: Priya Shah, Mosaic Relay. Reports billing-event idempotency repair, repeated-event case and normal payment tests passing, and retained regression test.
+- `public/feedback/jordan.png`: Jordan Ellis, CTO, Harborseed Studio. Reports a reviewed parameterized query. Featured exact excerpt: “injection case stopped working; existing search tests passed.”
+- `public/feedback/maya.png`: Maya Chen, Cedarline Labs. Reports cross-workspace request blocked and regular invites still working on a test branch; asks to continue testing.
+- `public/feedback/alex.png`: Alex Rivera, Fieldnote Systems. Reports generic error response, details retained in logs, error tests passed on test branch; says the finding was understandable.
+- `public/feedback/samira.png`: Samira Okafor, Engineering Lead, Juniper Trace. Reports traversal input rejected and normal upload passed. Requests clearer repository permissions and code-processing information before widening the trial.
 
-All screenshots are dated October 16, 2026. Original images are preserved without pixel edits. The slide uses CSS clipping for compact previews and a CSS highlight over Jordan's reported check. VC validation has no supplied evidence and remains pending.
+All five screenshots were replaced with the user-supplied October 17, 2026 screenshots. Jordan’s updated email also reports the fix was accepted, merged and deployed to staging; this remains a reported outcome. Original images are preserved without pixel edits. The slide uses CSS clipping for compact previews and a CSS highlight over Jordan's reported check. VC validation has no supplied evidence and remains pending.
 
 ## Presentation states
 
