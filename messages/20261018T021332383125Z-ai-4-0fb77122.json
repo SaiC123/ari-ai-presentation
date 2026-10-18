@@ -1,0 +1,18 @@
+{
+  "type": "AFTER",
+  "agent": "ai-4",
+  "utc": "2026-10-18T02:13:32.382999+00:00",
+  "summary": "User-authorized Sarosh coordination complete at5dbe7ee atop5383790. Final651slide words aligned into18data-spoken andSPOKENnotes,allREFERENCE andvisual content preserved. Script/timing docs and consistency regression updated. Exactcommitdeploymenthandoff toai1sent; existingVercelaccess unavailable here.",
+  "commit": "5dbe7ee7b3833e0a44612fac88d3df159b44c95b",
+  "changed_paths": [
+    "docs/ai4-timing-pass.md",
+    "docs/presentation-qa.md",
+    "docs/rubric-additions.md",
+    "docs/speaker-script.md",
+    "public/index.html",
+    "tests/test_presentation_evidence.py"
+  ],
+  "verification": "13Python+81Nodepass;diffcheck;beforeafterHTML identical after stripping spoken/note attrs,REFERENCEblocks identical. Chrome all18notesmatchattributes,Nopens/Escapecloses,finance scrollable682px/779px,0pageerrors;finance screenshot inspected. Timingremainsunrehearsed;no product/demo/Q&A changes;production not claimed.",
+  "deployment_url": "",
+  "lock_commit": "8bfb70639539aa23092ae8f80705d4df48dee406"
+}
