@@ -1,0 +1,8 @@
+{
+  "type": "BEFORE",
+  "agent": "ai-1",
+  "utc": "2026-10-18T12:39:25.052381+00:00",
+  "summary": "Slide4 wording only: remove requested visible no-causal-link and not-all-AI-code phrases while retaining accurate benchmark-sample and attack-attempt labels, source links and methodological notes. Update wording assertions, deploy and verify.",
+  "lock_commit": "39aa575248eb0d44a55a0e882217508406adb050",
+  "base_main": "bf6da0d2b358c448c1914f91d12ca5bc52d59637"
+}
