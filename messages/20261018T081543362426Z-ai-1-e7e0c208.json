@@ -1,0 +1,8 @@
+{
+  "type": "BEFORE",
+  "agent": "ai-1",
+  "utc": "2026-10-18T08:15:43.362410+00:00",
+  "summary": "Merge standalone Red/Blue/Verify slide11 into agent slide10; add team-specific node outlines and a three-team introduction before individual highlights; remove redundant slide, renumber and rewrite aligned rubric-aware speaker script/notes. Preserve separate Defense Lab screenshot slide and deploy with validation.",
+  "lock_commit": "a528ba2a08462f65411540bc0afde989265fdcee",
+  "base_main": "5e2470dfe3cde71a057354216c5718cb115adfd2"
+}
