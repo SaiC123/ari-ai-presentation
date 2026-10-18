@@ -1,0 +1,28 @@
+{
+  "type": "AFTER",
+  "agent": "ai-1",
+  "utc": "2026-10-18T06:39:57.096425+00:00",
+  "summary": "Added a three-column product overview on slide 8, retained seven-agent highlights on slide 9, and added a dedicated Defense Lab slide 10 with monitoring, simulated RL training, and security/availability balance. Removed duplicate Defense Lab reveal from red/blue slide 11. Renumbered the 20-slide deck and aligned narration, speaker assignments and current reference docs. Published commit 693a275.",
+  "commit": "693a27596e77766eb67fa2ec9e942af50ac314fd",
+  "changed_paths": [
+    "README.md",
+    "docs/ai4-timing-pass.md",
+    "docs/call-feedback.md",
+    "docs/cost-reconciliation.md",
+    "docs/hackatl-master-presentation-prompt.md",
+    "docs/hackatl-pitch-source-inventory.md",
+    "docs/presentation-coverage.md",
+    "docs/presentation-qa.md",
+    "docs/prototype-feedback.md",
+    "docs/research-validation.md",
+    "docs/speaker-script.md",
+    "public/index.html",
+    "tests/presentation-navigation.test.cjs",
+    "tests/test_presentation_evidence.py",
+    "tests/test_prototype_feedback.py",
+    "tests/test_rubric_additions.py"
+  ],
+  "verification": "81 Node tests and 13 Python tests passed for the structural change; diff check passed after the SVG-only refinement. Script and spoken notes match at 694 compound-split words. Live 1280x720 overview, agent initial/spotlight/contribution states, Defense Lab states and forward/rewind inspected. Final loop path visually checked outside labels. Production HTML SHA256 matches local source; main equals origin/main; worktree clean; financial model and CSV unchanged.",
+  "deployment_url": "https://ari-ai-presentation.vercel.app",
+  "lock_commit": "ad8e2b792e88d24a53199d89a0ddfae551466f0b"
+}
