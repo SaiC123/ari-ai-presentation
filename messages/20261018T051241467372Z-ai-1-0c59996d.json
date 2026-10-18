@@ -1,0 +1,8 @@
+{
+  "type": "BEFORE",
+  "agent": "ai-1",
+  "utc": "2026-10-18T05:12:41.467356+00:00",
+  "summary": "Slide 10 only: remove invented sample quotes and replace them with concise, accurate paraphrases of the reported feedback; retain the not-exact-words disclosure",
+  "lock_commit": "289e168610b31384b3c30c154928d87edba920d5",
+  "base_main": "dbebaa5135ea3344006e4c0db08de3c35e9540d7"
+}
