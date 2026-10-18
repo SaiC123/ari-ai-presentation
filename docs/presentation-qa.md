@@ -132,3 +132,9 @@ User clarified to highlight key results, rather than numeric dates/times. Added 
 User reported that the highlights were not visible after redeployment. Inspected production atd8b23a4: all five overlays were present and correctly positioned, but were too thin at gallery size. Corrected slide12 with five16px verbatim result excerpts on solid yellow, plus the full Jordan quote in dark text on yellow. Enlarged the gallery container and adjusted local spacing. Screenshot originals, all notes/script and other17slide sections preserved.
 
 13Python tests anddiffcheckpass. Chrome localgallery/focus inspected after the correction; five individual preview markers, forward/rewind,960×540containment and reducedmotion checked with0pageerrors. The earlierlivegallery/focus were also inspected to identify the presentation-size visibility failure. Production publication of this correction remains pending; no updated-live claim.
+
+## Slide12 supplied portrait integration
+
+Added the user's unmodified `IMG_9889.png` as `public/feedback/video-call.png`, beside Jordan's featured email in the existing second reveal.220×477portrait panel preserves the complete image with object-fit:contain; email width/height and marker coordinates adjusted locally. Large highlighted quote and attribution remain readable. No identity or testimonial inferred from the photo. The five-email gallery and existing two-build navigation are retained.
+
+13Python tests pass;diffcheckpasses. Chrome1280×720featured composition inspected, originalfivepreview markers/rewind/960×540scaledcontainment/reducedmotion checked,0pageerrors. Newasset byte-identical to supplied original; onlyslide12markup changed andallspoken/reference attrs unchanged. Other17slides/model untouched. Commit/push requested; deployment remains a separate existing-project handoff.

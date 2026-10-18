@@ -26,3 +26,7 @@ The user clarified that key results should be highlighted, rather than dates/tim
 ## Readability correction after production review
 
 The first overlays were verified on the live deployment but became thin lines when the gallery shrank the emails. The gallery now repeats one verbatim result excerpt beneath each preview in16px dark text on a solid yellow marker. Jordan's large quote uses the same treatment. These are attributed excerpts, with each original screenshot retained above it; no outcome wording is altered. The larger gallery box keeps all five results, the planned permissions improvement and the next-build cue visible.
+
+## Supplied call image
+
+The user requested `IMG_9889.png` on slide12. Its unaltered original is saved as `public/feedback/video-call.png` and displayed uncropped in a portrait panel beside Jordan's enlarged email in the existing second reveal. No participant identity, role, testimonial or connection to any named email sender is inferred from the photo. Five-email gallery, reported-result wording, script and slide count are retained.
