@@ -26,3 +26,7 @@ Slide10builds0–2retain the sourced competitor convergence view. Build3shows ma
 Visual redesign: phone UI, empty black bars and inset caller views are excluded by CSS framing; original image files remain intact. Repeated reaction bullets are replaced by one shared takeaway. The small caption identifies this as feedback on the idea, with no product use.
 
 Latest copy: Aarav is labeled Stanford student, with former Kairo Securities internship beneath. Shared points emphasize continuous monitoring as a point of difference in the pitch and AI-assisted coding as the reason ongoing checks felt timely. These paraphrase the user-reported reaction and do not add product use or specific career anecdotes.
+
+## Current lower-section design
+
+The user rejected the bullet-list formatting. The lower section now uses one charcoal workflow strip: More AI-written code → Continuous monitoring, with short supporting lines and one shared feedback summary. The What they liked heading, bullets, divider and standalone caption are removed. This remains a paraphrase of the team's reported pitch conversations; no product use or new experiences are added. Participant bios and portrait crops remain unchanged.

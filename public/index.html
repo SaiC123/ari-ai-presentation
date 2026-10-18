@@ -969,13 +969,12 @@
     .market-call-phase .call-profile-copy h3{font-size:28px;line-height:1.15;letter-spacing:-.025em;color:var(--ink)}
     .market-call-phase .call-role{font-size:19px;line-height:1.4;color:var(--ink);margin-top:14px}
     .market-call-phase .call-background{font-size:17px;line-height:1.4;color:var(--muted);margin-top:14px}
-    .market-call-phase .call-takeaway{margin-top:32px;padding-top:26px;border-top:1px solid var(--line)}
-    .market-call-phase .call-takeaway h3{font-size:25px;font-weight:600;color:var(--acid)}
-    .market-call-phase .call-takeaway ul{margin:12px 0 0;padding-left:24px;font-size:21px;line-height:1.4;max-width:1080px;color:var(--ink)}
-    .market-call-phase .call-takeaway li{list-style:disc}
-    .market-call-phase .call-takeaway li+li{margin-top:8px}
-    .market-call-phase .call-takeaway strong{font-weight:600}
-    .market-call-phase .call-scope{font-size:14px;line-height:1.4;color:var(--muted);margin-top:16px}
+    .market-call-phase .call-signal{display:grid;grid-template-columns:1fr 96px 1fr;column-gap:36px;row-gap:20px;align-items:center;margin-top:32px;padding:24px 28px;border-radius:16px;background:var(--ink);color:white}
+    .market-call-phase .call-signal-stage h3{font-size:28px;line-height:1.15;letter-spacing:-.025em;color:white}
+    .market-call-phase .call-signal-stage:last-of-type h3{color:#ffb09f}
+    .market-call-phase .call-signal-stage p{margin-top:8px;font-size:18px;line-height:1.3;color:#e7d6d0}
+    .market-call-phase .call-signal-arrow{display:block;width:96px;height:32px;fill:none;stroke:#ff8a75;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+    .market-call-phase .call-signal-summary{grid-column:1/-1;font-size:16px;line-height:1.4;color:#e7d6d0}
     @media(prefers-reduced-motion:reduce){.market-call-phase{transition:none;transform:none}}
   </style>
 </head>
@@ -1265,8 +1264,12 @@ REFERENCE, NOT SPOKEN: Preserve nine-competitor landscape and linked primary sou
               </div>
             </article>
           </div>
-          <div class="call-takeaway"><h3>What they liked</h3><ul><li><strong>Continuous monitoring:</strong> the clearest point of difference in the pitch.</li><li><strong>AI-assisted coding:</strong> a timely reason to keep checking code as it changes.</li></ul></div>
-          <p class="call-scope">Early feedback on the concept · Neither participant used the product</p>
+          <div class="call-signal" aria-label="Shared takeaway from two pitch conversations">
+            <div class="call-signal-stage"><h3>More AI-written code</h3><p>Faster shipping. More change.</p></div>
+            <svg class="call-signal-arrow" viewBox="0 0 96 32" aria-hidden="true"><path d="M2 16h88M78 4l12 12-12 12"/></svg>
+            <div class="call-signal-stage"><h3>Continuous monitoring</h3><p>Security that keeps checking.</p></div>
+            <p class="call-signal-summary">Both saw this as a reason Ari could stand out for teams building with AI.</p>
+          </div>
         </div>
       </section>
 

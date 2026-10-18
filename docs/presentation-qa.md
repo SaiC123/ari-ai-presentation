@@ -170,3 +170,7 @@ Per the user's screenshot request, removed both visible design-partner ask lines
 ## Aarav label and stronger shared feedback
 
 The user clarified Aarav is the non-GT participant/former Kairo intern. Changed his heading to Stanford student and role to Former intern at Kairo Securities; adjusted alt/reference copy. Replaced shared paragraph with two concise points on continuous monitoring as the pitch differentiator and AI-assisted coding making ongoing checks timely. No invented individual experiences or product use. Eight targeted presentation/rubric tests anddiffcheckpass;Chrome desktop/scaled label,2bullets andfooterfit checked,desktop screenshot inspected. Assets,script,other17slides and allnavigation unchanged.
+
+## Shared takeaway reformatted without bullets
+
+User rejected the lower What they liked section and asked for a different visual structure. Replaced the heading/list/divider/standalone caption with one charcoal strip matching Ari's established comparison palette: More AI-written code → Continuous monitoring, short supporting lines and one reported-pitch takeaway. Portraits/bios/top section retained, no fabricated details added. Eight targeted rubric/evidence tests anddiffcheckpass. Chrome1280/960stripbounds/overflow,absenceofoldlist/footer,rewind2→3and0pageerrors checked;desktop/scaledcaptures inspected. Onlyslide10sectionchanged;allspoken/referenceattrs,assets,script/model/other17slides unchanged. No deployment claim.
