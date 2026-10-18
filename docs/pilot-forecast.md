@@ -2,51 +2,73 @@
 
 Researched October17,2026. Proposed scenario, not traction or probability-calibrated forecast.
 
-## Current conservative pilot forecast
+## Current benchmark-derived pilot forecast
 
-This baseline supersedes the42-new-paid/month scenario. Prices and allowances stay unchanged: Founder49.99/7, Growth129.99/20, Scale359.99/60. All modeled payers use Founder at full included usage; no upgrades assumed.
+Proposed workspace plans: Founder $49.99 / 7 assessments, Growth $129.99 / 20, Scale $359.99 / 60. Effective included-assessment prices are $7.14, $6.50 and $6.00 respectively. Both monthly run and assessed-line limits apply; extra usage is not unlimited. These are pilot prices; future changes require measured delivery costs and customer-value validation.
 
-Five unpaid pilots in M1 cost661.50:500sharedtools plus161.50delivery.18.2%initialcohortconversion is an organic opt-in trial proxy from [FirstPageSage](https://firstpagesage.com/seo-blog/saas-free-trial-conversion-rate-benchmarks/), not measured Ari assisted-pilot conversion. It yields0.91expectedM2converts, actual0–5. Add **two new direct-paid accounts/month from M2**, an explicit founder-outreach planning target, not a research benchmark.2%monthlypaidchurn is a separate assumption. M2total2.91expectedpayers approximately matches the initial three-buyer adoption goal, but it does NOT mean3/5freepilots converted: about1is modeled from the free cohort and2from separate direct-paid acquisition. No ongoing free assessments for new prospects are modeled; add their cost before offering them.
+Finance is slide13 in the18-slide deck. Initial cohort: five unpaid pilots in M1. All modeled paid accounts use Founder, with seven full assessments consumed monthly. No tier upgrades assumed. Conversion of18.2% gives0.91 expected initial-cohort payers in M2, not a fractional real customer. Actual conversion is0–5. Monthly paid churn2% is a separate unvalidated assumption.
 
-The outreach target requires validation through contact→call→paid tracking, channel attribution and founder time. No evidence establishes2newpaid/month. It is a conservative planning choice, not statistically calibrated. Do not claim ChartMogul median time to1,000subscribers proves constant acquisition; that42/month arithmetic is not the baseline.
+[ChartMogul's Go-To-Market Report](https://chartmogul.com/reports/saas-go-to-market-report/) reports a median B2B time of about two years to1,000 subscribers across its SaaS sample. The approved planning intake is round(1,000/24) = **42 new paid accounts/month from M2**. This is a derived linear gross-intake scenario, **not a published monthly average**, matched acquisition benchmark, Ari traction or guarantee. Time-to-milestone does not imply constant acquisition; churn and the initial free period mean this scenario does not reach1,000 net subscribers by M24.
 
-Free Founderunitcost32.30, paidunitcost34.04971, contribution15.94029. Monthly cash coverage requires32wholeactivepayingFounderaccounts. The12monthbaseline reaches **20.67expectedpayers in M12**, revenue1033.31, cost1203.82. Neither monthly coverage nor cumulative recovery occurs inYear1. **Peak cash funding need:4047.02 acrossYear1**, not an all-in launch budget or external funding request. Five new paid/month sensitivity reaches monthly coverage inM8, but cumulative recovery still not inYear1; do not present it as proven growth.
+[FirstPageSage's trial report](https://firstpagesage.com/seo-blog/saas-free-trial-conversion-rate-benchmarks/) reports18.2% organic opt-in trial-to-paid conversion. This is not evidence for Ari's assisted pilots. The M2 conversion timing is assumed.
 
-Delivery cost provenance:1.90API/run is team demo input, not independently measured production average. Sandbox1/run, AWS7/account and support/storage5/12/30 are unvalidated estimates; reconcile overlaps. Payment estimate2.9%+0.30 is for standard U.S. domestic online cards, not every payment method or country; fees vary. Source: https://stripe.com/pricing .
+Shared fixed tools budget: $500/month. Free Founder account: $32.30 = $13.30 API + $7 sandbox + $7 AWS + $5 support/storage. M1: $500 + five × $32.30 = **$661.50**, with no revenue or payment fees. Paid Founder variable cost: **$34.04971**, including $1.74971 payment processing. Contribution: $15.94029; minimum monthly cash coverage: **32 whole active paying Founder accounts**.
 
-Proposed cost-validation gate: record every pilot assessment's repository size, tokens and billed API cost, retries, sandbox runtime, AWS allocation, stored evidence, support minutes, test/verification result and repair acceptance. Compare actual cohort contribution at full promised allowance before expanding; record founder support time even though salaries are excluded. This is a plan, NOT completed measurement or passed gate.
+With the approved42/month intake, monthly cash coverage occurs in **M2** at42.91 expected payers: revenue $2,145.07, cost $1,961.07, net $184.00. Earlier losses recover in **M3**. Peak modeled funding gap is **$661.50**, in M1. These are conditional cash-model outputs, not full-business profitability or proof of sustainable acquisition.
 
-Excluded: founder compensation/labor, paid acquisition, taxes, legal/compliance, unmeasured onboarding and additional rechecks/overages.500monthly tools is not total cost. Fixed tooling and usage costs may rise; update from invoices. Maintain a cash runway cap and scope approval; no unlimited monitoring promise. No cost or growth values have been fabricated as observations.
+The full twelve-month graph is always visible. Three manual milestone callouts show M1 launch, M2 conversion/growth and monthly break-even (also M2 under current assumptions). The right panel shows users, revenue, cost and net. No month-by-month autoplay or selectors. Forward/rewind and reduced-motion states are tested.
 
-Three forecast callouts: M1launch, M2conversion/acquisition plan, M12funding review. Full12months visible, no selectors or auto month playback; right panel displays current expected payers/cash. Coverage and recovery correctly say not inYear1.
+Excludes founder pay/labor, taxes, legal/compliance, paid acquisition, onboarding labor, extra re-checks and unforeseen overages. API $1.90/assessment is team-reported demo usage, not an audited production average; sandbox, AWS and support allowances remain forecasts. Validate across repository sizes before selling. Future pilot price increases are not modeled. The100–200 customer growth target and market proxies are separate from break-even.
 ## Twelve-month table
 
 | Month | Free accounts | Expected paying accounts | Revenue | Cost | Monthly net | Cumulative net |
 |---|---:|---:|---:|---:|---:|---:|
 | M1 | 5 | 0.00 | $0.00 | $661.50 | $-661.50 | $-661.50 |
-| M2 | 0 | 2.91 | | Month | Free accounts | Expected paying accounts | Revenue | Cost | Monthly net | Cumulative net |
+| M2 | 0 | 42.91 | $2145.07 | | Month | Free accounts | Expected paying accounts | Revenue | Cost | Monthly net | Cumulative net |
 |---|---:|---:|---:|---:|---:|---:|
-45.47 | $599.08 | $-453.61 | $-1115.11 |
-| M3 | 0 | 4.85 | $242.54 | $665.20 | $-422.66 | $-1537.77 |
-| M4 | 0 | 6.75 | $337.67 | $730.00 | $-392.33 | $-1930.10 |
-| M5 | 0 | 8.62 | $430.90 | $793.50 | $-362.60 | $-2292.70 |
-| M6 | 0 | 10.45 | $522.26 | $855.73 | $-333.47 | $-2626.17 |
-| M7 | 0 | 12.24 | $611.79 | $916.71 | $-304.92 | $-2931.09 |
-| M8 | 0 | 13.99 | $699.54 | $976.48 | $-276.94 | $-3208.03 |
-| M9 | 0 | 15.71 | $785.53 | | Month | Free accounts | Expected paying accounts | Revenue | Cost | Monthly net | Cumulative net |
+961.07 | | Month | Free accounts | Expected paying accounts | Revenue | Cost | Monthly net | Cumulative net |
 |---|---:|---:|---:|---:|---:|---:|
-035.05 | $-249.52 | $-3457.54 |
-| M10 | 0 | 17.40 | $869.80 | | Month | Free accounts | Expected paying accounts | Revenue | Cost | Monthly net | Cumulative net |
+84.00 | $-477.50 |
+| M3 | 0 | 84.05 | $4201.75 | $3361.94 | $839.81 | $362.31 |
+| M4 | 0 | 124.37 | $6217.29 | $4734.79 | | Month | Free accounts | Expected paying accounts | Revenue | Cost | Monthly net | Cumulative net |
 |---|---:|---:|---:|---:|---:|---:|
-092.45 | $-222.65 | $-3680.19 |
-| M11 | 0 | 19.05 | $952.38 | | Month | Free accounts | Expected paying accounts | Revenue | Cost | Monthly net | Cumulative net |
+482.51 | | Month | Free accounts | Expected paying accounts | Revenue | Cost | Monthly net | Cumulative net |
 |---|---:|---:|---:|---:|---:|---:|
-148.70 | $-196.31 | $-3876.51 |
-| M12 | 0 | 20.67 | | Month | Free accounts | Expected paying accounts | Revenue | Cost | Monthly net | Cumulative net |
+844.81 |
+| M5 | 0 | 163.88 | $8192.53 | $6080.18 | $2112.35 | $3957.16 |
+| M6 | 0 | 202.61 | | Month | Free accounts | Expected paying accounts | Revenue | Cost | Monthly net | Cumulative net |
 |---|---:|---:|---:|---:|---:|---:|
-033.31 | | Month | Free accounts | Expected paying accounts | Revenue | Cost | Monthly net | Cumulative net |
+0128.26 | $7398.66 | $2729.59 | $6686.76 |
+| M7 | 0 | 240.55 | | Month | Free accounts | Expected paying accounts | Revenue | Cost | Monthly net | Cumulative net |
 |---|---:|---:|---:|---:|---:|---:|
-203.82 | $-170.51 | $-4047.02 |
+2025.27 | $8690.78 | $3334.49 | | Month | Free accounts | Expected paying accounts | Revenue | Cost | Monthly net | Cumulative net |
+|---|---:|---:|---:|---:|---:|---:|
+0021.25 |
+| M8 | 0 | 277.74 | | Month | Free accounts | Expected paying accounts | Revenue | Cost | Monthly net | Cumulative net |
+|---|---:|---:|---:|---:|---:|---:|
+3884.35 | $9957.05 | $3927.30 | | Month | Free accounts | Expected paying accounts | Revenue | Cost | Monthly net | Cumulative net |
+|---|---:|---:|---:|---:|---:|---:|
+3948.54 |
+| M9 | 0 | 314.19 | | Month | Free accounts | Expected paying accounts | Revenue | Cost | Monthly net | Cumulative net |
+|---|---:|---:|---:|---:|---:|---:|
+5706.24 | | Month | Free accounts | Expected paying accounts | Revenue | Cost | Monthly net | Cumulative net |
+|---|---:|---:|---:|---:|---:|---:|
+1198.00 | $4508.24 | | Month | Free accounts | Expected paying accounts | Revenue | Cost | Monthly net | Cumulative net |
+|---|---:|---:|---:|---:|---:|---:|
+8456.79 |
+| M10 | 0 | 349.90 | | Month | Free accounts | Expected paying accounts | Revenue | Cost | Monthly net | Cumulative net |
+|---|---:|---:|---:|---:|---:|---:|
+7491.70 | | Month | Free accounts | Expected paying accounts | Revenue | Cost | Monthly net | Cumulative net |
+|---|---:|---:|---:|---:|---:|---:|
+2414.13 | $5077.57 | $23534.36 |
+| M11 | 0 | 384.91 | | Month | Free accounts | Expected paying accounts | Revenue | Cost | Monthly net | Cumulative net |
+|---|---:|---:|---:|---:|---:|---:|
+9241.44 | | Month | Free accounts | Expected paying accounts | Revenue | Cost | Monthly net | Cumulative net |
+|---|---:|---:|---:|---:|---:|---:|
+3605.93 | $5635.51 | $29169.87 |
+| M12 | 0 | 419.21 | $20956.19 | | Month | Free accounts | Expected paying accounts | Revenue | Cost | Monthly net | Cumulative net |
+|---|---:|---:|---:|---:|---:|---:|
+4773.90 | $6182.29 | $35352.16 |
 
 ## Reproduce
 

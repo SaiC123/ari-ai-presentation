@@ -501,3 +501,13 @@ Excluded: founder compensation/labor, paid acquisition, taxes, legal/compliance,
 Three forecast callouts: M1launch, M2conversion/acquisition plan, M12funding review. Full12months visible, no selectors or auto month playback; right panel displays current expected payers/cash. Coverage and recovery correctly say not inYear1.
 
 Current finance script: Our pilot prices start at forty-nine ninety-nine. Growth costs an estimated eighty-one dollars to deliver, leaving a modeled thirty-eight percent contribution margin before shared costs. API usage comes from our demo assumption; infrastructure and support remain estimates. During five pilots, we will log billed tokens, sandbox runtime, storage and support time for every assessment. We will expand only after observing positive contribution at the promised allowance. Our conservative plan assumes two new paid accounts monthly, plus initial pilot conversions, not forty-two. It does not break even in year one: monthly coverage requires thirty-two Founder accounts, and the model needs about four thousand dollars of funding across the year. Founders initially fund operations and reinvest receipts. These figures exclude founder pay, paid acquisition and extra usage.
+
+## Current user-approved growth scenario: 42 new paid accounts/month
+
+Supersedes the two/month baseline. Founder49.99/7, Growth129.99/20 and Scale359.99/60 and team-supplied cost inputs are retained. No cost information needs to be resubmitted.
+
+Citation immediately below42: [ChartMogul2025 Go-To-Market Report](https://chartmogul.com/reports/saas-go-to-market-report/) reports median B2B time of about24months to1,000subscribers.42=round(1000/24) is our derived linear **planning target**, NOT measured average monthly new customers, an acquisition guarantee or a matched Ari pilot benchmark. Separate2%monthlychurn andM1freeperiod mean this model does not replicate1,000netaccountsbyM24. No stronger direct benchmark for42found; do not invent one.
+
+With18.2%initial-cohort conversion proxy, M2expectedpayers42.91, firstmonthlycashcoverageM2, cumulative recoveryM3, peakfundinggap661.50. Minimummonthlycoverage32wholeactiveFounderaccounts. These are conditional model outputs, not fullbusinessprofitability; founderpay,paidacquisition,extrausage/legal/taxes remain excluded. Full12monthseries and3keycallouts retained.
+
+The adoption slide's three total paid is an initial pilot recruitment goal, separate from this expanded growth scenario, not3/5measuredconversion. Costs are the user's supplied planning breakdown, not a provider invoice audit; per-run measurement template remains available without claiming data collection has occurred. Latest Alan/ai4feedbackimages/date/highlight updates are preserved.
