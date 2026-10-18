@@ -144,3 +144,9 @@ Added the user's unmodified `IMG_9889.png` as `public/feedback/video-call.png`, 
 Converted supplied `IMG_2538.heic` to1206×2622PNG using sips and added it as `public/feedback/video-call-2.png`. Both call images appear uncropped in matched212×460panels on the right of the existing featured-email reveal. Email/quote left width664px; quote uses balanced wrapping; marker is relative to full email-image dimensions for stable alignment. No new identities or claims added, no new slide/build.
 
 13Python tests pass anddiffcheckpasses. Chrome gallery/focus/rewind/reducedmotion checked with0pageerrors; final1280×720 and960×540captures inspected, bothimagesload/object-fitcontain, portraits fitviewport and do not overlap quote. Onlyslide12markup changed; allspoken/reference attrs and other17slides retained,includingai-2's latestslide10. NewassetmatchesconvertedPNGbytes;originalHEIC read-only. Production publication not claimed.
+
+## Replacement Jordan email screenshot
+
+Replaced `public/feedback/jordan.png` byte-for-byte with the latest user-supplied screenshot in both slide12 views. Four markers now follow the new reported20minutes,400response,78regressiontests and12newinjectiontests. Gallery excerpt and large verbatim quote updated; attribution explicitly says staging; reference note corrects superseded merged/parameterized-query wording and treats the few-hours alternative as the sender's estimate. Both call photos retained; no new outcome execution claimed.
+
+13Python tests pass, including updated exact-quote provenance assertion;diffcheckpasses. Chrome gallery/focus screenshots visually inspected,8gallerymarkers/4featuredmarkers,rewind/scaledcontainment/reducedmotion checked with0pageerrors. Newimagebytes matchattachment;onlyslide12section changed,allspokenattrs unchanged. Commit/push requested;production publication not claimed.

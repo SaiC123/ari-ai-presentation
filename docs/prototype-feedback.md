@@ -3,7 +3,7 @@
 Added October 17, 2026. Five screenshots supplied by the user for the evidence build, now slide 12. These are reported prototype outcomes, not independently reproduced run artifacts, paid adoption, or proof of general production effectiveness.
 
 - `public/feedback/priya.png`: Priya Shah, Mosaic Relay. Reports billing-event idempotency repair, repeated-event case and normal payment tests passing, and retained regression test.
-- `public/feedback/jordan.png`: Jordan Ellis, CTO, Harborseed Studio. Reports a reviewed parameterized query. Featured exact excerpt: “injection case stopped working; existing search tests passed.”
+- `public/feedback/jordan.png`: Jordan Ellis, CTO, Harborseed Studio. Current replacement email reports about20minutes for trace review/apply/retest, blocked injection returning400,78regressiontests passing and12newinjectiontests passing in staging. Featured exact excerpt: “I also added 12 new injection test cases and those are passing as well.”
 - `public/feedback/maya.png`: Maya Chen, Cedarline Labs. Reports cross-workspace request blocked and regular invites still working on a test branch; asks to continue testing.
 - `public/feedback/alex.png`: Alex Rivera, Fieldnote Systems. Reports generic error response, details retained in logs, error tests passed on test branch; says the finding was understandable.
 - `public/feedback/samira.png`: Samira Okafor, Engineering Lead, Juniper Trace. Reports traversal input rejected and normal upload passed. Requests clearer repository permissions and code-processing information before widening the trial.
@@ -34,3 +34,7 @@ The user requested `IMG_9889.png` on slide12. Its unaltered original is saved as
 ## Second supplied call image
 
 Added `IMG_2538.heic`, converted with macOS ImageIO/sips to a browser-compatible1206×2622PNG at `public/feedback/video-call-2.png`; the original HEIC remains unchanged. Both call screenshots appear uncropped in matching side-by-side portrait panels in slide12's existing second reveal. The featured email and highlighted quote remain at left. The email's marker is now positioned relative to the full image so resizing preserves alignment. No participant identity or role is asserted. Gallery, script, slide count and other slides are unchanged.
+
+## Current Jordan replacement
+
+The latest user-supplied screenshot (`codex-clipboard-17665343-7144-4a8d-a9f4-e239dac021e8.png`) replaces Jordan's earlier image in both gallery and featured view. Current email supersedes earlier descriptions of an accepted/merged parameterized-query fix. It reports approximately20minutes for review/apply/retest, a400response blocking injection,78regressiontests and12newpassinginjectiontests in staging, explicitly not production. The counterfactual few-hours duration is the sender's estimate, not a measured baseline or a computed time-saving percentage. Yellow overlays mark the four reported numerical details; gallery and enlarged quotes are verbatim from the replacement. Existing two call images are retained. Current requested improvements include PR integration and grouping related findings; no claim these shipped. No new independent customer assessment was performed.
