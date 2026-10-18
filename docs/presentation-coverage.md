@@ -22,14 +22,14 @@ Criterion names and five-point anchor summaries below come from Sai's repository
 | 16 | Costs & Sustainability | Supplied cost buckets preserved; contribution/full-profit distinction, cost/support sensitivities and measured-cost expansion gate added. |
 | 17 | Adoption & First Pilot | Slide15 and pilot-plan.md specify channels, owner roles, tracking, initial100/30/10/5/3-total-paid goals and five-record scorecard. No signed partner claim. |
 | 18 | Roadmap & Scale | Slide16 gives owners, exits, resources, risks and fallback decisions. Pilot plan exposes unvalidated workload behind42/month scenario. |
-| 19 | Clear Story & Evidence | Same18-slide order;438-word draft follows assigned speakers and ends with one five-partner ask. Actual demo-inclusive rehearsal remains necessary. |
+| 19 | Clear Story & Evidence | Same18-slide order;661-word prepared script follows assigned speakers and ends with one five-partner ask. Actual demo-inclusive rehearsal remains necessary. |
 | 20 | Q&A & Assumptions | Q&A explicitly excluded from edits. Sources, economic sensitivities, comparator protocol and single unresolved-evidence checklist preserve supported assumptions for the team's preparation. No Q&A readiness claim. |
 
 Weights relayed by Sai: Problem & Impact25; Innovation & Solution15; Prototype & Execution25; Business & Scale25; Presentation & Pitch10. Each criterion scores1–5. Scores require judges and actual evidence; no100/100 guarantee.
 
 ## Timing and originality guidance
 
-Sai relayed preliminary5-minute pitch plus4-minute Q&A and final8-minute pitch plus6-minute Q&A, with demo inside pitch time. Equal speaking time is not required. The438-word draft alone is about3m22s at130wpm; estimated transitions and the actual demo must also fit. No timed rehearsal is claimed.
+Sai relayed preliminary5-minute pitch plus4-minute Q&A and final8-minute pitch plus6-minute Q&A, with demo inside pitch time. Equal speaking time is not required. The661-word prepared script alone is about5m05s at130wpm or4m24s at150wpm, before the full demo and handoffs. A five-minute preliminary pitch requires a shorter version based on the actual demo budget; the eight-minute final allocation still requires rehearsal. No timed rehearsal is claimed.
 
 The user confirmed no Ari project work was built beforehand and permission for all five feedback emails. Existing tools/libraries/licensed assets still require disclosure. See `originality-disclosure.md` and the single remaining-evidence checklist `hackatl-evidence-needed.md`.
 

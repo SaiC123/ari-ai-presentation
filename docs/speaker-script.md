@@ -1,30 +1,32 @@
 # Ari non-demo speaker script
 
-438 spoken words. Draft only; not a verified five-minute rehearsal. Demo and Q&A are excluded. At 130 words/minute this text alone takes about 3.4 minutes, before animations and speaker handoffs. Rehearse the full event allocation and reserve actual demo time.
+661 prepared spoken words: 651 in the 18 slide passages plus 10 in Vihaan’s brief demo introduction. Splitting hyphenated compounds gives 697 words, still below the 700-word cap. The actual prototype demonstration and Q&A are excluded and unchanged. This is a script budget, not a timed rehearsal.
+
+Aligned to ai-4’s final presentation commit `2ca1bac` and the supplied speaker assignments. `public/index.html` and its shorter `data-spoken`/notes draft are intentionally unchanged by this script-only handoff. [Timing and scope](ai4-timing-pass.md) records the preliminary/final limits and remaining rehearsal requirement.
 
 ## Slide 1 · Sarosh
 
-Imagine a founder shipping with AI and no security team. This founder and these figures are hypothetical.
+Meet a hypothetical founder after AI. Four-point-two million raised. Twelve thousand customers. Thirty deployments a week. Zero security hires. All vibe-coded. Everything works.
 
 ## Slide 2 · Sarosh
 
-A missing ownership check can expose another customer’s data.
+Until one missing permission check lets someone read another customer’s data.
 
 ## Slide 3 · Sarosh
 
-Customers, jobs and trust are at risk. The liability figure is illustrative.
+Then everything breaks. Customers leave. Eighteen jobs disappear. The company closes. Behind those numbers are a founder’s livelihood, a team, and their customers’ trust.
 
 ## Slide 4 · Sarosh
 
-Veracode’s 2025 benchmark found 45 percent of generated samples failed security tests. Separately, Check Point reports rising attack attempts. These studies do not establish that AI coding caused that rise.
+Proposing a fix isn’t independently verifying it. Veracode’s twenty twenty-five benchmark found forty-five percent of generated samples failed security tests. Separately, Check Point reported roughly seventy percent more attack attempts from twenty twenty-three to twenty twenty-five. That doesn’t establish AI coding caused the increase.
 
 ## Slide 5 · Sarosh
 
-AI expands what small teams can build. Security still needs proof.
+AI expanded what small teams can build. It didn’t remove the need for security expertise. Working software still needs proof.
 
 ## Slide 6 · Sarosh
 
-Our proposed buyer is a SaaS founder or engineering lead using AI without dedicated security staff. We are testing their needs around review time, clear evidence and code privacy.
+Our proposed customer is a small, founder-led SaaS startup using AI without dedicated security staff. We hypothesize a review-capacity gap and will test priorities around time, evidence, and code privacy.
 
 ## Slide 7 · Srihith
 
@@ -32,46 +34,48 @@ This is Ari.
 
 ## Slide 8 · Srihith
 
-We built version-aware context, bounded orchestration and verification during HackATL. Shared intent connects the reviewer and seven specialists, from investigating a weakness to proposing a repair.
+Ari connects code review, seven security specialists, and monitoring around one code version. During HackATL, we built context, orchestration, and verification integration using third-party models and libraries. Scout maps. Probe tests. Trace links evidence. Diagnose finds causes. Patch proposes repairs. Fortify recommends guardrails. Verify independently retests.
 
 ## Slide 9 · Srihith
 
-Approval keeps the repair within human control. Separate verification checks it independently, then saves regression evidence for future changes. Monitoring requests fresh checks; reinforcement learning stays in simulation.
+Human approval keeps repairs within scope. Separate verification independently checks the evidence, then saves regressions for future changes. Monitoring can request fresh checks. Defense Lab learns through trial and error in simulation, without autonomous production actions.
 
 ## Slide 10 · Srihith
 
-Nine competitors already offer overlapping scanning, remediation and attack validation. Ari proposes a connected small-team workflow. Comparative performance remains unvalidated; assessment costs and human review are tradeoffs.
+Nine competitors already offer overlapping capabilities. Our proposed value links business intent, investigation, approved repair, and independent verification for small teams. Costs and human review are tradeoffs; comparative performance needs validation.
 
 ## Slide 11 · Srihith
 
-Connect an authorized repository, review evidence and approve the repair scope. Verification returns test evidence. The complete prototype chain uses scripted AI responses; product usability still needs observed testing.
+Connect an authorized repository, review evidence, and approve a proposed repair. Verification returns test results and saved evidence. Our complete prototype chain uses scripted AI responses. Product usability still needs observed testing.
 
-[Nonspoken handoff: Vihaan presents the prototype demo here. Demo content and duration are outside this edit.]
+## Prototype after slide 11 · Vihaan
+
+I’ll identify which parts are live, recorded, scripted, or simulated.
 
 ## Slide 12 · Sai
 
-Five permitted feedback emails report reproduced issues and passing checks. Jordan reports the injection stopped and search tests passed. Samira’s request makes clearer permissions and code-processing explanations our next improvement.
+Five permitted emails report outcomes we haven’t independently rerun. Jordan, CTO of Harborseed Studio, says the injection stopped while existing search tests passed. Samira requested clearer permissions and code-processing explanations. That’s our next planned improvement.
 
 ## Slide 13 · Sai
 
-Pilot plans cost forty-nine ninety-nine, one hundred twenty-nine ninety-nine, and three hundred fifty-nine ninety-nine. At full allowance, modeled contribution is positive before shared tools and founder labor. Forty-two new paid accounts monthly is a derived planning target, not traction. With our supplied inputs, monthly cash coverage is conditional in month two and earlier losses recover in month three. We will log delivery costs and support time before expanding.
+Monthly plans offer seven assessments for forty-nine dollars and ninety-nine cents; twenty for one hundred twenty-nine dollars and ninety-nine cents; and sixty for three hundred fifty-nine dollars and ninety-nine cents. Growth’s modeled delivery cost is about eighty-one dollars, leaving thirty-eight percent contribution before shared expenses. Our Founder-plan scenario starts with five unpaid pilots and assumes forty-two new paid accounts monthly: a derived target dividing one thousand business-to-business subscribers by ChartMogul’s median twenty-four months, not observed acquisition. Monthly cash coverage is conditional in month two; earlier losses recover in month three. Six founders initially take no salaries, fund five hundred dollars in shared monthly tools, and reinvest surplus. Paid acquisition and extra usage are excluded.
 
 ## Slide 14 · Sai
 
-Census software publishers give us a broad proxy, not a count of qualified buyers. We must confirm SaaS fit, AI use, security staffing and the budget owner account by account.
+Using Census software publishers as a proxy and Growth pricing, our broad opportunity is twenty-point-seven million dollars annually, with a six-point-six-million-dollar starting segment. These firms still need qualification. One hundred to two hundred target customers would represent roughly one hundred fifty-six thousand to three hundred twelve thousand dollars annually at Growth pricing, not traction.
 
 ## Slide 15 · Sai
 
-Our first milestone is five authorized pilots and a goal of three total paid accounts. Each pilot records the outcome, repair decision, verification, cost, support time and willingness to continue or pay.
+Our first goal: one hundred targets, thirty conversations, ten design partners, five authorized pilots, and three total paid accounts. That’s separate from forty-two per month. We’ll record findings, repair decisions, verification, costs, support time, and willingness to pay before expanding.
 
 ## Slide 16 · Sai
 
-Named owner roles review the gates weekly. Live execution and five pilot records precede beta; paid decisions and measured contribution precede expansion. If a gate fails, narrow scope, fix reliability or reprice.
+Month one: a live-provider trace and five complete pilot records. Months two and three: paid decisions and measured contribution. Months four to six: isolation and reliability checks before multi-repository expansion. Owners review weekly. If reliability, permissions, or costs fail, narrow scope or reprice.
 
 ## Slide 17 · Sarosh
 
-Our six-person team brings the supplied research, engineering and business experience shown here.
+Our six founders bring Georgia House business-growth research, MIT agentic research, Georgia Tech reinforcement learning and industrial engineering, Apex146 data science, and 3Lines venture-capital experience.
 
 ## Slide 18 · Sarosh
 
-We are seeking five qualified SaaS design partners for authorized, scoped pilots.
+AI gave a founder the power to build. Trust takes evidence. From the first line of code to the next release: investigation, approved repair, and independent verification. We’re seeking five qualified SaaS design partners for authorized, scoped pilots. That’s Ari.

@@ -13,15 +13,24 @@ class PresentationEvidenceTests(unittest.TestCase):
         main = self.source.split('<main id="presentation-slides-wrapper"', 1)[1].split('</main>', 1)[0]
         self.slides = re.findall(r'<section class="slide[\s\S]*?</section>', main)
 
-    def test_script_matches_each_slide_and_speaker(self):
+    def test_script_speakers_and_word_budget(self):
         script = (ROOT / 'docs/speaker-script.md').read_text()
         passages = [html.unescape(re.search(r'data-spoken="([^"]+)"', s).group(1)) for s in self.slides]
         self.assertEqual(len(passages), 18)
         self.assertLess(sum(len(p.split()) for p in passages), 700)
-        for n, passage in enumerate(passages, 1):
+        # The authorized polishing handoff changes the script, not public slide notes.
+        sections = re.findall(r'^## (.+)\n\n([\s\S]*?)(?=^## |\Z)', script, re.M)
+        slide_sections = [(title, body) for title, body in sections if title.startswith('Slide ')]
+        self.assertEqual(len(slide_sections), 18)
+        for n, (title, body) in enumerate(slide_sections, 1):
             speaker = 'Sarosh' if n <= 6 or n >= 17 else 'Srihith' if n <= 11 else 'Sai'
-            self.assertIn(f'## Slide {n} · {speaker}\n\n{passage}', script)
-        self.assertIn('Vihaan', script)
+            self.assertEqual(title, f'Slide {n} · {speaker}')
+            self.assertTrue(body.strip())
+        self.assertEqual([title for title, _ in sections if not title.startswith('Slide ')],
+                         ['Prototype after slide 11 · Vihaan'])
+        prepared = ' '.join(body for _, body in sections)
+        self.assertLessEqual(len(re.findall(r"[\w]+(?:[’'][\w]+)?", prepared)), 700)
+        self.assertNotIn('[ADD', prepared)
         self.assertNotIn('data-duration-s=', ''.join(self.slides))
 
     def test_slide_five_attributes_are_well_formed(self):

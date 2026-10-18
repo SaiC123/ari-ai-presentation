@@ -23,7 +23,7 @@ Founder49.99/7assessments/1Massessedlines; Growth129.99/20/5M; Scale359.99/60/20
 
 ## Canonical references
 
-- `speaker-script.md`:438-word non-demo script and exact speaker assignments.
+- `speaker-script.md`:661-word prepared text with exact speaker assignments and a brief demo introduction; full demo excluded.
 - `research-validation.md`: primary-source verification and population/price distinctions.
 - `pilot-plan.md`: proposed channel/owner/scorecard/capacity and roadmap gates.
 - `economic-sensitivity.md`: full-use, retries/larger-repo and support-time stresses.
