@@ -1,0 +1,25 @@
+{
+  "type": "AFTER",
+  "agent": "ai-1",
+  "utc": "2026-10-18T01:37:11.086466+00:00",
+  "summary": "AFTER 8d048b3 pushed/deployedREADY dpl_9aR2ADazHNRBYyGd9AzBip8SqphT. Finance13 grounding: retain prices7/20/60; cost cards distinguish demo input vs forecasts and define per-run cost log/positive observed contribution gate. Baseline2newdirectpaid/month fromM2+0.91initialconverts~3total; acquisition target not researched rate. NoYear1monthlycoverage/recovery,32accountthreshold,4047.02year1fundinggap. Full12monthgraph/3manualcallouts nowM1/M2/M12review. Adoption15label3Totalpaid and notes disambiguate direct vs pilot buyers. Alan slide10 and evidence12 unchanged. Notes/script/model/tests/CSV/docs updated, blank costmeasurementCSV provided, Outputs/Downloads synced.",
+  "commit": "8d048b3c9eb767c4c9db23d8f2e1fc3010c8a31b",
+  "changed_paths": [
+    "README.md",
+    "docs/cost-reconciliation.md",
+    "docs/hackatl-master-presentation-prompt.md",
+    "docs/hackatl-pitch-source-inventory.md",
+    "docs/pilot-cost-measurement.csv",
+    "docs/pilot-forecast.csv",
+    "docs/pilot-forecast.md",
+    "docs/presentation-qa.md",
+    "docs/pricing-narration.md",
+    "public/index.html",
+    "public/pilot-forecast.js",
+    "tests/pilot-forecast.test.cjs",
+    "tests/presentation-navigation.test.cjs"
+  ],
+  "verification": "81Node+7Python=88checks PASS; diffcheckclean. Section comparison13/15only;10/12unchanged. Browser1280x720 checkedcostprovenance/gatefit, conservativefullgraph M1/M2/M12values/fundinggap/no inventednull date. Finalproduction HTML+modelHTTP200exactsource. Stripe domesticfee/FirstPageSageproxysourceschecked. No actualproductioncosts/traction measured or claimed. Realpilotusage/support and acquisitionlogs remain required.",
+  "deployment_url": "https://ari-ai-presentation.vercel.app",
+  "lock_commit": "6ea25a996b6dcc633b548a7db87d62bfcd377572"
+}
