@@ -1,0 +1,8 @@
+{
+  "type": "BEFORE",
+  "agent": "ai-1",
+  "utc": "2026-10-18T06:28:30.996182+00:00",
+  "summary": "Add visual three-layer product overview as slide 8, retain the seven-agent explanation next, add a dedicated simulation-based Defense Lab slide immediately afterward, and align related scope wording, numbering, narration, and navigation checks.",
+  "lock_commit": "ad8e2b792e88d24a53199d89a0ddfae551466f0b",
+  "base_main": "6737a6fb895e8fda38b0b0ff2248e275a57aadfe"
+}
