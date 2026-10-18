@@ -1,0 +1,22 @@
+{
+  "type": "AFTER",
+  "agent": "ai-4",
+  "utc": "2026-10-18T09:24:13.649710+00:00",
+  "summary": "Four supplied email originals replaced; corresponding gallery points, source notes, narration/script and provenance updated. Jordan latest screenshot/focus retained. Pushed bf6da0d; existing-project deployment handoff posted.",
+  "commit": "bf6da0d2b358c448c1914f91d12ca5bc52d59637",
+  "changed_paths": [
+    "docs/ai4-timing-pass.md",
+    "docs/presentation-qa.md",
+    "docs/prototype-feedback.md",
+    "docs/speaker-script.md",
+    "public/feedback/alex.png",
+    "public/feedback/maya.png",
+    "public/feedback/priya.png",
+    "public/feedback/samira.png",
+    "public/index.html",
+    "tests/test_presentation_evidence.py"
+  ],
+  "verification": "14 Python tests and diff check pass. Four asset byte comparisons, Jordan unchanged and only slide14 content changed in19slides verified. Chrome1280/960 five images and summaries, no container clipping/control overlap, focus/rewind and zero page errors checked; final desktop screenshot inspected. No product execution or live deployment claimed.",
+  "deployment_url": "",
+  "lock_commit": "57a438728df4007ab65da4cc6cdd9a60d65c1d3b"
+}
