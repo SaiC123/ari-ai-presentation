@@ -1,0 +1,13 @@
+{
+  "type": "AFTER",
+  "agent": "ai-1",
+  "utc": "2026-10-18T05:19:07.176160+00:00",
+  "summary": "Removed slide 10's draft and not-their-exact-words labels per user confirmation that displayed quotations are verbatim; quote text retained",
+  "commit": "a502e5ca248f1ec81607bed972cdfda67f4fe8b6",
+  "changed_paths": [
+    "public/index.html"
+  ],
+  "verification": "81 Node and 13 Python tests passed; diff check passed; production HTML SHA256 matches public/index.html; clean worktree and local main equals origin/main",
+  "deployment_url": "https://ari-ai-presentation.vercel.app",
+  "lock_commit": "0c5fd45984e29652de38bec8d5cbc6ddec3b1d8a"
+}
