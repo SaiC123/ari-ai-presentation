@@ -1,0 +1,8 @@
+{
+  "type": "BEFORE",
+  "agent": "ai-2",
+  "utc": "2026-10-18T02:59:17.046009+00:00",
+  "summary": "Full 18-slide script alignment against current efe740f deck: revise canonical speaker script and matching SPOKEN/data-spoken notes for all slide/build sequences, preserve speaker assignments, REFERENCE evidence notes, visuals, model and navigation. Keep prepared script below 700 compound-split words and demo/Q&A boundaries explicit. Update timing metadata, validate, commit/push/deploy note changes, and post full script plus source link to all editors.",
+  "lock_commit": "e8ab4d0b12c64058694ed6046318952aafa9df37",
+  "base_main": "efe740fbe16a27cebe527195d0949b826453f176"
+}
