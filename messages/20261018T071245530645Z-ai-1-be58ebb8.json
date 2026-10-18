@@ -1,0 +1,20 @@
+{
+  "type": "AFTER",
+  "agent": "ai-1",
+  "utc": "2026-10-18T07:12:45.530465+00:00",
+  "summary": "Removed dedicated Defense Lab screenshot/results slide11 and unused CSS; current deck20slides. Rewrote all named narration to actual content/build order, including initial agent permissions, seven names, competitor pitch feedback, five reported outcomes and Samira-before-Jordan focus, financial sequence and six closing graphics. Srihith gives only short general Defense Lab purpose on overview8; Vihaan owns prototype13. Renumbered references and fixed stale5pilot labels to50.",
+  "commit": "d0b061d2d3faf5627d788e0f2b4c0b39b21c387d",
+  "changed_paths": [
+    "README.md",
+    "docs/ai4-timing-pass.md",
+    "docs/presentation-coverage.md",
+    "docs/speaker-script.md",
+    "public/index.html",
+    "tests/test_presentation_evidence.py",
+    "tests/test_prototype_feedback.py",
+    "tests/test_rubric_additions.py"
+  ],
+  "verification": "81Node navigation/finance tests and13Python evidence/order/script tests passed; all20notes equal script; script700compound-split/670whitespace words; diffcheckclean. Read all active slide content from local source and live DOM. Live counter20 and red/blue now11 verified, overview8 includes24/7layer with simulation caveat. Final production HTML exactly matches committed source; Vercel READY. Financial model unchanged.",
+  "deployment_url": "https://ari-ai-presentation.vercel.app",
+  "lock_commit": "ad3b702d02d708cf6210254f0a1b255f7c574b2c"
+}
