@@ -42,7 +42,7 @@ The reviewer learns intended behavior from docs, comments and tests. It checks e
 
 ## Slide 10 · Srihith
 
-Scout maps weaknesses. Probe tests them. Trace connects the attack path. Diagnose finds the cause. Patch proposes a repair. Fortify adds guardrails. Verify independently retests on a fresh checkout. Each has restricted tools; tests use an isolated app copy. Our HackATL contribution connects context, orchestration and verification.
+Each agent has restricted tools; tests use isolated app copies. Scout maps weaknesses. Probe tests them. Trace connects the attack path. Diagnose finds the cause. Patch proposes a repair. Fortify adds guardrails. Verify independently retests on a fresh checkout. Our HackATL contribution connects context, orchestration and verification.
 
 ## Slide 11 · Srihith
 
@@ -58,7 +58,7 @@ Here’s our prototype replay: choose a repository, inspect the ownership issue,
 
 ## Slide 14 · Sai
 
-Five emails report billing retries, SQL injection, workspace access, error disclosure and upload-path fixes. These aren’t independently audited. Jordan reports about twenty minutes, 78 regression tests and twelve new injection tests passing in staging. Samira requested clearer permissions and code-processing explanations. That’s our next improvement.
+Five emails report billing retries, SQL injection, workspace access, error disclosure and upload-path fixes. These aren’t independently audited. Samira requested clearer permissions and code-processing explanations. That’s our next improvement. Jordan reports about twenty minutes, 78 regression tests and twelve new injection tests passing in staging.
 
 ## Slide 15 · Sai
 
