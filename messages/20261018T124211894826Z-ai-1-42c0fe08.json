@@ -1,0 +1,16 @@
+{
+  "type": "AFTER",
+  "agent": "ai-1",
+  "utc": "2026-10-18T12:42:11.894572+00:00",
+  "summary": "Slide4 visible labels simplified: removed no-causal-link and not-all-AI-code/AI-generated-benchmark-samples phrases; source label now Veracode2025 Code security study. Kept source links, attack-attempt label and methodological reference notes. Refreshed stale existing Vercel project link; locally generated environment files remain ignored.",
+  "commit": "b1498085a709e1955e61d534ccdab1f0a2332738",
+  "changed_paths": [
+    ".gitignore",
+    "public/index.html",
+    "tests/test_presentation_evidence.py",
+    "tests/test_rubric_additions.py"
+  ],
+  "verification": "14Python tests and diffcheckpass; inspected2HTMLlabel changes. DeploymentREADYatb149808; liveHTTP200HTML exactly matches committed source, new label present and all requested visible phrases absent. Prior latest-main changes preserved; no new source claims or script edits.",
+  "deployment_url": "https://ari-ai-presentation.vercel.app",
+  "lock_commit": "39aa575248eb0d44a55a0e882217508406adb050"
+}
