@@ -1,8 +1,8 @@
 # Ari non-demo speaker script
 
-643 whitespace-separated spoken words; 682 with compounds and decimal values split, within the 700-word cap. Includes Vihaan’s brief demo introduction. The full prototype demonstration and Q&A are excluded. This is a script budget, not a timed rehearsal.
+670 whitespace-separated words; 700 with compounds and decimal values split. Within the 700-word cap, excluding the full prototype demonstration and Q&A. Not a timed rehearsal.
 
-Aligned to the current 21-slide deck. Code reviewer9, seven agents10, Defense Lab11, red/blue verification12, prototype14, reported feedback15, financials16. Defense Lab metrics are held-out simulation results, not production outcomes. Speaker notes match these passages.
+Matched to the current 20-slide deck and its build order. The dedicated Defense Lab screenshot/results slide is removed. Its brief general purpose is explained on overview8. Srihith covers7–12, Vihaan13, Sai14–18, and Sarosh1–6 plus19–20. The competitor/pitch-feedback reveal is12; reported prototype outcomes14; pricing, costs, forecast and shared tools15.
 
 ## Slide 1 · Sarosh
 
@@ -14,7 +14,7 @@ Until one missing permission check lets someone read another customer’s data.
 
 ## Slide 3 · Sarosh
 
-Then everything breaks. Customers leave. Jobs disappear. The company closes with an illustrative two-point-four million owed. People’s livelihoods and customers’ trust are at stake.
+Then everything breaks. Customers leave. Funding disappears. Eighteen jobs are lost. The company closes with an illustrative two-point-four million owed. People’s livelihoods and customers’ trust are at stake.
 
 ## Slide 4 · Sarosh
 
@@ -22,11 +22,11 @@ Working code isn’t security proof. Veracode’s 2025 benchmark found 45% of ge
 
 ## Slide 5 · Sarosh
 
-Software changes daily. Our problem: small teams can build faster with AI than they can fully check. Security still needs proof.
+Software changes daily. Small teams can build faster with AI than they can fully check. That’s the problem: security still needs proof.
 
 ## Slide 6 · Sarosh
 
-Our proposed customer: founder-led SaaS startups using AI without dedicated security staff. We’ll validate their review capacity, evidence needs, and code-privacy concerns.
+Our customer hypothesis is small, founder-led SaaS startups using AI without dedicated security staff. Their priorities: review time, expertise, clear evidence, and code privacy.
 
 ## Slide 7 · Srihith
 
@@ -34,60 +34,52 @@ This is Ari.
 
 ## Slide 8 · Srihith
 
-Ari is an AI engineering and security team, designed to check every code change: review, investigate, and keep watching. Every claim needs evidence.
+Ari combines a code reviewer, seven security agents, and Defense Lab. Think of Defense Lab as a 24/7 security layer: watching changes and triggering fresh checks. Its AI defender currently trains in simulation and only recommends. People decide.
 
 ## Slide 9 · Srihith
 
-The reviewer learns intended behavior from docs, comments and tests. It checks changes, writes a test that reproduces the bug, and drafts the smallest fix. Here, it spots a missing ownership check.
+The reviewer learns intended behavior from docs, comments and tests. It checks each commit, writes a test that reproduces the bug, and drafts the smallest fix. Here, it spots a missing ownership check.
 
 ## Slide 10 · Srihith
 
-Seven agents each have one job and only its required tools. They pass proof like a relay, testing in an isolated app copy. Our HackATL contribution connects context, orchestration and independent verification using third-party models.
+Scout maps weaknesses. Probe tests them. Trace connects the attack path. Diagnose finds the cause. Patch proposes a repair. Fortify adds guardrails. Verify independently retests on a fresh checkout. Each has restricted tools; tests use an isolated app copy. Our HackATL contribution connects context, orchestration and verification.
 
 ## Slide 11 · Srihith
 
-Defense Lab monitors changes and trains a defender in a practice network. Across 1,500 held-out simulated episodes, 7.1% reached the attack goal, versus 100% without defense. Service uptime was 94.4%. Average containment took 25.6 steps versus 158.3 with simple rules. The tradeoff: 75% of disruptive interventions hit not-yet-compromised services. These are simulation results. It recommends; people decide.
+Red proves the attack. Blue proposes the repair. Verify independently checks it. Your team approves changes. No AI output counts as proof. Including ours.
 
 ## Slide 12 · Srihith
 
-Nothing merges without human approval. No AI output counts as proof. Including ours.
+GitHub, Semgrep and Snyk illustrate this crowded market. Our proposed advantage is the connected workflow, not unique individual features. Costs and human review are tradeoffs. In early pitch feedback, a Kairo founder highlighted keeping checks current; a Stanford student valued fixing and checking changes. That’s feedback, not comparative validation.
 
-## Slide 13 · Srihith
+## Slide 13 · Vihaan
 
-Nine competitors offer overlapping capabilities. Our proposed value connects intent, investigation, approved repair, and independent verification for small teams. Assessment costs and human review are tradeoffs. Comparative performance remains unvalidated.
+Here’s our prototype replay: choose a repository, inspect the ownership issue, then the repair and before-and-after tests. I’ll distinguish live, recorded, scripted and simulated parts.
 
-## Slide 14 · Srihith
+## Slide 14 · Sai
 
-Here’s the demo replay: repository, ownership bug, repair, then before-and-after tests. These screenshots aren’t a new assessment. Full-chain AI responses are scripted; product usability needs testing.
-
-## Prototype after slide 14 · Vihaan
-
-I’ll identify which parts are live, recorded, scripted, or simulated.
+Five emails report billing retries, SQL injection, workspace access, error disclosure and upload-path fixes. These aren’t independently audited. Jordan reports about twenty minutes, 78 regression tests and twelve new injection tests passing in staging. Samira requested clearer permissions and code-processing explanations. That’s our next improvement.
 
 ## Slide 15 · Sai
 
-Five permitted emails report outcomes we haven’t independently rerun. Jordan says the injection stopped while existing search tests passed. Samira requested clearer permissions and code-processing explanations. That’s our next planned improvement.
+Pilot plans: $49.99 for seven assessments, $129.99 for twenty, and $359.99 for sixty. Growth delivery costs about $81, leaving 38% before shared expenses. Month one: fifty free pilots, costing $2,115; none start afterward. Conversion is unmeasured: 18.2% is an outside proxy. Forty-two monthly paid additions is a ChartMogul-derived target, not traction. Conditional monthly coverage: month two; cumulative recovery: month four. Six founders fund $500 monthly tools, take no salaries and reinvest surplus. Paid acquisition and extra usage are excluded.
 
 ## Slide 16 · Sai
 
-Pilot plans: $49.99 for seven assessments, $129.99 for twenty, and $359.99 for sixty. Growth delivery costs about $81, leaving 38% before shared expenses. Month one: fifty free pilots, costing $2,115; no new free pilots afterward. Conversion is unmeasured: 18.2% is an outside proxy. Forty-two monthly paid additions is a ChartMogul-derived target, not traction. Conditional monthly coverage: month two; cumulative recovery: month four. Founder pay, paid acquisition and extra usage are excluded.
+Census software-publisher proxies imply a $20.7 million annual market, narrowing to $6.6 million for smaller firms. Our 100–200-customer target represents $156,000–$312,000 annually at Growth pricing. These accounts still need qualification.
 
 ## Slide 17 · Sai
 
-Census software-publisher proxies at Growth pricing imply $20.7 million annually, with a $6.6 million starting segment. Accounts need qualification. Our 100–200-customer target represents $156,000–$312,000 annually, not traction.
+Our adoption plan: founder outreach and accelerators, authorized setup, scoped defense, then verification and a pay decision. Targets are one hundred contacts, thirty calls, ten design partners, fifty free pilot workspaces and three paid accounts. Measure outcomes, costs and support time before expanding.
 
 ## Slide 18 · Sai
 
-Through founder outreach and accelerators, our first goal is one hundred targets, thirty calls, ten design partners, fifty free pilot workspaces, and three total paid accounts. Free pilots stop after month one. Each pilot records outcomes, verification, costs, support time, and willingness to pay.
+Today: local prototype evidence. Month one: live-provider evidence and fifty pilot records. Months two and three: paid decisions and measured contribution. Months four to six: isolation and reliability before multi-repository expansion. Failed gates mean fixing, narrowing or repricing. Enterprise waits for controls and support.
 
-## Slide 19 · Sai
+## Slide 19 · Sarosh
 
-Month one: live-provider evidence and fifty pilot records. Months two and three: paid decisions and measured contribution. Months four to six: isolation and reliability before multi-repository expansion. Owners review weekly. Failed gates mean narrower scope or repricing. Enterprise waits for controls and support.
+Our six founders bring business-growth research, agentic AI, reinforcement learning, software engineering, industrial engineering and venture-capital experience, with the backgrounds shown here.
 
 ## Slide 20 · Sarosh
 
-Six founders bring Georgia House business-growth research, MIT agentic research, Georgia Tech reinforcement learning and industrial engineering, Apex146 software engineering, and 3Lines venture-capital experience.
-
-## Slide 21 · Sarosh
-
-AI gave a founder the power to build. Trust takes evidence. From the first line of code to the next release: investigation, approved repair, and independent verification. We’re seeking five qualified SaaS design partners for authorized, scoped pilots. That’s Ari.
+AI empowered founders to build. One unchecked flaw can break that progress. Seven specialists investigate. Red, Blue and Verify turn findings into checked repairs. Affordable pilots test the business. Evidence gates guide expansion. Ari connects it all, from the first change to the next release. That’s Ari.
