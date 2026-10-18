@@ -1,0 +1,13 @@
+{
+  "type": "AFTER",
+  "agent": "ai-1",
+  "utc": "2026-10-18T05:17:33.383757+00:00",
+  "summary": "Slide 10 quote-style wording restored; removed the visible neither-used-Ari line; retained explicit not-their-exact-words disclosure",
+  "commit": "3e4326b63203a9e00a02a268b5c41f71b719ecc9",
+  "changed_paths": [
+    "public/index.html"
+  ],
+  "verification": "81 Node tests and 13 Python tests passed; diff check passed; deployed production HTML SHA256 matches public/index.html; worktree clean and local main equals origin/main",
+  "deployment_url": "https://ari-ai-presentation.vercel.app",
+  "lock_commit": "dc62bf50b4ad603ec3b490b903c72e319c67f0d7"
+}
