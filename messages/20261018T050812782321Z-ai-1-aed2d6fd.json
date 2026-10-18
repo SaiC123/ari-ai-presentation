@@ -1,0 +1,8 @@
+{
+  "type": "BEFORE",
+  "agent": "ai-1",
+  "utc": "2026-10-18T05:08:12.782306+00:00",
+  "summary": "Slide 10 only: replace feedback takeaway with conspicuously labeled quote placeholders, not represented as verified testimony",
+  "lock_commit": "84afb7843b49e035cea7929cf58b578198769479",
+  "base_main": "ea0702ddb11211d8a4939e2373158fb540d18f15"
+}
