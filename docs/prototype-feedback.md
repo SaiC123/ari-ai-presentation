@@ -1,6 +1,6 @@
 # Supplied prototype feedback
 
-Added October 17, 2026. Five screenshots supplied by the user for the evidence build on slide 6. These are reported prototype outcomes, not independently reproduced run artifacts, paid adoption, or proof of general production effectiveness.
+Added October 17, 2026. Five screenshots supplied by the user for the evidence build, now slide 12. These are reported prototype outcomes, not independently reproduced run artifacts, paid adoption, or proof of general production effectiveness.
 
 - `public/feedback/priya.png` (IMG_7168): Priya Shah, Mosaic Relay. Reports billing-event idempotency repair, repeated-event case and normal payment tests passing, and retained regression test.
 - `public/feedback/jordan.png` (IMG_9790): Jordan Ellis, CTO, Harborseed Studio. Reports a reviewed parameterized query. Featured exact excerpt: “injection case stopped working; existing search tests passed.”
@@ -12,9 +12,9 @@ All screenshots are dated October 16, 2026. Original images are preserved withou
 
 ## Presentation states
 
-Slide 6 build 0: existing ICP. Build 1: two boxes, VC validation and Prototyping feedback & proof, showing all five emails. Build 2: enlarged Jordan email plus verbatim result; rewind restores build 1 and then build 0. Reduced motion removes the spatial transition. No unrelated slide, finance model, chart or global navigation logic changes.
+Slide 12 build 0: two boxes, VC validation and Prototyping feedback & proof, showing all five emails. Build 1: enlarged Jordan email plus verbatim result; rewind restores build 0, then the prototype verification section. Reduced motion removes the spatial transition. No finance model, chart or global navigation logic changes.
 
 
 ## Current placement
 
-Slide6 is now ICP/theme only. Slide7 is the Ari logo. Slide8 contains feedback/evidence immediately after the logo: entry shows the pending VC box and all five emails; one click zooms into Jordan and highlights the reported check. Next enters the solution on slide9; rewind returns to gallery then logo. Evidence content/provenance is unchanged. The deck now has18slides.
+Slide6 remains ICP/theme, slide7 the Ari logo, slide8 the solution, slide9 red/blue teams and slide10 comparison. Slide11 shows the prototype workflow and verification. Slide12 now contains feedback/evidence immediately afterward: entry shows the pending VC box and all five emails; one click zooms into Jordan and highlights the reported check. Next enters financials on slide13; rewind returns to gallery then prototype verification. Evidence content/provenance is unchanged. The deck still has18slides.

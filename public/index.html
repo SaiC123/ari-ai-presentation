@@ -848,7 +848,7 @@
 </head>
 <body>
   <div class="deck-shell">
-    <main id="presentation-slides-wrapper" aria-live="polite">
+<main id="presentation-slides-wrapper" aria-live="polite">
       <section class="slide active story-build" data-note="SPOKEN (0:00 to 0:18; about 18 seconds including clicks/pauses): Meet a founder building with AI: funding secured, customers arriving, releases moving quickly. There is no dedicated security team. This founder is fictional, but the workflow is our starting hypothesis.
 
 REFERENCE AND CUES, NOT SPOKEN: Start on the person alone. Click through funding, customers, deployment speed, zero security hires, then ALL VIBECODED. The person and figures are a fictional composite." data-spoken="Meet a founder building with AI: funding secured, customers arriving, releases moving quickly. There is no dedicated security team. This founder is fictional, but the workflow is our starting hypothesis." data-duration-s="18">
@@ -966,49 +966,10 @@ REFERENCE, NOT SPOKEN: This slide is ICP and theme fit only. Next shows the Ari 
         <img class="hero-ant" src="ari-ant-mark.png" alt="Ari ant logo" width="600" height="440">
       </section>
 
-      <section class="slide dark customer-story-slide feedback-slide" data-note="SPOKEN: Five supplied prototype-feedback emails report reproduced issues, reviewed repairs and passing checks. Here is Jordan's example: the injection case stopped working and existing search tests passed.
-
-REFERENCE, NOT SPOKEN: This feedback/evidence slide follows the Ari logo. Entry shows VC validation pending and the five supplied emails; one click enlarges Jordan's email and highlights the reported result. Next enters the solution. Left from the enlarged view returns to the gallery; Left from the gallery returns to the logo. Screenshots supplied by the team, dated October16,2026, are reported prototype outcomes, not independently audited run artifacts or five paying customers. Samira also asks for clearer repository permissions and code-processing explanations. Preserve that caveat in discussion. VC feedback remains pending. Sources: docs/prototype-feedback.md." data-spoken="Five supplied prototype-feedback emails report reproduced issues, reviewed repairs and passing checks. Here is Jordan's example: the injection case stopped working and existing search tests passed." data-duration-s="14">
-        <div class="slide-head"><span class="brand-mini"><img class="brand-ant" src="ari-ant-mark.png" alt="" aria-hidden="true">User Understanding / Evidence of Need</span><span class="slide-num">08</span></div>
-        <span class="build-trigger" data-build="1"></span>
-        <div class="customer-phase cp1">
-          <h2>Feedback. <span class="accent">Evidence.</span></h2>
-          <p class="feedback-summary">Prototype testers reported fixes that worked.</p>
-          <div class="validation-columns">
-            <article class="validation-box vc-validation">
-              <h3>VC validation</h3>
-              <div class="vc-placeholder">Investor perspective</div>
-              <p>Feedback pending.<br>VC quote to be added.</p>
-            </article>
-            <article class="validation-box prototype-validation">
-              <h3>Prototyping feedback &amp; proof</h3>
-              <p>Five feedback emails. Reproduced issues. Passing checks.</p>
-              <div class="feedback-gallery" aria-label="Five supplied prototype feedback emails">
-                <figure class="feedback-email"><img src="feedback/priya.png" alt="Email from Priya Shah reporting a billing retry fix and passing payment tests"><figcaption>Priya · Billing retries</figcaption></figure>
-                <figure class="feedback-email is-featured"><img src="feedback/jordan.png" alt="Email from Jordan Ellis reporting the injection case stopped working and search tests passed"><figcaption>Jordan · SQL injection</figcaption></figure>
-                <figure class="feedback-email"><img src="feedback/maya.png" alt="Email from Maya Chen reporting cross-workspace requests blocked while regular invites worked"><figcaption>Maya · Workspace access</figcaption></figure>
-                <figure class="feedback-email"><img src="feedback/alex.png" alt="Email from Alex Rivera reporting a generic error response and passing error tests"><figcaption>Alex · Error disclosure</figcaption></figure>
-                <figure class="feedback-email"><img src="feedback/samira.png" alt="Email from Samira Okafor reporting traversal rejected and normal uploads passed, and requesting clearer permission information"><figcaption>Samira · Upload paths</figcaption></figure>
-              </div>
-              <p class="feedback-cue">Next: a closer look at Jordan's result →</p>
-            </article>
-          </div>
-        </div>
-        <div class="customer-phase cp2">
-          <h2>A fix that held up <span class="accent">in testing.</span></h2>
-          <div class="email-focus">
-            <img src="feedback/jordan.png" alt="Jordan Ellis, CTO of Harborseed Studio: switched to Ari's suggested parameterized query after review. Check: injection case stopped working; existing search tests passed.">
-            <span class="email-result-highlight" aria-hidden="true"></span>
-          </div>
-          <blockquote class="feedback-quote">“<mark>injection case stopped working;</mark> existing search tests passed.”</blockquote>
-          <p class="feedback-attribution">Jordan Ellis · CTO, Harborseed Studio · October 16, 2026 · Reported prototype result</p>
-        </div>
-      </section>
-
       <section class="slide dark solution-slide" data-note="SPOKEN (1:18 to 1:49; about 31 seconds including clicks/pauses): Ari connects code review, seven security specialists, and monitoring through shared code context. Scout maps the code. Probe tests a weakness. Trace explains the evidence. Diagnose finds the cause. Patch proposes a repair after approval. Fortify recommends stronger defenses. Verify independently retests. Recognized standards make findings easier to interpret and check.
 
 REFERENCE AND CUES, NOT SPOKEN: Say: Ari connects three capabilities through shared code context. The reviewer checks intended behavior and proposes tested repairs. Seven security agents investigate weaknesses and independently verify repairs. Monitoring requests fresh checks when code changes. Walk through the seven roles, then restore the complete network. Close: Built around recognized security standards, our agents use clear labels, calculated risk scores, and findings people can check. Presenter reference, not spoken: Standards context: validated CWE weakness labels; explicit-metric CVSS severity calculations; checked CAPEC and ATT&amp;CK attack labels; D3FEND defense recommendations; OWASP risk categories; NIST incident-handling references. Runtime CVSS 4.0 is canonical; CVSS 3.1 is separately available, not the reverse. Alignment is not certification or compliance. Recommendations are not proof that controls are implemented. Audit logs can be tamper-evident, not tamper-proof. Implementation reference: hackatl-agentic-security/standards/README.md. Context is tied to a code version, retrieved code relationships, cited expectations, findings, and regression evidence. The reviewer proposes human-approved repairs and replays generated tests plus the existing suite; it does not know every business intention. Scout maps code and potential weaknesses. Probe executes bounded sandbox tests. Trace uses observed evidence to map attack paths. Diagnose identifies root cause. Patch proposes a scoped repair for human approval. Fortify recommends regression tests and guardrails. Verify independently reruns evidence on a fresh checkout. Clicks 1-7 spotlight these roles; click 8 restores all seven. Current end-to-end M7 model turns use scripted/fake transport; a complete live-provider seven-role trace has not been demonstrated. Monitoring follows code-change events and requests targeted checks while workers run; runtime telemetry ingestion is not implemented. RL trains and evaluates recommendations only in simulation, with no autonomous production action path. Sources: docs/hackatl-pitch-source-inventory.md, Slides 6-9; docs/demo-presenter-cues.md." data-spoken="Ari connects code review, seven security specialists, and monitoring through shared code context. Scout maps the code. Probe tests a weakness. Trace explains the evidence. Diagnose finds the cause. Patch proposes a repair after approval. Fortify recommends stronger defenses. Verify independently retests. Recognized standards make findings easier to interpret and check." data-duration-s="31">
-        <div class="slide-head"><span class="brand-mini"><img class="brand-ant" src="ari-ant-mark.png" alt="" aria-hidden="true">Original Contribution / Thoughtful Approach</span><span class="slide-num">09</span></div>
+        <div class="slide-head"><span class="brand-mini"><img class="brand-ant" src="ari-ant-mark.png" alt="" aria-hidden="true">Original Contribution / Thoughtful Approach</span><span class="slide-num">08</span></div>
         <h2 style="font-size:50px">Seven specialists. <span class="accent">One intelligence.</span></h2>
         <div class="platform-overview">
           <h2>Review. Secure. <span class="accent">Recheck.</span></h2>
@@ -1072,7 +1033,7 @@ REFERENCE AND CUES, NOT SPOKEN: Say: Ari connects three capabilities through sha
       <section class="slide team-slide" data-note="SPOKEN (1:49 to 2:09; about 20 seconds including clicks/pauses): ARI remembers verified fixes and uses that evidence when related code changes. In Defense Lab, a simulated defender observes suspicious traffic, tries a response, then learns from security and service outcomes. Code memory requests new checks. Reinforcement learning stays in simulation.
 
 REFERENCE AND CUES, NOT SPOKEN: Clicks 1–4: Red finds and proves, Blue fixes and fortifies, and independent Verify reruns the evidence. Click 5 shows two distinct capabilities. Left: auth.ts and refreshSession(session) are an illustrative UI example, not a product screenshot or a real assessment. The bookmark is a visual metaphor for saved version-keyed VerifiedRegression evidence, not a claim of a shipped bookmark control. Independent Verify records candidate evidence on an exact base SHA; a future change must be reassessed and is not automatically verified, merged, or safe. Right: the API node is part of the simulated gateway/api/auth/payments/db topology. An observation can include noisy alert/anomaly signals; rate_limit is an implemented simulated action. During offline training, reward balances containment and security impact against service disruption and action cost, then updates the policy. This does not show measured performance, a live customer dashboard, a production rate limit, or training on customer deployments. Code memory and RL training are distinct; no connector or automatic training feedback is implied. References: product monitoring/README.md, docs/11_SHARED_CONTEXT_AND_MEMORY.md, rl-defense/README.md, docs/09_RL_DEFENSE_SYSTEM.md. GitHub push/PR events can trigger targeted reassessment or regression checks. Continuous coverage requires running workers; runtime telemetry ingestion is not implemented. The Defense Lab studies recommendations in simulation using reinforcement learning, or trial-and-error training. No RL recommendation acts on production systems. Presenter reference, not spoken: 24/7 coverage requires deployed, running workers. Current monitoring follows code events; runtime telemetry ingestion remains future work." data-spoken="ARI remembers verified fixes and uses that evidence when related code changes. In Defense Lab, a simulated defender observes suspicious traffic, tries a response, then learns from security and service outcomes. Code memory requests new checks. Reinforcement learning stays in simulation." data-duration-s="20">
-        <div class="slide-head"><span class="brand-mini"><img class="brand-ant" src="ari-ant-mark.png" alt="" aria-hidden="true">Original Contribution / Build Quality &amp; Appropriate Technology</span><span class="slide-num">10</span></div>
+        <div class="slide-head"><span class="brand-mini"><img class="brand-ant" src="ari-ant-mark.png" alt="" aria-hidden="true">Original Contribution / Build Quality &amp; Appropriate Technology</span><span class="slide-num">09</span></div>
         <h2 style="font-size:48px">Attack. Defend. <span class="accent">Verify.</span></h2>
         <span class="build-trigger" data-build="1"></span><span class="build-trigger" data-build="2"></span><span class="build-trigger" data-build="3"></span><span class="build-trigger" data-build="4"></span>
         <div class="team-arena">
@@ -1129,7 +1090,7 @@ REFERENCE AND CUES, NOT SPOKEN: Clicks 1–4: Red finds and proves, Blue fixes a
       <section class="slide market-position-slide" data-note="SPOKEN (2:09 to 2:24; about 15 seconds including clicks/pauses): Our contribution is connecting those steps around one code version and evidence history. Each finding and verified regression can inform later work instead of becoming another isolated alert.
 
 REFERENCE AND CUES, NOT SPOKEN: Clicks 1–2 position Ari by its coordinated workflow; category placement is qualitative, not a vendor benchmark. The next click advances directly to slide 9. Shared version-aware context and verification evidence remain the narrated differentiator. Other products can overlap these capabilities. Our proposition is the connected workflow for small teams, with a clear path from intended behavior to tested repair and later reassessment. Presenter reference, not spoken: Category placement reflects capability scope, not a claim that every vendor in a category is identical. Validate named comparisons before external distribution. The code reviewer, security team, and monitoring share context. Findings and verified fixes inform the next assessment." data-spoken="Our contribution is connecting those steps around one code version and evidence history. Each finding and verified regression can inform later work instead of becoming another isolated alert." data-duration-s="15">
-        <div class="slide-head"><span class="brand-mini"><img class="brand-ant" src="ari-ant-mark.png" alt="" aria-hidden="true">Advantage over Alternatives</span><span class="slide-num">11</span></div>
+        <div class="slide-head"><span class="brand-mini"><img class="brand-ant" src="ari-ant-mark.png" alt="" aria-hidden="true">Advantage over Alternatives</span><span class="slide-num">10</span></div>
         <h2 style="font-size:48px">From alerts to <span class="accent">verified outcomes.</span></h2>
         <div class="market-map">
           <span class="axis-x">Fragmented tool → End-to-end system</span><span class="axis-y">Reports → Proves + verifies</span>
@@ -1139,12 +1100,10 @@ REFERENCE AND CUES, NOT SPOKEN: Clicks 1–2 position Ari by its coordinated wor
 
       </section>
 
-      <!-- FUTURE LIVE-DEMO INSERTION POINT: place the real product demo here when the hosted flow is ready. -->
-
       <section class="slide quality-slide ai4-quality-slide" data-note="SPOKEN (2:24 to 2:50; about 26 seconds including clicks/pauses): Ari gives the user three clear actions: connect an authorized repository, review the evidence, and approve a proposed repair. Verification produces test results and saved regression evidence for a clearer release decision. The full prototype chain uses scripted AI responses; customer outcomes still need validation.
 
 REFERENCE AND CUES, NOT SPOKEN: CUE: Segment 1 is visible on entry. Click once for segment 2, then advance. This is an explanatory illustration, not a screenshot of a customer outcome. Accessibility: keyboard navigation, text labels with glyphs, visible focus and reduced motion support; no formal WCAG certification claimed. REFERENCE, NOT SPOKEN: The complete local workflow has executed tests, independent Verify and retained regression evidence, but uses scripted/fake model transports; there is no complete live-provider seven-role trace or production-user result claimed. User research, observed task completion, time to verified fix, measured baseline versus Ari time savings and trust/acceptance feedback remain pending. Never convert prototype test evidence into an assertion that every vulnerability is fixed. OPTIONAL DEMO/Q&amp;A CUES, outside timed pitch: use a real run or clearly labeled recording; show reviewer bug, security investigation, human approval, proposed patch, independent test results, code-change reassessment, then Defense Lab with its simulation label visible. See docs/demo-presenter-cues.md." data-spoken="Ari gives the user three clear actions: connect an authorized repository, review the evidence, and approve a proposed repair. Verification produces test results and saved regression evidence for a clearer release decision. The full prototype chain uses scripted AI responses; customer outcomes still need validation." data-duration-s="26">
-        <div class="slide-head"><span class="brand-mini"><img class="brand-ant" src="ari-ant-mark.png" alt="" aria-hidden="true">Core Functionality / Build Quality &amp; Appropriate Technology</span><span class="slide-num">12</span></div>
+        <div class="slide-head"><span class="brand-mini"><img class="brand-ant" src="ari-ant-mark.png" alt="" aria-hidden="true">Core Functionality / Build Quality &amp; Appropriate Technology</span><span class="slide-num">11</span></div>
         <span class="build-trigger" data-build="1"></span>
         <div class="ai4-quality-segment ai4-action-segment">
           <h2>One clear <span class="accent">next action</span></h2>
@@ -1167,6 +1126,47 @@ REFERENCE AND CUES, NOT SPOKEN: CUE: Segment 1 is visible on entry. Click once f
             <article><svg viewBox="0 0 180 140" aria-hidden="true"><path d="M38 15h74l31 31v80H38z" fill="#f8e7e3" stroke="#c2452d" stroke-width="3"/><path d="M112 15v31h31M57 70h67M57 91h50" fill="none" stroke="#c2452d" stroke-width="6" stroke-linecap="round"/></svg><h3>Saved test evidence</h3></article>
           </div>
           <div class="ai4-proof-footer"><p class="ai4-value"><span>Intended value</span>A clearer release decision</p><p class="ai4-limitation"><b>PROTOTYPE LIMITATION</b>Full-chain AI responses are scripted</p></div>
+        </div>
+      </section>
+
+      <!-- FUTURE LIVE-DEMO INSERTION POINT: place the real product demo here when the hosted flow is ready. -->
+
+      <section class="slide dark customer-story-slide feedback-slide" data-note="SPOKEN: Five supplied prototype-feedback emails report reproduced issues, reviewed repairs and passing checks. Here is Jordan's example: the injection case stopped working and existing search tests passed.
+
+REFERENCE, NOT SPOKEN: This feedback/evidence slide follows the prototype workflow and verification section. Entry shows VC validation pending and the five supplied emails; one click enlarges Jordan's email and highlights the reported result. Next enters financials. Left from the enlarged view returns to the gallery; Left from the gallery returns to the prototype verification section. Screenshots supplied by the team, dated October16,2026, are reported prototype outcomes, not independently audited run artifacts or five paying customers. Samira also asks for clearer repository permissions and code-processing explanations. Preserve that caveat in discussion. VC feedback remains pending. Sources: docs/prototype-feedback.md." data-spoken="Five supplied prototype-feedback emails report reproduced issues, reviewed repairs and passing checks. Here is Jordan's example: the injection case stopped working and existing search tests passed." data-duration-s="14">
+        <div class="slide-head"><span class="brand-mini"><img class="brand-ant" src="ari-ant-mark.png" alt="" aria-hidden="true">User Understanding / Evidence of Need</span><span class="slide-num">12</span></div>
+        <span class="build-trigger" data-build="1"></span>
+        <div class="customer-phase cp1">
+          <h2>Feedback. <span class="accent">Evidence.</span></h2>
+          <p class="feedback-summary">Prototype testers reported fixes that worked.</p>
+          <div class="validation-columns">
+            <article class="validation-box vc-validation">
+              <h3>VC validation</h3>
+              <div class="vc-placeholder">Investor perspective</div>
+              <p>Feedback pending.<br>VC quote to be added.</p>
+            </article>
+            <article class="validation-box prototype-validation">
+              <h3>Prototyping feedback &amp; proof</h3>
+              <p>Five feedback emails. Reproduced issues. Passing checks.</p>
+              <div class="feedback-gallery" aria-label="Five supplied prototype feedback emails">
+                <figure class="feedback-email"><img src="feedback/priya.png" alt="Email from Priya Shah reporting a billing retry fix and passing payment tests"><figcaption>Priya · Billing retries</figcaption></figure>
+                <figure class="feedback-email is-featured"><img src="feedback/jordan.png" alt="Email from Jordan Ellis reporting the injection case stopped working and search tests passed"><figcaption>Jordan · SQL injection</figcaption></figure>
+                <figure class="feedback-email"><img src="feedback/maya.png" alt="Email from Maya Chen reporting cross-workspace requests blocked while regular invites worked"><figcaption>Maya · Workspace access</figcaption></figure>
+                <figure class="feedback-email"><img src="feedback/alex.png" alt="Email from Alex Rivera reporting a generic error response and passing error tests"><figcaption>Alex · Error disclosure</figcaption></figure>
+                <figure class="feedback-email"><img src="feedback/samira.png" alt="Email from Samira Okafor reporting traversal rejected and normal uploads passed, and requesting clearer permission information"><figcaption>Samira · Upload paths</figcaption></figure>
+              </div>
+              <p class="feedback-cue">Next: a closer look at Jordan's result →</p>
+            </article>
+          </div>
+        </div>
+        <div class="customer-phase cp2">
+          <h2>A fix that held up <span class="accent">in testing.</span></h2>
+          <div class="email-focus">
+            <img src="feedback/jordan.png" alt="Jordan Ellis, CTO of Harborseed Studio: switched to Ari's suggested parameterized query after review. Check: injection case stopped working; existing search tests passed.">
+            <span class="email-result-highlight" aria-hidden="true"></span>
+          </div>
+          <blockquote class="feedback-quote">“<mark>injection case stopped working;</mark> existing search tests passed.”</blockquote>
+          <p class="feedback-attribution">Jordan Ellis · CTO, Harborseed Studio · October 16, 2026 · Reported prototype result</p>
         </div>
       </section>
 

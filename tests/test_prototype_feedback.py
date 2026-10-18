@@ -33,7 +33,7 @@ class PrototypeFeedbackTests(unittest.TestCase):
         self.assertIn('class="customer-phase cp2"', self.slide)
         self.assertIn('class="email-result-highlight"', self.slide)
 
-    def test_evidence_follows_logo_while_icp_stays_before_it(self):
+    def test_evidence_follows_prototype_before_financials(self):
         main = self.source.split('<main id="presentation-slides-wrapper"', 1)[1].split('</main>', 1)[0]
         slides = re.findall(r'<section class="slide[\s\S]*?</section>', main)
         self.assertEqual(len(slides), 18)
@@ -42,9 +42,12 @@ class PrototypeFeedbackTests(unittest.TestCase):
         self.assertNotIn('feedback-gallery', slides[5])
         self.assertNotIn('data-build=', slides[5])
         self.assertIn('logo-only-slide', slides[6])
-        self.assertIn('feedback-slide', slides[7])
-        self.assertIn('feedback-gallery', slides[7])
-        self.assertIn('solution-slide', slides[8])
+        self.assertIn('solution-slide', slides[7])
+        self.assertIn('quality-slide', slides[10])
+        self.assertIn('What verification', slides[10])
+        self.assertIn('feedback-slide', slides[11])
+        self.assertIn('feedback-gallery', slides[11])
+        self.assertIn('finance-slide', slides[12])
 
 
 if __name__ == '__main__':
