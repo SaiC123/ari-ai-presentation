@@ -14,7 +14,7 @@ Speakers: Sarosh1–6; Srihith7–13, including prototype13; Sai14–18; Sarosh1
 11: Separate Defense Lab screenshot,24/7monitoring aim, rechecks and human-controlled recommendations. No RL performance statistics spoken.
 12: Competitor map, workflow/tradeoffs, then pitch feedback.
 13: Srihith prototype replay/demo.
-14: Five reported outcomes, Samira improvement, then Jordan focus.
+14: Four illustrative demos and Samira’s documentation request, then Jordan’s separately reported staging result.
 15: Prices, unit economics, forecast milestones, shared tools/funding.
 16: Market proxy, segment, target.
 17: Adoption and recruitment.

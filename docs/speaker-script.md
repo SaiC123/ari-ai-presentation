@@ -58,7 +58,7 @@ Here’s our prototype replay: choose a repository, inspect the ownership issue,
 
 ## Slide 14 · Sai
 
-Five emails report billing retries, SQL injection, workspace access, error disclosure and upload-path fixes. These aren’t independently audited. Samira requested clearer permissions and code-processing explanations. That’s our next improvement. Jordan reports about twenty minutes, 78 regression tests and twelve new injection tests passing in staging.
+Four illustrative demos cover billing retries, workspace access, error disclosure and upload paths; their counts are unverified examples. Samira’s example asks for permissions, processing and retention clarity. Jordan separately reports about twenty minutes, 78 regression tests and twelve new injection tests passing in staging. His results aren’t independently audited.
 
 ## Slide 15 · Sai
 

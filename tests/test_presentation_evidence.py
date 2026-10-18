@@ -66,7 +66,8 @@ class PresentationEvidenceTests(unittest.TestCase):
         self.assertIn('No causal link to AI coding established', self.slides[3])
         self.assertIn('Illustrative liability scenario', self.slides[2])
         self.assertNotIn('class="vc-placeholder"', self.slides[13])
-        self.assertIn('planned, not yet validated', self.slides[13])
+        self.assertIn('Samira’s request in the illustrative demo', self.slides[13])
+        self.assertIn('Four illustrative demos. One reported staging result.', self.slides[13])
         self.assertIn('Presentation access', self.slides[12])
 
     def test_plans_remain_goals_with_decision_gates(self):

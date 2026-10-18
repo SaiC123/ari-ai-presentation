@@ -222,3 +222,9 @@ User requested removal of the DEMO REPLAY / Actual interface screenshots / Scrip
 Replaced Jordan's image byte-for-byte with the latest user attachment and updated slide14 in the19-slide deck. A clean four-column summary shows5engineers without dedicated security,~20minutes trace-to-retest,HTTP400injection blocking,and78regressionplus12newinjectiontests passing. The closing quote matches the new email exactly. Results remain attributed to Jordan's staging report; no assessment was rerun. Other slides and spoken passages are preserved.
 
 All14Python tests anddiffcheckpassed. Chrome1280×720and960×540checks covered gallery/focus,allfourresultpoints,no yellow highlights,content above controls,rewind,and0pageerrors. Both sizes were captured and the desktop focus screenshot inspected. Source-image equality and slide-only scope were checked. Deployment is not claimed by this editor.
+
+## Four illustrative email replacements
+
+Replaced Priya, Maya, Alex and Samira assets with the latest supplied originals, preserving their ILLUSTRATIVE DEMO / UNVERIFIED labels. Gallery points match the new examples, with counts explicitly illustrative. Jordan's latest email/focus remain unchanged; his gallery point is separately identified as reported staging. Narration and source notes distinguish those categories and include retention documentation in Samira's request. Only slide14content changed in the19-slide deck.
+
+14Python tests anddiffcheckpass. Chrome gallery has five loaded images and summary points, no container clipping or control overlap at1280×720and960×540; both screenshots captured, final desktop visually inspected. Focus/rewind and0pageerrors checked. Initial visual check caught lower-caption clipping; increased gallery container and removed a redundant caption line, then rechecked. No product tests or example-count verification executed; deployment not claimed.
