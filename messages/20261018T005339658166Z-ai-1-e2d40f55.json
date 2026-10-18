@@ -1,0 +1,24 @@
+{
+  "type": "AFTER",
+  "agent": "ai-1",
+  "utc": "2026-10-18T00:53:39.657949+00:00",
+  "summary": "AFTER e7428ac pushed and deployed READY dpl_BA2Y1ZamHLsxvKHPVEgTrwSqfG1d. Founder49.99/7, Growth129.99/20, Scale359.99/60; descending per-included-run7.14/6.50/6.00. Costs34.05/81.07/221.74, market Growth annual1559.88 reconciled, docs/narration/CSV/Downloads synced. Forecast full12months with three manual milestones;42newpaid/month is derived1000/24 proxy NOT monthly-average evidence.18.2conversion proxy,2percent churn assumption. M1fivefree661.50cost; minimum32Founderaccounts for monthly cash coverage; conditional M2at42.91payers, cumulative recoveryM3. No founder pay/acquisition/extra usage included.",
+  "commit": "e7428acb65b5edb57db78b6d3772426b3951d01d",
+  "changed_paths": [
+    "README.md",
+    "docs/cost-reconciliation.md",
+    "docs/hackatl-master-presentation-prompt.md",
+    "docs/hackatl-pitch-source-inventory.md",
+    "docs/pilot-forecast.csv",
+    "docs/pilot-forecast.md",
+    "docs/presentation-qa.md",
+    "docs/pricing-narration.md",
+    "public/index.html",
+    "public/pilot-forecast.js",
+    "tests/pilot-forecast.test.cjs",
+    "tests/presentation-navigation.test.cjs"
+  ],
+  "verification": "80Node+5Python=85tests PASS; git diff check; only finance13 and market14 section content changed, other sections preserved. Production HTML and model HTTP200 byte-identical pushed source. Browser1280x720 prices7/20/60, discount labels, full graph citations, M1/M2 conversion/M2 monthly coverage annotation/right users, budget and rewind checked. No clipping observed at tested viewport. No new mobile/crossbrowser/provider invoices or demand validation claimed.",
+  "deployment_url": "https://ari-ai-presentation.vercel.app",
+  "lock_commit": "4ee01d94eb811063c9e6739bb67a650ebae77533"
+}
