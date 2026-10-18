@@ -1,0 +1,8 @@
+{
+  "type": "BEFORE",
+  "agent": "ai-4",
+  "utc": "2026-10-18T09:21:27.270506+00:00",
+  "summary": "Replace four remaining email assets with user-supplied illustrative/unverified versions; align gallery summaries, narration and provenance with those labels and example counts. Preserve latest Jordan email and focus result row; no yellow highlights. Validate layout, tests, commit/push and existing-project deployment handoff.",
+  "lock_commit": "57a438728df4007ab65da4cc6cdd9a60d65c1d3b",
+  "base_main": "1aa67031d2de75cf5eaa7df2cc6adf3e72b541d2"
+}
