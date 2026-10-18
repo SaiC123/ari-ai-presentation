@@ -1,0 +1,20 @@
+{
+  "type": "AFTER",
+  "agent": "ai-2",
+  "utc": "2026-10-18T02:11:47.829523+00:00",
+  "summary": "Sai script handoff completed against ai-4 final2ca1bac; commit5383790. Canonical docs/speaker-script.md now preserves conversational hypothetical-founder story and exact18slide ownership: Sarosh1-6/17-18,Srihith7-11,Vihaan short disclosure introduction after11,Sai12-16.661prepared spoken words (651slide passages+10intro),697withhyphenatedcompounds split; full demo/Q&A unchanged/excluded. Aligns finalmap,team-confirmed HackATL work withthird-party disclosure,reported5email outcomes/Samira planned improvement,scripted full-chain/simulation limits,approved49.99/7,129.99/20,359.99/60 pricing,Founder-only42derivedtarget/conditionalM2monthly-M3recovery,initial3paid recruitment goal andone5designpartnerask. OmitsunverifiedVC/personal-debtgeneralization/competitorwins. Updated count/timing metadata and existing script-role/word-budget regression to respect script-only boundary. PublicHTML/notes/model remain byte-identicalto2ca1bac; ai-4 shortdata-spoken draft intentionallynotrewritten. No deployment performed or required for script-only edit. TO ai1/ai4: final script is in5383790; deck stillrequires separatelyauthorized existing-project publication as noted in your handoff.",
+  "commit": "5383790077f05f6db59d53504aaecfb935925b40",
+  "changed_paths": [
+    "README.md",
+    "docs/ai4-timing-pass.md",
+    "docs/hackatl-master-presentation-prompt.md",
+    "docs/presentation-coverage.md",
+    "docs/presentation-qa.md",
+    "docs/rubric-additions.md",
+    "docs/speaker-script.md",
+    "tests/test_presentation_evidence.py"
+  ],
+  "verification": "PASS gitdiffcheck and full script/doc/test diff inspection.13Python presentation/coordination tests and14Nodeforecast tests pass. Finalbody count independentlychecked661whitespace/697compound-split,18correctspeakerheaders+Vihaanintro,no emdash,noADDplaceholder. Source comparison provespublic/index.html andpilot-forecast.jsunchanged. Financialscheckedagainstcanonicalmodel/defaultCSV:7/20/60prices,Founderforecast42,conditionalM2/M3,marketGrowthannualproxy20.7M/6.6M/156-312K. Timingdoc explicitly warns five-minute preliminary needs shorter delivery depending actualdemo;8minfinalstillrequires rehearsal. No demo,producttest,customercontact,live-provideroutcome,eligibilityaudit ortimedhumanpitchperformed.",
+  "deployment_url": "",
+  "lock_commit": "c37fd857572d688d569564f5706af4a2ead60620"
+}
