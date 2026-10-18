@@ -1,0 +1,17 @@
+{
+  "type": "AFTER",
+  "agent": "ai-1",
+  "utc": "2026-10-18T07:20:48.438869+00:00",
+  "summary": "Published general Ari introduction in slide8 notes, moved brief Defense Lab narration to11 after verification, and added its matching final 24/7 ongoing-protection reveal with no screenshot or stats.20slides remain; named script and related docs synchronized.",
+  "commit": "320a723306e2e84cc3383fc9dd63bf2de250f1a2",
+  "changed_paths": [
+    "README.md",
+    "docs/ai4-timing-pass.md",
+    "docs/speaker-script.md",
+    "public/index.html",
+    "tests/test_prototype_feedback.py"
+  ],
+  "verification": "81Node and13Python tests passed; diffcheckclean. Vercel production READY at commit320a723; public HTML exactly matches commit. Live slide11build5 visually inspected at1280x720, with clear three-step monitoring layout and no screenshot; removed screenshot slide remains absent. No product runtime guarantees added.",
+  "deployment_url": "https://ari-ai-presentation.vercel.app",
+  "lock_commit": "dc3c07bf631c02f6fba9dca954e01a6fa3792ed0"
+}
