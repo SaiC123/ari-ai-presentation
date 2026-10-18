@@ -1,0 +1,8 @@
+{
+  "type": "BEFORE",
+  "agent": "ai-1",
+  "utc": "2026-10-18T05:16:53.801698+00:00",
+  "summary": "Slide 10 only: restore quote-style sample wording, remove the visible neither-used-Ari line, and keep the user's requested not-their-exact-words disclosure",
+  "lock_commit": "dc62bf50b4ad603ec3b490b903c72e319c67f0d7",
+  "base_main": "b6c37606458af30acd634c1bb8ed2e748c3b08b6"
+}
