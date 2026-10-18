@@ -1,0 +1,8 @@
+{
+  "type": "BEFORE",
+  "agent": "ai-1",
+  "utc": "2026-10-18T06:41:34.838255+00:00",
+  "summary": "Slide 10 Defense Lab only: add the supplied unmodified screenshot as a large final reveal, preserve recorded-simulation context, and retain the diagram plus forward/rewind behavior.",
+  "lock_commit": "a93972fa7f02427feb8209e292b42557530c8c6d",
+  "base_main": "693a27596e77766eb67fa2ec9e942af50ac314fd"
+}
