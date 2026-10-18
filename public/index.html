@@ -781,6 +781,33 @@
     .finance-slide .price-card small { font-size:17px;line-height:1.65; }
     .finance-slide .pricing-shared { margin:18px 0 0;text-align:center;font-size:22px;font-weight:600;color:white; }
     .finance-slide .pricing-terms { margin-top:15px; }
+
+    /* Evidence: overview of five supplied emails, then focus on Jordan's result. */
+    .customer-story-slide[data-build-current='2'] .cp2{opacity:1;visibility:visible;transform:none}
+    .customer-story-slide[data-build-current='2'] .sai-rubric .sr1{display:inline}
+    .customer-story-slide .feedback-summary{margin-top:14px;font-size:21px;line-height:1.4;color:#e3cec8}
+    .customer-story-slide .validation-columns{display:grid;grid-template-columns:310px 1fr;gap:24px;margin-top:24px}
+    .customer-story-slide .validation-box{height:362px;padding:24px;border:1px solid #73554c;border-radius:18px;background:#2b1d19;overflow:hidden}
+    .customer-story-slide .validation-box h3{font-size:27px;line-height:1.15}
+    .customer-story-slide .vc-validation{display:flex;flex-direction:column;justify-content:space-between}
+    .customer-story-slide .vc-validation .vc-placeholder{font-size:30px;line-height:1.2;color:#e3cec8;max-width:230px}
+    .customer-story-slide .vc-validation p{font-size:16px;line-height:1.5;color:#d9b8ae}
+    .customer-story-slide .prototype-validation>p{font-size:16px;line-height:1.4;color:#e3cec8;margin-top:8px}
+    .customer-story-slide .feedback-gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:18px}
+    .customer-story-slide .feedback-email{margin:0;min-width:0}
+    .customer-story-slide .feedback-email img{display:block;width:100%;height:83px;object-fit:cover;object-position:top;border-radius:5px;background:#fff}
+    .customer-story-slide .feedback-email figcaption{font-size:12px;line-height:1.4;margin-top:5px;color:#f3ded8}
+    .customer-story-slide .feedback-email.is-featured img{outline:2px solid #ffb09f;outline-offset:2px}
+    .customer-story-slide .feedback-cue{font-size:15px;line-height:1.4;color:#ffb09f;margin-top:16px}
+    .customer-story-slide .email-focus{position:relative;height:343px;margin-top:24px;overflow:hidden;border-radius:12px;background:white;transform-origin:75% 35%;transition:transform .65s cubic-bezier(.16,1,.3,1),opacity .3s}
+    .customer-story-slide .email-focus img{width:100%;height:auto;display:block}
+    .customer-story-slide .email-result-highlight{position:absolute;left:5.1%;top:82.7%;width:68%;height:8%;background:rgba(255,208,70,.48);mix-blend-mode:multiply;border-radius:4px;transform:scaleX(0);transform-origin:left;transition:transform .5s .55s cubic-bezier(.16,1,.3,1)}
+    .customer-story-slide[data-build-current='2'] .email-result-highlight{transform:scaleX(1)}
+    .customer-story-slide:not([data-build-current='2']) .email-focus{transform:translate(200px,45px) scale(.62);opacity:0}
+    .customer-story-slide .feedback-quote{margin:20px 0 0;font:500 25px/1.35 'Space Grotesk',sans-serif;color:white}
+    .customer-story-slide .feedback-quote mark{color:#ffb09f;background:none}
+    .customer-story-slide .feedback-attribution{margin-top:9px;color:#e3cec8;font-size:15px;line-height:1.4}
+    @media(prefers-reduced-motion:reduce){.customer-story-slide .customer-phase,.customer-story-slide .email-focus,.customer-story-slide .email-result-highlight{transition:none;transform:none}}
   </style>
 </head>
 <body>
@@ -867,11 +894,12 @@ REFERENCE AND CUES, NOT SPOKEN: Limited security capacity is the target-user hyp
         <h1>AI helps small teams<br><span class="accent">ship code faster</span><br>than they can secure it.</h1>
       </section>
 
-<section class="slide dark customer-story-slide" data-note="SPOKEN (0:57 to 1:18; about 21 seconds including clicks/pauses): ARI targets small, founder-led SaaS startups using AI-assisted development without dedicated security teams. AI intensified their exposure: code output outpaced security coverage. We address that gap. Real customer validation is still pending.
+<section class="slide dark customer-story-slide" data-note="SPOKEN: Ari targets small founder-led SaaS teams without dedicated security staff. Five supplied prototype-feedback emails report reproduced issues, reviewed repairs, and passing checks. Here is Jordan's example: the injection case stopped working and existing search tests passed.
 
-REFERENCE AND CUES, NOT SPOKEN: Build 0 defines the ICP with four short labels: Small SaaS startups, Founder-led teams, AI-assisted development, No dedicated security team. The two-bar comparison shows the qualitative hypothesis that AI increased code output faster than security coverage kept pace, increasing codebase exposure. Bar lengths are illustrative, not measured data or a quantified customer result. Theme fit: ARI addresses the problem AI intensified, exposed codebases, rather than only celebrating increased code output. This is the target-user and problem hypothesis to validate. Click 1 shows customer evidence; the next click advances to the solution. Interviews, workflow observation, and prototype feedback are pending. Collect recent release examples, actual workarounds, attributable quotes, observed task completion, and exact prototype feedback; never invent findings or participants. Keep those collection instructions in notes. Transition: ARI connects the workflow around the same code context. Presenter reference, not spoken: Awaiting real customer evidence." data-spoken="ARI targets small, founder-led SaaS startups using AI-assisted development without dedicated security teams. AI intensified their exposure: code output outpaced security coverage. We address that gap. Real customer validation is still pending." data-duration-s="21">
+REFERENCE AND CUES, NOT SPOKEN: Build 0 retains the illustrative ICP and exposure hypothesis. Click 1 shows exactly two evidence boxes: VC validation and Prototyping feedback &amp; proof, with all five supplied email screenshots. No VC feedback was supplied, so that box remains pending. Click 2 zooms into Jordan Ellis's email and highlights the reported check. Rewind returns to all five, then the ICP. These are user-supplied screenshots dated October 16, 2026, not independently audited run artifacts or evidence of five paying customers. Priya reports billing retry/idempotency checks; Jordan SQL injection; Maya cross-workspace invites; Alex stack-trace disclosure; Samira path traversal. Samira also requests clearer repository-permission and code-processing explanations before widening the trial. Preserve this caveat. Full-chain scripted-model and live-provider limitations on other slides remain unchanged. Source mapping and verbatim outcome quotes: docs/prototype-feedback.md." data-spoken="Ari targets small founder-led SaaS teams without dedicated security staff. Five supplied prototype-feedback emails report reproduced issues, reviewed repairs, and passing checks. Here is Jordan's example: the injection case stopped working and existing search tests passed." data-duration-s="26">
         <div class="slide-head"><span class="sai-rubric"><img src="ari-ant-mark.png" alt="Ari ant"><span class="sr0">PROBLEM DEFINITION / ICP / THEME FIT</span><span class="sr1">User Understanding / Evidence of Need</span></span><span class="slide-num">06</span></div>
         <span class="build-trigger" data-build="1"></span>
+        <span class="build-trigger" data-build="2"></span>
         <div class="customer-phase cp0">
           <h2>More code.<br><span class="accent">More exposed codebases.</span></h2>
           <div class="icp-stage">
@@ -899,14 +927,36 @@ REFERENCE AND CUES, NOT SPOKEN: Build 0 defines the ICP with four short labels: 
           <div class="icp-theme"><span>THEME FIT</span><strong>AI intensified the problem of exposed codebases.</strong></div>
         </div>
         <div class="customer-phase cp1">
-          <h2>Listen. Observe. <span class="accent">Validate.</span></h2>
-          <p class="sai-evidence-status">Customer research pending</p>
-          <div class="sai-evidence-grid">
-            <article><div class="sai-evidence-visual" aria-hidden="true">“ ”</div><div><h3>Interviews</h3><p>Pending</p></div></article>
-            <article><div class="sai-evidence-visual" aria-hidden="true"><svg viewBox="0 0 140 100"><path d="M12 50C43 8 97 8 128 50C97 92 43 92 12 50Z" fill="none" stroke="#ff8a75" stroke-width="4"/><circle cx="70" cy="50" r="17" fill="none" stroke="#ff8a75" stroke-width="4"/></svg></div><div><h3>Workflow observation</h3><p>Pending</p></div></article>
-            <article><div class="sai-evidence-visual" aria-hidden="true"><svg viewBox="0 0 140 100"><rect x="14" y="12" width="112" height="70" rx="10" fill="none" stroke="#ff8a75" stroke-width="4"/><path d="M14 31h112M48 94h44M70 82v12M44 51l17 12 31-16" fill="none" stroke="#ff8a75" stroke-width="4" stroke-linecap="round"/></svg></div><div><h3>Prototype feedback</h3><p>Pending</p></div></article>
+          <h2>Feedback. <span class="accent">Evidence.</span></h2>
+          <p class="feedback-summary">Prototype testers reported fixes that worked.</p>
+          <div class="validation-columns">
+            <article class="validation-box vc-validation">
+              <h3>VC validation</h3>
+              <div class="vc-placeholder">Investor perspective</div>
+              <p>Feedback pending.<br>VC quote to be added.</p>
+            </article>
+            <article class="validation-box prototype-validation">
+              <h3>Prototyping feedback &amp; proof</h3>
+              <p>Five feedback emails. Reproduced issues. Passing checks.</p>
+              <div class="feedback-gallery" aria-label="Five supplied prototype feedback emails">
+                <figure class="feedback-email"><img src="feedback/priya.png" alt="Email from Priya Shah reporting a billing retry fix and passing payment tests"><figcaption>Priya · Billing retries</figcaption></figure>
+                <figure class="feedback-email is-featured"><img src="feedback/jordan.png" alt="Email from Jordan Ellis reporting the injection case stopped working and search tests passed"><figcaption>Jordan · SQL injection</figcaption></figure>
+                <figure class="feedback-email"><img src="feedback/maya.png" alt="Email from Maya Chen reporting cross-workspace requests blocked while regular invites worked"><figcaption>Maya · Workspace access</figcaption></figure>
+                <figure class="feedback-email"><img src="feedback/alex.png" alt="Email from Alex Rivera reporting a generic error response and passing error tests"><figcaption>Alex · Error disclosure</figcaption></figure>
+                <figure class="feedback-email"><img src="feedback/samira.png" alt="Email from Samira Okafor reporting traversal rejected and normal uploads passed, and requesting clearer permission information"><figcaption>Samira · Upload paths</figcaption></figure>
+              </div>
+              <p class="feedback-cue">Next: a closer look at Jordan's result →</p>
+            </article>
           </div>
-
+        </div>
+        <div class="customer-phase cp2">
+          <h2>A fix that held up <span class="accent">in testing.</span></h2>
+          <div class="email-focus">
+            <img src="feedback/jordan.png" alt="Jordan Ellis, CTO of Harborseed Studio: switched to Ari's suggested parameterized query after review. Check: injection case stopped working; existing search tests passed.">
+            <span class="email-result-highlight" aria-hidden="true"></span>
+          </div>
+          <blockquote class="feedback-quote">“<mark>injection case stopped working;</mark> existing search tests passed.”</blockquote>
+          <p class="feedback-attribution">Jordan Ellis · CTO, Harborseed Studio · October 16, 2026 · Reported prototype result</p>
         </div>
       </section>
 

@@ -37,3 +37,7 @@ Edit `public/index.html` and redeploy to publish changes.
 ## Four-AI coordination
 
 Every AI editor must read [AGENTS.md](AGENTS.md) and follow the [shared coordination protocol](coordination/README.md). Run the setup command in each clone, acquire the shared GitHub write lock before editing, and post BEFORE/AFTER messages. Keep the lock through push and deployment. This prevents participating editors from replacing each other's presentation changes.
+
+## Prototype evidence slide
+
+Slide 6 now advances from the customer profile to two evidence boxes, then to an enlarged email with its reported test result highlighted. Five supplied screenshots and their provenance are documented in `docs/prototype-feedback.md`. VC feedback remains pending. Run `python3 -m unittest discover -s tests -p test_prototype_feedback.py` to check the evidence assets and attribution.
