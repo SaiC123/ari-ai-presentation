@@ -74,7 +74,7 @@ Month one: a live-provider trace and five pilot records. Months two and three: p
 
 ## Slide 17 · Sarosh
 
-Six founders bring Georgia House business-growth research, MIT agentic research, Georgia Tech reinforcement learning and industrial engineering, Apex146 data science, and 3Lines venture-capital experience.
+Six founders bring Georgia House business-growth research, MIT agentic research, Georgia Tech reinforcement learning and industrial engineering, Apex146 software engineering, and 3Lines venture-capital experience.
 
 ## Slide 18 · Sarosh
 
