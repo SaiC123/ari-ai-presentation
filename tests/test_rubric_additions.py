@@ -12,7 +12,7 @@ class RubricAdditionsTests(unittest.TestCase):
         self.assertIn('Hypothetical founder', self.slides[0])
         self.assertIn('45% failed security tests', self.slides[3])
         self.assertIn('https://www.veracode.com/blog/genai-code-security-report/', self.slides[3])
-        self.assertIn('benchmark samples, not all AI code', self.slides[3])
+        self.assertIn('Veracode 2025 · Code security study', self.slides[3])
 
     def test_competitor_landscape_has_sources_and_staged_positioning(self):
         slide = self.slides[11]

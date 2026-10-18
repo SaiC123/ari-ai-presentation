@@ -63,7 +63,7 @@ class PresentationEvidenceTests(unittest.TestCase):
     def test_distinct_evidence_and_no_empty_vc_panel(self):
         self.assertNotIn('class="why-equals"', self.slides[3])
         self.assertIn('Separate evidence: attack activity', self.slides[3])
-        self.assertIn('No causal link to AI coding established', self.slides[3])
+        self.assertIn('Attack attempts, not breaches', self.slides[3])
         self.assertIn('Illustrative liability scenario', self.slides[2])
         self.assertNotIn('class="vc-placeholder"', self.slides[13])
         self.assertIn('Samira’s request in the illustrative demo', self.slides[13])
