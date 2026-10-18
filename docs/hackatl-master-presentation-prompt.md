@@ -444,3 +444,8 @@ Before delivery, verify:
 - All projections are labeled
 - Current capabilities are separated from roadmap claims
 - The presentation is deliverable in five minutes
+
+
+## Current slide12 forecast interaction override
+
+Show the complete12month revenue/cash-cost forecast immediately. No selectable scenarios and no month-per-click reveal. Use default5freeM1pilots,18.2%first-cohort conversionproxy,+2paid/monthfromM2,2%monthlychurn. These are disclosed estimates, not the rates most startups necessarily have. Automatically highlight each month and show free pilots, conversions, new payers and monthly receipts/cost/fundinggap. Click advances to shared budget. Stop timers on exit; restart on entry; reduced-motion mode remains static. Do not change the model, prices, evidence or other slides for this interaction adjustment.

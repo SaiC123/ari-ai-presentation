@@ -66,7 +66,7 @@ function presentation(hash = '#1', options = {}) {
   const documentListeners = {};
   const windowListeners = {};
   const document = {
-    querySelector: selector => selectors[selector],
+    querySelector: selector => selector === '.finance-slide' ? slides.find(s => s.classList.contains('finance-slide')) : selectors[selector],
     addEventListener: (name, callback) => { documentListeners[name] = callback; },
     fullscreenElement: null,
     fonts: { ready: Promise.resolve() },
@@ -77,9 +77,14 @@ function presentation(hash = '#1', options = {}) {
     document.fullscreenElement = document.documentElement;
     return Promise.resolve();
   } };
+  const timers = new Map();
+  let nextTimer = 0;
   const window = {
     innerWidth: 1280, innerHeight: 720,
     addEventListener: (name, callback) => { windowListeners[name] = callback; },
+    matchMedia: () => ({ matches: Boolean(options.reducedMotion) }),
+    setTimeout(callback) { const id = ++nextTimer; timers.set(id, callback); return id; },
+    clearTimeout(id) { timers.delete(id); },
   };
   function FixtureChart(_canvas, configuration) {
     this.data = configuration.data;
@@ -98,6 +103,8 @@ function presentation(hash = '#1', options = {}) {
   return {
     slides, selectors, location, document,
     chart: () => window.economicsChart,
+    pendingTimers: () => timers.size,
+    tick() { const next = timers.entries().next().value; if (next) { timers.delete(next[0]); next[1](); } },
     change(id, value) { selectors[id].value = value; selectors[id].listeners.change(); },
     resize(width, height) { window.innerWidth = width; window.innerHeight = height; windowListeners.resize(); },
     dispatch(name) { return documentListeners[name]?.(); },
@@ -482,81 +489,95 @@ test('the live chart configuration includes free-pilot cash costs and zero first
   assert.match(deck.selectors['#forecastAccessible'].textContent, /Month 1: 5 free, 0.00 expected paid/);
 });
 
-test('scenario controls update monthly coverage and cumulative chart data without navigation', () => {
-  const deck = presentation('#2', { forecast:true, chart:true });
-  deck.change('#forecastIntake', '10');
-  deck.change('#forecastChurn', '0');
-  assert.equal(deck.selectors['#forecastMonthly'].textContent, 'Monthly coverage: M8');
-  assert.match(deck.selectors['#forecastRecovery'].textContent, /not in Year 1/);
-  const monthly = deck.chart().data.datasets[0].data;
-  const total = monthly.reduce((sum, value) => sum + value, 0);
-  deck.change('#forecastView', 'cumulative');
-  assert.equal(deck.chart().data.datasets[0].label, 'Cumulative revenue');
-  assert.ok(Math.abs(deck.chart().data.datasets[0].data.at(-1) - total) < 1e-8);
-  assert.equal(deck.active(), 1);
-  assert.equal(deck.slides[1].dataset.buildCurrent, '0');
+test('forecast presentation is one fixed base case with no selectable assumptions', () => {
+  assert.doesNotMatch(html, /<select[^>]*id="forecast(?:Intake|Conversion|Churn|View)"/);
+  const d = presentation('#2', { forecast:true, chart:true });
+  assert.equal(d.chart().data.datasets[0].label, 'Monthly revenue');
+  assert.equal(d.chart().data.datasets[0].data.filter(v => v !== null).length, 12);
+  assert.equal(d.chart().data.datasets[1].data[0], 705);
+  assert.equal(d.selectors['#forecastMonthly'].textContent, 'Monthly coverage: not in Year 1');
+  assert.match(d.selectors['#forecastAccessible'].textContent, /2 new paying.*18.2%.*2%/);
 });
 
-test('cost tooltip callbacks account for free service without charging a payment fee', () => {
-  const deck = presentation('#2', { forecast:true, chart:true });
-  const tooltip = deck.chart().options.plugins.tooltip.callbacks;
+test('monthly tooltip includes every cash cost and no fee on free pilots', () => {
+  const d = presentation('#2', { forecast:true, chart:true });
+  const tooltip = d.chart().options.plugins.tooltip.callbacks;
   const lines = tooltip.afterBody([{ dataIndex:0 }]);
   assert.ok(lines.includes('Shared team tools: $500.00'));
   assert.ok(lines.includes('Product API: $95.00'));
   assert.ok(lines.includes('Payments (paid only): $0.00'));
   assert.ok(lines.includes('Monthly net: -$705.00'));
   assert.match(tooltip.title([{ dataIndex:0 }]), /5 free \/ 0.00 expected paid/);
-  deck.change('#forecastView', 'cumulative');
-  assert.equal(tooltip.afterBody([{ dataIndex:0 }])[0], 'Cumulative net: -$705.00');
 });
 
-test('the accessible forecast summary remains available if the chart library fails', () => {
-  const deck = presentation('#2', { forecast:true });
-  assert.equal(deck.selectors['#economicsChart'].hidden, true);
-  assert.equal(deck.selectors['#forecastChartFallback'].hidden, false);
-  assert.match(deck.selectors['#forecastAccessible'].textContent, /Year 1 funding needed \$5,244.57/);
+test('full accessible forecast remains when Chart.js is unavailable', () => {
+  const d = presentation('#2', { forecast:true });
+  assert.equal(d.selectors['#economicsChart'].hidden, true);
+  assert.equal(d.selectors['#forecastChartFallback'].hidden, false);
+  assert.match(d.selectors['#forecastAccessible'].textContent, /Year 1 funding needed \$5,244.57/);
 });
 
-test('clicking a forecast control label does not advance the slide', () => {
-  const deck = presentation('#2');
-  deck.tap(1000, { target:element('label', ['.forecast-controls']) });
-  assert.equal(deck.slides[1].dataset.buildCurrent, '0');
-});
-
-
-test('the finance graph reveals exactly one month per click and rewinds within the graph', () => {
+test('the full year is visible immediately and months progress without clicks', () => {
   const d = presentation('#2', { counts:[0,4,1], forecast:true, chart:true, finance:true });
   d.build(1,3);
   for (let month=1; month<=12; month++) {
     assert.equal(d.selectors['#forecastMonthTitle'].textContent, `Month ${month} / 12`);
-    assert.equal(d.chart().data.datasets[0].data.filter(x=>x!==null).length,month);
-    assert.equal(d.slides[1].dataset.buildCurrent,'3');
-    if(month<12)d.click('#next');
+    assert.equal(d.chart().data.datasets[0].data.filter(v => v !== null).length, 12);
+    assert.equal(d.slides[1].dataset.buildCurrent, '3');
+    if (month < 12) d.tick();
   }
-  d.click('#next'); assert.equal(d.slides[1].dataset.buildCurrent,'4');
-  d.click('#prev'); assert.equal(d.selectors['#forecastMonthTitle'].textContent,'Month 12 / 12');
-  for(let month=11;month>=1;month--){d.click('#prev'); assert.equal(d.selectors['#forecastMonthTitle'].textContent,`Month ${month} / 12`);}
-  d.click('#prev'); assert.equal(d.slides[1].dataset.buildCurrent,'2');
-  d.click('#next'); assert.equal(d.selectors['#forecastMonthTitle'].textContent,'Month 1 / 12');
+  assert.equal(d.pendingTimers(), 0, 'holds at the final month');
 });
 
-test('month highlights distinguish free delivery, first-cohort conversion and recurring acquisition', () => {
-  const d=presentation('#2',{counts:[0,4,1],forecast:true,chart:true,finance:true}); d.build(1,3);
+test('next goes directly to budget and rewind restarts full-graph progression', () => {
+  const d = presentation('#2', { counts:[0,4,1], forecast:true, chart:true, finance:true });
+  d.build(1,3); d.tick();
+  assert.equal(d.selectors['#forecastMonthTitle'].textContent,'Month 2 / 12');
+  d.click('#next');
+  assert.equal(d.slides[1].dataset.buildCurrent,'4');
+  assert.equal(d.pendingTimers(),0);
+  d.click('#prev');
+  assert.equal(d.slides[1].dataset.buildCurrent,'3');
+  assert.equal(d.selectors['#forecastMonthTitle'].textContent,'Month 1 / 12');
+  assert.equal(d.chart().data.datasets[0].data.length,12);
+  d.click('#prev');
+  assert.equal(d.slides[1].dataset.buildCurrent,'2');
+  assert.equal(d.pendingTimers(),0);
+});
+
+test('month callouts distinguish free service, conversion, acquisition and payments', () => {
+  const d = presentation('#2', { counts:[0,4,1], forecast:true, chart:true, finance:true });
+  d.build(1,3);
   assert.match(d.selectors['#forecastMonthEvent'].textContent,/5 free pilots/);
   assert.match(d.selectors['#forecastMonthCash'].textContent,/Cost \$705.00/);
-  d.click('#next'); assert.match(d.selectors['#forecastMonthEvent'].textContent,/\+2 new paid.*\+0.91 conversions/);
-  d.click('#next'); assert.match(d.selectors['#forecastMonthEvent'].textContent,/\+0.00 conversions.*−0.06 churn/);
-  d.change('#forecastIntake','10'); d.change('#forecastChurn','0');
-  assert.equal(d.selectors['#forecastMonthTitle'].textContent,'Month 3 / 12');
-  for(let i=3;i<8;i++)d.click('#next');
-  assert.equal(d.selectors['#forecastMonthDetail'].classList.contains('covers-cost'),true);
-  assert.equal(d.selectors['#forecastMonthly'].textContent,'Monthly coverage: M8');
-  assert.match(d.selectors['#forecastRecovery'].textContent,/not in Year 1/);
+  d.tick();
+  assert.match(d.selectors['#forecastMonthEvent'].textContent,/18.2%.*0.91 payers.*2 new paid/);
+  assert.match(d.selectors['#forecastMonthCash'].textContent,/Revenue \$145.47.*Cost \$624.40/);
+  d.tick();
+  assert.match(d.selectors['#forecastMonthEvent'].textContent,/\+2 new paid.*\+0.00 conversions.*−0.06 churn/);
 });
 
-test('month-by-month narration remains functional when Chart.js is unavailable', () => {
- const d=presentation('#2',{counts:[0,4,1],forecast:true,finance:true});d.build(1,3);d.click('#next');
- assert.equal(d.selectors['#forecastMonthTitle'].textContent,'Month 2 / 12');
- assert.equal(d.selectors['#forecastChartFallback'].hidden,false);
- assert.match(d.selectors['#forecastMonthCash'].textContent,/Revenue \$145.47/);
+test('leaving the finance slide cancels progression and re-entry has no duplicate timers', () => {
+  const d = presentation('#2', { counts:[0,4,1], forecast:true, chart:true, finance:true });
+  d.build(1,3); assert.equal(d.pendingTimers(),1);
+  d.build(1,3); assert.equal(d.pendingTimers(),1);
+  d.show(0); assert.equal(d.pendingTimers(),0);
+  d.show(1); d.build(1,3); assert.equal(d.pendingTimers(),1);
+  assert.equal(d.selectors['#forecastMonthTitle'].textContent,'Month 1 / 12');
+});
+
+test('reduced motion keeps the complete forecast static without timed announcements', () => {
+  const d = presentation('#2', { counts:[0,4,1], forecast:true, chart:true, finance:true, reducedMotion:true });
+  d.build(1,3);
+  assert.equal(d.pendingTimers(),0);
+  assert.equal(d.chart().data.datasets[0].data.filter(v=>v!==null).length,12);
+  assert.match(html,/id="forecastMonthDetail" aria-live="off"/);
+});
+
+test('automatic narration works without Chart.js', () => {
+  const d = presentation('#2', { counts:[0,4,1], forecast:true, finance:true });
+  d.build(1,3); d.tick();
+  assert.equal(d.selectors['#forecastMonthTitle'].textContent,'Month 2 / 12');
+  assert.equal(d.selectors['#forecastChartFallback'].hidden,false);
+  assert.match(d.selectors['#forecastMonthCash'].textContent,/Revenue \$145.47/);
 });

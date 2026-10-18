@@ -354,10 +354,10 @@
     .break-even { padding:28px; border-radius:20px; background:var(--acid); }
     .break-even strong { display:block; font:700 68px/.9 "Space Grotesk",sans-serif; }
 
-    .forecast-controls { display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-bottom:12px; }
-    .forecast-controls label { display:grid;gap:6px;font-size:18px;line-height:1.2;color:white; }
-    .forecast-controls select { min-width:0;width:100%;height:34px;padding:3px 7px;border:1px solid rgba(255,255,255,.45);border-radius:6px;background:#2d1b17;color:white;font:20px/1.2 "Space Grotesk",sans-serif; }
-    .finance-slide[data-build-current="3"] .forecast-controls { pointer-events:auto; }
+    .forecast-assumptions { display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-bottom:14px; }
+    .forecast-assumptions>div { padding:8px 10px;border:1px solid #865040;border-radius:8px;background:#2d1b17; }
+    .forecast-assumptions strong { display:block;font:600 21px/1.2 "Space Grotesk",sans-serif;color:#ffb09f; }
+    .forecast-assumptions span { display:block;font-size:13px;line-height:1.3;color:#f0d8d1;margin-top:4px; }
     .pilot-coverage { padding:20px; }
     .pilot-coverage strong { margin-top:8px;font-size:54px; }
     .pilot-coverage .coverage-label { margin-top:7px;font-size:20px;line-height:1.2; }
@@ -1179,21 +1179,20 @@ REFERENCE AND CUES, NOT SPOKEN: Slide 12 has four main builds, with 12 month rev
           <div class="finance-scene fscene2"><p class="section-tag">Growth plan / forecast monthly economics / 25 assessments</p><div class="waterfall"><div class="waterbar"><i style="height:180px"></i><b>$249<br>REVENUE</b></div><div class="waterbar"><i style="height:57.47px"></i><b>API + INFRA + AWS<br>−$79.50</b></div><div class="waterbar"><i style="height:5.44px"></i><b>PAYMENTS<br>−$7.52</b></div><div class="waterbar"><i style="height:8.67px"></i><b>STORAGE + SUPPORT<br>−$12</b></div><div class="waterbar"><i style="height:108.42px"></i><b>$149.98<br>CONTRIBUTION</b></div></div><div class="cost-detail" aria-label="Forecast monthly Growth-plan cost breakdown, approximately 99.02 dollars total before shared fixed costs and additional re-checks"><div><b>$47.50 · AI usage</b><small>25 × $1.90 demo assumption</small></div><div><b>$25 · Infrastructure reserve</b><small>Forecast buffer, not measured</small></div><div><b>$7 · AWS allocation</b><small>Team estimate per customer</small></div><div><b>$7.52 · Payment estimate</b><small>Forecast card-processing fees</small></div><div><b>$12 · Storage + support</b><small>Forecast evidence + support allowance</small></div></div><p class="prototype-cost-baseline">Growth cost $99.02 · 60% contribution margin · Additional push re-checks excluded</p></div>
           <div class="finance-scene fscene3"><div class="finance-chart-wrap">
             <div class="forecast-plot">
-              <div class="forecast-controls" role="group" aria-label="Pilot forecast assumptions">
-                <label>New paid / mo<select id="forecastIntake" aria-label="New paying pilots per month from Month 2"><option value="0">0</option><option value="1">1</option><option value="2" selected>2</option><option value="3">3</option><option value="5">5</option><option value="10">10</option></select></label>
-                <label>Conversion<select id="forecastConversion" aria-label="Free pilot to paid conversion proxy"><option value="0.05">5%</option><option value="0.182" selected>18.2%</option><option value="0.219">21.9%</option></select></label>
-                <label>Paid churn / mo<select id="forecastChurn" aria-label="Assumed monthly paying customer churn"><option value="0">0%</option><option value="0.02" selected>2%</option><option value="0.05">5%</option></select></label>
-                <label>View<select id="forecastView" aria-label="Forecast chart view"><option value="monthly">Monthly</option><option value="cumulative">Cumulative</option></select></label>
+              <div class="forecast-assumptions" aria-label="Fixed pilot forecast assumptions">
+                <div><strong>5 free pilots</strong><span>Month 1 only</span></div>
+                <div><strong>18.2% conversion</strong><span>Trial benchmark proxy, not Ari data</span></div>
+                <div><strong>+2 paid / month</strong><span>From Month 2 · 2% monthly churn assumed</span></div>
               </div>
               <canvas id="economicsChart" width="680" height="220" role="img" aria-label="Twelve-month pilot revenue and total cash cost forecast" aria-describedby="forecastAccessible">Monthly cash-cost and revenue forecast. See the forecast summary.</canvas>
               <p id="forecastChartFallback" hidden>Chart unavailable. The forecast summary remains available.</p>
               <p id="forecastAccessible" class="sr-only"></p>
-              <div class="forecast-month-detail" id="forecastMonthDetail" aria-live="polite" aria-atomic="true">
+              <div class="forecast-month-detail" id="forecastMonthDetail" aria-live="off">
                 <div class="forecast-month-heading"><strong id="forecastMonthTitle">Month 1 / 12</strong><span id="forecastMonthCue"></span></div>
                 <p id="forecastMonthEvent"></p><p id="forecastMonthCash"></p><p id="forecastMonthDelta"></p>
               </div>
             </div>
-            <div class="break-even pilot-coverage" id="forecastSummary" aria-live="polite">
+            <div class="break-even pilot-coverage" id="forecastSummary" aria-live="off">
               <p class="kicker">Forecast / expected values</p><strong id="forecastThreshold">70</strong><p class="coverage-label">active payers for monthly coverage</p>
               <dl><dt>Fixed / month</dt><dd>$500</dd><dt>Cost / payer</dt><dd>$42.75</dd><dt>M1: five free pilots</dt><dd>$705 cost</dd><dt>Year 1 funding</dt><dd id="forecastFunding"></dd></dl>
               <p class="forecast-result" id="forecastMonthly"></p><p class="forecast-result" id="forecastRecovery"></p><p class="forecast-result" id="forecastConverted"></p><p class="forecast-method">Intake + churn are assumptions · Conversion is a trial proxy · Forecast, not traction</p>
@@ -1570,7 +1569,6 @@ REFERENCE AND CUES, NOT SPOKEN: Reveal six visual memories. Click 7 connects the
     }
 
     function setBuild(slide, step) {
-      const previousBuild = currentBuild(slide);
       const bounded = Math.max(0, Math.min(maxBuild(slide), step));
       slide.dataset.buildCurrent = String(bounded);
       slide.querySelectorAll('[data-build]').forEach(el => {
@@ -1604,8 +1602,9 @@ REFERENCE AND CUES, NOT SPOKEN: Reveal six visual memories. Click 7 connects the
           label.replaceChildren(...(icon ? [icon] : []), document.createTextNode(rubricByBuild[bounded] || rubricByBuild[0]));
         }
       }
-      if (slide.classList.contains('finance-slide') && bounded === 3 && window.setPilotMonth) {
-        window.setPilotMonth(previousBuild > 3 ? 11 : 0);
+      if (slide.classList.contains('finance-slide') && window.startPilotProgression) {
+        if (bounded === 3) window.startPilotProgression();
+        else window.stopPilotProgression();
       }
     }
 
@@ -1618,6 +1617,7 @@ REFERENCE AND CUES, NOT SPOKEN: Reveal six visual memories. Click 7 connects the
       if (!Number.isInteger(nextIndex)) return;
       const oldIndex = index;
       index = Math.max(0, Math.min(slides.length - 1, nextIndex));
+      if (oldIndex !== index) window.stopPilotProgression?.();
       slides.forEach((slide, i) => {
         slide.classList.toggle('active', i === index);
         slide.classList.toggle('exit-left', i < index);
@@ -1640,7 +1640,6 @@ REFERENCE AND CUES, NOT SPOKEN: Reveal six visual memories. Click 7 connects the
     function nextAction() {
       const slide = slides[index];
       const step = currentBuild(slide);
-      if (slide.classList.contains('finance-slide') && step === 3 && window.stepPilotMonth?.(1)) return;
       if (step < maxBuild(slide)) setBuild(slide, step + 1);
       else show(index + 1, 1);
     }
@@ -1648,7 +1647,6 @@ REFERENCE AND CUES, NOT SPOKEN: Reveal six visual memories. Click 7 connects the
     function prevAction() {
       const slide = slides[index];
       const step = currentBuild(slide);
-      if (slide.classList.contains('finance-slide') && step === 3 && window.stepPilotMonth?.(-1)) return;
       if (step > 0) setBuild(slide, step - 1);
       else show(index - 1, -1);
     }
@@ -1755,31 +1753,39 @@ REFERENCE AND CUES, NOT SPOKEN: Reveal six visual memories. Click 7 connects the
     }
 
     if (window.AriPilotForecast) {
-      const intake = document.querySelector('#forecastIntake');
-      const conversion = document.querySelector('#forecastConversion');
-      const churn = document.querySelector('#forecastChurn');
-      const view = document.querySelector('#forecastView');
+      // One disclosed base case. Acquisition/churn are estimates, not universal startup averages.
+      const assumptions = Object.freeze({ newPaidPerMonth:2, conversionRate:0.182, monthlyChurn:0.02 });
       const money = value => Number(value).toLocaleString('en-US', { style:'currency', currency:'USD' });
       let pilotForecast;
-      // The graph is a nested reveal: M1 on entry, then one month per next action.
-      let revealedMonth = 11;
+      // Full forecast is always visible; only the focus and monthly story progress.
+      let revealedMonth = 0;
+      let progressionTimer = null;
+      window.stopPilotProgression = () => {
+        if (progressionTimer !== null) window.clearTimeout(progressionTimer);
+        progressionTimer = null;
+      };
       window.setPilotMonth = month => {
         revealedMonth = Math.max(0, Math.min(11, month));
         updatePilotForecast();
       };
-      window.stepPilotMonth = direction => {
-        const nextMonth = revealedMonth + direction;
-        if (nextMonth < 0 || nextMonth > 11) return false;
-        window.setPilotMonth(nextMonth);
-        return true;
+      window.startPilotProgression = () => {
+        window.stopPilotProgression();
+        window.setPilotMonth(0);
+        if (window.matchMedia?.('(prefers-reduced-motion: reduce)').matches) return;
+        const advance = () => {
+          progressionTimer = null;
+          const slide = document.querySelector('.finance-slide');
+          if (!slide?.classList.contains('active') || slide.dataset.buildCurrent !== '3') return;
+          window.setPilotMonth(revealedMonth + 1);
+          if (revealedMonth < 11) progressionTimer = window.setTimeout(advance, 1800);
+        };
+        progressionTimer = window.setTimeout(advance, 2600);
       };
       function updatePilotForecast() {
-        pilotForecast = window.AriPilotForecast.forecast({
-          newPaidPerMonth: Number(intake.value), conversionRate: Number(conversion.value), monthlyChurn: Number(churn.value)
-        });
+        pilotForecast = window.AriPilotForecast.forecast(assumptions);
         const model = pilotForecast;
         const last = model.rows.at(-1);
-        const cumulative = view.value === 'cumulative';
+        const cumulative = false;
         const selected = model.rows[revealedMonth];
         const previous = model.rows[revealedMonth - 1];
         const lost = previous ? previous.paidAccounts - selected.retainedPaid : 0;
@@ -1789,12 +1795,16 @@ REFERENCE AND CUES, NOT SPOKEN: Reveal six visual memories. Click 7 connects the
             ? '5 free pilots · $205 delivery + $500 shared tools'
             : `+${selected.newPaid} new paid · +${selected.converted.toFixed(2)} conversions · −${lost.toFixed(2)} churn`;
           document.querySelector('#forecastMonthTitle').textContent = `Month ${selected.month} / 12`;
-          document.querySelector('#forecastMonthEvent').textContent = event;
+          document.querySelector('#forecastMonthEvent').textContent = selected.month === 2
+            ? '18.2% of 5 free pilots ≈ 0.91 payers · +2 new paid users'
+            : event;
           document.querySelector('#forecastMonthCash').textContent = `Revenue ${money(selected.revenue)} · Cost ${money(selected.cost)} · Net ${money(selected.net)}`;
           document.querySelector('#forecastMonthDelta').textContent = previous
             ? `${selected.paidAccounts.toFixed(2)} expected payers · Cost change ${money(selected.cost - previous.cost)} · Cumulative net ${money(selected.cumulativeNet)}`
             : 'No revenue or payment fees. Free service still costs money.';
-          document.querySelector('#forecastMonthCue').textContent = revealedMonth < 11 ? 'Next click → next month · Left arrow → rewind' : 'Year 1 complete · Next click → shared budget';
+          document.querySelector('#forecastMonthCue').textContent = window.matchMedia?.('(prefers-reduced-motion: reduce)').matches
+            ? 'Full year shown · Click to continue'
+            : revealedMonth < 11 ? 'Full year shown · Automatic monthly highlights' : 'Year 1 outlook · Click to continue';
           monthPanel.classList.toggle('covers-cost', selected.net >= 0);
           const activeFinance = document.querySelector('.finance-slide');
           if (activeFinance) activeFinance.dataset.forecastMonth = String(selected.month);
@@ -1806,20 +1816,20 @@ REFERENCE AND CUES, NOT SPOKEN: Reveal six visual memories. Click 7 connects the
         document.querySelector('#forecastRecovery').textContent = model.cumulativeBreakEven
           ? `Losses recovered: M${model.cumulativeBreakEven}` : 'Losses recovered: not in Year 1';
         document.querySelector('#forecastConverted').textContent = `5 free in M1 → ${model.expectedConversions.toFixed(2)} expected payers`;
-        const summary = `Forecast assumptions: five free pilots in Month 1, ${intake.value} new paying pilots per month from Month 2, ${Number(conversion.value)*100}% first-cohort conversion proxy, ${Number(churn.value)*100}% assumed monthly paid churn. Founder price $49.99. Monthly coverage ${model.monthlyBreakEven ? 'Month '+model.monthlyBreakEven : 'not reached in 12 months'}; cumulative recovery ${model.cumulativeBreakEven ? 'Month '+model.cumulativeBreakEven : 'not reached in 12 months'}. Year 1 funding needed ${money(model.fundingNeeded)}. `;
+        const summary = `Fixed base-case forecast: five free pilots in Month 1, ${assumptions.newPaidPerMonth} new paying pilots per month from Month 2, ${assumptions.conversionRate*100}% first-cohort conversion proxy, ${assumptions.monthlyChurn*100}% assumed monthly paid churn. Founder price $49.99. Monthly coverage ${model.monthlyBreakEven ? 'Month '+model.monthlyBreakEven : 'not reached in 12 months'}; cumulative recovery ${model.cumulativeBreakEven ? 'Month '+model.cumulativeBreakEven : 'not reached in 12 months'}. Year 1 funding needed ${money(model.fundingNeeded)}. `;
         document.querySelector('#forecastAccessible').textContent = summary + model.rows.map(row =>
           `Month ${row.month}: ${row.freeAccounts} free, ${row.paidAccounts.toFixed(2)} expected paid, revenue ${money(row.revenue)}, cost ${money(row.cost)}, net ${money(row.net)}, cumulative net ${money(row.cumulativeNet)}.`).join(' ');
-        document.querySelector('#economicsChart').setAttribute('aria-label', `${cumulative ? 'Cumulative' : 'Monthly'} pilot forecast revealed through Month ${selected.month}. Current revenue ${money(selected.revenue)}, cash cost ${money(selected.cost)}. Month 12 expected payers ${last.paidAccounts.toFixed(2)}.`);
+        document.querySelector('#economicsChart').setAttribute('aria-label', `Full twelve-month pilot forecast, highlighting Month ${selected.month}. Current revenue ${money(selected.revenue)}, cash cost ${money(selected.cost)}. Month 12 expected payers ${last.paidAccounts.toFixed(2)}.`);
         if (window.economicsChart) {
           window.economicsChart.data.labels = model.rows.map(row => 'M'+row.month);
           window.economicsChart.data.datasets[0].label = cumulative ? 'Cumulative revenue' : 'Monthly revenue';
           window.economicsChart.data.datasets[1].label = cumulative ? 'Cumulative cash cost' : 'Total monthly cash cost';
-          window.economicsChart.data.datasets[0].data = model.rows.map((row, i) => i <= revealedMonth ? (cumulative ? row.cumulativeRevenue : row.revenue) : null);
-          window.economicsChart.data.datasets[1].data = model.rows.map((row, i) => i <= revealedMonth ? (cumulative ? row.cumulativeCost : row.cost) : null);
+          window.economicsChart.data.datasets[0].data = model.rows.map(row => row.revenue);
+          window.economicsChart.data.datasets[1].data = model.rows.map(row => row.cost);
           const allValues = model.rows.flatMap(row => cumulative ? [row.cumulativeRevenue, row.cumulativeCost] : [row.revenue, row.cost]);
           window.economicsChart.options.scales.y.max = Math.ceil(Math.max(...allValues) * 1.12 / 100) * 100;
           window.economicsChart.options.animation.duration = window.matchMedia?.('(prefers-reduced-motion: reduce)').matches ? 0 : 350;
-          window.economicsChart.update();
+          window.economicsChart.update('none');
         }
       }
       if (window.Chart) {
@@ -1860,7 +1870,6 @@ REFERENCE AND CUES, NOT SPOKEN: Reveal six visual memories. Click 7 connects the
               label:item => `${item.dataset.label}: ${money(item.raw)}`,
               afterBody:items => {
                 const row = pilotForecast.rows[items[0].dataIndex];
-                if (view.value === 'cumulative') return ['Cumulative net: '+money(row.cumulativeNet), 'Includes all earlier free-pilot and delivery costs'];
                 return ['Monthly net: '+money(row.net), 'Shared team tools: '+money(row.costs.sharedTools),
                   'Product API: '+money(row.costs.api), 'Sandbox reserve: '+money(row.costs.sandbox),
                   'AWS allocation: '+money(row.costs.aws), 'Payments (paid only): '+money(row.costs.payments),
@@ -1877,7 +1886,6 @@ REFERENCE AND CUES, NOT SPOKEN: Reveal six visual memories. Click 7 connects the
         document.querySelector('#economicsChart').hidden = true;
         document.querySelector('#forecastChartFallback').hidden = false;
       }
-      [intake, conversion, churn, view].forEach(control => control.addEventListener('change', updatePilotForecast));
       updatePilotForecast();
     }
   </script>

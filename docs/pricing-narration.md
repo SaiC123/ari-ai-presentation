@@ -2,7 +2,7 @@
 
 ## Slide12: Revenue, costs and sustainability
 
-We start with five free pilots in month one, then charge new pilots forty-nine ninety-nine. A trial conversion benchmark suggests about one of those first five might pay. That is a proxy, not Ari evidence. Our twelve-month model includes the cost of free pilots, new paid customers and churn. At two new paid pilots per month, we do not cover costs in year one. Monthly coverage needs about seventy active Founder customers. Recovering earlier losses takes longer. Change the assumptions to test the path.
+We begin with five unpaid pilots in month one. The full graph shows our first-year forecast. Month two assumes eighteen-point-two percent of that first group converts, roughly one customer, and we add two new paying customers each month at forty-nine ninety-nine. Those are estimates, not traction. The highlights show monthly receipts, delivery costs and the funding gap as the year progresses. Our white cost line includes free pilots, paid users and shared tools. This base case needs about seventy active payers to cover monthly costs and does not reach that in year one. Pilot results will replace these assumptions.
 
 ## Slide13: Market sizing
 

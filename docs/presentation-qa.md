@@ -44,3 +44,8 @@ There are now 76 Node tests: 12 model tests, five additional chart-wiring/contro
 ## Monthly graph follow-up
 
 Month reveals added on top of the existing pilot model. 79 Node tests pass. Chrome 1280×720 checked Month 1, Month 2, all twelve reveals, forward into budget, rewind to Month 12, and scenario changes at the selected month. At ten paid starts/month and zero churn, Month 8 highlights positive monthly cash while cumulative recovery remains pending. Monthly/cumulative switching retains the month; reduced motion sets chart interpolation to zero. Mobile scaling exercised at 390×844. No page errors captured. Initial visual inspection found stage clipping; the forecast layout was tightened and its old whole-chart wipe removed. A second screenshot pass confirmed the graph, narration and milestone panel fit; the assumptions footnote was then moved into the summary panel to avoid the stage edge. No production deploy or merge performed.
+
+
+## Current fixed forecast playback
+
+Supersedes the earlier interactive-control and click-per-month descriptions above. The full twelve-month monthly series is visible from entry, with fixed2newpaid/month,18.2%conversionproxy and2%churn. Month callouts advance on a timer without user clicks. Click/Next goes directly to budget; Left returns to unit economics. Re-entry restartsM1; leaving stops timers; reduced motion shows the full graph statically. Updated regressions cover full-series visibility, all12timedcallouts, no selectors, no duplicate timers, exit/re-entry, reduced motion, chart fallback and unchanged model arithmetic.
