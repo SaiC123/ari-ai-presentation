@@ -1,0 +1,8 @@
+{
+  "type": "BEFORE",
+  "agent": "ai-4",
+  "utc": "2026-10-18T01:37:48.562889+00:00",
+  "summary": "Replace five slide12 feedback screenshots with user-supplied October17 originals; update screenshot dates/provenance and Jordan result highlight position. Preserve other slides and navigation.",
+  "lock_commit": "863ad4347f32007ff2913be66fe9ad87ff7322c8",
+  "base_main": "8d048b3c9eb767c4c9db23d8f2e1fc3010c8a31b"
+}
