@@ -1,6 +1,6 @@
 # Ari AI: HackATL Presentation
 
-An animated, 20-slide HTML pitch for Ari.
+An animated, 19-slide HTML pitch for Ari.
 
 ## Present
 
@@ -47,4 +47,4 @@ Slide6 shows the customer profile and slide7 the Ari logo. Slide8 introduces Ari
 
 ## Current pitch references
 
-The 20-slide deck has a 699-word [speaker script](docs/speaker-script.md), [pilot plan](docs/pilot-plan.md), [research checks](docs/research-validation.md), [cost sensitivities](docs/economic-sensitivity.md) and [originality disclosure](docs/originality-disclosure.md). [Exact rubric coverage](docs/presentation-coverage.md) and [remaining evidence](docs/hackatl-evidence-needed.md) are consolidated; forecasts and reported feedback are not measured traction.
+The 19-slide deck has a 675-word [speaker script](docs/speaker-script.md), [pilot plan](docs/pilot-plan.md), [research checks](docs/research-validation.md), [cost sensitivities](docs/economic-sensitivity.md) and [originality disclosure](docs/originality-disclosure.md). [Exact rubric coverage](docs/presentation-coverage.md) and [remaining evidence](docs/hackatl-evidence-needed.md) are consolidated; forecasts and reported feedback are not measured traction.

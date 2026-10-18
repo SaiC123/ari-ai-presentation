@@ -22,7 +22,7 @@ Criterion names and five-point anchor summaries below come from Sai's repository
 | 16 | Costs & Sustainability | Supplied cost buckets preserved; contribution/full-profit distinction, cost/support sensitivities and measured-cost expansion gate added. |
 | 17 | Adoption & First Pilot | Slide17 and pilot-plan.md specify channels, owner roles, tracking, initial100/30/10/50/3-total-paid goals and a 50-workspace M1 scorecard. No signed partner claim. |
 | 18 | Roadmap & Scale | Slide18 gives owners, exits, resources, risks and fallback decisions. Pilot plan exposes unvalidated workload behind42/month scenario. |
-| 19 | Clear Story & Evidence | Current20-slide order;699-word prepared script follows assigned speakers and the six-part graphic recap. Actual demo-inclusive rehearsal remains necessary. |
+| 19 | Clear Story & Evidence | Current19-slide order;675-word prepared script follows assigned speakers and the six-part graphic recap. Actual demo-inclusive rehearsal remains necessary. |
 | 20 | Q&A & Assumptions | Q&A explicitly excluded from edits. Sources, economic sensitivities, comparator protocol and single unresolved-evidence checklist preserve supported assumptions for the team's preparation. No Q&A readiness claim. |
 
 Weights relayed by Sai: Problem & Impact25; Innovation & Solution15; Prototype & Execution25; Business & Scale25; Presentation & Pitch10. Each criterion scores1–5. Scores require judges and actual evidence; no100/100 guarantee.

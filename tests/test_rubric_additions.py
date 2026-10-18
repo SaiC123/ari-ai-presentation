@@ -36,7 +36,7 @@ class RubricAdditionsTests(unittest.TestCase):
             self.assertIn(text, self.slides[17])
         self.assertEqual(self.slides[17].count('<em>Needs</em>'), 5)
         self.assertEqual(self.slides[17].count('<em>Risk</em>'), 5)
-        self.assertEqual(len(self.slides), 20)
+        self.assertEqual(len(self.slides), 19)
 
 if __name__ == '__main__':
     unittest.main()

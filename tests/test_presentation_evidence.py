@@ -16,14 +16,14 @@ class PresentationEvidenceTests(unittest.TestCase):
     def test_script_speakers_and_word_budget(self):
         script = (ROOT / 'docs/speaker-script.md').read_text()
         passages = [html.unescape(re.search(r'data-spoken="([^"]+)"', s).group(1)) for s in self.slides]
-        self.assertEqual(len(passages), 20)
+        self.assertEqual(len(passages), 19)
         self.assertLess(sum(len(p.split()) for p in passages), 700)
         # The coordinated note-alignment pass must preserve the finalized script verbatim.
         sections = re.findall(r'^## (.+)\n\n([\s\S]*?)(?=^## |\Z)', script, re.M)
         slide_sections = [(title, body) for title, body in sections if title.startswith('Slide ')]
-        self.assertEqual(len(slide_sections), 20)
+        self.assertEqual(len(slide_sections), 19)
         for n, (title, body) in enumerate(slide_sections, 1):
-            speaker = 'Sarosh' if n <= 6 or n >= 19 else 'Srihith' if n <= 12 else 'Vihaan' if n == 13 else 'Sai'
+            speaker = 'Sarosh' if n <= 6 or n >= 19 else 'Srihith' if n <= 13 else 'Sai'
             self.assertEqual(title, f'Slide {n} · {speaker}')
             self.assertTrue(body.strip())
             self.assertEqual(passages[n-1], body.strip())
@@ -36,6 +36,8 @@ class PresentationEvidenceTests(unittest.TestCase):
         self.assertNotIn('data-duration-s=', ''.join(self.slides))
 
     def test_team_introduction_precedes_agents_and_keeps_evidence_controls(self):
+        self.assertNotIn('class="slide team-final-slide"', ''.join(self.slides))
+        self.assertIn('finale-slide', self.slides[-1])
         slide = self.slides[9]
         spoken = html.unescape(re.search(r'data-spoken="([^"]+)"', slide).group(1))
         self.assertLess(spoken.index('Independent Verify checks repairs.'), spoken.index('Scout maps weaknesses.'))

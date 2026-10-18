@@ -1,8 +1,8 @@
 # Ari non-demo speaker script
 
-672 whitespace-separated words; 699 with compounds and decimal values split. Full demo and Q&A excluded. Not a timed rehearsal.
+650 whitespace-separated words; 675 with compounds and decimal values split. Full demo and Q&A excluded. Not a timed rehearsal.
 
-20slides. Slide10 introduces Red, Blue and Independent Verify before the seven agent highlights. Their nodes have matching team outlines. The standalone Red/Blue slide is merged into10. Defense Lab remains separate on11; competitors12; prototype13; reported outcomes14; finance15; market16; adoption17; roadmap18; team19; recap20.
+19slides. Team-backgrounds slide removed; graphic finale is19. Sarosh1–6 and19; Srihith7–13, including prototype13; Sai14–18. Other spoken passages unchanged.
 
 ## Slide 1 · Sarosh
 
@@ -52,7 +52,7 @@ Defense Lab is the ongoing layer, designed for 24/7 monitoring: watching changes
 
 GitHub, Semgrep and Snyk illustrate this crowded market. Our proposed advantage is the connected workflow, not unique individual features. Costs and human review are tradeoffs. In early pitch feedback, a Kairo founder highlighted keeping checks current; a Stanford student valued fixing and checking changes. That’s feedback, not comparative validation.
 
-## Slide 13 · Vihaan
+## Slide 13 · Srihith
 
 Here’s our prototype replay: choose a repository, inspect the ownership issue, then the repair and before-and-after tests. I’ll distinguish live, recorded, scripted and simulated parts.
 
@@ -77,9 +77,5 @@ Our adoption plan: founder outreach and accelerators, authorized setup, scoped d
 Today: local prototype evidence. Month one: live-provider evidence and fifty pilot records. Months two and three: paid decisions and measured contribution. Months four to six: isolation and reliability before multi-repository expansion. Failed gates mean fixing, narrowing or repricing. Enterprise waits for controls and support.
 
 ## Slide 19 · Sarosh
-
-Our six founders bring business-growth research, agentic AI, reinforcement learning, software engineering, industrial engineering and venture-capital experience, with the backgrounds shown here.
-
-## Slide 20 · Sarosh
 
 AI empowered founders to build. One unchecked flaw can break that progress. Seven specialists investigate. Red, Blue and Verify turn findings into checked repairs. Affordable pilots test the business. Evidence gates guide expansion. Ari connects it all, from the first change to the next release. That’s Ari.

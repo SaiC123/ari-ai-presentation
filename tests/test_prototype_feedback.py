@@ -40,7 +40,7 @@ class PrototypeFeedbackTests(unittest.TestCase):
     def test_evidence_follows_prototype_before_financials(self):
         main = self.source.split('<main id="presentation-slides-wrapper"', 1)[1].split('</main>', 1)[0]
         slides = re.findall(r'<section class="slide[\s\S]*?</section>', main)
-        self.assertEqual(len(slides), 20)
+        self.assertEqual(len(slides), 19)
         self.assertIn('customer-story-slide', slides[5])
         self.assertIn('PROPOSED CUSTOMER PROFILE', slides[5])
         self.assertNotIn('feedback-gallery', slides[5])
