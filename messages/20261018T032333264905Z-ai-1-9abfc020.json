@@ -1,0 +1,14 @@
+{
+  "type": "AFTER",
+  "agent": "ai-1",
+  "utc": "2026-10-18T03:23:33.264763+00:00",
+  "summary": "Updated Adam\u2019s team slide and slide 17 script to software engineering at Apex146; committed and deployed",
+  "commit": "e83d78bfd7e221d52e757f4332e7353137501299",
+  "changed_paths": [
+    "docs/speaker-script.md",
+    "public/index.html"
+  ],
+  "verification": "Commit e83d78b pushed to origin/main; Vercel READY deployment dpl_Fi2dDzDtkogevPjtmM4R446KYD4V; production HTTP 200, HTML byte-identical to committed source, updated role present and former role absent; diff check and targeted source checks passed",
+  "deployment_url": "https://ari-ai-presentation.vercel.app",
+  "lock_commit": "29b3808e0edf83f05729fc5b315dd9caf22e0909"
+}
