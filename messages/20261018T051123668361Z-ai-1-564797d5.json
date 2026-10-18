@@ -1,0 +1,13 @@
+{
+  "type": "AFTER",
+  "agent": "ai-1",
+  "utc": "2026-10-18T05:11:23.668201+00:00",
+  "summary": "Slide 10 quote reveal restyled with more natural-sounding illustrative drafts, clearer two-column quote typography, and no visible placeholder label; explicit not-verbatim disclosure retained",
+  "commit": "dbebaa5135ea3344006e4c0db08de3c35e9540d7",
+  "changed_paths": [
+    "public/index.html"
+  ],
+  "verification": "81 Node tests and 13 Python tests passed; diff check passed; production HTML SHA256 matches public/index.html; clean worktree, local main equals origin/main",
+  "deployment_url": "https://ari-ai-presentation.vercel.app",
+  "lock_commit": "8328d734d5ebc0959b77cff9ea29b820d0068dce"
+}
