@@ -212,3 +212,7 @@ Slide11 now uses animated comparison bars and large result cards, with the suppl
 Slides8–12 include intended behavior from docs/comments/tests, a reproducible test, minimal repair, role-limited tools, isolated app copies, proof handoff and human approval. Docker versus local-driver isolation is clarified in reference notes. Slide5 states the daily-change/review-capacity problem without asserting unsupported prevalence. Narration is shortened to682compound-split words,643whitespace words including Vihaan's handoff; all21notes and speaker assignments match. Financial-model files remain unchanged.
 
 81Node tests and13Python tests passed. On production at1280×720, reviewer9 and Defense Lab11 were visually inspected; all explanation/result containers had equal client/scroll heights and widths, so no overflow was detected. Defense Lab's three builds advanced into12correctly. The proof caption on12was raised after inspecting the transient navigation controls. No product assessments, model evaluations or timed rehearsal were executed by this editor.
+
+## Prototype footer removal
+
+User requested removal of the DEMO REPLAY / Actual interface screenshots / Scripted scenario / No new assessment executed footer. Removed that visible paragraph and unused CSS only, from prototype slide13 in the current19-slide deck. All screenshot states, narration/source notes, evidence descriptions and other18slides remain unchanged. Four prototype tests anddiffcheckpass;Chrome13builds0/1/2checkedwithfooterabsent,finalscreenshotinspected. No new execution/deployment claim.

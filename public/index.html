@@ -946,8 +946,6 @@
     .prototype-capture-slide .prototype-frame{position:absolute;inset:0;margin:0;display:flex;align-items:center;justify-content:center;opacity:0;visibility:hidden;transition:opacity .2s}
     .prototype-capture-slide .prototype-frame img{display:block;max-width:100%;max-height:100%;width:auto;height:100%;object-fit:contain;border-radius:15px;box-shadow:0 12px 30px rgba(28,18,16,.13)}
     .prototype-capture-slide[data-build-current="0"] .prototype-frame-0,.prototype-capture-slide[data-build-current="1"] .prototype-frame-1,.prototype-capture-slide[data-build-current="2"] .prototype-frame-2{opacity:1;visibility:visible}
-    .prototype-capture-slide .prototype-capture-limit{position:absolute;left:72px;right:72px;bottom:75px;margin:0;font-size:15px;color:var(--muted);display:flex;gap:18px;align-items:center}
-    .prototype-capture-slide .prototype-capture-limit b{font:600 13px/1.2 "IBM Plex Mono",monospace;color:var(--acid)}
 
     /* Calls conclude slide 10 as a separate full-screen reveal. */
     .feedback-slide .cp2 .email-focus{width:100%;height:370px}
@@ -1330,7 +1328,6 @@ REFERENCE, NOT SPOKEN: Presentation keyboard navigation and reduced motion are d
           <figure class="prototype-frame prototype-frame-1"><img src="prototype/review.png" alt="Ari code review flags a missing ownership check in payments_api/app.py at line 137"></figure>
           <figure class="prototype-frame prototype-frame-2"><img src="prototype/repair-tests.png" alt="Ari demo shows require_owner and audit additions with three before and after test rows; foreign-payment test changes from fail to pass"></figure>
         </div>
-        <p class="prototype-capture-limit"><b>DEMO REPLAY</b>Actual interface screenshots · Scripted scenario · No new assessment executed</p>
       </section>
 
       <section class="slide dark customer-story-slide feedback-slide" data-note="SPOKEN: Five emails report billing retries, SQL injection, workspace access, error disclosure and upload-path fixes. These aren’t independently audited. Samira requested clearer permissions and code-processing explanations. That’s our next improvement. Jordan reports about twenty minutes, 78 regression tests and twelve new injection tests passing in staging.
