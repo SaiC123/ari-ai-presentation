@@ -969,12 +969,12 @@
     .market-call-phase .call-profile-copy h3{font-size:28px;line-height:1.15;letter-spacing:-.025em;color:var(--ink)}
     .market-call-phase .call-role{font-size:19px;line-height:1.4;color:var(--ink);margin-top:14px}
     .market-call-phase .call-background{font-size:17px;line-height:1.4;color:var(--muted);margin-top:14px}
-    .market-call-phase .call-signal{display:grid;grid-template-columns:1fr 96px 1fr;column-gap:36px;row-gap:20px;align-items:center;margin-top:32px;padding:24px 28px;border-radius:16px;background:var(--ink);color:white}
-    .market-call-phase .call-signal-stage h3{font-size:28px;line-height:1.15;letter-spacing:-.025em;color:white}
-    .market-call-phase .call-signal-stage:last-of-type h3{color:#ffb09f}
-    .market-call-phase .call-signal-stage p{margin-top:8px;font-size:18px;line-height:1.3;color:#e7d6d0}
-    .market-call-phase .call-signal-arrow{display:block;width:96px;height:32px;fill:none;stroke:#ff8a75;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
-    .market-call-phase .call-signal-summary{grid-column:1/-1;font-size:16px;line-height:1.4;color:#e7d6d0}
+    .market-call-phase .call-signal{display:grid;grid-template-columns:1fr 1fr;column-gap:36px;row-gap:16px;align-items:stretch;margin-top:32px;padding:20px 28px 24px;border-radius:16px;background:var(--ink);color:white}
+    .market-call-phase .call-signal-label{grid-column:1/-1;font:600 13px/1.2 "IBM Plex Mono",monospace;letter-spacing:.04em;color:#ffb09f}
+    .market-call-phase .call-signal-stage{min-width:0;padding:4px 0}
+    .market-call-phase .call-signal-stage h3{margin-bottom:10px;font:600 12px/1.25 "IBM Plex Mono",monospace;letter-spacing:.03em;text-transform:uppercase;color:#ffb09f}
+    .market-call-phase .call-signal-stage blockquote{font-size:20px;line-height:1.35;font-weight:600;color:white}
+    .market-call-phase .call-signal-summary{grid-column:1/-1;font-size:14px;line-height:1.35;color:#e7d6d0}
     @media(prefers-reduced-motion:reduce){.market-call-phase{transition:none;transform:none}}
   </style>
 </head>
@@ -1226,7 +1226,7 @@ REFERENCE, NOT SPOKEN: Value chain: version-aware business intent -&gt; bounded 
 
       <section class="slide market-position-slide" data-note="SPOKEN: Nine competitors offer overlapping capabilities. Our proposed value connects intent, investigation, approved repair, and independent verification for small teams. Assessment costs and human review are tradeoffs. Comparative performance remains unvalidated.
 
-REFERENCE, NOT SPOKEN: Preserve nine-competitor landscape and linked primary sources. Capability groups overlap. Proposed positioning, not benchmark-proven advantage. No comparative runs supplied; docs/comparison-protocol.md is an empty evidence-ready protocol, not results. Pricing units/editions differ; docs/research-validation.md records primary pricing references. No cheapest/only end-to-end claim. The converging category connectors express conceptual workflow coverage, not integrations with competitor products. ARI remains a prototype; monitoring requests code-change checks, and repairs require human approval. Backgrounds and feedback supplied by the user: first call is a GT student/founder of Kairo Securities, user reports a16z speedrun backing; second is Aarav, a Stanford student/former Kairo intern. Both heard the idea, did not use Ari, liked it in general, saw continuous monitoring as a potential differentiator and relevant to AI-assisted/vibe coding. Bullets paraphrase this reported pitch feedback; founder lens is role-based relevance, not a fabricated specific experience or quote. No independent benchmark, purchase intent, measured use or institutional/a16z endorsement is established. The owner subsequently confirmed a newer live Defense Lab deployment; the pitch participants did not use it, and no independent live run was observed during this edit. Exact identities/affiliations were not independently verified. See docs/call-feedback.md." data-spoken="Nine competitors offer overlapping capabilities. Our proposed value connects intent, investigation, approved repair, and independent verification for small teams. Assessment costs and human review are tradeoffs. Comparative performance remains unvalidated.">
+REFERENCE, NOT SPOKEN: Preserve nine-competitor landscape and linked primary sources. Capability groups overlap. Proposed positioning, not benchmark-proven advantage. No comparative runs supplied; docs/comparison-protocol.md is an empty evidence-ready protocol, not results. Pricing units/editions differ; docs/research-validation.md records primary pricing references. No cheapest/only end-to-end claim. The converging category connectors express conceptual workflow coverage, not integrations with competitor products. ARI remains a prototype; monitoring requests code-change checks, and repairs require human approval. Backgrounds and feedback supplied by the user: first call is a GT student/founder of Kairo Securities, user reports a16z speedrun backing; second is Aarav, a Stanford student/former Kairo intern. Both heard the idea, did not use Ari, liked it in general, saw continuous monitoring as a potential differentiator and relevant to AI-assisted/vibe coding. The visible quote examples on the call reveal are fictional placeholder copy, not their words or verified endorsements; replace them with approved verbatim quotes before presenting. No independent benchmark, purchase intent, measured use or institutional/a16z endorsement is established. The owner subsequently confirmed a newer live Defense Lab deployment; the pitch participants did not use it, and no independent live run was observed during this edit. Exact identities/affiliations were not independently verified. See docs/call-feedback.md." data-spoken="Nine competitors offer overlapping capabilities. Our proposed value connects intent, investigation, approved repair, and independent verification for small teams. Assessment costs and human review are tradeoffs. Comparative performance remains unvalidated.">
         <div class="slide-head"><span class="brand-mini"><img class="brand-ant" src="ari-ant-mark.png" alt="" aria-hidden="true">Advantage over Alternatives</span><span class="slide-num">10</span></div>
         <h2>A crowded market.<br><span class="accent">Our advantage: the connected workflow.</span></h2>
         <span class="build-trigger" data-build="1"></span><span class="build-trigger" data-build="2"></span><span class="build-trigger" data-build="3"></span>
@@ -1264,11 +1264,11 @@ REFERENCE, NOT SPOKEN: Preserve nine-competitor landscape and linked primary sou
               </div>
             </article>
           </div>
-          <div class="call-signal" aria-label="Shared takeaway from two pitch conversations">
-            <div class="call-signal-stage"><h3>More AI-written code</h3><p>Faster shipping. More change.</p></div>
-            <svg class="call-signal-arrow" viewBox="0 0 96 32" aria-hidden="true"><path d="M2 16h88M78 4l12 12-12 12"/></svg>
-            <div class="call-signal-stage"><h3>Continuous monitoring</h3><p>Security that keeps checking.</p></div>
-            <p class="call-signal-summary">Both saw this as a reason Ari could stand out for teams building with AI.</p>
+          <div class="call-signal" aria-label="Clearly marked sample quote wording, not actual participant quotations">
+            <p class="call-signal-label">QUOTE PLACEHOLDERS · SAMPLE COPY ONLY, NOT THEIR WORDS</p>
+            <div class="call-signal-stage"><h3>Founder · placeholder</h3><blockquote>“As AI helps us ship more code, I can see why a small team would want security checks that keep up.”</blockquote></div>
+            <div class="call-signal-stage"><h3>Student · placeholder</h3><blockquote>“The idea makes sense: find a risky change, help fix it, and check that the fix works.”</blockquote></div>
+            <p class="call-signal-summary">Replace with approved, verbatim feedback before presenting.</p>
           </div>
         </div>
       </section>
