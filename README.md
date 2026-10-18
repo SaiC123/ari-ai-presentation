@@ -40,7 +40,7 @@ Every AI editor must read [AGENTS.md](AGENTS.md) and follow the [shared coordina
 
 ## Monthly pilot forecast
 
-Slide13 shows a full-year conditional forecast with three milestones: M1 five free pilots costing $661.50; M2 conversion/growth and monthly cash coverage at about43 expected payers (32 minimum required); M3 cumulative recovery. Growth42/month is derived from1,000/24, not a published monthly average. Prices are49.99/129.99/359.99 for7/20/60 assessments. No dropdowns, autoplay or monthly-click sequence. See docs/pilot-forecast.md.
+Slide13 uses a conservative planning baseline: five free M1pilots;18.2%initialconversionproxy plus2newdirectpaid/month fromM2;2%assumedchurn. M2about3expectedpayers is not3/5pilotconversion. NoYear1cashcoverage or recovery;32Founderaccountsneeded;year1fundinggap4047.02. Costs remain estimates/demo inputs, with explicit per-run measurement and positive-observed-contribution expansion gate. Acquisition target is not measured traction or an industry average. See docs/pilot-forecast.md.
 ## Prototype evidence slide
 
 Slide6 shows the customer profile, slide7 the Ari logo, slides8–10 the solution and comparison, and slide11 the prototype workflow/verification. Slide12 follows with the two evidence boxes and enlarged email with its reported result highlighted. Financials remain slide13. Five supplied screenshots and their provenance are documented in `docs/prototype-feedback.md`. VC feedback remains pending. Run `python3 -m unittest discover -s tests -p test_prototype_feedback.py` to check the evidence assets and attribution.

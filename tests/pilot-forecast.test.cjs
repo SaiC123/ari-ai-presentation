@@ -20,13 +20,13 @@ test('five free pilots cost money but generate no revenue or payment fees', () =
 test('the first free cohort converts once, with paid intake beginning in Month 2', () => {
   const { rows, expectedConversions } = forecast();
   near(expectedConversions, 0.91);
-  near(rows[1].paidAccounts, 42.91);
-  near(rows[1].revenue, 2145.0709);
-  near(rows[2].paidAccounts, 84.0518);
+  near(rows[1].paidAccounts, 2.91);
+  near(rows[1].revenue, 145.4709);
+  near(rows[2].paidAccounts, 4.8518);
   assert.equal(rows[1].freeAccounts, 0);
   assert.equal(rows[2].converted, 0);
   assert.equal(rows[0].newPaid, 0);
-  assert.equal(rows[1].newPaid, 42);
+  assert.equal(rows[1].newPaid, 2);
 });
 
 test('all paying accounts stay on Founder pricing and consume its full allowance', () => {
@@ -79,7 +79,7 @@ test('conversion and paid retention are independent assumptions', () => {
   const lowChurn = forecast({ monthlyChurn: 0 });
   const highChurn = forecast({ monthlyChurn: 1 });
   near(lowChurn.rows[1].paidAccounts, highChurn.rows[1].paidAccounts);
-  near(highChurn.rows[2].paidAccounts, 42);
+  near(highChurn.rows[2].paidAccounts, 2);
   assert.ok(lowChurn.rows[11].paidAccounts > highChurn.rows[11].paidAccounts);
 });
 
@@ -116,9 +116,9 @@ test('invalid rates, amounts, and horizons fail instead of plotting nonsense', (
   assert.equal(defaults.conversionRate, 0.182);
 });
 
-test('benchmark-derived intake has separate monthly coverage and cumulative recovery', () => {
-  const model = forecast();
-  assert.equal(defaults.newPaidPerMonth, Math.round(1000/24));
+test('aggressive sensitivity is not the conservative default', () => {
+  const model = forecast({newPaidPerMonth:42});
+  assert.equal(defaults.newPaidPerMonth, 2);
   assert.equal(model.monthlyBreakEven,2);
   assert.equal(model.cumulativeBreakEven,3);
   near(model.rows[2].paidAccounts,84.0518);
@@ -127,4 +127,13 @@ test('benchmark-derived intake has separate monthly coverage and cumulative reco
   assert.ok(model.rows[2].cumulativeNet > 0);
   assert.ok(forecast({months:24}).rows.at(-1).paidAccounts < 1000,
     'linear gross intake plus churn does not claim to replicate the cited net milestone');
+});
+
+test('conservative baseline reports the full funding gap without invented break-even', () => {
+  const m=forecast();
+  assert.equal(m.monthlyBreakEven,null);
+  assert.equal(m.cumulativeBreakEven,null);
+  near(m.fundingNeeded,4047.015076495496);
+  near(m.rows[11].paidAccounts,20.67040117928807);
+  assert.ok(m.rows.every(row=>row.net<0));
 });

@@ -484,10 +484,10 @@ test('the full forecast includes free pilot cash costs and no M1 revenue', () =>
   assert.equal(d.chart().data.labels.length,12);
   assert.equal(d.chart().data.datasets[0].data[0],0);
   assert.equal(d.chart().data.datasets[1].data[0],661.50);
-  assert.equal(d.selectors['#forecastFunding'].textContent,'$661.50');
-  assert.equal(d.selectors['#forecastMonthly'].textContent,'Monthly break-even: M2 · 32 payers needed');
-  assert.equal(d.selectors['#forecastRecovery'].textContent,'Earlier losses recovered: M3');
-  assert.match(d.selectors['#forecastAccessible'].textContent,/42 new paid.*not a published monthly average/);
+  assert.equal(d.selectors['#forecastFunding'].textContent,'$4,047.02');
+  assert.equal(d.selectors['#forecastMonthly'].textContent,'Monthly coverage: not in Year 1 · 32 payers needed');
+  assert.equal(d.selectors['#forecastRecovery'].textContent,'Earlier losses: not recovered in Year 1');
+  assert.match(d.selectors['#forecastAccessible'].textContent,/2 new direct-paid.*not measured traction/);
 });
 
 test('workspace tiers have seven/twenty/sixty runs and descending included-run prices', () => {
@@ -497,15 +497,15 @@ test('workspace tiers have seven/twenty/sixty runs and descending included-run p
   assert.match(html, /Scale<\/p><strong>\$359\.99<\/strong>[\s\S]*?60 full assessments/);
   assert.ok(tiers[1][0]/tiers[1][1] < tiers[0][0]/tiers[0][1]);
   assert.ok(tiers[2][0]/tiers[2][1] < tiers[1][0]/tiers[1][1]);
-  assert.match(html, /Growth cost \$81\.07 · 38% contribution margin/);
+  assert.match(html, /Growth cost \$81\.07 · 38% modeled contribution margin/);
   assert.match(html, /\$1,559\.88 annual Growth plan/);
 });
 
-test('the selected research citations are below the conversion and derived growth figures', () => {
+test('conversion is sourced while acquisition is explicitly a planning target', () => {
   assert.doesNotMatch(html, /<select[^>]*id="forecast(?:Intake|Conversion|Churn|View)"/);
   assert.match(html, /18\.2% conversion[\s\S]*firstpagesage\.com/);
-  assert.match(html, /≈42 paid \/ month[\s\S]*chartmogul\.com\/reports\/saas-go-to-market-report/);
-  assert.match(html, /Derived scenario, not a monthly average/);
+  assert.match(html, /\+2 paid \/ month[\s\S]*Founder outreach target/);
+  assert.match(html, /Planning assumption, not measured acquisition/);
 });
 
 test('cash tooltip reconciles initial free delivery without charging payment fees', () => {
@@ -531,24 +531,24 @@ test('three milestone stages replace all automatic or month-by-month playback', 
   assert.match(d.selectors['#forecastMonthTitle'].textContent,/Month 1/);
   d.click('#next');
   assert.match(d.selectors['#forecastMonthTitle'].textContent,/Month 2/);
-  assert.equal(d.selectors['#forecastThreshold'].textContent,'+42');
-  assert.equal(d.selectors['#forecastUsers'].textContent,'42.91');
-  assert.match(d.selectors['#forecastMonthEvent'].textContent,/0.91 conversions.*42 new paid/);
+  assert.equal(d.selectors['#forecastThreshold'].textContent,'+2');
+  assert.equal(d.selectors['#forecastUsers'].textContent,'2.91');
+  assert.match(d.selectors['#forecastMonthEvent'].textContent,/0.91 conversions.*2 new direct-paid/);
   d.click('#next');
-  assert.match(d.selectors['#forecastMonthTitle'].textContent,/Month 2.*break-even/);
-  assert.equal(d.selectors['#forecastThreshold'].textContent,'≈43');
-  assert.equal(d.selectors['#forecastUsers'].textContent,'42.91');
-  assert.equal(d.selectors['#forecastRevenue'].textContent,'$2,145.07');
-  assert.equal(d.selectors['#forecastCost'].textContent,'$1,961.07');
+  assert.match(d.selectors['#forecastMonthTitle'].textContent,/Month 12.*Funding review/);
+  assert.equal(d.selectors['#forecastThreshold'].textContent,'≈21');
+  assert.equal(d.selectors['#forecastUsers'].textContent,'20.67');
+  assert.equal(d.selectors['#forecastRevenue'].textContent,'$1,033.31');
+  assert.equal(d.selectors['#forecastCost'].textContent,'$1,203.82');
   assert.equal(d.pendingTimers(),0);
   d.click('#next');
   assert.equal(d.slides[1].dataset.buildCurrent,'4');
 });
 
-test('rewind restores break-even, then growth, then pilot launch before unit costs', () => {
+test('rewind restores funding review, then growth, then pilot launch before unit costs', () => {
   const d = presentation('#2', {counts:[0,4,1],forecast:true,chart:true,finance:true});
   d.build(1,4); d.click('#prev');
-  assert.match(d.selectors['#forecastMonthTitle'].textContent,/Month 2/);
+  assert.match(d.selectors['#forecastMonthTitle'].textContent,/Month 12/);
   d.click('#prev'); assert.match(d.selectors['#forecastMonthTitle'].textContent,/Month 2/);
   d.click('#prev'); assert.match(d.selectors['#forecastMonthTitle'].textContent,/Month 1/);
   d.click('#prev'); assert.equal(d.slides[1].dataset.buildCurrent,'2');
@@ -560,8 +560,8 @@ test('milestones and full accessible table remain if Chart.js is unavailable', (
   d.build(1,3); d.click('#next'); d.click('#next');
   assert.equal(d.selectors['#economicsChart'].hidden,true);
   assert.equal(d.selectors['#forecastChartFallback'].hidden,false);
-  assert.match(d.selectors['#forecastAccessible'].textContent,/peak funding gap \$661.50/);
-  assert.match(d.selectors['#forecastMonthCash'].textContent,/Revenue \$2,145.07/);
+  assert.match(d.selectors['#forecastAccessible'].textContent,/peak funding gap \$4,047.02/);
+  assert.match(d.selectors['#forecastMonthCash'].textContent,/Revenue \$1,033.31/);
 });
 
 test('reduced motion keeps the same fixed milestones with no timer', () => {

@@ -6,7 +6,7 @@
     months: 12,
     initialFreePilots: 5,
     conversionRate: 0.182, // First Page Sage opt-in organic trial average; proxy only.
-    newPaidPerMonth: 42, // User-approved proxy: round(1,000 subscribers / 24 months), not a measured monthly average.
+    newPaidPerMonth: 2, // Founder-led direct-paid acquisition planning target from Month 2, not a measured rate.
     monthlyChurn: 0.02, // Sensitivity assumption, not measured pilot retention.
     monthlyPrice: 49.99,
     fixedMonthly: 500,
