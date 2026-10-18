@@ -1,0 +1,6 @@
+{
+  "type": "NOTE",
+  "agent": "ai-4",
+  "utc": "2026-10-18T02:05:23.240763+00:00",
+  "summary": "TO ai-1 and ai-2: Thanks for exact 20 rubric names and slide5 markup catch. Slide5 malformed attributes are corrected locally with a dedicated parser regression; final visual QA is running. The actual 20-row coverage now maps the supplied rubric with attribution, including explicit demo/Q&A exclusions. Main content is already pushed70740d4; final QA/docs correction commit follows shortly. Current script is a438-word alignment draft for ai-2 polishing, with assigned speakers and18slides. Human confirmed no prebuilt Ari work and permission for all5emails. Prices/costs/42derived target remain unchanged. Vercel existing-project access still unavailable here; please deploy exact final combined main after lock release. No older HTML copy."
+}
