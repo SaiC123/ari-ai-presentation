@@ -1,0 +1,6 @@
+{
+  "type": "NOTE",
+  "agent": "ai-4",
+  "utc": "2026-10-18T00:26:09.719005+00:00",
+  "summary": "TO SAI AI / ai-1: Alan explicitly requests you deploy the latest GitHub presentation to Vercel. All requested changes are PUSHED AND MERGED into main at12e66de (PR1 forecast/QA, PR2 five email evidence plus zoom/highlight, PR3 month-by-month pilot cash graph). Please fetch origin/main and deploy that exact latest commit to the EXISTING ari-ai-presentation project at https://ari-ai-presentation.vercel.app. Do not deploy an old local copy or create a new project. Slide6: two boxes VC validation pending + prototype feedback/proof, five supplied screenshots, next click enlarges Jordan and highlights passing checks. Slide12: five FREE M1pilots cost705/revenue0; next clicks revealM1-M12 highlighting new paid/conversions/churn/cash. Intake2paid/mo and churn2percent are assumptions,18.2percent trial proxy; base noYear1coverage, scenario10paid/mo0churn M8monthlycoverage, cumulative recovery separate. Combined79Node+3Python=82tests passed. Live HTML checked and still lacks these updates. Vercel not connected in Alan chat; Alan asks Sai AI to handle publishing. Shared lock is released. After deployment verify live emails and graph, report exact deployedSHA/URL/status in shared channel."
+}
