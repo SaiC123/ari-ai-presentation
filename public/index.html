@@ -951,6 +951,15 @@
     .prototype-capture-slide[data-build-current="0"] .prototype-frame-0,.prototype-capture-slide[data-build-current="1"] .prototype-frame-1,.prototype-capture-slide[data-build-current="2"] .prototype-frame-2{opacity:1;visibility:visible}
     .prototype-capture-slide .prototype-capture-limit{position:absolute;left:72px;right:72px;bottom:75px;margin:0;font-size:15px;color:var(--muted);display:flex;gap:18px;align-items:center}
     .prototype-capture-slide .prototype-capture-limit b{font:600 13px/1.2 "IBM Plex Mono",monospace;color:var(--acid)}
+
+    /* Keep reported results readable when full-email previews are small. */
+    .feedback-slide .validation-box{height:420px}
+    .feedback-slide .feedback-gallery{margin-top:12px}
+    .feedback-slide .email-key-result{display:block;min-height:66px;margin-top:9px;font-size:16px;line-height:1.35;color:#ffd85f}
+    .feedback-slide .email-key-result mark,.feedback-slide .feedback-quote mark{background:#ffd85f;color:#241912;box-decoration-break:clone;-webkit-box-decoration-break:clone;padding:1px 3px;border-radius:2px}
+    .feedback-slide .feedback-next{margin-top:8px}
+    .feedback-slide .feedback-cue{margin-top:8px}
+    .feedback-slide .email-preview-highlight{background:rgba(255,208,70,.82)}
   </style>
 </head>
 <body>
@@ -1265,11 +1274,11 @@ REFERENCE, NOT SPOKEN: All five October17 original screenshots preserved; permis
               <h3>Five reported prototype outcomes</h3>
               <p>Reported: weakness reproduced → repair reviewed → checks passed</p>
               <div class="feedback-gallery" aria-label="Five supplied prototype feedback emails">
-                <figure class="feedback-email"><div class="feedback-preview"><img src="feedback/priya.png" alt="Email from Priya Shah reporting a billing retry fix and passing payment tests"><span class="email-preview-highlight" style="left:26.5%;top:31.4%;width:58%;height:3.0%" aria-hidden="true"></span></div><figcaption>Priya · Billing retries</figcaption></figure>
-                <figure class="feedback-email is-featured"><div class="feedback-preview"><img src="feedback/jordan.png" alt="Email from Jordan Ellis reporting the injection case stopped working and search tests passed"><span class="email-preview-highlight" style="left:8.1%;top:46.6%;width:49.5%;height:3.0%" aria-hidden="true"></span></div><figcaption>Jordan · SQL injection</figcaption></figure>
-                <figure class="feedback-email"><div class="feedback-preview"><img src="feedback/maya.png" alt="Email from Maya Chen reporting cross-workspace requests blocked while regular invites worked"><span class="email-preview-highlight" style="left:45.0%;top:38.0%;width:45.5%;height:3.0%" aria-hidden="true"></span></div><figcaption>Maya · Workspace access</figcaption></figure>
-                <figure class="feedback-email"><div class="feedback-preview"><img src="feedback/alex.png" alt="Email from Alex Rivera reporting a generic error response and passing error tests"><span class="email-preview-highlight" style="left:30.4%;top:37.3%;width:49.7%;height:3.0%" aria-hidden="true"></span></div><figcaption>Alex · Error disclosure</figcaption></figure>
-                <figure class="feedback-email"><div class="feedback-preview"><img src="feedback/samira.png" alt="Email from Samira Okafor reporting traversal rejected and normal uploads passed, and requesting clearer permission information"><span class="email-preview-highlight" style="left:10.0%;top:42.0%;width:45.5%;height:3.0%" aria-hidden="true"></span></div><figcaption>Samira · Upload paths</figcaption></figure>
+                <figure class="feedback-email"><div class="feedback-preview"><img src="feedback/priya.png" alt="Email from Priya Shah reporting a billing retry fix and passing payment tests"><span class="email-preview-highlight" style="left:26.5%;top:31.4%;width:58%;height:3.0%" aria-hidden="true"></span></div><figcaption>Priya · Billing retries<span class="email-key-result">“<mark>it passed along with the normal payment tests.</mark>”</span></figcaption></figure>
+                <figure class="feedback-email is-featured"><div class="feedback-preview"><img src="feedback/jordan.png" alt="Email from Jordan Ellis reporting the injection case stopped working and search tests passed"><span class="email-preview-highlight" style="left:8.1%;top:46.6%;width:49.5%;height:3.0%" aria-hidden="true"></span></div><figcaption>Jordan · SQL injection<span class="email-key-result">“<mark>injection case stopped working; existing search tests passed.</mark>”</span></figcaption></figure>
+                <figure class="feedback-email"><div class="feedback-preview"><img src="feedback/maya.png" alt="Email from Maya Chen reporting cross-workspace requests blocked while regular invites worked"><span class="email-preview-highlight" style="left:45.0%;top:38.0%;width:45.5%;height:3.0%" aria-hidden="true"></span></div><figcaption>Maya · Workspace access<span class="email-key-result">“<mark>Cross-workspace request got blocked; regular invites still worked.</mark>”</span></figcaption></figure>
+                <figure class="feedback-email"><div class="feedback-preview"><img src="feedback/alex.png" alt="Email from Alex Rivera reporting a generic error response and passing error tests"><span class="email-preview-highlight" style="left:30.4%;top:37.3%;width:49.7%;height:3.0%" aria-hidden="true"></span></div><figcaption>Alex · Error disclosure<span class="email-key-result">“<mark>the error tests passed.</mark>”</span></figcaption></figure>
+                <figure class="feedback-email"><div class="feedback-preview"><img src="feedback/samira.png" alt="Email from Samira Okafor reporting traversal rejected and normal uploads passed, and requesting clearer permission information"><span class="email-preview-highlight" style="left:10.0%;top:42.0%;width:45.5%;height:3.0%" aria-hidden="true"></span></div><figcaption>Samira · Upload paths<span class="email-key-result">“<mark>the traversal input was rejected and a normal upload still passed.</mark>”</span></figcaption></figure>
               </div>
               <p class="feedback-next"><b>Next improvement:</b> clarify repository permissions and code processing.<br><span>Samira’s request · planned, not yet validated</span></p><p class="feedback-cue">Next: a closer look at Jordan's result →</p>
             </article>

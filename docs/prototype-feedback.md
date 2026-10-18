@@ -22,3 +22,7 @@ Slide6 remains ICP/theme, slide7 the Ari logo, slide8 the solution, slide9 red/b
 ## Key-result highlights
 
 The user clarified that key results should be highlighted, rather than dates/times. Each original preview now has a yellow CSS overlay on its reported check: Priya's repeated-event/payment tests passed; Jordan's injection blocked/search tests passed; Maya's cross-workspace block/regular invites worked; Alex's generic response/logs/error tests passed; Samira's traversal rejected/normal upload passed. Jordan's enlarged screenshot retains a precisely aligned marker, and the complete check quote is emphasized beneath it. Screenshot pixels and reported wording remain unchanged. Highlights denote reported outcomes, not independently rerun metrics.
+
+## Readability correction after production review
+
+The first overlays were verified on the live deployment but became thin lines when the gallery shrank the emails. The gallery now repeats one verbatim result excerpt beneath each preview in16px dark text on a solid yellow marker. Jordan's large quote uses the same treatment. These are attributed excerpts, with each original screenshot retained above it; no outcome wording is altered. The larger gallery box keeps all five results, the planned permissions improvement and the next-build cue visible.

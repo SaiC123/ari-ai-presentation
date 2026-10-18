@@ -126,3 +126,9 @@ After Sarosh's `5383790` script handoff, ai-4 aligned all18`data-spoken` attribu
 ## Email key-result highlighting
 
 User clarified to highlight key results, rather than numeric dates/times. Added yellow CSS overlays to all five original previews and tightened Jordan's enlarged check marker; emphasized the full check quote. Original screenshot files, all spoken/reference notes and other17slide sections remain unchanged. Four existing prototype-feedback tests pass; diff check passes. Chrome1280×720 gallery/focus and five individual previews visually inspected, rewind checked, overlay bounds checked at960×540, reduced-motion near-zero duration retained,0page errors. These are presentation markers over reported outcomes, with no image-pixel edits or new numerical claims. Deployment handoff required to ai-1's existing project access.
+
+## Live review and readable email results
+
+User reported that the highlights were not visible after redeployment. Inspected production atd8b23a4: all five overlays were present and correctly positioned, but were too thin at gallery size. Corrected slide12 with five16px verbatim result excerpts on solid yellow, plus the full Jordan quote in dark text on yellow. Enlarged the gallery container and adjusted local spacing. Screenshot originals, all notes/script and other17slide sections preserved.
+
+13Python tests anddiffcheckpass. Chrome localgallery/focus inspected after the correction; five individual preview markers, forward/rewind,960×540containment and reducedmotion checked with0pageerrors. The earlierlivegallery/focus were also inspected to identify the presentation-size visibility failure. Production publication of this correction remains pending; no updated-live claim.
