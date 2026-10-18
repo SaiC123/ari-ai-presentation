@@ -1,0 +1,27 @@
+{
+  "type": "AFTER",
+  "agent": "ai-1",
+  "utc": "2026-10-18T05:42:52.315025+00:00",
+  "summary": "Updated slide 13 and the forecast to 50 proposed free pilot workspaces in Month 1 for usage data and feedback, with no new free pilots from Month 2. Recalculated month-one costs and cash recovery; synchronized forecast exports, speaker script, pilot plan, source notes, and tests. Commit 6737a6fb895e8fda38b0b0ff2248e275a57aadfe deployed to the existing Ari presentation site.",
+  "commit": "6737a6fb895e8fda38b0b0ff2248e275a57aadfe",
+  "changed_paths": [
+    "README.md",
+    "docs/ai4-timing-pass.md",
+    "docs/cost-reconciliation.md",
+    "docs/economic-sensitivity.md",
+    "docs/hackatl-master-presentation-prompt.md",
+    "docs/hackatl-pitch-source-inventory.md",
+    "docs/pilot-forecast.csv",
+    "docs/pilot-forecast.md",
+    "docs/pilot-plan.md",
+    "docs/presentation-qa.md",
+    "docs/speaker-script.md",
+    "public/index.html",
+    "public/pilot-forecast.js",
+    "tests/pilot-forecast.test.cjs",
+    "tests/presentation-navigation.test.cjs"
+  ],
+  "verification": "81 Node tests passed; 13 Python tests passed; diff check passed; script word-budget regression is exactly 700; CSV export regenerated; production HTML SHA-256 matches public/index.html; worktree clean and local main equals origin/main.",
+  "deployment_url": "https://ari-ai-presentation.vercel.app",
+  "lock_commit": "1c6d328b88b8d25323e38bef86713d4626bed306"
+}
