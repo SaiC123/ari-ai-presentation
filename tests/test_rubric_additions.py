@@ -14,6 +14,20 @@ class RubricAdditionsTests(unittest.TestCase):
         self.assertIn('https://www.veracode.com/blog/genai-code-security-report/', self.slides[3])
         self.assertIn('benchmark samples, not all AI code', self.slides[3])
 
+    def test_competitor_landscape_has_sources_and_staged_positioning(self):
+        slide = self.slides[9]
+        names = ('GitHub Code Security', 'Semgrep', 'SonarQube', 'Snyk', 'Aikido', 'Veracode', 'Checkmarx', 'XBOW', 'Pentera')
+        links = re.findall(r'<a class="map-vendor[^"]*" href="(https://[^"]+)"[^>]*><b>([^<]+)</b>', slide)
+        self.assertEqual(tuple(name for _, name in links), names)
+        self.assertEqual(len({url for url, _ in links}), 9)
+        self.assertEqual(slide.count('class="map-cluster"'), 3)
+        self.assertIn('Qualitative grouping, not a ranking', slide)
+        self.assertIn('Capabilities overlap across all three groups.', slide)
+        self.assertIn('Proposed small-team workflow · Prototype', slide)
+        self.assertIn('Human-approved repairs', slide)
+        self.assertEqual(set(re.findall(r'data-build="(\d+)"', slide)), {'1', '2'})
+        self.assertIn('class="landscape-ari" data-build="2"', slide)
+
     def test_comparison_and_roadmap_have_limits_and_resources(self):
         for text in ('Snyk', 'Semgrep', 'GitHub Code Security', 'Tradeoff:', 'not yet validated'):
             self.assertIn(text, self.slides[9])

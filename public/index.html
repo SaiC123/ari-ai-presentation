@@ -866,6 +866,36 @@
     .road-slide .road-sign span{font-size:15px;line-height:1.35;margin-top:12px}
     .road-slide .road-sign em{font-style:normal;font-weight:600;color:var(--acid)}
 
+    /* Slide 10: capability landscape, with no performance axes or exclusivity claims. */
+    .market-position-slide h2{font-size:48px;letter-spacing:-.04em}
+    .market-position-slide .landscape-caption{font-size:17px;line-height:1.4;color:var(--muted);margin-top:12px}
+    .market-position-slide .competitor-map{display:grid;grid-template-columns:1fr 1.1fr 1fr;gap:28px;margin-top:26px;position:relative}
+    .market-position-slide .map-cluster{border-top:2px solid var(--acid);padding-top:12px;min-height:258px}
+    .market-position-slide .map-cluster h3{font-size:23px;margin-bottom:12px}
+    .market-position-slide .map-vendor{display:flex;align-items:center;justify-content:space-between;gap:8px;min-height:48px;border-bottom:1px solid var(--line);text-decoration:none;color:var(--ink)}
+    .market-position-slide .map-vendor b{font:600 23px/1.12 "Space Grotesk",sans-serif}
+    .market-position-slide .map-vendor small{font-size:14px;line-height:1.25;color:var(--muted);text-align:right;max-width:122px}
+    .market-position-slide .map-vendor:hover{color:var(--acid);background:var(--panel)}
+    .market-position-slide .map-vendor:focus-visible{outline:3px solid var(--acid);outline-offset:3px}
+    .market-position-slide .map-vendor.github b{font-size:20px;max-width:150px}
+    .market-position-slide .map-overlap{font-size:15px;line-height:1.4;color:var(--muted);margin-top:12px}
+    .market-position-slide .landscape-ari{display:grid;grid-template-columns:125px 1fr;align-items:center;gap:24px;background:var(--ink);color:white;margin-top:18px;padding:18px 24px;border-radius:12px}
+    .market-position-slide .landscape-ari-brand{display:flex;align-items:center;gap:12px;font:700 34px/1 "Space Grotesk",sans-serif}
+    .market-position-slide .landscape-ari-brand img{width:48px;height:48px;object-fit:contain;filter:brightness(0) invert(1)}
+    .market-position-slide .landscape-ari h3{font-size:26px;line-height:1.2;color:#ffb09f}
+    .market-position-slide .landscape-ari p{font-size:17px;line-height:1.4;margin-top:6px}
+    .market-position-slide .map-limits{display:flex;justify-content:space-between;gap:24px;margin-top:12px;font-size:15px;line-height:1.4;color:var(--muted)}
+    .market-position-slide .map-limits strong{color:var(--acid)}
+    @media(prefers-reduced-motion:reduce){.market-position-slide [data-build]{transition:none!important;animation:none!important}}
+    .market-position-slide .map-cluster{border-top:0;position:relative;padding-top:0}
+    .market-position-slide .map-cluster::before{content:"";position:absolute;left:0;top:42px;bottom:28px;width:1px;background:#d7a59a}
+    .market-position-slide .map-vendor{position:relative;margin-left:20px;border-bottom:0;padding:0 8px;min-height:48px}
+    .market-position-slide .map-vendor::before{content:"";position:absolute;left:-20px;top:24px;width:20px;height:1px;background:#d7a59a}
+    .market-position-slide .map-overlap{margin-left:28px}
+
+    .market-position-slide [data-build]{opacity:0;visibility:hidden;transform:translateY(14px);transition:opacity .45s,transform .55s cubic-bezier(.16,1,.3,1),visibility .45s}
+    .market-position-slide [data-build].build-visible{opacity:1;visibility:visible;transform:none}
+    @media(prefers-reduced-motion:reduce){.market-position-slide [data-build]{transform:none!important}}
   </style>
 </head>
 <body>
@@ -1110,16 +1140,38 @@ REFERENCE AND CUES, NOT SPOKEN: Clicks 1–4: Red finds and proves, Blue fixes a
         </div>
       </section>
 
-      <section class="slide market-position-slide" data-note="Named products overlap Ari capabilities: Snyk scans code and validates AI-generated fixes; Semgrep offers triage and remediation guidance; GitHub Code Security offers repository scanning and Copilot Autofix. No unsupported absence or superiority claim. Ari proposed differentiator: business intent, bounded attack investigation and independent verification in a small-team workflow. Comparative performance and willingness to pay remain unvalidated. Tradeoffs: per-assessment costs and human review. Entry shows alternatives, click1 Ari proposition, click2 tradeoffs. Sources linked on cards." data-spoken="Snyk, Semgrep and GitHub already find vulnerabilities and suggest fixes. Our proposed advantage is connecting business intent, attack investigation and independent verification for small teams. Our tradeoff is assessment cost and human approval before repairs. Comparative performance still needs validation." data-duration-s="22">
+      <section class="slide market-position-slide" data-note="Capability landscape based on linked primary product pages, checked October 17, 2026. Groups are editorial navigation aids, not exclusive capability boundaries or measured rankings. Snyk and Aikido span scanning, fixes and pentesting; Veracode and Checkmarx also offer broader testing and remediation. GitHub, Semgrep and Sonar offer code workflows with remediation. XBOW focuses on autonomous pentesting; Pentera on automated security validation and remediation workflows. A placement never means a capability is absent elsewhere. Vendor descriptions are vendor-reported, not independently benchmarked. Entry: code/PR workflows. Click1: broader AppSec and attack validation. Click2: Ari proposed small-team workflow plus tradeoffs. Ari is a prototype: full local chain uses scripted AI transports; comparative performance and willingness to pay are not yet validated. Costs accrue per assessment; a human approves repairs. Source links are on every vendor name; detail in docs/competitor-landscape.md. Preserve these caveats in Q&amp;A." data-spoken="Security is a crowded, overlapping market. GitHub, Semgrep and Sonar work inside code review. Snyk, Aikido, Veracode and Checkmarx offer broader platforms, while XBOW and Pentera emphasize attack validation. Ari's proposed focus is a connected workflow for small teams: business intent, attack evidence and tested repair. Assessment costs and human approval remain, and comparative performance still needs validation." data-duration-s="25">
         <div class="slide-head"><span class="brand-mini"><img class="brand-ant" src="ari-ant-mark.png" alt="" aria-hidden="true">Advantage over Alternatives</span><span class="slide-num">10</span></div>
-        <h2 style="font-size:48px">Strong alternatives.<br><span class="accent">A focused proposition.</span></h2>
-        <div class="alternatives-grid">
-          <article class="alternative-card"><h3>Snyk</h3><p>Code scanning<br>AI-generated + validated fixes</p><a href="https://snyk.io/solutions/secure-ai-generated-code/" target="_blank" rel="noopener">Source: Snyk</a></article>
-          <article class="alternative-card"><h3>Semgrep</h3><p>Finding triage<br>AI remediation guidance</p><a href="https://semgrep.dev/blog/2024/assistant-ga-launch/" target="_blank" rel="noopener">Source: Semgrep</a></article>
-          <article class="alternative-card"><h3>GitHub Code Security</h3><p>Repository scanning<br>Copilot Autofix suggestions</p><a href="https://docs.github.com/en/code-security/concepts/code-scanning/code-scanning" target="_blank" rel="noopener">Source: GitHub Docs</a></article>
+        <h2>A crowded market.<br><span class="accent">Our focus: the connected workflow.</span></h2>
+        <p class="landscape-caption">Capability landscape · Qualitative grouping, not a ranking · Names link to product sources</p>
+        <div class="competitor-map" aria-label="Nine competitors grouped by overlapping product capabilities">
+          <div class="map-cluster">
+            <h3>Code &amp; PR workflows</h3>
+            <a class="map-vendor github" href="https://github.com/security/advanced-security/code-security" target="_blank" rel="noopener"><b>GitHub Code Security</b><small>Scanning<br>Copilot Autofix</small></a>
+            <a class="map-vendor" href="https://semgrep.dev/products/semgrep-appsec-platform/" target="_blank" rel="noopener"><b>Semgrep</b><small>Code + libraries<br>Triage + fixes</small></a>
+            <a class="map-vendor" href="https://www.sonarsource.com/blog/ai-codefix-is-now-generally-available/" target="_blank" rel="noopener"><b>SonarQube</b><small>Quality + security<br>AI CodeFix</small></a>
+            <p class="map-overlap">Findings and remediation in developer workflows.</p>
+          </div>
+          <div class="map-cluster" data-build="1">
+            <h3>Broader AppSec platforms</h3>
+            <a class="map-vendor" href="https://snyk.io/platform/" target="_blank" rel="noopener"><b>Snyk</b><small>Scanning + fixes<br>AI pentesting</small></a>
+            <a class="map-vendor" href="https://www.aikido.dev/" target="_blank" rel="noopener"><b>Aikido</b><small>Scanning + AutoFix<br>AI pentesting</small></a>
+            <a class="map-vendor" href="https://www.veracode.com/platform" target="_blank" rel="noopener"><b>Veracode</b><small>Application testing<br>AI remediation</small></a>
+            <a class="map-vendor" href="https://docs.checkmarx.com/en/34965-68727-checkmarx-one-ide-plugins.html" target="_blank" rel="noopener"><b>Checkmarx</b><small>Multi-engine scans<br>Remediation</small></a>
+          </div>
+          <div class="map-cluster" data-build="1">
+            <h3>Attack validation</h3>
+            <a class="map-vendor" href="https://xbow.com/" target="_blank" rel="noopener"><b>XBOW</b><small>Autonomous<br>web pentesting</small></a>
+            <a class="map-vendor" href="https://pentera.io/pentera-platform/" target="_blank" rel="noopener"><b>Pentera</b><small>Automated security<br>validation</small></a>
+            <p class="map-overlap">Prove exposure through adversarial testing.</p>
+            <p class="map-overlap">Capabilities overlap across all three groups.</p>
+          </div>
         </div>
-        <div class="ari-workflow-claim" data-build="1"><small>ARI / PROPOSED ADVANTAGE FOR SMALL TEAMS</small><p>Business intent → Attack evidence → Tested repair<br>One connected workflow. Human-approved.</p></div>
-        <p class="alternative-tradeoff" data-build="2">Tradeoff: assessment costs + human review.<br>Overlap exists. Comparative performance is not yet validated.</p>
+        <div class="landscape-ari" data-build="2">
+          <div class="landscape-ari-brand"><img src="ari-ant-mark.png" alt="">ARI</div>
+          <div><h3>Business intent → Attack evidence → Tested repair</h3><p>Proposed small-team workflow · Prototype · Human-approved repairs</p></div>
+        </div>
+        <div class="map-limits" data-build="2"><span><strong>Tradeoff:</strong> assessment costs + human review.</span><span>Comparative performance is not yet validated.</span></div>
       </section>
 
       <section class="slide quality-slide ai4-quality-slide" data-note="SPOKEN (2:24 to 2:50; about 26 seconds including clicks/pauses): Ari gives the user three clear actions: connect an authorized repository, review the evidence, and approve a proposed repair. Verification produces test results and saved regression evidence for a clearer release decision. The full prototype chain uses scripted AI responses; customer outcomes still need validation.
