@@ -38,3 +38,7 @@ Added `IMG_2538.heic`, converted with macOS ImageIO/sips to a browser-compatible
 ## Current Jordan replacement
 
 The latest user-supplied screenshot (`codex-clipboard-17665343-7144-4a8d-a9f4-e239dac021e8.png`) replaces Jordan's earlier image in both gallery and featured view. Current email supersedes earlier descriptions of an accepted/merged parameterized-query fix. It reports approximately20minutes for review/apply/retest, a400response blocking injection,78regressiontests and12newpassinginjectiontests in staging, explicitly not production. The counterfactual few-hours duration is the sender's estimate, not a measured baseline or a computed time-saving percentage. Yellow overlays mark the four reported numerical details; gallery and enlarged quotes are verbatim from the replacement. Existing two call images are retained. Current requested improvements include PR integration and grouping related findings; no claim these shipped. No new independent customer assessment was performed.
+
+## Current call-image placement: end of slide10
+
+Supersedes the earlier slide12 placement sections: both call images have moved to their own full-screen final reveal onslide10. The user identified their backgrounds and supplied a summary of feedback on the pitch, explicitly saying they did not use Ari. See `call-feedback.md` for attribution and limits. Slide12 now contains only the five-email gallery and enlarged Jordan email/result; the originaltwoemailbuilds remain. The featured email returns to full width, with image-relative numeric markers retained.

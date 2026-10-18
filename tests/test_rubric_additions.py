@@ -25,7 +25,7 @@ class RubricAdditionsTests(unittest.TestCase):
         self.assertIn('Capabilities overlap across all three groups.', slide)
         self.assertIn('Proposed small-team workflow · Prototype', slide)
         self.assertIn('Human-approved repairs', slide)
-        self.assertEqual(set(re.findall(r'data-build="(\d+)"', slide)), {'1', '2'})
+        self.assertEqual(set(re.findall(r'data-build="(\d+)"', slide)), {'1', '2', '3'})
         self.assertIn('class="landscape-ari"', slide)
         self.assertNotIn('class="landscape-ari" data-build=', slide)
 

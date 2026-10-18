@@ -965,16 +965,26 @@
     .feedback-slide .feedback-cue{margin-top:8px}
     .feedback-slide .email-preview-highlight{background:rgba(255,208,70,.82)}
 
-    /* Two supplied call portraits share the featured-email reveal. */
-    .feedback-slide .feedback-calls{position:absolute;right:0;top:73px;width:440px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
-    .feedback-slide .feedback-call{height:460px;margin:0;overflow:hidden;border-radius:16px;background:#2b1d19}
-    .feedback-slide .feedback-call img{display:block;width:100%;height:100%;object-fit:contain}
-    .feedback-slide .cp2 .email-focus{width:calc(100% - 472px);height:300px}
+    /* Calls conclude slide 10 as a separate full-screen reveal. */
+    .feedback-slide .cp2 .email-focus{width:100%;height:370px}
     .feedback-slide .featured-email-image{position:relative;aspect-ratio:1649/954}
     .feedback-slide .featured-email-image img{width:100%;height:100%;display:block}
-    .feedback-slide .cp2 .email-result-highlight{top:46.6%;height:3%;width:49.5%}
-    .feedback-slide .cp2 .feedback-quote{max-width:664px;font-size:24px;line-height:1.4;text-wrap:balance}
-    .feedback-slide .cp2 .feedback-attribution{max-width:664px}
+    .feedback-slide .cp2 .feedback-quote{max-width:1100px;font-size:24px;line-height:1.4;text-wrap:balance}
+    .feedback-slide .cp2 .feedback-attribution{max-width:1100px}
+    .market-call-phase{position:absolute;left:72px;right:72px;top:111px;bottom:44px;opacity:0;visibility:hidden;transform:translateY(14px);transition:opacity .4s,transform .4s}
+    .market-position-slide[data-build-current="3"]>.market-convergence,.market-position-slide[data-build-current="3"]>.map-limits,.market-position-slide[data-build-current="3"]>h2{visibility:hidden;opacity:0}
+    .market-position-slide[data-build-current="3"] .market-call-phase{opacity:1;visibility:visible;transform:none}
+    .market-position-slide .market-call-phase h2{font-size:44px;line-height:1.1}
+    .market-call-phase .call-section-intro{font-size:20px;color:var(--muted);margin-top:14px}
+    .market-call-phase .call-profiles{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:48px;margin-top:24px}
+    .market-call-phase .call-profile{display:grid;grid-template-columns:178px 1fr;gap:24px;align-items:center}
+    .market-call-phase .call-profile-photo{display:block;width:178px;height:386px;object-fit:contain;border-radius:14px;background:#160f0d}
+    .market-call-phase .call-profile-copy h3{font-size:27px;line-height:1.15;letter-spacing:-.025em;color:var(--acid)}
+    .market-call-phase .call-background{font-size:17px;line-height:1.4;margin-top:12px;color:var(--muted)}
+    .market-call-phase .call-profile-copy ul{margin:22px 0 0;padding-left:20px;font-size:19px;line-height:1.45;color:var(--ink)}
+    .market-call-phase .call-profile-copy li+li{margin-top:15px}
+    .market-call-phase .call-scope{font-size:13px;line-height:1.5;color:var(--muted);margin-top:17px}
+    @media(prefers-reduced-motion:reduce){.market-call-phase{transition:none;transform:none}}
   </style>
 </head>
 <body>
@@ -1225,10 +1235,10 @@ REFERENCE, NOT SPOKEN: Value chain: version-aware business intent -&gt; bounded 
 
       <section class="slide market-position-slide" data-note="SPOKEN: Nine competitors offer overlapping capabilities. Our proposed value connects intent, investigation, approved repair, and independent verification for small teams. Assessment costs and human review are tradeoffs. Comparative performance remains unvalidated.
 
-REFERENCE, NOT SPOKEN: Preserve nine-competitor landscape and linked primary sources. Capability groups overlap. Proposed positioning, not benchmark-proven advantage. No comparative runs supplied; docs/comparison-protocol.md is an empty evidence-ready protocol, not results. Pricing units/editions differ; docs/research-validation.md records primary pricing references. No cheapest/only end-to-end claim. The converging category connectors express conceptual workflow coverage, not integrations with competitor products. ARI remains a prototype; monitoring requests code-change checks, and repairs require human approval." data-spoken="Nine competitors offer overlapping capabilities. Our proposed value connects intent, investigation, approved repair, and independent verification for small teams. Assessment costs and human review are tradeoffs. Comparative performance remains unvalidated.">
+REFERENCE, NOT SPOKEN: Preserve nine-competitor landscape and linked primary sources. Capability groups overlap. Proposed positioning, not benchmark-proven advantage. No comparative runs supplied; docs/comparison-protocol.md is an empty evidence-ready protocol, not results. Pricing units/editions differ; docs/research-validation.md records primary pricing references. No cheapest/only end-to-end claim. The converging category connectors express conceptual workflow coverage, not integrations with competitor products. ARI remains a prototype; monitoring requests code-change checks, and repairs require human approval. Backgrounds and feedback supplied by the user: first call is a GT student/founder of Kairo Securities, user reports a16z speedrun backing; second is a Stanford CS student/former Kairo intern. Both heard the idea, did not use Ari, liked it in general, saw continuous monitoring as a potential differentiator and relevant to AI-assisted/vibe coding. Bullets paraphrase this reported pitch feedback; founder lens is role-based relevance, not a fabricated specific experience or quote. No independent benchmark, purchase intent, measured use or institutional/a16z endorsement is established. Defense Lab remains offline simulation; 24/7 live protection was not demonstrated. Exact identities/affiliations were not independently verified. See docs/call-feedback.md." data-spoken="Nine competitors offer overlapping capabilities. Our proposed value connects intent, investigation, approved repair, and independent verification for small teams. Assessment costs and human review are tradeoffs. Comparative performance remains unvalidated.">
         <div class="slide-head"><span class="brand-mini"><img class="brand-ant" src="ari-ant-mark.png" alt="" aria-hidden="true">Advantage over Alternatives</span><span class="slide-num">10</span></div>
         <h2>A crowded market.<br><span class="accent">Our advantage: the connected workflow.</span></h2>
-        <span class="build-trigger" data-build="1"></span><span class="build-trigger" data-build="2"></span>
+        <span class="build-trigger" data-build="1"></span><span class="build-trigger" data-build="2"></span><span class="build-trigger" data-build="3"></span>
         <div class="market-convergence">
           <div class="competitor-map" aria-label="Qualitative grouping, not a ranking. Capabilities overlap across all three groups.">
             <div class="map-cluster"><h3>Code &amp; PR workflows</h3><div class="market-names"><a class="map-vendor github" href="https://github.com/security/advanced-security/code-security" target="_blank" rel="noopener"><b>GitHub Code Security</b></a><a class="map-vendor" href="https://semgrep.dev/products/semgrep-appsec-platform/" target="_blank" rel="noopener"><b>Semgrep</b></a><a class="map-vendor" href="https://www.sonarsource.com/blog/ai-codefix-is-now-generally-available/" target="_blank" rel="noopener"><b>SonarQube</b></a></div></div>
@@ -1242,7 +1252,31 @@ REFERENCE, NOT SPOKEN: Preserve nine-competitor landscape and linked primary sou
           </div>
         </div>
         <div class="map-limits"><span>Overlapping capabilities · Proposed workflow</span><span><strong>Tradeoff:</strong> costs + human review · Comparative performance not yet validated</span></div>
-      </section>
+
+        <div class="market-call-phase" aria-hidden="true" inert>
+          <h2>What stood out: <span class="accent">continuous monitoring.</span></h2>
+          <p class="call-section-intro">Two conversations about the pitch, from the founder and developer side.</p>
+          <div class="call-profiles">
+            <article class="call-profile">
+              <img class="call-profile-photo" src="feedback/video-call.png" alt="Call screenshot associated with the Georgia Tech student and Kairo Securities founder">
+              <div class="call-profile-copy">
+                <h3>Kairo Securities founder</h3>
+                <p class="call-background">Georgia Tech student · Startup backed by a16z speedrun</p>
+                <ul><li>Liked the idea, especially the continuous-monitoring angle.</li><li>A founder’s lens on keeping up while a small team ships fast.</li></ul>
+              </div>
+            </article>
+            <article class="call-profile">
+              <img class="call-profile-photo" src="feedback/video-call-2.png" alt="Call screenshot associated with the Stanford computer science student and former Kairo Securities intern">
+              <div class="call-profile-copy">
+                <h3>Stanford CS student</h3>
+                <p class="call-background">Former intern at Kairo Securities</p>
+                <ul><li>Thought the idea fit the current wave of vibe coding.</li><li>Saw continuous monitoring as a potential point of difference.</li></ul>
+              </div>
+            </article>
+          </div>
+          <p class="call-scope">Team-reported pitch feedback, not a product trial. Continuous monitoring is proposed; Defense Lab runs in simulation.</p>
+        </div>
+</section>
 
       <section class="slide quality-slide prototype-capture-slide" data-note="SPOKEN: Here’s Ari’s demo replay: choose a repository, inspect the missing ownership check, then view the repair and before-and-after tests. These are interface screenshots, not a new assessment. Full-chain AI responses are scripted; product usability needs testing.
 
@@ -1286,10 +1320,6 @@ REFERENCE, NOT SPOKEN: All five October17 original screenshots preserved; permis
         </div>
         <div class="customer-phase cp2">
           <h2>A fix that held up <span class="accent">in testing.</span></h2>
-          <div class="feedback-calls" aria-label="Supplied video call screenshots">
-            <figure class="feedback-call"><img src="feedback/video-call.png" alt="Screenshot of a two-person video call"></figure>
-            <figure class="feedback-call"><img src="feedback/video-call-2.png" alt="Video call screenshot showing two participants giving a thumbs-up"></figure>
-          </div>
           <div class="email-focus">
             <div class="featured-email-image">
               <img src="feedback/jordan.png" alt="Jordan reports a staging fix: about 20 minutes to review, apply and rerun tests; injection returns 400; 78 regression tests and 12 new injection tests passing.">
@@ -1723,6 +1753,14 @@ REFERENCE, NOT SPOKEN: One ask: seek five qualified SaaS design partners for aut
       slide.querySelectorAll('.node-copy, .finance-scene').forEach((panel, i) => {
         panel.inert = bounded !== i + 1;
       });
+      const callPanel = slide.querySelector('.market-call-phase');
+      if (callPanel) {
+        callPanel.inert = bounded !== 3;
+        callPanel.setAttribute('aria-hidden', String(bounded !== 3));
+        const market = slide.querySelector('.market-convergence');
+        market.inert = bounded === 3;
+        market.setAttribute('aria-hidden', String(bounded === 3));
+      }
       const recap = slide.querySelector('.recap-stage');
       slide.querySelectorAll('.customer-phase').forEach((panel, phase) => {
         panel.inert = slide.classList.contains('feedback-slide') ? bounded !== phase : bounded !== 0;
