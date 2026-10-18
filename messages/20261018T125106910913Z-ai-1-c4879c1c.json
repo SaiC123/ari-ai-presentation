@@ -1,0 +1,14 @@
+{
+  "type": "AFTER",
+  "agent": "ai-1",
+  "utc": "2026-10-18T12:51:06.910732+00:00",
+  "summary": "Last slide now shows all6recap graphics immediately on entry with no clicks. Removed their build attributes; click1connects ant,click2revealsARI. Updated finale CSS state and reference note; narration unchanged.",
+  "commit": "83ae323b99b12c18faef2aae98a262bfac269b6d",
+  "changed_paths": [
+    "public/index.html",
+    "tests/test_presentation_evidence.py"
+  ],
+  "verification": "81Node and15Python tests pass; diffcheckclean. Live1280x720 initial recap screenshot inspected; build0all6graphics opacity1 and no clickBuild attribute. Two forward clicks revealARI; two rewinds restore6graphics. ProductionREADYat83ae323; publicHTML matches source. No other slides or script changed.",
+  "deployment_url": "https://ari-ai-presentation.vercel.app",
+  "lock_commit": "6a814ef20338d4ab136a5a45701c35dad98260c8"
+}
