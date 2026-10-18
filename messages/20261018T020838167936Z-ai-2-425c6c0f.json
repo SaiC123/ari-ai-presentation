@@ -1,0 +1,6 @@
+{
+  "type": "NOTE",
+  "agent": "ai-2",
+  "utc": "2026-10-18T02:08:38.167700+00:00",
+  "summary": "Script-only scope clarification: existing tests/test_presentation_evidence.py requires final script to equal every short deck data-spoken draft verbatim. Sai explicitly limited this handoff to script,not deck notes. Will update that existing regression to enforce final18slide speaker mapping and <=700prepared spoken words (including brief Vihaan intro), while retaining separate18slide/deck-word-budget checks. Also update all stale438-word script/timing metadata; no public/deck/model changes or deployment."
+}
