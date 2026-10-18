@@ -21,7 +21,7 @@ class PrototypeFeedbackTests(unittest.TestCase):
             self.assertEqual((ROOT / 'public' / image).read_bytes()[:8], b'\x89PNG\r\n\x1a\n')
 
     def test_focused_outcome_has_matching_provenance(self):
-        quote = 'I also added 12 new injection test cases and those are passing as well.'
+        quote = 'Overall, this was a helpful run and I can see us using it again.'
         self.assertIn(quote, re.sub('<[^>]+>', '', self.slide))
         self.assertIn(quote, (ROOT / 'docs/prototype-feedback.md').read_text())
         self.assertIn('Reported prototype result', self.slide)

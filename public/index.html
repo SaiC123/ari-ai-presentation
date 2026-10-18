@@ -948,10 +948,10 @@
     .prototype-capture-slide[data-build-current="0"] .prototype-frame-0,.prototype-capture-slide[data-build-current="1"] .prototype-frame-1,.prototype-capture-slide[data-build-current="2"] .prototype-frame-2{opacity:1;visibility:visible}
 
     /* Calls conclude slide 10 as a separate full-screen reveal. */
-    .feedback-slide .cp2 .email-focus{width:100%;height:370px}
+    .feedback-slide .cp2 .email-focus{width:100%;height:300px}
     .feedback-slide .featured-email-image{position:relative;aspect-ratio:1649/954}
     .feedback-slide .featured-email-image img{width:100%;height:100%;display:block}
-    .feedback-slide .cp2 .feedback-quote{max-width:1100px;font-size:24px;line-height:1.4;text-wrap:balance}
+    .feedback-slide .cp2 .feedback-quote{max-width:1100px;margin-top:16px;font-size:21px;line-height:1.35;text-wrap:balance}
     .feedback-slide .cp2 .feedback-attribution{max-width:1100px}
     .market-call-phase{position:absolute;left:72px;right:72px;top:111px;bottom:44px;opacity:0;visibility:hidden;transform:translateY(14px);transition:opacity .4s,transform .4s}
     .market-position-slide[data-build-current="3"]>.market-convergence,.market-position-slide[data-build-current="3"]>.map-limits,.market-position-slide[data-build-current="3"]>h2{visibility:hidden;opacity:0}
@@ -1028,6 +1028,9 @@
     .agent-team-intro p.team-intro-rule{margin-top:19px;font-size:17px;line-height:1.5;color:#dfc4bb}
     .agent-team-tag{display:block;font:500 15px/1.2 'IBM Plex Mono',monospace;letter-spacing:.04em;color:var(--team-color);margin-bottom:15px}
     .node-copy-final p.agent-proof-rule{font-size:17px;line-height:1.4;color:#ffb09f;margin-top:18px}
+    .feedback-slide .email-result-summary{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px;margin-top:16px;padding-top:16px;border-top:1px solid #73554c}
+    .feedback-slide .email-result-summary b{display:block;font:600 27px/1.15 "Space Grotesk",sans-serif;letter-spacing:-.025em;color:#ffb09f}
+    .feedback-slide .email-result-summary span{display:block;font-size:15px;line-height:1.35;color:#e3cec8;margin-top:6px}
   </style>
 </head>
 <body>
@@ -1332,7 +1335,7 @@ REFERENCE, NOT SPOKEN: Presentation keyboard navigation and reduced motion are d
 
       <section class="slide dark customer-story-slide feedback-slide" data-note="SPOKEN: Five emails report billing retries, SQL injection, workspace access, error disclosure and upload-path fixes. These aren’t independently audited. Samira requested clearer permissions and code-processing explanations. That’s our next improvement. Jordan reports about twenty minutes, 78 regression tests and twelve new injection tests passing in staging.
 
-REFERENCE, NOT SPOKEN: All five October17 original screenshots preserved; permission to present confirmed by current human user October17,2026. Outcomes are reported by email, not independently audited artifacts or paid commitments. Jordan screenshot replaced with current user-supplied email: about20minutes to review/apply/retest;HTTP400block;78regressiontests and12newpassinginjectiontests, in staging not production. These are reported observations, not independently rerun results; the few-hours alternative is Jordan’s estimate, not a measured baseline. Requested PR integration and finding grouping remain feedback, not delivered claims. Samira asks for permissions and processing clarity; marked next planned improvement, not delivered. VC feedback remains pending in notes only. Evidence slots: participant role/sample, observed time, accepted fixes, baseline, usability and signed commitments; do not invent. Sources docs/prototype-feedback.md." data-spoken="Five emails report billing retries, SQL injection, workspace access, error disclosure and upload-path fixes. These aren’t independently audited. Samira requested clearer permissions and code-processing explanations. That’s our next improvement. Jordan reports about twenty minutes, 78 regression tests and twelve new injection tests passing in staging.">
+REFERENCE, NOT SPOKEN: All five October17 original screenshots preserved; permission to present confirmed by current human user October17,2026. Outcomes are reported by email, not independently audited artifacts or paid commitments. Jordan screenshot replaced with current user-supplied email: fiveengineers with no dedicated security person,anexistingSQLinjectioninnormalclient-appcode missed by regularreviews;fullstacktraceandexactline;reviewedparameterized-queryfix inabout20minutesendtoend;HTTP400blockwithlegitimatesearchworking;78regressiontests and12newpassinginjectiontests, in staging not production. These are reported observations, not independently rerun results; the few-hours alternative is Jordan’s estimate, not a measured baseline. Sender reports normal process uses manual reviews,SASTandspotchecks;interest inmore services is not a paid commitment. Requested PR integration and reduced noise/grouping remain feedback, not delivered claims. Samira asks for permissions and processing clarity; marked next planned improvement, not delivered. VC feedback remains pending in notes only. Evidence slots: participant role/sample, observed time, accepted fixes, baseline, usability and signed commitments; do not invent. Sources docs/prototype-feedback.md." data-spoken="Five emails report billing retries, SQL injection, workspace access, error disclosure and upload-path fixes. These aren’t independently audited. Samira requested clearer permissions and code-processing explanations. That’s our next improvement. Jordan reports about twenty minutes, 78 regression tests and twelve new injection tests passing in staging.">
         <div class="slide-head"><span class="brand-mini"><img class="brand-ant" src="ari-ant-mark.png" alt="" aria-hidden="true">User Understanding / Evidence of Need</span><span class="slide-num">14</span></div>
         <span class="build-trigger" data-build="1"></span>
         <div class="customer-phase cp1">
@@ -1344,7 +1347,7 @@ REFERENCE, NOT SPOKEN: All five October17 original screenshots preserved; permis
               <p>Reported: weakness reproduced → repair reviewed → checks passed</p>
               <div class="feedback-gallery" aria-label="Five supplied prototype feedback emails">
                 <figure class="feedback-email"><div class="feedback-preview"><img src="feedback/priya.png" alt="Email from Priya Shah reporting a billing retry fix and passing payment tests"></div><figcaption>Priya · Billing retries</figcaption></figure>
-                <figure class="feedback-email is-featured"><div class="feedback-preview"><img src="feedback/jordan.png" alt="Jordan Ellis reports about 20 minutes to review, apply and rerun tests; injection blocked with 400; 78 regression tests and 12 new injection tests passing in staging"></div><figcaption>Jordan · SQL injection</figcaption></figure>
+                <figure class="feedback-email is-featured"><div class="feedback-preview"><img src="feedback/jordan.png" alt="Jordan reports five engineers without a dedicated security person, an existing SQL injection missed in normal reviews, a parameterized-query fix in about 20 minutes, and 78 regression plus 12 new injection tests passing in staging"></div><figcaption>Jordan · SQL injection</figcaption></figure>
                 <figure class="feedback-email"><div class="feedback-preview"><img src="feedback/maya.png" alt="Email from Maya Chen reporting cross-workspace requests blocked while regular invites worked"></div><figcaption>Maya · Workspace access</figcaption></figure>
                 <figure class="feedback-email"><div class="feedback-preview"><img src="feedback/alex.png" alt="Email from Alex Rivera reporting a generic error response and passing error tests"></div><figcaption>Alex · Error disclosure</figcaption></figure>
                 <figure class="feedback-email"><div class="feedback-preview"><img src="feedback/samira.png" alt="Email from Samira Okafor reporting traversal rejected and normal uploads passed, and requesting clearer permission information"></div><figcaption>Samira · Upload paths</figcaption></figure>
@@ -1357,11 +1360,17 @@ REFERENCE, NOT SPOKEN: All five October17 original screenshots preserved; permis
           <h2>A fix that held up <span class="accent">in testing.</span></h2>
           <div class="email-focus">
             <div class="featured-email-image">
-              <img src="feedback/jordan.png" alt="Jordan reports a staging fix: about 20 minutes to review, apply and rerun tests; injection returns 400; 78 regression tests and 12 new injection tests passing.">
+              <img src="feedback/jordan.png" alt="Latest Jordan email: five-engineer team without dedicated security, SQL injection in client-app staging code, full trace and parameterized-query repair in about 20 minutes; HTTP 400 blocks the injection, legitimate search works, 78 regression and 12 new injection tests pass.">
 
             </div>
           </div>
-          <blockquote class="feedback-quote">“I also added 12 new injection test cases and those are passing as well.”</blockquote>
+          <div class="email-result-summary" aria-label="Jordan's reported staging results">
+            <div><b>5 engineers</b><span>No dedicated security person</span></div>
+            <div><b>~20 minutes</b><span>Trace → fix → retest</span></div>
+            <div><b>400 response</b><span>Injection blocked</span></div>
+            <div><b>78 + 12 passing</b><span>Regression + new injection tests</span></div>
+          </div>
+          <blockquote class="feedback-quote">“Overall, this was a helpful run and I can see us using it again.”</blockquote>
           <p class="feedback-attribution">Jordan Ellis · CTO, Harborseed Studio · October 17, 2026 · Reported prototype result · Staging</p>
         </div>
       </section>

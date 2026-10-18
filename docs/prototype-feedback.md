@@ -46,3 +46,9 @@ Supersedes the earlier slide12 placement sections: both call images are in the f
 ## Current styling: clean email presentation
 
 Per the user’s latest request, all yellow highlights and repeated per-email gallery excerpts are removed. Original screenshot pixels are unchanged; only CSS overlays/extra quoted text were removed. Featured Jordan result is plain white text with its staging attribution retained. The gallery returns to the five originals and short names/topics.
+
+## Latest Jordan email and corresponding result points
+
+Replaced both Jordan views with user-supplied `codex-clipboard-40f4cf56-2f8e-4a79-ad25-9a0865020ee5.png`. This supersedes the prior Jordan wording. It reports an existing SQL injection in client-app staging code, missed by normal reviews, reproduced with a trace pointing to input concatenation. A parameterized-query repair took about20minutes including review/change/retest; the injection now returns400while legitimate search works.78regressiontests and12newinjectiontests passed. The team has5engineers and no dedicated security person; their normal process includes manual reviews,SASTandspotchecks.
+
+The clean featured summary now shows5engineers / ~20minutes /400response /78+12passing, followed by the exact quote: “Overall, this was a helpful run and I can see us using it again.” More-services interest is not a paid commitment. Requested PR integration and noise reduction/grouping are future improvement feedback, not delivered capabilities. The few-hours alternative remains the sender's estimate, not a measured baseline or quantified percentage saving. These are email-reported outcomes, not independently rerun evidence. Original replacement pixels retained, no yellow highlights added.

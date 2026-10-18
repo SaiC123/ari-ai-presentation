@@ -216,3 +216,9 @@ Slides8–12 include intended behavior from docs/comments/tests, a reproducible 
 ## Prototype footer removal
 
 User requested removal of the DEMO REPLAY / Actual interface screenshots / Scripted scenario / No new assessment executed footer. Removed that visible paragraph and unused CSS only, from prototype slide13 in the current19-slide deck. All screenshot states, narration/source notes, evidence descriptions and other18slides remain unchanged. Four prototype tests anddiffcheckpass;Chrome13builds0/1/2checkedwithfooterabsent,finalscreenshotinspected. No new execution/deployment claim.
+
+## Latest Jordan screenshot and result summary
+
+Replaced Jordan's image byte-for-byte with the latest user attachment and updated slide14 in the19-slide deck. A clean four-column summary shows5engineers without dedicated security,~20minutes trace-to-retest,HTTP400injection blocking,and78regressionplus12newinjectiontests passing. The closing quote matches the new email exactly. Results remain attributed to Jordan's staging report; no assessment was rerun. Other slides and spoken passages are preserved.
+
+All14Python tests anddiffcheckpassed. Chrome1280×720and960×540checks covered gallery/focus,allfourresultpoints,no yellow highlights,content above controls,rewind,and0pageerrors. Both sizes were captured and the desktop focus screenshot inspected. Source-image equality and slide-only scope were checked. Deployment is not claimed by this editor.
