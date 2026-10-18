@@ -1020,6 +1020,10 @@
     .defense-lab-slide[data-build-current='3'] .balance-beam{transform:rotate(0)}
     .defense-lab-slide[data-build-current='3'] .defense-balance{background:var(--brand-soft);border-radius:10px}
     @keyframes labSignal{from{stroke-dashoffset:850;opacity:.2}to{stroke-dashoffset:0;opacity:1}}
+    .defense-capture{position:absolute;inset:0;z-index:5;margin:0;padding:10px;display:grid;place-items:center;background:var(--ink);opacity:0;visibility:hidden;transform:scale(.985);transition:opacity .45s,transform .5s}
+    .defense-capture img{display:block;width:100%;height:100%;min-height:0;object-fit:contain}
+    .defense-capture.build-visible{opacity:1;visibility:visible;transform:none}
+    .defense-lab-slide[data-build-current='4']>.slide-head,.defense-lab-slide[data-build-current='4']>h2,.defense-lab-slide[data-build-current='4']>.defense-layout{visibility:hidden;opacity:0}
   </style>
 </head>
 <body>
@@ -1219,7 +1223,7 @@ REFERENCE, NOT SPOKEN: Team confirmed in this chat on October17,2026: no Ari pro
 
       <section class="slide defense-lab-slide" data-note="SPOKEN: Code changes trigger fresh checks. Defense Lab trains reinforcement learning against simulated attacks, balancing security and availability. RL defense currently runs in simulation.
 
-REFERENCE, NOT SPOKEN: Scope updated by the user: continuous code-change monitoring triggers security checks; reinforcement learning develops and evaluates defensive strategies in simulation. Security and availability are the training objectives, not measured improvements in this slide. The diagram is explanatory, not a live run, metrics dashboard, production control, or evidence of deployed autonomous mitigation. A strategy learned in simulation still needs evaluation before real deployment." data-spoken="Code changes trigger fresh checks. Defense Lab trains reinforcement learning against simulated attacks, balancing security and availability. RL defense currently runs in simulation.">
+REFERENCE, NOT SPOKEN: Scope updated by the user: continuous code-change monitoring triggers security checks; reinforcement learning develops and evaluates defensive strategies in simulation. Security and availability are the training objectives, not measured improvements in this slide. The diagram is explanatory, not a live run, metrics dashboard, production control, or evidence of deployed autonomous mitigation. A strategy learned in simulation still needs evaluation before real deployment. Final reveal: the unmodified 2380x1556 screenshot supplied by the user shows a recorded evaluation in an isolated test network at step 0, with the defender watching Payments. It is a static image; the pictured controls are not interactive and this frame alone does not establish attack prevention or benchmark performance." data-spoken="Code changes trigger fresh checks. Defense Lab trains reinforcement learning against simulated attacks, balancing security and availability. RL defense currently runs in simulation.">
         <div class="slide-head"><span class="brand-mini"><img class="brand-ant" src="ari-ant-mark.png" alt="" aria-hidden="true">Thoughtful Approach / Build Quality &amp; Appropriate Technology</span><span class="slide-num">10</span></div>
         <h2>Security Doesn't Stop<br>at <span class="accent">Deployment.</span></h2>
         <span class="build-trigger" data-build="1"></span><span class="build-trigger" data-build="2"></span><span class="build-trigger" data-build="3"></span>
@@ -1252,6 +1256,10 @@ REFERENCE, NOT SPOKEN: Scope updated by the user: continuous code-change monitor
             <div class="defense-balance"><span>Security</span><svg viewBox="0 0 160 48" aria-hidden="true"><path d="M80 8v33M59 42h42" stroke="#1c1210" stroke-width="3"/><g class="balance-beam"><path d="M26 16h108M38 16 23 33h30L38 16Zm84 0-15 17h30l-15-17Z" fill="#f8e7e3" stroke="#c2452d" stroke-width="2.5" stroke-linejoin="round"/></g></svg><span>Availability</span><b>Learn the balance.</b></div>
           </article>
         </div>
+        <figure class="defense-capture" data-build="4">
+          <img src="prototype/defense-lab-recorded.png" alt="Defense Lab recorded evaluation in an isolated test network at step 0. Gateway, API server, sign-in, Payments and database are healthy; the trained AI defender is watching Payments." width="2380" height="1556">
+          <figcaption class="sr-only">Defense Lab: recorded simulation supplied by the team.</figcaption>
+        </figure>
       </section>
 
       <section class="slide team-slide" data-note="SPOKEN: Red investigates. Blue proposes approved repairs. Verify independently retests on a fresh checkout. Saved evidence guides reassessment.
