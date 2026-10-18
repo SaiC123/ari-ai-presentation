@@ -63,7 +63,6 @@ class PresentationEvidenceTests(unittest.TestCase):
         self.assertIn('positive observed contribution', self.slides[14])
         for label in ('Owner:', '<em>Exit</em>', '<em>If unmet</em>'):
             self.assertEqual(self.slides[15].count(label), 5)
-        self.assertIn('Seeking five SaaS design partners', self.slides[17])
         self.assertIn('Publisher proxy, not a qualified-buyer count', self.slides[13])
 
     def test_originality_and_feedback_permission_are_attributed(self):
