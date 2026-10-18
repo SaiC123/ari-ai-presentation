@@ -358,6 +358,8 @@
     .forecast-assumptions>div { padding:6px 10px;border:1px solid #865040;border-radius:8px;background:#2d1b17; }
     .forecast-assumptions strong { display:block;font:600 20px/1.2 "Space Grotesk",sans-serif;color:#ffb09f; }
     .forecast-assumptions span { display:block;font-size:12px;line-height:1.2;color:#f0d8d1;margin-top:3px; }
+    .forecast-assumptions a { display:block;font-size:11px;line-height:1.25;margin-top:5px;color:#f0d8d1;text-decoration:underline; }
+    .forecast-assumptions .source-caveat { font-size:10px;line-height:1.2; }
     .pilot-coverage { padding:20px; }
     .pilot-coverage strong { margin-top:8px;font-size:54px; }
     .pilot-coverage .coverage-label { margin-top:7px;font-size:20px;line-height:1.2; }
@@ -807,7 +809,7 @@
     .forecast-method{font-size:12px;line-height:1.4;color:#f0d8d1;margin-top:7px}
     .finance-slide[data-build-current="3"] .finance-stage{top:205px;height:445px}
     .finance-slide .fscene3 .finance-chart-wrap{padding-top:0;align-items:start}
-    .finance-slide .forecast-plot canvas{height:220px!important}
+    .finance-slide .forecast-plot canvas{height:190px!important}
     .finance-slide[data-build-current="3"] #economicsChart{animation:none}
     .finance-slide .fscene3 .pilot-coverage{padding:18px}
     .finance-slide .fscene3 .pilot-coverage dl{font-size:16px;margin:15px 0}
@@ -1168,32 +1170,32 @@ REFERENCE AND CUES, NOT SPOKEN: CUE: Segment 1 is visible on entry. Click once f
         </div>
       </section>
 
-      <section class="slide dark finance-slide" data-note="SPOKEN (2:36 to 3:22; about 46 seconds including clicks/pauses): We start with five free pilots in month one, then charge new pilots forty-nine ninety-nine. A trial conversion benchmark suggests about one of those first five might pay. That is a proxy, not Ari evidence. Our twelve-month model includes the cost of free pilots, new paid customers and churn. At two new paid pilots per month, we do not cover costs in year one. Monthly coverage needs about seventy active Founder customers. Recovering earlier losses takes longer. Change the assumptions to test the path.
+      <section class="slide dark finance-slide" data-note="Proposed pilot prices: Founder49.99/7, Growth129.99/20, Scale359.99/60 assessments. Per included run7.14/6.50/6.00, volume discounts. API1.90/run,sandbox1/run,AWS7/account,support5/12/30,payments2.9%+0.30. Variable costs34.04971/81.06971/221.73971; margins31.9%/37.6%/38.4%. Shared fixed500/month, six founders,no pilot salaries. M1fivefreepilots cost161.50delivery+500shared=661.50. Founder-only forecast18.2%initialconversionproxy,42newpaid/month fromM2,2%monthlychurnassumed.42=round1000/24 from ChartMogul medianB2B time to1000subscribers, NOT a published monthlyaverage or matched acquisitionbenchmark. FirstPageSage18.2%organicopt-intrialconversion is not Ari evidence. Monthlycoverage32wholeactiveFounderaccounts; scenarioM2at42.91payers,revenue2145.0709,cost1961.0730561,net183.9978439. CumulativerecoveryM3. Peakfundinggap661.50atM1. Full12monthgraph,three manualmilestones,noautoplay/selectors. Not full economicprofitability. Excludes founderpay/labor,taxes,legal/compliance,paidacquisition,onboardinglabor,extrarechecks/overages. No postpilot priceincreases modeled. Validate costs and willingness to pay. Sources: https://chartmogul.com/reports/saas-go-to-market-report/ and https://firstpagesage.com/seo-blog/saas-free-trial-conversion-rate-benchmarks/.
 
-REFERENCE AND CUES, NOT SPOKEN: Slide 12 has four main builds, with 12 month reveals nested inside the forecast: click through M1 to M12 before advancing to the shared budget. The active month and new accounts, conversions, churn, revenue, cost change and cumulative net are highlighted. Left rewinds months; returning from the shared budget restores M12. Intake is not a sourced monthly average. Slide 12 has four main builds: proposed prices; Growth unit economics; pilot forecast; shared tools budget. Founder49.99/10assessments, Growth249/25 and Scale599/60 are unchanged proposed workspace prices. The forecast uses Founder only, no assumed upgrades or40/45/15blend. User plan: five FREE pilots in Month1 only, all new pilots paid49.99 from Month2. Assume each free pilot receives the same10fullassessments as Founder for cost planning, not a public unlimited trial entitlement. Each free account costs41 =19API+10sandbox+7AWS+5support/storage; five cost205, plus500shared gives705Month1cost and zero revenue/payment fees. The18.2%free-to-paid proxy is the organic opt-in average in FirstPageSage2025,86SaaScompanies,71%B2B; not selected security-pilot data or ongoing paid retention. Expected first-cohort conversions5*0.182=0.91, about one, not guaranteed. All conversion in Month2 is a timing assumption, not a sourced conversion schedule. Sensitivity5% is the midpoint of ChartMogul2026 no-card good4-6%range (50thpercentile guide within6months,200products);21.9%is FirstPageSage cybersecurity trial average with mixed trial mechanics. These are different populations, not confidence bounds. a16z recommends5-10initialdesignpartners, not monthlypilotstarts. Newpaid2/month afterMonth1 is an acquisition assumption; alternatives0/1/3/5/10 are sensitivity, not benchmarks. Paid churn2%monthly is an unsourced planning assumption, separately adjustable0/2/5%, not pilot conversion. PaidAccounts_t=PaidAccounts_(t-1)*(1-churn)+NewPaid_t+Conversions_t; no ongoing free cohorts. Revenue49.99*paid; paidcost42.74971=19API+10sandbox+7AWS+5support+1.74971payments. White cost line sums500shared plus API/sandbox/AWS/support for paid AND free accounts plus payments on paid accounts only. Controls change monthly versus cumulative totals; tooltips explain counts, net cash and components. Monthly coverage is the first month revenue covers that month costs; cumulative recovery covers all earlier modeled losses. Coverageceil(500/7.24029)=70wholeactivepayingFounderaccounts after the free cohort ends. Base scenario reaches neither milestone within12months. Funding is the largest cumulative deficit, not a fundraising ask. Model uses expected fractional account counts, not booked customers; actual first cohort yields0-5payers. Excludes founder salaries/labor, taxes, legal/compliance, paid acquisition, setup/onboarding labor, extra rechecks and unmeasured overages; costs/usage and retention need validation. Fixed500 is retained planning budget; all included assessments assumed consumed, AWS allocation and support forecasts unaudited. No increases or subscriptions bought. Sources accessed October17,2026: https://firstpagesage.com/seo-blog/saas-free-trial-conversion-rate-benchmarks/ ; https://chartmogul.com/reports/saas-conversion-report/ ; https://a16z.com/a-framework-for-finding-a-design-partner/ . Source inventory and docs/pilot-forecast.md preserve methodology and monthly table. Market growth target100-200 remains separate." data-spoken="We start with five free pilots in month one, then charge new pilots forty-nine ninety-nine. A trial conversion benchmark suggests about one of those first five might pay. That is a proxy, not Ari evidence. Our twelve-month model includes the cost of free pilots, new paid customers and churn. At two new paid pilots per month, we do not cover costs in year one. Monthly coverage needs about seventy active Founder customers. Recovering earlier losses takes longer. Change the assumptions to test the path." data-duration-s="46">
+" data-spoken="Our introductory workspace plans start at forty-nine ninety-nine for seven full assessments. Growth offers twenty for one hundred twenty-nine ninety-nine, and Scale offers sixty for three hundred fifty-nine ninety-nine. The effective price per included assessment falls as usage grows. These are pilot prices to validate demand, with future pricing based on measured costs and customer value. Our six-founder team budgets five hundred dollars monthly for shared tools, before customer delivery. Five unpaid pilots bring month-one costs to about six hundred sixty-two dollars. We use an eighteen-point-two percent trial-conversion proxy and derive forty-two new paid users monthly from ChartMogul’s two-year subscriber milestone. These are assumptions, not Ari results. On Founder-only pricing, this scenario covers monthly cash costs in month two at about forty-three paying users, and recovers earlier losses in month three. Founder pay, acquisition and extra usage are excluded." data-duration-s="64">
         <div class="slide-head"><span class="brand-mini"><img class="brand-ant" src="ari-ant-mark.png" alt="" aria-hidden="true">Revenue or Funding Model / Costs &amp; Sustainability</span><span class="slide-num">13</span></div>
         <h2 style="font-size:47px">Lean to launch. <span class="accent">Built to sustain.</span></h2>
         <span class="build-trigger" data-build="1"></span><span class="build-trigger" data-build="2"></span><span class="build-trigger" data-build="3"></span><span class="build-trigger" data-build="4"></span>
         <div class="finance-stage">
           <div class="finance-scene fscene1">
             <div class="price-row">
-              <div class="price-card"><p class="kicker muted">Founder</p><strong>$49.99</strong><small>/ workspace / month<br>10 full assessments / mo<br>1M assessed lines / mo<br>Shared across repositories</small></div>
-              <div class="price-card featured"><p class="kicker">Growth</p><strong>$249</strong><small>/ workspace / month<br>25 full assessments / mo<br>5M assessed lines / mo<br>Shared across repositories</small></div>
-              <div class="price-card"><p class="kicker muted">Scale</p><strong>$599</strong><small>/ workspace / month<br>60 full assessments / mo<br>20M assessed lines / mo<br>Shared across repositories</small></div>
+              <div class="price-card"><p class="kicker muted">Founder</p><strong>$49.99</strong><small>/ workspace / month<br>7 full assessments / mo<br>$7.14 / included assessment<br>1M assessed lines / mo<br>Shared across repositories</small></div>
+              <div class="price-card featured"><p class="kicker">Growth</p><strong>$129.99</strong><small>/ workspace / month<br>20 full assessments / mo<br>$6.50 / included assessment<br>5M assessed lines / mo<br>Shared across repositories</small></div>
+              <div class="price-card"><p class="kicker muted">Scale</p><strong>$359.99</strong><small>/ workspace / month<br>60 full assessments / mo<br>$6.00 / included assessment<br>20M assessed lines / mo<br>Shared across repositories</small></div>
               <div class="price-card"><p class="kicker muted">Enterprise</p><strong>Custom</strong><small>Per-workspace agreement<br>Custom assessment scope<br>Custom code volume<br>Onboarding agreed in scope</small></div>
             </div>
             <p class="pricing-shared">Code review · Seven agents · Fix verification</p>
             <div class="pricing-terms"><b>Proposed plans</b><span>$25 / scoped extra assessment</span><span>Monitoring + extras: budget approval</span></div>
           </div>
-          <div class="finance-scene fscene2"><p class="section-tag">Growth plan / forecast monthly economics / 25 assessments</p><div class="waterfall"><div class="waterbar"><i style="height:180px"></i><b>$249<br>REVENUE</b></div><div class="waterbar"><i style="height:57.47px"></i><b>API + INFRA + AWS<br>−$79.50</b></div><div class="waterbar"><i style="height:5.44px"></i><b>PAYMENTS<br>−$7.52</b></div><div class="waterbar"><i style="height:8.67px"></i><b>STORAGE + SUPPORT<br>−$12</b></div><div class="waterbar"><i style="height:108.42px"></i><b>$149.98<br>CONTRIBUTION</b></div></div><div class="cost-detail" aria-label="Forecast monthly Growth-plan cost breakdown, approximately 99.02 dollars total before shared fixed costs and additional re-checks"><div><b>$47.50 · AI usage</b><small>25 × $1.90 demo assumption</small></div><div><b>$25 · Infrastructure reserve</b><small>Forecast buffer, not measured</small></div><div><b>$7 · AWS allocation</b><small>Team estimate per customer</small></div><div><b>$7.52 · Payment estimate</b><small>Forecast card-processing fees</small></div><div><b>$12 · Storage + support</b><small>Forecast evidence + support allowance</small></div></div><p class="prototype-cost-baseline">Growth cost $99.02 · 60% contribution margin · Additional push re-checks excluded</p></div>
+          <div class="finance-scene fscene2"><p class="section-tag">Growth plan / forecast monthly economics / 20 assessments</p><div class="waterfall"><div class="waterbar"><i style="height:180px"></i><b>$129.99<br>REVENUE</b></div><div class="waterbar"><i style="height:90.01px"></i><b>API + INFRA + AWS<br>−$65</b></div><div class="waterbar"><i style="height:5.64px"></i><b>PAYMENTS<br>−$4.07</b></div><div class="waterbar"><i style="height:16.62px"></i><b>STORAGE + SUPPORT<br>−$12</b></div><div class="waterbar"><i style="height:67.74px"></i><b>$48.92<br>CONTRIBUTION</b></div></div><div class="cost-detail" aria-label="Forecast monthly Growth-plan cost breakdown, approximately 81.07 dollars total before shared fixed costs and additional re-checks"><div><b>$38 · AI usage</b><small>20 × $1.90 demo assumption</small></div><div><b>$20 · Infrastructure reserve</b><small>Forecast buffer, not measured</small></div><div><b>$7 · AWS allocation</b><small>Team estimate per customer</small></div><div><b>$4.07 · Payment estimate</b><small>Forecast card-processing fees</small></div><div><b>$12 · Storage + support</b><small>Forecast evidence + support allowance</small></div></div><p class="prototype-cost-baseline">Growth cost $81.07 · 38% contribution margin · Additional push re-checks excluded</p></div>
           <div class="finance-scene fscene3"><div class="finance-chart-wrap">
             <div class="forecast-plot">
               <div class="forecast-assumptions" aria-label="Fixed pilot forecast assumptions">
                 <div><strong>5 free pilots</strong><span>Month 1 only</span></div>
-                <div><strong>18.2% conversion</strong><span>Trial benchmark proxy, not Ari data</span></div>
-                <div><strong>+2 paid / month</strong><span>From Month 2 · 2% monthly churn assumed</span></div>
+                <div><strong>18.2% conversion</strong><span>Opt-in trial proxy, not Ari data</span><a href="https://firstpagesage.com/seo-blog/saas-free-trial-conversion-rate-benchmarks/" target="_blank" rel="noopener">First Page Sage · 2025</a></div>
+                <div><strong>≈42 paid / month</strong><span>1,000 ÷ 24, rounded · from M2</span><a href="https://chartmogul.com/reports/saas-go-to-market-report/" target="_blank" rel="noopener">ChartMogul · 1,000 in 24 months</a><span class="source-caveat">Derived scenario, not a monthly average</span></div>
               </div>
-              <canvas id="economicsChart" width="680" height="220" role="img" aria-label="Twelve-month pilot revenue and total cash cost forecast" aria-describedby="forecastAccessible">Monthly cash-cost and revenue forecast. See the forecast summary.</canvas>
+              <canvas id="economicsChart" width="680" height="190" role="img" aria-label="Twelve-month benchmark-derived pilot forecast with monthly break-even marked" aria-describedby="forecastAccessible">Monthly cash-cost and revenue forecast. See the forecast summary.</canvas>
               <p id="forecastChartFallback" hidden>Chart unavailable. The forecast summary remains available.</p>
               <p id="forecastAccessible" class="sr-only"></p>
               <div class="forecast-month-detail" id="forecastMonthDetail" aria-live="off">
@@ -1202,9 +1204,9 @@ REFERENCE AND CUES, NOT SPOKEN: Slide 12 has four main builds, with 12 month rev
               </div>
             </div>
             <div class="break-even pilot-coverage" id="forecastSummary" aria-live="off">
-              <p class="kicker">Forecast / expected values</p><strong id="forecastThreshold">70</strong><p class="coverage-label">active payers for monthly coverage</p>
-              <dl><dt>Fixed / month</dt><dd>$500</dd><dt>Cost / payer</dt><dd>$42.75</dd><dt>M1: five free pilots</dt><dd>$705 cost</dd><dt>Year 1 funding</dt><dd id="forecastFunding"></dd></dl>
-              <p class="forecast-result" id="forecastMonthly"></p><p class="forecast-result" id="forecastRecovery"></p><p class="forecast-result" id="forecastConverted"></p><p class="forecast-method">Intake + churn are assumptions · Conversion is a trial proxy · Forecast, not traction</p>
+              <p class="kicker" id="forecastStageLabel">Month 1 · Pilot launch</p><strong id="forecastThreshold">5</strong><p class="coverage-label" id="forecastCoverageLabel">unpaid pilots</p>
+              <dl><dt>Paying users</dt><dd id="forecastUsers"></dd><dt>Monthly revenue</dt><dd id="forecastRevenue"></dd><dt>Monthly cost</dt><dd id="forecastCost"></dd><dt>Monthly net</dt><dd id="forecastNet"></dd><dt>Peak funding gap</dt><dd id="forecastFunding"></dd></dl>
+              <p class="forecast-result" id="forecastMonthly"></p><p class="forecast-result" id="forecastRecovery"></p><p class="forecast-method">Scenario, not a promise · 2% churn assumed<br>Founder pay + extra usage excluded</p>
             </div>
           </div></div>
           <div class="finance-scene fscene4"><div class="funding-grid"><div class="funding-total"><div><strong>$500</strong><span>MONTHLY PILOT BUDGET<br>6 FOUNDERS · NO HIRING</span></div></div><div class="allocation"><div class="allocation-row"><b>$150</b><div class="allocation-track"><i style="--w:30%"></i></div><span>Claude Team · 6 seats</span></div><div class="allocation-row"><b>$150</b><div class="allocation-track"><i style="--w:30%"></i></div><span>Codex / Business · 6 seats</span></div><div class="allocation-row"><b>$120</b><div class="allocation-track"><i style="--w:24%"></i></div><span>Vercel Pro · 6 deployers</span></div><div class="allocation-row"><b>$10</b><div class="allocation-track"><i style="--w:2%"></i></div><span>Domain · provisional</span></div><div class="allocation-row"><b>$70</b><div class="allocation-track"><i style="--w:14%"></i></div><span>Operating contingency</span></div><div class="funding-gate">Founder-funded pilots. No salaries initially. Reinvest surplus.<br>Customer delivery costs separate; taxes and extra usage excluded.</div></div></div></div>
@@ -1214,11 +1216,11 @@ REFERENCE AND CUES, NOT SPOKEN: Slide 12 has four main builds, with 12 month rev
 
       <section class="slide market-slide" data-note="SPOKEN (3:22 to 3:38; about 16 seconds including clicks/pauses): We size our initial opportunity using U.S. software publishers as a transparent proxy. One hundred to two hundred paying customers is our growth target, not traction or break-even.
 
-REFERENCE AND CUES, NOT SPOKEN: Do not say TAM/SAM/SOM. Click through the full opportunity, starting market, and obtainable first segment. Presenter reference, not spoken: Source: U.S. Census 2022 SUSB, NAICS 511210. Caveat: software publishers are an ICP proxy; the data does not identify SaaS, AI adoption, or security staffing. 2022 Census SUSB / NAICS 511210 / forecast ACV 2022 Census SUSB / transparent ICP proxy Growth target / not traction or break-even. ARR range298800to597600 is pricedatGrowth, not actualblendedARR" data-spoken="We size our initial opportunity using U.S. software publishers as a transparent proxy. One hundred to two hundred paying customers is our growth target, not traction or break-even." data-duration-s="16">
+REFERENCE AND CUES, NOT SPOKEN: Do not say TAM/SAM/SOM. Click through the full opportunity, starting market, and obtainable first segment. Presenter reference, not spoken: Source: U.S. Census 2022 SUSB, NAICS 511210. Caveat: software publishers are an ICP proxy; the data does not identify SaaS, AI adoption, or security staffing. 2022 Census SUSB / NAICS 511210 / forecast ACV 2022 Census SUSB / transparent ICP proxy Growth target / not traction or break-even. ARR range155988to311976 is pricedatGrowth, not actualblendedARR" data-spoken="We size our initial opportunity using U.S. software publishers as a transparent proxy. One hundred to two hundred paying customers is our growth target, not traction or break-even." data-duration-s="16">
         <div class="slide-head"><span class="brand-mini"><img class="brand-ant" src="ari-ant-mark.png" alt="" aria-hidden="true">Market / Beneficiary Sizing / Forecast</span><span class="slide-num">14</span></div>
         <span class="build-trigger" data-build="1"></span><span class="build-trigger" data-build="2"></span><span class="build-trigger" data-build="3"></span>
         <div class="market-viewport"><div class="market-world" aria-label="Outer circle: U.S. software publishers under 500 employees. Middle circle: firms with 5–49 employees. Inner circle: 100 to 200 target paying customers."><div class="market-circle circle-full"><span class="ring-description"><strong>Under 500 employees</strong>U.S. software publishers</span></div><div class="market-circle circle-start"><span class="ring-description"><strong>5–49 employees</strong>U.S. software publishers</span></div><div class="market-circle circle-win"><span class="ring-description"><strong>Growth target</strong>Target paying<br>customers</span></div></div><div class="market-ring-labels"><div class="market-ring-label"><b>13,254</b><span>FULL OPPORTUNITY</span></div><div class="market-ring-label"><b>4,246</b><span>STARTING COHORT</span></div><div class="market-ring-label"><b>100–200</b><span>GROWTH TARGET</span></div></div></div>
-        <div class="market-detail"><div class="market-detail-copy md1"><p class="section-tag">The full opportunity</p><strong>$39.6M</strong><p>13,254 U.S. software-publisher firms under 500 employees × $2,988 annual Growth plan.</p></div><div class="market-detail-copy md2"><p class="section-tag">Our starting market</p><strong>$12.7M</strong><p>4,246 firms with 5–49 employees × $2,988 annual Growth plan.</p></div><div class="market-detail-copy md3"><p class="section-tag">Our growth target, not break-even</p><strong>$299K–$598K</strong><p>100–200 paying customers × $2,988 annual Growth-plan proxy.</p></div></div>
+        <div class="market-detail"><div class="market-detail-copy md1"><p class="section-tag">The full opportunity</p><strong>$20.7M</strong><p>13,254 U.S. software-publisher firms under 500 employees × $1,559.88 annual Growth plan.</p></div><div class="market-detail-copy md2"><p class="section-tag">Our starting market</p><strong>$6.6M</strong><p>4,246 firms with 5–49 employees × $1,559.88 annual Growth plan.</p></div><div class="market-detail-copy md3"><p class="section-tag">Our growth target, not break-even</p><strong>$156K–$312K</strong><p>100–200 paying customers × $1,559.88 annual Growth-plan proxy.</p></div></div>
 
       </section>
 
@@ -1578,6 +1580,7 @@ REFERENCE AND CUES, NOT SPOKEN: Reveal six visual memories. Click 7 connects the
     }
 
     function setBuild(slide, step) {
+      const previousBuild = currentBuild(slide);
       const bounded = Math.max(0, Math.min(maxBuild(slide), step));
       slide.dataset.buildCurrent = String(bounded);
       slide.querySelectorAll('[data-build]').forEach(el => {
@@ -1616,9 +1619,8 @@ REFERENCE AND CUES, NOT SPOKEN: Reveal six visual memories. Click 7 connects the
           label.replaceChildren(...(icon ? [icon] : []), document.createTextNode(rubricByBuild[bounded] || rubricByBuild[0]));
         }
       }
-      if (slide.classList.contains('finance-slide') && window.startPilotProgression) {
-        if (bounded === 3) window.startPilotProgression();
-        else window.stopPilotProgression();
+      if (slide.classList.contains('finance-slide') && bounded === 3 && window.setPilotStage) {
+        window.setPilotStage(previousBuild > 3 ? 2 : 0);
       }
     }
 
@@ -1631,7 +1633,6 @@ REFERENCE AND CUES, NOT SPOKEN: Reveal six visual memories. Click 7 connects the
       if (!Number.isInteger(nextIndex)) return;
       const oldIndex = index;
       index = Math.max(0, Math.min(slides.length - 1, nextIndex));
-      if (oldIndex !== index) window.stopPilotProgression?.();
       slides.forEach((slide, i) => {
         slide.classList.toggle('active', i === index);
         slide.classList.toggle('exit-left', i < index);
@@ -1654,6 +1655,7 @@ REFERENCE AND CUES, NOT SPOKEN: Reveal six visual memories. Click 7 connects the
     function nextAction() {
       const slide = slides[index];
       const step = currentBuild(slide);
+      if (slide.classList.contains('finance-slide') && step === 3 && window.stepPilotStage?.(1)) return;
       if (step < maxBuild(slide)) setBuild(slide, step + 1);
       else show(index + 1, 1);
     }
@@ -1661,6 +1663,7 @@ REFERENCE AND CUES, NOT SPOKEN: Reveal six visual memories. Click 7 connects the
     function prevAction() {
       const slide = slides[index];
       const step = currentBuild(slide);
+      if (slide.classList.contains('finance-slide') && step === 3 && window.stepPilotStage?.(-1)) return;
       if (step > 0) setBuild(slide, step - 1);
       else show(index - 1, -1);
     }
@@ -1767,82 +1770,63 @@ REFERENCE AND CUES, NOT SPOKEN: Reveal six visual memories. Click 7 connects the
     }
 
     if (window.AriPilotForecast) {
-      // One disclosed base case. Acquisition/churn are estimates, not universal startup averages.
-      const assumptions = Object.freeze({ newPaidPerMonth:2, conversionRate:0.182, monthlyChurn:0.02 });
+      // User-approved linear proxy from a milestone, not a reported monthly acquisition average.
+      const assumptions = Object.freeze({ newPaidPerMonth:42, conversionRate:0.182, monthlyChurn:0.02 });
       const money = value => Number(value).toLocaleString('en-US', { style:'currency', currency:'USD' });
       let pilotForecast;
-      // Full forecast is always visible; only the focus and monthly story progress.
+      let pilotStage = 0;
       let revealedMonth = 0;
-      let progressionTimer = null;
-      window.stopPilotProgression = () => {
-        if (progressionTimer !== null) window.clearTimeout(progressionTimer);
-        progressionTimer = null;
-      };
-      window.setPilotMonth = month => {
-        revealedMonth = Math.max(0, Math.min(11, month));
+      window.setPilotStage = stage => {
+        pilotStage = Math.max(0, Math.min(2, stage));
         updatePilotForecast();
       };
-      window.startPilotProgression = () => {
-        window.stopPilotProgression();
-        window.setPilotMonth(0);
-        if (window.matchMedia?.('(prefers-reduced-motion: reduce)').matches) return;
-        const advance = () => {
-          progressionTimer = null;
-          const slide = document.querySelector('.finance-slide');
-          if (!slide?.classList.contains('active') || slide.dataset.buildCurrent !== '3') return;
-          window.setPilotMonth(revealedMonth + 1);
-          if (revealedMonth < 11) progressionTimer = window.setTimeout(advance, 1800);
-        };
-        progressionTimer = window.setTimeout(advance, 2600);
+      window.stepPilotStage = direction => {
+        const next = pilotStage + direction;
+        if (next < 0 || next > 2) return false;
+        window.setPilotStage(next);
+        return true;
       };
       function updatePilotForecast() {
         pilotForecast = window.AriPilotForecast.forecast(assumptions);
         const model = pilotForecast;
-        const last = model.rows.at(-1);
-        const cumulative = false;
+        revealedMonth = pilotStage === 0 ? 0 : pilotStage === 1 ? 1 : (model.monthlyBreakEven ? model.monthlyBreakEven - 1 : 11);
         const selected = model.rows[revealedMonth];
-        const previous = model.rows[revealedMonth - 1];
-        const lost = previous ? previous.paidAccounts - selected.retainedPaid : 0;
         const monthPanel = document.querySelector('#forecastMonthDetail');
-        if (monthPanel) {
-          const event = selected.month === 1
-            ? '5 free pilots · $205 delivery + $500 shared tools'
-            : `+${selected.newPaid} new paid · +${selected.converted.toFixed(2)} conversions · −${lost.toFixed(2)} churn`;
-          document.querySelector('#forecastMonthTitle').textContent = `Month ${selected.month} / 12`;
-          document.querySelector('#forecastMonthEvent').textContent = selected.month === 2
-            ? '18.2% of 5 free pilots ≈ 0.91 payers · +2 new paid users'
-            : event;
-          document.querySelector('#forecastMonthCash').textContent = `Revenue ${money(selected.revenue)} · Cost ${money(selected.cost)} · Net ${money(selected.net)}`;
-          document.querySelector('#forecastMonthDelta').textContent = previous
-            ? `${selected.paidAccounts.toFixed(2)} expected payers · Cost change ${money(selected.cost - previous.cost)} · Cumulative net ${money(selected.cumulativeNet)}`
-            : 'No revenue or payment fees. Free service still costs money.';
-          document.querySelector('#forecastMonthCue').textContent = window.matchMedia?.('(prefers-reduced-motion: reduce)').matches
-            ? 'Full year shown · Click to continue'
-            : revealedMonth < 11 ? 'Full year shown · Automatic monthly highlights' : 'Year 1 outlook · Click to continue';
-          monthPanel.classList.toggle('covers-cost', selected.net >= 0);
-          const activeFinance = document.querySelector('.finance-slide');
-          if (activeFinance) activeFinance.dataset.forecastMonth = String(selected.month);
-        }
-        document.querySelector('#forecastThreshold').textContent = model.coverageAccounts ?? 'None';
+        const titles = ['Month 1 · Pilot launch', 'Month 2 · Conversion + growth', 'Month ' + selected.month + ' · Monthly break-even'];
+        document.querySelector('#forecastMonthTitle').textContent = titles[pilotStage];
+        document.querySelector('#forecastMonthCue').textContent = ['Launch costs', 'Research-derived estimates', 'Monthly costs covered'][pilotStage];
+        document.querySelector('#forecastMonthEvent').textContent = pilotStage === 0
+          ? '5 unpaid pilots · $161.50 delivery + $500 shared tools'
+          : pilotStage === 1
+            ? '18.2% × 5 ≈ 0.91 conversions · +42 new paid users / month'
+            : 'About ' + selected.paidAccounts.toFixed(0) + ' payers in M' + selected.month + ' · ' + model.coverageAccounts + ' whole active payers required';
+        document.querySelector('#forecastMonthCash').textContent = 'Revenue ' + money(selected.revenue) + ' · Cost ' + money(selected.cost) + ' · Net ' + money(selected.net);
+        document.querySelector('#forecastMonthDelta').textContent = pilotStage === 0
+          ? 'No revenue or payment fees. Free service still costs money.'
+          : pilotStage === 1
+            ? '42 = rounded 1,000 ÷ 24. This linear intake proxy is not a published monthly average.'
+            : 'Earlier cash losses recovered in M' + model.cumulativeBreakEven + ' · Timing is scenario-dependent';
+        monthPanel?.classList.toggle('covers-cost', selected.net >= 0);
+        const slide = document.querySelector('.finance-slide');
+        if (slide) { slide.dataset.forecastMonth = String(selected.month); slide.dataset.forecastStage = String(pilotStage); }
+        document.querySelector('#forecastStageLabel').textContent = titles[pilotStage];
+        document.querySelector('#forecastThreshold').textContent = pilotStage === 0 ? '5' : pilotStage === 1 ? '+42' : '≈' + selected.paidAccounts.toFixed(0);
+        document.querySelector('#forecastCoverageLabel').textContent = ['unpaid pilots', 'new paid users / month', 'paying users at monthly break-even'][pilotStage];
+        document.querySelector('#forecastUsers').textContent = selected.paidAccounts.toFixed(2);
+        document.querySelector('#forecastRevenue').textContent = money(selected.revenue);
+        document.querySelector('#forecastCost').textContent = money(selected.cost);
+        document.querySelector('#forecastNet').textContent = money(selected.net);
         document.querySelector('#forecastFunding').textContent = money(model.fundingNeeded);
-        document.querySelector('#forecastMonthly').textContent = model.monthlyBreakEven
-          ? `Monthly coverage: M${model.monthlyBreakEven}` : 'Monthly coverage: not in Year 1';
-        document.querySelector('#forecastRecovery').textContent = model.cumulativeBreakEven
-          ? `Losses recovered: M${model.cumulativeBreakEven}` : 'Losses recovered: not in Year 1';
-        document.querySelector('#forecastConverted').textContent = `5 free in M1 → ${model.expectedConversions.toFixed(2)} expected payers`;
-        const summary = `Fixed base-case forecast: five free pilots in Month 1, ${assumptions.newPaidPerMonth} new paying pilots per month from Month 2, ${assumptions.conversionRate*100}% first-cohort conversion proxy, ${assumptions.monthlyChurn*100}% assumed monthly paid churn. Founder price $49.99. Monthly coverage ${model.monthlyBreakEven ? 'Month '+model.monthlyBreakEven : 'not reached in 12 months'}; cumulative recovery ${model.cumulativeBreakEven ? 'Month '+model.cumulativeBreakEven : 'not reached in 12 months'}. Year 1 funding needed ${money(model.fundingNeeded)}. `;
-        document.querySelector('#forecastAccessible').textContent = summary + model.rows.map(row =>
-          `Month ${row.month}: ${row.freeAccounts} free, ${row.paidAccounts.toFixed(2)} expected paid, revenue ${money(row.revenue)}, cost ${money(row.cost)}, net ${money(row.net)}, cumulative net ${money(row.cumulativeNet)}.`).join(' ');
-        document.querySelector('#economicsChart').setAttribute('aria-label', `Full twelve-month pilot forecast, highlighting Month ${selected.month}. Current revenue ${money(selected.revenue)}, cash cost ${money(selected.cost)}. Month 12 expected payers ${last.paidAccounts.toFixed(2)}.`);
+        document.querySelector('#forecastMonthly').textContent = 'Monthly break-even: M' + model.monthlyBreakEven + ' · ' + model.coverageAccounts + ' payers needed';
+        document.querySelector('#forecastRecovery').textContent = 'Earlier losses recovered: M' + model.cumulativeBreakEven;
+        const summary = 'Benchmark-derived scenario: five free pilots in M1;42 new paid users/month from M2, rounded from1,000/24;18.2% conversion proxy;2% assumed monthly churn. Intake is a linear planning assumption, not a published monthly average. Monthly coverage M' + model.monthlyBreakEven + '; cumulative recovery M' + model.cumulativeBreakEven + '; peak funding gap ' + money(model.fundingNeeded) + '. ';
+        document.querySelector('#forecastAccessible').textContent = summary + model.rows.map(row => 'Month ' + row.month + ': ' + row.freeAccounts + ' free, ' + row.paidAccounts.toFixed(2) + ' expected paid, revenue ' + money(row.revenue) + ', cost ' + money(row.cost) + ', net ' + money(row.net) + ', cumulative net ' + money(row.cumulativeNet) + '.').join(' ');
+        document.querySelector('#economicsChart').setAttribute('aria-label', 'Full twelve-month benchmark-derived forecast. Monthly break-even at Month ' + model.monthlyBreakEven + '; highlighting Month ' + selected.month + ' with ' + selected.paidAccounts.toFixed(2) + ' expected paying users.');
         if (window.economicsChart) {
-          window.economicsChart.data.labels = model.rows.map(row => 'M'+row.month);
-          window.economicsChart.data.datasets[0].label = cumulative ? 'Cumulative revenue' : 'Monthly revenue';
-          window.economicsChart.data.datasets[1].label = cumulative ? 'Cumulative cash cost' : 'Total monthly cash cost';
+          window.economicsChart.data.labels = model.rows.map(row => 'M' + row.month);
           window.economicsChart.data.datasets[0].data = model.rows.map(row => row.revenue);
           window.economicsChart.data.datasets[1].data = model.rows.map(row => row.cost);
-          const allValues = model.rows.flatMap(row => cumulative ? [row.cumulativeRevenue, row.cumulativeCost] : [row.revenue, row.cost]);
-          window.economicsChart.options.scales.y.max = Math.ceil(Math.max(...allValues) * 1.12 / 100) * 100;
-          window.economicsChart.options.animation.duration = window.matchMedia?.('(prefers-reduced-motion: reduce)').matches ? 0 : 350;
+          window.economicsChart.options.scales.y.max = Math.ceil(Math.max(...model.rows.flatMap(row => [row.revenue, row.cost])) * 1.12 / 100) * 100;
           window.economicsChart.update('none');
         }
       }
@@ -1859,6 +1843,21 @@ REFERENCE AND CUES, NOT SPOKEN: Reveal six visual memories. Click 7 connects the
               ctx.fillRect(x - 16, chartArea.top, 32, chartArea.bottom - chartArea.top);
               ctx.strokeStyle = '#ffb09f'; ctx.lineWidth = 1;
               ctx.setLineDash([4,4]); ctx.beginPath(); ctx.moveTo(x,chartArea.top); ctx.lineTo(x,chartArea.bottom); ctx.stroke();
+              ctx.restore();
+            },
+            afterDatasetsDraw(chart) {
+              if (pilotStage !== 2 || !pilotForecast?.monthlyBreakEven) return;
+              const x = chart.scales.x.getPixelForValue(pilotForecast.monthlyBreakEven - 1);
+              const {ctx, chartArea} = chart;
+              ctx.save();
+              ctx.strokeStyle = '#ffe4ad'; ctx.lineWidth = 2; ctx.setLineDash([5,4]);
+              ctx.beginPath(); ctx.moveTo(x, chartArea.top); ctx.lineTo(x, chartArea.bottom); ctx.stroke();
+              ctx.setLineDash([]); ctx.font = '600 12px Inter';
+              const text = 'Monthly break-even · M' + pilotForecast.monthlyBreakEven;
+              const width = ctx.measureText(text).width + 16;
+              const left = Math.min(x + 8, chartArea.right - width);
+              ctx.fillStyle = '#3b2c1b'; ctx.fillRect(left, chartArea.top + 4, width, 23);
+              ctx.fillStyle = '#ffe4ad'; ctx.fillText(text, left + 8, chartArea.top + 20);
               ctx.restore();
             }
           }, {

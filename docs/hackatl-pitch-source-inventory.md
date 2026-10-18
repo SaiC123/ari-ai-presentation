@@ -10,7 +10,7 @@ Slide 4 now charts cyberattack attempts, with no business-application series: **
 
 ## Expanded assessment plans
 
-Proposed monthly workspace subscriptions, not per-seat prices. Founder: $49.99 for10 full assessments and1M assessed source lines; Growth: $249 for25 assessments and5M lines; Scale: $599 for60 assessments and20M lines. Pools are shared across connected repositories. Each repeat assessment counts source volume again. Exclude generated/vendor/dependency code. Both assessment and line allowances apply. Enterprise scope, code volume and onboarding negotiated. Core code review, seven-agent investigation and fix verification included. Monitoring and re-check work remain separately budgeted, not unlimited continuous protection. Extra scoped assessment $25 needs volume and budget approval. The initial five free pilots are a scoped user plan, not an open-ended trial entitlement. No invented integration, SSO or staffed support entitlement.
+Proposed monthly workspace subscriptions, not per-seat prices. Founder: $49.99 for7 full assessments and1M assessed source lines; Growth: $129.99 for20 assessments and5M lines; Scale: $359.99 for60 assessments and20M lines. Pools are shared across connected repositories. Each repeat assessment counts source volume again. Exclude generated/vendor/dependency code. Both assessment and line allowances apply. Enterprise scope, code volume and onboarding negotiated. Core code review, seven-agent investigation and fix verification included. Monitoring and re-check work remain separately budgeted, not unlimited continuous protection. Extra scoped assessment $25 needs volume and budget approval. The initial five free pilots are a scoped user plan, not an open-ended trial entitlement. No invented integration, SSO or staffed support entitlement.
 
 Structure inspired by [Kairo pricing](https://kairo.security/pricing), observed October17,2026, for explicit shared usage, code volume and enterprise scope, not copied quantities or prices. Ari's complete assessments are not equivalent to lightweight PR reviews. Routine review counts are not sold as a separate unlimited entitlement.
 
@@ -20,46 +20,47 @@ Assume all included full assessments are consumed. API $1.90/run is team-reporte
 
 | Item | Founder | Growth | Scale |
 |---|---:|---:|---:|
-| Price | $49.99 | $249 | $599 |
-| Full assessments | 10 | 25 | 60 |
-| API | $19 | $47.50 | $114 |
-| Sandbox reserve | $10 | $25 | $60 |
-| Payments | $1.74971 | $7.521 | $17.671 |
+| Price | $49.99 | $129.99 | $359.99 |
+| Full assessments | 7 | 20 | 60 |
+| API | $13.30 | $38 | $114 |
+| Sandbox reserve | $7 | $20 | $60 |
+| Payments | $1.74971 | $4.06971 | $10.73971 |
 | Support/storage | $5 | $12 | $30 |
 | AWS allocation | $7 | $7 | $7 |
-| **Total modeled cost** | **$42.74971** | **$99.021** | **$228.671** |
-| **Contribution before fixed costs** | **$7.24029** | **$149.979** | **$370.329** |
-| **Contribution margin** | **14.5%** | **60.2%** | **61.8%** |
+| **Total modeled cost** | **$34.04971** | **$81.06971** | **$221.73971** |
+| **Contribution before fixed costs** | **$15.94029** | **$48.92029** | **$138.25029** |
+| **Contribution margin** | **31.9%** | **37.6%** | **38.4%** |
 
-Founder is an entry pilot price with only about14.5% modeled contribution margin before shared costs. It is vulnerable to unmeasured support or usage costs and is not a proven sustainable acquisition strategy. Higher tiers support greater usage. They are not validated willingness to pay or a claim that larger codebases cost the same as the demo. Benchmark across representative repositories and set per-run scope/budgets before launch. The $25 extra-assessment price is only a scoped proposal, not an uncapped custom pentest offer.
+Founder is an entry pilot price with only about31.9% modeled contribution margin before shared costs. It is vulnerable to unmeasured support or usage costs and is not a proven sustainable acquisition strategy. Higher tiers support greater usage. They are not validated willingness to pay or a claim that larger codebases cost the same as the demo. Benchmark across representative repositories and set per-run scope/budgets before launch. The $25 extra-assessment price is only a scoped proposal, not an uncapped custom pentest offer.
 
 ## Pilot cash coverage and funding
 
-The current monthly graph is Founder-only; it uses the 70-account threshold below. The older mixed-tier calculation in this paragraph is a separate sensitivity, not the new pilot forecast.
+The current graph is Founder-only. With $500 shared fixed costs and $15.94029 contribution per paying account, the minimum monthly cash-coverage threshold is32 whole active Founder accounts. Six founders, no hiring or initial salaries; receipts cover costs first and surplus is reinvested. This is not full economic profitability. No invented blended tier mix is used.
 
-At assumed40%Founder/45%Growth/15%Scale mix: revenue221.896/customer/month; modeled deliverycost95.959984; contribution125.936016; margin56.75%. Cashcost500+95.959984×customers; revenue221.896×customers. Coverage500/125.936016=3.97 ->approximately4 blendedcustomers. At10customers: revenue2218.96, modeledcashcost1459.59984. Founder-only contribution7.24029 means500/7.24029=69.06 ->70 Founder customers. The assumed mix is not actual traction and cannot be represented exactly by four customers.
+## Current benchmark-derived pilot forecast
 
-This is pilot cash coverage, not full economic profitability. Actual four-customer tier mix differs from a smooth blend. Excludes founder salaries/labor, taxes, legal/compliance, extra developer credits, unmeasured monitoring/re-check usage and unexpected overages. At20extra re-checks capped at3APIeach, up to60extraAPI moves blended coverage to5, before other overhead.3is a cap not average. RLnoClaudeAPI doesnotmean zeroCPU. No additional Railway production baseline is added on top of AWS.
+Proposed workspace plans: Founder $49.99 / 7 assessments, Growth $129.99 / 20, Scale $359.99 / 60. Effective included-assessment prices are $7.14, $6.50 and $6.00 respectively. Both monthly run and assessed-line limits apply; extra usage is not unlimited. These are pilot prices; future changes require measured delivery costs and customer-value validation.
 
-Six founders, no hiring and no initial salaries. Founder-funded pilots; customer receipts first cover costs, surplus reinvested. No unsupported external fundraising ask;500/month is a planning budget, not all-in startup launch cost.
+Finance is slide13 in the18-slide deck. Initial cohort: five unpaid pilots in M1. All modeled paid accounts use Founder, with seven full assessments consumed monthly. No tier upgrades assumed. Conversion of18.2% gives0.91 expected initial-cohort payers in M2, not a fractional real customer. Actual conversion is0–5. Monthly paid churn2% is a separate unvalidated assumption.
 
-## Twelve-month pilot forecast
+[ChartMogul's Go-To-Market Report](https://chartmogul.com/reports/saas-go-to-market-report/) reports a median B2B time of about two years to1,000 subscribers across its SaaS sample. The approved planning intake is round(1,000/24) = **42 new paid accounts/month from M2**. This is a derived linear gross-intake scenario, **not a published monthly average**, matched acquisition benchmark, Ari traction or guarantee. Time-to-milestone does not imply constant acquisition; churn and the initial free period mean this scenario does not reach1,000 net subscribers by M24.
 
-The slide 12 graph now follows the user's initial cohort: five free pilots in Month 1; new pilots pay $49.99/month from Month 2. It uses only Founder pricing, with no assumed Growth/Scale upgrades. Two new paying pilots/month and 2% monthly paid churn are explicit planning assumptions. First Page Sage's 18.2% organic opt-in trial conversion average is a proxy for the initial cohort, giving 0.91 expected conversions in Month 2, not a guaranteed customer or a pilot-retention average. Timing in Month 2 is assumed. The slide offers 5% and 21.9% conversion sensitivities, with different source populations disclosed in notes.
+[FirstPageSage's trial report](https://firstpagesage.com/seo-blog/saas-free-trial-conversion-rate-benchmarks/) reports18.2% organic opt-in trial-to-paid conversion. This is not evidence for Ari's assisted pilots. The M2 conversion timing is assumed.
 
-Five free accounts at $41 each plus $500 shared tools cost $705 in Month 1, with no revenue or payment fees. Paid cost stays $42.74971/account and contribution $7.24029. Monthly coverage therefore needs about 70 whole active Founder accounts once free pilots end. The former 40/45/15 blended acquisition scenario and M3 crossing are superseded for this graph.
+Shared fixed tools budget: $500/month. Free Founder account: $32.30 = $13.30 API + $7 sandbox + $7 AWS + $5 support/storage. M1: $500 + five × $32.30 = **$661.50**, with no revenue or payment fees. Paid Founder variable cost: **$34.04971**, including $1.74971 payment processing. Contribution: $15.94029; minimum monthly cash coverage: **32 whole active paying Founder accounts**.
 
-The base case has about20.67 expected paying accounts in M12: $1,033.31 revenue, $1,383.65 total cost, $350.34 monthly shortfall. Peak Year 1 cash funding is $5,244.57. Neither monthly coverage nor cumulative recovery is reached within 12 months; no later date is invented. Fractional expected accounts are not actual customers.
+With the approved42/month intake, monthly cash coverage occurs in **M2** at42.91 expected payers: revenue $2,145.07, cost $1,961.07, net $184.00. Earlier losses recover in **M3**. Peak modeled funding gap is **$661.50**, in M1. These are conditional cash-model outputs, not full-business profitability or proof of sustainable acquisition.
 
-See [pilot-forecast.md](pilot-forecast.md) for primary-source links, population/timing limits, formulas, scenarios and exclusions, [pilot-forecast.csv](pilot-forecast.csv) for all 12 monthly rows, and `public/pilot-forecast.js` for the calculation source. Research: [a16z initial design-partner cohort guidance](https://a16z.com/a-framework-for-finding-a-design-partner/), [First Page Sage trial conversion](https://firstpagesage.com/seo-blog/saas-free-trial-conversion-rate-benchmarks/), [ChartMogul 2026 no-card trial conversion](https://chartmogul.com/reports/saas-conversion-report/). None is a measured monthly acquisition or selected-pilot retention benchmark for Ari.
+The full twelve-month graph is always visible. Three manual milestone callouts show M1 launch, M2 conversion/growth and monthly break-even (also M2 under current assumptions). The right panel shows users, revenue, cost and net. No month-by-month autoplay or selectors. Forward/rewind and reduced-motion states are tested.
 
+Excludes founder pay/labor, taxes, legal/compliance, paid acquisition, onboarding labor, extra re-checks and unforeseen overages. API $1.90/assessment is team-reported demo usage, not an audited production average; sandbox, AWS and support allowances remain forecasts. Validate across repository sizes before selling. Future pilot price increases are not modeled. The100–200 customer growth target and market proxies are separate from break-even.
 ## Replacement financial script
 
-We start with five free pilots in month one, then charge new pilots forty-nine ninety-nine. A trial conversion benchmark suggests about one of those first five might pay. That is a proxy, not Ari evidence. Our twelve-month model includes the cost of free pilots, new paid customers and churn. At two new paid pilots per month, we do not cover costs in year one. Monthly coverage needs about seventy active Founder customers. Recovering earlier losses takes longer. Change the assumptions to test the path.
+Our introductory workspace plans start at forty-nine ninety-nine for seven full assessments. Growth offers twenty for one hundred twenty-nine ninety-nine, and Scale offers sixty for three hundred fifty-nine ninety-nine. The effective price per included assessment falls as usage grows. These are pilot prices to validate demand, with future pricing based on measured costs and customer value. Our six-founder team budgets five hundred dollars monthly for shared tools, before customer delivery. Five unpaid pilots bring month-one costs to about six hundred sixty-two dollars. We use an eighteen-point-two percent trial-conversion proxy and derive forty-two new paid users monthly from ChartMogul’s two-year subscriber milestone. These are assumptions, not Ari results. On Founder-only pricing, this scenario covers monthly cash costs in month two at about forty-three paying users, and recovers earlier losses in month three. Founder pay, acquisition and extra usage are excluded.
 
 ## Current market arithmetic
 
-Growth annual price $2,988 × unchanged Census proxy accounts13,254/4,246 gives **$39,602,952 / $12,687,048** for the first two circles. The inner growth target is100–200 paying customers, valued at **$298,800–$597,600 ARR** using Growth annual pricing. This is a pricing proxy, not blended ARR, traction or break-even. Census counts do not identify SaaS, AI adoption or security staffing. Historical financial scenarios below are superseded.
+Growth annual price $1,559.88 × unchanged Census proxy accounts13,254/4,246 gives **$20,674,649.52 / $6,623,250.48** for the first two circles. The inner growth target is100–200 paying customers, valued at **$155,988–$311,976 ARR** using Growth annual pricing. This is a pricing proxy, not blended ARR, traction or break-even. Census counts do not identify SaaS, AI adoption or security staffing. Historical financial scenarios below are superseded.
 
 ## Slide 1 - Fictional founder
 

@@ -49,3 +49,30 @@ Month reveals added on top of the existing pilot model. 79 Node tests pass. Chro
 ## Current fixed forecast playback
 
 Supersedes the earlier interactive-control and click-per-month descriptions above. The full twelve-month monthly series is visible from entry, with fixed2newpaid/month,18.2%conversionproxy and2%churn. Month callouts advance on a timer without user clicks. Click/Next goes directly to budget; Left returns to unit economics. Re-entry restartsM1; leaving stops timers; reduced motion shows the full graph statically. Updated regressions cover full-series visibility, all12timedcallouts, no selectors, no duplicate timers, exit/re-entry, reduced motion, chart fallback and unchanged model arithmetic.
+
+
+## Current benchmark-derived milestone interaction
+
+Supersedes automatic month highlighting above. Three key forecast steps only: free-pilot launch, research-derived conversion/acquisition, monthly cash coverage. Full series always shown; no timers/dropdowns. Defaultintake42derivedfrom1000/24, not a published monthly average. Updated regressions assert M3coverage/M5recovery, citations, current right-panel users, full chart and milestone rewind/fallback.
+
+## Current override: seven-assessment pricing and milestone forecast
+
+## Current benchmark-derived pilot forecast
+
+Proposed workspace plans: Founder $49.99 / 7 assessments, Growth $129.99 / 20, Scale $359.99 / 60. Effective included-assessment prices are $7.14, $6.50 and $6.00 respectively. Both monthly run and assessed-line limits apply; extra usage is not unlimited. These are pilot prices; future changes require measured delivery costs and customer-value validation.
+
+Finance is slide13 in the18-slide deck. Initial cohort: five unpaid pilots in M1. All modeled paid accounts use Founder, with seven full assessments consumed monthly. No tier upgrades assumed. Conversion of18.2% gives0.91 expected initial-cohort payers in M2, not a fractional real customer. Actual conversion is0–5. Monthly paid churn2% is a separate unvalidated assumption.
+
+[ChartMogul's Go-To-Market Report](https://chartmogul.com/reports/saas-go-to-market-report/) reports a median B2B time of about two years to1,000 subscribers across its SaaS sample. The approved planning intake is round(1,000/24) = **42 new paid accounts/month from M2**. This is a derived linear gross-intake scenario, **not a published monthly average**, matched acquisition benchmark, Ari traction or guarantee. Time-to-milestone does not imply constant acquisition; churn and the initial free period mean this scenario does not reach1,000 net subscribers by M24.
+
+[FirstPageSage's trial report](https://firstpagesage.com/seo-blog/saas-free-trial-conversion-rate-benchmarks/) reports18.2% organic opt-in trial-to-paid conversion. This is not evidence for Ari's assisted pilots. The M2 conversion timing is assumed.
+
+Shared fixed tools budget: $500/month. Free Founder account: $32.30 = $13.30 API + $7 sandbox + $7 AWS + $5 support/storage. M1: $500 + five × $32.30 = **$661.50**, with no revenue or payment fees. Paid Founder variable cost: **$34.04971**, including $1.74971 payment processing. Contribution: $15.94029; minimum monthly cash coverage: **32 whole active paying Founder accounts**.
+
+With the approved42/month intake, monthly cash coverage occurs in **M2** at42.91 expected payers: revenue $2,145.07, cost $1,961.07, net $184.00. Earlier losses recover in **M3**. Peak modeled funding gap is **$661.50**, in M1. These are conditional cash-model outputs, not full-business profitability or proof of sustainable acquisition.
+
+The full twelve-month graph is always visible. Three manual milestone callouts show M1 launch, M2 conversion/growth and monthly break-even (also M2 under current assumptions). The right panel shows users, revenue, cost and net. No month-by-month autoplay or selectors. Forward/rewind and reduced-motion states are tested.
+
+Excludes founder pay/labor, taxes, legal/compliance, paid acquisition, onboarding labor, extra re-checks and unforeseen overages. API $1.90/assessment is team-reported demo usage, not an audited production average; sandbox, AWS and support allowances remain forecasts. Validate across repository sizes before selling. Future pilot price increases are not modeled. The100–200 customer growth target and market proxies are separate from break-even.
+
+Finance narration: Our introductory workspace plans start at forty-nine ninety-nine for seven full assessments. Growth offers twenty for one hundred twenty-nine ninety-nine, and Scale offers sixty for three hundred fifty-nine ninety-nine. The effective price per included assessment falls as usage grows. These are pilot prices to validate demand, with future pricing based on measured costs and customer value. Our six-founder team budgets five hundred dollars monthly for shared tools, before customer delivery. Five unpaid pilots bring month-one costs to about six hundred sixty-two dollars. We use an eighteen-point-two percent trial-conversion proxy and derive forty-two new paid users monthly from ChartMogul’s two-year subscriber milestone. These are assumptions, not Ari results. On Founder-only pricing, this scenario covers monthly cash costs in month two at about forty-three paying users, and recovers earlier losses in month three. Founder pay, acquisition and extra usage are excluded.

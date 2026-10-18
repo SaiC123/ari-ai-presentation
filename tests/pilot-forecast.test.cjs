@@ -10,9 +10,9 @@ test('five free pilots cost money but generate no revenue or payment fees', () =
   assert.equal(first.paidAccounts, 0);
   assert.equal(first.revenue, 0);
   assert.equal(first.costs.payments, 0);
-  assert.equal(first.cost, 705);
-  assert.equal(first.costs.api, 95);
-  assert.equal(first.costs.sandbox, 50);
+  assert.equal(first.cost, 661.5);
+  assert.equal(first.costs.api, 66.5);
+  assert.equal(first.costs.sandbox, 35);
   assert.equal(first.costs.aws, 35);
   assert.equal(first.costs.supportStorage, 25);
 });
@@ -20,24 +20,24 @@ test('five free pilots cost money but generate no revenue or payment fees', () =
 test('the first free cohort converts once, with paid intake beginning in Month 2', () => {
   const { rows, expectedConversions } = forecast();
   near(expectedConversions, 0.91);
-  near(rows[1].paidAccounts, 2.91);
-  near(rows[1].revenue, 145.4709);
-  near(rows[2].paidAccounts, 4.8518);
+  near(rows[1].paidAccounts, 42.91);
+  near(rows[1].revenue, 2145.0709);
+  near(rows[2].paidAccounts, 84.0518);
   assert.equal(rows[1].freeAccounts, 0);
   assert.equal(rows[2].converted, 0);
   assert.equal(rows[0].newPaid, 0);
-  assert.equal(rows[1].newPaid, 2);
+  assert.equal(rows[1].newPaid, 42);
 });
 
 test('all paying accounts stay on Founder pricing and consume its full allowance', () => {
   const model = forecast();
-  near(model.freeUnitCost, 41);
-  near(model.paidUnitCost, 42.74971);
-  near(model.contribution, 7.24029);
-  assert.equal(model.coverageAccounts, 70);
+  near(model.freeUnitCost, 32.3);
+  near(model.paidUnitCost, 34.04971);
+  near(model.contribution, 15.94029);
+  assert.equal(model.coverageAccounts, 32);
   for (const row of model.rows) {
     near(row.revenue, row.paidAccounts * 49.99);
-    near(row.cost, 500 + row.paidAccounts * 42.74971 + row.freeAccounts * 41);
+    near(row.cost, 500 + row.paidAccounts * 34.04971 + row.freeAccounts * 32.3);
   }
 });
 
@@ -51,23 +51,23 @@ test('no intake after the initial cohort cannot falsely reach cash coverage', ()
 test('zero conversions and zero acquisition leave no paying customers', () => {
   const model = forecast({ conversionRate: 0, newPaidPerMonth: 0 });
   assert.ok(model.rows.every(row => row.revenue === 0));
-  assert.equal(model.rows[11].cumulativeCost, 6205);
-  assert.equal(model.fundingNeeded, 6205);
+  assert.equal(model.rows[11].cumulativeCost, 6161.5);
+  assert.equal(model.fundingNeeded, 6161.5);
 });
 
 test('monthly coverage and recovery of earlier losses are different milestones', () => {
   const model = forecast({ newPaidPerMonth: 10, monthlyChurn: 0 });
-  assert.equal(model.monthlyBreakEven, 8);
-  assert.equal(model.cumulativeBreakEven, null);
-  assert.ok(model.rows[7].net > 0);
-  assert.ok(model.rows[7].cumulativeNet < 0);
+  assert.equal(model.monthlyBreakEven, 5);
+  assert.equal(model.cumulativeBreakEven, 8);
+  assert.ok(model.rows[4].net > 0);
+  assert.ok(model.rows[4].cumulativeNet < 0);
   const extended = forecast({ months: 24, newPaidPerMonth: 10, monthlyChurn: 0 });
-  assert.equal(extended.cumulativeBreakEven, 16);
-  near(model.fundingNeeded, -model.rows[6].cumulativeNet);
+  assert.equal(extended.cumulativeBreakEven, 8);
+  near(model.fundingNeeded, -model.rows[3].cumulativeNet);
 });
 
-test('base forecast does not promise a break-even date outside its horizon', () => {
-  const model = forecast();
+test('a slower forecast does not invent a break-even date outside its horizon', () => {
+  const model = forecast({ newPaidPerMonth:2 });
   assert.equal(model.rows.length, 12);
   assert.equal(model.monthlyBreakEven, null);
   assert.equal(model.cumulativeBreakEven, null);
@@ -79,7 +79,7 @@ test('conversion and paid retention are independent assumptions', () => {
   const lowChurn = forecast({ monthlyChurn: 0 });
   const highChurn = forecast({ monthlyChurn: 1 });
   near(lowChurn.rows[1].paidAccounts, highChurn.rows[1].paidAccounts);
-  near(highChurn.rows[2].paidAccounts, 2);
+  near(highChurn.rows[2].paidAccounts, 42);
   assert.ok(lowChurn.rows[11].paidAccounts > highChurn.rows[11].paidAccounts);
 });
 
@@ -114,4 +114,17 @@ test('invalid rates, amounts, and horizons fail instead of plotting nonsense', (
   }
   forecast({ monthlyChurn: 1, conversionRate: 1 });
   assert.equal(defaults.conversionRate, 0.182);
+});
+
+test('benchmark-derived intake has separate monthly coverage and cumulative recovery', () => {
+  const model = forecast();
+  assert.equal(defaults.newPaidPerMonth, Math.round(1000/24));
+  assert.equal(model.monthlyBreakEven,2);
+  assert.equal(model.cumulativeBreakEven,3);
+  near(model.rows[2].paidAccounts,84.0518);
+  near(model.fundingNeeded,661.5);
+  assert.ok(model.rows[1].cumulativeNet < 0);
+  assert.ok(model.rows[2].cumulativeNet > 0);
+  assert.ok(forecast({months:24}).rows.at(-1).paidAccounts < 1000,
+    'linear gross intake plus churn does not claim to replicate the cited net milestone');
 });

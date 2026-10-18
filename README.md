@@ -40,7 +40,7 @@ Every AI editor must read [AGENTS.md](AGENTS.md) and follow the [shared coordina
 
 ## Monthly pilot forecast
 
-Slide13 shows the full twelve-month forecast immediately, then automatically highlights each month and its free pilots, conversion, new paid users and cash impact. No dropdowns or click-per-month steps. Base case:5freeM1pilots,18.2%conversionproxy,+2paid/monthfromM2,2%monthlychurn. Intake/churn are assumptions, not universal startup averages. Click continues to budget; leaving stops playback; reduced motion keeps the full graph static. See `docs/pilot-forecast.md`. Run `node --test tests/pilot-forecast.test.cjs tests/presentation-navigation.test.cjs`.
+Slide13 shows a full-year conditional forecast with three milestones: M1 five free pilots costing $661.50; M2 conversion/growth and monthly cash coverage at about43 expected payers (32 minimum required); M3 cumulative recovery. Growth42/month is derived from1,000/24, not a published monthly average. Prices are49.99/129.99/359.99 for7/20/60 assessments. No dropdowns, autoplay or monthly-click sequence. See docs/pilot-forecast.md.
 ## Prototype evidence slide
 
 Slide6 shows the customer profile, slide7 the Ari logo, and slide8 the two evidence boxes followed by the enlarged email with its reported result highlighted. Five supplied screenshots and their provenance are documented in `docs/prototype-feedback.md`. VC feedback remains pending. Run `python3 -m unittest discover -s tests -p test_prototype_feedback.py` to check the evidence assets and attribution.

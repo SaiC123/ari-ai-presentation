@@ -57,6 +57,7 @@ function presentation(hash = '#1', options = {}) {
     '#noteText', '#prev', '#next', '#fullscreen', '#notesToggle', '#fullscreenStatus',
     '#forecastIntake', '#forecastConversion', '#forecastChurn', '#forecastView',
     '#forecastThreshold', '#forecastFunding', '#forecastMonthly', '#forecastRecovery',
+    '#forecastStageLabel', '#forecastCoverageLabel', '#forecastUsers', '#forecastRevenue', '#forecastCost', '#forecastNet',
     '#forecastMonthDetail', '#forecastMonthTitle', '#forecastMonthCue', '#forecastMonthEvent', '#forecastMonthCash', '#forecastMonthDelta', '#forecastConverted', '#forecastAccessible', '#economicsChart', '#forecastChartFallback', '#formationChart',
   ].map(selector => [selector, element(['#prev', '#next', '#fullscreen', '#notesToggle'].includes(selector) ? 'button' : 'div')]));
   selectors['#presentation-slides-wrapper'].querySelectorAll = () => slides;
@@ -478,106 +479,95 @@ test("every slide and build remains navigable forward and backward", () => {
   assert.equal(d.location.hash, '#1');
 });
 
-test('the live chart configuration includes free-pilot cash costs and zero first-month revenue', () => {
-  const deck = presentation('#2', { forecast:true, chart:true });
-  const chart = deck.chart();
-  assert.equal(chart.data.labels.length, 12);
-  assert.equal(chart.data.datasets[0].data[0], 0);
-  assert.equal(chart.data.datasets[1].data[0], 705);
-  assert.equal(deck.selectors['#forecastFunding'].textContent, '$5,244.57');
-  assert.match(deck.selectors['#forecastConverted'].textContent, /0.91 expected payers/);
-  assert.match(deck.selectors['#forecastAccessible'].textContent, /Month 1: 5 free, 0.00 expected paid/);
+test('the full forecast includes free pilot cash costs and no M1 revenue', () => {
+  const d = presentation('#2', { forecast:true, chart:true });
+  assert.equal(d.chart().data.labels.length,12);
+  assert.equal(d.chart().data.datasets[0].data[0],0);
+  assert.equal(d.chart().data.datasets[1].data[0],661.50);
+  assert.equal(d.selectors['#forecastFunding'].textContent,'$661.50');
+  assert.equal(d.selectors['#forecastMonthly'].textContent,'Monthly break-even: M2 · 32 payers needed');
+  assert.equal(d.selectors['#forecastRecovery'].textContent,'Earlier losses recovered: M3');
+  assert.match(d.selectors['#forecastAccessible'].textContent,/42 new paid.*not a published monthly average/);
 });
 
-test('forecast presentation is one fixed base case with no selectable assumptions', () => {
+test('workspace tiers have seven/twenty/sixty runs and descending included-run prices', () => {
+  const tiers = [[49.99,7],[129.99,20],[359.99,60]];
+  assert.match(html, /Founder<\/p><strong>\$49\.99<\/strong>[\s\S]*?7 full assessments/);
+  assert.match(html, /Growth<\/p><strong>\$129\.99<\/strong>[\s\S]*?20 full assessments/);
+  assert.match(html, /Scale<\/p><strong>\$359\.99<\/strong>[\s\S]*?60 full assessments/);
+  assert.ok(tiers[1][0]/tiers[1][1] < tiers[0][0]/tiers[0][1]);
+  assert.ok(tiers[2][0]/tiers[2][1] < tiers[1][0]/tiers[1][1]);
+  assert.match(html, /Growth cost \$81\.07 · 38% contribution margin/);
+  assert.match(html, /\$1,559\.88 annual Growth plan/);
+});
+
+test('the selected research citations are below the conversion and derived growth figures', () => {
   assert.doesNotMatch(html, /<select[^>]*id="forecast(?:Intake|Conversion|Churn|View)"/);
-  const d = presentation('#2', { forecast:true, chart:true });
-  assert.equal(d.chart().data.datasets[0].label, 'Monthly revenue');
-  assert.equal(d.chart().data.datasets[0].data.filter(v => v !== null).length, 12);
-  assert.equal(d.chart().data.datasets[1].data[0], 705);
-  assert.equal(d.selectors['#forecastMonthly'].textContent, 'Monthly coverage: not in Year 1');
-  assert.match(d.selectors['#forecastAccessible'].textContent, /2 new paying.*18.2%.*2%/);
+  assert.match(html, /18\.2% conversion[\s\S]*firstpagesage\.com/);
+  assert.match(html, /≈42 paid \/ month[\s\S]*chartmogul\.com\/reports\/saas-go-to-market-report/);
+  assert.match(html, /Derived scenario, not a monthly average/);
 });
 
-test('monthly tooltip includes every cash cost and no fee on free pilots', () => {
+test('cash tooltip reconciles initial free delivery without charging payment fees', () => {
   const d = presentation('#2', { forecast:true, chart:true });
-  const tooltip = d.chart().options.plugins.tooltip.callbacks;
-  const lines = tooltip.afterBody([{ dataIndex:0 }]);
+  const callback = d.chart().options.plugins.tooltip.callbacks;
+  const lines = callback.afterBody([{dataIndex:0}]);
   assert.ok(lines.includes('Shared team tools: $500.00'));
-  assert.ok(lines.includes('Product API: $95.00'));
+  assert.ok(lines.includes('Product API: $66.50'));
   assert.ok(lines.includes('Payments (paid only): $0.00'));
-  assert.ok(lines.includes('Monthly net: -$705.00'));
-  assert.match(tooltip.title([{ dataIndex:0 }]), /5 free \/ 0.00 expected paid/);
+  assert.ok(lines.includes('Monthly net: -$661.50'));
 });
 
-test('full accessible forecast remains when Chart.js is unavailable', () => {
-  const d = presentation('#2', { forecast:true });
-  assert.equal(d.selectors['#economicsChart'].hidden, true);
-  assert.equal(d.selectors['#forecastChartFallback'].hidden, false);
-  assert.match(d.selectors['#forecastAccessible'].textContent, /Year 1 funding needed \$5,244.57/);
-});
-
-test('the full year is visible immediately and months progress without clicks', () => {
-  const d = presentation('#2', { counts:[0,4,1], forecast:true, chart:true, finance:true });
+test('three milestone stages replace all automatic or month-by-month playback', () => {
+  const d = presentation('#2', {counts:[0,4,1],forecast:true,chart:true,finance:true});
   d.build(1,3);
-  for (let month=1; month<=12; month++) {
-    assert.equal(d.selectors['#forecastMonthTitle'].textContent, `Month ${month} / 12`);
-    assert.equal(d.chart().data.datasets[0].data.filter(v => v !== null).length, 12);
-    assert.equal(d.slides[1].dataset.buildCurrent, '3');
-    if (month < 12) d.tick();
-  }
-  assert.equal(d.pendingTimers(), 0, 'holds at the final month');
-});
-
-test('next goes directly to budget and rewind restarts full-graph progression', () => {
-  const d = presentation('#2', { counts:[0,4,1], forecast:true, chart:true, finance:true });
-  d.build(1,3); d.tick();
-  assert.equal(d.selectors['#forecastMonthTitle'].textContent,'Month 2 / 12');
+  assert.match(d.selectors['#forecastMonthTitle'].textContent,/Month 1/);
+  assert.equal(d.selectors['#forecastThreshold'].textContent,'5');
+  assert.equal(d.selectors['#forecastUsers'].textContent,'0.00');
+  assert.equal(d.selectors['#forecastCost'].textContent,'$661.50');
+  assert.equal(d.chart().data.datasets[0].data.filter(v=>v!==null).length,12);
+  assert.equal(d.pendingTimers(),0);
+  d.tick();
+  assert.match(d.selectors['#forecastMonthTitle'].textContent,/Month 1/);
+  d.click('#next');
+  assert.match(d.selectors['#forecastMonthTitle'].textContent,/Month 2/);
+  assert.equal(d.selectors['#forecastThreshold'].textContent,'+42');
+  assert.equal(d.selectors['#forecastUsers'].textContent,'42.91');
+  assert.match(d.selectors['#forecastMonthEvent'].textContent,/0.91 conversions.*42 new paid/);
+  d.click('#next');
+  assert.match(d.selectors['#forecastMonthTitle'].textContent,/Month 2.*break-even/);
+  assert.equal(d.selectors['#forecastThreshold'].textContent,'≈43');
+  assert.equal(d.selectors['#forecastUsers'].textContent,'42.91');
+  assert.equal(d.selectors['#forecastRevenue'].textContent,'$2,145.07');
+  assert.equal(d.selectors['#forecastCost'].textContent,'$1,961.07');
+  assert.equal(d.pendingTimers(),0);
   d.click('#next');
   assert.equal(d.slides[1].dataset.buildCurrent,'4');
-  assert.equal(d.pendingTimers(),0);
-  d.click('#prev');
-  assert.equal(d.slides[1].dataset.buildCurrent,'3');
-  assert.equal(d.selectors['#forecastMonthTitle'].textContent,'Month 1 / 12');
-  assert.equal(d.chart().data.datasets[0].data.length,12);
-  d.click('#prev');
-  assert.equal(d.slides[1].dataset.buildCurrent,'2');
-  assert.equal(d.pendingTimers(),0);
 });
 
-test('month callouts distinguish free service, conversion, acquisition and payments', () => {
-  const d = presentation('#2', { counts:[0,4,1], forecast:true, chart:true, finance:true });
-  d.build(1,3);
-  assert.match(d.selectors['#forecastMonthEvent'].textContent,/5 free pilots/);
-  assert.match(d.selectors['#forecastMonthCash'].textContent,/Cost \$705.00/);
-  d.tick();
-  assert.match(d.selectors['#forecastMonthEvent'].textContent,/18.2%.*0.91 payers.*2 new paid/);
-  assert.match(d.selectors['#forecastMonthCash'].textContent,/Revenue \$145.47.*Cost \$624.40/);
-  d.tick();
-  assert.match(d.selectors['#forecastMonthEvent'].textContent,/\+2 new paid.*\+0.00 conversions.*−0.06 churn/);
+test('rewind restores break-even, then growth, then pilot launch before unit costs', () => {
+  const d = presentation('#2', {counts:[0,4,1],forecast:true,chart:true,finance:true});
+  d.build(1,4); d.click('#prev');
+  assert.match(d.selectors['#forecastMonthTitle'].textContent,/Month 2/);
+  d.click('#prev'); assert.match(d.selectors['#forecastMonthTitle'].textContent,/Month 2/);
+  d.click('#prev'); assert.match(d.selectors['#forecastMonthTitle'].textContent,/Month 1/);
+  d.click('#prev'); assert.equal(d.slides[1].dataset.buildCurrent,'2');
+  d.click('#next'); assert.match(d.selectors['#forecastMonthTitle'].textContent,/Month 1/);
 });
 
-test('leaving the finance slide cancels progression and re-entry has no duplicate timers', () => {
-  const d = presentation('#2', { counts:[0,4,1], forecast:true, chart:true, finance:true });
-  d.build(1,3); assert.equal(d.pendingTimers(),1);
-  d.build(1,3); assert.equal(d.pendingTimers(),1);
-  d.show(0); assert.equal(d.pendingTimers(),0);
-  d.show(1); d.build(1,3); assert.equal(d.pendingTimers(),1);
-  assert.equal(d.selectors['#forecastMonthTitle'].textContent,'Month 1 / 12');
-});
-
-test('reduced motion keeps the complete forecast static without timed announcements', () => {
-  const d = presentation('#2', { counts:[0,4,1], forecast:true, chart:true, finance:true, reducedMotion:true });
-  d.build(1,3);
-  assert.equal(d.pendingTimers(),0);
-  assert.equal(d.chart().data.datasets[0].data.filter(v=>v!==null).length,12);
-  assert.match(html,/id="forecastMonthDetail" aria-live="off"/);
-});
-
-test('automatic narration works without Chart.js', () => {
-  const d = presentation('#2', { counts:[0,4,1], forecast:true, finance:true });
-  d.build(1,3); d.tick();
-  assert.equal(d.selectors['#forecastMonthTitle'].textContent,'Month 2 / 12');
+test('milestones and full accessible table remain if Chart.js is unavailable', () => {
+  const d = presentation('#2',{counts:[0,4,1],forecast:true,finance:true});
+  d.build(1,3); d.click('#next'); d.click('#next');
+  assert.equal(d.selectors['#economicsChart'].hidden,true);
   assert.equal(d.selectors['#forecastChartFallback'].hidden,false);
-  assert.match(d.selectors['#forecastMonthCash'].textContent,/Revenue \$145.47/);
+  assert.match(d.selectors['#forecastAccessible'].textContent,/peak funding gap \$661.50/);
+  assert.match(d.selectors['#forecastMonthCash'].textContent,/Revenue \$2,145.07/);
+});
+
+test('reduced motion keeps the same fixed milestones with no timer', () => {
+  const d = presentation('#2',{counts:[0,4,1],forecast:true,chart:true,finance:true,reducedMotion:true});
+  d.build(1,3); d.click('#next');
+  assert.equal(d.pendingTimers(),0);
+  assert.equal(d.chart().data.datasets[0].data.length,12);
+  assert.match(d.selectors['#forecastMonthTitle'].textContent,/Month 2/);
 });

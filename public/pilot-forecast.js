@@ -6,11 +6,11 @@
     months: 12,
     initialFreePilots: 5,
     conversionRate: 0.182, // First Page Sage opt-in organic trial average; proxy only.
-    newPaidPerMonth: 2, // Planning assumption from Month 2, not an industry average.
+    newPaidPerMonth: 42, // User-approved proxy: round(1,000 subscribers / 24 months), not a measured monthly average.
     monthlyChurn: 0.02, // Sensitivity assumption, not measured pilot retention.
     monthlyPrice: 49.99,
     fixedMonthly: 500,
-    assessmentsPerAccount: 10,
+    assessmentsPerAccount: 7,
     apiPerAssessment: 1.9,
     sandboxPerAssessment: 1,
     awsPerAccount: 7,
