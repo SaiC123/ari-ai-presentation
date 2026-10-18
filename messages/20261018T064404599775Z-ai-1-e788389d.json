@@ -1,0 +1,15 @@
+{
+  "type": "AFTER",
+  "agent": "ai-1",
+  "utc": "2026-10-18T06:44:04.599617+00:00",
+  "summary": "Slide 10 now includes the supplied unmodified Defense Lab screenshot as final build 4 after the explanatory diagram. The image is fully contained, preserves recorded-evaluation labels, and has accurate static-image alt/reference text. Published commit fa279ab to the existing Vercel project.",
+  "commit": "fa279ab952ada1dea770ae5392c6d317c24cad0c",
+  "changed_paths": [
+    "docs/presentation-qa.md",
+    "public/index.html",
+    "public/prototype/defense-lab-recorded.png"
+  ],
+  "verification": "81 Node and 13 Python tests passed; diff check passed. Image SHA256 matches user source exactly. Live screenshot reveal, loaded image dimensions, forward to slide11 and rewind to screenshot were checked. Production HTML and image hashes match committed files; worktree clean and main equals origin/main. Narration and 20-slide order unchanged.",
+  "deployment_url": "https://ari-ai-presentation.vercel.app",
+  "lock_commit": "a93972fa7f02427feb8209e292b42557530c8c6d"
+}
