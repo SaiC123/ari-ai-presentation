@@ -1,0 +1,8 @@
+{
+  "type": "BEFORE",
+  "agent": "ai-4",
+  "utc": "2026-10-18T03:43:01.122313+00:00",
+  "summary": "Replace Jordan email with new supplied screenshot onslide12 inbothgallery/focus. Updateverbatimexcerpts/provenance tocurrentemail;highlightreported20minutes,HTTP400,78regressiontests,12newinjectiontests. Preserve2callphotos,otherscreenshots,18slides,modelandspoken script outcome summary. Clearlyreportedstagingresult,notindependenttest. Visualverify/commitpush,existingprojecthandoff.",
+  "lock_commit": "5a9f3681a876bbf48f34ef37328395e3337f4f37",
+  "base_main": "dabd6f2c03cd1f93c871e560777211642fa35100"
+}
