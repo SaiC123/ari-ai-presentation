@@ -1811,7 +1811,7 @@ REFERENCE AND CUES, NOT SPOKEN: Reveal six visual memories. Click 7 connects the
         const monthPanel = document.querySelector('#forecastMonthDetail');
         const titles = ['Month 1 · Pilot launch', 'Month 2 · Conversion + growth', model.monthlyBreakEven ? 'Month ' + selected.month + ' · Monthly break-even' : 'Month 12 · Funding review'];
         document.querySelector('#forecastMonthTitle').textContent = titles[pilotStage];
-        document.querySelector('#forecastMonthCue').textContent = ['Launch costs', 'Research-derived estimates', 'Year 1 cash review'][pilotStage];
+        document.querySelector('#forecastMonthCue').textContent = ['Launch costs', 'Proxy + outreach target', 'Year 1 cash review'][pilotStage];
         document.querySelector('#forecastMonthEvent').textContent = pilotStage === 0
           ? '5 unpaid pilots · $161.50 delivery + $500 shared tools'
           : pilotStage === 1
