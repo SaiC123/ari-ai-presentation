@@ -1,0 +1,16 @@
+{
+  "type": "AFTER",
+  "agent": "ai-4",
+  "utc": "2026-10-18T03:41:04.820344+00:00",
+  "summary": "Second user call image added toslide12 andpushed dabd6f2. Matching uncroppedportraitpanels inexistingsecondreveal;emailrelativehighlight andbalancedquote left. SourceHEICconvertedPNG,originaluntouched. Existingprojectdeploymenthandoffsent;notclaimedpublished.",
+  "commit": "dabd6f2c03cd1f93c871e560777211642fa35100",
+  "changed_paths": [
+    "docs/presentation-qa.md",
+    "docs/prototype-feedback.md",
+    "public/feedback/video-call-2.png",
+    "public/index.html"
+  ],
+  "verification": "13Pythonpass,diffcheck. Chrome1280/960captures inspected,bothimagesloaded/objectfitcontain/noquoteoverlap/viewportfit,rewind/reducedmotion0errors. Onlyslide12markupchanged;allnotes/script+other17slides+modelretained,includinglatest435af64map. Convertedassetbytes preserved. No productionclaim.",
+  "deployment_url": "",
+  "lock_commit": "8b8705a57e2b81db1459c588b33c575a3afdffe3"
+}
