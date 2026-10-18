@@ -965,13 +965,16 @@
     .feedback-slide .feedback-cue{margin-top:8px}
     .feedback-slide .email-preview-highlight{background:rgba(255,208,70,.82)}
 
-    /* Preserve the supplied portrait beside the featured email on slide 12. */
-    .feedback-slide .feedback-call{position:absolute;right:0;top:73px;width:220px;height:477px;margin:0;overflow:hidden;border-radius:16px;background:#2b1d19}
+    /* Two supplied call portraits share the featured-email reveal. */
+    .feedback-slide .feedback-calls{position:absolute;right:0;top:73px;width:440px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+    .feedback-slide .feedback-call{height:460px;margin:0;overflow:hidden;border-radius:16px;background:#2b1d19}
     .feedback-slide .feedback-call img{display:block;width:100%;height:100%;object-fit:contain}
-    .feedback-slide .cp2 .email-focus{width:calc(100% - 252px);height:300px}
-    .feedback-slide .cp2 .email-result-highlight{top:80.2%;height:7.2%}
-    .feedback-slide .cp2 .feedback-quote{max-width:860px;font-size:24px;line-height:1.4}
-    .feedback-slide .cp2 .feedback-attribution{max-width:860px}
+    .feedback-slide .cp2 .email-focus{width:calc(100% - 472px);height:300px}
+    .feedback-slide .featured-email-image{position:relative;aspect-ratio:1649/954}
+    .feedback-slide .featured-email-image img{width:100%;height:100%;display:block}
+    .feedback-slide .cp2 .email-result-highlight{top:46.6%;height:3%;width:49.5%}
+    .feedback-slide .cp2 .feedback-quote{max-width:664px;font-size:24px;line-height:1.4;text-wrap:balance}
+    .feedback-slide .cp2 .feedback-attribution{max-width:664px}
   </style>
 </head>
 <body>
@@ -1283,10 +1286,15 @@ REFERENCE, NOT SPOKEN: All five October17 original screenshots preserved; permis
         </div>
         <div class="customer-phase cp2">
           <h2>A fix that held up <span class="accent">in testing.</span></h2>
-          <figure class="feedback-call"><img src="feedback/video-call.png" alt="Screenshot of a two-person video call"></figure>
+          <div class="feedback-calls" aria-label="Supplied video call screenshots">
+            <figure class="feedback-call"><img src="feedback/video-call.png" alt="Screenshot of a two-person video call"></figure>
+            <figure class="feedback-call"><img src="feedback/video-call-2.png" alt="Video call screenshot showing two participants giving a thumbs-up"></figure>
+          </div>
           <div class="email-focus">
-            <img src="feedback/jordan.png" alt="Jordan Ellis, CTO of Harborseed Studio: switched to Ari's suggested parameterized query after review. Check: injection case stopped working; existing search tests passed.">
-            <span class="email-result-highlight" aria-hidden="true"></span>
+            <div class="featured-email-image">
+              <img src="feedback/jordan.png" alt="Jordan Ellis, CTO of Harborseed Studio: switched to Ari's suggested parameterized query after review. Check: injection case stopped working; existing search tests passed.">
+              <span class="email-result-highlight" aria-hidden="true"></span>
+            </div>
           </div>
           <blockquote class="feedback-quote">“<mark>injection case stopped working; existing search tests passed.</mark>”</blockquote>
           <p class="feedback-attribution">Jordan Ellis · CTO, Harborseed Studio · October 17, 2026 · Reported prototype result</p>

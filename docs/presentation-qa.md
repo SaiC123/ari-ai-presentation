@@ -138,3 +138,9 @@ User reported that the highlights were not visible after redeployment. Inspected
 Added the user's unmodified `IMG_9889.png` as `public/feedback/video-call.png`, beside Jordan's featured email in the existing second reveal.220×477portrait panel preserves the complete image with object-fit:contain; email width/height and marker coordinates adjusted locally. Large highlighted quote and attribution remain readable. No identity or testimonial inferred from the photo. The five-email gallery and existing two-build navigation are retained.
 
 13Python tests pass;diffcheckpasses. Chrome1280×720featured composition inspected, originalfivepreview markers/rewind/960×540scaledcontainment/reducedmotion checked,0pageerrors. Newasset byte-identical to supplied original; onlyslide12markup changed andallspoken/reference attrs unchanged. Other17slides/model untouched. Commit/push requested; deployment remains a separate existing-project handoff.
+
+## Second call screenshot on slide12
+
+Converted supplied `IMG_2538.heic` to1206×2622PNG using sips and added it as `public/feedback/video-call-2.png`. Both call images appear uncropped in matched212×460panels on the right of the existing featured-email reveal. Email/quote left width664px; quote uses balanced wrapping; marker is relative to full email-image dimensions for stable alignment. No new identities or claims added, no new slide/build.
+
+13Python tests pass anddiffcheckpasses. Chrome gallery/focus/rewind/reducedmotion checked with0pageerrors; final1280×720 and960×540captures inspected, bothimagesload/object-fitcontain, portraits fitviewport and do not overlap quote. Onlyslide12markup changed; allspoken/reference attrs and other17slides retained,includingai-2's latestslide10. NewassetmatchesconvertedPNGbytes;originalHEIC read-only. Production publication not claimed.

@@ -30,3 +30,7 @@ The first overlays were verified on the live deployment but became thin lines wh
 ## Supplied call image
 
 The user requested `IMG_9889.png` on slide12. Its unaltered original is saved as `public/feedback/video-call.png` and displayed uncropped in a portrait panel beside Jordan's enlarged email in the existing second reveal. No participant identity, role, testimonial or connection to any named email sender is inferred from the photo. Five-email gallery, reported-result wording, script and slide count are retained.
+
+## Second supplied call image
+
+Added `IMG_2538.heic`, converted with macOS ImageIO/sips to a browser-compatible1206×2622PNG at `public/feedback/video-call-2.png`; the original HEIC remains unchanged. Both call screenshots appear uncropped in matching side-by-side portrait panels in slide12's existing second reveal. The featured email and highlighted quote remain at left. The email's marker is now positioned relative to the full image so resizing preserves alignment. No participant identity or role is asserted. Gallery, script, slide count and other slides are unchanged.
