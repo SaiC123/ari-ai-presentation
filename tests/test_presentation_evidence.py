@@ -16,21 +16,21 @@ class PresentationEvidenceTests(unittest.TestCase):
     def test_script_speakers_and_word_budget(self):
         script = (ROOT / 'docs/speaker-script.md').read_text()
         passages = [html.unescape(re.search(r'data-spoken="([^"]+)"', s).group(1)) for s in self.slides]
-        self.assertEqual(len(passages), 18)
+        self.assertEqual(len(passages), 20)
         self.assertLess(sum(len(p.split()) for p in passages), 700)
         # The coordinated note-alignment pass must preserve the finalized script verbatim.
         sections = re.findall(r'^## (.+)\n\n([\s\S]*?)(?=^## |\Z)', script, re.M)
         slide_sections = [(title, body) for title, body in sections if title.startswith('Slide ')]
-        self.assertEqual(len(slide_sections), 18)
+        self.assertEqual(len(slide_sections), 20)
         for n, (title, body) in enumerate(slide_sections, 1):
-            speaker = 'Sarosh' if n <= 6 or n >= 17 else 'Srihith' if n <= 11 else 'Sai'
+            speaker = 'Sarosh' if n <= 6 or n >= 19 else 'Srihith' if n <= 13 else 'Sai'
             self.assertEqual(title, f'Slide {n} · {speaker}')
             self.assertTrue(body.strip())
             self.assertEqual(passages[n-1], body.strip())
             note = html.unescape(re.search(r'data-note="([^"]+)"', self.slides[n-1]).group(1))
             self.assertEqual(note.split('\n\nREFERENCE, NOT SPOKEN:', 1)[0], 'SPOKEN: '+body.strip())
         self.assertEqual([title for title, _ in sections if not title.startswith('Slide ')],
-                         ['Prototype after slide 11 · Vihaan'])
+                         ['Prototype after slide 13 · Vihaan'])
         prepared = ' '.join(body for _, body in sections)
         self.assertLessEqual(len(re.findall(r"[\w]+(?:[’'][\w]+)?", prepared)), 700)
         self.assertNotIn('[ADD', prepared)
@@ -53,17 +53,17 @@ class PresentationEvidenceTests(unittest.TestCase):
         self.assertIn('Separate evidence: attack activity', self.slides[3])
         self.assertIn('No causal link to AI coding established', self.slides[3])
         self.assertIn('Illustrative liability scenario', self.slides[2])
-        self.assertNotIn('class="vc-placeholder"', self.slides[11])
-        self.assertIn('planned, not yet validated', self.slides[11])
-        self.assertIn('Presentation access', self.slides[10])
+        self.assertNotIn('class="vc-placeholder"', self.slides[13])
+        self.assertIn('planned, not yet validated', self.slides[13])
+        self.assertIn('Presentation access', self.slides[12])
 
     def test_plans_remain_goals_with_decision_gates(self):
-        self.assertIn('PROPOSED FIRST RECRUITMENT MILESTONE', self.slides[14])
-        self.assertIn('Total paid goal', self.slides[14])
-        self.assertIn('positive observed contribution', self.slides[14])
+        self.assertIn('PROPOSED FIRST RECRUITMENT MILESTONE', self.slides[16])
+        self.assertIn('Total paid goal', self.slides[16])
+        self.assertIn('positive observed contribution', self.slides[16])
         for label in ('Owner:', '<em>Exit</em>', '<em>If unmet</em>'):
-            self.assertEqual(self.slides[15].count(label), 5)
-        self.assertIn('Publisher proxy, not a qualified-buyer count', self.slides[13])
+            self.assertEqual(self.slides[17].count(label), 5)
+        self.assertIn('Publisher proxy, not a qualified-buyer count', self.slides[15])
 
     def test_originality_and_feedback_permission_are_attributed(self):
         disclosure = (ROOT / 'docs/originality-disclosure.md').read_text()

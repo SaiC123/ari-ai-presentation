@@ -41,7 +41,7 @@ The current graph is Founder-only. With $500 shared fixed costs and $15.94029 co
 
 Proposed workspace plans: Founder $49.99 / 7 assessments, Growth $129.99 / 20, Scale $359.99 / 60. Effective included-assessment prices are $7.14, $6.50 and $6.00 respectively. Both monthly run and assessed-line limits apply; extra usage is not unlimited. These are pilot prices; future changes require measured delivery costs and customer-value validation.
 
-Finance is slide13 in the18-slide deck. Initial cohort: 50 proposed unpaid pilot workspaces in M1, with no new free pilots from M2. All modeled paid accounts use Founder, with seven full assessments consumed monthly. No tier upgrades assumed. An 18.2% proxy gives 9.1 expected initial-cohort payers in M2, not a fractional real customer; the actual outcome must be whole accounts and Ari conversion is unmeasured. Monthly paid churn2% is a separate unvalidated assumption.
+Finance is slide15 in the20-slide deck. Initial cohort: 50 proposed unpaid pilot workspaces in M1, with no new free pilots from M2. All modeled paid accounts use Founder, with seven full assessments consumed monthly. No tier upgrades assumed. An 18.2% proxy gives 9.1 expected initial-cohort payers in M2, not a fractional real customer; the actual outcome must be whole accounts and Ari conversion is unmeasured. Monthly paid churn2% is a separate unvalidated assumption.
 
 [ChartMogul's Go-To-Market Report](https://chartmogul.com/reports/saas-go-to-market-report/) reports a median B2B time of about two years to1,000 subscribers across its SaaS sample. The approved planning intake is round(1,000/24) = **42 new paid accounts/month from M2**. This is a derived linear gross-intake scenario, **not a published monthly average**, matched acquisition benchmark, Ari traction or guarantee. Time-to-milestone does not imply constant acquisition; churn and the initial free period mean this scenario does not reach1,000 net subscribers by M24.
 
@@ -64,7 +64,7 @@ Growth annual price $1,559.88 × unchanged Census proxy accounts13,254/4,246 giv
 
 ## Current research, product and asset provenance
 
-The current18-slide source audit is [research-validation.md](research-validation.md). It rechecks need, Census rows, pricing units and forecast population fit. [competitor-landscape.md](competitor-landscape.md) contains the nine primary product sources. [originality-disclosure.md](originality-disclosure.md) records the human's build-history/email-permission confirmation and third-party foundations.
+The current20-slide source audit is [research-validation.md](research-validation.md). It rechecks need, Census rows, pricing units and forecast population fit. [competitor-landscape.md](competitor-landscape.md) contains the nine primary product sources. [originality-disclosure.md](originality-disclosure.md) records the human's build-history/email-permission confirmation and third-party foundations.
 
 Product READMEs inspected read-only: code-review describes approval-gated repairs and independent Verify; frontend describes explicit provider-mode labels and a scripted-model end-to-end browser workflow. These documentation claims are not new executions in this task. Full-chain scripted and RL simulation disclosures remain. Presentation test totals are never product security results.
 

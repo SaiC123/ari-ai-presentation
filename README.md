@@ -1,6 +1,6 @@
 # Ari AI: HackATL Presentation
 
-An animated, 18-slide HTML pitch for Ari AI.
+An animated, 20-slide HTML pitch for Ari.
 
 ## Present
 
@@ -40,11 +40,11 @@ Every AI editor must read [AGENTS.md](AGENTS.md) and follow the [shared coordina
 
 ## Monthly pilot forecast
 
-Slide13 uses the user-approved42-new-paid/month planning scenario, derived from ChartMogul's median24months to1,000B2Bsubscribers, not a published monthly average or acquisition guarantee. The proposed cohort is50free pilot workspaces inM1 for usage data and feedback, with no new free pilots fromM2. Modelled monthly cash coverage is conditional inM2 and cumulative recovery inM4; the peak funding gap is$2,115. See [docs/pilot-forecast.md](docs/pilot-forecast.md) for assumptions, sources and limits.
+Slide15 uses the user-approved42-new-paid/month planning scenario, derived from ChartMogul's median24months to1,000B2Bsubscribers, not a published monthly average or acquisition guarantee. The proposed cohort is50free pilot workspaces inM1 for usage data and feedback, with no new free pilots fromM2. Modelled monthly cash coverage is conditional inM2 and cumulative recovery inM4; the peak funding gap is$2,115. See [docs/pilot-forecast.md](docs/pilot-forecast.md) for assumptions, sources and limits.
 ## Prototype evidence slide
 
-Slide6 shows the customer profile, slide7 the Ari logo, slides8–10 the solution and comparison, and slide11 the prototype workflow/verification. Slide12 follows with the five-email gallery and enlarged email with its reported result highlighted. Financials remain slide13. Five supplied screenshots and their provenance are documented in `docs/prototype-feedback.md`. VC feedback remains pending. Run `python3 -m unittest discover -s tests -p test_prototype_feedback.py` to check the evidence assets and attribution.
+Slide6 shows the customer profile and slide7 the Ari logo. Slide8 is the three-layer overview; slide9 explains the seven agents; slide10 covers Defense Lab with RL training and evaluation in simulation. Red/blue teams follow on slide11, competitors on slide12, and the prototype on slide13. Slide14 shows the five-email gallery and reported outcome. Financials are slide15. Five supplied screenshots and their provenance are documented in `docs/prototype-feedback.md`. VC feedback remains pending. Run `python3 -m unittest discover -s tests -p test_prototype_feedback.py` to check the evidence assets and attribution.
 
 ## Current pitch references
 
-The 18-slide deck has a 657-word [speaker script](docs/speaker-script.md), [pilot plan](docs/pilot-plan.md), [research checks](docs/research-validation.md), [cost sensitivities](docs/economic-sensitivity.md) and [originality disclosure](docs/originality-disclosure.md). [Exact rubric coverage](docs/presentation-coverage.md) and [remaining evidence](docs/hackatl-evidence-needed.md) are consolidated; forecasts and reported feedback are not measured traction.
+The 20-slide deck has a 694-word [speaker script](docs/speaker-script.md), [pilot plan](docs/pilot-plan.md), [research checks](docs/research-validation.md), [cost sensitivities](docs/economic-sensitivity.md) and [originality disclosure](docs/originality-disclosure.md). [Exact rubric coverage](docs/presentation-coverage.md) and [remaining evidence](docs/hackatl-evidence-needed.md) are consolidated; forecasts and reported feedback are not measured traction.

@@ -1,8 +1,8 @@
 # Ari non-demo speaker script
 
-657 whitespace-separated spoken words: 647 in the 18 slide passages plus 10 in Vihaan’s brief demo introduction. Splitting hyphenated compounds and decimal values gives 700 words, within the 700-word cap. The actual prototype demonstration and Q&A are excluded and unchanged. This is a script budget, not a timed rehearsal.
+652 whitespace-separated spoken words; 694 with hyphenated compounds and decimal values split, within the 700-word cap. Includes Vihaan’s brief demo introduction. The full prototype demonstration and Q&A are excluded. This is a script budget, not a timed rehearsal.
 
-Aligned to the current18-slide deck, including the genuine slide11demo screenshots, redesigned slide10conversation reveal and clean slide12email evidence. The slide `data-spoken` attributes and SPOKEN notes match these passages verbatim; REFERENCE notes preserve evidence and feature limits. Advance each build with its corresponding sentence; slide 13 proceeds through pricing, delivery costs, forecast milestones, and founder funding. [Timing and handoffs](ai4-timing-pass.md) records the round limits.
+Aligned to the current 20-slide deck: slide 8 introduces the three product layers, slide 9 explains the seven agents, and slide 10 covers Defense Lab with explicit simulation scope. The red/blue team follows on slide 11, competitors on slide 12, prototype on slide 13, reported feedback on slide 14, and financials on slide 15. Slide notes and data-spoken attributes match these passages verbatim.
 
 ## Slide 1 · Sarosh
 
@@ -34,48 +34,56 @@ This is Ari.
 
 ## Slide 8 · Srihith
 
-Ari connects code review, seven security specialists, and monitoring around shared code context. Scout maps. Probe tests. Trace links evidence. Diagnose finds causes. Patch proposes repairs. Fortify recommends guardrails. Verify independently retests. During HackATL, we built retrieval, orchestration, and verification using third-party models and libraries.
+Ari brings code review, seven security specialists, and continuous monitoring together around shared code context.
 
 ## Slide 9 · Srihith
 
-Red investigates. Blue proposes repairs within human-approved scope. Verify independently retests on a fresh checkout. Code memory saves verified evidence for reassessment. Monitoring requests fresh checks as code changes. Separately, Defense Lab uses live signals and reward feedback to guide defensive recommendations as conditions change.
+Scout maps. Probe tests. Trace links evidence. Diagnose finds causes. Patch proposes repairs. Fortify recommends guardrails. Verify independently retests. Our HackATL build connects retrieval, orchestration, and verification using third-party models.
 
 ## Slide 10 · Srihith
 
-Nine competitors offer overlapping capabilities. Our proposed value connects intent, investigation, approved repair, and independent verification for small teams. Assessment costs and human review are tradeoffs. Comparative performance remains unvalidated.
+Code changes trigger fresh checks. Defense Lab trains reinforcement learning against simulated attacks, balancing security and availability. RL defense currently runs in simulation.
 
 ## Slide 11 · Srihith
 
+Red investigates. Blue proposes approved repairs. Verify independently retests on a fresh checkout. Saved evidence guides reassessment.
+
+## Slide 12 · Srihith
+
+Nine competitors offer overlapping capabilities. Our proposed value connects intent, investigation, approved repair, and independent verification for small teams. Assessment costs and human review are tradeoffs. Comparative performance remains unvalidated.
+
+## Slide 13 · Srihith
+
 Here’s Ari’s demo replay: choose a repository, inspect the missing ownership check, then view the repair and before-and-after tests. These are interface screenshots, not a new assessment. Full-chain AI responses are scripted; product usability needs testing.
 
-## Prototype after slide 11 · Vihaan
+## Prototype after slide 13 · Vihaan
 
 I’ll identify which parts are live, recorded, scripted, or simulated.
 
-## Slide 12 · Sai
+## Slide 14 · Sai
 
 Five permitted emails report outcomes we haven’t independently rerun. Jordan says the injection stopped while existing search tests passed. Samira requested clearer permissions and code-processing explanations. That’s our next planned improvement.
 
-## Slide 13 · Sai
+## Slide 15 · Sai
 
 Plans are forty-nine ninety-nine for seven assessments, one hundred twenty-nine ninety-nine for twenty, and three hundred fifty-nine ninety-nine for sixty. Growth costs about eighty-one dollars, leaving thirty-eight percent before shared expenses. Month one proposes fifty free pilots to measure usage and feedback; none start in month two. Ari conversion is unmeasured; 18.2% is an outside proxy. Forty-two new paid accounts monthly is a ChartMogul-derived target, not observed acquisition. Month one costs $2,115. Monthly costs are covered in month two; cumulative recovery is month four. No founder pay, paid acquisition, or extra usage is included.
 
-## Slide 14 · Sai
+## Slide 16 · Sai
 
 Using Census software publishers as a proxy and Growth pricing gives twenty-point-seven million dollars annually, with a six-point-six-million-dollar starting segment. These firms need qualification. Our hundred-to-two-hundred-customer target represents one hundred fifty-six thousand to three hundred twelve thousand dollars annually, not traction.
 
-## Slide 15 · Sai
+## Slide 17 · Sai
 
 Through founder outreach and accelerators, our first goal is one hundred targets, thirty calls, ten design partners, fifty free pilot workspaces, and three total paid accounts. Free pilots stop after month one. Each pilot records outcomes, verification, costs, support time, and willingness to pay.
 
-## Slide 16 · Sai
+## Slide 18 · Sai
 
 Month one: a live-provider trace and fifty pilot records for usage data and feedback. No new free pilots from month two. Months two and three: paid decisions and measured contribution. Months four to six: isolation and reliability checks before multi-repository expansion. Owners review weekly. If permissions, reliability, or costs fail, narrow scope or reprice. Enterprise waits for controls and support.
 
-## Slide 17 · Sarosh
+## Slide 19 · Sarosh
 
 Six founders bring Georgia House business-growth research, MIT agentic research, Georgia Tech reinforcement learning and industrial engineering, Apex146 software engineering, and 3Lines venture-capital experience.
 
-## Slide 18 · Sarosh
+## Slide 20 · Sarosh
 
 AI gave a founder the power to build. Trust takes evidence. From the first line of code to the next release: investigation, approved repair, and independent verification. We’re seeking five qualified SaaS design partners for authorized, scoped pilots. That’s Ari.

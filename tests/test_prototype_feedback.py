@@ -40,18 +40,26 @@ class PrototypeFeedbackTests(unittest.TestCase):
     def test_evidence_follows_prototype_before_financials(self):
         main = self.source.split('<main id="presentation-slides-wrapper"', 1)[1].split('</main>', 1)[0]
         slides = re.findall(r'<section class="slide[\s\S]*?</section>', main)
-        self.assertEqual(len(slides), 18)
+        self.assertEqual(len(slides), 20)
         self.assertIn('customer-story-slide', slides[5])
         self.assertIn('PROPOSED CUSTOMER PROFILE', slides[5])
         self.assertNotIn('feedback-gallery', slides[5])
         self.assertNotIn('data-build=', slides[5])
         self.assertIn('logo-only-slide', slides[6])
-        self.assertIn('solution-slide', slides[7])
-        self.assertIn('quality-slide', slides[10])
-        self.assertIn('prototype-capture-slide', slides[10])
-        self.assertIn('feedback-slide', slides[11])
-        self.assertIn('feedback-gallery', slides[11])
-        self.assertIn('finance-slide', slides[12])
+        self.assertIn('product-overview-slide', slides[7])
+        self.assertIn('Meet Ari:', slides[7])
+        self.assertIn('Three Layers of Security', slides[7])
+        self.assertEqual(slides[7].count('class="capability"'), 3)
+        self.assertIn('agent-detail-slide', slides[8])
+        self.assertIn('defense-lab-slide', slides[9])
+        self.assertIn('SIMULATION', slides[9])
+        self.assertIn('RL defense currently runs in simulation', slides[9])
+        self.assertIn('team-slide', slides[10])
+        self.assertIn('quality-slide', slides[12])
+        self.assertIn('prototype-capture-slide', slides[12])
+        self.assertIn('feedback-slide', slides[13])
+        self.assertIn('feedback-gallery', slides[13])
+        self.assertIn('finance-slide', slides[14])
 
 
 if __name__ == '__main__':

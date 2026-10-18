@@ -18,7 +18,7 @@ Growth annual price129.99×12=1,559.88; multiply counts to obtain20,674,649.52 a
 
 ## Growth and conversion
 
-[ChartMogul2025](https://chartmogul.com/reports/saas-go-to-market-report/) analyzes2,500SaaS companies. Its B2B subscriber-milestone data supplies the approximately24-month context;42=round(1,000/24) is the user's derived linear planning target, not an observed average monthly gross-intake rate. Price point, channel, retention and survivor/sample effects matter. Citation remains directly below42 on slide13.
+[ChartMogul2025](https://chartmogul.com/reports/saas-go-to-market-report/) analyzes2,500SaaS companies. Its B2B subscriber-milestone data supplies the approximately24-month context;42=round(1,000/24) is the user's derived linear planning target, not an observed average monthly gross-intake rate. Price point, channel, retention and survivor/sample effects matter. Citation remains directly below42 on slide15.
 
 [First Page Sage](https://firstpagesage.com/seo-blog/saas-free-trial-conversion-rate-benchmarks/) lists18.2% organic opt-in free-trial-to-paid conversion. This marketing benchmark is a proxy, not matched evidence for five assisted security pilots. Timing and2%paid churn are separate assumptions. No published evidence establishes Ari's42/month capacity. See `pilot-plan.md` for explicit workload arithmetic and `economic-sensitivity.md` for cost stress cases.
 

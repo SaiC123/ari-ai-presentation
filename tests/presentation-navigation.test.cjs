@@ -458,7 +458,9 @@ test("Uppercase N shares the notes button expanded state", () => { const d = pre
 test("Advancing beyond the final frame preserves its hidden recap and final build", () => { const d = presentation('#3'); d.click('#next'); d.click('#next'); d.key('PageDown'); assert.equal(d.active(), 2); assert.equal(d.slides[2].dataset.buildCurrent, '1'); assert.equal(d.slides[2].recap.inert, true); assert.equal(d.selectors['#counter'].textContent, '03 / 03'); assert.equal(d.location.hash, '#3'); });
 
 test("every slide and build remains navigable forward and backward", () => {
-  const counts = [5, 0, 6, 1, 0, 0, 0, 1, 8, 5, 2, 1, 4, 3, 3, 5, 6, 8];
+  const activeMain = html.split('<main id="presentation-slides-wrapper"')[1].split('</main>')[0];
+  const counts = [...activeMain.matchAll(/<section class="slide[\s\S]*?<\/section>/g)].map(([section]) =>
+    Math.max(0, ...[...section.matchAll(/data-build="(\d+)"/g)].map(match => Number(match[1]))));
   const d = presentation('#1', { counts });
   for (let slide = 0; slide < counts.length; slide++) {
     for (let build = 0; build <= counts[slide]; build++) {

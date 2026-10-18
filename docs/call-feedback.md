@@ -1,6 +1,6 @@
 # Founder and developer pitch conversations
 
-The two supplied FaceTime images now form the final reveal of slide10 (build3), after the competitor/workflow comparison. They are removed from slide12. The deck still has18slides and slide10retains its number.
+The two supplied FaceTime images now form the final reveal of slide12 (build3), after the competitor/workflow comparison. The email evidence is separate on slide14. The deck now has20slides.
 
 ## Backgrounds supplied by the user
 
@@ -17,11 +17,11 @@ Slide bullets are casual paraphrases of this report, without quotation marks. Th
 
 ## Product boundary
 
-The presentation now labels Defense Lab Live Defense after the owner confirmed a newer live deployment. Earlier product documentation describes an older offline research implementation; no deployment URL or run reference was available to reconcile the newer build independently during this edit. The call reveal now contains only participant backgrounds and reported conceptual feedback. It does not claim measured24/7uptime, autonomous production response, or that either pitch participant tested the newer capability. The existing email results remain separate onslide12.
+The latest user-approved presentation places reinforcement learning defense training and evaluation in simulation on slide10. Continuous code-change monitoring triggers fresh checks. Neither pitch participant evaluated the RL capability. The email results remain separate on slide14.
 
 ## Presentation
 
-Slide10builds0–2retain the sourced competitor convergence view. Build3shows matching CSS face crops from both original call images, compact backgrounds and two concise shared feedback points. Forward enters slide11; rewind returns to the completed competitor view. Inactive call/map panels use inert and aria-hidden. Prepared narration is unchanged; additional reveal/reading time requires rehearsal rather than an asserted timing fit.
+Slide12builds0–2retain the sourced competitor convergence view. Build3shows matching CSS face crops from both original call images, compact backgrounds and two concise shared feedback points. Forward enters slide13; rewind returns to the completed competitor view. Inactive call/map panels use inert and aria-hidden. Prepared narration is unchanged; additional reveal/reading time requires rehearsal rather than an asserted timing fit.
 
 Visual redesign: phone UI, empty black bars and inset caller views are excluded by CSS framing; original image files remain intact. Repeated reaction bullets are replaced by one shared takeaway. The small caption identifies this as feedback on the idea, with no product use.
 
@@ -31,4 +31,4 @@ Latest copy: Aarav is labeled Stanford student, with former Kairo Securities int
 
 The user rejected the bullet-list formatting. The lower section now uses one charcoal workflow strip: More AI-written code → Continuous monitoring, with short supporting lines and one shared feedback summary. The What they liked heading, bullets, divider and standalone caption are removed. This remains a paraphrase of the team's reported pitch conversations; no product use or new experiences are added. Participant bios and portrait crops remain unchanged.
 
-Latest owner confirmation: the user explicitly says a newer live Defense Lab deployment exists, but their access/tooling is currently failing and they cannot provide its URL/run reference. The presentation uses that team-confirmed status, not an independent observation. No effectiveness or uptime figures are added.
+Current scope supersedes earlier live-defense wording: RL is simulation-based, while code monitoring checks for changes. No measured uptime or autonomous production-defense result is asserted.

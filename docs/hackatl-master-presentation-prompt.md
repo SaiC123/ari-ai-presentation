@@ -1,21 +1,24 @@
 # Current presentation brief
 
-This current brief supersedes historical15-slide story drafts and superseded two-customer/month financial scenarios. Canonical source: `public/index.html`;18slides at1280×720. Existing Ari palette, fonts, ant, click/rewind behavior and reduced motion remain.
+Canonical source: public/index.html. The deck has 20 slides at 1280×720, with the established Ari palette, typography, ant, staged navigation and reduced motion.
 
-1–3: clearly hypothetical founder and illustrative loss/liability scenario. Equity fundraising is not presented as automatic personal debt.
-4: separate Veracode2025 tested-code finding and Check Point attack-attempt trend; no causal equals sign.
-5–6: evidence-backed review need, proposed founder-led AI-assisted SaaS ICP and priority hypotheses.
+1–3: hypothetical founder and illustrative loss/liability scenario.
+4: separate tested AI-code security evidence and attack-attempt trend.
+5–6: problem statement, proposed small SaaS ICP, and AI theme fit.
 7: Ari logo.
-8–9: team-confirmed HackATL context/orchestration/verification contribution and user-value chain; human scope approval, independent verification, saved regression evidence, code-change reassessment and simulation-only RL.
-10: nine sourced, overlapping competitors; Ari's proposed small-team workflow and unvalidated comparative performance.
-11: connect/review/approve workflow, evidence outputs, presentation accessibility explicitly separated from product usability, scripted full-chain limitation. Existing live demo follows; no demo edits.
-12: five permitted original October17 feedback screenshots, Jordan's exact reported outcome and Samira's planned permissions improvement. VC panel removed; pending status only in notes.
-13: introductory pilot pricing and supplied cost model, per-run measurement gate and approved42new-paid/month scenario.
-14: transparent Census publisher proxy and payer definition, qualified-account validation still needed.
-15: proposed100/30/10/5/3-total-paid recruitment milestone, per-pilot scorecard and measurable expansion gate.
-16: owner roles, exits, resources, risks and fallbacks; no automatic scale promises.
-17: supplied team credentials and photos preserved.
-18: six-part recap and final Ari animation with one ask for five qualified SaaS design partners.
+8: Meet Ari: Three Layers of Security. Three visual columns introduce AI Code Reviewer, Seven Specialized AI Agents, and 24/7 Defense Lab.
+9: Existing seven-agent map and click highlights, followed by team-confirmed HackATL retrieval/orchestration/verification contribution.
+10: Security Doesn't Stop at Deployment. Code changes trigger fresh checks; reinforcement learning trains defensive strategies against simulated attacks and balances security with availability. Make simulation scope prominent.
+11: Red/blue teams, human approval, independent verification and saved evidence.
+12: Nine sourced competitors, overlapping capabilities and reported pitch conversations.
+13: Prototype screenshots and existing Vihaan demo handoff.
+14: Five permitted email screenshots, Jordan's reported outcome and planned permissions improvement.
+15: Pricing, delivery costs and the existing forecast.
+16: Census publisher proxies and qualified-customer target.
+17: Proposed recruitment milestone and pilot measurements, including 50 free M1 pilot workspaces and none from M2.
+18: Roadmap with owners, gates, resources and risks.
+19: Team.
+20: Graphic recap and Ari finale.
 
 ## Fixed financial requirements
 
@@ -23,7 +26,7 @@ Founder49.99/7assessments/1Massessedlines; Growth129.99/20/5M; Scale359.99/60/20
 
 ## Canonical references
 
-- `speaker-script.md`:661-word prepared text with exact speaker assignments and a brief demo introduction; full demo excluded.
+- `speaker-script.md`:694-word prepared text with exact speaker assignments and a brief demo introduction; full demo excluded.
 - `research-validation.md`: primary-source verification and population/price distinctions.
 - `pilot-plan.md`: proposed channel/owner/scorecard/capacity and roadmap gates.
 - `economic-sensitivity.md`: full-use, retries/larger-repo and support-time stresses.
