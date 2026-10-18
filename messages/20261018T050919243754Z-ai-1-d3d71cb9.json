@@ -1,0 +1,13 @@
+{
+  "type": "AFTER",
+  "agent": "ai-1",
+  "utc": "2026-10-18T05:09:19.243599+00:00",
+  "summary": "Slide 10 now uses two clearly identified draft quote placeholders with conspicuous disclosure that they are not participant words; notes tell presenters to replace them with approved verbatim feedback",
+  "commit": "b1e3689e876a68f855ecf987eb1bfe194c293882",
+  "changed_paths": [
+    "public/index.html"
+  ],
+  "verification": "81 Node tests passed, 13 Python tests passed, git diff --check passed, clean worktree confirmed, and SHA256 of live production HTML matches public/index.html at commit b1e3689",
+  "deployment_url": "https://ari-ai-presentation.vercel.app",
+  "lock_commit": "84afb7843b49e035cea7929cf58b578198769479"
+}
