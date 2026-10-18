@@ -1,6 +1,6 @@
 # Ari pilot forecast
 
-Researched October 17, 2026. This is a conditional planning model, not traction or a probability-calibrated prediction. It replaces the former six-month blended-tier graph on slide 12. Prices, included assessments, market sizing, and prototype evidence are unchanged.
+Researched October 17, 2026. This is a conditional planning model, not traction or a probability-calibrated prediction. It replaces the former six-month blended-tier graph on slide 13. Prices, included assessments, market sizing, and prototype evidence are unchanged.
 
 ## User plan and planning inputs
 

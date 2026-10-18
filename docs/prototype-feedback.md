@@ -13,3 +13,8 @@ All screenshots are dated October 16, 2026. Original images are preserved withou
 ## Presentation states
 
 Slide 6 build 0: existing ICP. Build 1: two boxes, VC validation and Prototyping feedback & proof, showing all five emails. Build 2: enlarged Jordan email plus verbatim result; rewind restores build 1 and then build 0. Reduced motion removes the spatial transition. No unrelated slide, finance model, chart or global navigation logic changes.
+
+
+## Current placement
+
+Slide6 is now ICP/theme only. Slide7 is the Ari logo. Slide8 contains feedback/evidence immediately after the logo: entry shows the pending VC box and all five emails; one click zooms into Jordan and highlights the reported check. Next enters the solution on slide9; rewind returns to gallery then logo. Evidence content/provenance is unchanged. The deck now has18slides.

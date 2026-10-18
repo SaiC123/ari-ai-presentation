@@ -9,7 +9,8 @@ ROOT = Path(__file__).resolve().parents[1]
 class PrototypeFeedbackTests(unittest.TestCase):
     def setUp(self):
         source = (ROOT / 'public/index.html').read_text()
-        self.slide = source.split('<section class="slide dark customer-story-slide"', 1)[1].split('</section>', 1)[0]
+        self.source = source
+        self.slide = source.split('<section class="slide dark customer-story-slide feedback-slide"', 1)[1].split('</section>', 1)[0]
 
     def test_all_five_supplied_emails_are_present_and_loadable(self):
         gallery = self.slide.split('class="feedback-gallery"', 1)[1].split('</article>', 1)[0]
@@ -28,9 +29,22 @@ class PrototypeFeedbackTests(unittest.TestCase):
 
     def test_two_boxes_then_separate_focus_build(self):
         self.assertEqual(self.slide.count('class="validation-box '), 2)
-        self.assertIn('data-build="2"', self.slide)
+        self.assertIn('data-build="1"', self.slide)
         self.assertIn('class="customer-phase cp2"', self.slide)
         self.assertIn('class="email-result-highlight"', self.slide)
+
+    def test_evidence_follows_logo_while_icp_stays_before_it(self):
+        main = self.source.split('<main id="presentation-slides-wrapper"', 1)[1].split('</main>', 1)[0]
+        slides = re.findall(r'<section class="slide[\s\S]*?</section>', main)
+        self.assertEqual(len(slides), 18)
+        self.assertIn('customer-story-slide', slides[5])
+        self.assertIn('IDEAL CUSTOMER PROFILE', slides[5])
+        self.assertNotIn('feedback-gallery', slides[5])
+        self.assertNotIn('data-build=', slides[5])
+        self.assertIn('logo-only-slide', slides[6])
+        self.assertIn('feedback-slide', slides[7])
+        self.assertIn('feedback-gallery', slides[7])
+        self.assertIn('solution-slide', slides[8])
 
 
 if __name__ == '__main__':

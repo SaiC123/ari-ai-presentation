@@ -1,10 +1,10 @@
 # Revised pricing narration
 
-## Slide12: Revenue, costs and sustainability
+## Slide13: Revenue, costs and sustainability
 
 We begin with five unpaid pilots in month one. The full graph shows our first-year forecast. Month two assumes eighteen-point-two percent of that first group converts, roughly one customer, and we add two new paying customers each month at forty-nine ninety-nine. Those are estimates, not traction. The highlights show monthly receipts, delivery costs and the funding gap as the year progresses. Our white cost line includes free pilots, paid users and shared tools. This base case needs about seventy active payers to cover monthly costs and does not reach that in year one. Pilot results will replace these assumptions.
 
-## Slide13: Market sizing
+## Slide14: Market sizing
 
 U.S. software publishers are a transparent proxy, not a count of qualified SaaS customers. At Growth annual pricing of $2,988, the broad proxy is $39.6 million and our starting cohort $12.7 million. Our growth target is100–200 paying customers, representing roughly $299K–$598K ARR if priced at Growth. That is an adoption target and pricing proxy, not traction, blended revenue or break-even.
 
