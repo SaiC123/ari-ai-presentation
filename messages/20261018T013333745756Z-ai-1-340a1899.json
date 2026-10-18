@@ -1,0 +1,8 @@
+{
+  "type": "BEFORE",
+  "agent": "ai-1",
+  "utc": "2026-10-18T01:33:33.745736+00:00",
+  "summary": "BEFORE: strengthen finance13 grounding, not fabricate measured delivery. Replace42derivedgrowth baseline with transparent founder-led2newpaid/month planning target and18.2initialconversionproxy (~3M2total), reconcile cash milestones no promisedYear1break-even. Keep49.99/129.99/359.99 and7/20/60. Add visible demo-vs-estimate cost provenance and pilot unit-cost measurement/sustainability gate. Update model/tests/CSV/docs/script and adoption15success-gate note only if required. Leave Alan slide10 task/evidence12/othercontent unchanged. Publishsync.",
+  "lock_commit": "6ea25a996b6dcc633b548a7db87d62bfcd377572",
+  "base_main": "7b64bd008c0188737ce8a5843256e9e898d131b2"
+}
