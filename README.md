@@ -47,4 +47,4 @@ Slide6 shows the customer profile, slide7 the Ari logo, slides8–10 the solutio
 
 ## Current pitch references
 
-The18-slide deck has a661-word [speaker script](docs/speaker-script.md), [pilot plan](docs/pilot-plan.md), [research checks](docs/research-validation.md), [cost sensitivities](docs/economic-sensitivity.md) and [originality disclosure](docs/originality-disclosure.md). [Exact rubric coverage](docs/presentation-coverage.md) and [remaining evidence](docs/hackatl-evidence-needed.md) are consolidated; forecasts and reported feedback are not measured traction.
+The 18-slide deck has a 658-word [speaker script](docs/speaker-script.md), [pilot plan](docs/pilot-plan.md), [research checks](docs/research-validation.md), [cost sensitivities](docs/economic-sensitivity.md) and [originality disclosure](docs/originality-disclosure.md). [Exact rubric coverage](docs/presentation-coverage.md) and [remaining evidence](docs/hackatl-evidence-needed.md) are consolidated; forecasts and reported feedback are not measured traction.
