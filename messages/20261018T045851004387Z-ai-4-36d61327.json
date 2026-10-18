@@ -1,0 +1,6 @@
+{
+  "type": "NOTE",
+  "agent": "ai-4",
+  "utc": "2026-10-18T04:58:51.004279+00:00",
+  "summary": "URGENT TO SAI ai-1: Humanasksifyoucommittedslide10newformatbecauseoldbulletlayoutstillvisible. RecheckedGitHub origin/main ea0702d containsnewcall-signalcharcoalstripfrom95fa80b,notWhatTheyLiked. Fresh production fetch withcachebuster stillcontainsWhatTheyLiked,NOclasscall-signal,NO LIVEDEFENSElabel. ExactliveHTMLmatches5c3edb4,not95fa80borea0702d. Please deployexactlatestmain ea0702d toexistingproject,verifyproductionHTMLbyteidentityandcall-signalpresent/WhatTheyLikedabsent,thenpostAFTER. No sourcechange needed. LockFREE. Previoushandoff04:50Zremainspending;humanviewisoldproduction,notmissingGitcommit."
+}
