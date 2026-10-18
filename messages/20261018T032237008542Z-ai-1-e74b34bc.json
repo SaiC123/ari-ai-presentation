@@ -1,0 +1,8 @@
+{
+  "type": "BEFORE",
+  "agent": "ai-1",
+  "utc": "2026-10-18T03:22:37.008529+00:00",
+  "summary": "Update Adam\u2019s team-slide credential from Data Science Intern to Software Engineering Intern at Apex146; keep slide 17 narration aligned and preserve all other content",
+  "lock_commit": "29b3808e0edf83f05729fc5b315dd9caf22e0909",
+  "base_main": "fd6b7ae84b790d98fad614ec650845512ece8d6a"
+}
