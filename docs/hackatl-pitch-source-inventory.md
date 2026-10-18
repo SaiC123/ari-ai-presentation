@@ -10,7 +10,7 @@ Slide 4 now charts cyberattack attempts, with no business-application series: **
 
 ## Expanded assessment plans
 
-Proposed monthly workspace subscriptions, not per-seat prices. Founder: $49.99 for10 full assessments and1M assessed source lines; Growth: $249 for25 assessments and5M lines; Scale: $599 for60 assessments and20M lines. Pools are shared across connected repositories. Each repeat assessment counts source volume again. Exclude generated/vendor/dependency code. Both assessment and line allowances apply. Enterprise scope, code volume and onboarding negotiated. Core code review, seven-agent investigation and fix verification included. Monitoring and re-check work remain separately budgeted, not unlimited continuous protection. Extra scoped assessment $25 needs volume and budget approval. No invented trial, integration, SSO or staffed support entitlement.
+Proposed monthly workspace subscriptions, not per-seat prices. Founder: $49.99 for10 full assessments and1M assessed source lines; Growth: $249 for25 assessments and5M lines; Scale: $599 for60 assessments and20M lines. Pools are shared across connected repositories. Each repeat assessment counts source volume again. Exclude generated/vendor/dependency code. Both assessment and line allowances apply. Enterprise scope, code volume and onboarding negotiated. Core code review, seven-agent investigation and fix verification included. Monitoring and re-check work remain separately budgeted, not unlimited continuous protection. Extra scoped assessment $25 needs volume and budget approval. The initial five free pilots are a scoped user plan, not an open-ended trial entitlement. No invented integration, SSO or staffed support entitlement.
 
 Structure inspired by [Kairo pricing](https://kairo.security/pricing), observed October17,2026, for explicit shared usage, code volume and enterprise scope, not copied quantities or prices. Ari's complete assessments are not equivalent to lightweight PR reviews. Routine review counts are not sold as a separate unlimited entitlement.
 
@@ -35,32 +35,27 @@ Founder is an entry pilot price with only about14.5% modeled contribution margin
 
 ## Pilot cash coverage and funding
 
+The current monthly graph is Founder-only; it uses the 70-account threshold below. The older mixed-tier calculation in this paragraph is a separate sensitivity, not the new pilot forecast.
+
 At assumed40%Founder/45%Growth/15%Scale mix: revenue221.896/customer/month; modeled deliverycost95.959984; contribution125.936016; margin56.75%. Cashcost500+95.959984×customers; revenue221.896×customers. Coverage500/125.936016=3.97 ->approximately4 blendedcustomers. At10customers: revenue2218.96, modeledcashcost1459.59984. Founder-only contribution7.24029 means500/7.24029=69.06 ->70 Founder customers. The assumed mix is not actual traction and cannot be represented exactly by four customers.
 
 This is pilot cash coverage, not full economic profitability. Actual four-customer tier mix differs from a smooth blend. Excludes founder salaries/labor, taxes, legal/compliance, extra developer credits, unmeasured monitoring/re-check usage and unexpected overages. At20extra re-checks capped at3APIeach, up to60extraAPI moves blended coverage to5, before other overhead.3is a cap not average. RLnoClaudeAPI doesnotmean zeroCPU. No additional Railway production baseline is added on top of AWS.
 
 Six founders, no hiring and no initial salaries. Founder-funded pilots; customer receipts first cover costs, surplus reinvested. No unsupported external fundraising ask;500/month is a planning budget, not all-in startup launch cost.
 
-## Illustrative six-month forecast
+## Twelve-month pilot forecast
 
-This is a scenario, not actual traction, a validated acquisition forecast or promised break-even timing. Customer counts0/3/8/15/25/40 are management planning assumptions at fixed40/45/15 tier mix. Prices stay at introductory49.99/249/599 throughout; no future price increases are invented. Expected blended customers may imply fractional tier counts at low volume; actual cash results depend on actual plans sold.
+The slide 12 graph now follows the user's initial cohort: five free pilots in Month 1; new pilots pay $49.99/month from Month 2. It uses only Founder pricing, with no assumed Growth/Scale upgrades. Two new paying pilots/month and 2% monthly paid churn are explicit planning assumptions. First Page Sage's 18.2% organic opt-in trial conversion average is a proxy for the initial cohort, giving 0.91 expected conversions in Month 2, not a guaranteed customer or a pilot-retention average. Timing in Month 2 is assumed. The slide offers 5% and 21.9% conversion sensitivities, with different source populations disclosed in notes.
 
-White line explicitly sums monthly shared tools500 + customer count×(API46.075+sandbox24.25+AWS7+payments6.734984+support/storage11.90). Those unit inputs total95.959984, not95.96rounded until display. Revenue is customers×221.896. Monthly shared tools are fixed only because no seat/provider changes are assumed. Delivery costs rise with customer count. Extra re-checks, founder salaries/labor, taxes, legal/compliance and unexpected overages remain excluded. Reforecast as actual costs arrive.
+Five free accounts at $41 each plus $500 shared tools cost $705 in Month 1, with no revenue or payment fees. Paid cost stays $42.74971/account and contribution $7.24029. Monthly coverage therefore needs about 70 whole active Founder accounts once free pilots end. The former 40/45/15 blended acquisition scenario and M3 crossing are superseded for this graph.
 
-| Pilot month | Forecast customers | Revenue | Total modeled cost |
-|---|---:|---:|---:|
-| M1 | 0 | $0 | $500 |
-| M2 | 3 | $665.69 | $787.88 |
-| M3 | 8 | $1,775.17 | $1,267.68 |
-| M4 | 15 | $3,328.44 | $1,939.40 |
-| M5 | 25 | $5,547.40 | $2,899.00 |
-| M6 | 40 | $8,875.84 | $4,338.40 |
+The base case has about20.67 expected paying accounts in M12: $1,033.31 revenue, $1,383.65 total cost, $350.34 monthly shortfall. Peak Year 1 cash funding is $5,244.57. Neither monthly coverage nor cumulative recovery is reached within 12 months; no later date is invented. Fractional expected accounts are not actual customers.
 
-Monthly revenue first exceeds monthly cost at M3 in this scenario. That is not cumulative break-even, salary-inclusive profitability or observed results. Customer-growth target100–200 remains separate.
+See [pilot-forecast.md](pilot-forecast.md) for primary-source links, population/timing limits, formulas, scenarios and exclusions, [pilot-forecast.csv](pilot-forecast.csv) for all 12 monthly rows, and `public/pilot-forecast.js` for the calculation source. Research: [a16z initial design-partner cohort guidance](https://a16z.com/a-framework-for-finding-a-design-partner/), [First Page Sage trial conversion](https://firstpagesage.com/seo-blog/saas-free-trial-conversion-rate-benchmarks/), [ChartMogul 2026 no-card trial conversion](https://chartmogul.com/reports/saas-conversion-report/). None is a measured monthly acquisition or selected-pilot retention benchmark for Ari.
 
 ## Replacement financial script
 
-Founder starts at an introductory pilot price of forty-nine ninety-nine for ten full assessments. Larger plans serve teams that need more coverage. Our graph shows monthly revenue against total modeled monthly costs. The white line includes team tools plus customer API usage, sandbox compute, AWS, payments and support. As customers grow, delivery costs rise each month. This is an illustrative six-month forecast, not traction or a profitability promise. Founders initially take no salaries. We will use pilots to measure real costs and value, then plan sustainable pricing for future customers. Our separate growth target is one hundred to two hundred paying customers.
+We start with five free pilots in month one, then charge new pilots forty-nine ninety-nine. A trial conversion benchmark suggests about one of those first five might pay. That is a proxy, not Ari evidence. Our twelve-month model includes the cost of free pilots, new paid customers and churn. At two new paid pilots per month, we do not cover costs in year one. Monthly coverage needs about seventy active Founder customers. Recovering earlier losses takes longer. Change the assumptions to test the path.
 
 ## Current market arithmetic
 
