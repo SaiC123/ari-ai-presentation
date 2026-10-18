@@ -1,32 +1,26 @@
 # Current timing and speaker handoffs
 
-Canonical script: [speaker-script.md](speaker-script.md). It matches all 20 active slides and their reveal order. 669 whitespace-separated words; 696 with compounds and decimal values split. Full prototype demonstration and Q&A excluded; no timed rehearsal claimed.
+Canonical narration: [speaker-script.md](speaker-script.md). Read its current word inventory; full demo and Q&A are excluded. No timed rehearsal claimed.
 
-Speakers: Sarosh1–6; Srihith7–12; Vihaan13; Sai14–18; Sarosh19–20.
+Speakers: Sarosh1–6; Srihith7–13; Vihaan14; Sai15–19; Sarosh20–21.
 
-## Actual order
+## Active 21-slide order
 
-1. Hypothetical founder.
-2. Missing permission check.
-3. Everything broke.
-4. Why now: benchmark, capacity gap, separate attack trend.
-5. Problem statement.
-6. Customer profile and theme fit.
-7. Ari logo.
-8. Three-layer overview, general introduction only; no early Defense Lab explanation.
-9. Code Reviewer: understand, test, minimal repair.
-10. Scout, Probe, Trace, Diagnose, Patch, Fortify, Verify, then HackATL contribution.
-11. Red, Blue, independent Verify, then brief Defense Lab ongoing-protection reveal and proof rule.
-12. Competitor map, connected workflow and tradeoffs, then early pitch conversations.
-13. Prototype replay and Vihaan demonstration.
-14. Five reported outcomes, Samira improvement, then focused Jordan evidence.
-15. Prices, Growth unit economics, forecast milestones, then shared tools/funding.
-16. Broad market proxy, smaller segment, target.
-17. Adoption workflow and recruitment milestones.
-18. Roadmap, resources, risks and gates.
-19. Team backgrounds in displayed order.
-20. Six graphics: founder, breach, agents, Red/Blue/Verify, business, roadmap; connection and Ari finale.
+1–6: Hypothetical founder, breach, fallout, why now, problem, customer.
+7: Ari logo.
+8: General Ari introduction, not an early Defense Lab explanation.
+9: Code Reviewer screenshot beside intent, testing and minimal-repair explanations.
+10: Seven agents and HackATL contribution.
+11: Red/Blue/Verify, approval and proof rule. No Defense Lab reveal.
+12: Separate Defense Lab screenshot beside continuous monitoring, rechecks and human-controlled recommendations. Its narration explains only the general purpose, with no RL statistics.
+13: Competitor map, workflow/tradeoffs, then pitch feedback.
+14: Vihaan prototype replay/demo.
+15: Five reported outcomes, Samira improvement, then Jordan focus.
+16: Prices, unit economics, forecast milestones, shared tools/funding.
+17: Market proxy, segment, target.
+18: Adoption and recruitment.
+19: Roadmap and gates.
+20: Team.
+21: Six-part graphic recap and Ari finale.
 
-The dedicated Defense Lab screenshot/results slide is removed; its image and research document are retained as unused reference assets. The 24/7 label describes the continuous-monitoring aim, not measured uptime. AI defense recommendations are simulation-derived and require human decisions.
-
-At130words/minute the prepared 670-word text takes about5m09s; at150about4m28s, before handoffs, animations and the full demo. A five-minute pitch requires rehearsal and a shorter spoken selection after allocating demo time.
+Defense Lab is a different product layer from the seven-agent investigation/repair workflow.24/7 describes the monitoring aim, not measured uptime. The screenshot is a recorded practice network; the trained defender recommends rather than acting autonomously in production. No comparative RL metrics are spoken.

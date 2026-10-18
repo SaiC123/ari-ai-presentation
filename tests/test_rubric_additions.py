@@ -15,7 +15,7 @@ class RubricAdditionsTests(unittest.TestCase):
         self.assertIn('benchmark samples, not all AI code', self.slides[3])
 
     def test_competitor_landscape_has_sources_and_staged_positioning(self):
-        slide = self.slides[11]
+        slide = self.slides[12]
         names = ('GitHub Code Security', 'Semgrep', 'SonarQube', 'Snyk', 'Aikido', 'Veracode', 'Checkmarx', 'XBOW', 'Pentera')
         links = re.findall(r'<a class="map-vendor[^"]*" href="(https://[^"]+)"[^>]*><b>([^<]+)</b>', slide)
         self.assertEqual(tuple(name for _, name in links), names)
@@ -31,12 +31,12 @@ class RubricAdditionsTests(unittest.TestCase):
 
     def test_comparison_and_roadmap_have_limits_and_resources(self):
         for text in ('Snyk', 'Semgrep', 'GitHub Code Security', 'Tradeoff:', 'not yet validated'):
-            self.assertIn(text, self.slides[11])
+            self.assertIn(text, self.slides[12])
         for text in ('Month 1', 'Months 2–3', 'Months 4–6', 'Enterprise gate', 'Proposed timelines'):
-            self.assertIn(text, self.slides[17])
-        self.assertEqual(self.slides[17].count('<em>Needs</em>'), 5)
-        self.assertEqual(self.slides[17].count('<em>Risk</em>'), 5)
-        self.assertEqual(len(self.slides), 20)
+            self.assertIn(text, self.slides[18])
+        self.assertEqual(self.slides[18].count('<em>Needs</em>'), 5)
+        self.assertEqual(self.slides[18].count('<em>Risk</em>'), 5)
+        self.assertEqual(len(self.slides), 21)
 
 if __name__ == '__main__':
     unittest.main()
