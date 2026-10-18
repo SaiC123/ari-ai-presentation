@@ -1,6 +1,6 @@
 # Ari AI: HackATL Presentation
 
-An animated, 15-slide HTML pitch for Ari AI.
+An animated, 18-slide HTML pitch for Ari AI.
 
 ## Present
 
@@ -43,4 +43,8 @@ Every AI editor must read [AGENTS.md](AGENTS.md) and follow the [shared coordina
 Slide13 restores the user-approved42newpaid/month scenario with a citation directly below it: ChartMogul median24months to1,000B2Bsubscribers.42=round(1000/24) is a derived planning target, not a published monthly average or acquisition guarantee. ConditionalcashcoverageM2,recoveryM3,32Founderaccountthreshold;team-suppliedcosts retained. See docs/pilot-forecast.md.
 ## Prototype evidence slide
 
-Slide6 shows the customer profile, slide7 the Ari logo, slides8–10 the solution and comparison, and slide11 the prototype workflow/verification. Slide12 follows with the two evidence boxes and enlarged email with its reported result highlighted. Financials remain slide13. Five supplied screenshots and their provenance are documented in `docs/prototype-feedback.md`. VC feedback remains pending. Run `python3 -m unittest discover -s tests -p test_prototype_feedback.py` to check the evidence assets and attribution.
+Slide6 shows the customer profile, slide7 the Ari logo, slides8–10 the solution and comparison, and slide11 the prototype workflow/verification. Slide12 follows with the five-email gallery and enlarged email with its reported result highlighted. Financials remain slide13. Five supplied screenshots and their provenance are documented in `docs/prototype-feedback.md`. VC feedback remains pending. Run `python3 -m unittest discover -s tests -p test_prototype_feedback.py` to check the evidence assets and attribution.
+
+## Current pitch references
+
+The18-slide deck has a438-word [speaker script](docs/speaker-script.md), [pilot plan](docs/pilot-plan.md), [research checks](docs/research-validation.md), [cost sensitivities](docs/economic-sensitivity.md) and [originality disclosure](docs/originality-disclosure.md). [Remaining evidence](docs/hackatl-evidence-needed.md) is consolidated; forecasts and reported feedback are not measured traction.

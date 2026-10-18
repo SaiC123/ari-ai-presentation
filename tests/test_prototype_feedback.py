@@ -25,10 +25,12 @@ class PrototypeFeedbackTests(unittest.TestCase):
         self.assertIn(quote, re.sub('<[^>]+>', '', self.slide))
         self.assertIn(quote, (ROOT / 'docs/prototype-feedback.md').read_text())
         self.assertIn('Reported prototype result', self.slide)
-        self.assertIn('VC quote to be added.', self.slide)
+        self.assertNotIn('class="vc-placeholder"', self.slide)
+        self.assertIn('Samira’s request', self.slide)
+        self.assertIn('Next improvement:', self.slide)
 
-    def test_two_boxes_then_separate_focus_build(self):
-        self.assertEqual(self.slide.count('class="validation-box '), 2)
+    def test_gallery_then_separate_focus_build(self):
+        self.assertEqual(self.slide.count('class="validation-box '), 1)
         self.assertIn('data-build="1"', self.slide)
         self.assertIn('class="customer-phase cp2"', self.slide)
         self.assertIn('class="email-result-highlight"', self.slide)
@@ -38,7 +40,7 @@ class PrototypeFeedbackTests(unittest.TestCase):
         slides = re.findall(r'<section class="slide[\s\S]*?</section>', main)
         self.assertEqual(len(slides), 18)
         self.assertIn('customer-story-slide', slides[5])
-        self.assertIn('IDEAL CUSTOMER PROFILE', slides[5])
+        self.assertIn('PROPOSED CUSTOMER PROFILE', slides[5])
         self.assertNotIn('feedback-gallery', slides[5])
         self.assertNotIn('data-build=', slides[5])
         self.assertIn('logo-only-slide', slides[6])

@@ -896,14 +896,55 @@
     .market-position-slide [data-build]{opacity:0;visibility:hidden;transform:translateY(14px);transition:opacity .45s,transform .55s cubic-bezier(.16,1,.3,1),visibility .45s}
     .market-position-slide [data-build].build-visible{opacity:1;visibility:visible;transform:none}
     @media(prefers-reduced-motion:reduce){.market-position-slide [data-build]{transform:none!important}}
+
+    /* Rubric pass: evidence labels and measurable proposed gates. */
+    .liability-caption{font-size:20px;line-height:1.4;text-align:center;margin-top:18px;letter-spacing:0}
+    .why-now-slide .separate-trend{position:absolute;top:-30px;left:0;font-size:18px;font-weight:600;color:var(--muted)}
+    .why-now-slide .attack-source{display:block;font-size:13px;color:#f3ded8;margin-top:6px;text-decoration:underline}
+    .why-now-slide .why-chart-panel{height:430px}
+    .why-now-slide .why-security-check{top:624px}
+    .why-now-slide .capacity-hypothesis{display:block;font:400 16px/1.4 Inter,sans-serif;color:var(--muted);margin-top:8px}
+    .customer-story-slide:not(.feedback-slide) .icp-stage{margin-top:20px}
+    .customer-story-slide:not(.feedback-slide) .icp-theme{margin-top:16px;padding:14px 22px}
+    .customer-story-slide:not(.feedback-slide) .icp-theme strong{font-size:23px}
+    .priority-strip{display:flex;gap:22px;margin-top:14px;align-items:center;font-size:16px;color:#f3ded8}
+    .priority-strip b{color:#ffb09f;font-size:15px}
+    .contribution-source{display:block;font-size:14px;line-height:1.4;color:#ffb09f;margin-top:18px}
+    .feedback-slide .validation-columns{grid-template-columns:1fr}
+    .feedback-slide .validation-box{height:375px;padding:20px 24px}
+    .feedback-slide .feedback-gallery{grid-template-columns:repeat(5,minmax(0,1fr));gap:16px}
+    .feedback-slide .feedback-email img{height:116px;object-fit:contain}
+    .feedback-slide .feedback-email figcaption{font-size:15px}
+    .feedback-slide .feedback-next{font-size:20px;line-height:1.4;margin-top:22px;color:white}
+    .feedback-slide .feedback-next b{color:#ffb09f}
+    .feedback-slide .feedback-next span{font-size:15px;color:#e3cec8}
+    .market-buyer{position:absolute;left:72px;right:72px;bottom:46px;display:flex;flex-wrap:wrap;gap:8px 20px;font-size:17px;color:var(--muted)}
+    .market-buyer b{color:var(--ink)}.market-buyer a{flex-basis:100%;font-size:13px;color:var(--muted)}
+    .adoption-slide .milestone-pipeline{top:198px}
+    .adoption-slide .milestone-icon{width:88px;height:88px;margin:18px auto}
+    .adoption-slide .milestone:not(:last-child)::after{top:88px}
+    .adoption-slide .milestone-copy{font-size:15px}
+    .pilot-scorecard{position:absolute;left:72px;right:72px;top:444px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px 20px;padding:14px 0;border-block:1px solid var(--line);font-size:16px;color:var(--muted)}
+    .pilot-scorecard b{flex-basis:100%;font-size:18px;color:var(--ink)}
+    .adoption-slide .milestone-funnel{top:550px;left:72px;right:72px}
+    .adoption-slide .projection-label{font-size:14px}
+    .adoption-slide .projection-flow{gap:14px}
+    .pilot-gate{position:absolute;left:72px;right:72px;top:635px;text-align:center;color:var(--acid);font-size:16px}
+    .road-slide .road-sign{min-height:0;height:296px;padding:14px 12px}
+    .road-slide .road-sign b{font-size:22px}
+    .road-slide .road-sign span{font-size:14px;line-height:1.25;margin-top:10px}
+    .road-slide .road-sign .road-owner{font-size:12px;margin-top:7px;color:var(--muted)}
+    .road-slide .road-sign .road-fallback{padding-top:8px;border-top:1px solid var(--line)}
+    .brand-finale .closing-ask{position:absolute;left:0;right:0;bottom:58px;text-align:center;color:white;font:500 27px/1.35 "Space Grotesk",sans-serif}
+    .brand-finale .closing-ask span{font-size:22px;color:#ffb09f}
   </style>
 </head>
 <body>
   <div class="deck-shell">
 <main id="presentation-slides-wrapper" aria-live="polite">
-      <section class="slide active story-build" data-note="SPOKEN (0:00 to 0:18; about 18 seconds including clicks/pauses): Meet a founder building with AI: funding secured, customers arriving, releases moving quickly. There is no dedicated security team. This founder is fictional, but the workflow is our starting hypothesis.
+      <section class="slide active story-build" data-note="SPOKEN: Imagine a founder shipping with AI and no security team. This founder and these figures are hypothetical.
 
-REFERENCE AND CUES, NOT SPOKEN: Start on the person alone. Click through funding, customers, deployment speed, zero security hires, then ALL VIBECODED. The person and figures are a fictional composite." data-spoken="Meet a founder building with AI: funding secured, customers arriving, releases moving quickly. There is no dedicated security team. This founder is fictional, but the workflow is our starting hypothesis." data-duration-s="18">
+REFERENCE, NOT SPOKEN: Fictional founder and illustrative numbers; no claimed interview, customer count, funding or measured AI productivity." data-spoken="Imagine a founder shipping with AI and no security team. This founder and these figures are hypothetical.">
         <p class="hypothetical-label">Hypothetical founder · Illustrative figures</p>
         <div class="founder-scene">
           <svg class="growth-lines" viewBox="0 0 1140 520" aria-hidden="true"><path class="build-line" data-build="1" d="M510 238 C420 170 350 135 270 105"/><path class="build-line" data-build="2" d="M630 238 C730 170 805 135 885 105"/><path class="build-line" data-build="3" d="M505 330 C420 385 355 415 300 440"/><path class="build-line" data-build="4" d="M635 330 C725 385 790 415 845 440"/></svg>
@@ -918,9 +959,9 @@ REFERENCE AND CUES, NOT SPOKEN: Start on the person alone. Click through funding
         <div class="vibecoded-stamp" data-build="5">ALL VIBECODED</div>
       </section>
 
-      <section class="slide red" data-note="SPOKEN (0:18 to 0:27; about 9 seconds including clicks/pauses): Then one endpoint misses a simple check: can this customer access somebody else&#x27;s data?
+      <section class="slide red" data-note="SPOKEN: A missing ownership check can expose another customer’s data.
 
-REFERENCE AND CUES, NOT SPOKEN: Automatic animation. This is an illustrative IDOR/BOLA-style scenario, not a claimed customer incident: one AI-assisted endpoint omitted a resource-ownership check. Let the crack and falling markers create tension, then transition: one missing check can turn speed into blast radius." data-spoken="Then one endpoint misses a simple check: can this customer access somebody else&#x27;s data?" data-duration-s="9">
+REFERENCE, NOT SPOKEN: Illustrative missing resource-ownership authorization check. Not a real breach claim." data-spoken="A missing ownership check can expose another customer’s data.">
         <div class="slide-head reveal"><span class="brand-mini"><img class="brand-ant" src="ari-ant-mark.png" alt="" aria-hidden="true">Problem Definition</span><span class="slide-num">02</span></div>
         <h1 class="reveal" style="--delay:.16s;font-size:76px;margin-top:-14px">One check was missing.</h1>
         <div class="break-stage auto-break">
@@ -934,9 +975,9 @@ REFERENCE AND CUES, NOT SPOKEN: Automatic animation. This is an illustrative IDO
         </div>
       </section>
 
-      <section class="slide dark slide-grid" data-note="SPOKEN (0:27 to 0:36; about 9 seconds including clicks/pauses): One overlooked check can put customers, jobs and the company at risk.
+      <section class="slide dark slide-grid" data-note="SPOKEN: Customers, jobs and trust are at risk. The liability figure is illustrative.
 
-REFERENCE AND CUES, NOT SPOKEN: Make the blast radius personal. Click through each consequence, then the $2.4M fictional liability scenario. Say: the company disappeared; the debt did not." data-spoken="One overlooked check can put customers, jobs and the company at risk." data-duration-s="9">
+REFERENCE, NOT SPOKEN: Illustrative liability scenario, not an automatic conversion of equity funding into founder personal debt. No legal conclusion about any founder." data-spoken="Customers, jobs and trust are at risk. The liability figure is illustrative.">
         <div class="slide-head"><span class="brand-mini"><img class="brand-ant" src="ari-ant-mark.png" alt="" aria-hidden="true">Meaningful User Impact</span><span class="slide-num">03</span></div>
         <div class="break-everything">
           <h1>EVERYTHING<br>BROKE.</h1>
@@ -945,13 +986,13 @@ REFERENCE AND CUES, NOT SPOKEN: Make the blast radius personal. Click through ea
           <div class="impact-pop impact-c" data-build="3">Company closed</div>
           <div class="impact-pop impact-d" data-build="4">18 jobs lost</div>
           <div class="impact-pop impact-e" data-build="5">Reputation destroyed</div>
-          <div class="debt-hit" data-build="6"><div><strong>$2.4M<br>OWED</strong></div></div>
+          <div class="debt-hit" data-build="6"><div><strong>$2.4M<br>OWED</strong><p class="liability-caption">Illustrative liability scenario</p></div></div>
         </div>
       </section>
 
-      <section class="slide why-now-slide" data-note="SPOKEN: AI makes building easier, but small teams may still lack security capacity. Why not just ask AI to secure it? Working code is not proof of security. AI can propose a repair, but independent testing must check it. Veracode’s 2025 benchmark found that 45% of AI-generated code samples failed security tests. Separately, weekly attack attempts per organization rose roughly seventy percent between 2023 and 2025. These are attempts, not successful breaches, and not proof that AI coding caused the increase.
+      <section class="slide why-now-slide" data-note="SPOKEN: Veracode’s 2025 benchmark found 45 percent of generated samples failed security tests. Separately, Check Point reports rising attack attempts. These studies do not establish that AI coding caused that rise.
 
-REFERENCE AND CUES, NOT SPOKEN: Limited security capacity is the target-user hypothesis, not a quantified population result. Stack Overflow 2025 reports 84% use or plan to use AI tools, not that all already use them. Retained Check Point graph: average weekly attack attempts per organization, 1,158 in 2023, 1,673 in 2024, 1,968 in 2025, about 70% growth. These are vendor telemetry observations, not successful breaches, a global census or causal evidence about AI coding. Veracode source: https://www.veracode.com/blog/genai-code-security-report/ . 45% describes benchmark samples, not all AI code or breach probability. Sources and URLs: docs/hackatl-pitch-source-inventory.md. IBM&#x27;s $4.44M breach-cost context remains a separate source, not a cost estimate for our fictional founder. CUE: Build 0 shows AI-assisted creation plus limited security capacity. Click 1 hides both factors and reveals the centered attack-attempt graph with its equals cue and a proportional 0–2,500 y-axis labeled Weekly attempts / organization. Let the graph pop and line entrance finish. Rewind restores the two factors. The equation-like staging summarizes urgency, not a causal finding about AI coding." data-spoken="AI makes building easier, but small teams may still lack security capacity. Why not just ask AI to secure it? Working code is not proof of security. AI can propose a repair, but independent testing must check it. Veracode’s 2025 benchmark found that 45% of AI-generated code samples failed security tests. Separately, weekly attack attempts per organization rose roughly seventy percent between 2023 and 2025. These are attempts, not successful breaches, and not proof that AI coding caused the increase." data-duration-s="32">
+REFERENCE, NOT SPOKEN: Two separate evidence sources. Keep Veracode 2025 benchmark sample/date explicit; it tested 100+ models on 80 curated tasks across four languages. A 2026 follow-up exists; 45% is the selected 2025 baseline, not a latest-model guarantee. Check Point vendor telemetry: 1158/1673/1968 average weekly attempts per organization in2023/2024/2025. Not successful breaches or causation. Entry shows the hypothesized capacity gap; one click shows separate attack activity. Sources: https://www.veracode.com/blog/genai-code-security-report/ and https://research.checkpoint.com/2026/cyber-security-report-2026/." data-spoken="Veracode’s 2025 benchmark found 45 percent of generated samples failed security tests. Separately, Check Point reports rising attack attempts. These studies do not establish that AI coding caused that rise.">
         <div class="slide-head"><span class="brand-mini"><img class="brand-ant" src="ari-ant-mark.png" alt="" aria-hidden="true">Evidence of need</span><span class="slide-num">04</span></div>
         <h2>Why <span class="accent">now?</span></h2>
         <div class="why-security-check"><b>Working code is not<br>proof of security.</b><div class="ai-benchmark"><b>45% failed security tests</b><a href="https://www.veracode.com/blog/genai-code-security-report/" target="_blank" rel="noopener">Veracode 2025 · AI-generated benchmark samples, not all AI code</a></div></div>
@@ -965,33 +1006,35 @@ REFERENCE AND CUES, NOT SPOKEN: Limited security capacity is the target-user hyp
           <span class="why-plus" aria-hidden="true">+</span>
           <div class="why-factor why-capacity">
             <svg class="why-symbol" viewBox="0 0 240 230" role="img" aria-label="A small team reviewing a growing set of changes"><path d="M120 17l83 32v67c0 48-34 79-83 103-49-24-83-55-83-103V49z" fill="#f8e7e3" stroke="#c2452d" stroke-width="3" stroke-dasharray="10 7"/><circle cx="120" cy="93" r="24" fill="none" stroke="#1c1210" stroke-width="7"/><path d="M78 158c0-35 84-35 84 0v17H78z" fill="#1c1210"/><path d="M17 78h30m146 0h30M8 104h24m176 0h24M17 130h30m146 0h30" stroke="#c2452d" stroke-width="5" stroke-linecap="round"/></svg>
-            <h3>Limited security<br>capacity</h3>
+            <h3>Limited security<br>capacity <small class="capacity-hypothesis">Target-user hypothesis</small></h3>
           </div>
           </div>
           <div class="why-factor why-attacks">
-            <span class="why-equals" aria-hidden="true">=</span>
+            <p class="separate-trend">Separate evidence: attack activity</p>
             <div class="why-chart-panel">
               <div class="why-rise"><b>+70%</b><span>2023–2025</span></div>
               <canvas id="formationChart" width="980" height="306" role="img" aria-label="Average weekly attack attempts per organization: 1158 in 2023, 1673 in 2024, 1968 in 2025"></canvas>
-              <p>Attack attempts, not breaches</p>
+              <p>Attack attempts, not breaches · No causal link to AI coding established</p><a class="attack-source" href="https://research.checkpoint.com/2026/cyber-security-report-2026/" target="_blank" rel="noopener">Check Point 2026 report · Average weekly attempts per organization</a>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="slide dark problem-statement-slide" data-note="Problem definition: AI helps small teams ship code faster than they can secure it. This is the target-user hypothesis to validate, not a measured population result." data-spoken="Our problem is simple: AI helps small teams ship code faster than they can secure it." data-duration-s="6">
-        <h1>AI helps small teams<br><span class="accent">ship code faster</span><br>than they can secure it.</h1>
+      <section class="slide dark problem-statement-slide" data-note="SPOKEN: AI expands what small teams can build. Security still needs proof.
+
+REFERENCE, NOT SPOKEN: Ari logo transition; brief handoff."accent">Security still needs proof.</span> This is the target-user hypothesis to validate, not a measured population result." data-spoken="AI expands what small teams can build. Security still needs proof."accent">Security still needs proof.</span>">
+        <h1>AI expands what<br>small teams can build.<br><span class="accent">Security still needs proof.</span></h1>
       </section>
 
-<section class="slide dark customer-story-slide" data-note="SPOKEN: Ari targets small founder-led SaaS teams using AI to code without dedicated security staff. AI expanded their ability to build software faster than their ability to secure it. This security-capacity gap is our user hypothesis, not measured causal evidence.
+<section class="slide dark customer-story-slide" data-note="SPOKEN: Our proposed buyer is a SaaS founder or engineering lead using AI without dedicated security staff. We are testing their needs around review time, clear evidence and code privacy.
 
-REFERENCE, NOT SPOKEN: This slide is ICP and theme fit only. Next shows the Ari logo; feedback and evidence now follow the logo as their own slide. The bar lengths are illustrative, not quantitative survey results." data-spoken="Ari targets small founder-led SaaS teams using AI to code without dedicated security staff. AI expanded their ability to build software faster than their ability to secure it." data-duration-s="12">
+REFERENCE, NOT SPOKEN: ICP and priority strip are hypotheses, not measured segment prevalence. Alex reports understandable findings; Samira requests permission/code-processing clarity. Five supplied emails are not five paid customers or a structured interview sample. Evidence slots, nonspoken: participant roles/counts, workflow observations, current workarounds and buying priorities remain pending. Do not infer staffing or AI use for each sender. Next is Ari logo7; feedback remains12." data-spoken="Our proposed buyer is a SaaS founder or engineering lead using AI without dedicated security staff. We are testing their needs around review time, clear evidence and code privacy.">
         <div class="slide-head"><span class="sai-rubric"><img src="ari-ant-mark.png" alt="Ari ant"><span class="sr0">PROBLEM DEFINITION / ICP / THEME FIT</span></span><span class="slide-num">06</span></div>
         <div class="customer-phase cp0">
-          <h2>More code.<br><span class="accent">More exposed codebases.</span></h2>
+          <h2>Small teams.<br><span class="accent">Security decisions they can trust.</span></h2>
           <div class="icp-stage">
             <aside class="icp-profile" aria-label="Ideal customer profile">
-              <p class="icp-label">IDEAL CUSTOMER PROFILE</p>
+              <p class="icp-label">PROPOSED CUSTOMER PROFILE</p>
               <ul class="icp-tags">
                 <li>Small SaaS startups</li>
                 <li>Founder-led teams</li>
@@ -1000,7 +1043,7 @@ REFERENCE, NOT SPOKEN: This slide is ICP and theme fit only. Next shows the Ari 
               </ul>
             </aside>
             <figure class="exposure-graphic" role="img" aria-label="Illustrative comparison: code output has grown faster than security coverage. Bar lengths show a qualitative hypothesis, not measured data.">
-              <figcaption>AI intensified the gap</figcaption>
+              <figcaption>Our hypothesis: a review-capacity gap</figcaption>
               <div class="exposure-row">
                 <p>Code output</p>
                 <div class="exposure-track" aria-hidden="true"><i></i></div>
@@ -1011,17 +1054,19 @@ REFERENCE, NOT SPOKEN: This slide is ICP and theme fit only. Next shows the Ari 
               </div>
             </figure>
           </div>
-          <div class="icp-theme"><span>THEME FIT</span><strong>AI intensified the problem of exposed codebases.</strong></div>
+          <div class="icp-theme"><span>THEME FIT</span><strong>AI-assisted creation needs evidence-backed review.</strong></div><div class="priority-strip"><b>Priorities to validate</b><span>Review time</span><span>Security expertise</span><span>Clear evidence</span><span>Code privacy</span></div>
         </div>
       </section>
 
-      <section class="slide dark logo-only-slide" aria-label="Ari" data-note="Let the logo fade in over the dark background. Say: And this is Ari. Hold briefly before advancing." data-spoken="And this is Ari." data-duration-s="3">
+      <section class="slide dark logo-only-slide" aria-label="Ari" data-note="SPOKEN: This is Ari.
+
+REFERENCE, NOT SPOKEN: Ari logo transition; brief handoff." data-spoken="This is Ari.">
         <img class="hero-ant" src="ari-ant-mark.png" alt="Ari ant logo" width="600" height="440">
       </section>
 
-      <section class="slide dark solution-slide" data-note="SPOKEN (1:18 to 1:49; about 31 seconds including clicks/pauses): Ari connects code review, seven security specialists, and monitoring through shared code context. Scout maps the code. Probe tests a weakness. Trace explains the evidence. Diagnose finds the cause. Patch proposes a repair after approval. Fortify recommends stronger defenses. Verify independently retests. Recognized standards make findings easier to interpret and check.
+      <section class="slide dark solution-slide" data-note="SPOKEN: We built version-aware context, bounded orchestration and verification during HackATL. Shared intent connects the reviewer and seven specialists, from investigating a weakness to proposing a repair.
 
-REFERENCE AND CUES, NOT SPOKEN: Say: Ari connects three capabilities through shared code context. The reviewer checks intended behavior and proposes tested repairs. Seven security agents investigate weaknesses and independently verify repairs. Monitoring requests fresh checks when code changes. Walk through the seven roles, then restore the complete network. Close: Built around recognized security standards, our agents use clear labels, calculated risk scores, and findings people can check. Presenter reference, not spoken: Standards context: validated CWE weakness labels; explicit-metric CVSS severity calculations; checked CAPEC and ATT&amp;CK attack labels; D3FEND defense recommendations; OWASP risk categories; NIST incident-handling references. Runtime CVSS 4.0 is canonical; CVSS 3.1 is separately available, not the reverse. Alignment is not certification or compliance. Recommendations are not proof that controls are implemented. Audit logs can be tamper-evident, not tamper-proof. Implementation reference: hackatl-agentic-security/standards/README.md. Context is tied to a code version, retrieved code relationships, cited expectations, findings, and regression evidence. The reviewer proposes human-approved repairs and replays generated tests plus the existing suite; it does not know every business intention. Scout maps code and potential weaknesses. Probe executes bounded sandbox tests. Trace uses observed evidence to map attack paths. Diagnose identifies root cause. Patch proposes a scoped repair for human approval. Fortify recommends regression tests and guardrails. Verify independently reruns evidence on a fresh checkout. Clicks 1-7 spotlight these roles; click 8 restores all seven. Current end-to-end M7 model turns use scripted/fake transport; a complete live-provider seven-role trace has not been demonstrated. Monitoring follows code-change events and requests targeted checks while workers run; runtime telemetry ingestion is not implemented. RL trains and evaluates recommendations only in simulation, with no autonomous production action path. Sources: docs/hackatl-pitch-source-inventory.md, Slides 6-9; docs/demo-presenter-cues.md." data-spoken="Ari connects code review, seven security specialists, and monitoring through shared code context. Scout maps the code. Probe tests a weakness. Trace explains the evidence. Diagnose finds the cause. Patch proposes a repair after approval. Fortify recommends stronger defenses. Verify independently retests. Recognized standards make findings easier to interpret and check." data-duration-s="31">
+REFERENCE, NOT SPOKEN: Team confirmed in this chat on October17,2026: no Ari project work was built beforehand. Built-by-us refers to project context retrieval, deterministic orchestration and independent-verification integration; underlying models/libraries are third-party. See docs/originality-disclosure.md. Full local chain uses scripted transports; a complete live-provider trace is still a gate. Intended behavior is cited and version-keyed, not omniscient. Tool execution requires authorization and bounded scope. No originality/exclusivity benchmark claim." data-spoken="We built version-aware context, bounded orchestration and verification during HackATL. Shared intent connects the reviewer and seven specialists, from investigating a weakness to proposing a repair.">
         <div class="slide-head"><span class="brand-mini"><img class="brand-ant" src="ari-ant-mark.png" alt="" aria-hidden="true">Original Contribution / Thoughtful Approach</span><span class="slide-num">08</span></div>
         <h2 style="font-size:50px">Seven specialists. <span class="accent">One intelligence.</span></h2>
         <div class="platform-overview">
@@ -1067,7 +1112,7 @@ REFERENCE AND CUES, NOT SPOKEN: Say: Ari connects three capabilities through sha
               </article>
             </div>
             <svg class="capability-wires" viewBox="0 0 1136 72" aria-hidden="true"><path d="M177 0V20Q177 32 189 32H947Q959 32 959 20V0M568 0V44"/><g fill="#ff8a75" stroke="none"><circle cx="177" cy="0" r="4"/><circle cx="568" cy="0" r="4"/><circle cx="959" cy="0" r="4"/></g></svg>
-            <div class="code-context"><span aria-hidden="true">&lt;/&gt;</span>Shared code context</div>
+            <div class="code-context"><span aria-hidden="true">&lt;/&gt;</span>Version-aware intent + evidence</div>
           </div>
         </div>
         <span class="build-trigger" data-build="1"></span><span class="build-trigger" data-build="2"></span><span class="build-trigger" data-build="3"></span><span class="build-trigger" data-build="4"></span><span class="build-trigger" data-build="5"></span><span class="build-trigger" data-build="6"></span><span class="build-trigger" data-build="7"></span><span class="build-trigger" data-build="8"></span>
@@ -1078,21 +1123,21 @@ REFERENCE AND CUES, NOT SPOKEN: Say: Ari connects three capabilities through sha
             <div class="agent-node n1"><div><b>Scout</b><small>understand</small></div></div><div class="agent-node n2"><div><b>Probe</b><small>test</small></div></div><div class="agent-node n3"><div><b>Trace</b><small>link evidence</small></div></div><div class="agent-node n4"><div><b>Diagnose</b><small>find cause</small></div></div><div class="agent-node n5"><div><b>Patch</b><small>propose fix</small></div></div><div class="agent-node n6"><div><b>Fortify</b><small>guardrails</small></div></div><div class="agent-node n7"><div><b>Verify</b><small>retest</small></div></div>
           </div>
           <div class="node-copy-panel">
-            <div class="node-copy copy1"><b>Scout</b><p>Maps code and potential weak points.</p></div><div class="node-copy copy2"><b>Probe</b><p>Runs bounded tests in the sandbox.</p></div><div class="node-copy copy3"><b>Trace</b><p>Connects observed evidence to an attack path.</p></div><div class="node-copy copy4"><b>Diagnose</b><p>Explains the root cause.</p></div><div class="node-copy copy5"><b>Patch</b><p>Proposes a fix for human approval.</p></div><div class="node-copy copy6"><b>Fortify</b><p>Suggests regression tests and guardrails.</p></div><div class="node-copy copy7"><b>Verify</b><p>Independently retests the repair on a fresh checkout.</p></div><div class="node-copy copy8 node-copy-final"><b>Recognized<br>standards.</b><p>Clear labels.<br>Calculated risk.<br>Findings you can check.</p></div>
+            <div class="node-copy copy1"><b>Scout</b><p>Maps code and potential weak points.</p></div><div class="node-copy copy2"><b>Probe</b><p>Runs bounded tests in the sandbox.</p></div><div class="node-copy copy3"><b>Trace</b><p>Connects observed evidence to an attack path.</p></div><div class="node-copy copy4"><b>Diagnose</b><p>Explains the root cause.</p></div><div class="node-copy copy5"><b>Patch</b><p>Proposes a fix for human approval.</p></div><div class="node-copy copy6"><b>Fortify</b><p>Suggests regression tests and guardrails.</p></div><div class="node-copy copy7"><b>Verify</b><p>Independently retests the repair on a fresh checkout.</p></div><div class="node-copy copy8 node-copy-final"><b>Built by us<br>during HackATL.</b><p>Context retrieval.<br>Bounded orchestration.<br>Independent verification.</p><small class="contribution-source">Team-confirmed · Third-party tools disclosed</small></div>
           </div>
         </div>
       </section>
 
-      <section class="slide team-slide" data-note="SPOKEN (1:49 to 2:09; about 20 seconds including clicks/pauses): ARI remembers verified fixes and uses that evidence when related code changes. In Defense Lab, a simulated defender observes suspicious traffic, tries a response, then learns from security and service outcomes. Code memory requests new checks. Reinforcement learning stays in simulation.
+      <section class="slide team-slide" data-note="SPOKEN: Approval keeps the repair within human control. Separate verification checks it independently, then saves regression evidence for future changes. Monitoring requests fresh checks; reinforcement learning stays in simulation.
 
-REFERENCE AND CUES, NOT SPOKEN: Clicks 1–4: Red finds and proves, Blue fixes and fortifies, and independent Verify reruns the evidence. Click 5 shows two distinct capabilities. Left: auth.ts and refreshSession(session) are an illustrative UI example, not a product screenshot or a real assessment. The bookmark is a visual metaphor for saved version-keyed VerifiedRegression evidence, not a claim of a shipped bookmark control. Independent Verify records candidate evidence on an exact base SHA; a future change must be reassessed and is not automatically verified, merged, or safe. Right: the API node is part of the simulated gateway/api/auth/payments/db topology. An observation can include noisy alert/anomaly signals; rate_limit is an implemented simulated action. During offline training, reward balances containment and security impact against service disruption and action cost, then updates the policy. This does not show measured performance, a live customer dashboard, a production rate limit, or training on customer deployments. Code memory and RL training are distinct; no connector or automatic training feedback is implied. References: product monitoring/README.md, docs/11_SHARED_CONTEXT_AND_MEMORY.md, rl-defense/README.md, docs/09_RL_DEFENSE_SYSTEM.md. GitHub push/PR events can trigger targeted reassessment or regression checks. Continuous coverage requires running workers; runtime telemetry ingestion is not implemented. The Defense Lab studies recommendations in simulation using reinforcement learning, or trial-and-error training. No RL recommendation acts on production systems. Presenter reference, not spoken: 24/7 coverage requires deployed, running workers. Current monitoring follows code events; runtime telemetry ingestion remains future work." data-spoken="ARI remembers verified fixes and uses that evidence when related code changes. In Defense Lab, a simulated defender observes suspicious traffic, tries a response, then learns from security and service outcomes. Code memory requests new checks. Reinforcement learning stays in simulation." data-duration-s="20">
+REFERENCE, NOT SPOKEN: Value chain: version-aware business intent -&gt; bounded attack evidence -&gt; human-approved repair -&gt; independent verification -&gt; saved regression evidence. Verify uses a fresh checkout and separate mutable state; approval keeps scope accountable. A past fix does not automatically verify a new commit. Monitoring follows code-change events when workers run; RL recommendations are simulation only. Existing product README/test evidence reviewed read-only; no new assessment or attack test executed for this presentation." data-spoken="Approval keeps the repair within human control. Separate verification checks it independently, then saves regression evidence for future changes. Monitoring requests fresh checks; reinforcement learning stays in simulation.">
         <div class="slide-head"><span class="brand-mini"><img class="brand-ant" src="ari-ant-mark.png" alt="" aria-hidden="true">Original Contribution / Build Quality &amp; Appropriate Technology</span><span class="slide-num">09</span></div>
         <h2 style="font-size:48px">Attack. Defend. <span class="accent">Verify.</span></h2>
         <span class="build-trigger" data-build="1"></span><span class="build-trigger" data-build="2"></span><span class="build-trigger" data-build="3"></span><span class="build-trigger" data-build="4"></span>
         <div class="team-arena">
           <div class="arena-side red-side"><p class="kicker">Red team</p><h2 style="margin-top:20px">Find + prove</h2><div class="arena-agents"><div class="arena-chip">SCOUT<small>Map intent and exposed entry points.</small></div><div class="arena-chip">PROBE<small>Test weaknesses inside the allowed scope.</small></div><div class="arena-chip">TRACE<small>Reproduce the path. Capture evidence.</small></div></div><p class="arena-result">OUTPUT → REPRODUCIBLE ATTACK PATH</p></div>
-          <div class="arena-side blue-side"><p class="kicker">Blue team</p><h2 style="margin-top:20px">Fix + fortify</h2><div class="arena-agents"><div class="arena-chip">DIAGNOSE<small>Connect the evidence to the root cause.</small></div><div class="arena-chip">PATCH<small>Propose a scoped, human-approved fix.</small></div><div class="arena-chip">FORTIFY<small>Add regression tests and guardrails.</small></div></div><p class="arena-result">OUTPUT → PATCH + REGRESSION DEFENSE</p></div>
-          <div class="arena-lock"></div><div class="verify-orb"><div><b>VERIFY</b><span>Trust neither side.<br>Retest everything.</span></div></div>
+          <div class="arena-side blue-side"><p class="kicker">Blue team</p><h2 style="margin-top:20px">Fix + fortify</h2><div class="arena-agents"><div class="arena-chip">DIAGNOSE<small>Connect the evidence to the root cause.</small></div><div class="arena-chip">PATCH<small>Human approval keeps repair scope controlled.</small></div><div class="arena-chip">FORTIFY<small>Add regression tests and guardrails.</small></div></div><p class="arena-result">OUTPUT → PATCH + REGRESSION DEFENSE</p></div>
+          <div class="arena-lock"></div><div class="verify-orb"><div><b>VERIFY</b><span>Fresh checkout. Check the repair independently.</span></div></div>
         </div>
         <span class="build-trigger" data-build="5"></span>
         <div class="monitoring-stage">
@@ -1140,7 +1185,9 @@ REFERENCE AND CUES, NOT SPOKEN: Clicks 1–4: Red finds and proves, Blue fixes a
         </div>
       </section>
 
-      <section class="slide market-position-slide" data-note="Capability landscape based on linked primary product pages, checked October 17, 2026. Groups are editorial navigation aids, not exclusive capability boundaries or measured rankings. Snyk and Aikido span scanning, fixes and pentesting; Veracode and Checkmarx also offer broader testing and remediation. GitHub, Semgrep and Sonar offer code workflows with remediation. XBOW focuses on autonomous pentesting; Pentera on automated security validation and remediation workflows. A placement never means a capability is absent elsewhere. Vendor descriptions are vendor-reported, not independently benchmarked. Entry: code/PR workflows. Click1: broader AppSec and attack validation. Click2: Ari proposed small-team workflow plus tradeoffs. Ari is a prototype: full local chain uses scripted AI transports; comparative performance and willingness to pay are not yet validated. Costs accrue per assessment; a human approves repairs. Source links are on every vendor name; detail in docs/competitor-landscape.md. Preserve these caveats in Q&amp;A." data-spoken="Security is a crowded, overlapping market. GitHub, Semgrep and Sonar work inside code review. Snyk, Aikido, Veracode and Checkmarx offer broader platforms, while XBOW and Pentera emphasize attack validation. Ari's proposed focus is a connected workflow for small teams: business intent, attack evidence and tested repair. Assessment costs and human approval remain, and comparative performance still needs validation." data-duration-s="25">
+      <section class="slide market-position-slide" data-note="SPOKEN: Nine competitors already offer overlapping scanning, remediation and attack validation. Ari proposes a connected small-team workflow. Comparative performance remains unvalidated; assessment costs and human review are tradeoffs.
+
+REFERENCE, NOT SPOKEN: Preserve nine-competitor landscape and linked primary sources. Capability groups overlap. Proposed positioning, not benchmark-proven advantage. No comparative runs supplied; docs/comparison-protocol.md is an empty evidence-ready protocol, not results. Pricing units/editions differ; docs/research-validation.md records primary pricing references. No cheapest/only end-to-end claim." data-spoken="Nine competitors already offer overlapping scanning, remediation and attack validation. Ari proposes a connected small-team workflow. Comparative performance remains unvalidated; assessment costs and human review are tradeoffs.">
         <div class="slide-head"><span class="brand-mini"><img class="brand-ant" src="ari-ant-mark.png" alt="" aria-hidden="true">Advantage over Alternatives</span><span class="slide-num">10</span></div>
         <h2>A crowded market.<br><span class="accent">Our focus: the connected workflow.</span></h2>
         <p class="landscape-caption">Capability landscape · Qualitative grouping, not a ranking · Names link to product sources</p>
@@ -1174,9 +1221,9 @@ REFERENCE AND CUES, NOT SPOKEN: Clicks 1–4: Red finds and proves, Blue fixes a
         <div class="map-limits" data-build="2"><span><strong>Tradeoff:</strong> assessment costs + human review.</span><span>Comparative performance is not yet validated.</span></div>
       </section>
 
-      <section class="slide quality-slide ai4-quality-slide" data-note="SPOKEN (2:24 to 2:50; about 26 seconds including clicks/pauses): Ari gives the user three clear actions: connect an authorized repository, review the evidence, and approve a proposed repair. Verification produces test results and saved regression evidence for a clearer release decision. The full prototype chain uses scripted AI responses; customer outcomes still need validation.
+      <section class="slide quality-slide ai4-quality-slide" data-note="SPOKEN: Connect an authorized repository, review evidence and approve the repair scope. Verification returns test evidence. The complete prototype chain uses scripted AI responses; product usability still needs observed testing.
 
-REFERENCE AND CUES, NOT SPOKEN: CUE: Segment 1 is visible on entry. Click once for segment 2, then advance. This is an explanatory illustration, not a screenshot of a customer outcome. Accessibility: keyboard navigation, text labels with glyphs, visible focus and reduced motion support; no formal WCAG certification claimed. REFERENCE, NOT SPOKEN: The complete local workflow has executed tests, independent Verify and retained regression evidence, but uses scripted/fake model transports; there is no complete live-provider seven-role trace or production-user result claimed. User research, observed task completion, time to verified fix, measured baseline versus Ari time savings and trust/acceptance feedback remain pending. Never convert prototype test evidence into an assertion that every vulnerability is fixed. OPTIONAL DEMO/Q&amp;A CUES, outside timed pitch: use a real run or clearly labeled recording; show reviewer bug, security investigation, human approval, proposed patch, independent test results, code-change reassessment, then Defense Lab with its simulation label visible. See docs/demo-presenter-cues.md." data-spoken="Ari gives the user three clear actions: connect an authorized repository, review the evidence, and approve a proposed repair. Verification produces test results and saved regression evidence for a clearer release decision. The full prototype chain uses scripted AI responses; customer outcomes still need validation." data-duration-s="26">
+REFERENCE, NOT SPOKEN: Presentation keyboard navigation and reduced motion are deck features, not evidence of product accessibility. Product frontend README describes explicit actions/status/provider labels, but observed usability, permission comprehension and WCAG conformance are not established. Evidence slots: exact product build, participant, task, independent completion, assistance, permission comprehension and elapsed time. No results supplied. Presentation/finance tests are not product security tests. Demo by Vihaan follows11; intentionally not scripted or redesigned here." data-spoken="Connect an authorized repository, review evidence and approve the repair scope. Verification returns test evidence. The complete prototype chain uses scripted AI responses; product usability still needs observed testing.">
         <div class="slide-head"><span class="brand-mini"><img class="brand-ant" src="ari-ant-mark.png" alt="" aria-hidden="true">Core Functionality / Build Quality &amp; Appropriate Technology</span><span class="slide-num">11</span></div>
         <span class="build-trigger" data-build="1"></span>
         <div class="ai4-quality-segment ai4-action-segment">
@@ -1186,9 +1233,9 @@ REFERENCE AND CUES, NOT SPOKEN: CUE: Segment 1 is visible on entry. Click once f
             <span class="ai4-flow-arrow" aria-hidden="true">→</span>
             <article><svg viewBox="0 0 200 160" aria-hidden="true"><rect x="31" y="17" width="112" height="125" rx="13" fill="#f8e7e3"/><path d="M51 44h72M51 63h45M51 85h36" stroke="#c2452d" stroke-width="6" stroke-linecap="round"/><circle cx="125" cy="99" r="31" fill="white" stroke="#1c1210" stroke-width="7"/><path d="M147 122l28 27" stroke="#1c1210" stroke-width="9" stroke-linecap="round"/></svg><h3>Review</h3><p>The evidence</p></article>
             <span class="ai4-flow-arrow" aria-hidden="true">→</span>
-            <article><svg viewBox="0 0 200 160" aria-hidden="true"><path d="M100 12l65 25v53c0 31-27 51-65 65-38-14-65-34-65-65V37z" fill="#f8e7e3" stroke="#c2452d" stroke-width="4"/><path d="M66 82l23 23 45-48" fill="none" stroke="#1f7a4d" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/></svg><h3>Approve</h3><p>The proposed repair</p></article>
+            <article><svg viewBox="0 0 200 160" aria-hidden="true"><path d="M100 12l65 25v53c0 31-27 51-65 65-38-14-65-34-65-65V37z" fill="#f8e7e3" stroke="#c2452d" stroke-width="4"/><path d="M66 82l23 23 45-48" fill="none" stroke="#1f7a4d" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/></svg><h3>Approve</h3><p>The repair scope</p></article>
           </div>
-          <div class="ai4-access"><b>Designed for clarity</b><span>Keyboard access</span><span>Clear labels</span><span>Reduced motion</span></div>
+          <div class="ai4-access"><b>Presentation access</b><span>Keyboard navigation</span><span>Clear labels</span><span>Reduced motion</span></div>
         </div>
         <div class="ai4-quality-segment ai4-proof-segment">
           <h2>What verification <span class="accent">produces</span></h2>
@@ -1205,23 +1252,18 @@ REFERENCE AND CUES, NOT SPOKEN: CUE: Segment 1 is visible on entry. Click once f
 
       <!-- FUTURE LIVE-DEMO INSERTION POINT: place the real product demo here when the hosted flow is ready. -->
 
-      <section class="slide dark customer-story-slide feedback-slide" data-note="SPOKEN: Five supplied prototype-feedback emails report reproduced issues, reviewed repairs and passing checks. Here is Jordan's example: the injection case stopped working and existing search tests passed.
+      <section class="slide dark customer-story-slide feedback-slide" data-note="SPOKEN: Five permitted feedback emails report reproduced issues and passing checks. Jordan reports the injection stopped and search tests passed. Samira’s request makes clearer permissions and code-processing explanations our next improvement.
 
-REFERENCE, NOT SPOKEN: This feedback/evidence slide follows the prototype workflow and verification section. Entry shows VC validation pending and the five supplied emails; one click enlarges Jordan's email and highlights the reported result. Next enters financials. Left from the enlarged view returns to the gallery; Left from the gallery returns to the prototype verification section. Screenshots supplied by the team, dated October17,2026, are reported prototype outcomes, not independently audited run artifacts or five paying customers. Samira also asks for clearer repository permissions and code-processing explanations. Preserve that caveat in discussion. VC feedback remains pending. Sources: docs/prototype-feedback.md." data-spoken="Five supplied prototype-feedback emails report reproduced issues, reviewed repairs and passing checks. Here is Jordan's example: the injection case stopped working and existing search tests passed." data-duration-s="14">
+REFERENCE, NOT SPOKEN: All five October17 original screenshots preserved; permission to present confirmed by current human user October17,2026. Outcomes are reported by email, not independently audited artifacts or paid commitments. Jordan exact quote retained; email also reports reviewed/merged/staging fix. Samira asks for permissions and processing clarity; marked next planned improvement, not delivered. VC feedback remains pending in notes only. Evidence slots: participant role/sample, observed time, accepted fixes, baseline, usability and signed commitments; do not invent. Sources docs/prototype-feedback.md." data-spoken="Five permitted feedback emails report reproduced issues and passing checks. Jordan reports the injection stopped and search tests passed. Samira’s request makes clearer permissions and code-processing explanations our next improvement.">
         <div class="slide-head"><span class="brand-mini"><img class="brand-ant" src="ari-ant-mark.png" alt="" aria-hidden="true">User Understanding / Evidence of Need</span><span class="slide-num">12</span></div>
         <span class="build-trigger" data-build="1"></span>
         <div class="customer-phase cp1">
           <h2>Feedback. <span class="accent">Evidence.</span></h2>
           <p class="feedback-summary">Prototype testers reported fixes that worked.</p>
           <div class="validation-columns">
-            <article class="validation-box vc-validation">
-              <h3>VC validation</h3>
-              <div class="vc-placeholder">Investor perspective</div>
-              <p>Feedback pending.<br>VC quote to be added.</p>
-            </article>
             <article class="validation-box prototype-validation">
-              <h3>Prototyping feedback &amp; proof</h3>
-              <p>Five feedback emails. Reproduced issues. Passing checks.</p>
+              <h3>Five reported prototype outcomes</h3>
+              <p>Reported: weakness reproduced → repair reviewed → checks passed</p>
               <div class="feedback-gallery" aria-label="Five supplied prototype feedback emails">
                 <figure class="feedback-email"><img src="feedback/priya.png" alt="Email from Priya Shah reporting a billing retry fix and passing payment tests"><figcaption>Priya · Billing retries</figcaption></figure>
                 <figure class="feedback-email is-featured"><img src="feedback/jordan.png" alt="Email from Jordan Ellis reporting the injection case stopped working and search tests passed"><figcaption>Jordan · SQL injection</figcaption></figure>
@@ -1229,7 +1271,7 @@ REFERENCE, NOT SPOKEN: This feedback/evidence slide follows the prototype workfl
                 <figure class="feedback-email"><img src="feedback/alex.png" alt="Email from Alex Rivera reporting a generic error response and passing error tests"><figcaption>Alex · Error disclosure</figcaption></figure>
                 <figure class="feedback-email"><img src="feedback/samira.png" alt="Email from Samira Okafor reporting traversal rejected and normal uploads passed, and requesting clearer permission information"><figcaption>Samira · Upload paths</figcaption></figure>
               </div>
-              <p class="feedback-cue">Next: a closer look at Jordan's result →</p>
+              <p class="feedback-next"><b>Next improvement:</b> clarify repository permissions and code processing.<br><span>Samira’s request · planned, not yet validated</span></p><p class="feedback-cue">Next: a closer look at Jordan's result →</p>
             </article>
           </div>
         </div>
@@ -1244,11 +1286,11 @@ REFERENCE, NOT SPOKEN: This feedback/evidence slide follows the prototype workfl
         </div>
       </section>
 
-      <section class="slide dark finance-slide" data-note="Proposed pilot prices: Founder49.99/7, Growth129.99/20, Scale359.99/60 assessments. Per included run7.14/6.50/6.00, volume discounts. API1.90/run,sandbox1/run,AWS7/account,support5/12/30,payments2.9%+0.30. Variable costs34.04971/81.06971/221.73971; margins31.9%/37.6%/38.4%. Shared fixed500/month, six founders,no pilot salaries. M1fivefreepilots cost161.50delivery+500shared=661.50. Founder-only forecast18.2%initialconversionproxy,42newpaid/month fromM2,2%monthlychurnassumed.42=round1000/24 from ChartMogul medianB2B time to1000subscribers, NOT a published monthlyaverage or matched acquisitionbenchmark. FirstPageSage18.2%organicopt-intrialconversion is not Ari evidence. Monthlycoverage32wholeactiveFounderaccounts; scenarioM2at42.91payers,revenue2145.0709,cost1961.0730561,net183.9978439. CumulativerecoveryM3. Peakfundinggap661.50atM1. Full12monthgraph,three manualmilestones,noautoplay/selectors. Not full economicprofitability. Excludes founderpay/labor,taxes,legal/compliance,paidacquisition,onboardinglabor,extrarechecks/overages. No postpilot priceincreases modeled. Validate costs and willingness to pay. Sources: https://chartmogul.com/reports/saas-go-to-market-report/ and https://firstpagesage.com/seo-blog/saas-free-trial-conversion-rate-benchmarks/.
+      <section class="slide dark finance-slide" data-note="SPOKEN: Pilot plans cost forty-nine ninety-nine, one hundred twenty-nine ninety-nine, and three hundred fifty-nine ninety-nine. At full allowance, modeled contribution is positive before shared tools and founder labor. Forty-two new paid accounts monthly is a derived planning target, not traction. With our supplied inputs, monthly cash coverage is conditional in month two and earlier losses recover in month three. We will log delivery costs and support time before expanding.
 
-" data-spoken="Our introductory workspace plans start at forty-nine ninety-nine for seven full assessments. Growth offers twenty for one hundred twenty-nine ninety-nine, and Scale offers sixty for three hundred fifty-nine ninety-nine. The effective price per included assessment falls as usage grows. These are pilot prices to validate demand, with future pricing based on measured costs and customer value. Our six-founder team budgets five hundred dollars monthly for shared tools, before customer delivery. Five unpaid pilots bring month-one costs to about six hundred sixty-two dollars. We use an eighteen-point-two percent trial-conversion proxy and derive forty-two new paid users monthly from ChartMogul’s two-year subscriber milestone. These are assumptions, not Ari results. On Founder-only pricing, this scenario covers monthly cash costs in month two at about forty-three paying users, and recovers earlier losses in month three. Founder pay, acquisition and extra usage are excluded." data-duration-s="64">
+REFERENCE, NOT SPOKEN: Keep canonical public/pilot-forecast.js and approved prices/allowances. Inputs: team-provided1.90API/run; planned1sandbox/run,7AWS/account,5/12/30support/storage; payment2.9%+0.30.500sharedtools separate from delivery. Founder/Growth/Scale full-use costs34.04971/81.06971/221.73971. Contribution is before shared overhead and labor, not full profit.42=round1000/24 derived from ChartMogul B2B milestone, not measured gross monthly intake; citation directly below42.18.2%opt-in organic trial proxy,2%churn assumption. Coverage32Founder accounts; conditionalM2monthly coverage/M3cumulative recovery. Founder labor, acquisition, taxes/legal and extra use excluded. No prices changed; introductory pilot pricing requires validation. See docs/economic-sensitivity.md, existing pilot-cost-measurement.csv and docs/pilot-plan.md for cost/capacity gates." data-spoken="Pilot plans cost forty-nine ninety-nine, one hundred twenty-nine ninety-nine, and three hundred fifty-nine ninety-nine. At full allowance, modeled contribution is positive before shared tools and founder labor. Forty-two new paid accounts monthly is a derived planning target, not traction. With our supplied inputs, monthly cash coverage is conditional in month two and earlier losses recover in month three. We will log delivery costs and support time before expanding.">
         <div class="slide-head"><span class="brand-mini"><img class="brand-ant" src="ari-ant-mark.png" alt="" aria-hidden="true">Revenue or Funding Model / Costs &amp; Sustainability</span><span class="slide-num">13</span></div>
-        <h2 style="font-size:47px">Lean to launch. <span class="accent">Built to sustain.</span></h2>
+        <h2 style="font-size:47px">Lean to launch. <span class="accent">Measure to sustain.</span></h2>
         <span class="build-trigger" data-build="1"></span><span class="build-trigger" data-build="2"></span><span class="build-trigger" data-build="3"></span><span class="build-trigger" data-build="4"></span>
         <div class="finance-stage">
           <div class="finance-scene fscene1">
@@ -1259,7 +1301,7 @@ REFERENCE, NOT SPOKEN: This feedback/evidence slide follows the prototype workfl
               <div class="price-card"><p class="kicker muted">Enterprise</p><strong>Custom</strong><small>Per-workspace agreement<br>Custom assessment scope<br>Custom code volume<br>Onboarding agreed in scope</small></div>
             </div>
             <p class="pricing-shared">Code review · Seven agents · Fix verification</p>
-            <div class="pricing-terms"><b>Proposed plans</b><span>$25 / scoped extra assessment</span><span>Monitoring + extras: budget approval</span></div>
+            <div class="pricing-terms"><b>Introductory pilot pricing</b><span>$25 / scoped extra assessment</span><span>Monitoring + extras: budget approval</span></div>
           </div>
           <div class="finance-scene fscene2"><p class="section-tag">Growth plan / forecast monthly economics / 20 assessments</p><div class="waterfall"><div class="waterbar"><i style="height:180px"></i><b>$129.99<br>REVENUE</b></div><div class="waterbar"><i style="height:90.01px"></i><b>API + INFRA + AWS<br>−$65</b></div><div class="waterbar"><i style="height:5.64px"></i><b>PAYMENTS<br>−$4.07</b></div><div class="waterbar"><i style="height:16.62px"></i><b>STORAGE + SUPPORT<br>−$12</b></div><div class="waterbar"><i style="height:67.74px"></i><b>$48.92<br>CONTRIBUTION</b></div></div><div class="cost-detail" aria-label="Forecast monthly Growth-plan cost breakdown, approximately 81.07 dollars total before shared fixed costs and additional re-checks"><div><b>$38 · AI usage</b><small>Team-supplied input: 20 × $1.90/run</small></div><div><b>$20 · Infrastructure reserve</b><small>Estimate; log sandbox runtime</small></div><div><b>$7 · AWS allocation</b><small>Estimate; reconcile actual AWS usage</small></div><div><b>$4.07 · Payment estimate</b><small>Estimate: 2.9% + $0.30/payment</small></div><div><b>$12 · Storage + support</b><small>Estimate; measure storage + support time</small></div></div><p class="prototype-cost-baseline">Estimated Growth cost $81.07 · 38% modeled contribution margin<br>Pilot gate: log every run; expand only after positive observed contribution. Extra re-checks excluded.</p></div>
           <div class="finance-scene fscene3"><div class="finance-chart-wrap">
@@ -1288,21 +1330,21 @@ REFERENCE, NOT SPOKEN: This feedback/evidence slide follows the prototype workfl
 
       </section>
 
-      <section class="slide market-slide" data-note="SPOKEN (3:22 to 3:38; about 16 seconds including clicks/pauses): We size our initial opportunity using U.S. software publishers as a transparent proxy. One hundred to two hundred paying customers is our growth target, not traction or break-even.
+      <section class="slide market-slide" data-note="SPOKEN: Census software publishers give us a broad proxy, not a count of qualified buyers. We must confirm SaaS fit, AI use, security staffing and the budget owner account by account.
 
-REFERENCE AND CUES, NOT SPOKEN: Do not say TAM/SAM/SOM. Click through the full opportunity, starting market, and obtainable first segment. Presenter reference, not spoken: Source: U.S. Census 2022 SUSB, NAICS 511210. Caveat: software publishers are an ICP proxy; the data does not identify SaaS, AI adoption, or security staffing. 2022 Census SUSB / NAICS 511210 / forecast ACV 2022 Census SUSB / transparent ICP proxy Growth target / not traction or break-even. ARR range155988to311976 is pricedatGrowth, not actualblendedARR" data-spoken="We size our initial opportunity using U.S. software publishers as a transparent proxy. One hundred to two hundred paying customers is our growth target, not traction or break-even." data-duration-s="16">
+REFERENCE, NOT SPOKEN: Census2022SUSB NAICS511210 employer firms: enterprise-size37(&lt;500)=13254; codes03–10(5–49)=4246. Direct source rechecked October17,2026. AnnualGrowth129.99*12=1559.88; products20674649.52/6623250.48; target100–200=155988–311976. Counts are software-publisher proxies, not verified SaaS/AI/no-security-staff accounts; no incompatible population filters multiplied. Buyer is founder/engineering lead, payer workspace company. Validate account fit and budget owner in initial100-target list, record exclusions and duplicates. Source https://www2.census.gov/programs-surveys/susb/tables/2022/us_state_naics_detailedsizes_2022.txt ." data-spoken="Census software publishers give us a broad proxy, not a count of qualified buyers. We must confirm SaaS fit, AI use, security staffing and the budget owner account by account.">
         <div class="slide-head"><span class="brand-mini"><img class="brand-ant" src="ari-ant-mark.png" alt="" aria-hidden="true">Market / Beneficiary Sizing / Forecast</span><span class="slide-num">14</span></div>
         <span class="build-trigger" data-build="1"></span><span class="build-trigger" data-build="2"></span><span class="build-trigger" data-build="3"></span>
-        <div class="market-viewport"><div class="market-world" aria-label="Outer circle: U.S. software publishers under 500 employees. Middle circle: firms with 5–49 employees. Inner circle: 100 to 200 target paying customers."><div class="market-circle circle-full"><span class="ring-description"><strong>Under 500 employees</strong>U.S. software publishers</span></div><div class="market-circle circle-start"><span class="ring-description"><strong>5–49 employees</strong>U.S. software publishers</span></div><div class="market-circle circle-win"><span class="ring-description"><strong>Growth target</strong>Target paying<br>customers</span></div></div><div class="market-ring-labels"><div class="market-ring-label"><b>13,254</b><span>FULL OPPORTUNITY</span></div><div class="market-ring-label"><b>4,246</b><span>STARTING COHORT</span></div><div class="market-ring-label"><b>100–200</b><span>GROWTH TARGET</span></div></div></div>
-        <div class="market-detail"><div class="market-detail-copy md1"><p class="section-tag">The full opportunity</p><strong>$20.7M</strong><p>13,254 U.S. software-publisher firms under 500 employees × $1,559.88 annual Growth plan.</p></div><div class="market-detail-copy md2"><p class="section-tag">Our starting market</p><strong>$6.6M</strong><p>4,246 firms with 5–49 employees × $1,559.88 annual Growth plan.</p></div><div class="market-detail-copy md3"><p class="section-tag">Our growth target, not break-even</p><strong>$156K–$312K</strong><p>100–200 paying customers × $1,559.88 annual Growth-plan proxy.</p></div></div>
-
+        <div class="market-viewport"><div class="market-world" aria-label="Outer circle: U.S. software publishers under 500 employees. Middle circle: firms with 5–49 employees. Inner circle: 100 to 200 target paying customers."><div class="market-circle circle-full"><span class="ring-description"><strong>Under 500 employees</strong>U.S. software publishers</span></div><div class="market-circle circle-start"><span class="ring-description"><strong>5–49 employees</strong>U.S. software publishers</span></div><div class="market-circle circle-win"><span class="ring-description"><strong>Growth target</strong>Target paying<br>customers</span></div></div><div class="market-ring-labels"><div class="market-ring-label"><b>13,254</b><span>BROAD PROXY</span></div><div class="market-ring-label"><b>4,246</b><span>SMALL-FIRM PROXY</span></div><div class="market-ring-label"><b>100–200</b><span>GROWTH TARGET</span></div></div></div>
+        <div class="market-detail"><div class="market-detail-copy md1"><p class="section-tag">Broad publisher proxy</p><strong>$20.7M</strong><p>13,254 U.S. software-publisher firms under 500 employees × $1,559.88 annual Growth plan.</p></div><div class="market-detail-copy md2"><p class="section-tag">Smaller-firm proxy</p><strong>$6.6M</strong><p>4,246 firms with 5–49 employees × $1,559.88 annual Growth plan.</p></div><div class="market-detail-copy md3"><p class="section-tag">Our growth target, not break-even</p><strong>$156K–$312K</strong><p>100–200 paying customers × $1,559.88 annual Growth-plan proxy.</p></div></div>
+<div class="market-buyer"><b>Buyer: founder / engineering lead</b><span>Small AI-assisted SaaS team without dedicated security staff</span><a href="https://www.census.gov/data/tables/2022/econ/susb/2022-susb-annual.html" target="_blank" rel="noopener">2022 Census SUSB · Publisher proxy, not a qualified-buyer count</a></div>
       </section>
 
-      <section class="slide adoption-slide" data-note="SPOKEN (3:38 to 3:56; about 18 seconds including clicks/pauses): Acquire through founder outreach and accelerators. Connect the repository and establish a baseline. Detect, patch and independently verify. Review results, then expand. The funnel is a projection, not achieved traction.
+      <section class="slide adoption-slide" data-note="SPOKEN: Our first milestone is five authorized pilots and a goal of three total paid accounts. Each pilot records the outcome, repair decision, verification, cost, support time and willingness to continue or pay.
 
-REFERENCE AND CUES, NOT SPOKEN: Entry emphasizes Acquire; clicks 1, 2 and 3 emphasize Set up, Defend and Review. All four milestones remain visible. Next advances to the roadmap; rewind restores the same states. The acquisition funnel is a projection: 100 targets to 30 calls to 10 design partners to 5 pilots to 3 paid. These are planning assumptions, not achieved traction or measured conversion rates. Three paid is an initial recruitment goal, not the monthly growth assumption or a proven conversion rate. The finance slide illustrates a separate42newpaid/month growth scenario with0.91expectedinitialpilotconverts. The source supports a24monthsubscriber milestone, not constant monthly acquisition. Direct buyers do not receive another free full assessment in that model; if offered, add cost first. Track contacts, calls, pilot participants, direct-paid versus converted, and channel/time costs. Start with an authorized repository, baseline, observation-only configuration and human approval boundaries. Repairs remain approval-gated; independent verification and sandbox validation belong to the prototype workflow. The full prototype model chain uses scripted transport; a complete live-provider trace remains a future gate. This is not autonomous production network defense. Review results before deciding whether to expand; customer outcomes and time savings remain unvalidated." data-spoken="Acquire through founder outreach and accelerators. Connect the repository and establish a baseline. Detect, patch and independently verify. Review results, then expand. The funnel is a projection, not achieved traction." data-duration-s="18">
+REFERENCE, NOT SPOKEN: All targets planned.100contacts/30calls/10designpartners/5pilots/3TOTALpaid goal is a recruitment milestone, not achieved funnel or3/5conversion. Separate from later42/month intake scenario. Growth owner maintains weekly contact/call/paid channel log; product owner records comprehension/acceptance; security/backend record authorized outcome and independent evidence; finance/growth log delivery/support and pay decisions. Founder outreach and accelerator introductions are channels to test, no signed partners implied. docs/pilot-plan.md defines scorecard/capacity. Expansion requires understood permissions, complete evidence and positive observed contribution at promised allowance; missing observations delay expansion." data-spoken="Our first milestone is five authorized pilots and a goal of three total paid accounts. Each pilot records the outcome, repair decision, verification, cost, support time and willingness to continue or pay.">
         <div class="slide-head"><span class="brand-mini"><img class="brand-ant" src="ari-ant-mark.png" alt="" aria-hidden="true">GO-TO-MARKET / DEPLOYMENT / CUSTOMER WORKFLOW</span><span class="slide-num">15</span></div>
-        <h2>From first client to <span class="accent">active defense.</span></h2>
+        <h2>Five pilots. <span class="accent">Earn the next stage.</span></h2>
         <span class="build-trigger" data-build="1"></span><span class="build-trigger" data-build="2"></span><span class="build-trigger" data-build="3"></span>
         <!-- Lucide SVG icons: https://github.com/lucide-icons/lucide
 ISC License
@@ -1362,7 +1404,7 @@ OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
                 <circle cx="6" cy="18" r="3" />
               </svg>
             <h3>SET UP</h3>
-            <span class="milestone-copy">Connect repo → Baseline</span>
+            <span class="milestone-copy">Explain scope → Authorize</span>
           </li>
           <li class="milestone">
             <span class="milestone-number">03</span>
@@ -1381,7 +1423,7 @@ OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
                 <path d="m9 12 2 2 4-4" />
               </svg>
             <h3>DEFEND</h3>
-            <span class="milestone-copy">Detect → Patch → Verify</span>
+            <span class="milestone-copy">Outcome → Repair decision</span>
           </li>
           <li class="milestone">
             <span class="milestone-number">04</span>
@@ -1404,43 +1446,45 @@ OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
                 <path d="M8 14.656V21" />
               </svg>
             <h3>REVIEW</h3>
-            <span class="milestone-copy">Results → Expand</span>
+            <span class="milestone-copy">Verify → Cost → Pay decision</span>
           </li>
-        </ol>
+        </ol><div class="pilot-scorecard"><b>Each authorized pilot records</b><span>Outcome + repair decision</span><span>Verification evidence</span><span>Cost + support time</span><span>Continue / pay decision</span></div>
         <div class="milestone-funnel" aria-label="Projected acquisition funnel">
-          <span class="projection-label">INITIAL PILOT TARGETS</span>
+          <span class="projection-label">PROPOSED FIRST RECRUITMENT MILESTONE</span>
           <div class="projection-flow">
             <span class="projection-hop"><b>100</b> Targets</span><span class="projection-arrow" aria-hidden="true">→</span>
             <span class="projection-hop"><b>30</b> Calls</span><span class="projection-arrow" aria-hidden="true">→</span>
             <span class="projection-hop"><b>10</b> Design Partners</span><span class="projection-arrow" aria-hidden="true">→</span>
             <span class="projection-hop"><b>5</b> Pilots</span><span class="projection-arrow" aria-hidden="true">→</span>
-            <span class="projection-hop"><b>3</b> Total paid</span>
+            <span class="projection-hop"><b>3</b> Total paid goal</span>
           </div>
-        </div>
+        </div><p class="pilot-gate">Planned gate: permissions understood + positive observed contribution. Weekly owner review.</p>
       </section>
 
-      <section class="slide dark road-slide" data-note="Proposed gates, not commitments or traction. Today local workflow has scripted full-chain transport. M1five scoped pilots validate live-provider execution with existing six founders and capped product API spending. M2–3hosted beta tests paid conversion; needs500sharedmonthly tools PLUS customer delivery costs, not an all-in500budget. M4–6multi-repo pilots follow measured trust, cost and value; needs measured compute/support. Enterprise later, no promised date, requires controls/support readiness and revenue or funding. Every sign states resources and main risk. No new hiring promised; workload gates expansion. Road ant animation and five click states preserved." data-spoken="Month one: validate live-provider assessments with five pilots, using our six founders and capped compute. The risk is unreliable findings. Months two and three: launch a hosted beta and test paid conversion within our tools and delivery budget. Months four to six: expand to multiple repositories only after measuring trust and cost. Enterprise comes later, when permissions, reliability and support are proven." data-duration-s="32">
+      <section class="slide dark road-slide" data-note="SPOKEN: Named owner roles review the gates weekly. Live execution and five pilot records precede beta; paid decisions and measured contribution precede expansion. If a gate fails, narrow scope, fix reliability or reprice.
+
+REFERENCE, NOT SPOKEN: Proposed gates and owner roles, not commitments or new hires. Today engineering confirms local artifact trace. Month1 security/backend: live-provider trace plus5authorized pilot records. Months2–3 product/growth: recorded paid decisions and positive measured contribution. Months4–6 platform: isolation and reliability checks before multi-repo. Later founders: support/controls/funding ready. Fallbacks shown. Six founders and500shared tools are resources, not all-in launch budget. docs/pilot-plan.md records exit evidence and capacity constraints. Preserve ant clearance and five builds." data-spoken="Named owner roles review the gates weekly. Live execution and five pilot records precede beta; paid decisions and measured contribution precede expansion. If a gate fails, narrow scope, fix reliability or reprice.">
         <div class="slide-head"><span class="brand-mini"><img class="brand-ant" src="ari-ant-mark.png" alt="" aria-hidden="true">Roadmap &amp; Scale</span><span class="slide-num">16</span></div>
         <h2 style="font-size:46px">Proof first. <span class="accent">Scale second.</span><span style="display:block;font-size:16px;letter-spacing:0;margin-top:10px;color:#ffb09f">Proposed timelines · Expansion follows measured trust and cost</span></h2>
         <span class="build-trigger" data-build="1"></span><span class="build-trigger" data-build="2"></span><span class="build-trigger" data-build="3"></span><span class="build-trigger" data-build="4"></span><span class="build-trigger" data-build="5"></span>
         <div class="road-stage">
           <svg class="road-svg" viewBox="0 0 1280 483" preserveAspectRatio="none" aria-hidden="true"><defs><linearGradient id="roadGlow" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#8f2f1e"/><stop offset="1" stop-color="#c2452d"/></linearGradient></defs><path d="M80 445 C290 440 330 410 480 400 C650 388 735 345 900 335 C1030 326 1110 302 1200 300" fill="none" stroke="rgba(255,255,255,.12)" stroke-width="140" stroke-linecap="round"/><path d="M80 445 C290 440 330 410 480 400 C650 388 735 345 900 335 C1030 326 1110 302 1200 300" fill="none" stroke="url(#roadGlow)" stroke-width="86" stroke-linecap="round"/><path d="M80 445 C290 440 330 410 480 400 C650 388 735 345 900 335 C1030 326 1110 302 1200 300" fill="none" stroke="rgba(255,255,255,.75)" stroke-width="4" stroke-dasharray="18 22"/></svg>
           <div class="road-ant" role="img" aria-label="Ant crawling along the roadmap"><svg viewBox="0 0 90 64" aria-hidden="true"><g class="crawl-body"><path class="crawl-leg crawl-tripod-a" d="M46 27L58 13 69 10"/><path class="crawl-leg crawl-tripod-b" d="M43 29L43 12 50 5"/><path class="crawl-leg crawl-tripod-a" d="M38 30L25 17 14 16"/><path class="crawl-leg crawl-tripod-b" d="M48 35L59 47 73 48"/><path class="crawl-leg crawl-tripod-a" d="M43 36L43 52 51 59"/><path class="crawl-leg crawl-tripod-b" d="M38 35L26 47 13 49"/><g fill="white"><ellipse cx="24" cy="33" rx="17" ry="10" transform="rotate(-10 24 33)"/><ellipse cx="44" cy="32" rx="10" ry="6"/><ellipse cx="61" cy="29" rx="9" ry="8" transform="rotate(-15 61 29)"/></g><path d="M65 23L72 14 81 11M69 27L79 21 86 22" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/></g></svg></div>
-          <div class="road-sign rs1"><b>Today<br>Local prototype</b><span>Seven-agent workflow</span><span><em>Needs</em><br>6 founders · local tests</span><span><em>Risk</em><br>Scripted model transport</span></div><div class="road-sign rs2"><b>Month 1<br>5 scoped pilots</b><span>Live-provider trace</span><span><em>Needs</em><br>Existing team + capped API</span><span><em>Risk</em><br>Unreliable findings</span></div><div class="road-sign rs3"><b>Months 2–3<br>Hosted beta</b><span>Test paid conversion</span><span><em>Needs</em><br>$500 tools + delivery costs</span><span><em>Risk</em><br>Low conversion / trust</span></div><div class="road-sign rs4"><b>Months 4–6<br>Multi-repo pilots</b><span>Expand after measured value</span><span><em>Needs</em><br>Measured compute + support</span><span><em>Risk</em><br>Permissions / rising cost</span></div><div class="road-sign rs5"><b>Later<br>Enterprise gate</b><span>Controls + support readiness</span><span><em>Needs</em><br>Revenue or new funding</span><span><em>Risk</em><br>Reliability / compliance</span></div>
+          <div class="road-sign rs1"><b>Today<br>Local prototype</b><span class="road-owner">Owner: Engineering leads</span><span><em>Exit</em><br>Trace + artifacts</span><span><em>Needs</em><br>6 founders · local tests</span><span><em>Risk</em> Scripted transport</span><span class="road-fallback"><em>If unmet</em><br>Keep scope local</span></div><div class="road-sign rs2"><b>Month 1<br>5 scoped pilots</b><span class="road-owner">Owner: Security + backend</span><span><em>Exit</em><br>Live trace + 5 records</span><span><em>Needs</em><br>Team + capped API</span><span><em>Risk</em> Unreliable findings</span><span class="road-fallback"><em>If unmet</em><br>Fix before expansion</span></div><div class="road-sign rs3"><b>Months 2–3<br>Hosted beta</b><span class="road-owner">Owner: Product + growth</span><span><em>Exit</em><br>Paid decisions + margin</span><span><em>Needs</em><br>$500 tools + delivery</span><span><em>Risk</em> Low trust / conversion</span><span class="road-fallback"><em>If unmet</em><br>Narrow scope or reprice</span></div><div class="road-sign rs4"><b>Months 4–6<br>Multi-repo pilots</b><span class="road-owner">Owner: Platform leads</span><span><em>Exit</em><br>Isolation + reliability</span><span><em>Needs</em><br>Compute + support</span><span><em>Risk</em> Permissions / cost</span><span class="road-fallback"><em>If unmet</em><br>Stay single-repo</span></div><div class="road-sign rs5"><b>Later<br>Enterprise gate</b><span class="road-owner">Owner: Founding team</span><span><em>Exit</em><br>Controls + support ready</span><span><em>Needs</em><br>Revenue or new funding</span><span><em>Risk</em> Reliability / compliance</span><span class="road-fallback"><em>If unmet</em><br>Defer enterprise</span></div>
         </div>
       </section>
 
-      <section class="slide team-final-slide" data-note="SPOKEN (4:12 to 4:22; about 10 seconds including clicks/pauses): Our team brings cybersecurity and agentic research, reinforcement learning, data science, industrial engineering, and venture capital experience.
+      <section class="slide team-final-slide" data-note="SPOKEN: Our six-person team brings the supplied research, engineering and business experience shown here.
 
-REFERENCE AND CUES, NOT SPOKEN: Click through six contributors, then advance to the closing slide. All six contributors have supplied photos; credentials were supplied by the team and have not been independently verified." data-spoken="Our team brings cybersecurity and agentic research, reinforcement learning, data science, industrial engineering, and venture capital experience." data-duration-s="10">
+REFERENCE, NOT SPOKEN: Supplied team names/photos/credentials preserved without verification or embellishment. Contribution ownership is described separately in originality-disclosure.md; eligibility is subject to organizer rules, not an assurance by this deck." data-spoken="Our six-person team brings the supplied research, engineering and business experience shown here.">
         <div class="slide-head"><span class="brand-mini"><img class="brand-ant" src="ari-ant-mark.png" alt="" aria-hidden="true">Build Quality &amp; Appropriate Technology / Team Contributions</span><span class="slide-num">17</span></div>
         <h2 style="font-size:46px">Built by people who <span class="accent">ship.</span></h2>
         <div class="people-grid"><div class="person-card" data-build="1"><img class="photo-hole person-photo" src="saicharan-chowdarapu.png" alt="Saicharan Chowdarapu" width="92" height="92"><div><b>Saicharan Chowdarapu</b><span title="Late-growth capital investment research intern, Georgia House Technology &amp; Infrastructure Innovation Committee">Business Growth Research<br>at GA House</span></div></div><div class="person-card" data-build="2"><img class="photo-hole person-photo" src="vihaan-krishna.png" alt="Vihaan Krishna" width="92" height="92"><div><b>Vihaan Krishna</b><span>Agentic Research at MIT</span></div></div><div class="person-card" data-build="3"><img class="photo-hole person-photo" src="alan-mozhoor.png" alt="Alan Mozhoor" width="92" height="92"><div><b>Alan Mozhoor</b><span>RL Research at GT</span></div></div><div class="person-card" data-build="4"><img class="photo-hole person-photo" src="adam-isaac.jpeg" alt="Adam Isaac" width="92" height="92"><div><b>Adam Isaac</b><span>Data Science Intern at Apex146</span></div></div><div class="person-card" data-build="5"><img class="photo-hole person-photo" src="srihith-yandra.png" alt="Srihith Yandra" width="92" height="92"><div><b>Srihith Yandra</b><span>IE Student at Georgia Tech</span></div></div><div class="person-card" data-build="6"><img class="photo-hole person-photo" src="sarosh-doddaka.png" alt="Sarosh Doddaka" width="92" height="92"><div><b>Sarosh Doddaka</b><span>Deal Team at 3Lines Venture Capital</span></div></div></div>
       </section>
 
-      <section class="slide dark finale-slide" data-note="SPOKEN (4:22 to 4:36; about 14 seconds including clicks/pauses): AI has made it possible for anyone to build software. Our goal is to make sure anyone can build software they can trust.
+      <section class="slide dark finale-slide" data-note="SPOKEN: We are seeking five qualified SaaS design partners for authorized, scoped pilots.
 
-REFERENCE AND CUES, NOT SPOKEN: Reveal six visual memories. Click 7 connects them; click 8 collapses the story into the ant and ARI. Hold the final brand frame and say: AI has made it possible for anyone to build software. Our goal is to make sure anyone can build software they can trust. This is our vision, not a guarantee of vulnerability-free software." data-spoken="AI has made it possible for anyone to build software. Our goal is to make sure anyone can build software they can trust." data-duration-s="14">
+REFERENCE, NOT SPOKEN: One ask: seek five qualified SaaS design partners for authorized scoped pilots. Request/goal only, no committed partner inference. Preserve six-part recap, connecting graphic and final Ari animation." data-spoken="We are seeking five qualified SaaS design partners for authorized, scoped pilots.">
         <div class="recap-stage">
           <div class="recap-cell" data-build="1" aria-label="Founder growth graphic"><svg viewBox="0 0 300 180"><circle cx="150" cy="48" r="22" fill="none" stroke="#fff" stroke-width="6"/><path d="M150 70v58m0-36l-50 34m50-34l50 34m-50 2l-34 48m34-48l34 48" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round"/><circle cx="50" cy="45" r="27" fill="#c2452d"/><circle cx="250" cy="45" r="27" fill="#c2452d"/><rect x="32" y="132" width="55" height="28" rx="8" fill="#f8e7e3"/><rect x="214" y="132" width="55" height="28" rx="8" fill="#f8e7e3"/></svg></div>
           <div class="recap-cell" data-build="2" aria-label="Breach graphic"><svg viewBox="0 0 300 180"><path d="M20 90h260" stroke="#c2452d" stroke-width="26"/><path d="M154 15l-18 50 25 21-34 35 24 44" fill="none" stroke="#fff" stroke-width="7"/><rect x="38" y="38" width="62" height="38" rx="10" fill="#f8e7e3" transform="rotate(-10 38 38)"/><rect x="200" y="112" width="62" height="38" rx="10" fill="#f8e7e3" transform="rotate(12 200 112)"/></svg></div>
@@ -1450,7 +1494,7 @@ REFERENCE AND CUES, NOT SPOKEN: Reveal six visual memories. Click 7 connects the
           <div class="recap-cell" data-build="6" aria-label="Roadmap graphic"><svg viewBox="0 0 300 180"><path d="M10 170C65 120 94 145 142 95s78-27 148-85" fill="none" stroke="#c2452d" stroke-width="42" stroke-linecap="round"/><path d="M10 170C65 120 94 145 142 95s78-27 148-85" fill="none" stroke="#fff" stroke-width="3" stroke-dasharray="10 12"/><circle cx="55" cy="140" r="10" fill="#fff"/><circle cx="145" cy="92" r="10" fill="#fff"/><circle cx="245" cy="34" r="10" fill="#fff"/></svg></div>
           <svg class="recap-lines" data-build="7" viewBox="0 0 1164 628" aria-hidden="true"><g stroke="#c2452d" stroke-width="5" fill="none"><path d="M194 157L582 314M582 157L582 314M970 157L582 314M194 471L582 314M582 471L582 314M970 471L582 314"/></g></svg><img class="recap-ant" data-build="7" src="ari-ant-mark.png" alt="Ari ant at the center of the complete story">
         </div>
-        <div class="brand-finale" data-build="8"><img src="ari-ant-mark.png" alt="Ari ant"><h1>ARI</h1></div>
+        <div class="brand-finale" data-build="8"><img src="ari-ant-mark.png" alt="Ari ant"><h1>ARI</h1><p class="closing-ask">Seeking five SaaS design partners<br><span>for authorized, scoped pilots.</span></p></div>
       </section>
     </main>
 
