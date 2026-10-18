@@ -37,3 +37,7 @@ Edit `public/index.html` and redeploy to publish changes.
 ## Four-AI coordination
 
 Every AI editor must read [AGENTS.md](AGENTS.md) and follow the [shared coordination protocol](coordination/README.md). Run the setup command in each clone, acquire the shared GitHub write lock before editing, and post BEFORE/AFTER messages. Keep the lock through push and deployment. This prevents participating editors from replacing each other's presentation changes.
+
+## Monthly pilot forecast
+
+Slide 12's forecast starts with five free Month 1 pilots and advances one month per click through Month 12. The active month highlights new accounts, conversion, churn and cash impact. Intake/churn are editable assumptions; conversion is a disclosed trial proxy. See `docs/pilot-forecast.md`. Run `node --test tests/pilot-forecast.test.cjs tests/presentation-navigation.test.cjs`.

@@ -51,12 +51,13 @@ function presentation(hash = '#1', options = {}) {
       : selector === '.node-copy, .finance-scene' ? slide.panels : [];
     return slide;
   });
+  if (options.finance) slides[1].classList.toggle('finance-slide', true);
   const selectors = Object.fromEntries([
     '#presentation-slides-wrapper', '#counter', '#progress', '#notes',
     '#noteText', '#prev', '#next', '#fullscreen', '#notesToggle', '#fullscreenStatus',
     '#forecastIntake', '#forecastConversion', '#forecastChurn', '#forecastView',
     '#forecastThreshold', '#forecastFunding', '#forecastMonthly', '#forecastRecovery',
-    '#forecastConverted', '#forecastAccessible', '#economicsChart', '#forecastChartFallback', '#formationChart',
+    '#forecastMonthDetail', '#forecastMonthTitle', '#forecastMonthCue', '#forecastMonthEvent', '#forecastMonthCash', '#forecastMonthDelta', '#forecastConverted', '#forecastAccessible', '#economicsChart', '#forecastChartFallback', '#formationChart',
   ].map(selector => [selector, element(['#prev', '#next', '#fullscreen', '#notesToggle'].includes(selector) ? 'button' : 'div')]));
   selectors['#presentation-slides-wrapper'].querySelectorAll = () => slides;
   for (const [id, value] of Object.entries({ '#forecastIntake':'2', '#forecastConversion':'0.182',
@@ -520,4 +521,42 @@ test('clicking a forecast control label does not advance the slide', () => {
   const deck = presentation('#2');
   deck.tap(1000, { target:element('label', ['.forecast-controls']) });
   assert.equal(deck.slides[1].dataset.buildCurrent, '0');
+});
+
+
+test('the finance graph reveals exactly one month per click and rewinds within the graph', () => {
+  const d = presentation('#2', { counts:[0,4,1], forecast:true, chart:true, finance:true });
+  d.build(1,3);
+  for (let month=1; month<=12; month++) {
+    assert.equal(d.selectors['#forecastMonthTitle'].textContent, `Month ${month} / 12`);
+    assert.equal(d.chart().data.datasets[0].data.filter(x=>x!==null).length,month);
+    assert.equal(d.slides[1].dataset.buildCurrent,'3');
+    if(month<12)d.click('#next');
+  }
+  d.click('#next'); assert.equal(d.slides[1].dataset.buildCurrent,'4');
+  d.click('#prev'); assert.equal(d.selectors['#forecastMonthTitle'].textContent,'Month 12 / 12');
+  for(let month=11;month>=1;month--){d.click('#prev'); assert.equal(d.selectors['#forecastMonthTitle'].textContent,`Month ${month} / 12`);}
+  d.click('#prev'); assert.equal(d.slides[1].dataset.buildCurrent,'2');
+  d.click('#next'); assert.equal(d.selectors['#forecastMonthTitle'].textContent,'Month 1 / 12');
+});
+
+test('month highlights distinguish free delivery, first-cohort conversion and recurring acquisition', () => {
+  const d=presentation('#2',{counts:[0,4,1],forecast:true,chart:true,finance:true}); d.build(1,3);
+  assert.match(d.selectors['#forecastMonthEvent'].textContent,/5 free pilots/);
+  assert.match(d.selectors['#forecastMonthCash'].textContent,/Cost \$705.00/);
+  d.click('#next'); assert.match(d.selectors['#forecastMonthEvent'].textContent,/\+2 new paid.*\+0.91 conversions/);
+  d.click('#next'); assert.match(d.selectors['#forecastMonthEvent'].textContent,/\+0.00 conversions.*−0.06 churn/);
+  d.change('#forecastIntake','10'); d.change('#forecastChurn','0');
+  assert.equal(d.selectors['#forecastMonthTitle'].textContent,'Month 3 / 12');
+  for(let i=3;i<8;i++)d.click('#next');
+  assert.equal(d.selectors['#forecastMonthDetail'].classList.contains('covers-cost'),true);
+  assert.equal(d.selectors['#forecastMonthly'].textContent,'Monthly coverage: M8');
+  assert.match(d.selectors['#forecastRecovery'].textContent,/not in Year 1/);
+});
+
+test('month-by-month narration remains functional when Chart.js is unavailable', () => {
+ const d=presentation('#2',{counts:[0,4,1],forecast:true,finance:true});d.build(1,3);d.click('#next');
+ assert.equal(d.selectors['#forecastMonthTitle'].textContent,'Month 2 / 12');
+ assert.equal(d.selectors['#forecastChartFallback'].hidden,false);
+ assert.match(d.selectors['#forecastMonthCash'].textContent,/Revenue \$145.47/);
 });
