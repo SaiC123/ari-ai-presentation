@@ -357,6 +357,7 @@
     .forecast-assumptions { display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-bottom:10px; }
     .forecast-assumptions>div { padding:6px 10px;border:1px solid #865040;border-radius:8px;background:#2d1b17; }
     .forecast-assumptions strong { display:block;font:600 20px/1.2 "Space Grotesk",sans-serif;color:#ffb09f; }
+    .forecast-assumptions>div:last-child strong { font-size:18px;white-space:nowrap; }
     .forecast-assumptions span { display:block;font-size:12px;line-height:1.2;color:#f0d8d1;margin-top:3px; }
     .forecast-assumptions a { display:block;font-size:11px;line-height:1.25;margin-top:5px;color:#f0d8d1;text-decoration:underline; }
     .forecast-assumptions .source-caveat { font-size:10px;line-height:1.2; }
@@ -1813,7 +1814,7 @@ REFERENCE AND CUES, NOT SPOKEN: Reveal six visual memories. Click 7 connects the
         const monthPanel = document.querySelector('#forecastMonthDetail');
         const titles = ['Month 1 · Pilot launch', 'Month 2 · Conversion + growth', 'Month ' + selected.month + ' · Monthly break-even'];
         document.querySelector('#forecastMonthTitle').textContent = titles[pilotStage];
-        document.querySelector('#forecastMonthCue').textContent = ['Launch costs', 'Research-derived estimates', 'Monthly costs covered'][pilotStage];
+        document.querySelector('#forecastMonthCue').textContent = ['Launch costs', 'Benchmark-based target', 'Monthly costs covered'][pilotStage];
         document.querySelector('#forecastMonthEvent').textContent = pilotStage === 0
           ? '5 unpaid pilots · $161.50 delivery + $500 shared tools'
           : pilotStage === 1
