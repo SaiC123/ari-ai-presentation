@@ -1,0 +1,19 @@
+{
+  "type": "AFTER",
+  "agent": "ai-1",
+  "utc": "2026-10-18T00:38:02.845408+00:00",
+  "summary": "AFTER:7ee0247 latestmainpushed/deployedREADY dpl_3MYFRzB4LYEUjFY2kpk5i2mT4kGH. Userforecastsimplification: removedall4selectors, fixedcurrentbase5freeM1/18.2conversionproxy/2newpaidfromM2/2percentchurn. All12monthseriesvisibleonentry; automaticM1-M12focus+events/conversions/acquisition/receipts/cost/fundinggap, no nestedclickmonths. Nextdirectbudget,Leftuniteconomics,reentryrestart; timerscancelonexit/no duplicates,reducedmotionstaticfullgraph,noautoliveannouncements. Source/notes/script/docs/testsupdated. Pricing/model/evidence/other16slides unchanged,24pxlegendgap preserved. Fixedminorbottomclip; outputs/Downloads synced.",
+  "commit": "7ee02477c64e48067a1bbad3f251f7d6116f750d",
+  "changed_paths": [
+    "README.md",
+    "docs/hackatl-master-presentation-prompt.md",
+    "docs/pilot-forecast.md",
+    "docs/presentation-qa.md",
+    "docs/pricing-narration.md",
+    "public/index.html",
+    "tests/presentation-navigation.test.cjs"
+  ],
+  "verification": "81Node+4Python=85testsPASS. Includesfullseriesimmediate,all12timerticks,stophold/end/exit/reentry,reducedmotion,fallback,no selectors,monthlyarithmetic. ModelJSbyteunchanged; onlyslide12markupchanged. ProductionHTTP200exactHTMLmatch. Browser1280x720fullgraphM1/M2auto/M8withoutclicks, Nextbudget/Leftrestart, no dropdowns, finalM2callout12.8pxbottomclearance screenshotchecked. Currentbenchmarksreopened: FirstPageSage18.2optinorganicproxy, notuniversalstartupaverage; intake/churnexplicitassumptions. No newmobile/fullscreen/hover/invoiceverificationclaimed.",
+  "deployment_url": "https://ari-ai-presentation.vercel.app",
+  "lock_commit": "1a83f67c62a0e1700bd133c99ad98e5ce8c3f7e1"
+}
