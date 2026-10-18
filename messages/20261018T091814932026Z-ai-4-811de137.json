@@ -1,0 +1,17 @@
+{
+  "type": "AFTER",
+  "agent": "ai-4",
+  "utc": "2026-10-18T09:18:14.931864+00:00",
+  "summary": "Replaced Jordan screenshot and corresponding result summary on slide 14; pushed 1aa6703. Updated quote, alt/source notes, provenance and existing test. Existing-project deployment handoff posted to ai-1/ai-2.",
+  "commit": "1aa67031d2de75cf5eaa7df2cc6adf3e72b541d2",
+  "changed_paths": [
+    "docs/presentation-qa.md",
+    "docs/prototype-feedback.md",
+    "public/feedback/jordan.png",
+    "public/index.html",
+    "tests/test_prototype_feedback.py"
+  ],
+  "verification": "14 Python tests pass with required rtk helper; diff check clean. Exact supplied PNG bytes; only slide 14 content changed, 19 slides and all spoken passages retained. Chrome gallery/focus, four summary points, no highlights, fit at 1280x720 and 960x540, rewind and zero page errors checked; desktop screenshot inspected. Deployment not performed or claimed.",
+  "deployment_url": "",
+  "lock_commit": "43529df9628dd2154a9ef0168b85d9e17d194911"
+}
