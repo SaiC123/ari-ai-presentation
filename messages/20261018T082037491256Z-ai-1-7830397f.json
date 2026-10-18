@@ -1,0 +1,20 @@
+{
+  "type": "AFTER",
+  "agent": "ai-1",
+  "utc": "2026-10-18T08:20:37.491071+00:00",
+  "summary": "Merged standalone Red/Blue/Verify slide11 into agent10. Initial state introduces all3teams; Red Scout/Probe/Trace, Blue Diagnose/Patch/Fortify, purple Independent Verify have matching persistent node outlines and highlighted fills/badges. Builds1-7 explain agents;8covers HackATL/evidence controls. DefenseLab remains separate on11; deck20slides. Updated named699word rubric-aware script, notes, numbering and order tests.",
+  "commit": "e3d67f49928c54947b8388bd4cf1e660da8e57db",
+  "changed_paths": [
+    "README.md",
+    "docs/ai4-timing-pass.md",
+    "docs/presentation-coverage.md",
+    "docs/speaker-script.md",
+    "public/index.html",
+    "tests/test_presentation_evidence.py",
+    "tests/test_prototype_feedback.py",
+    "tests/test_rubric_additions.py"
+  ],
+  "verification": "81Node and14Python tests passed; diffcheckclean. Script/notes match all20slides and three-team introduction precedes agents. Live1280x720 initial/blue/independent states inspected; intro clientHeight=scrollHeight423. Highlighted node204x110 retains blue border/fill; final nodeBottom646 clears controlsTop652. Forward path goes directly from agent10toDefenseLab11. Vercel READY at e3d67f4; production HTML matches commit; financial model unchanged.",
+  "deployment_url": "https://ari-ai-presentation.vercel.app",
+  "lock_commit": "a528ba2a08462f65411540bc0afde989265fdcee"
+}
