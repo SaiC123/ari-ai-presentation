@@ -1,6 +1,6 @@
 # Current timing and speaker handoffs
 
-Canonical script: [speaker-script.md](speaker-script.md). It matches all 20 active slides and their reveal order. 670 whitespace-separated words; 700 with compounds and decimal values split. Full prototype demonstration and Q&A excluded; no timed rehearsal claimed.
+Canonical script: [speaker-script.md](speaker-script.md). It matches all 20 active slides and their reveal order. 669 whitespace-separated words; 696 with compounds and decimal values split. Full prototype demonstration and Q&A excluded; no timed rehearsal claimed.
 
 Speakers: Sarosh1–6; Srihith7–12; Vihaan13; Sai14–18; Sarosh19–20.
 
@@ -13,10 +13,10 @@ Speakers: Sarosh1–6; Srihith7–12; Vihaan13; Sai14–18; Sarosh19–20.
 5. Problem statement.
 6. Customer profile and theme fit.
 7. Ari logo.
-8. Three-layer overview, including brief 24/7 Defense Lab purpose; no RL statistics spoken.
+8. Three-layer overview, general introduction only; no early Defense Lab explanation.
 9. Code Reviewer: understand, test, minimal repair.
 10. Scout, Probe, Trace, Diagnose, Patch, Fortify, Verify, then HackATL contribution.
-11. Red, Blue, independent Verify and proof rule.
+11. Red, Blue, independent Verify, then brief Defense Lab ongoing-protection reveal and proof rule.
 12. Competitor map, connected workflow and tradeoffs, then early pitch conversations.
 13. Prototype replay and Vihaan demonstration.
 14. Five reported outcomes, Samira improvement, then focused Jordan evidence.

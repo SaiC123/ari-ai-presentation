@@ -1,8 +1,8 @@
 # Ari non-demo speaker script
 
-670 whitespace-separated words; 700 with compounds and decimal values split. Within the 700-word cap, excluding the full prototype demonstration and Q&A. Not a timed rehearsal.
+669 whitespace-separated words; 696 with compounds and decimal values split. Within the 700-word cap, excluding the full prototype demonstration and Q&A. Not a timed rehearsal.
 
-Matched to the current 20-slide deck and its build order. The dedicated Defense Lab screenshot/results slide is removed. Its brief general purpose is explained on overview8. Srihith covers7–12, Vihaan13, Sai14–18, and Sarosh1–6 plus19–20. The competitor/pitch-feedback reveal is12; reported prototype outcomes14; pricing, costs, forecast and shared tools15.
+Aligned to20slides. Slide8 introduces Ari without explaining Defense Lab. The brief 24/7 ongoing-protection explanation appears as the final reveal on11 after Red/Blue/Verify. The standalone Defense Lab screenshot/results slide remains removed. Speakers: Sarosh1–6 and19–20; Srihith7–12; Vihaan13; Sai14–18.
 
 ## Slide 1 · Sarosh
 
@@ -34,7 +34,7 @@ This is Ari.
 
 ## Slide 8 · Srihith
 
-Ari combines a code reviewer, seven security agents, and Defense Lab. Think of Defense Lab as a 24/7 security layer: watching changes and triggering fresh checks. Its AI defender currently trains in simulation and only recommends. People decide.
+Ari is an AI engineering and security team built around one principle: don’t just flag problems. Show the evidence, help repair the code, and independently check the result.
 
 ## Slide 9 · Srihith
 
@@ -46,7 +46,7 @@ Each agent has restricted tools; tests use isolated app copies. Scout maps weakn
 
 ## Slide 11 · Srihith
 
-Red proves the attack. Blue proposes the repair. Verify independently checks it. Your team approves changes. No AI output counts as proof. Including ours.
+Red proves the attack. Blue proposes repairs. Verify retests independently. Your team approves changes. Defense Lab is the ongoing layer, designed for 24/7 monitoring: watching changes, triggering fresh checks and recommending defenses. People decide. No AI output counts as proof. Including ours.
 
 ## Slide 12 · Srihith
 
@@ -62,7 +62,7 @@ Five emails report billing retries, SQL injection, workspace access, error discl
 
 ## Slide 15 · Sai
 
-Pilot plans: $49.99 for seven assessments, $129.99 for twenty, and $359.99 for sixty. Growth delivery costs about $81, leaving 38% before shared expenses. Month one: fifty free pilots, costing $2,115; none start afterward. Conversion is unmeasured: 18.2% is an outside proxy. Forty-two monthly paid additions is a ChartMogul-derived target, not traction. Conditional monthly coverage: month two; cumulative recovery: month four. Six founders fund $500 monthly tools, take no salaries and reinvest surplus. Paid acquisition and extra usage are excluded.
+Pilot plans: $49.99 for seven assessments, $129.99 for twenty, and $359.99 for sixty. Growth delivery costs about $81, leaving 38% before shared expenses. Month one: fifty free pilots, costing $2,115; none start afterward. Conversion and acquisition are unvalidated assumptions, using outside benchmarks. Conditional monthly coverage: month two; cumulative recovery: month four. Six founders fund $500 monthly tools, take no salaries and reinvest surplus. Paid acquisition and extra usage are excluded.
 
 ## Slide 16 · Sai
 
