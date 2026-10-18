@@ -1,26 +1,23 @@
 # Current timing and speaker handoffs
 
-The canonical prepared text is [speaker-script.md](speaker-script.md), aligned with all 20 slides. It contains 652 whitespace-separated words, or 694 with hyphenated compounds and decimal values split. Includes Vihaan’s brief introduction; the full demo and Q&A are excluded.
+The canonical text is [speaker-script.md](speaker-script.md), aligned with all21slides. It contains653whitespace-separated words, or696with compounds and decimal values split, including Vihaan's introduction. The full demo and Q&A are excluded.
 
-Speakers: Sarosh 1–6; Srihith 7–13; Vihaan’s existing demo after 13; Sai 14–18; Sarosh 19–20.
+Speakers: Sarosh1–6; Srihith7–14; Vihaan's demo after14; Sai15–19; Sarosh20–21.
 
-At 130 words/minute, 652 words take about 5m01s; at 150, about 4m21s. Reveals, handoffs, pauses and the demo add time. These are arithmetic estimates; a timed rehearsal is still needed.
-
-The rubric allocates a five-minute preliminary pitch including demo plus four-minute Q&A, or an eight-minute final including demo plus six-minute Q&A. Budget the actual demonstration before deciding how much prepared narration to use.
+At130words/minute the prepared text takes about5m01s; at150about4m21s, before reveals, handoffs and the demo. Rehearse with the actual demonstration budget. The preliminary pitch is five minutes including demo; the final is eight minutes including demo.
 
 ## Product sequence
 
-7: Ari logo introduction.
-8: Three visible product columns: AI Code Reviewer, Seven Specialized AI Agents, and 24/7 Defense Lab.
-9: Seven-agent map with one spotlight per click and the HackATL contribution reveal.
-10: Monitoring, simulated reinforcement learning, and the security/availability balance.
-11: Red team, Blue team, and independent Verify.
-12: Competitor landscape and reported pitch conversations.
-13: Prototype replay and the Vihaan handoff.
-14: Five reported email outcomes and Jordan’s result.
-15: Pricing, delivery costs, monthly forecast, and founder funding.
-16: Market circles.
-17–18: Adoption and roadmap.
-19–20: Team and closing recap.
+7: Ari logo.
+8: Three-layer overview.
+9: Code Reviewer. The supplied screenshot remains beside three short explanations: understand the codebase, check each commit against intent, test behavior and hand security risks to the agents.
+10: Seven-agent highlights and HackATL contribution.
+11: Defense Lab. The recorded network screenshot stays beside24/7monitoring, simulation-based RL training and adaptive protection explanations.
+12: Red/Blue/Verify.
+13: Competitors and reported pitch conversations.
+14: Prototype and Vihaan handoff.
+15: Reported email evidence.
+16–19: Finance, market, adoption and roadmap.
+20–21: Team and closing recap.
 
-All 20 SPOKEN notes and data-spoken passages match the canonical script. The dedicated Defense Lab slide follows the user’s latest scope: RL defense is trained and evaluated in simulation. Code-change monitoring is explained separately from that training loop.
+All SPOKEN/data-spoken passages match the script. The screenshots are visual examples, not newly executed assessments. The rest of the business/evidence narration is retained with updated slide numbers.

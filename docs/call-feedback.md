@@ -1,6 +1,6 @@
 # Founder and developer pitch conversations
 
-The two supplied FaceTime images now form the final reveal of slide12 (build3), after the competitor/workflow comparison. The email evidence is separate on slide14. The deck now has20slides.
+The two supplied FaceTime images now form the final reveal of slide13 (build3), after the competitor/workflow comparison. The email evidence is separate on slide15. The deck now has21slides.
 
 ## Backgrounds supplied by the user
 
@@ -17,11 +17,11 @@ Slide bullets are casual paraphrases of this report, without quotation marks. Th
 
 ## Product boundary
 
-The latest user-approved presentation places reinforcement learning defense training and evaluation in simulation on slide10. Continuous code-change monitoring triggers fresh checks. Neither pitch participant evaluated the RL capability. The email results remain separate on slide14.
+The latest user-approved presentation places reinforcement learning defense training and evaluation in simulation on slide11. Continuous code-change monitoring triggers fresh checks. Neither pitch participant evaluated the RL capability. The email results remain separate on slide14.
 
 ## Presentation
 
-Slide12builds0–2retain the sourced competitor convergence view. Build3shows matching CSS face crops from both original call images, compact backgrounds and two concise shared feedback points. Forward enters slide13; rewind returns to the completed competitor view. Inactive call/map panels use inert and aria-hidden. Prepared narration is unchanged; additional reveal/reading time requires rehearsal rather than an asserted timing fit.
+Slide13builds0–2retain the sourced competitor convergence view. Build3shows matching CSS face crops from both original call images, compact backgrounds and two concise shared feedback points. Forward enters slide14; rewind returns to the completed competitor view. Inactive call/map panels use inert and aria-hidden. Prepared narration is unchanged; additional reveal/reading time requires rehearsal rather than an asserted timing fit.
 
 Visual redesign: phone UI, empty black bars and inset caller views are excluded by CSS framing; original image files remain intact. Repeated reaction bullets are replaced by one shared takeaway. The small caption identifies this as feedback on the idea, with no product use.
 

@@ -1,6 +1,6 @@
 # Supplied prototype feedback
 
-Added October 17, 2026. Five screenshots supplied by the user for the evidence build, now slide 14. These are reported prototype outcomes, not independently reproduced run artifacts, paid adoption, or proof of general production effectiveness.
+Added October 17, 2026. Five screenshots supplied by the user for the evidence build, now slide 15. These are reported prototype outcomes, not independently reproduced run artifacts, paid adoption, or proof of general production effectiveness.
 
 - `public/feedback/priya.png`: Priya Shah, Mosaic Relay. Reports billing-event idempotency repair, repeated-event case and normal payment tests passing, and retained regression test.
 - `public/feedback/jordan.png`: Jordan Ellis, CTO, Harborseed Studio. Current replacement email reports about20minutes for trace review/apply/retest, blocked injection returning400,78regressiontests passing and12newinjectiontests passing in staging. Featured exact excerpt: “I also added 12 new injection test cases and those are passing as well.”
@@ -12,12 +12,12 @@ All five screenshots were replaced with the user-supplied October 17, 2026 scree
 
 ## Presentation states
 
-Slide 14 build 0: one full-width gallery showing all five emails and the planned permissions improvement. Build 1: enlarged Jordan email plus verbatim result; rewind restores build 0, then the prototype verification section. Reduced motion removes the spatial transition. No finance model, chart or global navigation logic changes.
+Slide 15 build 0: one full-width gallery showing all five emails and the planned permissions improvement. Build 1: enlarged Jordan email plus verbatim result; rewind restores build 0, then the prototype verification section. Reduced motion removes the spatial transition. No finance model, chart or global navigation logic changes.
 
 
 ## Current placement
 
-Current order: slide6 ICP/theme, slide7 Ari logo, slide8 three-layer overview, slide9 seven-agent explanation, slide10 Defense Lab, slide11 red/blue teams, slide12 competitors and pitch feedback, slide13 prototype, slide14 five-email evidence, and slide15 financials. The deck now has20slides.
+Current order: slide6 ICP/theme, slide7 Ari logo, slide8 overview, slide9 code reviewer, slide10 seven agents, slide11 Defense Lab, slide12 red/blue teams, slide13 competitors, slide14 prototype, slide15 email evidence and slide16 financials. The deck has21slides.
 
 ## Key-result highlights
 
@@ -39,9 +39,9 @@ Added `IMG_2538.heic`, converted with macOS ImageIO/sips to a browser-compatible
 
 The latest user-supplied screenshot (`codex-clipboard-17665343-7144-4a8d-a9f4-e239dac021e8.png`) replaces Jordan's earlier image in both gallery and featured view. Current email supersedes earlier descriptions of an accepted/merged parameterized-query fix. It reports approximately20minutes for review/apply/retest, a400response blocking injection,78regressiontests and12newpassinginjectiontests in staging, explicitly not production. The counterfactual few-hours duration is the sender's estimate, not a measured baseline or a computed time-saving percentage. Current clean styling removes the marker overlays and repeated gallery pull quotes; the plain enlarged quotation remains verbatim from the replacement. Existing two call images are retained. Current requested improvements include PR integration and grouping related findings; no claim these shipped. No new independent customer assessment was performed.
 
-## Current call-image placement: end of slide12
+## Current call-image placement: end of slide13
 
-Supersedes the earlier slide12 placement sections: both call images are in the final reveal onslide12. The user identified their backgrounds and supplied a summary of feedback on the pitch, explicitly saying they did not use Ari. See `call-feedback.md` for attribution and limits. Slide14 now contains only the five-email gallery and enlarged Jordan email/result; the originaltwoemailbuilds remain. The featured email returns to full width, with image-relative numeric markers retained.
+Supersedes the earlier slide12 placement sections: both call images are in the final reveal onslide13. The user identified their backgrounds and supplied a summary of feedback on the pitch, explicitly saying they did not use Ari. See `call-feedback.md` for attribution and limits. Slide15 now contains only the five-email gallery and enlarged Jordan email/result; the originaltwoemailbuilds remain. The featured email returns to full width, with image-relative numeric markers retained.
 
 ## Current styling: clean email presentation
 

@@ -198,3 +198,9 @@ Live1280×720browser inspection covered the three-column overview, agent entry a
 ## Supplied Defense Lab visual
 
 Added the user's unmodified2380×1556PNG as `public/prototype/defense-lab-recorded.png`. Slide10build4 displays it in a large contained frame after the explanatory diagram. The whole image, including its isolated-test-network/recorded-evaluation label and playback controls, is preserved. It is a static capture of step0, with the defender watching Payments; the image is not treated as a newly executed evaluation or evidence of attack prevention. Narration and the20-slide order remain unchanged. The added image matches the source SHA-256 exactly.81Node navigation/model tests,13Python tests anddiffcheckpass.
+
+## Code reviewer → seven agents → Defense Lab
+
+The latest user request supersedes the screenshot-only Defense Lab reveal. The deck has21slides: overview8, new code reviewer9, seven agents10 and Defense Lab11. Reviewer and Defense Lab screenshots each stay beside three short explanatory points, with click highlights. The supplied code-review image is preserved byte-for-byte as `public/prototype/code-review-intent.png`; its ownership-check example connects codebase context and intended behavior with behavioral tests and security handoff. Defense Lab explains24/7code-change monitoring, RL strategy training in simulation and the availability tradeoff beside the recorded network image. No new product execution is claimed.
+
+The rest of the pitch content is retained with updated numbers. Narration now has696compound-split words and653whitespace-separated words, including Vihaan's introduction; all21spoken notes match it.81Node navigation/model tests and13Python tests passed, including revised ordering and screenshot/explanation checks. The new PNG's SHA-256 matches the supplied file; diff check passed. Financial-model inputs and exported forecast values were not changed.
