@@ -1,0 +1,8 @@
+{
+  "type": "BEFORE",
+  "agent": "ai-1",
+  "utc": "2026-10-18T07:21:17.660368+00:00",
+  "summary": "Restore a standalone Defense Lab screenshot-plus-explanation slide after the Red/Blue/Verify security-team sequence, matching code-reviewer layout. Remove mixed-in Defense Lab reveal from agent slide; split matching narration and renumber following slides/tests/docs. Keep explanation general without RL statistics; deploy and verify.",
+  "lock_commit": "cc06b725fbd83099038590fb3cc006e6124c56b5",
+  "base_main": "320a723306e2e84cc3383fc9dd63bf2de250f1a2"
+}
