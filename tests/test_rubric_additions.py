@@ -26,7 +26,8 @@ class RubricAdditionsTests(unittest.TestCase):
         self.assertIn('Proposed small-team workflow · Prototype', slide)
         self.assertIn('Human-approved repairs', slide)
         self.assertEqual(set(re.findall(r'data-build="(\d+)"', slide)), {'1', '2'})
-        self.assertIn('class="landscape-ari" data-build="2"', slide)
+        self.assertIn('class="landscape-ari"', slide)
+        self.assertNotIn('class="landscape-ari" data-build=', slide)
 
     def test_comparison_and_roadmap_have_limits_and_resources(self):
         for text in ('Snyk', 'Semgrep', 'GitHub Code Security', 'Tradeoff:', 'not yet validated'):

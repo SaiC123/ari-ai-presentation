@@ -866,36 +866,40 @@
     .road-slide .road-sign span{font-size:15px;line-height:1.35;margin-top:12px}
     .road-slide .road-sign em{font-style:normal;font-weight:600;color:var(--acid)}
 
-    /* Slide 10: capability landscape, with no performance axes or exclusivity claims. */
-    .market-position-slide h2{font-size:48px;letter-spacing:-.04em}
-    .market-position-slide .landscape-caption{font-size:17px;line-height:1.4;color:var(--muted);margin-top:12px}
-    .market-position-slide .competitor-map{display:grid;grid-template-columns:1fr 1.1fr 1fr;gap:28px;margin-top:26px;position:relative}
-    .market-position-slide .map-cluster{border-top:2px solid var(--acid);padding-top:12px;min-height:258px}
-    .market-position-slide .map-cluster h3{font-size:23px;margin-bottom:12px}
-    .market-position-slide .map-vendor{display:flex;align-items:center;justify-content:space-between;gap:8px;min-height:48px;border-bottom:1px solid var(--line);text-decoration:none;color:var(--ink)}
-    .market-position-slide .map-vendor b{font:600 23px/1.12 "Space Grotesk",sans-serif}
-    .market-position-slide .map-vendor small{font-size:14px;line-height:1.25;color:var(--muted);text-align:right;max-width:122px}
-    .market-position-slide .map-vendor:hover{color:var(--acid);background:var(--panel)}
-    .market-position-slide .map-vendor:focus-visible{outline:3px solid var(--acid);outline-offset:3px}
-    .market-position-slide .map-vendor.github b{font-size:20px;max-width:150px}
-    .market-position-slide .map-overlap{font-size:15px;line-height:1.4;color:var(--muted);margin-top:12px}
-    .market-position-slide .landscape-ari{display:grid;grid-template-columns:125px 1fr;align-items:center;gap:24px;background:var(--ink);color:white;margin-top:18px;padding:18px 24px;border-radius:12px}
-    .market-position-slide .landscape-ari-brand{display:flex;align-items:center;gap:12px;font:700 34px/1 "Space Grotesk",sans-serif}
-    .market-position-slide .landscape-ari-brand img{width:48px;height:48px;object-fit:contain;filter:brightness(0) invert(1)}
-    .market-position-slide .landscape-ari h3{font-size:26px;line-height:1.2;color:#ffb09f}
-    .market-position-slide .landscape-ari p{font-size:17px;line-height:1.4;margin-top:6px}
-    .market-position-slide .map-limits{display:flex;justify-content:space-between;gap:24px;margin-top:12px;font-size:15px;line-height:1.4;color:var(--muted)}
-    .market-position-slide .map-limits strong{color:var(--acid)}
-    @media(prefers-reduced-motion:reduce){.market-position-slide [data-build]{transition:none!important;animation:none!important}}
-    .market-position-slide .map-cluster{border-top:0;position:relative;padding-top:0}
-    .market-position-slide .map-cluster::before{content:"";position:absolute;left:0;top:42px;bottom:28px;width:1px;background:#d7a59a}
-    .market-position-slide .map-vendor{position:relative;margin-left:20px;border-bottom:0;padding:0 8px;min-height:48px}
-    .market-position-slide .map-vendor::before{content:"";position:absolute;left:-20px;top:24px;width:20px;height:1px;background:#d7a59a}
-    .market-position-slide .map-overlap{margin-left:28px}
-
-    .market-position-slide [data-build]{opacity:0;visibility:hidden;transform:translateY(14px);transition:opacity .45s,transform .55s cubic-bezier(.16,1,.3,1),visibility .45s}
-    .market-position-slide [data-build].build-visible{opacity:1;visibility:visible;transform:none}
-    @media(prefers-reduced-motion:reduce){.market-position-slide [data-build]{transform:none!important}}
+    /* Slide 10: compact market buckets converge into the Ari workflow. */
+    .market-position-slide h2{font-size:49px;line-height:1.06;letter-spacing:-.045em;max-width:1140px}
+    .market-position-slide .market-convergence{position:absolute;left:72px;right:72px;top:258px;height:366px}
+    .market-position-slide .competitor-map{display:grid;grid-template-columns:1fr 1.1fr 1fr;gap:24px;position:relative;z-index:2}
+    .market-position-slide .map-cluster{height:132px;padding:19px 20px;background:var(--panel);border:1px solid var(--line);border-radius:16px}
+    .market-position-slide .map-cluster h3{font:500 14px/1.25 "IBM Plex Mono",monospace;letter-spacing:-.025em;color:var(--muted);margin-bottom:15px}
+    .market-position-slide .market-names{display:flex;align-content:start;flex-wrap:wrap;gap:11px 18px}
+    .market-position-slide .map-vendor{display:inline-block;color:var(--ink);text-decoration:none;white-space:nowrap}
+    .market-position-slide .map-vendor b{font:500 19px/1.15 "Space Grotesk",sans-serif;letter-spacing:-.025em}
+    .market-position-slide .map-vendor:hover{color:var(--acid)}
+    .market-position-slide .map-vendor:focus-visible{outline:2px solid var(--acid);outline-offset:4px;border-radius:2px}
+    .market-position-slide .market-connectors{position:absolute;inset:0;width:100%;height:366px;z-index:1;pointer-events:none;overflow:visible}
+    .market-position-slide .market-connectors path{fill:none;stroke:#dcc1b9;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+    .market-position-slide .market-connectors .market-active{opacity:0;transition:opacity .35s}
+    .market-position-slide .market-connectors .market-active path{stroke:var(--acid);stroke-width:2.8}
+    .market-position-slide[data-build-current="1"] .market-active,.market-position-slide[data-build-current="2"] .market-active{opacity:1}
+    .market-position-slide .landscape-ari{position:absolute;left:0;right:0;top:190px;height:176px;z-index:2;display:grid;grid-template-columns:174px 1fr;gap:25px;align-items:center;padding:25px 28px;border-radius:20px;background:var(--ink);color:white;border:1px solid #5a3026;box-shadow:0 14px 30px rgba(28,18,16,.1);transition:border-color .3s,box-shadow .3s}
+    .market-position-slide[data-build-current="2"] .landscape-ari{border-color:var(--acid);box-shadow:0 14px 30px rgba(28,18,16,.1),inset 0 3px var(--acid)}
+    .market-position-slide .landscape-ari-brand{display:flex;align-items:center;gap:12px;font:700 52px/1 "Space Grotesk",sans-serif;letter-spacing:-.05em}
+    .market-position-slide .landscape-ari-brand img{width:54px;height:54px;object-fit:contain;filter:brightness(0) invert(1)}
+    .market-position-slide .ari-approval{font:500 12px/1.4 "IBM Plex Mono",monospace;color:#ffb09f;margin-top:13px}
+    .market-position-slide .ari-flow{display:grid;grid-template-columns:repeat(5,1fr);gap:15px;list-style:none;padding:0;margin:0;position:relative}
+    .market-position-slide .ari-flow:before,.market-position-slide .ari-flow:after{content:"";position:absolute;left:20px;right:calc((100% - 60px) / 5 - 20px);top:20px;height:1px;background:#654337;z-index:0}
+    .market-position-slide .ari-flow:after{right:auto;width:calc(80% + 12px);background:#ff8a75;transform:scaleX(0);transform-origin:left;transition:transform .6s cubic-bezier(.16,1,.3,1)}
+    .market-position-slide[data-build-current="1"] .ari-flow:after{transform:scaleX(.5)}
+    .market-position-slide[data-build-current="2"] .ari-flow:after{transform:scaleX(1)}
+    .market-position-slide .ari-flow li{position:relative;z-index:1}
+    .market-position-slide .ari-flow svg{display:block;width:40px;height:40px;padding:3px;margin-bottom:13px;background:var(--ink);color:#ff8a75;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;fill:none}
+    .market-position-slide .ari-flow b{display:block;font:600 20px/1.18 "Space Grotesk",sans-serif;letter-spacing:-.025em;color:white}
+    .market-position-slide .ari-flow span{display:block;font:400 16px/1.3 "Space Grotesk",sans-serif;color:#e7d6d0;margin-top:4px}
+    .market-position-slide .map-limits{position:absolute;left:72px;right:72px;top:644px;display:flex;justify-content:space-between;gap:20px;font-size:13px;line-height:1.3;color:var(--muted)}
+    .market-position-slide .map-limits strong{color:var(--acid);font-weight:500}
+    .market-position-slide .build-trigger{display:none}
+    @media(prefers-reduced-motion:reduce){.market-position-slide .market-active,.market-position-slide .landscape-ari,.market-position-slide .ari-flow:after{transition:none}}
 
     /* Rubric pass: evidence labels and measurable proposed gates. */
     .liability-caption{font-size:20px;line-height:1.4;text-align:center;margin-top:18px;letter-spacing:0}
@@ -1218,38 +1222,23 @@ REFERENCE, NOT SPOKEN: Value chain: version-aware business intent -&gt; bounded 
 
       <section class="slide market-position-slide" data-note="SPOKEN: Nine competitors offer overlapping capabilities. Our proposed value connects intent, investigation, approved repair, and independent verification for small teams. Assessment costs and human review are tradeoffs. Comparative performance remains unvalidated.
 
-REFERENCE, NOT SPOKEN: Preserve nine-competitor landscape and linked primary sources. Capability groups overlap. Proposed positioning, not benchmark-proven advantage. No comparative runs supplied; docs/comparison-protocol.md is an empty evidence-ready protocol, not results. Pricing units/editions differ; docs/research-validation.md records primary pricing references. No cheapest/only end-to-end claim." data-spoken="Nine competitors offer overlapping capabilities. Our proposed value connects intent, investigation, approved repair, and independent verification for small teams. Assessment costs and human review are tradeoffs. Comparative performance remains unvalidated.">
+REFERENCE, NOT SPOKEN: Preserve nine-competitor landscape and linked primary sources. Capability groups overlap. Proposed positioning, not benchmark-proven advantage. No comparative runs supplied; docs/comparison-protocol.md is an empty evidence-ready protocol, not results. Pricing units/editions differ; docs/research-validation.md records primary pricing references. No cheapest/only end-to-end claim. The converging category connectors express conceptual workflow coverage, not integrations with competitor products. ARI remains a prototype; monitoring requests code-change checks, and repairs require human approval." data-spoken="Nine competitors offer overlapping capabilities. Our proposed value connects intent, investigation, approved repair, and independent verification for small teams. Assessment costs and human review are tradeoffs. Comparative performance remains unvalidated.">
         <div class="slide-head"><span class="brand-mini"><img class="brand-ant" src="ari-ant-mark.png" alt="" aria-hidden="true">Advantage over Alternatives</span><span class="slide-num">10</span></div>
-        <h2>A crowded market.<br><span class="accent">Our focus: the connected workflow.</span></h2>
-        <p class="landscape-caption">Capability landscape · Qualitative grouping, not a ranking · Names link to product sources</p>
-        <div class="competitor-map" aria-label="Nine competitors grouped by overlapping product capabilities">
-          <div class="map-cluster">
-            <h3>Code &amp; PR workflows</h3>
-            <a class="map-vendor github" href="https://github.com/security/advanced-security/code-security" target="_blank" rel="noopener"><b>GitHub Code Security</b><small>Scanning<br>Copilot Autofix</small></a>
-            <a class="map-vendor" href="https://semgrep.dev/products/semgrep-appsec-platform/" target="_blank" rel="noopener"><b>Semgrep</b><small>Code + libraries<br>Triage + fixes</small></a>
-            <a class="map-vendor" href="https://www.sonarsource.com/blog/ai-codefix-is-now-generally-available/" target="_blank" rel="noopener"><b>SonarQube</b><small>Quality + security<br>AI CodeFix</small></a>
-            <p class="map-overlap">Findings and remediation in developer workflows.</p>
+        <h2>A crowded market.<br><span class="accent">Our advantage: the connected workflow.</span></h2>
+        <span class="build-trigger" data-build="1"></span><span class="build-trigger" data-build="2"></span>
+        <div class="market-convergence">
+          <div class="competitor-map" aria-label="Qualitative grouping, not a ranking. Capabilities overlap across all three groups.">
+            <div class="map-cluster"><h3>Code &amp; PR workflows</h3><div class="market-names"><a class="map-vendor github" href="https://github.com/security/advanced-security/code-security" target="_blank" rel="noopener"><b>GitHub Code Security</b></a><a class="map-vendor" href="https://semgrep.dev/products/semgrep-appsec-platform/" target="_blank" rel="noopener"><b>Semgrep</b></a><a class="map-vendor" href="https://www.sonarsource.com/blog/ai-codefix-is-now-generally-available/" target="_blank" rel="noopener"><b>SonarQube</b></a></div></div>
+            <div class="map-cluster"><h3>Broader AppSec platforms</h3><div class="market-names"><a class="map-vendor" href="https://snyk.io/platform/" target="_blank" rel="noopener"><b>Snyk</b></a><a class="map-vendor" href="https://www.aikido.dev/" target="_blank" rel="noopener"><b>Aikido</b></a><a class="map-vendor" href="https://www.veracode.com/platform" target="_blank" rel="noopener"><b>Veracode</b></a><a class="map-vendor" href="https://docs.checkmarx.com/en/34965-68727-checkmarx-one-ide-plugins.html" target="_blank" rel="noopener"><b>Checkmarx</b></a></div></div>
+            <div class="map-cluster"><h3>Attack validation</h3><div class="market-names"><a class="map-vendor" href="https://xbow.com/" target="_blank" rel="noopener"><b>XBOW</b></a><a class="map-vendor" href="https://pentera.io/pentera-platform/" target="_blank" rel="noopener"><b>Pentera</b></a></div></div>
           </div>
-          <div class="map-cluster" data-build="1">
-            <h3>Broader AppSec platforms</h3>
-            <a class="map-vendor" href="https://snyk.io/platform/" target="_blank" rel="noopener"><b>Snyk</b><small>Scanning + fixes<br>AI pentesting</small></a>
-            <a class="map-vendor" href="https://www.aikido.dev/" target="_blank" rel="noopener"><b>Aikido</b><small>Scanning + AutoFix<br>AI pentesting</small></a>
-            <a class="map-vendor" href="https://www.veracode.com/platform" target="_blank" rel="noopener"><b>Veracode</b><small>Application testing<br>AI remediation</small></a>
-            <a class="map-vendor" href="https://docs.checkmarx.com/en/34965-68727-checkmarx-one-ide-plugins.html" target="_blank" rel="noopener"><b>Checkmarx</b><small>Multi-engine scans<br>Remediation</small></a>
-          </div>
-          <div class="map-cluster" data-build="1">
-            <h3>Attack validation</h3>
-            <a class="map-vendor" href="https://xbow.com/" target="_blank" rel="noopener"><b>XBOW</b><small>Autonomous<br>web pentesting</small></a>
-            <a class="map-vendor" href="https://pentera.io/pentera-platform/" target="_blank" rel="noopener"><b>Pentera</b><small>Automated security<br>validation</small></a>
-            <p class="map-overlap">Prove exposure through adversarial testing.</p>
-            <p class="map-overlap">Capabilities overlap across all three groups.</p>
+          <svg class="market-connectors" viewBox="0 0 1136 366" aria-hidden="true"><path d="M181 132V148Q181 158 195 158H554Q568 158 568 174V188"/><path d="M568 132V188"/><path d="M955 132V148Q955 158 941 158H582Q568 158 568 174V188"/><path d="M562 181l6 7 6-7"/><g class="market-active"><path d="M181 132V148Q181 158 195 158H554Q568 158 568 174V188"/><path d="M568 132V188"/><path d="M955 132V148Q955 158 941 158H582Q568 158 568 174V188"/><path d="M562 181l6 7 6-7"/></g></svg>
+          <div class="landscape-ari" aria-label="ARI: Proposed small-team workflow · Prototype">
+            <div><div class="landscape-ari-brand"><img src="ari-ant-mark.png" alt="">ARI</div><p class="ari-approval">Human-approved repairs</p></div>
+            <ol class="ari-flow" aria-label="Connected ARI workflow"><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6v12M6 10h5a5 5 0 0 0 5-5V3"/><circle cx="6" cy="5" r="2"/><circle cx="6" cy="20" r="2"/><circle cx="16" cy="3" r="2"/></svg><b>Monitor</b><span>code changes</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10" cy="10" r="6"/><path d="m15 15 6 6M10 7v4m0 2h.01"/></svg><b>Find</b><span>issues</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 8 3v6c0 5-8 9-8 9s-8-4-8-9V6zM8 12l3 3 5-6"/></svg><b>Validate</b><span>exposure</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4a5 5 0 0 0-6 6L3 18l3 3 8-7a5 5 0 0 0 6-6l-3 3-4-4 3-3ZM16 18l2 2 4-5"/></svg><b>Recommend /</b><span>verify fixes</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 8a8 8 0 0 0-14-3L3 8m0-5v5h5M4 16a8 8 0 0 0 14 3l3-3m0 5v-5h-5"/></svg><b>Re-check</b><span>what changed</span></li></ol>
           </div>
         </div>
-        <div class="landscape-ari" data-build="2">
-          <div class="landscape-ari-brand"><img src="ari-ant-mark.png" alt="">ARI</div>
-          <div><h3>Business intent → Attack evidence → Tested repair</h3><p>Proposed small-team workflow · Prototype · Human-approved repairs</p></div>
-        </div>
-        <div class="map-limits" data-build="2"><span><strong>Tradeoff:</strong> assessment costs + human review.</span><span>Comparative performance is not yet validated.</span></div>
+        <div class="map-limits"><span>Overlapping capabilities · Proposed workflow</span><span><strong>Tradeoff:</strong> costs + human review · Comparative performance not yet validated</span></div>
       </section>
 
       <section class="slide quality-slide prototype-capture-slide" data-note="SPOKEN: Here’s Ari’s demo replay: choose a repository, inspect the missing ownership check, then view the repair and before-and-after tests. These are interface screenshots, not a new assessment. Full-chain AI responses are scripted; product usability needs testing.
