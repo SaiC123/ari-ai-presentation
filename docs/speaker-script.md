@@ -1,8 +1,8 @@
 # Ari non-demo speaker script
 
-653 whitespace-separated spoken words; 696 with hyphenated compounds and decimal values split, within the 700-word cap. Includes Vihaan’s brief demo introduction. The full prototype demonstration and Q&A are excluded. This is a script budget, not a timed rehearsal.
+643 whitespace-separated spoken words; 682 with compounds and decimal values split, within the 700-word cap. Includes Vihaan’s brief demo introduction. The full prototype demonstration and Q&A are excluded. This is a script budget, not a timed rehearsal.
 
-Aligned to the current 21-slide deck: slide8 introduces the three layers; slide9 is the code reviewer with the supplied code screenshot; slide10 explains the seven agents; slide11 pairs the Defense Lab screenshot with monitoring and simulation-based RL explanations. Red/blue teams are12, competitors13, prototype14, reported feedback15, financials16. Both product screenshots stay beside explanatory text. All spoken notes match these passages.
+Aligned to the current 21-slide deck. Code reviewer9, seven agents10, Defense Lab11, red/blue verification12, prototype14, reported feedback15, financials16. Defense Lab metrics are held-out simulation results, not production outcomes. Speaker notes match these passages.
 
 ## Slide 1 · Sarosh
 
@@ -14,19 +14,19 @@ Until one missing permission check lets someone read another customer’s data.
 
 ## Slide 3 · Sarosh
 
-Then everything breaks. Customers leave. Eighteen jobs are lost. The company closes. Our illustrative scenario ends with two-point-four million owed. The real stakes are people’s livelihoods and customers’ trust.
+Then everything breaks. Customers leave. Jobs disappear. The company closes with an illustrative two-point-four million owed. People’s livelihoods and customers’ trust are at stake.
 
 ## Slide 4 · Sarosh
 
-Working code isn’t proof of security. Veracode’s twenty twenty-five benchmark found forty-five percent of generated samples failed security tests. Separately, Check Point reported roughly seventy percent more attack attempts from twenty twenty-three to twenty twenty-five. That does not establish causation.
+Working code isn’t security proof. Veracode’s 2025 benchmark found 45% of generated samples failed security tests. Separately, Check Point reported roughly 70% more attack attempts from 2023 to 2025. That doesn’t establish causation.
 
 ## Slide 5 · Sarosh
 
-AI expanded what small teams can build. It didn’t remove the need for security expertise. Working software still needs proof.
+Software changes daily. Our problem: small teams can build faster with AI than they can fully check. Security still needs proof.
 
 ## Slide 6 · Sarosh
 
-Our proposed customer is a small, founder-led SaaS startup using AI without dedicated security staff. Our hypothesis: code output outpaces review capacity. We’ll validate time, expertise, evidence, and code privacy needs.
+Our proposed customer: founder-led SaaS startups using AI without dedicated security staff. We’ll validate their review capacity, evidence needs, and code-privacy concerns.
 
 ## Slide 7 · Srihith
 
@@ -34,23 +34,23 @@ This is Ari.
 
 ## Slide 8 · Srihith
 
-Ari connects code review, seven security agents, and continuous monitoring through shared code context.
+Ari is an AI engineering and security team, designed to check every code change: review, investigate, and keep watching. Every claim needs evidence.
 
 ## Slide 9 · Srihith
 
-The reviewer checks commits against intended behavior using codebase context. Here, it flags a missing ownership check.
+The reviewer learns intended behavior from docs, comments and tests. It checks changes, writes a test that reproduces the bug, and drafts the smallest fix. Here, it spots a missing ownership check.
 
 ## Slide 10 · Srihith
 
-Seven agents test code, reproduce attacks, propose repairs, and independently verify fixes. Our HackATL work connects retrieval, orchestration and verification using third-party models.
+Seven agents each have one job and only its required tools. They pass proof like a relay, testing in an isolated app copy. Our HackATL contribution connects context, orchestration and independent verification using third-party models.
 
 ## Slide 11 · Srihith
 
-Defense Lab monitors changes 24/7, triggering new checks. Reinforcement learning trains in simulation to balance security and availability.
+Defense Lab monitors changes and trains a defender in a practice network. Across 1,500 held-out simulated episodes, 7.1% reached the attack goal, versus 100% without defense. Service uptime was 94.4%. Average containment took 25.6 steps versus 158.3 with simple rules. The tradeoff: 75% of disruptive interventions hit not-yet-compromised services. These are simulation results. It recommends; people decide.
 
 ## Slide 12 · Srihith
 
-Human approval controls repairs. Verify uses a fresh checkout, and saved evidence guides reassessment.
+Nothing merges without human approval. No AI output counts as proof. Including ours.
 
 ## Slide 13 · Srihith
 
@@ -58,7 +58,7 @@ Nine competitors offer overlapping capabilities. Our proposed value connects int
 
 ## Slide 14 · Srihith
 
-Here’s Ari’s demo replay: choose a repository, inspect the missing ownership check, then view the repair and before-and-after tests. These are interface screenshots, not a new assessment. Full-chain AI responses are scripted; product usability needs testing.
+Here’s the demo replay: repository, ownership bug, repair, then before-and-after tests. These screenshots aren’t a new assessment. Full-chain AI responses are scripted; product usability needs testing.
 
 ## Prototype after slide 14 · Vihaan
 
@@ -70,11 +70,11 @@ Five permitted emails report outcomes we haven’t independently rerun. Jordan s
 
 ## Slide 16 · Sai
 
-Plans are forty-nine ninety-nine for seven assessments, one hundred twenty-nine ninety-nine for twenty, and three hundred fifty-nine ninety-nine for sixty. Growth costs about eighty-one dollars, leaving thirty-eight percent before shared expenses. Month one proposes fifty free pilots to measure usage and feedback; none start in month two. Ari conversion is unmeasured; 18.2% is an outside proxy. Forty-two new paid accounts monthly is a ChartMogul-derived target, not observed acquisition. Month one costs $2,115. Monthly costs are covered in month two; cumulative recovery is month four. No founder pay, paid acquisition, or extra usage is included.
+Pilot plans: $49.99 for seven assessments, $129.99 for twenty, and $359.99 for sixty. Growth delivery costs about $81, leaving 38% before shared expenses. Month one: fifty free pilots, costing $2,115; no new free pilots afterward. Conversion is unmeasured: 18.2% is an outside proxy. Forty-two monthly paid additions is a ChartMogul-derived target, not traction. Conditional monthly coverage: month two; cumulative recovery: month four. Founder pay, paid acquisition and extra usage are excluded.
 
 ## Slide 17 · Sai
 
-Using Census software publishers as a proxy and Growth pricing gives twenty-point-seven million dollars annually, with a six-point-six-million-dollar starting segment. These firms need qualification. Our hundred-to-two-hundred-customer target represents one hundred fifty-six thousand to three hundred twelve thousand dollars annually, not traction.
+Census software-publisher proxies at Growth pricing imply $20.7 million annually, with a $6.6 million starting segment. Accounts need qualification. Our 100–200-customer target represents $156,000–$312,000 annually, not traction.
 
 ## Slide 18 · Sai
 
@@ -82,7 +82,7 @@ Through founder outreach and accelerators, our first goal is one hundred targets
 
 ## Slide 19 · Sai
 
-Month one: a live-provider trace and fifty pilot records for usage data and feedback. No new free pilots from month two. Months two and three: paid decisions and measured contribution. Months four to six: isolation and reliability checks before multi-repository expansion. Owners review weekly. If permissions, reliability, or costs fail, narrow scope or reprice. Enterprise waits for controls and support.
+Month one: live-provider evidence and fifty pilot records. Months two and three: paid decisions and measured contribution. Months four to six: isolation and reliability before multi-repository expansion. Owners review weekly. Failed gates mean narrower scope or repricing. Enterprise waits for controls and support.
 
 ## Slide 20 · Sarosh
 
