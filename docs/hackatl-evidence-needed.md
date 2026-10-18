@@ -1,5 +1,7 @@
 # Ari AI — Evidence needed to finish the pitch
 
+Update October 17, 2026: five user-supplied prototype-feedback email screenshots are now shown on slide 6. See [prototype-feedback.md](prototype-feedback.md) for the reported outcomes and caveats. VC validation remains pending; independently reproducible run artifacts and measured time savings are still needed. The checklist below describes additional validation work.
+
 The problem definition, explicit AI-theme connection, target-user hypothesis, core action, and intended value are now in the deck. Slides 5 and 9 contain clearly marked slots for the evidence below. Existing interview notes, observations, or feedback can be used; there is no need to collect every type of evidence listed in the rubric.
 
 ## 1. Customer conversations — highest priority
