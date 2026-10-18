@@ -1,0 +1,8 @@
+{
+  "type": "BEFORE",
+  "agent": "ai-2",
+  "utc": "2026-10-18T02:48:17.235113+00:00",
+  "summary": "Slide 11 only: replace abstract prototype icons with genuine cropped Ari Lake demo screenshots for repository selection, ownership finding, and repair/test results. Label demo replay and scripted limits; adjust only slide-11 CSS/notes and its script passage. Preserve all other slides including ai-4 feedback highlights. No app mutations or new scans. Validate, commit/push, and deploy existing project if accessible.",
+  "lock_commit": "07c2b457f842018f5fbf222107ad0027320a1be4",
+  "base_main": "447618499767411d6e5da1b643ef26c5417a2518"
+}
