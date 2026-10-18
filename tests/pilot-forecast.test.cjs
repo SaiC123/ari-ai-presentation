@@ -128,3 +128,15 @@ test('benchmark-derived intake has separate monthly coverage and cumulative reco
   assert.ok(forecast({months:24}).rows.at(-1).paidAccounts < 1000,
     'linear gross intake plus churn does not claim to replicate the cited net milestone');
 });
+
+test('documented cost stress cases expose negative contribution without changing defaults', () => {
+  const stressed = forecast({ apiPerAssessment: 3.8, sandboxPerAssessment: 2 });
+  assert.ok(Math.abs(stressed.contribution - (-4.35971)) < 1e-6);
+  assert.equal(stressed.coverageAccounts, null);
+  assert.equal(stressed.monthlyBreakEven, null);
+  const support = forecast({ supportPerAccount: 20 });
+  assert.ok(Math.abs(support.contribution - 0.94029) < 1e-6);
+  assert.equal(support.coverageAccounts, 532);
+  assert.equal(forecast().inputs.newPaidPerMonth, 42);
+  assert.equal(forecast().coverageAccounts, 32);
+});

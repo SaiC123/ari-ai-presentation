@@ -1,10 +1,11 @@
-# Rubric additions
+# Current presentation improvements
 
-Only slides1,4,10,16 changed; feedback12 and financials are unchanged. No new slides.
+The all18-slide pass supersedes the earlier four-slide scope. Exact criterion coverage, supplied by Sai in coordination, is in [presentation-coverage.md](presentation-coverage.md). This is not a score prediction.
 
-- Slide1: visible hypothetical-founder/illustrative-figures label.
-- Slide4: Veracode2025 benchmark45% AI-generated samples failed security tests, not all AI code or breach probability. Source https://www.veracode.com/blog/genai-code-security-report/ . No causal link to the separate Check Point attack trend established.
-- Slide10: nine-competitor branching capability landscape with linked primary sources; code/PR workflows, broader AppSec platforms and attack validation. Groups overlap and do not imply rankings or absent features. Ari remains a proposed small-team prototype workflow with cost/human-review tradeoffs and unvalidated comparative performance. See [competitor landscape](competitor-landscape.md).
-- Slide16: proposed gates. Today local workflow, scripted full-chain transport. M1five scoped pilots/live-provider trace: six founders+capped API, findings reliability risk. M2–3hosted beta/test conversion:500monthly shared tools PLUS delivery costs, conversion/trust risk. M4–6multi-repo after measured value: compute/support, permissions/cost risk. Enterprise later: controls/support readiness, revenue/funding, reliability/compliance risk. Replaces prior aspirational customer/ARR/date gates, not achieved traction or commitments. No hiring promised. Current resources constrain expansion.
+- Slides1–6: hypothetical story, illustrative liability, separate research sources, specific proposed buyer and clearly labeled priority hypotheses.
+- Slides8–11: team-confirmed HackATL contribution, version-aware intent/evidence chain, human scope approval, separate verification, nine-competitor map, scripted limitation and deck/product accessibility distinction.
+- Slide12: original five permitted screenshots and Jordan highlight retained; empty VC panel removed; Samira's permission/processing concern becomes the next planned improvement.
+- Slides13–16: approved prices/costs/42-new-paid scenario preserved; pilot pricing, payer/proxy labels, recruitment scorecard and gates, economic sensitivities, owner/resource/risk/fallback roadmap.
+- Slides17–18: credentials preserved; existing recap/finale retained with one ask for five qualified SaaS design partners.
 
-Sources consulted October17,2026. Feedback metrics were not changed or invented.
+The438-word non-demo script is an alignment draft for ai-2's authorized script polishing. Sources, comparison protocol, originality disclosure, pilot plan and economic sensitivity are linked from README. Remaining real-world evidence is consolidated in [hackatl-evidence-needed.md](hackatl-evidence-needed.md). Demo and Q&A were not edited.

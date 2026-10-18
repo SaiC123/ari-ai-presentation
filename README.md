@@ -20,9 +20,9 @@ Fonts and Chart.js load from public CDNs, so an internet connection is needed.
 - `public/ari-ant-mark.png`: the Ari ant brand asset.
 - `docs/hackatl-pitch-source-inventory.md`: sources and forecast assumptions.
 - `docs/hackatl-evidence-needed.md`: remaining customer-validation evidence.
-- `docs/hackatl-master-presentation-prompt.md`: original design brief; later revisions are reflected in the HTML.
+- `docs/hackatl-master-presentation-prompt.md`: current design brief and canonical source links.
 
-Customer-evidence placeholders, fictional founder figures, scripted prototype conditions, and forecasts are labeled in the deck and supporting notes.
+Hypothetical founder figures, reported feedback, scripted prototype conditions, and forecasts are labeled in the deck and supporting notes.
 
 ## Deploy
 
@@ -47,4 +47,4 @@ Slide6 shows the customer profile, slide7 the Ari logo, slides8–10 the solutio
 
 ## Current pitch references
 
-The18-slide deck has a438-word [speaker script](docs/speaker-script.md), [pilot plan](docs/pilot-plan.md), [research checks](docs/research-validation.md), [cost sensitivities](docs/economic-sensitivity.md) and [originality disclosure](docs/originality-disclosure.md). [Remaining evidence](docs/hackatl-evidence-needed.md) is consolidated; forecasts and reported feedback are not measured traction.
+The18-slide deck has a438-word [speaker-script draft](docs/speaker-script.md), [pilot plan](docs/pilot-plan.md), [research checks](docs/research-validation.md), [cost sensitivities](docs/economic-sensitivity.md) and [originality disclosure](docs/originality-disclosure.md). [Exact rubric coverage](docs/presentation-coverage.md) and [remaining evidence](docs/hackatl-evidence-needed.md) are consolidated; forecasts and reported feedback are not measured traction.

@@ -106,3 +106,13 @@ Citation immediately below42: [ChartMogul2025 Go-To-Market Report](https://chart
 With18.2%initial-cohort conversion proxy, M2expectedpayers42.91, firstmonthlycashcoverageM2, cumulative recoveryM3, peakfundinggap661.50. Minimummonthlycoverage32wholeactiveFounderaccounts. These are conditional model outputs, not fullbusinessprofitability; founderpay,paidacquisition,extrausage/legal/taxes remain excluded. Full12monthseries and3keycallouts retained.
 
 The adoption slide's three total paid is an initial pilot recruitment goal, separate from this expanded growth scenario, not3/5measuredconversion. Costs are the user's supplied planning breakdown, not a provider invoice audit; per-run measurement template remains available without claiming data collection has occurred. Latest Alan/ai4feedbackimages/date/highlight updates are preserved.
+
+## All-slide evidence and rubric pass, October17–18,2026
+
+This entry supersedes historical scope/script descriptions above. Same18-slide order, palette, original five feedback screenshots, pricing and approved42-new-paid planning scenario. Supporting source inventory/master brief now point to current canonical plans. Exact20 criterion names were supplied by Sai in coordination and mapped with attributed provenance in `presentation-coverage.md`; no score prediction.
+
+Executed checks:13Python tests and81Node tests pass. Added script/role alignment, slide5 HTML attribute validity, evidence/planning labels, originality-permission attribution, and economic stress-case regressions. `git diff --check` passes. The forecast JavaScript and five screenshot binaries are unchanged from9059c3b; all five screenshot bytes also match the user's attached originals exactly.
+
+Chrome at1280×720 exercised all18slides forward and backward through their builds, including finance's internal milestone steps. Changed slides were also exercised with reduced motion. No page errors were captured. Inspected26selected build screenshots and a960×540scaled view. The first inspection identified slide5 malformed attribute remnants and roadmap-card overlap with the ant; these were corrected, and the full navigation pass and visual checks repeated. The attack-chart screenshot was captured mid-reveal; its2.6second draw animation is retained. No product tests, demo rehearsal, timed human pitch or customer assessment was run.
+
+Current non-demo script draft:438words; ai-2 owns subsequent script polishing. Production deployment is pending access to the existing Vercel project and handoff to ai-1; no production success is claimed by this QA entry.

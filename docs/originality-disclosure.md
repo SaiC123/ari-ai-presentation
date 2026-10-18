@@ -14,6 +14,6 @@ Presentation: Chart.js and Google-hosted Space Grotesk, Inter and IBM Plex Mono;
 
 ## Eligibility and evidence boundaries
 
-No previously built Ari project is declared by the team. The exact organizer eligibility text and any required asset/AI-use forms must still be checked against the official event rules before submission. No claim of organizer approval, originality of third-party tools, WCAG certification or exclusive technical capability is made.
+No previously built Ari project is declared by the team. Sai relayed the organizer rule that new work begins at kickoff, prebuilt team projects are ineligible, and existing tools/libraries/licensed assets are allowed with disclosure (coordination message2026-10-18T02:00:28Z). Required asset/AI-use forms and the team disclosure must still be reconciled before submission. No claim of organizer approval, originality of third-party tools, WCAG certification or exclusive technical capability is made.
 
 The complete local workflow uses scripted model responses as disclosed; live-provider and customer outcome evidence remain separate. Existing code/readme evidence was inspected read-only; no new product security test or real assessment was run during this presentation task.

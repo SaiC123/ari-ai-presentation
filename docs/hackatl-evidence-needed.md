@@ -8,6 +8,8 @@ Confirmed by the user: no Ari project work was built beforehand; permission to p
 - Impact/usability: exact product build/provider mode, observed independent task completion and permission comprehension, baseline and elapsed time, accepted/rejected repairs and linked verification artifacts.
 - Comparative results: authorized comparable runs, tool versions/editions/scope, failures, reproducibility, independently checked repair and cost/time. Protocol is ready in `comparison-protocol.md`; no wins are claimed.
 - Commercial/economic evidence: measured delivery-cost distribution and founder support time beyond the supplied model; price responses, actual paid decisions, confirmed pilot/partner commitments and demonstrated channel capacity. Templates/plans exist; the forecast remains conditional.
-- Submission disclosure: organizer's exact20-row rubric/eligibility text, required third-party/AI-use disclosure forms, and original provenance/license confirmation for supplied logo/photos if requested. Team's build-history statement is recorded; no organizer approval is asserted.
+- Submission disclosure: required organizer third-party/AI-use disclosure forms, and original provenance/license confirmation for supplied logo/photos if requested. Team's build-history statement is recorded; no organizer approval is asserted.
 
 VC feedback is optional and pending in presenter notes. The empty panel has been removed from the timed deck. Demo and Q&A are outside this task.
+
+The exact20 criterion names and anchor summaries were supplied by Sai in the repository coordination message at2026-10-18T02:00:28Z, attributed to FINAL_HackATL_2026_Judging_Rubric.pdf. Coverage is mapped in `presentation-coverage.md`; the PDF itself was not independently inspected in this pass.
