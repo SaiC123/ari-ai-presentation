@@ -1,0 +1,8 @@
+{
+  "type": "BEFORE",
+  "agent": "ai-1",
+  "utc": "2026-10-18T00:33:03.012247+00:00",
+  "summary": "BEFORE: userrequestsnonselectableforecast, full12monthlinesonentry, automaticmonthcalloutprogressioninsteadofclickpermonth. Keepcurrentdefault2newpaid/mo18.2conversionproxy2percentchurn, notclaimuniversalstartupaverage. Removecontrols/nestedmonthnav, automatichighlighttimeronlyactivefinancebuild3, fullseriesalwaysvisible, stoponexit/reentryrestart/reducedmotionstaticall, monthlyevents/revenue/cost/fundingcallouts. Updatecorrespondingtests/docs, nofinancialmodel/pricing/feedbackchanges. Publishsync.",
+  "lock_commit": "1a83f67c62a0e1700bd133c99ad98e5ce8c3f7e1",
+  "base_main": "12e66dea46e0904beea7fb1095dc18a50fe2bdb1"
+}
