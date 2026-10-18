@@ -1,8 +1,8 @@
 # Ari non-demo speaker script
 
-669 whitespace-separated words; 696 with compounds and decimal values split. Within the 700-word cap, excluding full demo and Q&A. Not a timed rehearsal.
+672 whitespace-separated words; 699 with compounds and decimal values split. Full demo and Q&A excluded. Not a timed rehearsal.
 
-21slides. Overview8; Code Reviewer9; seven agents10; Red/Blue/Verify11; separate Defense Lab screenshot-and-purpose12; competitors/pitch feedback13; Vihaan prototype14; reported outcomes15; finance16; market17; adoption18; roadmap19; team20; recap21. Defense Lab is no longer mixed into the agents slide.
+20slides. Slide10 introduces Red, Blue and Independent Verify before the seven agent highlights. Their nodes have matching team outlines. The standalone Red/Blue slide is merged into10. Defense Lab remains separate on11; competitors12; prototype13; reported outcomes14; finance15; market16; adoption17; roadmap18; team19; recap20.
 
 ## Slide 1 · Sarosh
 
@@ -42,48 +42,44 @@ The reviewer learns intended behavior from docs, comments and tests. It checks e
 
 ## Slide 10 · Srihith
 
-Each agent has restricted tools; tests use isolated app copies. Scout maps weaknesses. Probe tests them. Trace connects the attack path. Diagnose finds the cause. Patch proposes a repair. Fortify adds guardrails. Verify independently retests on a fresh checkout. Our HackATL contribution connects context, orchestration and verification.
+Three teams: Red finds and proves attacks. Blue fixes and fortifies. Independent Verify checks repairs. Scout maps weaknesses. Probe tests them. Trace connects the attack path. Diagnose finds the cause. Patch proposes repairs. Fortify adds guardrails. Verify retests on a fresh checkout. Agents get only their required tools. Tests use isolated app copies; people approve changes. Our HackATL contribution connects context, orchestration and verification. No AI output counts as proof. Including ours.
 
 ## Slide 11 · Srihith
 
-Red proves the attack. Blue proposes repairs. Verify retests independently. Your team approves changes. No AI output counts as proof. Including ours.
+Defense Lab is the ongoing layer, designed for 24/7 monitoring: watching changes, triggering fresh checks and recommending defenses. People decide.
 
 ## Slide 12 · Srihith
 
-Defense Lab is the ongoing layer, designed for 24/7 monitoring: watching changes, triggering fresh checks and recommending defenses. People decide.
-
-## Slide 13 · Srihith
-
 GitHub, Semgrep and Snyk illustrate this crowded market. Our proposed advantage is the connected workflow, not unique individual features. Costs and human review are tradeoffs. In early pitch feedback, a Kairo founder highlighted keeping checks current; a Stanford student valued fixing and checking changes. That’s feedback, not comparative validation.
 
-## Slide 14 · Vihaan
+## Slide 13 · Vihaan
 
 Here’s our prototype replay: choose a repository, inspect the ownership issue, then the repair and before-and-after tests. I’ll distinguish live, recorded, scripted and simulated parts.
 
-## Slide 15 · Sai
+## Slide 14 · Sai
 
 Five emails report billing retries, SQL injection, workspace access, error disclosure and upload-path fixes. These aren’t independently audited. Samira requested clearer permissions and code-processing explanations. That’s our next improvement. Jordan reports about twenty minutes, 78 regression tests and twelve new injection tests passing in staging.
 
-## Slide 16 · Sai
+## Slide 15 · Sai
 
 Pilot plans: $49.99 for seven assessments, $129.99 for twenty, and $359.99 for sixty. Growth delivery costs about $81, leaving 38% before shared expenses. Month one: fifty free pilots, costing $2,115; none start afterward. Conversion and acquisition are unvalidated assumptions, using outside benchmarks. Conditional monthly coverage: month two; cumulative recovery: month four. Six founders fund $500 monthly tools, take no salaries and reinvest surplus. Paid acquisition and extra usage are excluded.
 
-## Slide 17 · Sai
+## Slide 16 · Sai
 
 Census software-publisher proxies imply a $20.7 million annual market, narrowing to $6.6 million for smaller firms. Our 100–200-customer target represents $156,000–$312,000 annually at Growth pricing. These accounts still need qualification.
 
-## Slide 18 · Sai
+## Slide 17 · Sai
 
 Our adoption plan: founder outreach and accelerators, authorized setup, scoped defense, then verification and a pay decision. Targets are one hundred contacts, thirty calls, ten design partners, fifty free pilot workspaces and three paid accounts. Measure outcomes, costs and support time before expanding.
 
-## Slide 19 · Sai
+## Slide 18 · Sai
 
 Today: local prototype evidence. Month one: live-provider evidence and fifty pilot records. Months two and three: paid decisions and measured contribution. Months four to six: isolation and reliability before multi-repository expansion. Failed gates mean fixing, narrowing or repricing. Enterprise waits for controls and support.
 
-## Slide 20 · Sarosh
+## Slide 19 · Sarosh
 
 Our six founders bring business-growth research, agentic AI, reinforcement learning, software engineering, industrial engineering and venture-capital experience, with the backgrounds shown here.
 
-## Slide 21 · Sarosh
+## Slide 20 · Sarosh
 
 AI empowered founders to build. One unchecked flaw can break that progress. Seven specialists investigate. Red, Blue and Verify turn findings into checked repairs. Affordable pilots test the business. Evidence gates guide expansion. Ari connects it all, from the first change to the next release. That’s Ari.

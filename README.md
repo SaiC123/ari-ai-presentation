@@ -1,6 +1,6 @@
 # Ari AI: HackATL Presentation
 
-An animated, 21-slide HTML pitch for Ari.
+An animated, 20-slide HTML pitch for Ari.
 
 ## Present
 
@@ -43,8 +43,8 @@ Every AI editor must read [AGENTS.md](AGENTS.md) and follow the [shared coordina
 Slide16 uses the user-approved42-new-paid/month planning scenario, derived from ChartMogul's median24months to1,000B2Bsubscribers, not a published monthly average or acquisition guarantee. The proposed cohort is50free pilot workspaces inM1 for usage data and feedback, with no new free pilots fromM2. Modelled monthly cash coverage is conditional inM2 and cumulative recovery inM4; the peak funding gap is$2,115. See [docs/pilot-forecast.md](docs/pilot-forecast.md) for assumptions, sources and limits.
 ## Prototype evidence slide
 
-Slide6 shows the customer profile and slide7 the Ari logo. Slide8 introduces Ari; slide9 pairs the Code Reviewer screenshot with its explanation; slide10 presents the seven agents; slide11 explains Red/Blue/Verify. Slide12 is the separate Defense Lab screenshot-and-purpose slide. Competitors and pitch feedback13, prototype14, reported outcomes15 and financials16 follow. Five supplied screenshots and their provenance are documented in `docs/prototype-feedback.md`. VC feedback remains pending. Run `python3 -m unittest discover -s tests -p test_prototype_feedback.py` to check the evidence assets and attribution.
+Slide6 shows the customer profile and slide7 the Ari logo. Slide8 introduces Ari; slide9 pairs the Code Reviewer screenshot with its explanation. Slide10 introduces Red, Blue and Independent Verify before spotlighting each agent, with corresponding colored node outlines; the standalone Red/Blue slide has been merged into10. Defense Lab stays separate on11, followed by competitors/pitch feedback12, prototype13, reported outcomes14 and financials15. Five supplied screenshots and their provenance are documented in `docs/prototype-feedback.md`. VC feedback remains pending. Run `python3 -m unittest discover -s tests -p test_prototype_feedback.py` to check the evidence assets and attribution.
 
 ## Current pitch references
 
-The 21-slide deck has a 696-word [speaker script](docs/speaker-script.md), [pilot plan](docs/pilot-plan.md), [research checks](docs/research-validation.md), [cost sensitivities](docs/economic-sensitivity.md) and [originality disclosure](docs/originality-disclosure.md). [Exact rubric coverage](docs/presentation-coverage.md) and [remaining evidence](docs/hackatl-evidence-needed.md) are consolidated; forecasts and reported feedback are not measured traction.
+The 20-slide deck has a 699-word [speaker script](docs/speaker-script.md), [pilot plan](docs/pilot-plan.md), [research checks](docs/research-validation.md), [cost sensitivities](docs/economic-sensitivity.md) and [originality disclosure](docs/originality-disclosure.md). [Exact rubric coverage](docs/presentation-coverage.md) and [remaining evidence](docs/hackatl-evidence-needed.md) are consolidated; forecasts and reported feedback are not measured traction.
