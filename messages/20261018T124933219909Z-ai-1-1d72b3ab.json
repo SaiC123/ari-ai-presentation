@@ -1,0 +1,8 @@
+{
+  "type": "BEFORE",
+  "agent": "ai-1",
+  "utc": "2026-10-18T12:49:33.219883+00:00",
+  "summary": "Final slide only: show all six recap graphics on entry without clicks; retain separate connected-ant and final Ari reveal, remap builds and related navigation/rewind handling/tests; deploy and verify.",
+  "lock_commit": "6a814ef20338d4ab136a5a45701c35dad98260c8",
+  "base_main": "b1498085a709e1955e61d534ccdab1f0a2332738"
+}
