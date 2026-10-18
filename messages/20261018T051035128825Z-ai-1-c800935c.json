@@ -1,0 +1,8 @@
+{
+  "type": "BEFORE",
+  "agent": "ai-1",
+  "utc": "2026-10-18T05:10:35.128806+00:00",
+  "summary": "Slide 10 only: polish the quote reveal with more conversational draft wording and cleaner typography; remove the placeholder wording but retain a clear disclosure that examples are not verbatim feedback",
+  "lock_commit": "8328d734d5ebc0959b77cff9ea29b820d0068dce",
+  "base_main": "b1e3689e876a68f855ecf987eb1bfe194c293882"
+}
