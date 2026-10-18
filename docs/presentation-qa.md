@@ -57,19 +57,19 @@ Supersedes automatic month highlighting above. Three key forecast steps only: fr
 
 ## Current override: seven-assessment pricing and milestone forecast
 
-## Current benchmark-derived pilot forecast
+## Superseded: five-pilot forecast
 
 Proposed workspace plans: Founder $49.99 / 7 assessments, Growth $129.99 / 20, Scale $359.99 / 60. Effective included-assessment prices are $7.14, $6.50 and $6.00 respectively. Both monthly run and assessed-line limits apply; extra usage is not unlimited. These are pilot prices; future changes require measured delivery costs and customer-value validation.
 
-Finance is slide13 in the18-slide deck. Initial cohort: five unpaid pilots in M1. All modeled paid accounts use Founder, with seven full assessments consumed monthly. No tier upgrades assumed. Conversion of18.2% gives0.91 expected initial-cohort payers in M2, not a fractional real customer. Actual conversion is0–5. Monthly paid churn2% is a separate unvalidated assumption.
+Historical scenario only. It assumed five unpaid pilots in M1. This is superseded by the approved one-time cohort of 50 proposed free pilot workspaces in M1, then zero new free pilots from M2. Do not use this archived section for current slide figures.
 
 [ChartMogul's Go-To-Market Report](https://chartmogul.com/reports/saas-go-to-market-report/) reports a median B2B time of about two years to1,000 subscribers across its SaaS sample. The approved planning intake is round(1,000/24) = **42 new paid accounts/month from M2**. This is a derived linear gross-intake scenario, **not a published monthly average**, matched acquisition benchmark, Ari traction or guarantee. Time-to-milestone does not imply constant acquisition; churn and the initial free period mean this scenario does not reach1,000 net subscribers by M24.
 
 [FirstPageSage's trial report](https://firstpagesage.com/seo-blog/saas-free-trial-conversion-rate-benchmarks/) reports18.2% organic opt-in trial-to-paid conversion. This is not evidence for Ari's assisted pilots. The M2 conversion timing is assumed.
 
-Shared fixed tools budget: $500/month. Free Founder account: $32.30 = $13.30 API + $7 sandbox + $7 AWS + $5 support/storage. M1: $500 + five × $32.30 = **$661.50**, with no revenue or payment fees. Paid Founder variable cost: **$34.04971**, including $1.74971 payment processing. Contribution: $15.94029; minimum monthly cash coverage: **32 whole active paying Founder accounts**.
+Historical scenario only: shared fixed tools budget $500/month and free Founder full-use cost $32.30. Under the superseded five-pilot assumption M1 cost was $661.50. Current M1 cost is $2,115 for 50 proposed free workspaces plus shared tools. Paid Founder variable cost remains $34.04971, contribution $15.94029, and monthly cash threshold 32 whole accounts.
 
-With the approved42/month intake, monthly cash coverage occurs in **M2** at42.91 expected payers: revenue $2,145.07, cost $1,961.07, net $184.00. Earlier losses recover in **M3**. Peak modeled funding gap is **$661.50**, in M1. These are conditional cash-model outputs, not full-business profitability or proof of sustainable acquisition.
+Historical scenario only: with five pilots, 42 new paid/month and the other retained assumptions, M2 had 42.91 expected payers and cumulative recovery in M3. Current 50-pilot scenario has 51.10 expected M2 payers, conditional monthly coverage in M2, cumulative recovery in M4, and a $2,115 peak modeled funding gap. See `pilot-forecast.md` for canonical current outputs.
 
 The full twelve-month graph is always visible. Three manual milestone callouts show M1 launch, M2 conversion/growth and monthly break-even (also M2 under current assumptions). The right panel shows users, revenue, cost and net. No month-by-month autoplay or selectors. Forward/rewind and reduced-motion states are tested.
 
@@ -77,7 +77,7 @@ Excludes founder pay/labor, taxes, legal/compliance, paid acquisition, onboardin
 
 Finance narration: Our introductory workspace plans start at forty-nine ninety-nine for seven full assessments. Growth offers twenty for one hundred twenty-nine ninety-nine, and Scale offers sixty for three hundred fifty-nine ninety-nine. The effective price per included assessment falls as usage grows. These are pilot prices to validate demand, with future pricing based on measured costs and customer value. Our six-founder team budgets five hundred dollars monthly for shared tools, before customer delivery. Five unpaid pilots bring month-one costs to about six hundred sixty-two dollars. We use an eighteen-point-two percent trial-conversion proxy and derive forty-two new paid users monthly from ChartMogul’s two-year subscriber milestone. These are assumptions, not Ari results. On Founder-only pricing, this scenario covers monthly cash costs in month two at about forty-three paying users, and recovers earlier losses in month three. Founder pay, acquisition and extra usage are excluded.
 
-## Current conservative pilot forecast
+## Superseded: conservative two-new-paid/month pilot forecast
 
 This baseline supersedes the42-new-paid/month scenario. Prices and allowances stay unchanged: Founder49.99/7, Growth129.99/20, Scale359.99/60. All modeled payers use Founder at full included usage; no upgrades assumed.
 
@@ -95,15 +95,15 @@ Excluded: founder compensation/labor, paid acquisition, taxes, legal/compliance,
 
 Three forecast callouts: M1launch, M2conversion/acquisition plan, M12funding review. Full12months visible, no selectors or auto month playback; right panel displays current expected payers/cash. Coverage and recovery correctly say not inYear1.
 
-Current finance script: Our pilot prices start at forty-nine ninety-nine. Growth costs an estimated eighty-one dollars to deliver, leaving a modeled thirty-eight percent contribution margin before shared costs. API usage comes from our demo assumption; infrastructure and support remain estimates. During five pilots, we will log billed tokens, sandbox runtime, storage and support time for every assessment. We will expand only after observing positive contribution at the promised allowance. Our conservative plan assumes two new paid accounts monthly, plus initial pilot conversions, not forty-two. It does not break even in year one: monthly coverage requires thirty-two Founder accounts, and the model needs about four thousand dollars of funding across the year. Founders initially fund operations and reinvest receipts. These figures exclude founder pay, paid acquisition and extra usage.
+Historical script for the superseded two-new-paid/month sensitivity. Do not present as current narration. Current slide13 script is in `speaker-script.md`.
 
-## Current user-approved growth scenario: 42 new paid accounts/month
+## Superseded: user-approved growth scenario before 50-pilot revision
 
 Supersedes the two/month baseline. Founder49.99/7, Growth129.99/20 and Scale359.99/60 and team-supplied cost inputs are retained. No cost information needs to be resubmitted.
 
 Citation immediately below42: [ChartMogul2025 Go-To-Market Report](https://chartmogul.com/reports/saas-go-to-market-report/) reports median B2B time of about24months to1,000subscribers.42=round(1000/24) is our derived linear **planning target**, NOT measured average monthly new customers, an acquisition guarantee or a matched Ari pilot benchmark. Separate2%monthlychurn andM1freeperiod mean this model does not replicate1,000netaccountsbyM24. No stronger direct benchmark for42found; do not invent one.
 
-With18.2%initial-cohort conversion proxy, M2expectedpayers42.91, firstmonthlycashcoverageM2, cumulative recoveryM3, peakfundinggap661.50. Minimummonthlycoverage32wholeactiveFounderaccounts. These are conditional model outputs, not fullbusinessprofitability; founderpay,paidacquisition,extrausage/legal/taxes remain excluded. Full12monthseries and3keycallouts retained.
+This historical variant used five initial free pilots: M2expectedpayers42.91, conditional monthly cash coverageM2, cumulative recoveryM3, and peak funding gap$661.50. It is superseded. The current 50-pilot figures and presentation checks are documented in `pilot-forecast.md` and the latest QA entry below.
 
 The adoption slide's three total paid is an initial pilot recruitment goal, separate from this expanded growth scenario, not3/5measuredconversion. Costs are the user's supplied planning breakdown, not a provider invoice audit; per-run measurement template remains available without claiming data collection has occurred. Latest Alan/ai4feedbackimages/date/highlight updates are preserved.
 
@@ -180,3 +180,9 @@ User rejected the lower What they liked section and asked for a different visual
 User explicitly confirmed a newer live deployment with live signals/active defense, while saying a URL/run reference was unavailable during their debugging. Based on that owner confirmation, slide9nowlabelsDEFENSELAB/LIVEDEFENSEanddescribesobservingliveactivity,recommendingadefensiveresponseandlearningfromoutcomes. Canonicalspokenpassage/notesaligned;no simulationwording inpublicHTML. Team-confirmedstatusandlackofindependentdeploymentverification are recorded in source notes. Earlier research-only product README was inspected; no production code was changed or live run executed. No inventeduptime/effectiveness/autonomous-control claims.
 
 Eight targeted evidence/rubric tests anddiffcheckpass. Chrome1280/960LiveDefenseheading/processfits checked,desktop/scaled screenshots inspected. Prepared script657words,699compound-split. Onlyslide9visuals/spokenpassageand10referencenotechanged;assets/model/other16slides preserved. Publication pending existing-project editor;notclaimeddeployed.
+
+## One-time 50-pilot cohort forecast update
+
+Current proposal: 50 free pilot workspaces in M1 for usage data and feedback; no new free pilots begin in M2 or later. Full-use M1 delivery is $1,615 plus $500 shared tools, totaling $2,115. The 18.2% conversion input remains an outside proxy, not Ari evidence; modeled expected conversion is 9.1 accounts. The separate 42-new-paid/month figure remains an arithmetic planning target, not observed acquisition. Conditional monthly cash coverage is M2; cumulative recovery moves to M4. Slide13 narration and accessible forecast, adoption/roadmap notes, source inventory, operating plan, CSV and forecast docs were aligned.
+
+Verification: 81 Node navigation/model tests and 13 Python tests pass; `git diff --check` passes; the forecast export regenerates with M1 free cohort 50, M1 total cost $2,115, monthly coverage M2, and cumulative recovery M4. Word-budget regression confirms the prepared script is 700 words under its compound-splitting counter. Browser/deployment checks are not claimed in this entry.

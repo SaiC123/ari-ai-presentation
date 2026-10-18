@@ -1,6 +1,6 @@
 # Ari non-demo speaker script
 
-657 prepared spoken words: 647 in the 18 slide passages plus 10 in Vihaan’s brief demo introduction. Splitting hyphenated compounds gives 699 words, within the 700-word cap. The actual prototype demonstration and Q&A are excluded and unchanged. This is a script budget, not a timed rehearsal.
+657 whitespace-separated spoken words: 647 in the 18 slide passages plus 10 in Vihaan’s brief demo introduction. Splitting hyphenated compounds and decimal values gives 700 words, within the 700-word cap. The actual prototype demonstration and Q&A are excluded and unchanged. This is a script budget, not a timed rehearsal.
 
 Aligned to the current18-slide deck, including the genuine slide11demo screenshots, redesigned slide10conversation reveal and clean slide12email evidence. The slide `data-spoken` attributes and SPOKEN notes match these passages verbatim; REFERENCE notes preserve evidence and feature limits. Advance each build with its corresponding sentence; slide 13 proceeds through pricing, delivery costs, forecast milestones, and founder funding. [Timing and handoffs](ai4-timing-pass.md) records the round limits.
 
@@ -58,7 +58,7 @@ Five permitted emails report outcomes we haven’t independently rerun. Jordan s
 
 ## Slide 13 · Sai
 
-Monthly plans offer seven assessments for forty-nine ninety-nine; twenty for one hundred twenty-nine ninety-nine; and sixty for three hundred fifty-nine ninety-nine. Growth’s modeled delivery cost is about eighty-one dollars, leaving thirty-eight percent contribution before shared expenses. Our Founder scenario starts with five unpaid pilots, then assumes forty-two new paid accounts monthly. That target divides one thousand business subscribers by ChartMogul’s median twenty-four months; it is not observed acquisition. Monthly cash coverage is conditional in month two; earlier losses recover in month three. Six founders initially take no salaries, fund five hundred dollars in shared monthly tools, and reinvest surplus. Paid acquisition and extra usage are excluded.
+Plans are forty-nine ninety-nine for seven assessments, one hundred twenty-nine ninety-nine for twenty, and three hundred fifty-nine ninety-nine for sixty. Growth costs about eighty-one dollars, leaving thirty-eight percent before shared expenses. Month one proposes fifty free pilots to measure usage and feedback; none start in month two. Ari conversion is unmeasured; 18.2% is an outside proxy. Forty-two new paid accounts monthly is a ChartMogul-derived target, not observed acquisition. Month one costs $2,115. Monthly costs are covered in month two; cumulative recovery is month four. No founder pay, paid acquisition, or extra usage is included.
 
 ## Slide 14 · Sai
 
@@ -66,11 +66,11 @@ Using Census software publishers as a proxy and Growth pricing gives twenty-poin
 
 ## Slide 15 · Sai
 
-Through founder outreach and accelerators, our first goal is one hundred targets, thirty calls, ten design partners, five authorized pilots, and three total paid accounts. That’s separate from forty-two monthly. Each pilot records findings, repair decisions, verification, costs, support time, and willingness to pay.
+Through founder outreach and accelerators, our first goal is one hundred targets, thirty calls, ten design partners, fifty free pilot workspaces, and three total paid accounts. Free pilots stop after month one. Each pilot records outcomes, verification, costs, support time, and willingness to pay.
 
 ## Slide 16 · Sai
 
-Month one: a live-provider trace and five pilot records. Months two and three: paid decisions and measured contribution. Months four to six: isolation and reliability checks before multi-repository expansion. Owners review weekly. If permissions, reliability, or costs fail, narrow scope or reprice. Enterprise waits for controls and support.
+Month one: a live-provider trace and fifty pilot records for usage data and feedback. No new free pilots from month two. Months two and three: paid decisions and measured contribution. Months four to six: isolation and reliability checks before multi-repository expansion. Owners review weekly. If permissions, reliability, or costs fail, narrow scope or reprice. Enterprise waits for controls and support.
 
 ## Slide 17 · Sarosh
 

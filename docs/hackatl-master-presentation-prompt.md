@@ -19,7 +19,7 @@ This current brief supersedes historical15-slide story drafts and superseded two
 
 ## Fixed financial requirements
 
-Founder49.99/7assessments/1Massessedlines; Growth129.99/20/5M; Scale359.99/60/20M. Both limits apply. Supplied inputs unchanged: API1.90/run; sandbox1/run; AWS7/account; support/storage5/12/30; payments2.9%+0.30; sharedtools500/month. Founder-only forecast: five initial free pilots,18.2%initialconversionproxy,42newpaid/month fromM2,2%assumedchurn.42is derived from approximately1,000subscribers/24months in ChartMogul, not a published monthly acquisition average. Citation directly below42. ConditionalM2monthly cash coverage/M3cumulative recovery and32Founderthreshold; not full-business profitability. Excluded labor/acquisition/taxes/extras remain disclosed.
+Founder49.99/7assessments/1Massessedlines; Growth129.99/20/5M; Scale359.99/60/20M. Both limits apply. Supplied inputs unchanged: API1.90/run; sandbox1/run; AWS7/account; support/storage5/12/30; payments2.9%+0.30; sharedtools500/month. Founder-only forecast: proposed50free pilot workspaces inM1 to collect usage data and feedback, then zero new free pilots fromM2; 18.2%initialconversionproxy; 42newpaid/month fromM2;2%assumedchurn.42is derived from approximately1,000subscribers/24months in ChartMogul, not a published monthly acquisition average. Citation directly below42. ConditionalM2monthly cash coverage/M4cumulative recovery, M1 modeled funding gap$2,115, and32Founderthreshold; not full-business profitability. Excluded labor/acquisition/taxes/extras remain disclosed.
 
 ## Canonical references
 

@@ -483,10 +483,10 @@ test('the full forecast includes free pilot cash costs and no M1 revenue', () =>
   const d = presentation('#2', { forecast:true, chart:true });
   assert.equal(d.chart().data.labels.length,12);
   assert.equal(d.chart().data.datasets[0].data[0],0);
-  assert.equal(d.chart().data.datasets[1].data[0],661.50);
-  assert.equal(d.selectors['#forecastFunding'].textContent,'$661.50');
+  assert.equal(d.chart().data.datasets[1].data[0],2115);
+  assert.equal(d.selectors['#forecastFunding'].textContent,'$2,115.00');
   assert.equal(d.selectors['#forecastMonthly'].textContent,'Monthly break-even: M2 · 32 payers needed');
-  assert.equal(d.selectors['#forecastRecovery'].textContent,'Earlier losses recovered: M3');
+  assert.equal(d.selectors['#forecastRecovery'].textContent,'Earlier losses recovered: M4');
   assert.match(d.selectors['#forecastAccessible'].textContent,/42 new paid.*not a published monthly average/);
 });
 
@@ -513,18 +513,18 @@ test('cash tooltip reconciles initial free delivery without charging payment fee
   const callback = d.chart().options.plugins.tooltip.callbacks;
   const lines = callback.afterBody([{dataIndex:0}]);
   assert.ok(lines.includes('Shared team tools: $500.00'));
-  assert.ok(lines.includes('Product API: $66.50'));
+  assert.ok(lines.includes('Product API: $665.00'));
   assert.ok(lines.includes('Payments (paid only): $0.00'));
-  assert.ok(lines.includes('Monthly net: -$661.50'));
+  assert.ok(lines.includes('Monthly net: -$2,115.00'));
 });
 
 test('three milestone stages replace all automatic or month-by-month playback', () => {
   const d = presentation('#2', {counts:[0,4,1],forecast:true,chart:true,finance:true});
   d.build(1,3);
   assert.match(d.selectors['#forecastMonthTitle'].textContent,/Month 1/);
-  assert.equal(d.selectors['#forecastThreshold'].textContent,'5');
+  assert.equal(d.selectors['#forecastThreshold'].textContent,'50');
   assert.equal(d.selectors['#forecastUsers'].textContent,'0.00');
-  assert.equal(d.selectors['#forecastCost'].textContent,'$661.50');
+  assert.equal(d.selectors['#forecastCost'].textContent,'$2,115.00');
   assert.equal(d.chart().data.datasets[0].data.filter(v=>v!==null).length,12);
   assert.equal(d.pendingTimers(),0);
   d.tick();
@@ -532,14 +532,14 @@ test('three milestone stages replace all automatic or month-by-month playback', 
   d.click('#next');
   assert.match(d.selectors['#forecastMonthTitle'].textContent,/Month 2/);
   assert.equal(d.selectors['#forecastThreshold'].textContent,'+42');
-  assert.equal(d.selectors['#forecastUsers'].textContent,'42.91');
-  assert.match(d.selectors['#forecastMonthEvent'].textContent,/0.91 conversions.*42 new paid/);
+  assert.equal(d.selectors['#forecastUsers'].textContent,'51.10');
+  assert.match(d.selectors['#forecastMonthEvent'].textContent,/9.1 conversions.*42 new paid/);
   d.click('#next');
   assert.match(d.selectors['#forecastMonthTitle'].textContent,/Month 2.*break-even/);
-  assert.equal(d.selectors['#forecastThreshold'].textContent,'≈43');
-  assert.equal(d.selectors['#forecastUsers'].textContent,'42.91');
-  assert.equal(d.selectors['#forecastRevenue'].textContent,'$2,145.07');
-  assert.equal(d.selectors['#forecastCost'].textContent,'$1,961.07');
+  assert.equal(d.selectors['#forecastThreshold'].textContent,'≈51');
+  assert.equal(d.selectors['#forecastUsers'].textContent,'51.10');
+  assert.equal(d.selectors['#forecastRevenue'].textContent,'$2,554.49');
+  assert.equal(d.selectors['#forecastCost'].textContent,'$2,239.94');
   assert.equal(d.pendingTimers(),0);
   d.click('#next');
   assert.equal(d.slides[1].dataset.buildCurrent,'4');
@@ -560,8 +560,8 @@ test('milestones and full accessible table remain if Chart.js is unavailable', (
   d.build(1,3); d.click('#next'); d.click('#next');
   assert.equal(d.selectors['#economicsChart'].hidden,true);
   assert.equal(d.selectors['#forecastChartFallback'].hidden,false);
-  assert.match(d.selectors['#forecastAccessible'].textContent,/peak funding gap \$661.50/);
-  assert.match(d.selectors['#forecastMonthCash'].textContent,/Revenue \$2,145.07/);
+  assert.match(d.selectors['#forecastAccessible'].textContent,/peak funding gap \$2,115.00/);
+  assert.match(d.selectors['#forecastMonthCash'].textContent,/Revenue \$2,554.49/);
 });
 
 test('reduced motion keeps the same fixed milestones with no timer', () => {

@@ -40,7 +40,7 @@ Every AI editor must read [AGENTS.md](AGENTS.md) and follow the [shared coordina
 
 ## Monthly pilot forecast
 
-Slide13 restores the user-approved42newpaid/month scenario with a citation directly below it: ChartMogul median24months to1,000B2Bsubscribers.42=round(1000/24) is a derived planning target, not a published monthly average or acquisition guarantee. ConditionalcashcoverageM2,recoveryM3,32Founderaccountthreshold;team-suppliedcosts retained. See docs/pilot-forecast.md.
+Slide13 uses the user-approved42-new-paid/month planning scenario, derived from ChartMogul's median24months to1,000B2Bsubscribers, not a published monthly average or acquisition guarantee. The proposed cohort is50free pilot workspaces inM1 for usage data and feedback, with no new free pilots fromM2. Modelled monthly cash coverage is conditional inM2 and cumulative recovery inM4; the peak funding gap is$2,115. See [docs/pilot-forecast.md](docs/pilot-forecast.md) for assumptions, sources and limits.
 ## Prototype evidence slide
 
 Slide6 shows the customer profile, slide7 the Ari logo, slides8–10 the solution and comparison, and slide11 the prototype workflow/verification. Slide12 follows with the five-email gallery and enlarged email with its reported result highlighted. Financials remain slide13. Five supplied screenshots and their provenance are documented in `docs/prototype-feedback.md`. VC feedback remains pending. Run `python3 -m unittest discover -s tests -p test_prototype_feedback.py` to check the evidence assets and attribution.

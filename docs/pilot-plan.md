@@ -8,7 +8,7 @@ User: founder-developer or engineering lead at a small SaaS company using AI-ass
 
 ## Recruitment milestone and ownership
 
-First recruitment milestone: 100 targets → 30 calls → 10 potential design partners → 5 authorized pilots → a goal of 3 total paid accounts. These are proposed targets, not achieved funnel rates or a claim that 3 of 5 pilots convert. Paid decisions can include separate direct buyers. Channels to test: founder outreach and accelerator introductions. No named accelerator relationship is asserted.
+First recruitment milestone: 100 targets → 30 calls → 10 potential design partners → a proposed cohort of 50 free pilot workspaces in month one → a goal of 3 total paid accounts. These are proposed targets, not achieved funnel rates or a claim that 3 of 50 pilots convert. Paid decisions can include separate direct buyers. The 50 workspaces are a one-time cohort to collect usage data and feedback; no new free pilots start in month two. Channels to test: founder outreach and accelerator introductions. No named accelerator relationship is asserted.
 
 Proposed owner roles, based on the existing team lanes:
 - Growth/commercial lead (Sai): target list, channel attribution, contact/call/paid ledger, quoted scope/pricing and willingness-to-pay record.
@@ -19,11 +19,11 @@ Proposed owner roles, based on the existing team lanes:
 
 Owners review the ledger weekly. Capture week/date, anonymous account ID, channel, contact, call, qualification, invitation, approval, pilot outcome, paid decision, price shown, owner and founder minutes. Count unique accounts and cash receipts separately. Confirm individuals' acceptance of these proposed roles before operating the plan.
 
-## Five-pilot scorecard
+## Free-pilot scorecard
 
-For each authorized scoped pilot, record repository/commit, human scope approval, provider mode, one assessment outcome (including inconclusive/error), finding usefulness and reproducibility, repair accepted/rejected with reason, independent verification result/artifact, regressions, billed API, sandbox/storage/AWS allocation, retries, repository size, support/onboarding minutes, permission comprehension and continue/pay decision. Use the existing `pilot-cost-measurement.csv` for delivery measurements. Do not use presentation test totals as security outcomes.
+For each authorized scoped pilot, record repository/commit, human scope approval, provider mode, one assessment outcome (including inconclusive/error), finding usefulness and reproducibility, repair accepted/rejected with reason, independent verification result/artifact, regressions, billed API, sandbox/storage/AWS allocation, retries, repository size, support/onboarding minutes, permission comprehension and continue/pay decision. Use the existing `pilot-cost-measurement.csv` for delivery measurements. Collect only with informed permission and handle code/data under the agreed scope. Do not use presentation test totals as security outcomes.
 
-Planned exit gate: five complete records; scope and code-processing explanation understood; no unresolved scope violation; reproducible evidence for claims; all proposed repairs reviewed; failures retained; observed contribution positive at the promised full allowance, including realistic support allocation. A rejected fix or non-buyer is a result, not something to hide. If cost or reliability fails, narrow scope, repair reliability, cap onboarding or reprice before expanding.
+Planned exit gate: up to 50 complete records, subject to qualified participation and team capacity; scope and code-processing explanation understood; no unresolved scope violation; reproducible evidence for claims; all proposed repairs reviewed; failures retained; observed contribution positive at the promised full allowance, including realistic support allocation. A rejected fix or non-buyer is a result, not something to hide. If cost or reliability fails, narrow scope, repair reliability, cap onboarding or reprice before expanding. Do not imply the 50 places are already filled.
 
 ## Capacity behind the 42/month scenario
 
@@ -37,7 +37,7 @@ Illustrative capacity arithmetic only: if the first milestone's target ratios (3
 
 Today: engineering leads preserve a reproducible local artifact trace; remain local while full-chain transport is scripted.
 
-Month 1: security/backend leads deliver a complete live-provider trace and five scoped pilot records, using six founders and capped API spend. If findings are unreliable, fix and repeat before adding accounts.
+Month 1: security/backend leads deliver a complete live-provider trace and collect usage data and feedback from up to 50 authorized free pilot workspaces, using six founders and capped API spend. If findings are unreliable, fix and repeat before adding accounts. The free cohort ends after month one.
 
 Months 2–3: product/growth leads record paid decisions and observed contribution at full allowance; hosted beta requires deployment/access readiness. $500 shared tools is separate from customer delivery. If trust or economics fail, narrow scope or reprice.
 
