@@ -48,6 +48,15 @@ class PresentationEvidenceTests(unittest.TestCase):
         self.assertIn('border:2px solid var(--team-color)!important', self.source)
         self.assertIn('border-width:3px!important', self.source)
 
+    def test_finale_shows_six_graphics_without_six_clicks(self):
+        finale = self.slides[-1]
+        self.assertEqual(finale.count('class="recap-cell"'), 6)
+        self.assertNotRegex(finale, r'class="recap-cell" data-build=')
+        self.assertEqual(set(re.findall(r'data-build="(\d+)"', finale)), {'1', '2'})
+        self.assertIn('class="brand-finale" data-build="2"', finale)
+        self.assertIn(".finale-slide[data-build-current='2'] .brand-finale", self.source)
+        self.assertIn('.finale-slide .recap-cell { opacity:1; transform:scale(1); }', self.source)
+
     def test_slide_five_attributes_are_well_formed(self):
         class SectionParser(HTMLParser):
             attributes = None
