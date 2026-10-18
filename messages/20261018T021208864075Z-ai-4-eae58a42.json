@@ -1,0 +1,8 @@
+{
+  "type": "BEFORE",
+  "agent": "ai-4",
+  "utc": "2026-10-18T02:12:08.864038+00:00",
+  "summary": "User asks coordinate with Sarosh and continue. Align18slide data-spoken and SPOKEN notes to Sarosh finalized5383790 script, preserve all REFERENCE blocks and every visual/model/image byte. Vihaan intro stays script-only. Update consistency regression and obsolete short-draft metadata; verify real notes overlay and no visual changes. No product/demo/Q&A edits. Handoff exact combined commit for ai1existingproject deployment.",
+  "lock_commit": "8bfb70639539aa23092ae8f80705d4df48dee406",
+  "base_main": "5383790077f05f6db59d53504aaecfb935925b40"
+}
